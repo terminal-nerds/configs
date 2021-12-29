@@ -18,6 +18,19 @@
 	},
 	"scripts": {
 	},
+	"turbo": {
+		"pipeline": {
+			"build": {
+				"dependsOn": [
+					"^build"
+				]
+			},
+			"dev": {
+				"cache": false
+			}
+		}
+	},
 	"devDependencies": {
+		"turbo": "^1.0.23"
 	}
 }
