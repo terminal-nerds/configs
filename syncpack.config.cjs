@@ -18,6 +18,7 @@ const config = {
 	sortFirst: [
 		"$schema",
 		"private",
+		"type",
 		"publishConfig",
 		"name",
 		"version",
