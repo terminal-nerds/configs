@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com",
+		"access": "public"
+	},
+	"name": "@termminal-nerds/config-stylelint",
+	"version": "0.1.0",
+	"description": "Terminal Nerds extendable configuration for Stylelint.",
+	"keywords": [
+		"config",
+		"linter",
+		"stylelint"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/terminal-nerds/configs/tree/main/packages/stylelint",
+	"repository": "terminal-nerds/configs.git",
+	"bugs": "https://github.com/terminal-nerds/configs/issues",
+	"engines": {
+		"node": ">=16",
+		"pnpm": ">=6"
+	}
+}

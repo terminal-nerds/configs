@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com",
+		"access": "public"
+	},
+	"name": "@termminal-nerds/config-prettier",
+	"version": "0.1.0",
+	"description": "Terminal Nerds extendable configuration for Prettier.",
+	"keywords": [
+		"config",
+		"formatter",
+		"prettier"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/terminal-nerds/configs/tree/main/packages/prettier",
+	"repository": "terminal-nerds/configs.git",
+	"bugs": "https://github.com/terminal-nerds/configs/issues",
+	"engines": {
+		"node": ">=16",
+		"pnpm": ">=6"
+	}
+}
