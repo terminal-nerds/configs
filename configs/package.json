@@ -1,0 +1,7 @@
+{
+	"name": "configs",
+	"private": true,
+	"files": [
+		"tsconfig.json"
+	]
+}

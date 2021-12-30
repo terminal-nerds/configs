@@ -10,6 +10,60 @@ importers:
       syncpack: 5.8.15
       turbo: 1.0.23
 
+  configs:
+    specifiers: {}
+
+  helpers:
+    specifiers: {}
+
+  packages/eslint:
+    specifiers:
+      '@types/node': ^17.0.5
+      configs: workspace:*
+      tslib: ^2.3.1
+      typescript: ^4.5.4
+    devDependencies:
+      '@types/node': 17.0.5
+      configs: link:../../configs
+      tslib: 2.3.1
+      typescript: 4.5.4
+
+  packages/markdownlint:
+    specifiers:
+      '@types/node': ^17.0.5
+      configs: workspace:*
+      tslib: ^2.3.1
+      typescript: ^4.5.4
+    devDependencies:
+      '@types/node': 17.0.5
+      configs: link:../../configs
+      tslib: 2.3.1
+      typescript: 4.5.4
+
+  packages/prettier:
+    specifiers:
+      '@types/node': ^17.0.5
+      configs: workspace:*
+      tslib: ^2.3.1
+      typescript: ^4.5.4
+    devDependencies:
+      '@types/node': 17.0.5
+      configs: link:../../configs
+      tslib: 2.3.1
+      typescript: 4.5.4
+
+  packages/stylelint:
+    specifiers:
+      '@types/node': ^17.0.5
+      configs: workspace:*
+      tslib: ^2.3.1
+      typescript: ^4.5.4
+    devDependencies:
+      '@types/node': 17.0.5
+      configs: link:../../configs
+      tslib: 2.3.1
+      typescript: 4.5.4
+
 packages:
 
   /@babel/code-frame/7.16.0:
@@ -31,6 +85,10 @@ packages:
       '@babel/helper-validator-identifier': 7.15.7
       chalk: 2.4.2
       js-tokens: 4.0.0
+    dev: true
+
+  /@types/node/17.0.5:
+    resolution: {integrity: sha512-w3mrvNXLeDYV1GKTZorGJQivK6XLCoGwpnyJFbJVK/aTBQUxOCaa/GlFAAN3OTDFcb7h5tiFG+YXCO2By+riZw==}
     dev: true
 
   /@types/parse-json/4.0.0:
@@ -333,6 +391,10 @@ packages:
       semver: 7.3.5
     dev: true
 
+  /tslib/2.3.1:
+    resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==}
+    dev: true
+
   /turbo-darwin-64/1.0.23:
     resolution: {integrity: sha512-z6ArzNKpQIw/YhFf20lUGl5VaGTZ94MSppXuuYkCyxMQwK3qye3r2ENQbUKkxfv16fAmfr7z1bJt6YwfOjwPiw==}
     cpu: [x64]
@@ -446,6 +508,12 @@ packages:
       turbo-linux-ppc64le: 1.0.23
       turbo-windows-32: 1.0.23
       turbo-windows-64: 1.0.23
+    dev: true
+
+  /typescript/4.5.4:
+    resolution: {integrity: sha512-VgYs2A2QIRuGphtzFV7aQJduJ2gyfTljngLzjpfW9FoYZF6xuw1W0vW9ghCKLfcWrCFxK81CSGRAvS1pn4fIUg==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
     dev: true
 
   /universalify/2.0.0:
