@@ -1,22 +1,14 @@
 {
 	"$schema": "https://json.schemastore.org/package",
 	"private": true,
-	"type": "module",
 	"name": "@terminal-nerds/configs",
 	"license": "MIT",
 	"homepage": "https://github.com/terminal-nerds/configs",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/terminal-nerds/configs.git"
-	},
-	"bugs": {
-		"url": "https://github.com/terminal-nerds/configs/issues"
-	},
+	"repository": "terminal-nerds/configs.git",
+	"bugs": "https://github.com/terminal-nerds/configs/issues",
 	"engines": {
 		"node": ">=16",
 		"pnpm": ">=6"
-	},
-	"scripts": {
 	},
 	"turbo": {
 		"pipeline": {
@@ -30,7 +22,12 @@
 			}
 		}
 	},
+	"scripts": {
+		"format:pkgs": "syncpack format"
+	},
 	"devDependencies": {
+		"syncpack": "^5.8.15",
 		"turbo": "^1.0.23"
-	}
+	},
+	"type": "module"
 }
