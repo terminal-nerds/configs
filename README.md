@@ -19,7 +19,7 @@ spent on configuring, installation, upgrading dependencies, etc.
 
 ## ⚖️ License
 
-[![License shield]](./LICENSE "Project's license")
+[![License shield]](./LICENSE.md "Project's license")
 
 **The code** is licensed under the [MIT license](./LICENSE.md).
 
