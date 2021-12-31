@@ -21,11 +21,16 @@
 	},
 	"scripts": {
 		"build": "tsc"
+		"clean:*": "run-s clean:*",
+		"clean:build": "rimraf ./dist",
+		"clean:cache": "rimraf ./node_modules/.cache",
 	},
 	"devDependencies": {
 		"@types/node": "^17.0.5",
 		"@workspace/configs": "workspace:*",
 		"@workspace/helpers": "workspace:*",
+		"npm-run-all": "^4.1.5",
+		"rimraf": "^3.0.2",
 		"tslib": "^2.3.1",
 		"typescript": "^4.5.4"
 	}
