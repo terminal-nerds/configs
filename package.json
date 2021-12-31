@@ -2,8 +2,6 @@
 	"$schema": "https://json.schemastore.org/package",
 	"private": true,
 	"type": "module",
-	"name": "@terminal-nerds/configs",
-	"license": "MIT",
 	"homepage": "https://github.com/terminal-nerds/configs",
 	"repository": "terminal-nerds/configs.git",
 	"bugs": "https://github.com/terminal-nerds/configs/issues",
@@ -12,6 +10,8 @@
 		"pnpm": ">=6"
 	},
 	"turbo": {
+		"baseBranch": "main",
+		"npmClient": "pnpm",
 		"pipeline": {
 			"build": {
 				"dependsOn": [
@@ -28,7 +28,7 @@
 	},
 	"scripts": {
 		"build": "turbo run build",
-		"format:pkgs": "syncpack format"
+		"format:packages": "syncpack format",
 	},
 	"devDependencies": {
 		"syncpack": "^5.8.15",
