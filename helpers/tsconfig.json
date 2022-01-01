@@ -1,0 +1,11 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"module": "CommonJS",
+		"outDir": "./build",
+		"target": "ESNext"
+	},
+	"extends": "@workspace/configs/tsconfig.json",
+	"include": ["source/**/*"],
+	"exclude": ["build", "node_modules"]
+}
