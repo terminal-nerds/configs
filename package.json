@@ -32,6 +32,7 @@
 		"clean": "run-p clean:*",
 		"clean:root": "rimraf ./node_modules/.cache",
 		"clean:modules": "turbo run clean",
+		"dev": "turbo run dev",
 		"format:packages": "syncpack format",
 	},
 	"devDependencies": {
