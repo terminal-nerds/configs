@@ -1,10 +1,11 @@
 {
 	"$schema": "https://json.schemastore.org/tsconfig",
 	"compilerOptions": {
-		"outDir": "./dist"
+		"module": "CommonJS",
+		"outDir": "./dist",
+		"types": ["node", "prettier"]
 	},
-    "extends": "configs/tsconfig.json",
-    "include": ["source/**/*"],
-    "exclude": ["dist", "build", "node_modules"]
+	"extends": "@workspace/configs/tsconfig.json",
+	"include": ["source"],
+	"exclude": ["dist", "node_modules"]
 }
-
