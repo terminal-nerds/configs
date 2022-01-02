@@ -6,12 +6,12 @@ importers:
     specifiers:
       npm-run-all: ^4.1.5
       rimraf: ^3.0.2
-      syncpack: ^5.8.15
+      syncpack: ^6.0.0
       turbo: ^1.0.24
     devDependencies:
       npm-run-all: 4.1.5
       rimraf: 3.0.2
-      syncpack: 5.8.15
+      syncpack: 6.0.0
       turbo: 1.0.24
 
   configs:
@@ -225,8 +225,8 @@ packages:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
     dev: true
 
-  /commander/8.1.0:
-    resolution: {integrity: sha512-mf45ldcuHSYShkplHHGKWb4TrmwQadxOn7v4WuhDJy0ZVoY5JFajaRDKD0PNe5qXzBX0rhovjTnP6Kz9LETcuA==}
+  /commander/8.3.0:
+    resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==}
     engines: {node: '>= 12'}
     dev: true
 
@@ -234,8 +234,8 @@ packages:
     resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
     dev: true
 
-  /cosmiconfig/7.0.0:
-    resolution: {integrity: sha512-pondGvTuVYDk++upghXJabWzL6Kxu6f26ljFw64Swq9v6sQPUL3EUlVDV56diOjpCayKihL6hVe8exIACU4XcA==}
+  /cosmiconfig/7.0.1:
+    resolution: {integrity: sha512-a1YWNUV2HwGimB7dU2s1wUMurNKjpx60HxBB6xUM8Re+2s1g1IIfJvFR0/iCF+XHdE0GMTKTuLR32UQff4TEyQ==}
     engines: {node: '>=10'}
     dependencies:
       '@types/parse-json': 4.0.0
@@ -478,8 +478,12 @@ packages:
     engines: {node: '>=0.8.0'}
     dev: true
 
-  /expect-more/1.1.0:
-    resolution: {integrity: sha512-/iIJuRtKgUJwCKEHV5XtTbyrR5JEztzqHDEub6X+WLAVGEPfkEdvsTE1Y0r9vNQqhgP6Kbp9A9w6OEYUqJwLwQ==}
+  /expect-more/1.2.0:
+    resolution: {integrity: sha512-AVnjc5oh2jgiJjOrjbiKxbwLlNA/zsl2044Nbd09H4+2KwThtSLYKhdOusLYOrcToFAa2uBOWR1ExCN4kOWgbQ==}
+    dev: true
+
+  /fp-ts/2.11.5:
+    resolution: {integrity: sha512-OqlwJq1BdpB83BZXTqI+dNcA6uYk6qk4u9Cgnt64Y+XS7dwdbp/mobx8S2KXf2AXH+scNmA/UVK3SEFHR3vHZA==}
     dev: true
 
   /fs-extra/10.0.0:
@@ -513,17 +517,6 @@ packages:
     dependencies:
       call-bind: 1.0.2
       get-intrinsic: 1.1.1
-    dev: true
-
-  /glob/7.1.7:
-    resolution: {integrity: sha512-OvD9ENzPLbegENnYP5UUfJIirTg4+XwMWGaQfQTY0JenxNvvIKP3U3/tAQSPIu/lHxXYSZmpXlUHeqAIdKzBLQ==}
-    dependencies:
-      fs.realpath: 1.0.0
-      inflight: 1.0.6
-      inherits: 2.0.4
-      minimatch: 3.0.4
-      once: 1.4.0
-      path-is-absolute: 1.0.1
     dev: true
 
   /glob/7.2.0:
@@ -1007,17 +1000,19 @@ packages:
       has-flag: 4.0.0
     dev: true
 
-  /syncpack/5.8.15:
-    resolution: {integrity: sha512-V40rKrJL86eyvPLVhWP1BpG2suXOzWRCOSKGPyLdAjqXpmYPSqKh2O30lIqYSFLjw8TL0Dl5WNiVINqz7+DccQ==}
+  /syncpack/6.0.0:
+    resolution: {integrity: sha512-ZYE8eX2/PAFlGMTIwvjeVIhzeh1oscz1vXXJ3aqfRCx6TmipnlUrYfPZTYRNVqv9dQ3E1SHeWgV04P+WbJ7iKQ==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
       chalk: 4.1.2
-      commander: 8.1.0
-      cosmiconfig: 7.0.0
-      expect-more: 1.1.0
+      commander: 8.3.0
+      cosmiconfig: 7.0.1
+      expect-more: 1.2.0
+      fp-ts: 2.11.5
       fs-extra: 10.0.0
-      glob: 7.1.7
+      glob: 7.2.0
+      minimatch: 3.0.4
       read-yaml-file: 2.1.0
       semver: 7.3.5
     dev: true
