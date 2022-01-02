@@ -14,7 +14,7 @@
 
 ## Used plugins
 
-This configuration module for [Prettier] loads plugins options _conditionally_.
+ℹ️ This configuration module for [Prettier] loads plugins options _conditionally_.
 
 | Plugin                   | Loading condition(s)   |
 | ------------------------ | ---------------------- |
@@ -26,8 +26,10 @@ This configuration module for [Prettier] loads plugins options _conditionally_.
 
 ## Basic usage
 
+⚙️ Follow the steps below:
+
 1. Install it with the [Node.js] package manager of your choice. In our case,
-   we use [`pnpm`](pnpm) .\
+   we use [`pnpm`](pnpm).\
    Example:
 
     ```sh
@@ -53,9 +55,9 @@ This configuration module for [Prettier] loads plugins options _conditionally_.
     module.exports = config;
     ```
 
-    For [Prettier CLI] usage, please refer to their documentation.
+    For [Prettier CLI] usage, please refer to its documentation.
 
-    We recommend to use [`pretty-quick`](pretty-quick) instead, for more
+    ➡️ We recommend to use [`pretty-quick`](pretty-quick) instead, for more
     human-friendly output and performance.
 
     [prettier configuration file]: https://prettier.io/docs/en/configuration.html
@@ -68,7 +70,7 @@ This configuration module for [Prettier] loads plugins options _conditionally_.
 
 [![license badge]][license]
 
-For moree information, please refer to [License section] in the root of the monorepo.
+⚖️ For more information, please refer to [License section] in the root of the monorepo.
 
 [license badge]: https://img.shields.io/github/license/terminal-nerds/configs?style=for-the-badge
 [license]: https://github.com/terminal-nerds/configs/blob/main/LICENSE.md
