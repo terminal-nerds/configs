@@ -19,6 +19,10 @@
 	"engines": {
 		"node": ">=16"
 	},
+	"main": "dist/index.js",
+	"files": [
+		"/dist"
+	],
 	"scripts": {
 		"build": "run-s build:*",
 		"build:module": "esbuild --bundle ./source/index.ts --outdir=./dist --minify --sourcemap --platform=node --target=node16 --format=cjs --analyze=verbose --color=true",
@@ -30,11 +34,17 @@
 		"dev:module": "pnpm build:module -- --watch",
 		"dev:types": "pnpm build:types -- --watch"
 	},
+	"peerDependencies": {
+		"eslint": "^8.6.0"
+	},
 	"devDependencies": {
 		"@types/node": "^17.0.5",
 		"@workspace/configs": "workspace:*",
 		"@workspace/helpers": "workspace:*",
+		"deepmerge-ts": "^2.0.1",
 		"esbuild": "^0.14.10",
+		"eslint": "^8.6.0",
+		"eslint-define-config": "^1.2.1",
 		"npm-run-all": "^4.1.5",
 		"rimraf": "^3.0.2",
 		"tslib": "^2.3.1",
