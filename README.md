@@ -11,7 +11,7 @@ This project is a [monorepo] made with [pnpm workspaces] and powered by
 
 ## Project goal
 
-The objective is to keep used **tool(s) configuration(s), which can be shared
+🎯 The objective is to keep used **tool(s) configuration(s), which can be shared
 and extendable** between the projects as an isolated, maintainable package,
 added as a dependency. Thus, to save time configuring, installing, upgrading
 plugins dependencies, etc.
@@ -20,7 +20,7 @@ plugins dependencies, etc.
 
 ## Packages
 
-The following packages are available under the [packages/](./packages)
+📦 The following packages are available under the [packages/](./packages)
 directory. Each of them has its own instructions _(in the `README.md` files)_
 on how to use them.
 
@@ -34,8 +34,8 @@ from our [GitHub packages] registry.
 | Name                                                         | Version                              |
 | ------------------------------------------------------------ | ------------------------------------ |
 | [`@terminal-nerds/config-eslint`](config-eslint)             | ![config-eslint version badge]       |
-| [`@terminal-nerds/config-prettier`](config-prettier)         | ![config-prettier version badge]     |
 | [`@terminal-nerds/config-markdownlint`](config-markdownlint) | ![config-markdownlint version badge] |
+| [`@terminal-nerds/config-prettier`](config-prettier)         | ![config-prettier version badge]     |
 | [`@terminal-nerds/config-stylelint`](config-stylelint)       | ![config-stylelint version badge]    |
 
 [config-eslint]: ./packages/eslint/README.md
@@ -49,16 +49,10 @@ from our [GitHub packages] registry.
 
 ---
 
-## Security
-
-TBA...
-
----
-
 ## License
 
 [![License shield]](./LICENSE.md "Project's license")
 
-**The code and packages** are licensed under the [MIT license](./LICENSE.md).
+⚖️ **The code and packages** are licensed under the [MIT license](./LICENSE.md).
 
 [license shield]: https://img.shields.io/github/license/terminal-nerds/configs?style=for-the-badge
