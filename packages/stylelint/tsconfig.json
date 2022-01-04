@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"module": "CommonJS",
+		"outDir": "./dist",
+		"tsBuildInfoFile": "./node_modules/.cache/.tsbuildinfo",
+		"types": ["node"]
+	},
+	"extends": "@workspace/configs/tsconfig.json",
+	"include": ["source"],
+	"exclude": ["dist", "node_modules"]
+}

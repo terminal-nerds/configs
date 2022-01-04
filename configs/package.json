@@ -1,0 +1,7 @@
+{
+	"name": "@workspace/configs",
+	"private": true,
+	"files": [
+		"tsconfig.json"
+	]
+}
