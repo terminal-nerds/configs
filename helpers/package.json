@@ -1,0 +1,29 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"name": "@workspace/helpers",
+	"private": true,
+	"main": "build/index.js",
+	"files": [
+		"/build"
+	],
+	"scripts": {
+		"build": "run-p build:*",
+		"build:module": "esbuild --bundle ./source/index.ts --outdir=./build --minify --sourcemap --platform=node --target=node16 --format=cjs",
+		"build:types": "tsc --emitDeclarationOnly",
+		"clean": "run-p clean:*",
+		"clean:build": "rimraf ./build",
+		"clean:cache": "rimraf ./node_modules/.cache",
+		"dev": "run-p dev:*",
+		"dev:module": "pnpm build:module -- --watch",
+		"dev:types": "pnpm build:types -- --watch"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.5",
+		"@workspace/configs": "workspace:*",
+		"esbuild": "^0.14.10",
+		"npm-run-all": "^4.1.5",
+		"rimraf": "^3.0.2",
+		"tslib": "^2.3.1",
+		"typescript": "^4.5.4"
+	}
+}
