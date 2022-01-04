@@ -42,7 +42,7 @@
 		"lint": "ultra --root --recursive lint:all",
 		"lint:all": "pnpm lint:format && pnpm lint:js && pnpm lint:md",
 		"lint:format": "pretty-quick --branch develop --pattern \"**/*\" --pattern \"!{helpers,packages}/**/*\" --verbose --check",
-		"lint:js": "eslint . --ext .cjs,.json --ignore \"./packages\" --cache --cache-location \"./node_modules/.cache/eslint\"",
+		"lint:js": "eslint . --ext .cjs,.json,.yml,.yaml --ignore \"./packages\" --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"./.gitignore\" --ignore \"./{helpers,packages}/**/*\""
 	},
 	"devDependencies": {

@@ -15,6 +15,7 @@ const config = defineConfig({
 		"**/.vercel",
 		"**/build",
 		"**/dist",
+		"pnpm-lock.yaml",
 		// Unignore files starting with dot (usually configuration files)
 		"!.*",
 	],

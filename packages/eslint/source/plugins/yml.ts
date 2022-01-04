@@ -1,14 +1,14 @@
 import { defineConfig } from "eslint-define-config";
 
-// https://github.com/ota-meshi/eslint-plugin-jsonc
+// https://github.com/ota-meshi/eslint-plugin-yml
 const config = defineConfig({
-	extends: ["plugin:jsonc/recommended-with-jsonc", "plugin:jsonc/prettier"],
+	extends: ["plugin:yml/recommended", "plugin:yml/prettier"],
 
 	overrides: [
 		{
-			files: ["*.json", "*.json5", "*.jsonc"],
+			files: ["*.yml", "*.yaml"],
 			// @ts-ignore: `eslint-define-config` doesn't have this specified in `Overrides` type
-			parser: "jsonc-eslint-parser",
+			parser: "yaml-eslint-parser",
 		},
 	],
 });
