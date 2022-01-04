@@ -57,6 +57,7 @@ importers:
       '@workspace/helpers': workspace:*
       deepmerge-ts: ^2.0.1
       eslint: ^8.6.0
+      eslint-config-prettier: ^8.3.0
       eslint-define-config: ^1.2.1
       eslint-plugin-jsonc: ^2.0.0
       eslint-plugin-yml: ^0.12.0
@@ -71,6 +72,7 @@ importers:
       '@workspace/helpers': link:../../helpers
       deepmerge-ts: 2.0.1
       eslint: 8.6.0
+      eslint-config-prettier: 8.3.0_eslint@8.6.0
       eslint-define-config: 1.2.1
       eslint-plugin-jsonc: 2.0.0_eslint@8.6.0
       eslint-plugin-yml: 0.12.0_eslint@8.6.0
@@ -820,6 +822,15 @@ packages:
   /escape-string-regexp/4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
+    dev: true
+
+  /eslint-config-prettier/8.3.0_eslint@8.6.0:
+    resolution: {integrity: sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==}
+    hasBin: true
+    peerDependencies:
+      eslint: '>=7.0.0'
+    dependencies:
+      eslint: 8.6.0
     dev: true
 
   /eslint-define-config/1.2.1:

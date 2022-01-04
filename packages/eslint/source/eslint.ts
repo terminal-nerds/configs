@@ -20,7 +20,10 @@ const config = defineConfig({
 		"!.*",
 	],
 
-	extends: ["eslint:recommended"],
+	extends: [
+		"eslint:recommended",
+		"prettier", // https://github.com/prettier/eslint-config-prettier
+	],
 
 	rules: {
 		"indent": ["warn", "tab", { SwitchCase: 1 }],
