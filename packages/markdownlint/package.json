@@ -26,5 +26,11 @@
 	},
 	"peerDependencies": {
 		"markdownlint-cli": "^0.30.0"
+		},
+	"scripts": {
+		"format": "pretty-quick --branch develop --pattern \"packages/markdownlint/**/*\" --verbose",
+		"lint": "run-s lint:* --continue-on-error",
+		"lint:format": "pretty-quick --branch develop --pattern \"packages/markdownlint/**/*\" --verbose --check",
+		"lint:md": "markdownlint . --dot --ignore-path ../../.gitignore"
 	}
 }

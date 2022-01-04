@@ -25,23 +25,29 @@
 	],
 	"scripts": {
 		"build": "run-s build:*",
-		"build:module": "esbuild --bundle ./source/index.ts --outdir=./dist --minify --sourcemap --platform=node --target=node16 --format=cjs --analyze=verbose --color=true",
+		"build:module": "esbuild --bundle \"./source/index.ts\" --outdir=\"./dist\" --minify --sourcemap --platform=node --target=node16 --format=cjs --analyze=verbose --color=true",
 		"build:types": "tsc --emitDeclarationOnly",
-		"clean:*": "run-s clean:*",
-		"clean:build": "rimraf ./dist",
-		"clean:cache": "rimraf ./node_modules/.cache",
+		"clean": "run-s clean:*",
+		"clean:build": "rimraf \"./dist\"",
+		"clean:cache": "rimraf \"./node_modules/.cache\"",
 		"dev": "run-p dev:*",
 		"dev:module": "pnpm build:module -- --watch",
-		"dev:types": "pnpm build:types -- --watch"
+		"dev:types": "pnpm build:types -- --watch",
+		"format": "pretty-quick --branch develop --pattern \"packages/prettier/**/*\" --verbose",
+		"lint": "run-s lint:* --continue-on-error",
+		"lint:format": "pretty-quick --branch develop --pattern \"packages/prettier/**/*\" --verbose --check",
+		"lint:js": "eslint . --ext .json,.ts --cache --cache-location \"./node_modules/.cache/eslint\"",
+		"lint:types": "tsc --noEmit"
+	},
+	"peerDependencies": {
+		"prettier": "^2.5.1"
 	},
 	"devDependencies": {
 		"@types/node": "^17.0.5",
 		"@workspace/configs": "workspace:*",
 		"@workspace/helpers": "workspace:*",
-		"esbuild": "^0.14.10",
-		"npm-run-all": "^4.1.5",
-		"rimraf": "^3.0.2",
-		"tslib": "^2.3.1",
-		"typescript": "^4.5.4"
+		"deepmerge-ts": "^2.0.1",
+		"prettier": "^2.5.1",
+		"prettier-plugin-svelte": "^2.5.1"
 	}
 }

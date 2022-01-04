@@ -5,7 +5,8 @@
 	"homepage": "https://github.com/terminal-nerds/configs",
 	"repository": "terminal-nerds/configs.git",
 	"bugs": "https://github.com/terminal-nerds/configs/issues",
-	"engines": { "node": ">=16",
+	"engines": {
+		"node": ">=16",
 		"pnpm": ">=6"
 	},
 	"turbo": {
@@ -23,24 +24,39 @@
 			"clean": {},
 			"dev": {
 				"cache": false
-			}
+			},
+			"format": {},
+			"lint": {}
 		}
 	},
 	"scripts": {
 		"build": "turbo run build",
 		"clean": "run-p clean:*",
-		"clean:root": "rimraf \"./node_modules/.cache\"",
-		"clean:modules": "turbo run clean",
-		"dev": "turbo run dev",
-		"format:packages": "syncpack format",
-		"lint:md": "markdownlint \"**/*.md\""
+		"clean:cache": "rimraf \"./node_modules/.cache\"",
+		"clean:modules": "ultra --recursive clean",
+		"dev": "turbo run dev --parallel",
+		"format": "run-s format:*",
+		"format:modules": "ultra --recursive format",
+		"format:root": "pretty-quick --branch develop --pattern \"**/*\" --pattern \"!packages/**/*\" --verbose",
+		"format:syncpack": "syncpack format",
+		"lint": "run-s lint:* --continue-on-error",
+		"lint:format": "pretty-quick --branch develop --pattern \"**/*\" --pattern \"!packages/**/*\" --pattern \"!pnpm-lock.yaml\" --verbose --check",
+		"lint:js": "eslint . --ext .cjs,.json --ignore \"./packages\" --cache --cache-location \"./node_modules/.cache/eslint\"",
+		"lint:modules": "ultra --recursive lint"
 	},
 	"devDependencies": {
-		"@terminal-nerds/config-markdownlint": "workspace:*",
-		"markdownlint-cli": "^0.30.0",
+		"@terminal-nerds/config-eslint": "workspace:*",
+		"@terminal-nerds/config-prettier": "workspace:*",
+		"esbuild": "^0.14.10",
+		"eslint": "^8.6.0",
 		"npm-run-all": "^4.1.5",
+		"prettier": "^2.5.1",
+		"pretty-quick": "^3.1.3",
 		"rimraf": "^3.0.2",
-		"syncpack": "^5.8.15",
-		"turbo": "^1.0.24"
+		"syncpack": "^6.0.0",
+		"tslib": "^2.3.1",
+		"turbo": "^1.0.24",
+		"typescript": "^4.5.4",
+		"ultra-runner": "^3.10.5"
 	}
 }

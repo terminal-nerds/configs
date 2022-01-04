@@ -3,6 +3,7 @@
 	"compilerOptions": {
 		"module": "CommonJS",
 		"outDir": "./dist",
+		"tsBuildInfoFile": "./node_modules/.cache/.tsbuildinfo",
 		"types": ["node", "prettier"]
 	},
 	"extends": "@workspace/configs/tsconfig.json",
