@@ -2,24 +2,12 @@ import type { Config } from "stylelint";
 
 import { hasModule } from "@workspace/helpers";
 
+// https://github.com/stylelint-scss/stylelint-scss
 const config: Partial<Config> = {
-	ignoreFiles: [
-		"**/node_modules",
-		"**/.git",
-		"**/.husky",
-		"**/.svelte-kit",
-		"**/.turbo",
-		"**/.vercel",
-		"**/build",
-		"**/dist",
-		// Unignore files starting with dot (usually configuration files)
-		"!.*",
-	],
+	plugins: ["stylelint-scss"],
 
 	rules: {
-		// https://stylelint.io/user-guide/rules/list
-
-		"at-rule-no-unknown": hasModule("scss") ? undefined : [
+		"scss/at-rule-no-unknown": [
 			true,
 			{
 				ignoreAtRules: [
