@@ -22,7 +22,7 @@
 	"main": "markdownlint.json",
 	"scripts": {
 		"format": "pretty-quick --branch develop --pattern \"packages/markdownlint/**/*\" --verbose",
-		"lint": "run-s lint:* --continue-on-error",
+		"lint": "pnpm lint:format && pnpm lint:md",
 		"lint:format": "pretty-quick --branch develop --pattern \"packages/markdownlint/**/*\" --verbose --check",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\""
 	},

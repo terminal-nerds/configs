@@ -31,19 +31,19 @@
 	},
 	"scripts": {
 		"build": "turbo run build",
-		"clean": "run-p clean:*",
+		"clean": "ultra --root --recursive clean:all",
+		"clean:all": "pnpm clean:cache",
 		"clean:cache": "rimraf \"./node_modules/.cache\"",
-		"clean:modules": "ultra --recursive clean",
 		"dev": "turbo run dev --parallel",
-		"format": "run-s format:*",
-		"format:modules": "ultra --recursive format",
-		"format:root": "pretty-quick --branch develop --pattern \"**/*\" --pattern \"!packages/**/*\" --verbose",
+		"format": "ultra --root --recursive format:all",
+		"format:all": "pnpm format:prettier && pnpm format:syncpack",
+		"format:prettier": "pretty-quick --branch develop --pattern \"**/*\" --pattern \"!{helpers,packages}/**/*\" --verbose",
 		"format:syncpack": "syncpack format",
-		"lint": "run-s lint:* --continue-on-error",
-		"lint:format": "pretty-quick --branch develop --pattern \"**/*\" --pattern \"!packages/**/*\" --pattern \"!pnpm-lock.yaml\" --verbose --check",
+		"lint": "ultra --root --recursive lint:all",
+		"lint:all": "pnpm lint:format && pnpm lint:js && pnpm lint:md",
+		"lint:format": "pretty-quick --branch develop --pattern \"**/*\" --pattern \"!{helpers,packages}/**/*\" --verbose --check",
 		"lint:js": "eslint . --ext .cjs,.json --ignore \"./packages\" --cache --cache-location \"./node_modules/.cache/eslint\"",
-		"lint:md": "markdownlint . --dot --ignore-path \"./.gitignore\" --ignore \"./packages/**/*\"",
-		"lint:modules": "ultra --recursive lint"
+		"lint:md": "markdownlint . --dot --ignore-path \"./.gitignore\" --ignore \"./{helpers,packages}/**/*\""
 	},
 	"devDependencies": {
 		"@terminal-nerds/config-eslint": "workspace:*",
