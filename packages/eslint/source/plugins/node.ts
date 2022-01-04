@@ -5,6 +5,7 @@ const config = defineConfig({
 	extends: ["plugin:node/recommended"],
 	rules: {
 		"node/no-unpublished-import": ["off"],
+		"node/no-unpublished-require": ["off"],
 		"node/no-missing-import": ["off"],
 		"node/no-unsupported-features/es-syntax": [
 			"error",
