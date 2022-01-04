@@ -4,7 +4,7 @@
 		"module": "CommonJS",
 		"outDir": "./dist",
 		"tsBuildInfoFile": ".tsbuildinfo",
-		"types": ["eslint", "node"]
+		"types": ["node"]
 	},
 	"extends": "@workspace/configs/tsconfig.json",
 	"include": ["source"],

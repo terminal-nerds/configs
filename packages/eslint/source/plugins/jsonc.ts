@@ -7,8 +7,10 @@ const config = defineConfig({
 	overrides: [
 		{
 			files: ["*.json", "*.json5", "*.jsonc"],
-			// @ts-ignore
-			parser: "jsonc-eslint-parser",
+			// @ts-ignore: `eslint-define-config` doesn't have this specified in `Overrides` type
+			parserOptions: {
+				parser: "jsonc-eslint-parser",
+			},
 		},
 	],
 });

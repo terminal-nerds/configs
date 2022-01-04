@@ -1,11 +1,12 @@
 # Configs
 
 This project is a [monorepo] made with [pnpm workspaces] and powered by
-[Turborepo].
+[Turborepo] and [ultra-runner].
 
 [monorepo]: https://en.wikipedia.org/wiki/Monorepo
 [pnpm workspaces]: https://pnpm.io/workspaces
 [turborepo]: https://turborepo.org/
+[ultra-runner]: https://github.com/folke/ultra-runner
 
 ---
 
@@ -54,5 +55,3 @@ from our [GitHub packages] registry.
 [![License shield]](./LICENSE.md "Project's license")
 
 ⚖️ **The code and packages** are licensed under the [MIT license](./LICENSE.md).
-
-[license shield]: https://img.shields.io/github/license/terminal-nerds/configs?style=for-the-badge

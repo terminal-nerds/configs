@@ -3,7 +3,7 @@ const config = {
 
 	env: {
 		node: true,
-	}
-}
+	},
+};
 
 module.exports = config;
