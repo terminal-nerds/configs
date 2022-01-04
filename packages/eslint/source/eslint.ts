@@ -1,6 +1,7 @@
 import { defineConfig } from "eslint-define-config";
 
 const config = defineConfig({
+	parser: "@typescript-eslint/parser",
 	parserOptions: {
 		ecmaVersion: "latest",
 		sourceType: "module",
@@ -20,10 +21,7 @@ const config = defineConfig({
 		"!.*",
 	],
 
-	extends: [
-		"eslint:recommended",
-		"prettier", // https://github.com/prettier/eslint-config-prettier
-	],
+	extends: ["eslint:recommended"],
 
 	rules: {
 		"indent": ["warn", "tab", { SwitchCase: 1 }],
