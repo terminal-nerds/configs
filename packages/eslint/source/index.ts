@@ -1,10 +1,11 @@
 import { deepmerge } from "deepmerge-ts";
 
-import { hasModule } from "@workspace/helpers";
+import { hasModule, isContinuousIntegration } from "@workspace/helpers";
 
 import eslintDefault from "./eslint";
 import configPrettier from "./configs/prettier";
 import pluginCompat from "./plugins/compat";
+import pluginDiff from "./plugins/diff";
 import pluginImport from "./plugins/import";
 import pluginJSONC from "./plugins/jsonc";
 import pluginJSONSchemaValidator from "./plugins/json-schema-validator";
@@ -20,6 +21,7 @@ const configurations = deepmerge(
 	eslintDefault,
 	{ ...(hasModule("typescript") && pluginTypeScript) },
 	pluginCompat,
+	{ ...(isContinuousIntegration() && pluginDiff) },
 	pluginImport,
 	pluginJSONC,
 	pluginJSONSchemaValidator,
