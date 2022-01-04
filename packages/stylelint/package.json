@@ -33,6 +33,7 @@
 		"lint": "run-s lint:* --continue-on-error",
 		"lint:format": "pretty-quick --branch develop --pattern \"packages/stylelint/**/*\" --verbose --check",
 		"lint:js": "eslint . --ext .json,.ts --cache --cache-location \"./node_modules/.cache/eslint\"",
+		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
 		"lint:types": "tsc --noEmit"
 	},
 	"devDependencies": {
