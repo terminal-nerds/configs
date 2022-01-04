@@ -5,9 +5,11 @@ importers:
   .:
     specifiers:
       '@terminal-nerds/config-eslint': workspace:*
+      '@terminal-nerds/config-markdownlint': workspace:*
       '@terminal-nerds/config-prettier': workspace:*
       esbuild: ^0.14.10
       eslint: ^8.6.0
+      markdownlint-cli: ^0.30.0
       npm-run-all: ^4.1.5
       prettier: ^2.5.1
       pretty-quick: ^3.1.3
@@ -19,9 +21,11 @@ importers:
       ultra-runner: ^3.10.5
     devDependencies:
       '@terminal-nerds/config-eslint': link:packages/eslint
+      '@terminal-nerds/config-markdownlint': link:packages/markdownlint
       '@terminal-nerds/config-prettier': link:packages/prettier
       esbuild: 0.14.10
       eslint: 8.6.0
+      markdownlint-cli: 0.30.0
       npm-run-all: 4.1.5
       prettier: 2.5.1
       pretty-quick: 3.1.3_prettier@2.5.1

@@ -57,4 +57,3 @@ from our [GitHub packages] registry.
 ⚖️ **The code and packages** are licensed under the [MIT license](./LICENSE.md).
 
 [license shield]: https://img.shields.io/github/license/terminal-nerds/configs?style=for-the-badge
-
