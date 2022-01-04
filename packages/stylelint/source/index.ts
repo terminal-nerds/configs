@@ -13,11 +13,11 @@ import pluginSCSS from "./plugins/scss";
 
 const configurations = deepmerge(
 	stylelintDefault,
-	{ ...(hasModule("scss") ? configStandardSCSS : configStandard) },
+	{ ...(hasModule("sass") ? configStandardSCSS : configStandard) },
 	pluginHighPerformanceAnimations,
 	pluginNoUnsupportedBrowserFeatures,
 	pluginOrder,
-	{ ...(hasModule("scss") && pluginSCSS) },
+	{ ...(hasModule("sass") && pluginSCSS) },
 	// NOTE: Must come as last!
 	configPrettier,
 );
