@@ -1,6 +1,6 @@
 import type { Config } from "stylelint";
 
-import { hasModule } from "@workspace/helpers";
+import { extendTailwindAtRuleSelectors } from "../other/tailwind";
 
 // https://github.com/stylelint-scss/stylelint-scss
 const config: Partial<Config> = {
@@ -10,18 +10,7 @@ const config: Partial<Config> = {
 		"scss/at-rule-no-unknown": [
 			true,
 			{
-				ignoreAtRules: [
-					...(hasModule("tailwindcss")
-						? [
-								// TailwindCSS specific at rule selectors
-								"tailwind",
-								"apply",
-								"variants",
-								"responsive",
-								"screen",
-						  ]
-						: ""),
-				],
+				ignoreAtRules: [...extendTailwindAtRuleSelectors()],
 			},
 		],
 	},

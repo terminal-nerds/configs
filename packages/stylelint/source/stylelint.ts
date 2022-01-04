@@ -1,6 +1,7 @@
 import type { Config } from "stylelint";
 
 import { hasModule } from "@workspace/helpers";
+import { extendTailwindAtRuleSelectors } from "./other/tailwind";
 
 const config: Partial<Config> = {
 	ignoreFiles: [
@@ -19,23 +20,14 @@ const config: Partial<Config> = {
 	rules: {
 		// https://stylelint.io/user-guide/rules/list
 
-		"at-rule-no-unknown": hasModule("scss") ? undefined : [
-			true,
-			{
-				ignoreAtRules: [
-					...(hasModule("tailwindcss")
-						? [
-								// TailwindCSS specific at rule selectors
-								"tailwind",
-								"apply",
-								"variants",
-								"responsive",
-								"screen",
-						  ]
-						: ""),
-				],
-			},
-		],
+		"at-rule-no-unknown": hasModule("scss")
+			? undefined
+			: [
+					true,
+					{
+						ignoreAtRules: [...extendTailwindAtRuleSelectors()],
+					},
+			  ],
 	},
 };
 
