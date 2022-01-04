@@ -42,6 +42,7 @@
 		"lint": "run-s lint:* --continue-on-error",
 		"lint:format": "pretty-quick --branch develop --pattern \"**/*\" --pattern \"!packages/**/*\" --pattern \"!pnpm-lock.yaml\" --verbose --check",
 		"lint:js": "eslint . --ext .cjs,.json --ignore \"./packages\" --cache --cache-location \"./node_modules/.cache/eslint\"",
+		"lint:md": "markdownlint . --dot --ignore-path \"./.gitignore\" --ignore \"./packages/**/*\"",
 		"lint:modules": "ultra --recursive lint"
 	},
 	"devDependencies": {
