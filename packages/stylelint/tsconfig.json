@@ -3,7 +3,7 @@
 	"compilerOptions": {
 		"module": "CommonJS",
 		"outDir": "./dist",
-		"tsBuildInfoFile": "./node_modules/.cache/.tsbuildinfo",
+		"tsBuildInfoFile": ".tsbuildinfo",
 		"types": ["node"]
 	},
 	"extends": "@workspace/configs/tsconfig.json",

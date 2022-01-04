@@ -1,4 +1,7 @@
+/* eslint-disable unicorn/prefer-module */
 import { defineConfig } from "eslint-define-config";
+
+const commentRuleOptions = "allow-with-description";
 
 // https://github.com/typescript-eslint/typescript-eslint
 const config = defineConfig({
@@ -12,10 +15,10 @@ const config = defineConfig({
 		"@typescript-eslint/ban-ts-comment": [
 			"warn",
 			{
-				"ts-expect-error": "allow-with-description",
-				"ts-ignore": "allow-with-description",
-				"ts-nocheck": "allow-with-description",
-				"ts-check": "allow-with-description",
+				"ts-expect-error": commentRuleOptions,
+				"ts-ignore": commentRuleOptions,
+				"ts-nocheck": commentRuleOptions,
+				"ts-check": commentRuleOptions,
 				"minimumDescriptionLength": 3,
 			},
 		],
