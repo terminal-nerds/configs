@@ -24,7 +24,7 @@ const config = defineConfig({
 	extends: ["eslint:recommended"],
 
 	rules: {
-		"indent": ["warn", "tab", { SwitchCase: 1 }],
+		// "indent": ["warn", "tab", { SwitchCase: 1 }],
 		"max-len": [
 			"warn",
 			{
@@ -35,10 +35,7 @@ const config = defineConfig({
 				ignoreUrls: true,
 			},
 		],
-		"quotes": ["warn", "double", { avoidEscape: true }],
 		"no-console": ["warn", { allow: ["debug"] }],
-		"no-alert": ["error"],
-		"no-debugger": ["error"],
 		"func-names": ["error", "as-needed"],
 	},
 });

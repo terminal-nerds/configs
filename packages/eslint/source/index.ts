@@ -11,6 +11,7 @@ import pluginJSONSchemaValidator from "./plugins/json-schema-validator";
 import pluginNode from "./plugins/node";
 import pluginRegExp from "./plugins/regexp";
 import pluginSonarJS from "./plugins/sonarjs";
+import pluginSvelte3 from "./plugins/svelte3";
 import pluginTypeScript from "./plugins/typescript";
 import pluginUnicorn from "./plugins/unicorn";
 import pluginYML from "./plugins/yml";
@@ -26,7 +27,9 @@ const configurations = deepmerge(
 	pluginRegExp,
 	pluginSonarJS,
 	pluginUnicorn,
+	{ ...(hasModule("svelte") && pluginSvelte3) },
 	pluginYML,
+	// NOTE: Must come as last!
 	configPrettier,
 );
 

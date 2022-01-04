@@ -66,6 +66,7 @@ importers:
       eslint-plugin-node: ^11.1.0
       eslint-plugin-regexp: ^1.5.1
       eslint-plugin-sonarjs: ^0.11.0
+      eslint-plugin-svelte3: ^3.2.1
       eslint-plugin-unicorn: ^40.0.0
       eslint-plugin-yml: ^0.12.0
       jsonc-eslint-parser: ^2.0.4
@@ -88,6 +89,7 @@ importers:
       eslint-plugin-node: 11.1.0_eslint@8.6.0
       eslint-plugin-regexp: 1.5.1_eslint@8.6.0
       eslint-plugin-sonarjs: 0.11.0_eslint@8.6.0
+      eslint-plugin-svelte3: 3.2.1_eslint@8.6.0
       eslint-plugin-unicorn: 40.0.0_eslint@8.6.0
       eslint-plugin-yml: 0.12.0_eslint@8.6.0
       jsonc-eslint-parser: 2.0.4_eslint@8.6.0
@@ -1098,6 +1100,16 @@ packages:
     engines: {node: '>=12'}
     peerDependencies:
       eslint: ^5.0.0 || ^6.0.0 || ^7.0.0|| ^8.0.0
+    dependencies:
+      eslint: 8.6.0
+    dev: true
+
+  /eslint-plugin-svelte3/3.2.1_eslint@8.6.0:
+    resolution: {integrity: sha512-YoBR9mLoKCjGghJ/gvpnFZKaMEu/VRcuxpSRS8KuozuEo7CdBH7bmBHa6FmMm0i4kJnOyx+PVsaptz96K6H/4Q==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      eslint: '>=6.0.0'
+      svelte: ^3.2.0
     dependencies:
       eslint: 8.6.0
     dev: true
