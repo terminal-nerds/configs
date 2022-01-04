@@ -10,7 +10,6 @@ const config = {
 	sortAz: [
 		"engines",
 		"files",
-		"scripts",
 		"peerDependencies",
 		"dependencies",
 		"devDependencies",
