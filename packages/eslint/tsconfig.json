@@ -3,7 +3,8 @@
 	"compilerOptions": {
 		"module": "CommonJS",
 		"outDir": "./dist",
-		"types": ["node"]
+		"tsBuildInfoFile": "./node_modules/.cache/tsbuildinfo",
+		"types": ["eslint", "node"]
 	},
 	"extends": "@workspace/configs/tsconfig.json",
 	"include": ["source"],
