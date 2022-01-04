@@ -9,4 +9,5 @@ const configurations = deepmerge(prettierDefault, {
 	...(hasModule("svelte") && pluginSvelte),
 });
 
+// eslint-disable-next-line unicorn/prefer-module
 module.exports = configurations;

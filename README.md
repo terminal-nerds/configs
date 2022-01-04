@@ -55,5 +55,3 @@ from our [GitHub packages] registry.
 [![License shield]](./LICENSE.md "Project's license")
 
 ⚖️ **The code and packages** are licensed under the [MIT license](./LICENSE.md).
-
-[license shield]: https://img.shields.io/github/license/terminal-nerds/configs?style=for-the-badge
