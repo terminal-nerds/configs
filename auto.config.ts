@@ -99,8 +99,8 @@ const config: AutoRc = {
 			releaseType: "patch",
 		},
 	],
-	onlyPublishWithReleaseLabel: true,
 
+	onlyPublishWithReleaseLabel: true,
 
 	plugins: [
 		["all-contributors", allContributorsOptions],
@@ -112,6 +112,8 @@ const config: AutoRc = {
 		["pr-body-labels", prBodyLabelsOptions],
 		["released", releasedOptions],
 	],
+
+	prereleaseBranches: ["develop"],
 };
 
 export default config;
