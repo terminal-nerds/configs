@@ -113,7 +113,7 @@ const config: AutoRc = {
 		["released", releasedOptions],
 	],
 
-	prereleaseBranches: ["develop"],
+	prereleaseBranches: ["develop", "next"],
 };
 
 export default config;
