@@ -1,3 +1,26 @@
-export function hello() {
-	console.log("There's supposed to be a Stylelint configuration.");
-}
+import { deepmerge } from "deepmerge-ts";
+
+import { hasModule } from "@workspace/helpers";
+
+import stylelintDefault from "./stylelint";
+import configPrettier from "./configs/prettier";
+import configStandard from "./configs/standard";
+import configStandardSCSS from "./configs/standard-scss";
+import pluginHighPerformanceAnimations from "./plugins/high-performance-animations";
+import pluginNoUnsupportedBrowserFeatures from "./plugins/no-unsupported-browser-features";
+import pluginOrder from "./plugins/order";
+import pluginSCSS from "./plugins/scss";
+
+const configurations = deepmerge(
+	stylelintDefault,
+	{ ...(hasModule("sass") ? configStandardSCSS : configStandard) },
+	pluginHighPerformanceAnimations,
+	pluginNoUnsupportedBrowserFeatures,
+	pluginOrder,
+	{ ...(hasModule("sass") && pluginSCSS) },
+	// NOTE: Must come as last!
+	configPrettier,
+);
+
+// eslint-disable-next-line unicorn/prefer-module
+module.exports = configurations;

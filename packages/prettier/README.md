@@ -70,7 +70,7 @@
 
 [![license badge]][license]
 
-⚖️ For more information, please refer to [License section] in the root of the monorepo.
+⚖️ For more information, please refer to the [License section] at the root of monorepo.
 
 [license badge]: https://img.shields.io/github/license/terminal-nerds/configs?style=for-the-badge
 [license]: https://github.com/terminal-nerds/configs/blob/main/LICENSE.md
