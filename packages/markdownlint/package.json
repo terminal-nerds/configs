@@ -1,7 +1,7 @@
 {
 	"$schema": "https://json.schemastore.org/package",
 	"publishConfig": {
-		"registry": "https://npm.pkg.github.com",
+		"registry": "https://registry.npmjs.org/",
 		"access": "public"
 	},
 	"name": "@terminal-nerds/config-markdownlint",
