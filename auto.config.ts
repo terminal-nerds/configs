@@ -31,7 +31,6 @@ const conventionalCommitsOptions: ConventionalCommitsOptions = {
 
 /** @see https://intuit.github.io/auto/docs/generated/npm */
 const npmOptions: INpmConfig = {
-	exact: true,
 	canaryScope: "@auto-canary",
 };
 
@@ -104,12 +103,12 @@ const config: AutoRc = {
 
 	plugins: [
 		["all-contributors", allContributorsOptions],
-		["conventional-commits", conventionalCommitsOptions],
+		"conventional-commits",
 		"first-time-contributor",
 		["npm", npmOptions],
-		["omit-commits", omitCommitsOptions],
-		["omit-release-notes", omitReleaseNotesOptions],
-		["pr-body-labels", prBodyLabelsOptions],
+		// ["omit-commits", omitCommitsOptions],
+		// ["omit-release-notes", omitReleaseNotesOptions],
+		// ["pr-body-labels", prBodyLabelsOptions],
 		["released", releasedOptions],
 	],
 
