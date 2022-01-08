@@ -27,14 +27,7 @@
 		"lint:md": "markdownlint . --dot --ignore-path \"./.gitignore\" --ignore \"./{helpers,packages}/**/*\""
 	},
 	"devDependencies": {
-		"@auto-it/all-contributors": "^10.32.5",
-		"@auto-it/conventional-commits": "^10.32.5",
-		"@auto-it/first-time-contributor": "^10.32.5",
-		"@auto-it/npm": "^10.32.5",
-		"@auto-it/omit-commits": "^10.32.5",
-		"@auto-it/omit-release-notes": "^10.32.5",
-		"@auto-it/pr-body-labels": "^10.32.5",
-		"@auto-it/released": "^10.32.5",
+		"@changesets/cli": "^2.19.0",
 		"@terminal-nerds/config-eslint": "workspace:*",
 		"@terminal-nerds/config-markdownlint": "workspace:*",
 		"@terminal-nerds/config-prettier": "workspace:*",
