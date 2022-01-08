@@ -12,6 +12,48 @@
 
 ---
 
+## Prerequisites
+
+This configuration package require these tools to use locally on your
+device(s):
+
+1. <img
+      alt="Node.JS logo icon"
+      width="14"
+      src="https://api.iconify.design/logos/nodejs-icon.svg"
+   />
+   Latest [Node.js] LTS _(Long-Term Support)_ version.
+
+1. One of Node.js package managers:
+
+    - <img
+             alt="pnpm logo icon"
+             width="14"
+             src="https://api.iconify.design/vscode-icons/file-type-light-pnpm.svg"
+          />
+      [pnpm]
+
+    - <img
+            alt="yarn logo icon"
+            width="14"
+            src="https://api.iconify.design/logos/yarn.svg"
+           />
+      [yarn]
+
+    - <img
+          alt="npm logo icon"
+          width="14"
+          src="https://api.iconify.design/logos/npm-icon.svg"
+         />
+      [npm]
+
+[node.js]: https://nodejs.org/en/
+[pnpm]: https://pnpm.io/
+[npm]: https://www.npmjs.com/
+[yarn]: https://yarnpkg.com/
+
+---
+
 ## Used plugins
 
 ℹ️ This configuration module for [Prettier] loads plugins options _conditionally_.

@@ -8,6 +8,11 @@ This project is a [monorepo] made with [pnpm workspaces] and powered by
 [ultra-runner]: https://github.com/folke/ultra-runner
 [changesets]: https://github.com/changesets/changesets
 
+[![Dependencies shield]][dependencies url]
+
+[dependencies shield]: https://img.shields.io/librariesio/github/terminal-nerds/configs?style=for-the-badge
+[dependencies url]: https://libraries.io/github/terminal-nerds/configs "Dependencies status"
+
 ---
 
 ## Project goal
@@ -16,49 +21,6 @@ This project is a [monorepo] made with [pnpm workspaces] and powered by
 and extendable** between the projects as an isolated, maintainable package,
 added as a dependency. Thus, to save time configuring, installing, upgrading
 plugins dependencies, etc.
-
----
-
-## Prerequisites
-
-[![Dependencies shield]][dependencies url]
-
-The configuration packages require these tools to use locally on your device(s)
-to develop with them.
-
-1. <img
-      alt="Git logo icon"
-      width="14"
-      src="https://api.iconify.design/logos/git-icon.svg"
-   />
-   [Git] version control tool.
-
-1. <img
-      alt="Git logo icon"
-      width="14"
-      src="https://api.iconify.design/logos/nodejs-icon.svg"
-   />
-   Latest [Node.js] LTS _(Long-Term Support)_ version.
-
-1. <img
-      alt="pnpm logo icon"
-      width="14"
-      src="https://api.iconify.design/vscode-icons/file-type-light-pnpm.svg"
-   />
-   [pnpm] - as Node.js package manager.
-
-> ℹ️ **NOTE**:\
-> Other package managers such as [`npm`][npm] or [`yarn`][yarn] _may_ work;
-> however, **we build those packages fully supporting [`pnpm`][pnpm] only in
-> our minds**.
-
-[dependencies shield]: https://img.shields.io/librariesio/github/terminal-nerds/configs?style=for-the-badge
-[dependencies url]: https://libraries.io/github/terminal-nerds/configs "Dependencies status"
-[git]: https://git-scm.com/
-[node.js]: https://nodejs.org/en/
-[pnpm]: https://pnpm.io/
-[npm]: https://www.npmjs.com/
-[yarn]: https://yarnpkg.com/
 
 ---
 
@@ -99,7 +61,7 @@ from our [GitHub packages] registry.
 
 ⚖️ **The code and packages** are licensed under the [MIT license](./LICENSE.md).
 
-[![FOSSA Status Card]][FOSSA Status]
+[![FOSSA Status Card]][fossa status]
 
 [fossa status card]: https://app.fossa.com/api/projects/git%2Bgithub.com%2Fxeho91%2Fconfigs.svg?type=large
 [fossa status]: https://app.fossa.com/projects/git%2Bgithub.com%2Fxeho91%2Fconfigs?ref=badge_large
