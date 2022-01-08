@@ -1,11 +1,12 @@
 # Configs
 
 This project is a [monorepo] made with [pnpm workspaces] and powered by
-[ultra-runner].
+[ultra-runner], [changesets].
 
 [monorepo]: https://en.wikipedia.org/wiki/Monorepo
 [pnpm workspaces]: https://pnpm.io/workspaces
 [ultra-runner]: https://github.com/folke/ultra-runner
+[changesets]: https://github.com/changesets/changesets
 
 ---
 
@@ -15,6 +16,49 @@ This project is a [monorepo] made with [pnpm workspaces] and powered by
 and extendable** between the projects as an isolated, maintainable package,
 added as a dependency. Thus, to save time configuring, installing, upgrading
 plugins dependencies, etc.
+
+---
+
+## Prerequisites
+
+[![Dependencies shield]][dependencies url]
+
+⚓ The configuration packages require these tools to use locally on your
+device(s) to develop with them.
+
+1. <img
+      alt="Git logo icon"
+      width="16"
+      src="https://api.iconify.design/logos/git-icon.svg"
+   />
+   [Git] version control tool.
+
+1. <img
+      alt="Git logo icon"
+      width="16"
+      src="https://api.iconify.design/logos/nodejs-icon.svg"
+   />
+   Latest [Node.js] LTS _(Long-Term Support)_ version.
+
+1. <img
+      alt="pnpm logo icon"
+      width="16"
+      src="https://api.iconify.design/vscode-icons/file-type-light-pnpm.svg"
+   />
+   [pnpm] - as Node.js package manager.
+
+> ℹ️ **NOTE**:\
+> Other package managers such as [`npm`][npm] or [`yarn`][yarn] _may_ work;
+> however, **we build those packages fully supporting [`pnpm`][pnpm] only in
+> our minds**.
+
+[dependencies shield]: https://img.shields.io/librariesio/github/terminal-nerds/configs?style=for-the-badge
+[dependencies url]: https://libraries.io/github/terminal-nerds/configs "Dependencies status"
+[git]: https://git-scm.com/
+[node.js]: https://nodejs.org/en/
+[pnpm]: https://pnpm.io/
+[npm]: https://www.npmjs.com/
+[yarn]: https://yarnpkg.com/
 
 ---
 
