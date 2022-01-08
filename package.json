@@ -9,32 +9,12 @@
 		"node": ">=16",
 		"pnpm": ">=6"
 	},
-	"turbo": {
-		"baseBranch": "main",
-		"npmClient": "pnpm",
-		"pipeline": {
-			"build": {
-				"dependsOn": [
-					"^build"
-				],
-				"outputs": [
-					"dist/**"
-				]
-			},
-			"clean": {},
-			"dev": {
-				"cache": false
-			},
-			"format": {},
-			"lint": {}
-		}
-	},
 	"scripts": {
-		"build": "turbo run build",
+		"build": "ultra --recursive --build",
 		"clean": "ultra --root --recursive clean:all",
 		"clean:all": "pnpm clean:cache",
 		"clean:cache": "rimraf \"./node_modules/.cache\"",
-		"dev": "turbo run dev --parallel",
+		"dev": "ultra --recursive dev",
 		"format": "ultra --root --recursive format:all",
 		"format:all": "pnpm format:prettier && pnpm format:syncpack",
 		"format:prettier": "pretty-quick --branch develop --pattern \"**/*\" --pattern \"!{helpers,packages}/**/*\" --verbose",
@@ -58,7 +38,6 @@
 		"rimraf": "^3.0.2",
 		"syncpack": "^6.0.0",
 		"tslib": "^2.3.1",
-		"turbo": "^1.0.24",
 		"typescript": "^4.5.4",
 		"ultra-runner": "^3.10.5"
 	}
