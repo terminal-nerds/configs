@@ -26,6 +26,7 @@
 		"lint:md": "markdownlint . --dot --ignore-path \"./.gitignore\" --ignore \"./{helpers,packages}/**/*\""
 	},
 	"devDependencies": {
+		"@changesets/cli": "^2.19.0",
 		"@terminal-nerds/config-eslint": "workspace:*",
 		"@terminal-nerds/config-markdownlint": "workspace:*",
 		"@terminal-nerds/config-prettier": "workspace:*",
