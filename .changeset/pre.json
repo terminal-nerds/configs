@@ -8,6 +8,7 @@
     "@terminal-nerds/config-stylelint": "0.0.1"
   },
   "changesets": [
-    "five-pillows-beg"
+    "five-pillows-beg",
+    "silent-kangaroos-count"
   ]
 }

@@ -5,7 +5,7 @@
 		"access": "public"
 	},
 	"name": "@terminal-nerds/config-markdownlint",
-	"version": "1.0.0-canary.0",
+	"version": "1.0.0-canary.1",
 	"description": "Terminal Nerds extendable configuration for markdownlint.",
 	"keywords": [
 		"config",
