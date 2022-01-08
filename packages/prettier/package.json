@@ -54,13 +54,15 @@
 	"peerDependencies": {
 		"prettier": "^2.5.1"
 	},
+	"dependencies": {
+		"prettier-plugin-svelte": "^2.5.1"
+	},
 	"devDependencies": {
 		"@types/node": "^17.0.5",
 		"@types/prettier": "^2.4.2",
 		"@workspace/configs": "workspace:*",
 		"@workspace/helpers": "workspace:*",
 		"deepmerge-ts": "^2.0.1",
-		"prettier": "^2.5.1",
-		"prettier-plugin-svelte": "^2.5.1"
+		"prettier": "^2.5.1"
 	}
 }

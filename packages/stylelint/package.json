@@ -48,12 +48,10 @@
 			"lint:all"
 		]
 	},
-	"devDependencies": {
-		"@types/node": "^17.0.5",
-		"@workspace/configs": "workspace:*",
-		"@workspace/helpers": "workspace:*",
-		"deepmerge-ts": "^2.0.1",
-		"stylelint": "^14.2.0",
+	"peerDependencies": {
+		"stylelint": "^14.2.0"
+	},
+	"dependencies": {
 		"stylelint-config-prettier": "^9.0.3",
 		"stylelint-config-standard": "^24.0.0",
 		"stylelint-config-standard-scss": "^3.0.0",
@@ -61,5 +59,12 @@
 		"stylelint-no-unsupported-browser-features": "^5.0.2",
 		"stylelint-order": "^5.0.0",
 		"stylelint-scss": "^4.1.0"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.5",
+		"@workspace/configs": "workspace:*",
+		"@workspace/helpers": "workspace:*",
+		"deepmerge-ts": "^2.0.1",
+		"stylelint": "^14.2.0"
 	}
 }
