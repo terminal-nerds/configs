@@ -28,21 +28,21 @@ to develop with them.
 
 1. <img
       alt="Git logo icon"
-      width="16"
+      width="14"
       src="https://api.iconify.design/logos/git-icon.svg"
    />
    [Git] version control tool.
 
 1. <img
       alt="Git logo icon"
-      width="16"
+      width="14"
       src="https://api.iconify.design/logos/nodejs-icon.svg"
    />
    Latest [Node.js] LTS _(Long-Term Support)_ version.
 
 1. <img
       alt="pnpm logo icon"
-      width="16"
+      width="14"
       src="https://api.iconify.design/vscode-icons/file-type-light-pnpm.svg"
    />
    [pnpm] - as Node.js package manager.
@@ -103,3 +103,21 @@ from our [GitHub packages] registry.
 
 [fossa status card]: https://app.fossa.com/api/projects/git%2Bgithub.com%2Fxeho91%2Fconfigs.svg?type=large
 [fossa status]: https://app.fossa.com/projects/git%2Bgithub.com%2Fxeho91%2Fconfigs?ref=badge_large
+
+---
+
+## Contact
+
+[![discord shield]][discord server]
+
+✉️ **The best way to contact us is using our [Discord server]**. Anyone is
+welcome to hop in for a chat. 🙂
+
+[discord server]: https://discord.gg/decp3g7BEN
+[discord shield]: https://img.shields.io/discord/862890839537877012?label=Discord&logo=discord&style=for-the-badge
+[discussions]: https://github.com/terminal-nerds/terminal-nerd/discussions
+
+🗨️ **We are also open to feedback**. If you have any suggestions, feel free
+to reach us.\
+The best way is to use `#💡-ideas` channel on our [Discord server]
+and share your thoughts & ideas!
