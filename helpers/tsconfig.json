@@ -3,7 +3,8 @@
 	"compilerOptions": {
 		"module": "CommonJS",
 		"outDir": "./build",
-		"target": "ESNext"
+		"target": "ESNext",
+		"tsBuildInfoFile": "./node_modules/.cache/tsbuildinfo"
 	},
 	"extends": "@workspace/configs/tsconfig.json",
 	"include": ["source/**/*"],

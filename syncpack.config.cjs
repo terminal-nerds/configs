@@ -33,6 +33,7 @@ const config = {
 		"files",
 		"turbo",
 		"scripts",
+		"ultra",
 		"peerDependencies",
 		"dependencies",
 		"devDependencies",

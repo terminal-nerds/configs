@@ -21,10 +21,21 @@
 	},
 	"main": "markdownlint.json",
 	"scripts": {
-		"format": "pretty-quick --branch develop --pattern \"packages/markdownlint/**/*\" --verbose",
-		"lint": "pnpm lint:format && pnpm lint:md",
+		"format": "ultra format:all",
+		"format:all": "pnpm format:prettier ; pnpm format:syncpack",
+		"format:prettier": "pretty-quick --branch develop --pattern \"packages/markdownlint/**/*\" --verbose",
+		"format:syncpack": "syncpack format",
+		"lint": "ultra lint:all",
+		"lint:all": "pnpm lint:format ; pnpm lint:js ; pnpm lint:md",
 		"lint:format": "pretty-quick --branch develop --pattern \"packages/markdownlint/**/*\" --verbose --check",
+		"lint:js": "eslint . --ext .json --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\""
+	},
+	"ultra": {
+		"concurrent": [
+			"format:all",
+			"lint:all"
+		]
 	},
 	"peerDependencies": {
 		"markdownlint-cli": "^0.30.0"

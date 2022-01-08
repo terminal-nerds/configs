@@ -21,22 +21,32 @@
 	},
 	"main": "dist/index.js",
 	"scripts": {
-		"build": "run-s build:*",
+		"build": "ultra build:all",
+		"build:all": "pnpm clean:build && pnpm build:types && pnpm build:package",
 		"build:types": "tsc --emitDeclarationOnly",
-		"build:module": "esbuild --bundle \"./source/index.ts\" --outdir=\"./dist\" --minify --sourcemap --platform=node --target=node16 --format=cjs --analyze=verbose --color=true",
-		"clean:all": "pnpm clean:build && pnpm clean:cache",
+		"build:package": "esbuild --bundle \"./source/index.ts\" --outdir=\"./dist\" --minify --sourcemap --platform=node --target=node16 --format=cjs --analyze=verbose --color=true",
+		"clean": "ultra clean:all",
+		"clean:all": "pnpm clean:build; pnpm clean:cache",
 		"clean:build": "rimraf \"./dist\"",
 		"clean:cache": "rimraf \"./node_modules/.cache\"",
-		"dev": "run-p dev:*",
-		"dev:module": "pnpm build:module -- --watch",
-		"dev:types": "pnpm build:types -- --watch",
-		"format:all": "pnpm format:prettier",
+		"dev": "tsc --build --watch",
+		"format": "ultra format:all",
+		"format:all": "pnpm format:prettier ; pnpm format:syncpack",
 		"format:prettier": "pretty-quick --branch develop --pattern \"./packages/stylelint/**/*\" --verbose",
-		"lint:all": "pnpm lint:format && pnpm lint:js && pnpm lint:md && pnpm lint:types",
+		"format:syncpack": "syncpack format",
+		"lint": "ultra lint:all",
+		"lint:all": "pnpm lint:format ; pnpm lint:js ; pnpm lint:md ; pnpm lint:types",
 		"lint:format": "pretty-quick --branch develop --pattern \"./packages/stylelint/**/*\" --verbose --check",
-		"lint:js": "eslint . --ext .json,.ts --cache --cache-location \"./node_modules/.cache/eslint\"",
+		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
 		"lint:types": "tsc --noEmit"
+	},
+	"ultra": {
+		"concurrent": [
+			"clean:all",
+			"format:all",
+			"lint:all"
+		]
 	},
 	"devDependencies": {
 		"@types/node": "^17.0.5",
