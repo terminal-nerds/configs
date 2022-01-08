@@ -1,5 +1,11 @@
 # @terminal-nerds/config-eslint
 
+## 1.0.0-canary.2
+
+### Major Changes
+
+- Another release test.
+
 ## 1.0.0-canary.1
 
 ### Major Changes
