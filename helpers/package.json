@@ -15,7 +15,7 @@
 		"build:types": "tsc --emitDeclarationOnly",
 		"build:module": "esbuild --bundle \"./source/index.ts\" --outdir=\"./build\" --minify --sourcemap --platform=node --target=node16 --format=cjs --analyze=verbose --color=true",
 		"clean:all": "pnpm clean:build && pnpm clean:cache",
-		"clean:build": "rimraf \"./dist\"",
+		"clean:build": "rimraf \"./build\"",
 		"clean:cache": "rimraf \"./node_modules/.cache\"",
 		"dev": "run-p dev:*",
 		"dev:module": "pnpm build:module -- --watch",

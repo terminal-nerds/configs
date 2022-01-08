@@ -2,12 +2,6 @@
 	"$schema": "https://json.schemastore.org/package",
 	"private": true,
 	"type": "module",
-	"publishConfig": {
-		"registry": "https://registry.npmjs.org/",
-		"access": "public"
-	},
-	"version": "0.2.0",
-	"author": "Matt Kadlubowski <xeho91>",
 	"homepage": "https://github.com/terminal-nerds/configs",
 	"repository": "terminal-nerds/configs.git",
 	"bugs": "https://github.com/terminal-nerds/configs/issues",
@@ -52,21 +46,11 @@
 		"lint:md": "markdownlint . --dot --ignore-path \"./.gitignore\" --ignore \"./{helpers,packages}/**/*\""
 	},
 	"devDependencies": {
-		"@auto-it/all-contributors": "^10.32.5",
-		"@auto-it/conventional-commits": "^10.32.5",
-		"@auto-it/first-time-contributor": "^10.32.5",
-		"@auto-it/npm": "^10.32.5",
-		"@auto-it/omit-commits": "^10.32.5",
-		"@auto-it/omit-release-notes": "^10.32.5",
-		"@auto-it/pr-body-labels": "^10.32.5",
-		"@auto-it/released": "^10.32.5",
 		"@terminal-nerds/config-eslint": "workspace:*",
 		"@terminal-nerds/config-markdownlint": "workspace:*",
 		"@terminal-nerds/config-prettier": "workspace:*",
-		"auto": "^10.32.5",
 		"esbuild": "^0.14.10",
 		"eslint": "^8.6.0",
-		"lerna": "^4.0.0",
 		"markdownlint-cli": "^0.30.0",
 		"npm-run-all": "^4.1.5",
 		"prettier": "^2.5.1",
@@ -77,6 +61,5 @@
 		"turbo": "^1.0.24",
 		"typescript": "^4.5.4",
 		"ultra-runner": "^3.10.5"
-	},
-	"name": "configs"
+	}
 }
