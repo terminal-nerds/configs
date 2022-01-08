@@ -23,8 +23,8 @@ plugins dependencies, etc.
 
 [![Dependencies shield]][dependencies url]
 
-⚓ The configuration packages require these tools to use locally on your
-device(s) to develop with them.
+The configuration packages require these tools to use locally on your device(s)
+to develop with them.
 
 1. <img
       alt="Git logo icon"
@@ -98,3 +98,8 @@ from our [GitHub packages] registry.
 [![License shield]](./LICENSE.md "Project's license")
 
 ⚖️ **The code and packages** are licensed under the [MIT license](./LICENSE.md).
+
+[![FOSSA Status Card]][FOSSA Status]
+
+[fossa status card]: https://app.fossa.com/api/projects/git%2Bgithub.com%2Fxeho91%2Fconfigs.svg?type=large
+[fossa status]: https://app.fossa.com/projects/git%2Bgithub.com%2Fxeho91%2Fconfigs?ref=badge_large
