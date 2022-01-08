@@ -1,0 +1,13 @@
+{
+  "mode": "pre",
+  "tag": "canary",
+  "initialVersions": {
+    "@terminal-nerds/config-eslint": "0.0.1",
+    "@terminal-nerds/config-markdownlint": "0.0.1",
+    "@terminal-nerds/config-prettier": "0.0.1",
+    "@terminal-nerds/config-stylelint": "0.0.1"
+  },
+  "changesets": [
+    "five-pillows-beg"
+  ]
+}
