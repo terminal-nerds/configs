@@ -1,11 +1,10 @@
 # Configs
 
 This project is a [monorepo] made with [pnpm workspaces] and powered by
-[Turborepo] and [ultra-runner].
+[ultra-runner].
 
 [monorepo]: https://en.wikipedia.org/wiki/Monorepo
 [pnpm workspaces]: https://pnpm.io/workspaces
-[turborepo]: https://turborepo.org/
 [ultra-runner]: https://github.com/folke/ultra-runner
 
 ---
