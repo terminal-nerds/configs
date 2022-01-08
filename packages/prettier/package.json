@@ -5,7 +5,7 @@
 		"access": "public"
 	},
 	"name": "@terminal-nerds/config-prettier",
-	"version": "0.1.0",
+	"version": "0.0.1",
 	"description": "Terminal Nerds extendable configuration for Prettier.",
 	"keywords": [
 		"config",
@@ -46,6 +46,7 @@
 	},
 	"devDependencies": {
 		"@types/node": "^17.0.5",
+		"@types/prettier": "^2.4.2",
 		"@workspace/configs": "workspace:*",
 		"@workspace/helpers": "workspace:*",
 		"deepmerge-ts": "^2.0.1",
