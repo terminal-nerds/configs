@@ -1,7 +1,6 @@
 import { defineConfig } from "eslint-define-config";
 
 const config = defineConfig({
-	parser: "@typescript-eslint/parser",
 	parserOptions: {
 		ecmaVersion: "latest",
 		sourceType: "module",
