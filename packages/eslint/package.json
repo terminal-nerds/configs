@@ -5,7 +5,7 @@
 		"access": "public"
 	},
 	"name": "@terminal-nerds/config-eslint",
-	"version": "1.0.0-canary.4",
+	"version": "1.0.0-canary.5",
 	"description": "Terminal Nerds extendable configuration for ESLint.",
 	"keywords": [
 		"config",
