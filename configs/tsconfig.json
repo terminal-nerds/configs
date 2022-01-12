@@ -22,6 +22,7 @@
 		"importsNotUsedAsValues": "error",
 		"newLine": "LF",
 		"noEmitOnError": true,
+		"sourceMap": true,
 
 		/* JavaScript support */
 		"allowJs": true,
