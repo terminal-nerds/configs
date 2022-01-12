@@ -1,7 +1,8 @@
 const config = {
-	extends: "./node_modules/@terminal-nerds/config-eslint",
+	extends: "@terminal-nerds/eslint-config",
 
 	env: {
+		browser: false,
 		node: true,
 	},
 };
