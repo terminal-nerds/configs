@@ -4,7 +4,7 @@
 		"registry": "https://registry.npmjs.org/",
 		"access": "public"
 	},
-	"name": "@terminal-nerds/config-markdownlint",
+	"name": "@terminal-nerds/markdownlint-config",
 	"version": "1.0.0-canary.4",
 	"description": "Terminal Nerds extendable configuration for markdownlint.",
 	"keywords": [

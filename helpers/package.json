@@ -3,7 +3,7 @@
 	"private": true,
 	"type": "commonjs",
 	"name": "@workspace/helpers",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"engines": {
 		"node": ">=16.0.0"
 	},
@@ -13,13 +13,13 @@
 	],
 	"scripts": {
 		"build": "ultra build:all",
-		"build:all": "pnpm clean:build && pnpm build:types && pnpm build:module",
+		"build:all": "pnpm build:module",
 		"build:types": "tsc --emitDeclarationOnly",
-		"build:module": "esbuild --bundle \"./source/index.ts\" --outdir=\"./build\" --minify --sourcemap --platform=node --target=node16 --format=cjs --analyze=verbose --color=true",
+		"build:module": "tsc --build --listEmittedFiles",
 		"clean": "ultra clean:all",
 		"clean:all": "pnpm clean:build ; pnpm clean:cache",
 		"clean:build": "rimraf \"./dist\"",
-		"clean:cache": "rimraf \"./node_modules/.cache\"",
+		"clean:cache": "rimraf \"./node_modules/.cache\" ; rimraf \"./.ultra.cache.json\"",
 		"dev": "tsc --build --watch",
 		"format": "ultra format:all",
 		"format:all": "pnpm format:prettier ; pnpm format:syncpack",
@@ -39,7 +39,10 @@
 		]
 	},
 	"devDependencies": {
-		"@types/node": "^17.0.5",
-		"@workspace/configs": "workspace:*"
+		"@types/node": "^17.0.8",
+		"@workspace/configs": "workspace:*",
+		"tslib": "^2.3.1",
+		"type-fest": "^2.9.0",
+		"typescript": "^4.5.4"
 	}
 }
