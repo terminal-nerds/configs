@@ -1,19 +1,15 @@
 # Configs
 
-This project is a [monorepo] made with [pnpm workspaces] and powered by
+[![pnpm workspace badge]][pnpm workspace]
+
+➡️ This project is a [monorepo] made with [pnpm workspace] and powered by
 [ultra-runner], [changesets].
 
 [monorepo]: https://en.wikipedia.org/wiki/Monorepo
-[pnpm workspaces]: https://pnpm.io/workspaces
+[pnpm workspace]: https://pnpm.io/workspaces
+[pnpm workspace badge]: https://img.shields.io/badge/monorepo-pnpm%20workspace-informational?style=for-the-badge&logo=pnpm
 [ultra-runner]: https://github.com/folke/ultra-runner
 [changesets]: https://github.com/changesets/changesets
-
-[![Dependencies shield]][dependencies url]
-
-[dependencies shield]: https://img.shields.io/librariesio/github/terminal-nerds/configs?style=for-the-badge
-[dependencies url]: https://libraries.io/github/terminal-nerds/configs "Dependencies status"
-
----
 
 ## Project goal
 
@@ -26,51 +22,65 @@ plugins dependencies, etc.
 
 ## Packages
 
+![node.js version support badge]
+[![Dependencies badge]][dependencies url]
+
+[node.js version support badge]: https://img.shields.io/node/v-lts/@terminal-nerds/config-eslint?style=for-the-badge&logo=nodedotjs
+[dependencies badge]: https://img.shields.io/librariesio/github/terminal-nerds/configs?style=for-the-badge
+[dependencies url]: https://libraries.io/github/terminal-nerds/configs "Dependencies status"
+
 📦 The following packages are available under the [packages/](./packages)
 directory. Each of them has its own instructions _(in the `README.md` files)_
 on how to use them.
 
-All of them are [scoped] - they are prefixed with `@terminal-nerds/`.
-Those packages from this project are accessible for public use and downloadable
-from our [GitHub packages] registry.
+**ℹ️ All of them are [scoped] - they are prefixed with `@terminal-nerds/`.**
+They are accessible for public use and downloadable from the [npmjs.com
+registry].
 
 [scoped]: https://docs.npmjs.com/cli/v6/using-npm/scope
-[github packages]: https://github.com/orgs/terminal-nerds/packages?repo_name=configs
+[npmjs.com registry]: https://npmjs.com/org/terminal-nerds
 
-| Name                                                         | Version                              | Changelogs                                                              |
-| ------------------------------------------------------------ | ------------------------------------ | ----------------------------------------------------------------------- |
-| [`@terminal-nerds/config-eslint`](config-eslint)             | ![config-eslint version badge]       | [![config-eslint changelog badge]][config-eslint changelog]             |
-| [`@terminal-nerds/config-markdownlint`](config-markdownlint) | ![config-markdownlint version badge] | [![config-markdownlint changelog badge]][config-markdownlint changelog] |
-| [`@terminal-nerds/config-prettier`](config-prettier)         | ![config-prettier version badge]     | [![config-prettier changelog badge]][config-prettier changelog]         |
-| [`@terminal-nerds/config-stylelint`](config-stylelint)       | ![config-stylelint version badge]    | [![config-stylelint changelog badge]][config-stylelint changelog]       |
+| Name                                                | Version                                                              | Changelogs                                                              |
+| --------------------------------------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| [![eslint-config badge]][eslint-config]             | [![eslint-config version badge]][eslint-config npm page]             | [![eslint-config changelog badge]][eslint-config changelog]             |
+| [![markdownlint-config badge]][markdownlint-config] | [![markdownlint-config version badge]][markdownlint-config npm page] | [![markdownlint-config changelog badge]][markdownlint-config changelog] |
+| [![prettier-config badge]][prettier-config]         | [![prettier-config version badge]][prettier-config npm page]         | [![prettier-config changelog badge]][prettier-config changelog]         |
+| [![stylelint-config badge]][stylelint-config]       | [![stylelint-config version badge]][stylelint-config npm page]       | [![stylelint-config changelog badge]][stylelint-config changelog]       |
 
-[config-eslint]: ./packages/eslint/README.md
-[config-eslint version badge]: https://img.shields.io/github/package-json/v/terminal-nerds/configs?filename=packages%2Feslint%2Fpackage.json&style=flat-square
-[config-eslint changelog badge]: https://img.shields.io/badge/changelog.xyz-%40terminal--nerds%2Fconfig--eslint-informational?style=flat-square
-[config-eslint changelog]: https://changelogs.xyz/@terminal-nerds/config-eslint
-[config-markdownlint]: ./packages/markdownlint/README.md
-[config-markdownlint version badge]: https://img.shields.io/github/package-json/v/terminal-nerds/configs?filename=packages%2Fmarkdownlint%2Fpackage.json&style=flat-square
-[config-markdownlint changelog badge]: https://img.shields.io/badge/changelog.xyz-%40terminal--nerds%2Fconfig--markdownlint-informational?style=flat-square
-[config-markdownlint changelog]: https://changelogs.xyz/@terminal-nerds/config-markdownlint
-[config-prettier]: ./packages/prettier/README.md
-[config-prettier version badge]: https://img.shields.io/github/package-json/v/terminal-nerds/configs?filename=packages%2Fprettier%2Fpackage.json&style=flat-square
-[config-prettier changelog badge]: https://img.shields.io/badge/changelog.xyz-%40terminal--nerds%2Fconfig--prettier-informational?style=flat-square
-[config-prettier changelog]: https://changelogs.xyz/@terminal-nerds/config-prettier
-[config-stylelint]: ./packages/stylelint/README.md
-[config-stylelint version badge]: https://img.shields.io/github/package-json/v/terminal-nerds/configs?filename=packages%2Fstylelint%2Fpackage.json&style=flat-square
-[config-stylelint changelog badge]: https://img.shields.io/badge/changelog.xyz-%40terminal--nerds%2Fconfig--stylelint-informational?style=flat-square
-[config-stylelint changelog]: https://changelogs.xyz/@terminal-nerds/config-stylelint
-
----
+[eslint-config]: ./packages/eslint/README.md
+[eslint-config badge]: https://img.shields.io/badge/config-eslint-informational?style=flat-square&logo=eslint
+[eslint-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/config-eslint/latest?style=flat-square&logo=npm
+[eslint-config npm page]: https://www.npmjs.com/package/@terminal-nerds/config-eslint
+[eslint-config changelog]: https://changelogs.xyz/@terminal-nerds/config-eslint
+[eslint-config changelog badge]: https://img.shields.io/badge/changelog.xyz-%40terminal--nerds%2Fconfig--eslint-informational?style=flat-square
+[markdownlint-config]: ./packages/markdownlint/README.md
+[markdownlint-config badge]: https://img.shields.io/badge/config-markdownlint-informational?style=flat-square&logo=markdownlint
+[markdownlint-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/markdownlint-config/latest?style=flat-square&logo=npm
+[markdownlint-config npm page]: https://www.npmjs.com/package/@terminal-nerds/markdownlint-config
+[markdownlint-config changelog badge]: https://img.shields.io/badge/changelog.xyz-%40terminal--nerds%2Fconfig--markdownlint-informational?style=flat-square
+[markdownlint-config changelog]: https://changelogs.xyz/@terminal-nerds/markdownlint-config
+[prettier-config]: ./packages/prettier/README.md
+[prettier-config badge]: https://img.shields.io/badge/config-prettier-informational?style=flat-square&logo=prettier
+[prettier-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/prettier-config/latest?style=flat-square&logo=npm
+[prettier-config npm page]: https://www.npmjs.com/package/@terminal-nerds/prettier-config
+[prettier-config changelog badge]: https://img.shields.io/badge/changelog.xyz-%40terminal--nerds%2Fconfig--prettier-informational?style=flat-square
+[prettier-config changelog]: https://changelogs.xyz/@terminal-nerds/prettier-config
+[stylelint-config]: ./packages/stylelint/README.md
+[stylelint-config badge]: https://img.shields.io/badge/config-stylelint-informational?style=flat-square&logo=stylelint
+[stylelint-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/stylelint-config/latest?style=flat-square&logo=npm
+[stylelint-config npm page]: https://www.npmjs.com/package/@terminal-nerds/stylelint-config
+[stylelint-config changelog badge]: https://img.shields.io/badge/changelog.xyz-%40terminal--nerds%2Fconfig--stylelint-informational?style=flat-square
+[stylelint-config changelog]: https://changelogs.xyz/@terminal-nerds/stylelint-config
 
 ## License
 
-[![License shield]](./LICENSE.md "Project's license")
+[![License badge]](./LICENSE.md "Project's license")
 
-⚖️ **The code and packages** are licensed under the [MIT license](./LICENSE.md).
+⚖️ **The code, including packages** are licensed under the [MIT license](./LICENSE.md).
 
 [![FOSSA Status Card]][fossa status]
 
+[license badge]: https://img.shields.io/github/license/terminal-nerds/configs?style=for-the-badge
 [fossa status card]: https://app.fossa.com/api/projects/git%2Bgithub.com%2Fxeho91%2Fconfigs.svg?type=large
 [fossa status]: https://app.fossa.com/projects/git%2Bgithub.com%2Fxeho91%2Fconfigs?ref=badge_large
 
@@ -78,16 +88,10 @@ from our [GitHub packages] registry.
 
 ## Contact
 
-[![discord shield]][discord server]
+[![discord badge]][discord server]
 
 ✉️ **The best way to contact us is using our [Discord server]**. Anyone is
 welcome to hop in for a chat. 🙂
 
 [discord server]: https://discord.gg/decp3g7BEN
-[discord shield]: https://img.shields.io/discord/862890839537877012?label=Discord&logo=discord&style=for-the-badge
-[discussions]: https://github.com/terminal-nerds/terminal-nerd/discussions
-
-🗨️ **We are also open to feedback**. If you have any suggestions, feel free
-to reach us.\
-The best way is to use `#💡-ideas` channel on our [Discord server]
-and share your thoughts & ideas!
+[discord badge]: https://img.shields.io/discord/862890839537877012?label=Discord&logo=discord&style=for-the-badge
