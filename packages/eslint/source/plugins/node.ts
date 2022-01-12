@@ -4,6 +4,8 @@ import { defineConfig } from "eslint-define-config";
 const config = defineConfig({
 	extends: ["plugin:node/recommended"],
 	rules: {
+		// RATIONALE: Allow `plugin-import` to handle them
+		"node/no-extraneous-import": ["off"],
 		"node/no-unpublished-import": ["off"],
 		"node/no-unpublished-require": ["off"],
 		"node/no-missing-import": ["off"],
@@ -14,7 +16,6 @@ const config = defineConfig({
 	},
 	settings: {
 		node: {
-			// eslint-disable-next-line unicorn/prefer-module
 			resolvePaths: [__dirname],
 			tryExtensions: [".cjs", ".js", ".mjs", ".node", ".ts"],
 		},

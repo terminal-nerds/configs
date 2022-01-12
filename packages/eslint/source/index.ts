@@ -1,39 +1,25 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 import { deepmerge } from "deepmerge-ts";
 
-import { hasModule, isContinuousIntegration } from "@workspace/helpers";
-
-import eslintDefault from "./eslint";
-import configPrettier from "./configs/prettier";
-import pluginCompat from "./plugins/compat";
-import pluginDiff from "./plugins/diff";
-import pluginImport from "./plugins/import";
-import pluginJSONC from "./plugins/jsonc";
-import pluginJSONSchemaValidator from "./plugins/json-schema-validator";
-import pluginNode from "./plugins/node";
-import pluginRegExp from "./plugins/regexp";
-import pluginSonarJS from "./plugins/sonarjs";
-import pluginSvelte3 from "./plugins/svelte3";
-import pluginTypeScript from "./plugins/typescript";
-import pluginUnicorn from "./plugins/unicorn";
-import pluginYML from "./plugins/yml";
+// This is a workaround for https://github.com/eslint/eslint/issues/3458
+import "@rushstack/eslint-patch/modern-module-resolution";
 
 const configurations = deepmerge(
-	eslintDefault,
-	{ ...(hasModule("typescript") && pluginTypeScript) },
-	pluginCompat,
-	{ ...(isContinuousIntegration() && pluginDiff) },
-	pluginImport,
-	pluginJSONC,
-	pluginJSONSchemaValidator,
-	pluginNode,
-	pluginRegExp,
-	pluginSonarJS,
-	pluginUnicorn,
-	{ ...(hasModule("svelte") && pluginSvelte3) },
-	pluginYML,
+	require("./eslint").default,
+	require("./plugins/typescript").default,
+	require("./plugins/compat").default,
+	require("./plugins/diff").default,
+	require("./plugins/import").default,
+	require("./plugins/jsonc").default,
+	require("./plugins/json-schema-validator").default,
+	require("./plugins/node").default,
+	require("./plugins/regexp").default,
+	require("./plugins/sonarjs").default,
+	require("./plugins/svelte3").default,
+	require("./plugins/unicorn").default,
+	require("./plugins/yml").default,
 	// NOTE: Must come as last!
-	configPrettier,
+	require("./configs/prettier").default,
 );
 
-// eslint-disable-next-line unicorn/prefer-module
 module.exports = configurations;

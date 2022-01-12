@@ -7,17 +7,21 @@ const config = defineConfig({
 	},
 
 	ignorePatterns: [
+		// Unignore files starting with dot (usually configuration files)
+		"!.*",
+		// Ignore...
 		"**/node_modules",
 		"**/.git",
 		"**/.husky",
 		"**/.svelte-kit",
 		"**/.turbo",
+		"**/.ultra.cache.json",
 		"**/.vercel",
 		"**/build",
 		"**/dist",
-		"pnpm-lock.yaml",
-		// Unignore files starting with dot (usually configuration files)
-		"!.*",
+		"**/package-lock.json",
+		"**/pnpm-lock.yaml",
+
 	],
 
 	extends: ["eslint:recommended"],

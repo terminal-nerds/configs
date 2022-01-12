@@ -1,10 +1,11 @@
-/* eslint-disable unicorn/prefer-module */
 import { defineConfig } from "eslint-define-config";
+
+import { hasModule } from "@workspace/helpers";
 
 const commentRuleOptions = "allow-with-description";
 
-// https://github.com/typescript-eslint/typescript-eslint
 const config = defineConfig({
+	// https://github.com/typescript-eslint/typescript-eslint
 	extends: ["plugin:@typescript-eslint/recommended"],
 	parserOptions: {
 		parser: "@typescript-eslint/parser",
@@ -25,4 +26,4 @@ const config = defineConfig({
 	},
 });
 
-export default config;
+export default hasModule("typescript") && hasModule("tslib") ? config : {};
