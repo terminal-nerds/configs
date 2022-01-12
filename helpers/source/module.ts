@@ -1,10 +1,27 @@
-export function hasModule(name: string): boolean {
-	try {
-		// eslint-disable-next-line unicorn/prefer-module
-		require.resolve(name);
+/* eslint-disable @typescript-eslint/no-var-requires */
+import path from "node:path";
 
-		return true;
-	} catch {
-		return false;
-	}
+import type { PackageJson } from "type-fest";
+
+export function readPackageJSON(): PackageJson {
+	const filePath = path.join(process.cwd(), "./package.json");
+
+	return require(filePath);
+}
+
+export function hasModule(name: string): boolean {
+	const { dependencies, devDependencies }  = readPackageJSON();
+
+	return new Map(
+		Object.entries({
+			...devDependencies,
+			...dependencies,
+		}),
+	).has(name);
+}
+
+export function isESM() {
+	const { type } = readPackageJSON();
+
+	return type === "module";
 }
