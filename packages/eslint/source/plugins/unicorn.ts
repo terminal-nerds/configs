@@ -1,6 +1,6 @@
 import { defineConfig } from "eslint-define-config";
 
-import { isESM } from "@workspace/helpers";
+import { isESModule } from "@workspace/helpers/module";
 
 // https://github.com/sindresorhus/eslint-plugin-unicorn
 const config = defineConfig({
@@ -10,4 +10,4 @@ const config = defineConfig({
 	}
 });
 
-export default isESM() ? config : {};
+export default isESModule() ? config : {};

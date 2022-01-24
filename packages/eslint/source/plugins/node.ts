@@ -17,7 +17,7 @@ const config = defineConfig({
 	settings: {
 		node: {
 			resolvePaths: [__dirname],
-			tryExtensions: [".cjs", ".js", ".mjs", ".node", ".ts"],
+			tryExtensions: [".cjs", ".js", ".mjs", ".ts"],
 		},
 	},
 });

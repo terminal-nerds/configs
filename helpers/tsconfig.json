@@ -3,7 +3,7 @@
 	"extends": "@workspace/configs/tsconfig.json",
 	"compilerOptions": {
 		"composite": true,
-		"module": "CommonJS",
+		"module": "ESNext",
 		"outDir": "./build",
 		"rootDir": "./source",
 		"tsBuildInfoFile": "./node_modules/.cache/tsbuildinfo",

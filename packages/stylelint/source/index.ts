@@ -1,15 +1,29 @@
 import { deepmerge } from "deepmerge-ts";
 
+import stylelint from "./stylelint.js";
+
+import configPrettier from "./configs/prettier.js";
+import configStandard from "./configs/standard.js";
+import configStandardSCSS from "./configs/standard-scss.js";
+
+import pluginHighPerformanceAnimations from "./plugins/high-performance-animations.js";
+import pluginNoUnsupportedBrowserFeatures from "./plugins/no-unsupported-browser-features.js";
+import pluginOrder from "./plugins/order.js";
+import pluginSCSS from "./plugins/scss.js";
+
 const configurations = deepmerge(
-	require("./stylelint").default,
-	require("./config/standard").default,
-	require("./config/standard-scss").default,
-	require("./plugins/high-performance-animations").default,
-	require("./plugins/no-unsupported-browser-features").default,
-	require("./plugins/order").default,
-	require("./plugins/scss").default,
+	stylelint,
+
+	configStandard,
+	configStandardSCSS,
+
+	pluginHighPerformanceAnimations,
+	pluginNoUnsupportedBrowserFeatures,
+	pluginOrder,
+	pluginSCSS,
+
 	// NOTE: Must come as last!
-	require("./config/prettier").default,
+	configPrettier,
 );
 
 module.exports = configurations;

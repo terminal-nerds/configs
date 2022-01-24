@@ -1,6 +1,6 @@
 import { defineConfig } from "eslint-define-config";
 
-import { hasModule } from "@workspace/helpers";
+import { hasModule } from "@workspace/helpers/module";
 
 const config = defineConfig({
 	// https://github.com/sveltejs/eslint-plugin-svelte3

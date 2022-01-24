@@ -1,8 +1,12 @@
 import { deepmerge } from "deepmerge-ts";
 
+import prettier from "./prettier.js";
+import pluginSvelte from "./plugins/svelte";
+
 const configurations = deepmerge(
-	require("./prettier").default,
-	require("./plugins/svelte").default,
+	prettier,
+
+	pluginSvelte,
 );
 
 module.exports = configurations;

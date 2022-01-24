@@ -4,7 +4,12 @@ import type { Config } from "stylelint";
 const config: Partial<Config> = {
 	plugins: [ "stylelint-no-unsupported-browser-features"],
 
-	rules: {}
+	rules: {
+		"plugin/no-unsupported-browser-features": [
+			true,
+			{ severity: "warning" },
+		],
+	}
 };
 
 export default config;

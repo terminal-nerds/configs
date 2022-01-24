@@ -1,12 +1,16 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-import path from "node:path";
 
+import { readPackageUpSync } from "read-pkg-up";
 import type { PackageJson } from "type-fest";
 
 export function readPackageJSON(): PackageJson {
-	const filePath = path.join(process.cwd(), "./package.json");
+	const file = readPackageUpSync();
 
-	return require(filePath);
+	if (file) {
+		return file.packageJson;
+	} else {
+		throw new Error('Cannot locate "package.json" file!');
+	}
 }
 
 export function hasModule(name: string): boolean {
@@ -20,8 +24,14 @@ export function hasModule(name: string): boolean {
 	).has(name);
 }
 
-export function isESM() {
+export function isESModule() {
 	const { type } = readPackageJSON();
 
 	return type === "module";
+}
+
+export function isCommonJS() {
+	const { type } = readPackageJSON();
+
+	return type === "commonjs";
 }

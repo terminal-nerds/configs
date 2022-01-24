@@ -31,6 +31,8 @@ const config = {
 		"engines",
 		"main",
 		"files",
+		"exports",
+		"typesVersions",
 		"turbo",
 		"scripts",
 		"ultra",

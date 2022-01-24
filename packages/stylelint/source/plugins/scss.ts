@@ -1,6 +1,6 @@
 import type { Config } from "stylelint";
 
-import { hasModule } from "@workspace/helpers";
+import { hasModule } from "@workspace/helpers/module";
 
 import { extendTailwindAtRuleSelectors } from "../other/tailwind";
 
@@ -19,4 +19,4 @@ const config: Partial<Config> = {
 };
 
 
-export default hasModule("sass") ? config: {};
+export default hasModule("sass") ? config : {};

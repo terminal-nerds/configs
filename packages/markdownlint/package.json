@@ -21,6 +21,9 @@
 	},
 	"main": "markdownlint.json",
 	"scripts": {
+		"clean": "ultra clean:all",
+		"clean:all": "pnpm clean:cache",
+		"clean:cache": "rimraf \"./node_modules/.cache\" ; rimraf \"./.ultra.cache.json\"",
 		"format": "ultra format:all",
 		"format:all": "pnpm format:prettier ; pnpm format:syncpack",
 		"format:prettier": "pretty-quick --branch develop --pattern \"packages/markdownlint/**/*\" --verbose",

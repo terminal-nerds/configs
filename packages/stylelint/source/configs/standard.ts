@@ -1,6 +1,6 @@
 import type { Config } from "stylelint";
 
-import { hasModule } from "@workspace/helpers";
+import { hasModule } from "@workspace/helpers/module";
 
 // https://github.com/stylelint/stylelint-config-standard
 const config: Partial<Config> = {

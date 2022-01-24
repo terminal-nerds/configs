@@ -1,6 +1,6 @@
 import { defineConfig } from "eslint-define-config";
 
-import { hasModule } from "@workspace/helpers";
+import { hasModule } from "@workspace/helpers/module";
 
 const commentRuleOptions = "allow-with-description";
 
@@ -26,4 +26,4 @@ const config = defineConfig({
 	},
 });
 
-export default hasModule("typescript") && hasModule("tslib") ? config : {};
+export default hasModule("typescript") ? config : {};

@@ -1,6 +1,6 @@
 import type { Config } from "stylelint";
 
-import { hasModule } from "@workspace/helpers";
+import { hasModule } from "@workspace/helpers/module";
 
 // https://github.com/prettier/stylelint-config-prettier
 const config: Partial<Config> = {

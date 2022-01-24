@@ -1,4 +1,4 @@
-import { hasModule } from "@workspace/helpers";
+import { hasModule } from "@workspace/helpers/module";
 
 const TAILWIND_AT_RULE_SELECTORS = [
 	"tailwind",

@@ -1,6 +1,6 @@
 import { defineConfig } from "eslint-define-config";
 
-import { isContinuousIntegration } from "@workspace/helpers";
+import { isContinuousIntegration } from "@workspace/helpers/environment";
 
 // https://github.com/paleite/eslint-plugin-diff
 const config = defineConfig({

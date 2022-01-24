@@ -1,16 +1,24 @@
 {
 	"$schema": "https://json.schemastore.org/package",
 	"private": true,
-	"type": "commonjs",
+	"type": "module",
 	"name": "@workspace/helpers",
 	"version": "0.1.0",
 	"engines": {
 		"node": ">=16.0.0"
 	},
-	"main": "build/index.js",
-	"files": [
-		"build/"
-	],
+	"exports": {
+		"./*": "./build/index.js",
+		"./environment": "./build/environment.js",
+		"./module": "./build/module.js"
+	},
+	"typesVersions": {
+		"*": {
+			"*": [
+				"./build/*"
+			]
+		}
+	},
 	"scripts": {
 		"build": "ultra build:all",
 		"build:all": "pnpm build:module",
@@ -18,7 +26,7 @@
 		"build:module": "tsc --build --listEmittedFiles",
 		"clean": "ultra clean:all",
 		"clean:all": "pnpm clean:build ; pnpm clean:cache",
-		"clean:build": "rimraf \"./dist\"",
+		"clean:build": "rimraf \"./build\"",
 		"clean:cache": "rimraf \"./node_modules/.cache\" ; rimraf \"./.ultra.cache.json\"",
 		"dev": "tsc --build --watch",
 		"format": "ultra format:all",
@@ -37,6 +45,10 @@
 			"format:all",
 			"lint:all"
 		]
+	},
+	"dependencies": {
+		"pkg-up": "^4.0.0",
+		"read-pkg-up": "^9.0.0"
 	},
 	"devDependencies": {
 		"@types/node": "^17.0.8",
