@@ -2,8 +2,14 @@
 name: Continuous Integration
 
 on:
+    push:
     pull_request:
+    workflow_dispatch:
         branches: [main, develop]
+
+concurrency:
+    group: ${{ github.workflow }}-${{ github.event.number || github.sha }}
+    cancel-in-progress: true
 
 env:
     CI: true
@@ -23,6 +29,7 @@ jobs:
                 node-version: [16.x]
                 pnpm-version: [6.x]
                 os: [ubuntu-latest]
+
         steps:
             - name: Checkout to ${{ github.repository }} repository
               uses: actions/checkout@v2
@@ -69,24 +76,17 @@ jobs:
                   ref: ${{ github.head_ref }}
                   fetch-depth: 0
 
-            - name: Setup Node.js version ${{ matrix.node-version }}
-              uses: actions/setup-node@v2
-              with:
-                  node-version: ${{ matrix.node-version }}
-                  cache: "pnpm"
-
-            - name: Cache Node.js modules with pnpm
-              uses: actions/cache@v2
-              with:
-                  path: ${{ env.PNPM_CACHE_FOLDER }}
-                  key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-                  restore-keys: ${{ runner.os }}-
-
             - name: Use pnpm version ${{ matrix.pnpm-version }}
               uses: pnpm/action-setup@v2.0.1
               with:
                   version: ${{ matrix.pnpm-version }}
                   run_install: true
+
+            - name: Setup Node.js version ${{ matrix.node-version }}
+              uses: actions/setup-node@v2
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  cache: "pnpm"
 
             - name: Run linters (ESLint, Prettier)
               uses: wearerequired/lint-action@v1.10.0
