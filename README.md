@@ -25,7 +25,7 @@ plugins dependencies, etc.
 ![node.js version support badge]
 [![Dependencies badge]][dependencies url]
 
-[node.js version support badge]: https://img.shields.io/node/v-lts/@terminal-nerds/config-eslint?style=for-the-badge&logo=nodedotjs
+[node.js version support badge]: https://img.shields.io/node/v-lts/@terminal-nerds/eslint-config?style=for-the-badge&logo=nodedotjs
 [dependencies badge]: https://img.shields.io/librariesio/github/terminal-nerds/configs?style=for-the-badge
 [dependencies url]: https://libraries.io/github/terminal-nerds/configs "Dependencies status"
 
@@ -48,19 +48,19 @@ registry].
 | [![stylelint-config badge]][stylelint-config]       | [![stylelint-config version badge]][stylelint-config npm page]       |
 
 [eslint-config]: ./packages/eslint/README.md
-[eslint-config badge]: https://img.shields.io/badge/config-eslint-informational?style=flat-square&logo=eslint
-[eslint-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/config-eslint/latest?style=flat-square&logo=npm
-[eslint-config npm page]: https://www.npmjs.com/package/@terminal-nerds/config-eslint
+[eslint-config badge]: https://img.shields.io/badge/eslint-config-informational?style=flat-square&logo=eslint
+[eslint-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/eslint-config/latest?style=flat-square&logo=npm
+[eslint-config npm page]: https://www.npmjs.com/package/@terminal-nerds/eslint-config
 [markdownlint-config]: ./packages/markdownlint/README.md
 [markdownlint-config badge]: https://img.shields.io/badge/config-markdownlint-informational?style=flat-square&logo=markdown
 [markdownlint-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/markdownlint-config/latest?style=flat-square&logo=npm
 [markdownlint-config npm page]: https://www.npmjs.com/package/@terminal-nerds/markdownlint-config
 [prettier-config]: ./packages/prettier/README.md
-[prettier-config badge]: https://img.shields.io/badge/config-prettier-informational?style=flat-square&logo=prettier
+[prettier-config badge]: https://img.shields.io/badge/prettier-config-informational?style=flat-square&logo=prettier
 [prettier-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/prettier-config/latest?style=flat-square&logo=npm
 [prettier-config npm page]: https://www.npmjs.com/package/@terminal-nerds/prettier-config
 [stylelint-config]: ./packages/stylelint/README.md
-[stylelint-config badge]: https://img.shields.io/badge/config-stylelint-informational?style=flat-square&logo=stylelint
+[stylelint-config badge]: https://img.shields.io/badge/stylelint-config-informational?style=flat-square&logo=stylelint
 [stylelint-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/stylelint-config/latest?style=flat-square&logo=npm
 [stylelint-config npm page]: https://www.npmjs.com/package/@terminal-nerds/stylelint-config
 

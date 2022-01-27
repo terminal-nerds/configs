@@ -1,20 +1,24 @@
-# @terminal-nerds/config-stylelint
+# @terminal-nerds/stylelint-config
 
-![package version badge]\
-![supported stylelint version badge]
+![package version badge]
+[![supported stylelint version badge]][stylelint]
 
-**Extendable [Stylelint] configuration**, part of the [terminal-nerds/configs] project.
+[![Dependencies badge]][dependencies url]
 
-[package version badge]: https://img.shields.io/github/package-json/v/terminal-nerds/configs?filename=packages%2Fstylelint%2Fpackage.json&style=for-the-badge
-[supported stylelint version badge]: https://img.shields.io/github/package-json/dependency-version/terminal-nerds/configs/prettier?filename=packages%2Fstylelint%2Fpackage.json&style=for-the-badge
+➡️ **Extendable [Stylelint] configuration**, part of the [terminal-nerds/configs] project.
+
+[package version badge]: https://img.shields.io/npm/v/@terminal-nerds/stylelint-config/latest?style=for-the-badge&logo=npm
+[supported stylelint version badge]: https://img.shields.io/npm/dependency-version/@terminal-nerds/stylelint-config/stylelint?style=for-the-badge&logo=stylelint
 [stylelint]: https://stylelint.io/
+[dependencies badge]: https://img.shields.io/librariesio/release/npm/@terminal-nerds/stylelint-config?style=for-the-badge
+[dependencies url]: https://libraries.io/npm/@terminal-nerds%stylelint-config
 [terminal-nerds/configs]: https://github.com/terminal-nerds/configs
 
 ---
 
 ## Prerequisites
 
-This configuration package require these tools to use locally on your
+ℹ️ This configuration package require these tools to use locally on your
 device(s):
 
 1. <img
@@ -47,6 +51,13 @@ device(s):
          />
       [npm]
 
+1. <img
+         alt="stylelint logo icon"
+         width="14"
+         src="https://api.iconify.design/logos/stylelint.svg"
+        />
+   Latest [Stylelint] version
+
 [node.js]: https://nodejs.org/en/
 [pnpm]: https://pnpm.io/
 [npm]: https://www.npmjs.com/
@@ -54,9 +65,44 @@ device(s):
 
 ---
 
+## Basic usage
+
+👣 Follow the steps below:
+
+1. Install it with the [Node.js] package manager of your choice. In our case,
+   we use [`pnpm`](pnpm).\
+   Example:
+
+    ```sh
+    pnpm install --save-dev stylelint @terminal-nerds/stylelint-config
+    ```
+
+    [node.js]: https://nodejs.org/en/
+    [`pnpm`]: https://pnpm.io/
+
+1. Create an **[Stylelint configuration file]** - e.g. `.stylelint.(c)js`, and
+   extend this module package configuration.\
+   Example:
+
+    ```js
+    /** @type {import("stylelint").Config} */
+    const config = {
+    	extends: "@terminal-nerds/stylelint-config",
+    };
+
+    module.exports = config;
+    ```
+
+    For [Stylelint CLI] usage, please refer to its documentation.
+
+    [stylelint configuration file]: https://stylelint.io/user-guide/configure
+    [stylelint cli]: https://stylelint.io/user-guide/usage/cli
+
+---
+
 ## Used configurations & plugins
 
-ℹ️ This configuration module for [Stylelint] loads configurations and plugins
+⚙️ This configuration module for [Stylelint] loads configurations and plugins
 options _conditionally_.
 
 ### Configurations
@@ -73,58 +119,17 @@ options _conditionally_.
 
 ### Plugins
 
-| Plugin           | Loading condition(s) |
-| ---------------- | -------------------- |
-| [stylelint-scss] | `sass` as dependency |
-
-[stylelint-scss]: https://github.com/sveltejs/stylelint-plugin-svelte3
-
--   [stylelint-high-performance-animation]
--   [stylelint-no-unsupported-browser-features]
--   [stylelint-order]
+| Plugin                                      | Loading condition(s) |
+| ------------------------------------------- | -------------------- |
+| [stylelint-high-performance-animation]      | -                    |
+| [stylelint-no-unsupported-browser-features] | -                    |
+| [stylelint-order]                           | -                    |
+| [stylelint-scss]                            | `sass` as dependency |
 
 [stylelint-high-performance-animation]: https://github.com/kristerkari/stylelint-high-performance-animation
 [stylelint-no-unsupported-browser-features]: https://github.com/ismay/stylelint-no-unsupported-browser-features
 [stylelint-order]: https://github.com/hudochenkov/stylelint-order
-
----
-
-## Basic usage
-
-⚙️ Follow the steps below:
-
-1. Install it with the [Node.js] package manager of your choice. In our case,
-   we use [`pnpm`](pnpm).\
-   Example:
-
-    ```sh
-    pnpm install --save-dev stylelint @terminal-nerds/config-stylelint
-    ```
-
-    [node.js]: https://nodejs.org/en/
-    [`pnpm`]: https://pnpm.io/
-
-1. Create an **[Stylelint configuration file]** - e.g. `.stylelint.(c)js`, and
-   extend this module package configuration.\
-   Example:
-
-    ```js
-    /** @type {import("stylelint").Config} */
-    const config = {
-    	extends: "@terminal-nerds/config-stylelint",
-
-    	rules: {
-    		// Tweak the rules here...
-    	},
-    };
-
-    module.exports = config;
-    ```
-
-    For [Stylelint CLI] usage, please refer to its documentation.
-
-    [stylelint configuration file]: https://stylelint.io/user-guide/configure
-    [stylelint cli]: https://stylelint.io/user-guide/usage/cli
+[stylelint-scss]: https://github.com/sveltejs/stylelint-plugin-svelte3
 
 ---
 
@@ -132,8 +137,8 @@ options _conditionally_.
 
 [![license badge]][license]
 
-⚖️ For more information, please refer to  the [License section] at the root of
-the monorepo.
+⚖️ For more information, please refer to the [License section] at the root of
+the [terminal-nerds/configs] monorepo.
 
 [license badge]: https://img.shields.io/github/license/terminal-nerds/configs?style=for-the-badge
 [license]: https://github.com/terminal-nerds/configs/blob/main/LICENSE.md
