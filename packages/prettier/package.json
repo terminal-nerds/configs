@@ -5,7 +5,6 @@
 		"access": "public"
 	},
 	"name": "@terminal-nerds/prettier-config",
-	"version": "1.0.0-canary.4",
 	"description": "Terminal Nerds extendable configuration for Prettier.",
 	"keywords": [
 		"config",
