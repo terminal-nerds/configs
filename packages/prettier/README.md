@@ -64,7 +64,6 @@ device(s):
 [npm]: https://www.npmjs.com/
 [yarn]: https://yarnpkg.com/
 
-
 ---
 
 ## Basic usage

@@ -5,7 +5,8 @@
 
 [![Dependencies badge]][dependencies url]
 
-➡️ **Extendable [Stylelint] configuration**, part of the [terminal-nerds/configs] project.
+➡️ **Extendable [Stylelint] configuration**, part of the
+[terminal-nerds/configs] project.
 
 [package version badge]: https://img.shields.io/npm/v/@terminal-nerds/stylelint-config/latest?style=for-the-badge&logo=npm
 [supported stylelint version badge]: https://img.shields.io/npm/dependency-version/@terminal-nerds/stylelint-config/stylelint?style=for-the-badge&logo=stylelint
