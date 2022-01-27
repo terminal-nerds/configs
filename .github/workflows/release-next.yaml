@@ -1,0 +1,64 @@
+---
+name: Release - @next
+
+on:
+    push:
+        branches: [develop]
+
+jobs:
+    release:
+        name: Release
+        runs-on: ${{ matrix.os }}
+        timeout-minutes: 5
+        strategy:
+            matrix:
+                node-version: [16.x]
+                pnpm-version: [6.x]
+                os: [ubuntu-latest]
+        steps:
+            - name: Checkout to ${{ github.repository }}
+              uses: actions/checkout@v2
+              with:
+                  fetch-depth: 0
+
+            - name: Setup Node.js version ${{ matrix.node-version }}
+              uses: actions/setup-node@v2
+              with:
+                  node-version: ${{ matrix.node-version }}
+
+            - name: Cache Node.js module dependencies with pnpm
+              uses: actions/cache@v2
+              with:
+                  path: ${{ env.PNPM_CACHE_FOLDER }}
+                  key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+                  restore-keys: ${{ runner.os }}-
+
+            - name: Use pnpm version ${{ matrix.pnpm-version }}
+              uses: pnpm/action-setup@v2.0.1
+              with:
+                  version: ${{ matrix.pnpm-version }}
+                  run_install: true
+
+            - name: Changeset - enter prelease - @next
+              id: changesets-pre-enter
+              uses: changesets/action@v1
+              run: pnpm changeset pre enter next
+
+            - name: Changeset - update versions
+              id: changesets-version
+              uses: changesets/action@v1
+              run: pnpm changeset version
+
+            - name: Changeset - publish
+              id: changesets-publish
+              uses: changesets/action@v1
+              with:
+                  publish: pnpm changeset publish
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+            # - name: Send a Slack notification if a publish happens
+            #   if: steps.changesets.outputs.published == 'true'
+            #   # You can do something when a publish happens.
+            #   run: my-slack-bot send-notification --message "A new version of ${GITHUB_REPOSITORY} was published!"
