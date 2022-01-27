@@ -37,24 +37,17 @@ jobs:
                   ref: ${{ github.head_ref }}
                   fetch-depth: 0
 
-            - name: Setup Node.js version ${{ matrix.node-version }}
-              uses: actions/setup-node@v2
-              with:
-                  node-version: ${{ matrix.node-version }}
-                  cache: "pnpm"
-
-            - name: Cache Node.js modules with pnpm
-              uses: actions/cache@v2
-              with:
-                  path: ${{ env.PNPM_CACHE_FOLDER }}
-                  key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-                  restore-keys: ${{ runner.os }}-
-
             - name: Use pnpm version ${{ matrix.pnpm-version }}
               uses: pnpm/action-setup@v2.0.1
               with:
                   version: ${{ matrix.pnpm-version }}
                   run_install: true
+
+            - name: Setup Node.js version ${{ matrix.node-version }}
+              uses: actions/setup-node@v2
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  cache: "pnpm"
 
             - name: Execute package.json script "build"
               run: pnpm build
