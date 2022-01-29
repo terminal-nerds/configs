@@ -13,6 +13,7 @@ concurrency:
 
 env:
     CI: true
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     PNPM_CACHE_FOLDER: .pnpm-store
 
 permissions:
