@@ -144,6 +144,7 @@ jobs:
                   pnpm markdownlint .
                   --dot
                   --ignore-path .gitignore
+                  --ignore "./.changeset/*.md"
 
     prettier:
         name: Prettier - check code formatting style
