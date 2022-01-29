@@ -5,6 +5,7 @@
 		"access": "public"
 	},
 	"name": "@terminal-nerds/prettier-config",
+	"version": "0.0.1",
 	"description": "Terminal Nerds extendable configuration for Prettier.",
 	"keywords": [
 		"config",
