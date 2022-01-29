@@ -9,6 +9,10 @@ concurrency:
     group: ${{ github.workflow }}-${{ github.event.number || github.sha }}
     cancel-in-progress: true
 
+defaults:
+    run:
+        shell: bash
+
 env:
     CI: true
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -53,10 +57,8 @@ jobs:
               uses: actions/upload-artifact@v2
               with:
                   if-no-files-found: error
-                  name: Packages artifacts
-                  path: |
-                    helpers/build/
-                    packages/**/dist/
+                  name: artifacts
+                  path: packages/*/dist/
         timeout-minutes: 5
 
     eslint:
@@ -88,8 +90,11 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
 
-            - name: Download Build Artifacts
+            - name: Download built packages artifacts
               uses: actions/download-artifact@v2
+
+            - name: Extract built packages artifacts
+              run: ./.github/extract-artifacts.sh
 
             - name: Execute ESLint
               run: >
@@ -127,14 +132,17 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
 
-            - name: Download Build Artifacts
+            - name: Download built packages artifacts
               uses: actions/download-artifact@v2
+
+            - name: Extract built packages artifacts
+              run: ./.github/extract-artifacts.sh
 
             - name: Execute markdownlint
               run: >
-                pnpm markdownlint .
-                --dot
-                --ignore-path .gitignore
+                  pnpm markdownlint .
+                  --dot
+                  --ignore-path .gitignore
 
     prettier:
         name: Prettier - check code formatting style
@@ -165,8 +173,11 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
 
-            - name: Download Build Artifacts
+            - name: Download built packages artifacts
               uses: actions/download-artifact@v2
+
+            - name: Extract built packages artifacts
+              run: ./.github/extract-artifacts.sh
 
             - name: Execute Prettier script
               run: >
