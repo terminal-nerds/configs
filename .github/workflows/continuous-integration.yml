@@ -98,8 +98,9 @@ jobs:
 
             - name: Execute ESLint
               run: >
+                  DEBUG="eslint:cli-engine"
                   pnpm eslint .
-                  --ext .json,.ts,.yaml,.yml,.vue
+                  --ext .json,.ts,.yaml,.yml,
         timeout-minutes: 5
 
     markdownlint:
