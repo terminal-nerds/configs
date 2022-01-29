@@ -3,7 +3,6 @@ name: Continuous Integration
 
 on:
     pull_request:
-    workflow_dispatch:
         branches: [main, develop]
 
 concurrency:
@@ -23,13 +22,11 @@ jobs:
     build:
         name: Build packages
         runs-on: ${{ matrix.os }}
-        timeout-minutes: 5
         strategy:
             matrix:
                 node-version: [16.x]
                 pnpm-version: [6.x]
                 os: [ubuntu-latest]
-
         steps:
             - name: Checkout to ${{ github.repository }} repository
               uses: actions/checkout@v2
@@ -51,15 +48,16 @@ jobs:
 
             - name: Execute package.json script "build"
               run: pnpm build
+        timeout-minutes: 5
 
-    lint:
-        name: Run linters
+    eslint:
+        name: ESLint - statically analyze the JavaScript code
         needs: [build]
         runs-on: ${{ matrix.os }}
-        timeout-minutes: 5
         strategy:
+            fail-fast: false
             matrix:
-                node-version: [16.x]
+                node-version: [14.x]
                 pnpm-version: [6.x]
                 os: [ubuntu-latest]
         steps:
@@ -81,17 +79,81 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
 
-            - name: Run linters (ESLint, Prettier)
-              uses: wearerequired/lint-action@v1.10.0
-              with:
-                  eslint: true
-                  eslint_command_prefix: DEBUG="eslint:cli-engine"
-                  eslint_extensions: json,ts,yaml,yml
-                  prettier: true
-                  git_name: github-actions[bot]
-                  git_email: github-actions[bot]@users.noreply.github.com
-                  github_token: ${{ env.GITHUB_TOKEN }}
-                  neutral_check_on_warning: false
+            - name: Execute ESLint
+              run: >
+                  pnpm eslint .
+                  --ext .json,.ts,.yaml,.yml,.vue
+        timeout-minutes: 5
 
-            - name: Run markdownlint
-              run: pnpm markdownlint . --dot --ignore-path .gitignore
+    markdownlint:
+        name: markdownlint - validate markdown files
+        needs: [build]
+        runs-on: ${{ matrix.os }}
+        strategy:
+            fail-fast: false
+            matrix:
+                node-version: [14.x]
+                pnpm-version: [6.x]
+                os: [ubuntu-latest]
+        timeout-minutes: 5
+        steps:
+            - name: Checkout to ${{ github.repository }} repository
+              uses: actions/checkout@v2
+              with:
+                  ref: ${{ github.head_ref }}
+                  fetch-depth: 0
+
+            - name: Use pnpm version ${{ matrix.pnpm-version }}
+              uses: pnpm/action-setup@v2.0.1
+              with:
+                  version: ${{ matrix.pnpm-version }}
+                  run_install: true
+
+            - name: Setup Node.js version ${{ matrix.node-version }}
+              uses: actions/setup-node@v2
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  cache: "pnpm"
+
+            - name: Execute markdownlint
+              run: >
+                pnpm markdownlint .
+                --dot
+                --ignore-path .gitignore
+
+    prettier:
+        name: Prettier - check code formatting style
+        needs: [build]
+        runs-on: ${{ matrix.os }}
+        strategy:
+            fail-fast: false
+            matrix:
+                node-version: [14.x]
+                pnpm-version: [6.x]
+                os: [ubuntu-latest]
+        steps:
+            - name: Checkout to ${{ github.repository }} repository
+              uses: actions/checkout@v2
+              with:
+                  ref: ${{ github.head_ref }}
+                  fetch-depth: 0
+
+            - name: Use pnpm version ${{ matrix.pnpm-version }}
+              uses: pnpm/action-setup@v2.0.1
+              with:
+                  version: ${{ matrix.pnpm-version }}
+                  run_install: true
+
+            - name: Setup Node.js version ${{ matrix.node-version }}
+              uses: actions/setup-node@v2
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  cache: "pnpm"
+
+            - name: Execute Prettier script
+              run: >
+                  pnpm pretty-quick
+                  --branch HEAD~${{ github.event.pull_request.commits }}
+                  --check
+                  --verbose
+        timeout-minutes: 5
