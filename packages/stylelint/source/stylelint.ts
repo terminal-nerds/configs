@@ -20,20 +20,13 @@ const config: Partial<Config> = {
 
 	rules: {
 		// https://stylelint.io/user-guide/rules/list
-		"at-rule-no-unknown": hasModule("sass")
-			? undefined
-			: [
-					true,
-					{
-						ignoreAtRules: [...extendTailwindAtRuleSelectors()],
-					},
-			  ],
+		"at-rule-no-unknown": !hasModule("sass")
+			? [true, { ignoreAtRules: [...extendTailwindAtRuleSelectors()] }]
+			: undefined,
 
 		"selector-pseudo-class-no-unknown": [
 			true,
-			{
-				ignorePseudoClasses: ["local", "global"],
-			},
+			{ ignorePseudoClasses: ["local", "global"] },
 		],
 
 		"selector-class-pattern": "^([a-z][a-z0-9]*)(_[a-z0-9]+)*$",
