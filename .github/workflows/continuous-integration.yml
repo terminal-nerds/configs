@@ -53,11 +53,11 @@ jobs:
             - name: Execute package.json script "build"
               run: pnpm build
 
-            - name: "Upload built packages artifacts"
+            - name: "Upload built packages"
               uses: actions/upload-artifact@v2
               with:
                   if-no-files-found: error
-                  name: artifacts
+                  name: built-packages
                   path: packages/*/dist/index.js
         timeout-minutes: 5
 
@@ -90,11 +90,11 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
 
-            - name: Download built packages artifacts
+            - name: Download built packages
               uses: actions/download-artifact@v2
 
-            - name: Extract built packages artifacts
-              run: ./.github/extract-artifacts.sh
+            - name: Extract built packages
+              run: ./.github/extract-built-packages.sh
 
             - name: Execute ESLint
               run: >
@@ -133,11 +133,11 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
 
-            - name: Download built packages artifacts
+            - name: Download built packages
               uses: actions/download-artifact@v2
 
-            - name: Extract built packages artifacts
-              run: ./.github/extract-artifacts.sh
+            - name: Extract built packages
+              run: ./.github/extract-built-packages.sh
 
             - name: Execute markdownlint
               run: >
@@ -174,11 +174,11 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
 
-            - name: Download built packages artifacts
+            - name: Download built packages
               uses: actions/download-artifact@v2
 
-            - name: Extract built packages artifacts
-              run: ./.github/extract-artifacts.sh
+            - name: Extract built packages
+              run: ./.github/extract-built-packages.sh
 
             - name: Execute Prettier script
               run: >
