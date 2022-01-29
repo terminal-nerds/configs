@@ -3,7 +3,7 @@ name: Continuous Integration
 
 on:
     pull_request:
-        branches: [main, develop]
+        branches: [main]
 
 concurrency:
     group: ${{ github.workflow }}-${{ github.event.number || github.sha }}
@@ -190,7 +190,8 @@ jobs:
 
     release:
         name: Release with Changesets
-        if: ${{ github.ref_name == 'main' && github.repository_owner == 'terminal-nerds' }}
+        # Prevent forked Pull Requests from triggering
+        if: github.repository == 'terminal-nerds/configs'
         needs: [build, eslint, markdownlint, prettier]
         runs-on: ${{ matrix.os }}
         strategy:
