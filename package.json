@@ -10,6 +10,9 @@
 		"node": ">=16",
 		"pnpm": ">=6"
 	},
+	"volta": {
+		"node": "16.13.2"
+	},
 	"scripts": {
 		"build": "ultra --recursive --build build:all",
 		"clean": "ultra --root --recursive clean:all",
@@ -45,8 +48,5 @@
 		"rimraf": "^3.0.2",
 		"syncpack": "^6.2.0",
 		"ultra-runner": "^3.10.5"
-	},
-	"volta": {
-		"node": "16.13.2"
 	}
 }

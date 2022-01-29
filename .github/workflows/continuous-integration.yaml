@@ -82,6 +82,9 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
 
+            - name: Install ESLint & Prettier globally
+              run: pnpm add --global eslint prettier
+
             - name: Run linters (ESLint, Prettier)
               uses: wearerequired/lint-action@v1.10.0
               with:

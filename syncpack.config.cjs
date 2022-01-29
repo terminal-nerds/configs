@@ -21,6 +21,7 @@ const config = {
 		"publishConfig",
 		"name",
 		"version",
+		"volta",
 		"description",
 		"keywords",
 		"author",
