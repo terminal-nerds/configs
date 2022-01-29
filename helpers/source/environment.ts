@@ -1,11 +1,7 @@
-import { readPackageJSON } from "./module";
+export function isContinuousIntegration(): boolean {
+	const environmentVariables = Object.keys(process.env);
+	const names = new Set(["CI", "CONTINUOUS_INTEGRATION"]);
+	const match = environmentVariables.find((variable) => names.has(variable));
 
-export function isContinuousIntegration() {
-	const names = new Set([
-		"ci",
-		"continuous integration",
-		"continuous-integration",
-	]);
-
-	return names.has(process.env["NODE_ENV"] || "");
+	return match ? (process.env[match] as string) === "true" : false;
 }

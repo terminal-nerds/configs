@@ -122,20 +122,20 @@ options _conditionally_.
 
 ### Plugins
 
-| Plugin                                | Loading condition(s)                                                           |
-| ------------------------------------- | ------------------------------------------------------------------------------ |
-| [@typescript-eslint/eslint-plugin]    | `typescript` as dependency                                                     |
-| [eslint-plugin-compat]                | -                                                                              |
-| [eslint-plugin-diff]                  | `NODE_ENV` === `"ci"`, `"continuous integration"` , `"continuous-integration"` |
-| [eslint-plugin-import]                | -                                                                              |
-| [eslint-plugin-json-schema-validator] | -                                                                              |
-| [eslint-plugin-jsonc]                 | -                                                                              |
-| [eslint-plugin-node]                  | -                                                                              |
-| [eslint-plugin-regexp]                | -                                                                              |
-| [eslint-plugin-sonarjs]               | -                                                                              |
-| [eslint-plugin-svelte3]               | `svelte` as dependency                                                         |
-| [eslint-plugin-unicorn]               | -                                                                              |
-| [eslint-plugin-yml]                   | -                                                                              |
+| Plugin                                | Loading condition(s)                                                         |
+| ------------------------------------- | ---------------------------------------------------------------------------- |
+| [@typescript-eslint/eslint-plugin]    | `typescript` as dependency                                                   |
+| [eslint-plugin-compat]                | -                                                                            |
+| [eslint-plugin-diff]                  | Set one of environment variables: `CI` or `CONTINUOUS_INTEGRATION` to `true` |
+| [eslint-plugin-import]                | -                                                                            |
+| [eslint-plugin-json-schema-validator] | -                                                                            |
+| [eslint-plugin-jsonc]                 | -                                                                            |
+| [eslint-plugin-node]                  | -                                                                            |
+| [eslint-plugin-regexp]                | -                                                                            |
+| [eslint-plugin-sonarjs]               | -                                                                            |
+| [eslint-plugin-svelte3]               | `svelte` as dependency                                                       |
+| [eslint-plugin-unicorn]               | -                                                                            |
+| [eslint-plugin-yml]                   | -                                                                            |
 
 [@typescript-eslint/eslint-plugin]: https://github.com/typescript-eslint/typescript-eslint
 [eslint-plugin-diff]: https://github.com/paleite/eslint-plugin-diff
