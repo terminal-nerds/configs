@@ -27,7 +27,7 @@
 		"lint:all": "pnpm lint:format ; pnpm lint:js ; pnpm lint:md",
 		"lint:format": "pretty-quick --branch develop --pattern \"**/*\" --pattern \"!{helpers,packages}/**/*\" --verbose --check",
 		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .cjs,.json,.yml,.yaml --ignore \"./packages\" --cache --cache-location \"./node_modules/.cache/eslint\"",
-		"lint:md": "markdownlint . --dot --ignore-path \"./.gitignore\" --ignore \"./{helpers,packages}/**/*\""
+		"lint:md": "markdownlint . --dot --ignore-path \"./.gitignore\" --ignore \"./{helpers,packages}/**/*\" --ignore \"./.changeset/*.md\""
 	},
 	"ultra": {
 		"concurrent": [
