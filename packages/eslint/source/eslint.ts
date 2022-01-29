@@ -22,7 +22,6 @@ const config = defineConfig({
 		"**/dist",
 		"**/package-lock.json",
 		"**/pnpm-lock.yaml",
-
 	],
 
 	extends: ["eslint:recommended"],

@@ -7,7 +7,7 @@ const config = defineConfig({
 	extends: ["plugin:unicorn/recommended"],
 	rules: {
 		"unicorn/filename-case": ["off"], // Use `ls-lint` instead
-	}
+	},
 });
 
 export default isESModule() ? config : {};

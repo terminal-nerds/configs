@@ -95,7 +95,7 @@ device(s):
     ```
 
     For [Prettier CLI] usage, please refer to its documentation.\
-    We recommend to use [`pretty-quick`](pretty-quick) instead, for more
+     We recommend to use [`pretty-quick`](pretty-quick) instead, for more
     human-friendly output and performance.
 
     [prettier configuration file]: https://prettier.io/docs/en/configuration.html

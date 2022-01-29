@@ -14,7 +14,7 @@ export function readPackageJSON(): PackageJson {
 }
 
 export function hasModule(name: string): boolean {
-	const { dependencies, devDependencies }  = readPackageJSON();
+	const { dependencies, devDependencies } = readPackageJSON();
 
 	return new Map(
 		Object.entries({

@@ -18,5 +18,4 @@ const config: Partial<Config> = {
 	},
 };
 
-
 export default hasModule("sass") ? config : {};

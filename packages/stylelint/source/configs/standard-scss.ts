@@ -7,4 +7,4 @@ const config: Partial<Config> = {
 	extends: ["stylelint-config-standard-scss"],
 };
 
-export default  hasModule("sass") ? config : {};
+export default hasModule("sass") ? config : {};

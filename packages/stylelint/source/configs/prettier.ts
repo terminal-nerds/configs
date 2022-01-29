@@ -7,5 +7,4 @@ const config: Partial<Config> = {
 	extends: ["stylelint-config-prettier"],
 };
 
-
 export default hasModule("prettier") ? config : {};

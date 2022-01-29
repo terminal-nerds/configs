@@ -27,7 +27,7 @@ const config: Partial<Config> = {
 					{
 						ignoreAtRules: [...extendTailwindAtRuleSelectors()],
 					},
-			],
+			  ],
 
 		"selector-pseudo-class-no-unknown": [
 			true,
@@ -38,7 +38,6 @@ const config: Partial<Config> = {
 
 		"selector-class-pattern": "^([a-z][a-z0-9]*)(_[a-z0-9]+)*$",
 	},
-
 };
 
 export default config;

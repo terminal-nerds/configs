@@ -8,5 +8,5 @@ export default defineConfig({
 	noExternal: ["@workspace/helpers"],
 	sourcemap: true,
 	splitting: false,
-	target: ["node16"]
+	target: ["node16"],
 });

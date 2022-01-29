@@ -9,5 +9,5 @@ const TAILWIND_AT_RULE_SELECTORS = [
 ];
 
 export function extendTailwindAtRuleSelectors() {
-	return hasModule("tailwindcss") ? TAILWIND_AT_RULE_SELECTORS: [];
+	return hasModule("tailwindcss") ? TAILWIND_AT_RULE_SELECTORS : [];
 }
