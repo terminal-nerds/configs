@@ -58,7 +58,7 @@ jobs:
               with:
                   if-no-files-found: error
                   name: built-packages
-                  path: packages/*/dist/index.js
+                  path: packages/*/dist/
         timeout-minutes: 5
 
     eslint:
@@ -187,3 +187,51 @@ jobs:
                   --check
                   --verbose
         timeout-minutes: 5
+
+    release:
+        name: Release with Changesets
+        if: ${{
+            github.ref_name == "develop"
+            && github.repository_owner == "terminal_nerds"
+            }}
+        needs: [build, eslint, markdownlint, prettier]
+        runs-on: ${{ matrix.os }}
+        strategy:
+            fail-fast: true
+            matrix:
+                node-version: [16.x]
+                pnpm-version: [6.x]
+                os: [ubuntu-latest]
+        timeout-minutes: 5
+        steps:
+            - name: Checkout to ${{ github.repository }} repository
+              uses: actions/checkout@v2
+              with:
+                  ref: ${{ github.head_ref }}
+                  fetch-depth: 0
+
+            - name: Use pnpm version ${{ matrix.pnpm-version }}
+              uses: pnpm/action-setup@v2.0.1
+              with:
+                  version: ${{ matrix.pnpm-version }}
+                  run_install: true
+
+            - name: Setup Node.js version ${{ matrix.node-version }}
+              uses: actions/setup-node@v2
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  cache: "pnpm"
+
+            - name: Download built packages
+              uses: actions/download-artifact@v2
+
+            - name: Extract built packages
+              run: ./.github/extract-built-packages.sh
+
+            - name: Create a release with Changesets
+              id: changesets
+              uses: changesets/action@v1
+              with:
+                  publish: pnpm changeset publish
+                  commit: "chore(changeset): 🏷️ Versioning packages"
+                  title: "[CONTINUOUS INTEGRATION - Changeset] Versioning packages"
