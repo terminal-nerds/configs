@@ -1,11 +1,11 @@
 {
 	"$schema": "https://json.schemastore.org/package",
 	"publishConfig": {
-		"registry": "https://npm.pkg.github.com",
+		"registry": "https://registry.npmjs.org/",
 		"access": "public"
 	},
-	"name": "@terminal-nerds/config-prettier",
-	"version": "0.1.0",
+	"name": "@terminal-nerds/prettier-config",
+	"version": "0.0.1",
 	"description": "Terminal Nerds extendable configuration for Prettier.",
 	"keywords": [
 		"config",
@@ -24,32 +24,45 @@
 		"/dist"
 	],
 	"scripts": {
-		"build": "run-s build:*",
-		"build:types": "tsc --emitDeclarationOnly",
-		"build:module": "esbuild --bundle \"./source/index.ts\" --outdir=\"./dist\" --minify --sourcemap --platform=node --target=node16 --format=cjs --analyze=verbose --color=true",
-		"clean:all": "pnpm clean:build && pnpm clean:cache",
+		"build": "ultra build:all",
+		"build:all": "pnpm build:package",
+		"build:package": "tsup",
+		"clean": "ultra clean:all",
+		"clean:all": "pnpm clean:build; pnpm clean:cache",
 		"clean:build": "rimraf \"./dist\"",
-		"clean:cache": "rimraf \"./node_modules/.cache\"",
-		"dev": "run-p dev:*",
-		"dev:module": "pnpm build:module -- --watch",
-		"dev:types": "pnpm build:types -- --watch",
-		"format:all": "pnpm format:prettier",
+		"clean:cache": "rimraf \"./node_modules/.cache\" ; rimraf \"./.ultra.cache.json\"",
+		"dev": "tsup --watch",
+		"format": "ultra format:all",
+		"format:all": "pnpm format:prettier ; pnpm format:syncpack",
 		"format:prettier": "pretty-quick --branch develop --pattern \"./packages/prettier/**/*\" --verbose",
-		"lint:all": "pnpm lint:format && pnpm lint:js && pnpm lint:md && pnpm lint:types",
+		"format:syncpack": "syncpack format",
+		"lint": "ultra lint:all",
+		"lint:all": "pnpm lint:format ; pnpm lint:js ; pnpm lint:md ; pnpm lint:types",
 		"lint:format": "pretty-quick --branch develop --pattern \"./packages/prettier/**/*\" --verbose --check",
-		"lint:js": "eslint . --ext .json,.ts --cache --cache-location \"./node_modules/.cache/eslint\"",
+		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
 		"lint:types": "tsc --noEmit"
+	},
+	"ultra": {
+		"concurrent": [
+			"clean:all",
+			"format:all",
+			"lint:all"
+		]
 	},
 	"peerDependencies": {
 		"prettier": "^2.5.1"
 	},
+	"dependencies": {
+		"prettier-plugin-svelte": "^2.5.1"
+	},
 	"devDependencies": {
-		"@types/node": "^17.0.5",
+		"@types/node": "^17.0.8",
+		"@types/prettier": "^2.4.3",
 		"@workspace/configs": "workspace:*",
 		"@workspace/helpers": "workspace:*",
 		"deepmerge-ts": "^2.0.1",
-		"prettier": "^2.5.1",
-		"prettier-plugin-svelte": "^2.5.1"
+		"tsup": "^5.11.11",
+		"typescript": "^4.5.4"
 	}
 }

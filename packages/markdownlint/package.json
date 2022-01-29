@@ -1,11 +1,11 @@
 {
 	"$schema": "https://json.schemastore.org/package",
 	"publishConfig": {
-		"registry": "https://npm.pkg.github.com",
+		"registry": "https://registry.npmjs.org/",
 		"access": "public"
 	},
-	"name": "@terminal-nerds/config-markdownlint",
-	"version": "0.1.0",
+	"name": "@terminal-nerds/markdownlint-config",
+	"version": "0.0.1",
 	"description": "Terminal Nerds extendable configuration for markdownlint.",
 	"keywords": [
 		"config",
@@ -21,10 +21,24 @@
 	},
 	"main": "markdownlint.json",
 	"scripts": {
-		"format": "pretty-quick --branch develop --pattern \"packages/markdownlint/**/*\" --verbose",
-		"lint": "pnpm lint:format && pnpm lint:md",
+		"clean": "ultra clean:all",
+		"clean:all": "pnpm clean:cache",
+		"clean:cache": "rimraf \"./node_modules/.cache\" ; rimraf \"./.ultra.cache.json\"",
+		"format": "ultra format:all",
+		"format:all": "pnpm format:prettier ; pnpm format:syncpack",
+		"format:prettier": "pretty-quick --branch develop --pattern \"packages/markdownlint/**/*\" --verbose",
+		"format:syncpack": "syncpack format",
+		"lint": "ultra lint:all",
+		"lint:all": "pnpm lint:format ; pnpm lint:js ; pnpm lint:md",
 		"lint:format": "pretty-quick --branch develop --pattern \"packages/markdownlint/**/*\" --verbose --check",
+		"lint:js": "eslint . --ext .json --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\""
+	},
+	"ultra": {
+		"concurrent": [
+			"format:all",
+			"lint:all"
+		]
 	},
 	"peerDependencies": {
 		"markdownlint-cli": "^0.30.0"

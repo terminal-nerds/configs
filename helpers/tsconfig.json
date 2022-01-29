@@ -1,11 +1,14 @@
 {
 	"$schema": "https://json.schemastore.org/tsconfig",
-	"compilerOptions": {
-		"module": "CommonJS",
-		"outDir": "./build",
-		"target": "ESNext"
-	},
 	"extends": "@workspace/configs/tsconfig.json",
-	"include": ["source/**/*"],
-	"exclude": ["build", "node_modules"]
+	"compilerOptions": {
+		"composite": true,
+		"module": "ESNext",
+		"outDir": "./build",
+		"rootDir": "./source",
+		"tsBuildInfoFile": "./node_modules/.cache/tsbuildinfo",
+		"types": ["node"]
+	},
+	"exclude": ["build/", "node_modules/"],
+	"include": ["source/"]
 }

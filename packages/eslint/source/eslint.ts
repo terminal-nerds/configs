@@ -1,24 +1,27 @@
 import { defineConfig } from "eslint-define-config";
 
 const config = defineConfig({
-	parser: "@typescript-eslint/parser",
 	parserOptions: {
 		ecmaVersion: "latest",
 		sourceType: "module",
 	},
 
 	ignorePatterns: [
+		// Unignore files starting with dot (usually configuration files)
+		"!.*",
+		// Ignore...
 		"**/node_modules",
 		"**/.git",
+		"**/.github/workflows",
 		"**/.husky",
 		"**/.svelte-kit",
 		"**/.turbo",
+		"**/.ultra.cache.json",
 		"**/.vercel",
 		"**/build",
 		"**/dist",
-		"pnpm-lock.yaml",
-		// Unignore files starting with dot (usually configuration files)
-		"!.*",
+		"**/package-lock.json",
+		"**/pnpm-lock.yaml",
 	],
 
 	extends: ["eslint:recommended"],

@@ -1,74 +1,81 @@
-# @terminal-nerds/config-eslint
+# @terminal-nerds/eslint-config
 
-![package version badge]\
-![supported eslint version badge]
+![package version badge]
+[![supported eslint version badge]][eslint]
 
-**Extendable [ESLint] configuration**, part of the [terminal-nerds/configs] project.
+[![Dependencies badge]][dependencies url]
 
-[package version badge]: https://img.shields.io/github/package-json/v/terminal-nerds/configs?filename=packages%2Feslint%2Fpackage.json&style=for-the-badge
-[supported eslint version badge]: https://img.shields.io/github/package-json/dependency-version/terminal-nerds/configs/prettier?filename=packages%2Feslint%2Fpackage.json&style=for-the-badge
+➡️ **Extendable [ESLint] configuration**, part of the [terminal-nerds/configs] project.
+
+[package version badge]: https://img.shields.io/npm/v/@terminal-nerds/eslint-config/latest?style=for-the-badge&logo=npm
+[supported eslint version badge]: https://img.shields.io/npm/dependency-version/@terminal-nerds/eslint-config/eslint?style=for-the-badge&logo=eslint
 [eslint]: https://eslint.org/
+[dependencies badge]: https://img.shields.io/librariesio/release/npm/@terminal-nerds/eslint-config?style=for-the-badge
+[dependencies url]: https://libraries.io/npm/@terminal-nerds%2eslint-config
 [terminal-nerds/configs]: https://github.com/terminal-nerds/configs
 
 ---
 
-## Used configurations & plugins
+## Prerequisites
 
-ℹ️ This configuration module for [ESLint] loads configurations and plugins
-options _conditionally_.
+ℹ️ This configuration package require these tools to use locally on your
+device(s):
 
-### Configurations
+1. <img
+      alt="Node.JS logo icon"
+      width="14"
+      src="https://api.iconify.design/logos/nodejs-icon.svg"
+   />
+   Latest [Node.js] LTS _(Long-Term Support)_ version.
 
-| Configurations           | Loading condition(s)     |
-| ------------------------ | ------------------------ |
-| [eslint-config-prettier] | `prettier` as dependency |
+1. One of Node.js package managers:
 
-[eslint-config-prettier]: https://github.com/prettier/eslint-config-prettier
+    - <img
+             alt="pnpm logo icon"
+             width="14"
+             src="https://api.iconify.design/vscode-icons/file-type-light-pnpm.svg"
+          />
+      [pnpm]
 
-### Plugins
+    - <img
+            alt="yarn logo icon"
+            width="14"
+            src="https://api.iconify.design/logos/yarn.svg"
+           />
+      [yarn]
 
-| Plugin                             | Loading condition(s)                                                           |
-| ---------------------------------- | ------------------------------------------------------------------------------ |
-| [eslint-plugin-svelte3]            | `svelte` as dependency                                                         |
-| [@typescript-eslint/eslint-plugin] | `typescript` as dependency                                                     |
-| [eslint-plugin-diff]               | `NODE_ENV` === `"ci"`, `"continuous integration"` , `"continuous-integration"` |
+    - <img
+          alt="npm logo icon"
+          width="14"
+          src="https://api.iconify.design/logos/npm-icon.svg"
+         />
+      [npm]
 
-[eslint-plugin-svelte3]: https://github.com/sveltejs/eslint-plugin-svelte3
-[@typescript-eslint/eslint-plugin]: https://github.com/typescript-eslint/typescript-eslint
-[eslint-plugin-diff]: https://github.com/paleite/eslint-plugin-diff
+1. <img
+         alt="eslint logo icon"
+         width="14"
+         src="https://api.iconify.design/logos/eslint.svg"
+        />
+   Latest [ESLint] version
 
--   [eslint-plugin-compat]
--   [eslint-plugin-import]
--   [eslint-plugin-json-schema-validator]
--   [eslint-plugin-jsonc]
--   [eslint-plugin-node]
--   [eslint-plugin-regexp]
--   [eslint-plugin-sonarjs]
--   [eslint-plugin-unicorn]
--   [eslint-plugin-yml]
-
-[eslint-plugin-compat]: https://github.com/amilajack/eslint-plugin-compat
-[eslint-plugin-import]: https://github.com/import-js/eslint-plugin-import
-[eslint-plugin-json-schema-validator]: https://github.com/ota-meshi/eslint-plugin-json-schema-validator
-[eslint-plugin-jsonc]: https://github.com/ota-meshi/eslint-plugin-jsonc
-[eslint-plugin-node]: https://github.com/mysticatea/eslint-plugin-node
-[eslint-plugin-regexp]: https://github.com/ota-meshi/eslint-plugin-regexp
-[eslint-plugin-sonarjs]: https://github.com/SonarSource/eslint-plugin-sonarjs
-[eslint-plugin-unicorn]: https://github.com/sindresorhus/eslint-plugin-unicorn
-[eslint-plugin-yml]: https://github.com/ota-meshi/eslint-plugin-yml
+[node.js]: https://nodejs.org/en/
+[pnpm]: https://pnpm.io/
+[npm]: https://www.npmjs.com/
+[yarn]: https://yarnpkg.com/
+[node.js version support badge]: https://img.shields.io/node/v-lts/@terminal-nerds/eslint-config?style=for-the-badge&logo=nodedotjs
 
 ---
 
 ## Basic usage
 
-⚙️ Follow the steps below:
+👣 Follow the steps below:
 
 1. Install it with the [Node.js] package manager of your choice. In our case,
    we use [`pnpm`](pnpm).\
    Example:
 
     ```sh
-    pnpm install --save-dev eslint @terminal-nerds/config-eslint
+    pnpm add --save-dev eslint @terminal-nerds/eslint-config
     ```
 
     [node.js]: https://nodejs.org/en/
@@ -80,14 +87,14 @@ options _conditionally_.
 
     ```js
     const config = {
-		extends: "./node_modules/@terminal-nerds/config-eslint",
+    	extends: "@terminal-nerds",
 
-		env: {
-			// Specify the environment(s)
-			// https://eslint.org/docs/user-guide/configuring/language-options#specifying-environments
-			browser: true,
-			node: true,
-		},
+    	env: {
+    		// Specify the environment(s)
+    		// https://eslint.org/docs/user-guide/configuring/language-options#specifying-environments
+    		browser: true,
+    		node: true,
+    	},
     };
 
     module.exports = config;
@@ -100,11 +107,57 @@ options _conditionally_.
 
 ---
 
+## Used configurations & plugins
+
+⚙️ This configuration module for [ESLint] loads configurations and plugins
+options _conditionally_.
+
+### Configurations
+
+| Configurations           | Loading condition(s)     |
+| ------------------------ | ------------------------ |
+| [eslint-config-prettier] | `prettier` as dependency |
+
+[eslint-config-prettier]: https://github.com/prettier/eslint-config-prettier
+
+### Plugins
+
+| Plugin                                | Loading condition(s)                                                         |
+| ------------------------------------- | ---------------------------------------------------------------------------- |
+| [@typescript-eslint/eslint-plugin]    | `typescript` as dependency                                                   |
+| [eslint-plugin-compat]                | -                                                                            |
+| [eslint-plugin-diff]                  | Set one of environment variables: `CI` or `CONTINUOUS_INTEGRATION` to `true` |
+| [eslint-plugin-import]                | -                                                                            |
+| [eslint-plugin-json-schema-validator] | -                                                                            |
+| [eslint-plugin-jsonc]                 | -                                                                            |
+| [eslint-plugin-node]                  | -                                                                            |
+| [eslint-plugin-regexp]                | -                                                                            |
+| [eslint-plugin-sonarjs]               | -                                                                            |
+| [eslint-plugin-svelte3]               | `svelte` as dependency                                                       |
+| [eslint-plugin-unicorn]               | -                                                                            |
+| [eslint-plugin-yml]                   | -                                                                            |
+
+[@typescript-eslint/eslint-plugin]: https://github.com/typescript-eslint/typescript-eslint
+[eslint-plugin-diff]: https://github.com/paleite/eslint-plugin-diff
+[eslint-plugin-compat]: https://github.com/amilajack/eslint-plugin-compat
+[eslint-plugin-import]: https://github.com/import-js/eslint-plugin-import
+[eslint-plugin-json-schema-validator]: https://github.com/ota-meshi/eslint-plugin-json-schema-validator
+[eslint-plugin-jsonc]: https://github.com/ota-meshi/eslint-plugin-jsonc
+[eslint-plugin-node]: https://github.com/mysticatea/eslint-plugin-node
+[eslint-plugin-regexp]: https://github.com/ota-meshi/eslint-plugin-regexp
+[eslint-plugin-sonarjs]: https://github.com/SonarSource/eslint-plugin-sonarjs
+[eslint-plugin-svelte3]: https://github.com/sveltejs/eslint-plugin-svelte3
+[eslint-plugin-unicorn]: https://github.com/sindresorhus/eslint-plugin-unicorn
+[eslint-plugin-yml]: https://github.com/ota-meshi/eslint-plugin-yml
+
+---
+
 ## License
 
 [![license badge]][license]
 
-⚖️ For more information, please refer to the [License section] at the root of the monorepo.
+⚖️ For more information, please refer to the [License section] at the root of
+the [terminal-nerds/configs] monorepo.
 
 [license badge]: https://img.shields.io/github/license/terminal-nerds/configs?style=for-the-badge
 [license]: https://github.com/terminal-nerds/configs/blob/main/LICENSE.md

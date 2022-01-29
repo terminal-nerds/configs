@@ -1,26 +1,29 @@
 import { deepmerge } from "deepmerge-ts";
 
-import { hasModule } from "@workspace/helpers";
+import stylelint from "./stylelint.js";
 
-import stylelintDefault from "./stylelint";
-import configPrettier from "./configs/prettier";
-import configStandard from "./configs/standard";
-import configStandardSCSS from "./configs/standard-scss";
-import pluginHighPerformanceAnimations from "./plugins/high-performance-animations";
-import pluginNoUnsupportedBrowserFeatures from "./plugins/no-unsupported-browser-features";
-import pluginOrder from "./plugins/order";
-import pluginSCSS from "./plugins/scss";
+import configPrettier from "./configs/prettier.js";
+import configStandard from "./configs/standard.js";
+import configStandardSCSS from "./configs/standard-scss.js";
+
+import pluginHighPerformanceAnimations from "./plugins/high-performance-animations.js";
+import pluginNoUnsupportedBrowserFeatures from "./plugins/no-unsupported-browser-features.js";
+import pluginOrder from "./plugins/order.js";
+import pluginSCSS from "./plugins/scss.js";
 
 const configurations = deepmerge(
-	stylelintDefault,
-	{ ...(hasModule("sass") ? configStandardSCSS : configStandard) },
+	stylelint,
+
+	configStandard,
+	configStandardSCSS,
+
 	pluginHighPerformanceAnimations,
 	pluginNoUnsupportedBrowserFeatures,
 	pluginOrder,
-	{ ...(hasModule("sass") && pluginSCSS) },
+	pluginSCSS,
+
 	// NOTE: Must come as last!
 	configPrettier,
 );
 
-// eslint-disable-next-line unicorn/prefer-module
 module.exports = configurations;

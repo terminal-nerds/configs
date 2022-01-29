@@ -1,3 +1,5 @@
+import { hasModule } from "@workspace/helpers/module";
+
 // https://github.com/sveltejs/prettier-plugin-svelte
 const config = {
 	overrides: [
@@ -18,4 +20,4 @@ const config = {
 	svelteIndentScriptAndStyle: true,
 };
 
-export default config;
+export default hasModule("svelte") ? config : {};

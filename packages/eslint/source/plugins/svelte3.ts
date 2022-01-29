@@ -1,10 +1,9 @@
 import { defineConfig } from "eslint-define-config";
 
-import { hasModule } from "@workspace/helpers";
+import { hasModule } from "@workspace/helpers/module";
 
-// https://github.com/sveltejs/eslint-plugin-svelte3
 const config = defineConfig({
-	extends: ["plugin:compat/recommended"],
+	// https://github.com/sveltejs/eslint-plugin-svelte3
 	plugins: ["svelte3"],
 	overrides: [
 		{
@@ -18,4 +17,4 @@ const config = defineConfig({
 	},
 });
 
-export default config;
+export default hasModule("svelte") ? config : {};

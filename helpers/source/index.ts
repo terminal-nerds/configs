@@ -1,2 +1,2 @@
-export * from "./module";
-export * from "./is-continuous-integration";
+export * from "./module.js";
+export * from "./environment.js";

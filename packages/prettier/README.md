@@ -1,39 +1,81 @@
-# @terminal-nerds/config-prettier
+# @terminal-nerds/prettier-config
 
-![package version badge]\
-![supported prettier version badge]
+![package version badge]
+[![supported prettier version badge]][prettier]
+
+[![Dependencies badge]][dependencies url]
 
 **Extendable [Prettier] configuration**, part of the [terminal-nerds/configs] project.
 
-[package version badge]: https://img.shields.io/github/package-json/v/terminal-nerds/configs?filename=packages%2Fprettier%2Fpackage.json&style=for-the-badge
-[supported prettier version badge]: https://img.shields.io/github/package-json/dependency-version/terminal-nerds/configs/prettier?filename=packages%2Fprettier%2Fpackage.json&style=for-the-badge
+[terminal-nerds/configs]: https://github.com/terminal-nerds/configs
+[package version badge]: https://img.shields.io/npm/v/@terminal-nerds/prettier-config/latest?style=for-the-badge&logo=npm
+[supported prettier version badge]: https://img.shields.io/npm/dependency-version/@terminal-nerds/prettier-config/prettier?style=for-the-badge&logo=prettier
 [prettier]: https://prettier.io
+[dependencies badge]: https://img.shields.io/librariesio/release/npm/@terminal-nerds/prettier-config?style=for-the-badge
+[dependencies url]: https://libraries.io/npm/@terminal-nerds%prettier-config
 [terminal-nerds/configs]: https://github.com/terminal-nerds/configs
 
 ---
 
-## Used plugins
+## Prerequisites
 
-ℹ️ This configuration module for [Prettier] loads plugins options _conditionally_.
+ℹ️ This configuration package require these tools to use locally on your
+device(s):
 
-| Plugin                   | Loading condition(s)   |
-| ------------------------ | ---------------------- |
-| [prettier-plugin-svelte] | `svelte` as dependency |
+1. <img
+      alt="Node.JS logo icon"
+      width="14"
+      src="https://api.iconify.design/logos/nodejs-icon.svg"
+   />
+   Latest [Node.js] LTS _(Long-Term Support)_ version.
 
-[prettier-plugin-svelte]: https://github.com/sveltejs/prettier-plugin-svelte
+1. One of Node.js package managers:
+
+    - <img
+             alt="pnpm logo icon"
+             width="14"
+             src="https://api.iconify.design/vscode-icons/file-type-light-pnpm.svg"
+          />
+      [pnpm]
+
+    - <img
+            alt="yarn logo icon"
+            width="14"
+            src="https://api.iconify.design/logos/yarn.svg"
+           />
+      [yarn]
+
+    - <img
+          alt="npm logo icon"
+          width="14"
+          src="https://api.iconify.design/logos/npm-icon.svg"
+         />
+      [npm]
+
+1. <img
+         alt="prettier logo icon"
+         width="14"
+         src="https://api.iconify.design/logos/prettier.svg"
+        />
+   Latest [Prettier] version
+
+[node.js]: https://nodejs.org/en/
+[pnpm]: https://pnpm.io/
+[npm]: https://www.npmjs.com/
+[yarn]: https://yarnpkg.com/
 
 ---
 
 ## Basic usage
 
-⚙️ Follow the steps below:
+👣 Follow the steps below:
 
 1. Install it with the [Node.js] package manager of your choice. In our case,
    we use [`pnpm`](pnpm).\
    Example:
 
     ```sh
-    pnpm install --save-dev prettier @terminal-nerds/config-prettier
+    pnpm install --save-dev prettier @terminal-nerds/prettier-config
     ```
 
     [node.js]: https://nodejs.org/en/
@@ -46,18 +88,14 @@
     ```js
     /** @type import("prettier").Options */
     const config = {
-    	...require("@terminal-nerds/config-prettier"),
-
-    	// tweak some options here, refer to the link below:
-    	// https://prettier.io/docs/en/index.html
+    	...require("@terminal-nerds/prettier-config"),
     };
 
     module.exports = config;
     ```
 
-    For [Prettier CLI] usage, please refer to its documentation.
-
-    ➡️ We recommend to use [`pretty-quick`](pretty-quick) instead, for more
+    For [Prettier CLI] usage, please refer to its documentation.\
+     We recommend to use [`pretty-quick`](pretty-quick) instead, for more
     human-friendly output and performance.
 
     [prettier configuration file]: https://prettier.io/docs/en/configuration.html
@@ -66,11 +104,24 @@
 
 ---
 
+## Used plugins
+
+⚙️ This configuration module for [Prettier] loads plugins options _conditionally_.
+
+| Plugin                   | Loading condition(s)   |
+| ------------------------ | ---------------------- |
+| [prettier-plugin-svelte] | `svelte` as dependency |
+
+[prettier-plugin-svelte]: https://github.com/sveltejs/prettier-plugin-svelte
+
+---
+
 ## License
 
 [![license badge]][license]
 
-⚖️ For more information, please refer to the [License section] at the root of monorepo.
+⚖️ For more information, please refer to the [License section] at the root of
+the [terminal-nerds/configs] monorepo.
 
 [license badge]: https://img.shields.io/github/license/terminal-nerds/configs?style=for-the-badge
 [license]: https://github.com/terminal-nerds/configs/blob/main/LICENSE.md

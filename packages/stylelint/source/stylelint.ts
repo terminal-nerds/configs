@@ -1,6 +1,7 @@
 import type { Config } from "stylelint";
 
-import { hasModule } from "@workspace/helpers";
+import { hasModule } from "@workspace/helpers/module";
+
 import { extendTailwindAtRuleSelectors } from "./other/tailwind";
 
 const config: Partial<Config> = {
@@ -19,15 +20,16 @@ const config: Partial<Config> = {
 
 	rules: {
 		// https://stylelint.io/user-guide/rules/list
+		"at-rule-no-unknown": !hasModule("sass")
+			? [true, { ignoreAtRules: [...extendTailwindAtRuleSelectors()] }]
+			: undefined,
 
-		"at-rule-no-unknown": hasModule("scss")
-			? undefined
-			: [
-					true,
-					{
-						ignoreAtRules: [...extendTailwindAtRuleSelectors()],
-					},
-			  ],
+		"selector-pseudo-class-no-unknown": [
+			true,
+			{ ignorePseudoClasses: ["local", "global"] },
+		],
+
+		"selector-class-pattern": "^([a-z][a-z0-9]*)(_[a-z0-9]+)*$",
 	},
 };
 

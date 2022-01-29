@@ -1,13 +1,13 @@
 import { deepmerge } from "deepmerge-ts";
 
-import { hasModule } from "@workspace/helpers";
+import prettier from "./prettier.js";
 
-import prettierDefault from "./prettier.js";
-import pluginSvelte from "./extensions/svelte.js";
+import pluginSvelte from "./plugins/svelte";
 
-const configurations = deepmerge(prettierDefault, {
-	...(hasModule("svelte") && pluginSvelte),
-});
+const configurations = deepmerge(
+	prettier,
 
-// eslint-disable-next-line unicorn/prefer-module
+	pluginSvelte,
+);
+
 module.exports = configurations;
