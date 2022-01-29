@@ -189,11 +189,8 @@ jobs:
         timeout-minutes: 5
 
     release:
-        name: Release with Changesets
-        env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        if: github.repository == 'terminal-nerds/configs'
+        name: Changesets - Release or publish package(s)
+        if: ${{ github.ref_name == 'main' && github.repository_owner == 'terminal-nerds' }}
         needs: [build, eslint, markdownlint, prettier]
         runs-on: ${{ matrix.os }}
         strategy:
@@ -228,10 +225,9 @@ jobs:
             - name: Extract built packages
               run: ./.github/extract-built-packages.sh
 
-            - name: Create a release with Changesets
+            - name: Create a release or publish with Changesets
               id: changesets
               uses: changesets/action@v1
               with:
                   publish: pnpm changeset publish
-                  commit: "chore(changeset): 🏷️ Versioning packages"
-                  title: "[CONTINUOUS INTEGRATION - Changeset] Versioning packages"
+                  title: "[Changesets] Versioning packages"
