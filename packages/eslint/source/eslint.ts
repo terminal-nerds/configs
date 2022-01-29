@@ -12,6 +12,7 @@ const config = defineConfig({
 		// Ignore...
 		"**/node_modules",
 		"**/.git",
+		"**/.github/workflows",
 		"**/.husky",
 		"**/.svelte-kit",
 		"**/.turbo",

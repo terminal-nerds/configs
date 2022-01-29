@@ -91,7 +91,7 @@ jobs:
                   prettier: true
                   git_name: github-actions[bot]
                   git_email: github-actions[bot]@users.noreply.github.com
-                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  github_token: ${{ env.GITHUB_TOKEN }}
                   neutral_check_on_warning: false
 
             - name: Run markdownlint
