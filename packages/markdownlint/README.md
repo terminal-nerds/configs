@@ -1,8 +1,6 @@
 # @terminal-nerds/markdownlint-config
 
 ![package version badge]
-[![supported markdownlint version badge]][markdownlint]
-
 [![Dependencies badge]][dependencies url]
 
 ➡️ **Extendable [markdownlint] configuration**, part of the
@@ -10,7 +8,6 @@
 
 [terminal-nerds/configs]: https://github.com/terminal-nerds/configs
 [package version badge]: https://img.shields.io/npm/v/@terminal-nerds/markdownlint-config/latest?style=for-the-badge&logo=npm
-[supported markdownlint version badge]: https://img.shields.io/npm/dependency-version/@terminal-nerds/markdownlint-config/markdownlint?style=for-the-badge&logo=markdown
 [markdownlint]: https://github.com/DavidAnson/markdownlint
 [dependencies badge]: https://img.shields.io/librariesio/release/npm/@terminal-nerds/markdownlint-config?style=for-the-badge
 [dependencies url]: https://libraries.io/npm/@terminal-nerds%markdownlint-config
@@ -19,6 +16,12 @@
 ---
 
 ## Prerequisites
+
+![node.js version support badge]
+[![supported markdownlint-cli version badge]][markdownlint cli]
+
+[node.js version support badge]: https://img.shields.io/node/v-lts/@terminal-nerds/markdownlint-config?style=for-the-badge&logo=nodedotjs
+[supported markdownlint-cli version badge]: https://img.shields.io/github/package-json/dependency-version/terminal-nerds/configs/peer/markdownlint-cli?filename=packages%2Fmarkdownlint%2Fpackage.json&logo=markdown&style=for-the-badge
 
 ℹ️ This configuration package require these tools to use locally on your
 device(s):
@@ -58,7 +61,7 @@ device(s):
          width="14"
          src="https://api.iconify.design/logos/markdown.svg"
         />
-   Latest [markdownlint] version
+   Latest [markdownlint CLI] version
 
 [node.js]: https://nodejs.org/en/
 [pnpm]: https://pnpm.io/
