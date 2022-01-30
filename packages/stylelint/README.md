@@ -1,15 +1,12 @@
 # @terminal-nerds/stylelint-config
 
 ![package version badge]
-[![supported stylelint version badge]][stylelint]
-
 [![Dependencies badge]][dependencies url]
 
 ➡️ **Extendable [Stylelint] configuration**, part of the
 [terminal-nerds/configs] project.
 
 [package version badge]: https://img.shields.io/npm/v/@terminal-nerds/stylelint-config/latest?style=for-the-badge&logo=npm
-[supported stylelint version badge]: https://img.shields.io/npm/dependency-version/@terminal-nerds/stylelint-config/stylelint?style=for-the-badge&logo=stylelint
 [stylelint]: https://stylelint.io/
 [dependencies badge]: https://img.shields.io/librariesio/release/npm/@terminal-nerds/stylelint-config?style=for-the-badge
 [dependencies url]: https://libraries.io/npm/@terminal-nerds%stylelint-config
@@ -18,6 +15,12 @@
 ---
 
 ## Prerequisites
+
+![node.js version support badge]
+[![supported stylelint version badge]][stylelint]
+
+[node.js version support badge]: https://img.shields.io/node/v-lts/@terminal-nerds/markdownlint-config?style=for-the-badge&logo=nodedotjs
+[supported stylelint version badge]: https://img.shields.io/github/package-json/dependency-version/terminal-nerds/configs/peer/stylelint?filename=packages%2Fstylelint%2Fpackage.json&logo=stylelint&style=for-the-badge
 
 ℹ️ This configuration package require these tools to use locally on your
 device(s):
@@ -108,29 +111,36 @@ options _conditionally_.
 
 ### Configurations
 
-| Configurations                   | Loading condition(s)        |
-| -------------------------------- | --------------------------- |
-| [stylelint-config-prettier]      | `prettier` as dependency    |
-| [stylelint-config-standard]      | **NO** `sass` as dependency |
-| [stylelint-config-standard-scss] | `sass` as dependency        |
+| Configurations                   | Version                                    | Loading condition(s)        |
+| -------------------------------- | ------------------------------------------ | --------------------------- |
+| [stylelint-config-prettier]      | ![stylelint-config-prettier version badge] | `prettier` as dependency    |
+| [stylelint-config-standard]      | ![stylelint-config-prettier version badge] | **NO** `sass` as dependency |
+| [stylelint-config-standard-scss] | ![stylelint-config-prettier version badge] | `sass` as dependency        |
 
 [stylelint-config-prettier]: https://github.com/prettier/stylelint-config-prettier
+[stylelint-config-prettier version badge]: https://img.shields.io/npm/v/stylelint-config-prettier?logo=npm&style=flat-square
 [stylelint-config-standard]: https://github.com/stylelint/stylelint-config-standard
+[stylelint-config-standard version badge]: https://img.shields.io/npm/v/stylelint-config-standard?logo=npm&style=flat-square
 [stylelint-config-standard-scss]: https://github.com/stylelint-scss/stylelint-config-standard-scss
+[stylelint-config-standard-scss version badge]: https://img.shields.io/npm/v/stylelint-config-standard-scss?logo=npm&style=flat-square
 
 ### Plugins
 
-| Plugin                                      | Loading condition(s) |
-| ------------------------------------------- | -------------------- |
-| [stylelint-high-performance-animation]      | -                    |
-| [stylelint-no-unsupported-browser-features] | -                    |
-| [stylelint-order]                           | -                    |
-| [stylelint-scss]                            | `sass` as dependency |
+| Plugin                                      | Version                                                    | Loading condition(s) |
+| ------------------------------------------- | ---------------------------------------------------------- | -------------------- |
+| [stylelint-high-performance-animation]      | ![stylelint-high-performance-animation version badge]      | -                    |
+| [stylelint-no-unsupported-browser-features] | ![stylelint-no-unsupported-browser-features version badge] | -                    |
+| [stylelint-order]                           | ![stylelint-order version badge]                           | -                    |
+| [stylelint-scss]                            | ![stylelint-scss version badge]                            | `sass` as dependency |
 
 [stylelint-high-performance-animation]: https://github.com/kristerkari/stylelint-high-performance-animation
+[stylelint-high-performance-animation version badge]: https://img.shields.io/npm/v/stylelint-high-performance-animation?logo=npm&style=flat-square
 [stylelint-no-unsupported-browser-features]: https://github.com/ismay/stylelint-no-unsupported-browser-features
+[stylelint-no-unsupported-browser-features version badge]: https://img.shields.io/npm/v/stylelint-no-unsupported-browser-features?logo=npm&style=flat-square
 [stylelint-order]: https://github.com/hudochenkov/stylelint-order
+[stylelint-order version badge]: https://img.shields.io/npm/v/stylelint-order?logo=npm&style=flat-square
 [stylelint-scss]: https://github.com/sveltejs/stylelint-plugin-svelte3
+[stylelint-scss version badge]: https://img.shields.io/npm/v/stylelint-scss?logo=npm&style=flat-square
 
 ---
 
