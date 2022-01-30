@@ -1,15 +1,12 @@
 # @terminal-nerds/prettier-config
 
 ![package version badge]
-[![supported prettier version badge]][prettier]
-
 [![Dependencies badge]][dependencies url]
 
 **Extendable [Prettier] configuration**, part of the [terminal-nerds/configs] project.
 
 [terminal-nerds/configs]: https://github.com/terminal-nerds/configs
 [package version badge]: https://img.shields.io/npm/v/@terminal-nerds/prettier-config/latest?style=for-the-badge&logo=npm
-[supported prettier version badge]: https://img.shields.io/npm/dependency-version/@terminal-nerds/prettier-config/prettier?style=for-the-badge&logo=prettier
 [prettier]: https://prettier.io
 [dependencies badge]: https://img.shields.io/librariesio/release/npm/@terminal-nerds/prettier-config?style=for-the-badge
 [dependencies url]: https://libraries.io/npm/@terminal-nerds%prettier-config
@@ -18,6 +15,12 @@
 ---
 
 ## Prerequisites
+
+![node.js version support badge]
+[![supported prettier version badge]][prettier]
+
+[node.js version support badge]: https://img.shields.io/node/v-lts/@terminal-nerds/markdownlint-config?style=for-the-badge&logo=nodedotjs
+[supported prettier version badge]: https://img.shields.io/github/package-json/dependency-version/terminal-nerds/configs/peer/prettier?filename=packages%2Fprettier%2Fpackage.json&logo=prettier&style=for-the-badge
 
 ℹ️ This configuration package require these tools to use locally on your
 device(s):
@@ -108,11 +111,12 @@ device(s):
 
 ⚙️ This configuration module for [Prettier] loads plugins options _conditionally_.
 
-| Plugin                   | Loading condition(s)   |
-| ------------------------ | ---------------------- |
-| [prettier-plugin-svelte] | `svelte` as dependency |
+| Plugin                   | Version                                 | Loading condition(s)   |
+| ------------------------ | --------------------------------------- | ---------------------- |
+| [prettier-plugin-svelte] | ![prettier-plugin-svelte version badge] | `svelte` as dependency |
 
 [prettier-plugin-svelte]: https://github.com/sveltejs/prettier-plugin-svelte
+[prettier-plugin-svelte version badge]: https://img.shields.io/npm/v/prettier-plugin-svelte?logo=npm&style=flat-square
 
 ---
 
