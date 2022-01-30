@@ -2,7 +2,7 @@
 name: Continuous Integration
 
 on:
-    pull_request:
+    push:
         branches: [main]
 
 concurrency:
@@ -16,11 +16,13 @@ defaults:
 env:
     CI: true
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     PNPM_CACHE_FOLDER: .pnpm-store
 
-permissions:
-    checks: write
-    contents: write
+# permissions:
+#     checks: write
+#     contents: write
+#     pull-requests: write
 
 jobs:
     build:
@@ -232,3 +234,6 @@ jobs:
               with:
                   publish: pnpm changeset publish
                   title: "[Changesets] Versioning packages"
+              # env:
+              #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
