@@ -5,4 +5,4 @@
 "@terminal-nerds/stylelint-config": minor
 ---
 
-Initial release
+🎉 Initial release
