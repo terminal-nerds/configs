@@ -3,9 +3,7 @@
 	"assigneesFromCodeOwners": true,
 	"baseBranches": ["main"],
 	"dependencyDashboard": true,
-	"extends": [
-		"config:base",
-	],
+	"extends": ["config:base"],
 	"packageRules": [
 		{
 			"groupName": "eslint",
