@@ -58,7 +58,7 @@
 	},
 	"devDependencies": {
 		"@types/node": "17.0.13",
-		"@types/prettier": "^2.4.3",
+		"@types/prettier": "2.4.3",
 		"@workspace/configs": "workspace:*",
 		"@workspace/helpers": "workspace:*",
 		"deepmerge-ts": "2.0.1",
