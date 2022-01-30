@@ -19,11 +19,6 @@ env:
     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     PNPM_CACHE_FOLDER: .pnpm-store
 
-# permissions:
-#     checks: write
-#     contents: write
-#     pull-requests: write
-
 jobs:
     build:
         name: Build packages
@@ -232,8 +227,6 @@ jobs:
               id: changesets
               uses: changesets/action@v1
               with:
+                  commit: "chore(Changesets): 🏷️ Versioning package(s)"
                   publish: pnpm changeset publish
-                  title: "[Changesets] Versioning packages"
-              # env:
-              #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+                  title: "chore(Changesets): 🏷️ Versioning package(s)"
