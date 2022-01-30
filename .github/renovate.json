@@ -1,0 +1,31 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"assigneesFromCodeOwners": true,
+	"baseBranches": ["main"],
+	"dependencyDashboard": true,
+	"extends": [
+		"config:base",
+	],
+	"packageRules": [
+		{
+			"groupName": "eslint",
+			"packagePatterns": ["eslint"]
+		},
+		{
+			"groupName": "markdownlint",
+			"packagePatterns": ["markdownlint"]
+		},
+		{
+			"groupName": "prettier",
+			"packagePatterns": ["prettier"]
+		},
+		{
+			"groupName": "stylelint",
+			"packagePatterns": ["stylelint"]
+		}
+	],
+	"reviewersFromCodeOwners": true,
+	"schedule": ["at any time"],
+	"semanticCommits": "auto",
+	"semanticCommitScope": "dependencies"
+}
