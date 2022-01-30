@@ -191,7 +191,7 @@ jobs:
 
     release:
         name: Changesets - Release or publish package(s)
-        # if: ${{ github.ref_name == 'main' && github.repository_owner == 'terminal-nerds' }}
+        if: ${{ github.ref_name == 'main' && github.repository_owner == 'terminal-nerds' }}
         needs: [build, eslint, markdownlint, prettier]
         runs-on: ${{ matrix.os }}
         strategy:
