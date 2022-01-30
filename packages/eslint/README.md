@@ -1,14 +1,11 @@
 # @terminal-nerds/eslint-config
 
 ![package version badge]
-[![supported eslint version badge]][eslint]
-
 [![Dependencies badge]][dependencies url]
 
 ➡️ **Extendable [ESLint] configuration**, part of the [terminal-nerds/configs] project.
 
 [package version badge]: https://img.shields.io/npm/v/@terminal-nerds/eslint-config/latest?style=for-the-badge&logo=npm
-[supported eslint version badge]: https://img.shields.io/npm/dependency-version/@terminal-nerds/eslint-config/eslint?style=for-the-badge&logo=eslint
 [eslint]: https://eslint.org/
 [dependencies badge]: https://img.shields.io/librariesio/release/npm/@terminal-nerds/eslint-config?style=for-the-badge
 [dependencies url]: https://libraries.io/npm/@terminal-nerds%2eslint-config
@@ -17,6 +14,12 @@
 ---
 
 ## Prerequisites
+
+![node.js version support badge]
+[![supported eslint version badge]][eslint]
+
+[node.js version support badge]: https://img.shields.io/node/v-lts/@terminal-nerds/eslint-config?style=for-the-badge&logo=nodedotjs
+[supported eslint version badge]: https://img.shields.io/github/package-json/dependency-version/terminal-nerds/configs/peer/eslint?filename=packages%2Feslint%2Fpackage.json&logo=eslint&style=for-the-badge
 
 ℹ️ This configuration package require these tools to use locally on your
 device(s):
@@ -114,41 +117,54 @@ options _conditionally_.
 
 ### Configurations
 
-| Configurations           | Loading condition(s)     |
-| ------------------------ | ------------------------ |
-| [eslint-config-prettier] | `prettier` as dependency |
+| Configurations           | Version                                 | Loading condition(s)     |
+| ------------------------ | --------------------------------------- | ------------------------ |
+| [eslint-config-prettier] | ![eslint-config-prettier version badge] | `prettier` as dependency |
 
 [eslint-config-prettier]: https://github.com/prettier/eslint-config-prettier
+[eslint-config-prettier version badge]: https://img.shields.io/npm/v/eslint-config-prettier?logo=npm&style=flat-square
 
 ### Plugins
 
-| Plugin                                | Loading condition(s)                                                         |
-| ------------------------------------- | ---------------------------------------------------------------------------- |
-| [@typescript-eslint/eslint-plugin]    | `typescript` as dependency                                                   |
-| [eslint-plugin-compat]                | -                                                                            |
-| [eslint-plugin-diff]                  | Set one of environment variables: `CI` or `CONTINUOUS_INTEGRATION` to `true` |
-| [eslint-plugin-import]                | -                                                                            |
-| [eslint-plugin-json-schema-validator] | -                                                                            |
-| [eslint-plugin-jsonc]                 | -                                                                            |
-| [eslint-plugin-node]                  | -                                                                            |
-| [eslint-plugin-regexp]                | -                                                                            |
-| [eslint-plugin-sonarjs]               | -                                                                            |
-| [eslint-plugin-svelte3]               | `svelte` as dependency                                                       |
-| [eslint-plugin-unicorn]               | -                                                                            |
-| [eslint-plugin-yml]                   | -                                                                            |
+| Plugin                                | Version                                              | Loading condition(s)                                                         |
+| ------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------------------------------- |
+| [@typescript-eslint/eslint-plugin]    | ![@typescript-eslint/eslint-plugin version badge]    | `typescript` as dependency                                                   |
+| [eslint-plugin-compat]                | ![eslint-plugin-compat version badge]                | -                                                                            |
+| [eslint-plugin-diff]                  | ![eslint-plugin-diff version badge]                  | Set one of environment variables: `CI` or `CONTINUOUS_INTEGRATION` to `true` |
+| [eslint-plugin-import]                | ![eslint-plugin-import version badge]                | -                                                                            |
+| [eslint-plugin-json-schema-validator] | ![eslint-plugin-json-schema-validator version badge] | -                                                                            |
+| [eslint-plugin-jsonc]                 | ![eslint-plugin-jsonc version badge]                 | -                                                                            |
+| [eslint-plugin-node]                  | ![eslint-plugin-node version badge]                  | -                                                                            |
+| [eslint-plugin-regexp]                | ![eslint-plugin-regexp version badge]                | -                                                                            |
+| [eslint-plugin-sonarjs]               | ![eslint-plugin-sonarjs version badge]               | -                                                                            |
+| [eslint-plugin-svelte3]               | ![eslint-plugin-svelte3 version badge]               | `svelte` as dependency                                                       |
+| [eslint-plugin-unicorn]               | ![eslint-plugin-unicorn version badge]               | -                                                                            |
+| [eslint-plugin-yml]                   | ![eslint-plugin-yml version badge]                   | -                                                                            |
 
 [@typescript-eslint/eslint-plugin]: https://github.com/typescript-eslint/typescript-eslint
-[eslint-plugin-diff]: https://github.com/paleite/eslint-plugin-diff
+[@typescript-eslint/eslint-plugin version badge]: https://img.shields.io/npm/v/@typescript-eslint/eslint-plugin?logo=npm&style=flat-square
 [eslint-plugin-compat]: https://github.com/amilajack/eslint-plugin-compat
+[eslint-plugin-compat version badge]: https://img.shields.io/npm/v/eslint-plugin-compat?logo=npm&style=flat-square
+[eslint-plugin-diff]: https://github.com/paleite/eslint-plugin-diff
+[eslint-plugin-diff version badge]: https://img.shields.io/npm/v/eslint-plugin-diff?logo=npm&style=flat-square
 [eslint-plugin-import]: https://github.com/import-js/eslint-plugin-import
+[eslint-plugin-import version badge]: https://img.shields.io/npm/v/eslint-plugin-import?logo=npm&style=flat-square
 [eslint-plugin-json-schema-validator]: https://github.com/ota-meshi/eslint-plugin-json-schema-validator
+[eslint-plugin-json-schema-validator version badge]: https://img.shields.io/npm/v/eslint-plugin-json-schema-validator?logo=npm&style=flat-square
 [eslint-plugin-jsonc]: https://github.com/ota-meshi/eslint-plugin-jsonc
+[eslint-plugin-jsonc version badge]: https://img.shields.io/npm/v/eslint-plugin-jsonc?logo=npm&style=flat-square
 [eslint-plugin-node]: https://github.com/mysticatea/eslint-plugin-node
+[eslint-plugin-node version badge]: https://img.shields.io/npm/v/eslint-plugin-node?logo=npm&style=flat-square
 [eslint-plugin-regexp]: https://github.com/ota-meshi/eslint-plugin-regexp
+[eslint-plugin-regexp version badge]: https://img.shields.io/npm/v/eslint-plugin-regexp?logo=npm&style=flat-square
 [eslint-plugin-sonarjs]: https://github.com/SonarSource/eslint-plugin-sonarjs
+[eslint-plugin-sonarjs version badge]: https://img.shields.io/npm/v/eslint-plugin-sonarjs?logo=npm&style=flat-square
 [eslint-plugin-svelte3]: https://github.com/sveltejs/eslint-plugin-svelte3
+[eslint-plugin-svelte3 version badge]: https://img.shields.io/npm/v/eslint-plugin-svelte3?logo=npm&style=flat-square
 [eslint-plugin-unicorn]: https://github.com/sindresorhus/eslint-plugin-unicorn
+[eslint-plugin-unicorn version badge]: https://img.shields.io/npm/v/eslint-plugin-unicorn?logo=npm&style=flat-square
 [eslint-plugin-yml]: https://github.com/ota-meshi/eslint-plugin-yml
+[eslint-plugin-yml version badge]: https://img.shields.io/npm/v/eslint-plugin-yml?logo=npm&style=flat-square
 
 ---
 
