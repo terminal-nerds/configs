@@ -1,0 +1,14 @@
+{
+  "projectName": "@terminal-nerds/configs",
+  "projectOwner": "terminal-nerds",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 60,
+  "commit": true,
+  "commitConvention": "gitmoji",
+  "contributors": [],
+  "contributorsPerLine": 7
+}

@@ -78,12 +78,35 @@ registry].
 
 ---
 
-## Contact
+## Community
 
 [![discord badge]][discord server]
 
-✉️ **The best way to contact us is using our [Discord server]**. Anyone is
-welcome to hop in for a chat. 🙂
+✉️ **The best way to get in touch with us or join us is using our [Discord server]**.
+Anyone is welcome to hop in for a chat. 🙂
 
 [discord server]: https://discord.gg/decp3g7BEN
 [discord badge]: https://img.shields.io/discord/862890839537877012?label=Discord&logo=discord&style=for-the-badge
+
+---
+
+## Contributing
+
+🤝 This project follows the [all-contributors] specification.\
+**Contributions of any kind are welcome!**
+
+[all-contributors]: https://github.com/all-contributors/all-contributors
+
+### Contributors
+
+🥰 Thanks goes to these wonderful people _([emoji key])_:
+
+[emoji key]: https://allcontributors.org/docs/en/emoji-key
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
