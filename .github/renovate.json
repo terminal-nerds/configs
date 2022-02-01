@@ -7,23 +7,27 @@
 	"packageRules": [
 		{
 			"groupName": "eslint",
+			"labels": ["🕵️ linter"],
 			"packagePatterns": ["eslint"]
 		},
 		{
 			"groupName": "markdownlint",
+			"labels": ["🕵️ linter"],
 			"packagePatterns": ["markdownlint"]
 		},
 		{
 			"groupName": "prettier",
+			"labels": ["🧹 formatter"],
 			"packagePatterns": ["prettier"]
 		},
 		{
 			"groupName": "stylelint",
+			"labels": ["🕵️ linter"],
 			"packagePatterns": ["stylelint"]
 		}
 	],
 	"reviewersFromCodeOwners": true,
-	"schedule": ["at any time"],
+	"schedule": ["on the first day of week"],
 	"semanticCommits": "auto",
 	"semanticCommitScope": "dependencies"
 }
