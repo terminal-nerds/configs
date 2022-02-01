@@ -23,7 +23,7 @@
 		}
 	],
 	"reviewersFromCodeOwners": true,
-	"schedule": ["at any time"],
+	"schedule": ["on the first day of week"],
 	"semanticCommits": "auto",
 	"semanticCommitScope": "dependencies"
 }
