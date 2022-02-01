@@ -93,9 +93,13 @@ Anyone is welcome to hop in for a chat. 🙂
 ## Contributing
 
 🤝 This project follows the [all-contributors] specification.\
-**Contributions of any kind are welcome!**
+**Therefore, contributions of any kind are welcome!**
+
+Please refer to our [CONTRIBUTING] file for more information if you wish to get
+involved.
 
 [all-contributors]: https://github.com/all-contributors/all-contributors
+[contributing]: ./.github/CONTRIBUTING.md
 
 ### Contributors
 
