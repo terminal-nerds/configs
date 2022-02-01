@@ -52,7 +52,7 @@ registry].
 [eslint-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/eslint-config/latest?style=flat-square&logo=npm
 [eslint-config npm page]: https://www.npmjs.com/package/@terminal-nerds/eslint-config
 [markdownlint-config]: ./packages/markdownlint/README.md
-[markdownlint-config badge]: https://img.shields.io/badge/config-markdownlint-informational?style=flat-square&logo=markdown
+[markdownlint-config badge]: https://img.shields.io/badge/markdownlint-config-informational?style=flat-square&logo=markdown
 [markdownlint-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/markdownlint-config/latest?style=flat-square&logo=npm
 [markdownlint-config npm page]: https://www.npmjs.com/package/@terminal-nerds/markdownlint-config
 [prettier-config]: ./packages/prettier/README.md
