@@ -7,18 +7,22 @@
 	"packageRules": [
 		{
 			"groupName": "eslint",
+			"labels": ["🕵️ linter"],
 			"packagePatterns": ["eslint"]
 		},
 		{
 			"groupName": "markdownlint",
+			"labels": ["🕵️ linter"],
 			"packagePatterns": ["markdownlint"]
 		},
 		{
 			"groupName": "prettier",
+			"labels": ["🧹 formatter"],
 			"packagePatterns": ["prettier"]
 		},
 		{
 			"groupName": "stylelint",
+			"labels": ["🕵️ linter"],
 			"packagePatterns": ["stylelint"]
 		}
 	],
