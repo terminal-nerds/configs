@@ -1,4 +1,7 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-pnpm lint:staged
+# Prevent running lint-staged inside the continuous integration container
+if [ -z  "$CI" ] && [ -z "$CONTINUOUS_INTEGRATION" ]; then
+	pnpm lint:staged
+fi
