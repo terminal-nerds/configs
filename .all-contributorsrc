@@ -1,0 +1,47 @@
+{
+  "projectName": "@terminal-nerds/configs",
+  "projectOwner": "terminal-nerds",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 60,
+  "commit": true,
+  "commitConvention": "gitmoji",
+  "contributors": [
+    {
+      "login": "xeho91",
+      "name": "Matt Kadlubowski",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18627568?v=4",
+      "profile": "https://github.com/xeho91",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "changesets",
+      "name": "changesets",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51163350?v=4",
+      "profile": "https://github.com/atlassian/changesets",
+      "contributions": [
+        "doc",
+        "platform",
+        "tool"
+      ]
+    },
+    {
+      "login": "renovatebot",
+      "name": "Renovate Bot",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38656520?v=4",
+      "profile": "https://renovatebot.com/",
+      "contributions": [
+        "maintenance",
+        "security",
+        "tool"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}

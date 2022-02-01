@@ -52,7 +52,7 @@ registry].
 [eslint-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/eslint-config/latest?style=flat-square&logo=npm
 [eslint-config npm page]: https://www.npmjs.com/package/@terminal-nerds/eslint-config
 [markdownlint-config]: ./packages/markdownlint/README.md
-[markdownlint-config badge]: https://img.shields.io/badge/config-markdownlint-informational?style=flat-square&logo=markdown
+[markdownlint-config badge]: https://img.shields.io/badge/markdownlint-config-informational?style=flat-square&logo=markdown
 [markdownlint-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/markdownlint-config/latest?style=flat-square&logo=npm
 [markdownlint-config npm page]: https://www.npmjs.com/package/@terminal-nerds/markdownlint-config
 [prettier-config]: ./packages/prettier/README.md
@@ -78,12 +78,47 @@ registry].
 
 ---
 
-## Contact
+## Community
 
 [![discord badge]][discord server]
 
-✉️ **The best way to contact us is using our [Discord server]**. Anyone is
-welcome to hop in for a chat. 🙂
+✉️ **The best way to get in touch with us or join us is using our [Discord server]**.
+Anyone is welcome to hop in for a chat. 🙂
 
 [discord server]: https://discord.gg/decp3g7BEN
 [discord badge]: https://img.shields.io/discord/862890839537877012?label=Discord&logo=discord&style=for-the-badge
+
+---
+
+## Contributing
+
+🤝 This project follows the [all-contributors] specification.\
+**Therefore, contributions of any kind are welcome!**
+
+Please refer to our [CONTRIBUTING] file for more information if you wish to get
+involved.
+
+[all-contributors]: https://github.com/all-contributors/all-contributors
+[contributing]: ./.github/CONTRIBUTING.md
+
+### Contributors
+
+🥰 Thanks goes to these wonderful people and bots _([emoji key])_:
+
+[emoji key]: https://allcontributors.org/docs/en/emoji-key
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/xeho91"><img src="https://avatars.githubusercontent.com/u/18627568?v=4?s=60" width="60px;" alt=""/><br /><sub><b>Matt Kadlubowski</b></sub></a><br /><a href="https://github.com/terminal-nerds/@terminal-nerds/configs/commits?author=xeho91" title="Code">💻</a> <a href="#maintenance-xeho91" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/atlassian/changesets"><img src="https://avatars.githubusercontent.com/u/51163350?v=4?s=60" width="60px;" alt=""/><br /><sub><b>changesets</b></sub></a><br /><a href="https://github.com/terminal-nerds/@terminal-nerds/configs/commits?author=changesets" title="Documentation">📖</a> <a href="#platform-changesets" title="Packaging/porting to new platform">📦</a> <a href="#tool-changesets" title="Tools">🔧</a></td>
+    <td align="center"><a href="https://renovatebot.com/"><img src="https://avatars.githubusercontent.com/u/38656520?v=4?s=60" width="60px;" alt=""/><br /><sub><b>Renovate Bot</b></sub></a><br /><a href="#maintenance-renovatebot" title="Maintenance">🚧</a> <a href="#security-renovatebot" title="Security">🛡️</a> <a href="#tool-renovatebot" title="Tools">🔧</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
