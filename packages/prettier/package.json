@@ -51,7 +51,7 @@
 		]
 	},
 	"peerDependencies": {
-		"prettier": "^2.5.1"
+		"prettier": "2.5.1"
 	},
 	"dependencies": {
 		"prettier-plugin-svelte": "^2.6.0"
