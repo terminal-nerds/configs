@@ -60,7 +60,7 @@
 		"stylelint-scss": "^4.1.0"
 	},
 	"devDependencies": {
-		"@types/node": "17.0.13",
+		"@types/node": "17.0.14",
 		"@workspace/configs": "workspace:*",
 		"@workspace/helpers": "workspace:*",
 		"deepmerge-ts": "2.0.1",

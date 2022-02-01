@@ -51,7 +51,7 @@
 		"read-pkg-up": "9.0.0"
 	},
 	"devDependencies": {
-		"@types/node": "17.0.13",
+		"@types/node": "17.0.14",
 		"@workspace/configs": "workspace:*",
 		"tslib": "2.3.1",
 		"type-fest": "2.11.1",

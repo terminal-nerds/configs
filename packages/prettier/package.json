@@ -54,10 +54,10 @@
 		"prettier": "^2.5.1"
 	},
 	"dependencies": {
-		"prettier-plugin-svelte": "^2.5.1"
+		"prettier-plugin-svelte": "^2.6.0"
 	},
 	"devDependencies": {
-		"@types/node": "17.0.13",
+		"@types/node": "17.0.14",
 		"@types/prettier": "2.4.3",
 		"@workspace/configs": "workspace:*",
 		"@workspace/helpers": "workspace:*",
