@@ -11,8 +11,7 @@ const config = {
 	"*.md": ["markdownlint"],
 
 	// TypeScript types (in each package, because of different configs)
-	"./helpers/**/*.ts": () =>
-		`tsc --project ./helpers/tsconfig.json --noEmit`,
+	"./helpers/**/*.ts": () => `tsc --project ./helpers/tsconfig.json --noEmit`,
 	"./packages/eslint/source/**/*.ts": () =>
 		`tsc --project ./packages/eslint/tsconfig.json --noEmit`,
 	"./packages/markdownlint/source/**/*.ts": () =>
