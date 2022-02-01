@@ -103,7 +103,7 @@ involved.
 
 ### Contributors
 
-🥰 Thanks goes to these wonderful people _([emoji key])_:
+🥰 Thanks goes to these wonderful people and bots _([emoji key])_:
 
 [emoji key]: https://allcontributors.org/docs/en/emoji-key
 
