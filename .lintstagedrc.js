@@ -7,6 +7,9 @@ const config = {
 	// ESLint
 	"*.{js,json,ts,yml,yaml}": ["eslint"],
 
+	// syncpack
+	"**/package.json": ["syncpack list-mismatches", "syncpack format"],
+
 	// markdownlint
 	"*.md": ["markdownlint"],
 
