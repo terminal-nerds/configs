@@ -27,7 +27,7 @@
 		}
 	],
 	"reviewersFromCodeOwners": true,
-	"schedule": ["on the first day of week"],
+	"schedule": ["after 10pm and before 5am every weekday", "every weekend"],
 	"semanticCommits": "auto",
 	"semanticCommitScope": "dependencies"
 }
