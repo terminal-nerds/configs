@@ -5,26 +5,26 @@ project. 😊\
 Any of your contributions, small or large, are very much appreciated and
 make this project better for the open-source community.
 
-<!-- --- -->
-<!---->
-<!-- ## Code of Conduct -->
-<!---->
-<!-- [![contributor covenant shield]][code of conduct] -->
-<!---->
-<!-- 📜 Keep in mind that this project adopted [Contributor Covenant] **[Code of -->
-<!-- Conduct]**.\ -->
-<!-- By contributing to this project, **you agree to abide by its terms**. -->
-<!---->
-<!-- [contributor covenant shield]: https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=for-the-badge "Contributor Coventant shield" -->
-<!-- [contributor covenant]: https://www.contributor-covenant.org/ -->
-<!-- [code of conduct]: ./CODE_OF_CONDUCT.md -->
+---
+
+## Code of Conduct
+
+[![contributor covenant badge]][code of conduct]
+
+📜 Keep in mind that our team has adopted the **Contributor Covenant
+[Code of Conduct]**.\
+**You need to agree to abide by its terms** by contributing to our open-source
+projects.
+
+[contributor covenant badge]: https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=for-the-badge "Contributor Coventant shield"
+[code of conduct]: ./CODE_OF_CONDUCT.md
 
 ---
 
 ## How to start contributing
 
 🏁 The following sections are handy tips that should ease your contribution to
-the process.
+this project.
 
 ### Good first issues
 
@@ -55,7 +55,7 @@ they will not break anything, thus working correctly 100%.
 
 ### Writing changelog notes
 
-🦋 We are using [Changesets] to automate the process of writing changelogs.
+🦋 This project is using [Changesets] to automate the process of writing changelogs.
 Please refer to their documentation - [intro to using changesets].
 
 While contributing, please remember this part from the intro:
