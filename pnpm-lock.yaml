@@ -46,7 +46,7 @@ importers:
       pkg-up: 4.0.0
       read-pkg-up: 9.0.0
       tslib: 2.3.1
-      type-fest: 2.11.0
+      type-fest: 2.11.1
       typescript: 4.5.5
     dependencies:
       pkg-up: 4.0.0
@@ -55,7 +55,7 @@ importers:
       '@types/node': 17.0.13
       '@workspace/configs': link:../configs
       tslib: 2.3.1
-      type-fest: 2.11.0
+      type-fest: 2.11.1
       typescript: 4.5.5
 
   packages/eslint:
@@ -3422,7 +3422,7 @@ packages:
     dependencies:
       find-up: 6.2.0
       read-pkg: 7.0.0
-      type-fest: 2.11.0
+      type-fest: 2.11.1
     dev: false
 
   /read-pkg/5.2.0:
@@ -3441,7 +3441,7 @@ packages:
       '@types/normalize-package-data': 2.4.1
       normalize-package-data: 3.0.3
       parse-json: 5.2.0
-      type-fest: 2.11.0
+      type-fest: 2.11.1
     dev: false
 
   /read-yaml-file/1.1.0:
@@ -4304,8 +4304,8 @@ packages:
     resolution: {integrity: sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==}
     engines: {node: '>=8'}
 
-  /type-fest/2.11.0:
-    resolution: {integrity: sha512-GwRKR1jZMAQP/hVR929DWB5Z2lwSIM/nNcHEfDj2E0vOMhcYbqFxGKE5JaSzMdzmEtWJiamEn6VwHs/YVXVhEQ==}
+  /type-fest/2.11.1:
+    resolution: {integrity: sha512-fPcV5KLAqFfmhHobtAUwEpbpfYhVF7wSLVgbG/7mIGe/Pete7ky/bPAPRkzbWdrj0/EkswFAAR2feJCgigkUKg==}
     engines: {node: '>=12.20'}
 
   /typedarray-to-buffer/4.0.0:
