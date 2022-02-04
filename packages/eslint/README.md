@@ -1,14 +1,11 @@
 # @terminal-nerds/eslint-config
 
 ![package version badge]
-[![Dependencies badge]][dependencies url]
 
 ➡️ **Extendable [ESLint] configuration**, part of the [terminal-nerds/configs] project.
 
 [package version badge]: https://img.shields.io/npm/v/@terminal-nerds/eslint-config/latest?style=for-the-badge&logo=npm
 [eslint]: https://eslint.org/
-[dependencies badge]: https://img.shields.io/librariesio/release/npm/@terminal-nerds/eslint-config?style=for-the-badge
-[dependencies url]: https://libraries.io/npm/@terminal-nerds%2eslint-config
 [terminal-nerds/configs]: https://github.com/terminal-nerds/configs
 
 ---
@@ -112,8 +109,13 @@ device(s):
 
 ## Used configurations & plugins
 
+[![Dependencies badge]][dependencies url]
+
 ⚙️ This configuration module for [ESLint] loads configurations and plugins
 options _conditionally_.
+
+[dependencies badge]: https://img.shields.io/librariesio/release/npm/@terminal-nerds/eslint-config?style=for-the-badge
+[dependencies url]: https://libraries.io/npm/@terminal-nerds%2eslint-config
 
 ### Configurations
 
@@ -165,6 +167,24 @@ options _conditionally_.
 [eslint-plugin-unicorn version badge]: https://img.shields.io/npm/v/eslint-plugin-unicorn?logo=npm&style=flat-square
 [eslint-plugin-yml]: https://github.com/ota-meshi/eslint-plugin-yml
 [eslint-plugin-yml version badge]: https://img.shields.io/npm/v/eslint-plugin-yml?logo=npm&style=flat-square
+
+---
+
+## Contributing
+
+[![contributors badge]][contributors url]
+
+🤝 This project follows the [all-contributors] specification.\
+**Therefore, contributions of any kind are welcome!**
+
+Please refer to our [CONTRIBUTING file]
+_(at the root of this project repository - [terminal-nerds/configs])_
+for more information if you wish to get involved.
+
+[all-contributors]: https://github.com/all-contributors/all-contributors
+[contributing file]: https://github.com/terminal-nerds/configs/blob/main/.github/CONTRIBUTING.md
+[contributors badge]: https://img.shields.io/github/contributors/terminal-nerds/configs?style=for-the-badge
+[contributors url]: https://github.com/terminal-nerds/configs#contributors
 
 ---
 

@@ -1,15 +1,12 @@
 # @terminal-nerds/prettier-config
 
 ![package version badge]
-[![Dependencies badge]][dependencies url]
 
 **Extendable [Prettier] configuration**, part of the [terminal-nerds/configs] project.
 
 [terminal-nerds/configs]: https://github.com/terminal-nerds/configs
 [package version badge]: https://img.shields.io/npm/v/@terminal-nerds/prettier-config/latest?style=for-the-badge&logo=npm
 [prettier]: https://prettier.io
-[dependencies badge]: https://img.shields.io/librariesio/release/npm/@terminal-nerds/prettier-config?style=for-the-badge
-[dependencies url]: https://libraries.io/npm/@terminal-nerds%prettier-config
 [terminal-nerds/configs]: https://github.com/terminal-nerds/configs
 
 ---
@@ -107,9 +104,16 @@ device(s):
 
 ---
 
-## Used plugins
+## Used configurations & plugins
+
+[![Dependencies badge]][dependencies url]
 
 ⚙️ This configuration module for [Prettier] loads plugins options _conditionally_.
+
+[dependencies badge]: https://img.shields.io/librariesio/release/npm/@terminal-nerds/prettier-config?style=for-the-badge
+[dependencies url]: https://libraries.io/npm/@terminal-nerds%prettier-config
+
+### Plugins
 
 | Plugin                   | Version                                 | Loading condition(s)   |
 | ------------------------ | --------------------------------------- | ---------------------- |
@@ -117,6 +121,24 @@ device(s):
 
 [prettier-plugin-svelte]: https://github.com/sveltejs/prettier-plugin-svelte
 [prettier-plugin-svelte version badge]: https://img.shields.io/npm/v/prettier-plugin-svelte?logo=npm&style=flat-square
+
+---
+
+## Contributing
+
+[![contributors badge]][contributors url]
+
+🤝 This project follows the [all-contributors] specification.\
+**Therefore, contributions of any kind are welcome!**
+
+Please refer to our [CONTRIBUTING file]
+_(at the root of this project repository - [terminal-nerds/configs])_
+for more information if you wish to get involved.
+
+[all-contributors]: https://github.com/all-contributors/all-contributors
+[contributing file]: https://github.com/terminal-nerds/configs/blob/main/.github/CONTRIBUTING.md
+[contributors badge]: https://img.shields.io/github/contributors/terminal-nerds/configs?style=for-the-badge
+[contributors url]: https://github.com/terminal-nerds/configs#contributors
 
 ---
 

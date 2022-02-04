@@ -1,15 +1,12 @@
 # @terminal-nerds/stylelint-config
 
 ![package version badge]
-[![Dependencies badge]][dependencies url]
 
 ➡️ **Extendable [Stylelint] configuration**, part of the
 [terminal-nerds/configs] project.
 
 [package version badge]: https://img.shields.io/npm/v/@terminal-nerds/stylelint-config/latest?style=for-the-badge&logo=npm
 [stylelint]: https://stylelint.io/
-[dependencies badge]: https://img.shields.io/librariesio/release/npm/@terminal-nerds/stylelint-config?style=for-the-badge
-[dependencies url]: https://libraries.io/npm/@terminal-nerds%stylelint-config
 [terminal-nerds/configs]: https://github.com/terminal-nerds/configs
 
 ---
@@ -106,8 +103,13 @@ device(s):
 
 ## Used configurations & plugins
 
+[![Dependencies badge]][dependencies url]
+
 ⚙️ This configuration module for [Stylelint] loads configurations and plugins
 options _conditionally_.
+
+[dependencies badge]: https://img.shields.io/librariesio/release/npm/@terminal-nerds/stylelint-config?style=for-the-badge
+[dependencies url]: https://libraries.io/npm/@terminal-nerds%stylelint-config
 
 ### Configurations
 
@@ -141,6 +143,24 @@ options _conditionally_.
 [stylelint-order version badge]: https://img.shields.io/npm/v/stylelint-order?logo=npm&style=flat-square
 [stylelint-scss]: https://github.com/sveltejs/stylelint-plugin-svelte3
 [stylelint-scss version badge]: https://img.shields.io/npm/v/stylelint-scss?logo=npm&style=flat-square
+
+---
+
+## Contributing
+
+[![contributors badge]][contributors url]
+
+🤝 This project follows the [all-contributors] specification.\
+**Therefore, contributions of any kind are welcome!**
+
+Please refer to our [CONTRIBUTING file]
+_(at the root of this project repository - [terminal-nerds/configs])_
+for more information if you wish to get involved.
+
+[all-contributors]: https://github.com/all-contributors/all-contributors
+[contributing file]: https://github.com/terminal-nerds/configs/blob/main/.github/CONTRIBUTING.md
+[contributors badge]: https://img.shields.io/github/contributors/terminal-nerds/configs?style=for-the-badge
+[contributors url]: https://github.com/terminal-nerds/configs#contributors
 
 ---
 
