@@ -127,7 +127,8 @@ device(s):
 ## Security
 
 [![lgtm alerts badge]][lgtm report]
-[![lgtm grade badge]][lgtm report]
+[![lgtm grade badge]][lgtm report]\
+[![DeepScan grade badge]][deepscan report]
 
 🔐 Our team has a shared [Security Policy]. If you have concerns or found an
 issue, please follow the instructions, and
@@ -140,6 +141,8 @@ remember about one thing:
 [lgtm alerts badge]: https://img.shields.io/lgtm/alerts/github/terminal-nerds/configs?style=for-the-badge&logo=lgtm
 [lgtm grade badge]: https://img.shields.io/lgtm/grade/javascript/github/terminal-nerds/configs?style=for-the-badge&logo=lgtm
 [lgtm report]: https://lgtm.com/projects/g/terminal-nerds/configs
+[deepscan grade badge]: https://deepscan.io/api/teams/16781/projects/20096/branches/536130/badge/grade.svg
+[deepscan report]: https://deepscan.io/dashboard#view=project&tid=16781&pid=20096&bid=536130
 
 ---
 
