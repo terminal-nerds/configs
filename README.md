@@ -90,6 +90,19 @@ Anyone is welcome to hop in for a chat. 🙂
 
 ---
 
+## Security
+
+🔐 Our team has a shared [Security Policy]. If you have concerns or found an
+issue, please follow the instructions, and
+remember about one thing:
+
+> We are all ears, but please, **DO NOT create a GitHub issue for reporting a
+> vulnerability**.
+
+[security policy]: https://github.com/terminal-nerds/configs/security/policy
+
+---
+
 ## Contributing
 
 🤝 This project follows the [all-contributors] specification.\

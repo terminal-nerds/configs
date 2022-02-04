@@ -109,6 +109,21 @@ None, so far.
 [dependencies badge]: https://img.shields.io/librariesio/release/npm/@terminal-nerds/markdownlint-config?style=for-the-badge
 [dependencies url]: https://libraries.io/npm/@terminal-nerds%markdownlint-config
 
+---
+
+## Security
+
+🔐 Our team has a shared [Security Policy]. If you have concerns or found an
+issue, please follow the instructions, and
+remember about one thing:
+
+> We are all ears, but please, **DO NOT create a GitHub issue for reporting a
+> vulnerability**.
+
+[security policy]: https://github.com/terminal-nerds/configs/security/policy
+
+---
+
 ## Contributing
 
 [![contributors badge]][contributors url]
