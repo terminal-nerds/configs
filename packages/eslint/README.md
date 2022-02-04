@@ -172,6 +172,9 @@ options _conditionally_.
 
 ## Security
 
+[![lgtm alerts badge]][lgtm report]
+[![lgtm grade badge]][lgtm report]
+
 🔐 Our team has a shared [Security Policy]. If you have concerns or found an
 issue, please follow the instructions, and
 remember about one thing:
@@ -180,6 +183,9 @@ remember about one thing:
 > vulnerability**.
 
 [security policy]: https://github.com/terminal-nerds/configs/security/policy
+[lgtm alerts badge]: https://img.shields.io/lgtm/alerts/github/terminal-nerds/configs?style=for-the-badge&logo=lgtm
+[lgtm grade badge]: https://img.shields.io/lgtm/grade/javascript/github/terminal-nerds/configs?style=for-the-badge&logo=lgtm
+[lgtm report]: https://lgtm.com/projects/g/terminal-nerds/configs
 
 ---
 
