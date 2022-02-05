@@ -33,11 +33,8 @@ jobs:
             - name: Checkout to ${{ github.repository }} repository
               uses: actions/checkout@v2
               with:
-                  ref: ${{ github.event.workflow_run.head_branch }}
-                  # ref: ${{ github.head_ref }}
-                  # fetch-depth: 0
-            - run: git branch
-            - run: env
+                  ref: ${{ github.head_ref }}
+                  fetch-depth: 0
 
             - name: Use pnpm version ${{ matrix.pnpm-version }}
               uses: pnpm/action-setup@v2.0.1

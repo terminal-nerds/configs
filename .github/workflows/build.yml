@@ -18,21 +18,9 @@ defaults:
 env:
     CI: true
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
     PNPM_CACHE_FOLDER: .pnpm-store
 
 jobs:
-    # sonarcloud:
-    #     runs-on: ${{ matrix.os }}
-    #     steps:
-    #         - name: Checkout to ${{ github.repository }} repository
-    #           uses: actions/checkout@v2
-    #           with:
-    #               fetch-depth: 0
-    #
-    #         - name: SonarCloud - Automatic code review, testing, inspection & auditing
-    #           uses: sonarsource/sonarcloud-github-action@master
-    #
     build:
         name: Build packages
         runs-on: ${{ matrix.os }}
