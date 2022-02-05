@@ -11,7 +11,7 @@ const config = {
 	"**/package.json": ["syncpack list-mismatches", "syncpack format"],
 
 	// markdownlint
-	"*.md": ["markdownlint"],
+	"*.md": [`markdownlint --ignore "./.changeset/*.md"`],
 
 	// TypeScript types (in each package, because of different configs)
 	"./helpers/**/*.ts": () => `tsc --project ./helpers/tsconfig.json --noEmit`,
