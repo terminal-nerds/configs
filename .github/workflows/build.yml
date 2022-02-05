@@ -4,6 +4,7 @@ name: Build
 on:
     pull_request:
         branches: [main]
+        types: [opened, synchronize, reopened]
     push:
         branches: [main]
 
@@ -22,19 +23,28 @@ env:
     PNPM_CACHE_FOLDER: .pnpm-store
 
 jobs:
-    # sonarcloud:
-    #     runs-on: ${{ matrix.os }}
-    #     steps:
-    #         - name: Checkout to ${{ github.repository }} repository
-    #           uses: actions/checkout@v2
-    #           with:
-    #               fetch-depth: 0
-    #
-    #         - name: SonarCloud - Automatic code review, testing, inspection & auditing
-    #           uses: sonarsource/sonarcloud-github-action@master
-    #
+    sonarcloud:
+        runs-on: ${{ matrix.os }}
+        steps:
+            - name: Checkout to ${{ github.repository }} repository
+              uses: actions/checkout@v2
+              with:
+                  fetch-depth: 0
+
+            - name: SonarCloud - Automatic code review, testing, inspection & auditing
+              uses: sonarsource/sonarcloud-github-action@master
+              with:
+                  projectBaseDir: my-custom-directory
+                  args: >
+                      -Dsonar.organization=terminal-nerds
+                      -Dsonar.projectKey=terminal-nerds_configs
+                      -Dsonar.python.coverage.reportPaths=coverage.xml
+                      -Dsonar.sources=.
+                      -Dsonar.verbose=true
+
     build:
         name: Build packages
+        needs: [sonarcloud]
         runs-on: ${{ matrix.os }}
         strategy:
             matrix:
