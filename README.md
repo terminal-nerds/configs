@@ -1,15 +1,18 @@
 # Configs
 
 [![pnpm workspace badge]][pnpm workspace]
+[![stackshare badge]][stackshare url]
 
 ➡️ This project is a [monorepo] made with [pnpm workspace] and powered by
 [ultra-runner], [changesets].
 
 [monorepo]: https://en.wikipedia.org/wiki/Monorepo
 [pnpm workspace]: https://pnpm.io/workspaces
-[pnpm workspace badge]: https://img.shields.io/badge/monorepo-pnpm%20workspace-informational?style=for-the-badge&logo=pnpm
+[pnpm workspace badge]: https://img.shields.io/badge/-pnpm%20workspace-informational?style=for-the-badge&logo=pnpm
 [ultra-runner]: https://github.com/folke/ultra-runner
 [changesets]: https://github.com/changesets/changesets
+[stackshare badge]: https://img.shields.io/badge/-tech%20stack-yellow?style=for-the-badge&logo=stackshare
+[stackshare url]: https://stackshare.io/terminal-nerds/configs
 
 ## Project goal
 
