@@ -1,9 +1,10 @@
 ---
-name: Continuous Integration
+name: Linting
 
 on:
-    push:
-        branches: [main]
+    workflow_run:
+        types: [completed]
+        workflows: [Build]
 
 concurrency:
     group: ${{ github.workflow }}-${{ github.event.number || github.sha }}
@@ -16,51 +17,11 @@ defaults:
 env:
     CI: true
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     PNPM_CACHE_FOLDER: .pnpm-store
 
 jobs:
-    build:
-        name: Build packages
-        runs-on: ${{ matrix.os }}
-        strategy:
-            matrix:
-                node-version: [16.x]
-                pnpm-version: [6.x]
-                os: [ubuntu-latest]
-        steps:
-            - name: Checkout to ${{ github.repository }} repository
-              uses: actions/checkout@v2
-              with:
-                  ref: ${{ github.head_ref }}
-                  fetch-depth: 0
-
-            - name: Use pnpm version ${{ matrix.pnpm-version }}
-              uses: pnpm/action-setup@v2.0.1
-              with:
-                  version: ${{ matrix.pnpm-version }}
-                  run_install: true
-
-            - name: Setup Node.js version ${{ matrix.node-version }}
-              uses: actions/setup-node@v2
-              with:
-                  node-version: ${{ matrix.node-version }}
-                  cache: "pnpm"
-
-            - name: Execute package.json script "build"
-              run: pnpm build
-
-            - name: "Upload built packages"
-              uses: actions/upload-artifact@v2
-              with:
-                  if-no-files-found: error
-                  name: built-packages
-                  path: packages/*/dist/
-        timeout-minutes: 5
-
     eslint:
         name: ESLint - statically analyze the JavaScript code
-        needs: [build]
         runs-on: ${{ matrix.os }}
         strategy:
             fail-fast: false
@@ -102,7 +63,6 @@ jobs:
 
     markdownlint:
         name: markdownlint - validate markdown files
-        needs: [build]
         runs-on: ${{ matrix.os }}
         strategy:
             fail-fast: false
@@ -110,7 +70,6 @@ jobs:
                 node-version: [16.x]
                 pnpm-version: [6.x]
                 os: [ubuntu-latest]
-        timeout-minutes: 5
         steps:
             - name: Checkout to ${{ github.repository }} repository
               uses: actions/checkout@v2
@@ -142,10 +101,10 @@ jobs:
                   --dot
                   --ignore-path ".gitignore"
                   --ignore "./.changeset/*.md"
+        timeout-minutes: 5
 
     prettier:
         name: Prettier - check code formatting style
-        needs: [build]
         runs-on: ${{ matrix.os }}
         strategy:
             fail-fast: false
@@ -185,48 +144,3 @@ jobs:
                   --check
                   --verbose
         timeout-minutes: 5
-
-    release:
-        name: Changesets - Release or publish package(s)
-        if: ${{ github.ref_name == 'main' && github.repository_owner == 'terminal-nerds' }}
-        needs: [build, eslint, markdownlint, prettier]
-        runs-on: ${{ matrix.os }}
-        strategy:
-            fail-fast: true
-            matrix:
-                node-version: [16.x]
-                pnpm-version: [6.x]
-                os: [ubuntu-latest]
-        timeout-minutes: 5
-        steps:
-            - name: Checkout to ${{ github.repository }} repository
-              uses: actions/checkout@v2
-              with:
-                  ref: ${{ github.head_ref }}
-                  fetch-depth: 0
-
-            - name: Use pnpm version ${{ matrix.pnpm-version }}
-              uses: pnpm/action-setup@v2.0.1
-              with:
-                  version: ${{ matrix.pnpm-version }}
-                  run_install: true
-
-            - name: Setup Node.js version ${{ matrix.node-version }}
-              uses: actions/setup-node@v2
-              with:
-                  node-version: ${{ matrix.node-version }}
-                  cache: "pnpm"
-
-            - name: Download built packages
-              uses: actions/download-artifact@v2
-
-            - name: Extract built packages
-              run: ./.github/extract-built-packages.sh
-
-            - name: Create a release or publish with Changesets
-              id: changesets
-              uses: changesets/action@v1
-              with:
-                  commit: "chore(Changesets): 🏷️ Versioning package(s)"
-                  publish: pnpm changeset publish
-                  title: "chore(Changesets): 🏷️ Versioning package(s)"
