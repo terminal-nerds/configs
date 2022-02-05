@@ -1,15 +1,18 @@
 # Configs
 
 [![pnpm workspace badge]][pnpm workspace]
+[![stackshare badge]][stackshare url]
 
 ➡️ This project is a [monorepo] made with [pnpm workspace] and powered by
 [ultra-runner], [changesets].
 
 [monorepo]: https://en.wikipedia.org/wiki/Monorepo
 [pnpm workspace]: https://pnpm.io/workspaces
-[pnpm workspace badge]: https://img.shields.io/badge/monorepo-pnpm%20workspace-informational?style=for-the-badge&logo=pnpm
+[pnpm workspace badge]: https://img.shields.io/badge/-pnpm%20workspace-informational?style=for-the-badge&logo=pnpm
 [ultra-runner]: https://github.com/folke/ultra-runner
 [changesets]: https://github.com/changesets/changesets
+[stackshare badge]: https://img.shields.io/badge/-tech%20stack-yellow?style=for-the-badge&logo=stackshare
+[stackshare url]: https://stackshare.io/terminal-nerds/configs
 
 ## Project goal
 
@@ -90,7 +93,31 @@ Anyone is welcome to hop in for a chat. 🙂
 
 ---
 
+## Security
+
+[![lgtm alerts badge]][lgtm report]
+[![lgtm grade badge]][lgtm report]\
+[![DeepScan grade badge]][deepscan report]
+
+🔐 Our team has a shared [Security Policy]. If you have concerns or found an
+issue, please follow the instructions, and
+remember about one thing:
+
+> We are all ears, but please, **DO NOT create a GitHub issue for reporting a
+> vulnerability**.
+
+[security policy]: https://github.com/terminal-nerds/configs/security/policy
+[lgtm alerts badge]: https://img.shields.io/lgtm/alerts/github/terminal-nerds/configs?style=for-the-badge&logo=lgtm
+[lgtm grade badge]: https://img.shields.io/lgtm/grade/javascript/github/terminal-nerds/configs?style=for-the-badge&logo=lgtm
+[lgtm report]: https://lgtm.com/projects/g/terminal-nerds/configs
+[deepscan grade badge]: https://deepscan.io/api/teams/16781/projects/20096/branches/536130/badge/grade.svg
+[deepscan report]: https://deepscan.io/dashboard#view=project&tid=16781&pid=20096&bid=536130
+
+---
+
 ## Contributing
+
+[![contributors badge]][contributors url]
 
 🤝 This project follows the [all-contributors] specification.\
 **Therefore, contributions of any kind are welcome!**
@@ -100,6 +127,8 @@ involved.
 
 [all-contributors]: https://github.com/all-contributors/all-contributors
 [contributing]: ./.github/CONTRIBUTING.md
+[contributors badge]: https://img.shields.io/github/contributors/terminal-nerds/configs?style=for-the-badge
+[contributors url]: #contributors
 
 ### Contributors
 
