@@ -3,7 +3,6 @@ name: Linting
 
 on:
     workflow_run:
-        branches: [main]
         types: [completed]
         workflows: [Build packages]
 
