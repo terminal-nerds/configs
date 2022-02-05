@@ -17,13 +17,11 @@ defaults:
 env:
     CI: true
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     PNPM_CACHE_FOLDER: .pnpm-store
 
 jobs:
     eslint:
         name: ESLint - statically analyze the JavaScript code
-        needs: [build]
         runs-on: ${{ matrix.os }}
         strategy:
             fail-fast: false
@@ -66,7 +64,6 @@ jobs:
 
     markdownlint:
         name: markdownlint - validate markdown files
-        needs: [build]
         runs-on: ${{ matrix.os }}
         strategy:
             fail-fast: false
@@ -74,7 +71,6 @@ jobs:
                 node-version: [16.x]
                 pnpm-version: [6.x]
                 os: [ubuntu-latest]
-        timeout-minutes: 5
         steps:
             - name: Checkout to ${{ github.repository }} repository
               uses: actions/checkout@v2
@@ -106,10 +102,10 @@ jobs:
                   --dot
                   --ignore-path ".gitignore"
                   --ignore "./.changeset/*.md"
+        timeout-minutes: 5
 
     prettier:
         name: Prettier - check code formatting style
-        needs: [build]
         runs-on: ${{ matrix.os }}
         strategy:
             fail-fast: false
