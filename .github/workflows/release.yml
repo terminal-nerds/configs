@@ -22,9 +22,16 @@ env:
     PNPM_CACHE_FOLDER: .pnpm-store
 
 jobs:
-    release:
-        name: Changesets - Release or publish package(s)
-        if: ${{ github.ref_name == 'main' && github.repository_owner == 'terminal-nerds' }}
+    on-failure:
+        name: "Release[FAILURE] - cancel due Linting workflow failure"
+        runs-on: ubuntu-latest
+        if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+        steps:
+            - run: echo "The linting workflow has failed!"
+
+    on-success:
+        name: Release[SUCCESS] - version or publish package(s) with Changesets
+        if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner = 'terminal-nerds' }}
         runs-on: ${{ matrix.os }}
         strategy:
             fail-fast: true
