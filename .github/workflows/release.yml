@@ -1,0 +1,67 @@
+---
+name: Release
+
+on:
+    workflow_run:
+        branches: [main]
+        types: [completed]
+        workflow: [Build, Linting]
+
+concurrency:
+    group: ${{ github.workflow }}-${{ github.event.number || github.sha }}
+    cancel-in-progress: true
+
+defaults:
+    run:
+        shell: bash
+
+env:
+    CI: true
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    PNPM_CACHE_FOLDER: .pnpm-store
+
+jobs:
+    release:
+        name: Changesets - Release or publish package(s)
+        if: ${{ github.ref_name == 'main' && github.repository_owner == 'terminal-nerds' }}
+        runs-on: ${{ matrix.os }}
+        strategy:
+            fail-fast: true
+            matrix:
+                node-version: [16.x]
+                pnpm-version: [6.x]
+                os: [ubuntu-latest]
+        timeout-minutes: 5
+        steps:
+            - name: Checkout to ${{ github.repository }} repository
+              uses: actions/checkout@v2
+              with:
+                  ref: ${{ github.head_ref }}
+                  fetch-depth: 0
+
+            - name: Use pnpm version ${{ matrix.pnpm-version }}
+              uses: pnpm/action-setup@v2.0.1
+              with:
+                  version: ${{ matrix.pnpm-version }}
+                  run_install: true
+
+            - name: Setup Node.js version ${{ matrix.node-version }}
+              uses: actions/setup-node@v2
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  cache: "pnpm"
+
+            - name: Download built packages
+              uses: actions/download-artifact@v2
+
+            - name: Extract built packages
+              run: ./.github/extract-built-packages.sh
+
+            - name: Create a release or publish with Changesets
+              id: changesets
+              uses: changesets/action@v1
+              with:
+                  commit: "chore(Changesets): 🏷️ Versioning package(s)"
+                  publish: pnpm changeset publish
+                  title: "chore(Changesets): 🏷️ Versioning package(s)"
