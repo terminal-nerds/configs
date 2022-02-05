@@ -4,7 +4,7 @@ name: Linting
 on:
     workflow_run:
         types: [completed]
-        workflows: [Build packages]
+        workflows: [Build]
 
 concurrency:
     group: ${{ github.workflow }}-${{ github.event.number || github.sha }}
