@@ -31,7 +31,10 @@ jobs:
 
     on-success:
         name: Release[SUCCESS] - version or publish package(s) with Changesets
-        if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner = 'terminal-nerds' }}
+        if: ${{
+            github.event.workflow_run.conclusion == 'success'
+            && github.repository_owner == 'terminal-nerds'
+            }}
         runs-on: ${{ matrix.os }}
         strategy:
             fail-fast: true
@@ -60,7 +63,12 @@ jobs:
                   cache: "pnpm"
 
             - name: Download built packages
-              uses: actions/download-artifact@v2
+              uses: dawidd6/action-download-artifact@v2
+              with:
+                  name: built-packages
+                  path: built-packages
+                  workflow: build.yml
+                  workflow_conclusion: success
 
             - name: Extract built packages
               run: ./.github/extract-built-packages.sh

@@ -1,16 +1,21 @@
 #!/bin/bash
 
-cd built-packages || exit 1
-mkdir -p ../temporary/packages
-mv ./* ../temporary/packages
+readonly ARTIFACT_DIRECTORY="built-packages"
+readonly TEMPORARY_DIRECTORY=".temporary"
+readonly OUTPUT_DIRECTORY="packages"
+readonly WRAPPED_DIRECTORY="packed"
 
-cd ../temporary || exit 1
-tar -cvzpf built-packages.tar.gz ./*
-mv built-packages.tar.gz ../built-packages.tar.gz
+cd "$ARTIFACT_DIRECTORY" || exit 1
+mkdir -p "../$TEMPORARY_DIRECTORY/$OUTPUT_DIRECTORY"
+mv ./* "../$TEMPORARY_DIRECTORY/$OUTPUT_DIRECTORY"
+
+cd "../$TEMPORARY_DIRECTORY" || exit 1
+tar -cvzpf "$WRAPPED_DIRECTORY.tar.gz" ./*
+mv "$WRAPPED_DIRECTORY.tar.gz" "../$WRAPPED_DIRECTORY.tar.gz"
 
 cd ..
-tar -xvzpf built-packages.tar.gz
+tar -xvzpf "$WRAPPED_DIRECTORY.tar.gz"
 
-rm -rf built-packages
-rm -rf temporary
-rm -f built-packages.tar.gz
+rm -rf "$WRAPPED_DIRECTORY"
+rm -rf "$TEMPORARY_DIRECTORY"
+rm -f "$WRAPPED_DIRECTORY.tar.gz"
