@@ -18,7 +18,7 @@
 	 * @see https://github.com/DavidAnson/markdownlint/blob/main/doc/Prettier.md
 	 */
 	"list-marker-space": {
-		"ul_single": 1,
+		"ul_single": 3,
 		"ul_multi": 1
 	},
 	"no-hard-tabs": {
