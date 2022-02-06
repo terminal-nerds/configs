@@ -1,0 +1,16 @@
+---
+name: Labeler
+
+on: pull_request_target
+
+jobs:
+    triage:
+        name: Automatically assign label to the Pull Requests
+        if: ${{ github.repository_owner == 'terminal-nerds' }}
+        runs-on: ubuntu-latest
+        steps:
+            # https://github.com/actions/labeler
+            - uses: actions/labeler@v3
+              with:
+                  repo-token: "${{ secrets.GITHUB_TOKEN }}"
+                  sync-labels: true

@@ -1,0 +1,22 @@
+# https://github.com/actions/labeler
+---
+"⚙️ configuration":
+    - packages/*/source/**/*
+
+"📓 documentation":
+    - README.md
+    - packages/*/README.md
+
+"🧹 formatter":
+    - packages/prettier
+
+"🕵️ linter":
+    - packages/eslint
+    - packages/markdownlint
+    - packages/stylelint
+
+"🧰 monorepo":
+    - .github/**/*
+
+"🎉 release":
+    - packages/*/CHANGELOG.md

@@ -1,10 +1,10 @@
 # https://pnpm.io/pnpm-workspace_yaml
-
+---
 link-workspace-packages: true
 packages:
     - "configs/**"
     - "helpers/**"
     - "packages/**"
-prefer-workspace-packages: true
+prefer-workspace-packages: false
 shared-workspace-lockfile: true
 save-workspace-protocol: true
