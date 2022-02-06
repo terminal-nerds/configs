@@ -76,8 +76,8 @@ registry].
 [![FOSSA Status Card]][fossa status]
 
 [license badge]: https://img.shields.io/github/license/terminal-nerds/configs?style=for-the-badge
-[fossa status card]: https://app.fossa.com/api/projects/git%2Bgithub.com%2Fxeho91%2Fconfigs.svg?type=large
-[fossa status]: https://app.fossa.com/projects/git%2Bgithub.com%2Fxeho91%2Fconfigs?ref=badge_large
+[fossa status card]: https://app.fossa.com/api/projects/custom%2B20521%2Fgit%40github.com%3Aterminal-nerds%2Fconfigs.git.svg?type=large
+[fossa status]: https://app.fossa.com/projects/custom%2B20521%2Fgit%40github.com%3Aterminal-nerds%2Fconfigs.git?ref=badge_large
 
 ---
 
