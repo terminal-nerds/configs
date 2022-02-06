@@ -61,7 +61,7 @@ device(s):
 
 [node.js]: https://nodejs.org/en/
 [pnpm]: https://pnpm.io/
-[npm]: https://www.npmjs.com/
+[npm]: https://npmjs.com/
 [yarn]: https://yarnpkg.com/
 
 ---
@@ -109,7 +109,7 @@ device(s):
 options _conditionally_.
 
 [dependencies badge]: https://img.shields.io/librariesio/release/npm/@terminal-nerds/stylelint-config?style=for-the-badge
-[dependencies url]: https://libraries.io/npm/@terminal-nerds%stylelint-config
+[dependencies url]: https://libraries.io/npm/@terminal-nerds%2Fstylelint-config
 
 ### Configurations
 

@@ -61,7 +61,7 @@ device(s):
 
 [node.js]: https://nodejs.org/en/
 [pnpm]: https://pnpm.io/
-[npm]: https://www.npmjs.com/
+[npm]: https://npmjs.com/
 [yarn]: https://yarnpkg.com/
 
 ---
@@ -111,7 +111,7 @@ device(s):
 ⚙️ This configuration module for [Prettier] loads plugins options _conditionally_.
 
 [dependencies badge]: https://img.shields.io/librariesio/release/npm/@terminal-nerds/prettier-config?style=for-the-badge
-[dependencies url]: https://libraries.io/npm/@terminal-nerds%prettier-config
+[dependencies url]: https://libraries.io/npm/@terminal-nerds%2Fprettier-config
 
 ### Plugins
 

@@ -62,7 +62,7 @@ device(s):
 
 [node.js]: https://nodejs.org/en/
 [pnpm]: https://pnpm.io/
-[npm]: https://www.npmjs.com/
+[npm]: https://npmjs.com/
 [yarn]: https://yarnpkg.com/
 
 ---
@@ -107,7 +107,7 @@ device(s):
 None, so far.
 
 [dependencies badge]: https://img.shields.io/librariesio/release/npm/@terminal-nerds/markdownlint-config?style=for-the-badge
-[dependencies url]: https://libraries.io/npm/@terminal-nerds%markdownlint-config
+[dependencies url]: https://libraries.io/npm/@terminal-nerds%2Fmarkdownlint-config
 
 ---
 

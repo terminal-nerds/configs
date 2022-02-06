@@ -60,7 +60,7 @@ device(s):
 
 [node.js]: https://nodejs.org/en/
 [pnpm]: https://pnpm.io/
-[npm]: https://www.npmjs.com/
+[npm]: https://npmjs.com/
 [yarn]: https://yarnpkg.com/
 [node.js version support badge]: https://img.shields.io/node/v-lts/@terminal-nerds/eslint-config?style=for-the-badge&logo=nodedotjs
 
@@ -115,7 +115,7 @@ device(s):
 options _conditionally_.
 
 [dependencies badge]: https://img.shields.io/librariesio/release/npm/@terminal-nerds/eslint-config?style=for-the-badge
-[dependencies url]: https://libraries.io/npm/@terminal-nerds%2eslint-config
+[dependencies url]: https://libraries.io/npm/@terminal-nerds%2Feslint-config
 
 ### Configurations
 
