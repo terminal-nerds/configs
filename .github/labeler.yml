@@ -8,12 +8,12 @@
     - packages/*/README.md
 
 "🧹 formatter":
-    - packages/prettier
+    - packages/prettier/**/*
 
 "🕵️ linter":
-    - packages/eslint
-    - packages/markdownlint
-    - packages/stylelint
+    - packages/eslint/**/*
+    - packages/markdownlint/**/*
+    - packages/stylelint/**/*
 
 "🧰 monorepo":
     - .github/**/*
