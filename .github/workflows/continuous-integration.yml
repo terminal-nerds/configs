@@ -67,6 +67,7 @@ jobs:
 
     eslint:
         name: Lint (ESLint) - statically analyze the JavaScript code
+        needs: [build]
         runs-on: ${{ matrix.os }}
         steps:
             - name: Checkout to ${{ github.repository }} repository
@@ -89,6 +90,13 @@ jobs:
               with:
                   cache: "pnpm"
                   node-version: ${{ matrix.node-version }}
+
+            - name: Download built packages
+              # https://github.com/actions/download-artifact
+              uses: actions/download-artifact@v2
+
+            - name: Extract built packages
+              run: ./.github/extract-built-packages.sh
 
             - name: Execute ESLint
               run: >
@@ -105,6 +113,7 @@ jobs:
 
     markdownlint:
         name: Lint (markdownlint) - validate markdown files
+        needs: [build]
         runs-on: ${{ matrix.os }}
         steps:
             - name: Checkout to ${{ github.repository }} repository
@@ -127,6 +136,13 @@ jobs:
               with:
                   cache: "pnpm"
                   node-version: ${{ matrix.node-version }}
+
+            - name: Download built packages
+              # https://github.com/actions/download-artifact
+              uses: actions/download-artifact@v2
+
+            - name: Extract built packages
+              run: ./.github/extract-built-packages.sh
 
             - name: Execute markdownlint
               run: >
@@ -144,6 +160,7 @@ jobs:
 
     prettier:
         name: Lint (Prettier) - check code formatting style
+        needs: [build]
         runs-on: ${{ matrix.os }}
         steps:
             - name: Checkout to ${{ github.repository }} repository
@@ -166,6 +183,13 @@ jobs:
               with:
                   cache: "pnpm"
                   node-version: ${{ matrix.node-version }}
+
+            - name: Download built packages
+              # https://github.com/actions/download-artifact
+              uses: actions/download-artifact@v2
+
+            - name: Extract built packages
+              run: ./.github/extract-built-packages.sh
 
             - name: Execute Prettier script
               run: >
@@ -207,6 +231,10 @@ jobs:
               with:
                   cache: "pnpm"
                   node-version: ${{ matrix.node-version }}
+
+            - name: Download built packages
+              # https://github.com/actions/download-artifact
+              uses: actions/download-artifact@v2
 
             - name: Extract built packages
               run: ./.github/extract-built-packages.sh
