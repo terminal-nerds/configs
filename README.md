@@ -25,12 +25,14 @@ plugins dependencies, etc.
 
 ## Packages
 
+![workflow CI badge]\
 ![node.js version support badge]
 [![Dependencies badge]][dependencies url]
 
 [node.js version support badge]: https://img.shields.io/node/v-lts/@terminal-nerds/eslint-config?style=for-the-badge&logo=nodedotjs
 [dependencies badge]: https://img.shields.io/librariesio/github/terminal-nerds/configs?style=for-the-badge
 [dependencies url]: https://libraries.io/github/terminal-nerds/configs "Dependencies status"
+[workflow ci badge]: https://img.shields.io/github/workflow/status/terminal-nerds/configs/CI?logo=github&style=for-the-badge
 
 📦 The following packages are available under the [packages/](./packages)
 directory. Each of them has its own instructions _(in the `README.md` files)_
