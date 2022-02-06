@@ -1,0 +1,251 @@
+# NOTE: CI -> Continuous Integration
+---
+name: CI
+
+on:
+    pull_request:
+        branches: [main]
+    push:
+        branches: [main]
+
+concurrency:
+    group: ${{ github.workflow }}-${{ github.event.number || github.sha }}
+    cancel-in-progress: true
+
+defaults:
+    run:
+        shell: bash
+
+env:
+    CI: true
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    PNPM_CACHE_FOLDER: .pnpm-store
+
+jobs:
+    build:
+        name: Build packages
+        runs-on: ${{ matrix.os }}
+        steps:
+            - name: Checkout to ${{ github.repository }} repository
+              # https://github.com/actions/checkout
+              uses: actions/checkout@v2
+              with:
+                  fetch-depth: 0
+                  ref: ${{ github.head_ref }}
+
+            - name: Use pnpm version ${{ matrix.pnpm-version }}
+              # https://github.com/pnpm/action-setup
+              uses: pnpm/action-setup@v2.0.1
+              with:
+                  run_install: true
+                  version: ${{ matrix.pnpm-version }}
+
+            - name: Setup Node.js version ${{ matrix.node-version }}
+              # https://github.com/actions/setup-node
+              uses: actions/setup-node@v2
+              with:
+                  cache: "pnpm"
+                  node-version: ${{ matrix.node-version }}
+
+            - name: Execute package.json script "build"
+              run: pnpm build
+
+            - name: Upload built packages
+              uses: actions/upload-artifact@v2
+              with:
+                  if-no-files-found: error
+                  name: built-packages
+                  path: packages/*/dist/
+        strategy:
+            matrix:
+                node-version: [16.x]
+                os: [ubuntu-latest]
+                pnpm-version: [6.x]
+        timeout-minutes: 5
+
+    eslint:
+        name: Lint (ESLint) - statically analyze the JavaScript code
+        runs-on: ${{ matrix.os }}
+        steps:
+            - name: Checkout to ${{ github.repository }} repository
+              # https://github.com/actions/checkout
+              uses: actions/checkout@v2
+              with:
+                  fetch-depth: 0
+                  ref: ${{ github.head_ref }}
+
+            - name: Use pnpm version ${{ matrix.pnpm-version }}
+              # https://github.com/pnpm/action-setup
+              uses: pnpm/action-setup@v2.0.1
+              with:
+                  run_install: true
+                  version: ${{ matrix.pnpm-version }}
+
+            - name: Setup Node.js version ${{ matrix.node-version }}
+              # https://github.com/actions/setup-node
+              uses: actions/setup-node@v2
+              with:
+                  cache: "pnpm"
+                  node-version: ${{ matrix.node-version }}
+
+            - name: Download built packages
+              # https://github.com/actions/download-artifact
+              uses: actions/download-artifact@v2
+
+            - name: Extract built packages
+              run: ./.github/extract-built-packages.sh
+
+            - name: Execute ESLint
+              run: >
+                  DEBUG="eslint:cli-engine"
+                  pnpm eslint .
+                  --ext .json,.ts,.yaml,.yml,
+        strategy:
+            fail-fast: false
+            matrix:
+                node-version: [16.x]
+                os: [ubuntu-latest]
+                pnpm-version: [6.x]
+        timeout-minutes: 5
+
+    markdownlint:
+        name: Lint (markdownlint) - validate markdown files
+        runs-on: ${{ matrix.os }}
+        steps:
+            - name: Checkout to ${{ github.repository }} repository
+              # https://github.com/actions/checkout
+              uses: actions/checkout@v2
+              with:
+                  fetch-depth: 0
+                  ref: ${{ github.head_ref }}
+
+            - name: Use pnpm version ${{ matrix.pnpm-version }}
+              # https://github.com/pnpm/action-setup
+              uses: pnpm/action-setup@v2.0.1
+              with:
+                  run_install: true
+                  version: ${{ matrix.pnpm-version }}
+
+            - name: Setup Node.js version ${{ matrix.node-version }}
+              # https://github.com/actions/setup-node
+              uses: actions/setup-node@v2
+              with:
+                  cache: "pnpm"
+                  node-version: ${{ matrix.node-version }}
+
+            - name: Download built packages
+              # https://github.com/actions/download-artifact
+              uses: actions/download-artifact@v2
+
+            - name: Extract built packages
+              run: ./.github/extract-built-packages.sh
+
+            - name: Execute markdownlint
+              run: >
+                  pnpm markdownlint .
+                  --dot
+                  --ignore "./.changeset/*.md"
+                  --ignore-path ".gitignore"
+        strategy:
+            fail-fast: false
+            matrix:
+                node-version: [16.x]
+                os: [ubuntu-latest]
+                pnpm-version: [6.x]
+        timeout-minutes: 5
+
+    prettier:
+        name: Lint (Prettier) - check code formatting style
+        runs-on: ${{ matrix.os }}
+        steps:
+            - name: Checkout to ${{ github.repository }} repository
+              # https://github.com/actions/checkout
+              uses: actions/checkout@v2
+              with:
+                  fetch-depth: 0
+                  ref: ${{ github.head_ref }}
+
+            - name: Use pnpm version ${{ matrix.pnpm-version }}
+              # https://github.com/pnpm/action-setup
+              uses: pnpm/action-setup@v2.0.1
+              with:
+                  run_install: true
+                  version: ${{ matrix.pnpm-version }}
+
+            - name: Setup Node.js version ${{ matrix.node-version }}
+              # https://github.com/actions/setup-node
+              uses: actions/setup-node@v2
+              with:
+                  cache: "pnpm"
+                  node-version: ${{ matrix.node-version }}
+
+            - name: Download built packages
+              # https://github.com/actions/download-artifact
+              uses: actions/download-artifact@v2
+
+            - name: Extract built packages
+              run: ./.github/extract-built-packages.sh
+
+            - name: Execute Prettier script
+              run: >
+                  pnpm pretty-quick
+                  --branch HEAD~${{ github.event.pull_request.commits }}
+                  --check
+                  --verbose
+        strategy:
+            fail-fast: false
+            matrix:
+                node-version: [16.x]
+                os: [ubuntu-latest]
+                pnpm-version: [6.x]
+        timeout-minutes: 5
+
+    changelog:
+        name: Changelog - generate changelog or publish with Changesets
+        if: ${{ github.repository_owner == 'terminal-nerds' }}
+        needs: [build, eslint, markdownlint, prettier]
+        runs-on: ${{ matrix.os }}
+        steps:
+            - name: Checkout to ${{ github.repository }} repository
+              # https://github.com/actions/checkout
+              uses: actions/checkout@v2
+              with:
+                  ref: ${{ github.head_ref }}
+                  fetch-depth: 0
+
+            - name: Use pnpm version ${{ matrix.pnpm-version }}
+              # https://github.com/pnpm/action-setup
+              uses: pnpm/action-setup@v2.0.1
+              with:
+                  run_install: true
+                  version: ${{ matrix.pnpm-version }}
+
+            - name: Setup Node.js version ${{ matrix.node-version }}
+              # https://github.com/actions/setup-node
+              uses: actions/setup-node@v2
+              with:
+                  cache: "pnpm"
+                  node-version: ${{ matrix.node-version }}
+
+            - name: Download built packages
+              # https://github.com/actions/download-artifact
+              uses: actions/download-artifact@v2
+
+            - name: Extract built packages
+              run: ./.github/extract-built-packages.sh
+
+            - name: Generate changelogs or release & publish with Changesets
+              id: changesets
+              # https://github.com/changesets/action
+              uses: changesets/action@v1
+              with:
+                  commit: "chore(Changesets): 🏷️ Versioning package(s)"
+                  publish: pnpm changeset publish
+                  title: "chore(Changesets): 🏷️ Release package(s)"
+        strategy:
+            matrix:
+                node-version: [16.x]
+                os: [ubuntu-latest]
+                pnpm-version: [6.x]
+        timeout-minutes: 5
