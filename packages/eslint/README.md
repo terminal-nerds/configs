@@ -139,6 +139,7 @@ options _conditionally_.
 | [eslint-plugin-node]                  | ![eslint-plugin-node version badge]                  | -                                                                            |
 | [eslint-plugin-regexp]                | ![eslint-plugin-regexp version badge]                | -                                                                            |
 | [eslint-plugin-sonarjs]               | ![eslint-plugin-sonarjs version badge]               | -                                                                            |
+| [eslint-plugin-storybook]             | ![eslint-plugin-storybook version badge]             | `sb` as dependency                                                           |
 | [eslint-plugin-svelte3]               | ![eslint-plugin-svelte3 version badge]               | `svelte` as dependency                                                       |
 | [eslint-plugin-unicorn]               | ![eslint-plugin-unicorn version badge]               | -                                                                            |
 | [eslint-plugin-yml]                   | ![eslint-plugin-yml version badge]                   | -                                                                            |
@@ -161,6 +162,8 @@ options _conditionally_.
 [eslint-plugin-regexp version badge]: https://img.shields.io/npm/v/eslint-plugin-regexp?logo=npm&style=flat-square
 [eslint-plugin-sonarjs]: https://github.com/SonarSource/eslint-plugin-sonarjs
 [eslint-plugin-sonarjs version badge]: https://img.shields.io/npm/v/eslint-plugin-sonarjs?logo=npm&style=flat-square
+[eslint-plugin-storybook]: https://github.com/storybookjs/eslint-plugin-storybook
+[eslint-plugin-storybook version badge]: https://img.shields.io/npm/v/eslint-plugin-storybook?logo=npm&style=flat-square
 [eslint-plugin-svelte3]: https://github.com/sveltejs/eslint-plugin-svelte3
 [eslint-plugin-svelte3 version badge]: https://img.shields.io/npm/v/eslint-plugin-svelte3?logo=npm&style=flat-square
 [eslint-plugin-unicorn]: https://github.com/sindresorhus/eslint-plugin-unicorn
