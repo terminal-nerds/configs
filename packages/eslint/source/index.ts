@@ -13,6 +13,7 @@ import pluginJSONC from "./plugins/jsonc.js";
 import pluginJSONSchemaValidator from "./plugins/json-schema-validator.js";
 import pluginNode from "./plugins/node.js";
 import pluginSonarJS from "./plugins/sonarjs.js";
+import pluginStorybook from "./plugins/storybook.js";
 import pluginSvelte3 from "./plugins/svelte3.js";
 import pluginTypeScript from "./plugins/typescript.js";
 import pluginUnicorn from "./plugins/unicorn.js";
@@ -30,6 +31,7 @@ const configurations = deepmerge(
 	pluginJSONSchemaValidator,
 	pluginNode,
 	pluginSonarJS,
+	pluginStorybook,
 	pluginSvelte3,
 	pluginTypeScript,
 	pluginUnicorn,
@@ -39,4 +41,5 @@ const configurations = deepmerge(
 	configPrettier,
 );
 
+// eslint-disable-next-line unicorn/prefer-module
 module.exports = configurations;
