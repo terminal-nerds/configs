@@ -52,6 +52,7 @@ jobs:
               run: pnpm build
 
             - name: Upload built packages
+              # https://github.com/actions/upload-artifact
               uses: actions/upload-artifact@v2
               with:
                   if-no-files-found: error
@@ -88,13 +89,6 @@ jobs:
               with:
                   cache: "pnpm"
                   node-version: ${{ matrix.node-version }}
-
-            - name: Download built packages
-              # https://github.com/actions/download-artifact
-              uses: actions/download-artifact@v2
-
-            - name: Extract built packages
-              run: ./.github/extract-built-packages.sh
 
             - name: Execute ESLint
               run: >
@@ -133,13 +127,6 @@ jobs:
               with:
                   cache: "pnpm"
                   node-version: ${{ matrix.node-version }}
-
-            - name: Download built packages
-              # https://github.com/actions/download-artifact
-              uses: actions/download-artifact@v2
-
-            - name: Extract built packages
-              run: ./.github/extract-built-packages.sh
 
             - name: Execute markdownlint
               run: >
@@ -180,13 +167,6 @@ jobs:
                   cache: "pnpm"
                   node-version: ${{ matrix.node-version }}
 
-            - name: Download built packages
-              # https://github.com/actions/download-artifact
-              uses: actions/download-artifact@v2
-
-            - name: Extract built packages
-              run: ./.github/extract-built-packages.sh
-
             - name: Execute Prettier script
               run: >
                   pnpm pretty-quick
@@ -202,7 +182,7 @@ jobs:
         timeout-minutes: 5
 
     changelog:
-        name: Changelog - generate changelog or publish with Changesets
+        name: Changesets - generate changelog or publish
         if: ${{ github.repository_owner == 'terminal-nerds' }}
         needs: [build, eslint, markdownlint, prettier]
         runs-on: ${{ matrix.os }}
@@ -227,10 +207,6 @@ jobs:
               with:
                   cache: "pnpm"
                   node-version: ${{ matrix.node-version }}
-
-            - name: Download built packages
-              # https://github.com/actions/download-artifact
-              uses: actions/download-artifact@v2
 
             - name: Extract built packages
               run: ./.github/extract-built-packages.sh
