@@ -1,0 +1,74 @@
+---
+name: "🐛 Bug report"
+description: Report an issue or possible bug
+title: "[BUG REPORT]: "
+labels: ["🐛 bug"]
+body:
+    - type: markdown
+      attributes:
+          value: |
+              Thanks for taking the time to fill out this bug report!
+
+    - type: checkboxes
+      id: terms
+      attributes:
+          description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/terminal-nerds/.github/blob/main/CODE_OF_CONDUCT.md)
+          label: Code of Conduct
+          options:
+              - label: I agree to follow this team's Code of Conduct
+                required: true
+
+    - type: dropdown
+      attributes:
+          description: Which configuration packages are affected?
+          label: Package(s)
+          multiple: true
+          options:
+              - eslint-config
+              - markdownlint-config
+              - prettier-config
+              - stylelint-config
+              - typescript-config
+      validations:
+          required: true
+
+    - type: input
+      attributes:
+          description: Which version of the configuration packages were affected?
+          label: Version(s)
+          placeholder: 0.0.0
+      validations:
+          required: true
+
+    - type: dropdown
+      attributes:
+          description: What package manager are you using?
+          label: Package manager
+          multiple: false
+          options: [npm, pnpm, yarn]
+      validations:
+          required: false
+
+    - type: input
+      attributes:
+          description: Wich version of Node.js are you using?
+          label: Node.js Version
+          placeholder: 14.0, LTS, 17.0
+      validations:
+          required: true
+
+    - type: dropdown
+      attributes:
+          description: What operating system are you using?
+          label: Operating System
+          multiple: false
+          options: [Mac, Windows, Linux]
+      validations:
+          required: false
+
+    - type: textarea
+      attributes:
+          description: A clear and concise description of what the bug is.
+          label: Bug description
+      validations:
+          required: true

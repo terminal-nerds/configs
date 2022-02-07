@@ -1,0 +1,14 @@
+---
+blank_issues_enabled: false
+contact_links:
+    - name: 📜 Code of Conduct
+      url: https://github.com/terminal-nerds/.github/blob/main/CODE_OF_CONDUCT.md
+      about: In any way you want to interact with us, you need to abide by the terms of our adopted Code of Conduct.
+
+    - name: 💬 Chat
+      url: https://discord.gg/decp3g7BEN
+      about: Our Discord server is active, come join us!
+
+    - name: ❓ Support
+      url: https://github.com/terminal-nerds/configs/discussions
+      about: This issue tracker is not for support questions. Please use Discussions -> Q&A instead.

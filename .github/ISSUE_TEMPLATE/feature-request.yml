@@ -1,0 +1,44 @@
+---
+name: "💡 Feature request"
+description: Request a new feature
+title: "[FEATURE REQUEST]: "
+labels: ["💡 request"]
+body:
+    - type: markdown
+      attributes:
+          value: |
+              **Thank you** for taking the time to fill out this feature request!
+
+              We believe that using [the Golden Circle from Simon Sinek] is the best way to describe an idea for a feature. First, however, as briefly as possible.
+
+              [the Golden Circle from Simon Sinek]: https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action
+
+    - type: checkboxes
+      id: terms
+      attributes:
+          description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/terminal-nerds/.github/blob/main/CODE_OF_CONDUCT.md)
+          label: Code of Conduct
+          options:
+              - label: I agree to follow this team's Code of Conduct
+                required: true
+
+    - type: textarea
+      attributes:
+          description: Why you want this feature?
+          label: Why?
+      validations:
+          required: true
+
+    - type: textarea
+      attributes:
+          description: How do you expect this feature to be delivered?
+          label: How?
+      validations:
+          required: true
+
+    - type: textarea
+      attributes:
+          description: What exactly are you proposing?
+          label: What?
+      validations:
+          required: true
