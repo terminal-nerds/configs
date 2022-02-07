@@ -2,6 +2,8 @@
 ---
 "⚙️ configuration":
     - packages/*/source/**/*
+    - packages/markdownlint/markdownlint.json
+    - packages/typescript/tsconfig.json
 
 "📓 documentation":
     - README.md
@@ -20,3 +22,6 @@
 
 "🎉 release":
     - packages/*/CHANGELOG.md
+
+"🔧 tool":
+    - packages/typescript/**/*
