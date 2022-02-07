@@ -18,7 +18,7 @@
 [![supported typescript version badge]][typescript]
 
 [node.js version support badge]: https://img.shields.io/node/v-lts/@terminal-nerds/typescript-config?style=for-the-badge&logo=nodedotjs
-[supported typescript version badge]: https://img.shields.io/github/package-json/dependency-version/terminal-nerds/configs/peer/typescript-g?filename=packages%2Ftypescript%2Fpackage.json&logo=typescript&style=for-the-badge
+[supported typescript version badge]: https://img.shields.io/github/package-json/dependency-version/terminal-nerds/configs/peer/typescript?filename=packages%2Ftypescript%2Fpackage.json&logo=typescript&style=for-the-badge
 
 ℹ️ This configuration package require these tools to use locally on your
 device(s):
