@@ -5,7 +5,7 @@
 		"access": "public"
 	},
 	"name": "@terminal-nerds/typescript-config",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Terminal Nerds extendable configuration for TypeScript.",
 	"keywords": [
 		"config",
