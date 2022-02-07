@@ -17,8 +17,6 @@ const config = {
 	"./helpers/**/*.ts": () => `tsc --project ./helpers/tsconfig.json --noEmit`,
 	"./packages/eslint/source/**/*.ts": () =>
 		`tsc --project ./packages/eslint/tsconfig.json --noEmit`,
-	"./packages/markdownlint/source/**/*.ts": () =>
-		`tsc --project ./packages/markdownlint/tsconfig.json --noEmit`,
 	"./packages/prettier/source/**/*.ts": () =>
 		`tsc --project ./packages/prettier/tsconfig.json --noEmit`,
 	"./packages/stylelint/source/**/*.ts": () =>
