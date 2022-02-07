@@ -57,9 +57,8 @@
 		"prettier-plugin-svelte": "^2.6.0"
 	},
 	"devDependencies": {
-		"@types/node": "17.0.14",
+		"@terminal-nerds/typescript-config": "workspace:*",
 		"@types/prettier": "2.4.3",
-		"@workspace/configs": "workspace:*",
 		"@workspace/helpers": "workspace:*",
 		"deepmerge-ts": "2.0.1",
 		"tsup": "5.11.13",

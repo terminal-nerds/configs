@@ -1,9 +1,0 @@
-{
-	"$schema": "https://json.schemastore.org/package",
-	"version": "0.0.1",
-	"name": "@workspace/configs",
-	"private": true,
-	"files": [
-		"tsconfig.json"
-	]
-}

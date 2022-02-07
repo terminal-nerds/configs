@@ -76,9 +76,9 @@
 		"yaml-eslint-parser": "^0.5.0"
 	},
 	"devDependencies": {
+		"@terminal-nerds/typescript-config": "workspace:*",
 		"@types/eslint": "8.4.1",
-		"@types/node": "17.0.14",
-		"@workspace/configs": "workspace:*",
+		"@types/node": "17.0.15",
 		"@workspace/helpers": "workspace:*",
 		"deepmerge-ts": "2.0.1",
 		"tsup": "5.11.13",

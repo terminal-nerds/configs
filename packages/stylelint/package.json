@@ -60,8 +60,8 @@
 		"stylelint-scss": "^4.1.0"
 	},
 	"devDependencies": {
-		"@types/node": "17.0.14",
-		"@workspace/configs": "workspace:*",
+		"@terminal-nerds/typescript-config": "workspace:*",
+		"@types/node": "17.0.15",
 		"@workspace/helpers": "workspace:*",
 		"deepmerge-ts": "2.0.1",
 		"stylelint": "14.3.0",
