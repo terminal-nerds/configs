@@ -34,11 +34,11 @@
 		"dev": "tsup --watch",
 		"format": "ultra format:all",
 		"format:all": "pnpm format:prettier ; pnpm format:syncpack",
-		"format:prettier": "pretty-quick --branch develop --pattern \"./packages/prettier/**/*\" --verbose",
+		"format:prettier": "pretty-quick --branch main --pattern \"./packages/prettier/**/*\" --verbose",
 		"format:syncpack": "syncpack format",
 		"lint": "ultra lint:all",
 		"lint:all": "pnpm lint:format ; pnpm lint:js ; pnpm lint:md ; pnpm lint:types",
-		"lint:format": "pretty-quick --branch develop --pattern \"./packages/prettier/**/*\" --verbose --check",
+		"lint:format": "pretty-quick --branch main --pattern \"./packages/prettier/**/*\" --verbose --check",
 		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
 		"lint:types": "tsc --noEmit"

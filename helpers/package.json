@@ -31,11 +31,11 @@
 		"dev": "tsc --build --watch",
 		"format": "ultra format:all",
 		"format:all": "pnpm format:prettier ; pnpm format:syncpack",
-		"format:prettier": "pretty-quick --branch develop --pattern \"./helpers/**/*\" --verbose",
+		"format:prettier": "pretty-quick --branch main --pattern \"./helpers/**/*\" --verbose",
 		"format:syncpack": "syncpack format",
 		"lint": "ultra lint:all",
 		"lint:all": "pnpm lint:format ; pnpm lint:js ; pnpm lint:types",
-		"lint:format": "pretty-quick --branch develop --pattern \"./helpers/**/*\" --verbose --check",
+		"lint:format": "pretty-quick --branch main --pattern \"./helpers/**/*\" --verbose --check",
 		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:types": "tsc --noEmit"
 	},

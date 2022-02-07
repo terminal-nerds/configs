@@ -247,6 +247,12 @@ jobs:
                   commit: "chore(Changesets): 🏷️ Versioning package(s)"
                   publish: pnpm changeset publish
                   title: "chore(Changesets): 🏷️ Release package(s)"
+
+            - name: Execute Prettier to fix CHANGELOG(s) file(s) format
+              run: >
+                  pnpm pretty-quick
+                  --branch HEAD~${{ github.event.pull_request.commits }}
+                  --verbose
         strategy:
             matrix:
                 node-version: [16.x]
