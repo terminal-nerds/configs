@@ -6,7 +6,12 @@
 	"extends": ["config:base"],
 	"packageRules": [
 		{
-			"groupName": "eslint",
+			"groupName": "helpers",
+			"labels": ["🧰 monorepo"],
+			"packagePatterns": ["pkg-up", "read-pkg-up"]
+		},
+		{
+			"groupName": "ESLint",
 			"labels": ["🕵️ linter"],
 			"packagePatterns": ["eslint"]
 		},
@@ -16,14 +21,25 @@
 			"packagePatterns": ["markdownlint"]
 		},
 		{
-			"groupName": "prettier",
+			"groupName": "Prettier",
 			"labels": ["🧹 formatter"],
 			"packagePatterns": ["prettier"]
 		},
 		{
-			"groupName": "stylelint",
+			"groupName": "Stylelint",
 			"labels": ["🕵️ linter"],
 			"packagePatterns": ["stylelint"]
+		},
+		{
+			"groupName": "TypeScript",
+			"labels": ["🔧 tool"],
+			"packagePatterns": [
+				"@types/node",
+				"tslib",
+				"type-fest",
+				"tsup",
+				"typescript"
+			]
 		}
 	],
 	"reviewersFromCodeOwners": true,
