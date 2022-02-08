@@ -8,37 +8,44 @@
 		{
 			"groupName": "helpers",
 			"labels": ["🧰 monorepo"],
-			"packagePatterns": ["pkg-up", "read-pkg-up"]
+			"packagePatterns": ["pkg-up", "read-pkg-up", "type-fest"]
 		},
 		{
 			"groupName": "ESLint",
-			"labels": ["🕵️ linter"],
+			"labels": ["📦 package:eslint-config"],
 			"packagePatterns": ["eslint"]
 		},
 		{
 			"groupName": "markdownlint",
-			"labels": ["🕵️ linter"],
+			"labels": ["📦 package:markdownlint-config"],
 			"packagePatterns": ["markdownlint"]
 		},
 		{
 			"groupName": "Prettier",
-			"labels": ["🧹 formatter"],
+			"labels": ["📦 package:prettier-config"],
 			"packagePatterns": ["prettier"]
 		},
 		{
 			"groupName": "Stylelint",
-			"labels": ["🕵️ linter"],
+			"labels": ["📦 package:stylelint-config"],
 			"packagePatterns": ["stylelint"]
 		},
 		{
 			"groupName": "TypeScript",
-			"labels": ["🔧 tool"],
+			"labels": ["📦 package:typescript-config"],
+			"packagePatterns": ["@types/node", "tslib", "tsup", "typescript"]
+		},
+		{
+			"groupName": "Tools",
+			"labels": ["⬆️ dependencies", "⚙️ configurations:tools"],
 			"packagePatterns": [
-				"@types/node",
-				"tslib",
-				"type-fest",
-				"tsup",
-				"typescript"
+				"changesets",
+				"all-contributors-cli",
+				"husky",
+				"lint-staged",
+				"rimraf",
+				"syncpack",
+				"ultra"
 			]
 		}
 	],

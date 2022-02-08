@@ -1,27 +1,26 @@
 # https://github.com/actions/labeler
 ---
-"⚙️ configuration":
-    - packages/*/source/**/*
-    - packages/markdownlint/markdownlint.json
-    - packages/typescript/tsconfig.json
+"🏗️ continuous integration":
+    - .github/**/*
 
 "📓 documentation":
     - README.md
     - packages/*/README.md
 
-"🧹 formatter":
+"📦 package:eslint-config":
     - packages/prettier/**/*
 
-"🕵️ linter":
-    - packages/eslint/**/*
-    - packages/markdownlint/**/*
+"📦 package:markdownlint-config":
+    - packages/prettier/**/*
+
+"📦 package:prettier-config":
+    - packages/prettier/**/*
+
+"📦 package:stylelint-config":
     - packages/stylelint/**/*
 
-"🧰 monorepo":
-    - .github/**/*
+"📦 package:typescript-config":
+    - packages/typescript/**/*
 
 "🎉 release":
     - packages/*/CHANGELOG.md
-
-"🔧 tool":
-    - packages/typescript/**/*
