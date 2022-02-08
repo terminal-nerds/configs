@@ -13,24 +13,24 @@ jobs:
               with:
                   repo-token: ${{ secrets.GITHUB_TOKEN }}
                   pr-message: |
-                      "# Hello @${{ github.actor }}\n
-                      \n
-                      **thank you for submitting your first Pull Request** 💗!\n
-                      \n
-                      Before we get started, a little reminder: our team has adopted the **[Contributor Covenant Code of Conduct]**.\n
-                      \n
-                      [contributor covenant code of conduct]: https://github.com/terminal-nerds/.github/blob/main/CODE_OF_CONDUCT.md\n
-                      \n
-                      📌 _Please verify below that you agree to abide by its terms._\n
-                      \n
-                      -   [ ] **I agree.**\n
-                      \n
-                      ---\n
-                      \n
+                      # Hello @${{ github.actor }}
+
+                      **thank you for submitting your first Pull Request** 💗!
+
+                      Before we get started, a little reminder: our team has adopted the **[Contributor Covenant Code of Conduct]**.
+
+                      [contributor covenant code of conduct]: https://github.com/terminal-nerds/.github/blob/main/CODE_OF_CONDUCT.md
+
+                      📌 _Please verify below that you agree to abide by its terms._
+
+                      -   [ ] **I agree.**
+
+                      ---
+
                       ## Things to note
-                      \n
-                      1. 💡 Please mark the Pull Request as a `draft` if it is not ready. List your [TODO] list, so other contributors can help you speed it up.\n
-                      1. 🤝 If you're lost and have some questions, please see if you can find your answer in the [CONTRIBUTING] guide.\n
-                      \n
-                      [todo]: #TODO\n
+
+                      1. 💡 Please mark the Pull Request as a `draft` if it is not ready. List your [TODO] list, so other contributors can help you speed it up.
+                      1. 🤝 If you're lost and have some questions, please see if you can find your answer in the [CONTRIBUTING] guide.
+
+                      [todo]: #TODO
                       [contributing]: https://github.com/terminal-nerds/configs/blob/main/.github/CONTRIBUTING.md"
