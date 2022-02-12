@@ -7,7 +7,7 @@
 	"packageRules": [
 		{
 			"groupName": "helpers",
-			"labels": ["🧰 monorepo"],
+			"labels": ["🧰 monorepo", "⬆️ dependencies"],
 			"packagePatterns": ["pkg-up", "read-pkg-up", "type-fest"]
 		},
 		{

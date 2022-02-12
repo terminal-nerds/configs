@@ -8,10 +8,10 @@
     - packages/*/README.md
 
 "📦 package:eslint-config":
-    - packages/prettier/**/*
+    - packages/eslint/**/*
 
 "📦 package:markdownlint-config":
-    - packages/prettier/**/*
+    - packages/markdownlint/**/*
 
 "📦 package:prettier-config":
     - packages/prettier/**/*
