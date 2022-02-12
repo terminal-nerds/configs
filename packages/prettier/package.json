@@ -23,6 +23,13 @@
 	"files": [
 		"/dist"
 	],
+	"ultra": {
+		"concurrent": [
+			"clean:all",
+			"format:all",
+			"lint:all"
+		]
+	},
 	"scripts": {
 		"build": "ultra build:all",
 		"build:all": "pnpm build:package",
@@ -42,13 +49,6 @@
 		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
 		"lint:types": "tsc --noEmit"
-	},
-	"ultra": {
-		"concurrent": [
-			"clean:all",
-			"format:all",
-			"lint:all"
-		]
 	},
 	"peerDependencies": {
 		"prettier": "2.5.1"
