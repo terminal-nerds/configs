@@ -125,7 +125,7 @@ importers:
   packages/prettier:
     specifiers:
       '@terminal-nerds/typescript-config': workspace:*
-      '@types/prettier': 2.4.3
+      '@types/prettier': 2.4.4
       '@workspace/helpers': workspace:*
       deepmerge-ts: 2.0.1
       prettier-plugin-svelte: ^2.6.0
@@ -135,7 +135,7 @@ importers:
       prettier-plugin-svelte: 2.6.0_prettier@2.5.1
     devDependencies:
       '@terminal-nerds/typescript-config': link:../typescript
-      '@types/prettier': 2.4.3
+      '@types/prettier': 2.4.4
       '@workspace/helpers': link:../../helpers
       deepmerge-ts: 2.0.1
       tsup: 5.11.13_typescript@4.5.5
@@ -530,8 +530,8 @@ packages:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
     dev: true
 
-  /@types/prettier/2.4.3:
-    resolution: {integrity: sha512-QzSuZMBuG5u8HqYz01qtMdg/Jfctlnvj1z/lYnIDXs/golxw0fxtRAHd9KrzjR7Yxz1qVeI00o0kiO3PmVdJ9w==}
+  /@types/prettier/2.4.4:
+    resolution: {integrity: sha512-ReVR2rLTV1kvtlWFyuot+d1pkpG2Fw/XKE3PDAdj57rbM97ttSp9JZ2UsP+2EHTylra9cUf6JA7tGwW1INzUrA==}
     dev: true
 
   /@types/semver/6.2.3:
