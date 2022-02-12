@@ -29,6 +29,7 @@ const config: Partial<Config> = {
 			{ ignorePseudoClasses: ["local", "global"] },
 		],
 
+		"custom-property-pattern": "^([a-z][a-z0-9]*)([_-][a-z0-9]+)*$",
 		"selector-class-pattern": "^([a-z][a-z0-9]*)(_[a-z0-9]+)*$",
 	},
 };
