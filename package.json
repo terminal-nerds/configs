@@ -27,7 +27,6 @@
 		"clean:cache": "rimraf \"./node_modules/.cache\" ; rimraf \"./.ultra.cache.json\"",
 		"contributors:add": "all-contributors add",
 		"contributors:generate": "all-contributors generate",
-		"dependencies:mismatches": "syncpack list-mismatches",
 		"dependencies:upgrade:all": "pnpm dependencies:upgrade:root ; pnpm dependencies:upgrade:helpers ; pnpm dependencies:upgrade:packages",
 		"dependencies:upgrade:root": "pnpm upgrade --interactive --latest",
 		"dependencies:upgrade:helpers": "pnpm upgrade --interactive --latest --filter ./helpers",
