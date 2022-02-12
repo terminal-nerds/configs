@@ -7,32 +7,32 @@
 	"packageRules": [
 		{
 			"groupName": "helpers",
-			"labels": ["🧰 monorepo", "⬆️ dependencies"],
+			"labels": ["⬆️ dependencies", "🧰 monorepo"],
 			"packagePatterns": ["pkg-up", "read-pkg-up", "type-fest"]
 		},
 		{
 			"groupName": "ESLint",
-			"labels": ["📦 package:eslint-config"],
+			"labels": ["⬆️ dependencies", "📦 package:eslint-config"],
 			"packagePatterns": ["eslint"]
 		},
 		{
 			"groupName": "markdownlint",
-			"labels": ["📦 package:markdownlint-config"],
+			"labels": ["⬆️ dependencies", "📦 package:markdownlint-config"],
 			"packagePatterns": ["markdownlint"]
 		},
 		{
 			"groupName": "Prettier",
-			"labels": ["📦 package:prettier-config"],
+			"labels": ["⬆️ dependencies", "📦 package:prettier-config"],
 			"packagePatterns": ["prettier"]
 		},
 		{
 			"groupName": "Stylelint",
-			"labels": ["📦 package:stylelint-config"],
+			"labels": ["⬆️ dependencies", "📦 package:stylelint-config"],
 			"packagePatterns": ["stylelint"]
 		},
 		{
 			"groupName": "TypeScript",
-			"labels": ["📦 package:typescript-config"],
+			"labels": ["⬆️ dependencies", "📦 package:typescript-config"],
 			"packagePatterns": ["@types/node", "tslib", "tsup", "typescript"]
 		},
 		{
@@ -50,7 +50,9 @@
 		}
 	],
 	"reviewersFromCodeOwners": true,
-	"schedule": ["after 10pm and before 5am every weekday", "every weekend"],
+	"schedule": ["after 10pm and before 5am every weekday", "every sunday"],
 	"semanticCommits": "auto",
-	"semanticCommitScope": "dependencies"
+	"semanticCommitScope": "dependencies",
+	"stabilityDays": 3,
+	"timezone": "Asia/Taipei"
 }
