@@ -4,22 +4,25 @@
 		"registry": "https://registry.npmjs.org/",
 		"access": "public"
 	},
-	"name": "@terminal-nerds/typescript-config",
-	"version": "0.1.0",
-	"description": "Terminal Nerds extendable configuration for TypeScript.",
+	"name": "@terminal-nerds/syncpack-config",
+	"version": "0.0.0",
+	"description": "Terminal Nerds extendable configuration for syncpack.",
 	"keywords": [
 		"config",
 		"tool",
-		"typescript"
+		"syncpack"
 	],
 	"license": "MIT",
-	"homepage": "https://github.com/terminal-nerds/configs/tree/main/packages/typescript",
+	"homepage": "https://github.com/terminal-nerds/configs/tree/main/packages/syncpack",
 	"repository": "terminal-nerds/configs.git",
 	"bugs": "https://github.com/terminal-nerds/configs/issues",
 	"engines": {
 		"node": ">=16"
 	},
-	"main": "tsconfig.json",
+	"main": "dist/index.js",
+	"files": [
+		"/dist"
+	],
 	"ultra": {
 		"concurrent": [
 			"format:all",
@@ -27,23 +30,29 @@
 		]
 	},
 	"scripts": {
+		"build": "ultra build:all",
+		"build:all": "pnpm build:package",
+		"build:package": "tsup",
 		"clean": "ultra clean:all",
 		"clean:all": "pnpm clean:cache",
 		"clean:cache": "rimraf \"./node_modules/.cache\" ; rimraf \"./.ultra.cache.json\"",
 		"format": "ultra format:all",
 		"format:all": "pnpm format:prettier ; pnpm format:syncpack",
-		"format:prettier": "pretty-quick --branch main --pattern \"packages/typescript/**/*\" --verbose",
+		"format:prettier": "pretty-quick --branch main --pattern \"packages/syncpack/**/*\" --verbose",
 		"format:syncpack": "syncpack format",
 		"lint": "ultra lint:all",
 		"lint:all": "pnpm lint:format ; pnpm lint:js ; pnpm lint:md",
-		"lint:format": "pretty-quick --branch main --pattern \"packages/typescript/**/*\" --verbose --check",
+		"lint:format": "pretty-quick --branch main --pattern \"packages/syncpack/**/*\" --verbose --check",
 		"lint:js": "eslint . --ext .json --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\""
 	},
 	"peerDependencies": {
-		"typescript": "4.5.5"
+		"syncpack": "6.2.0"
 	},
 	"devDependencies": {
+		"@terminal-nerds/typescript-config": "workspace:*",
+		"syncpack": "6.2.0",
+		"tsup": "5.11.13",
 		"typescript": "4.5.5"
 	}
 }

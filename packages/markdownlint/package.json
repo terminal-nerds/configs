@@ -20,6 +20,12 @@
 		"node": ">=16"
 	},
 	"main": "markdownlint.json",
+	"ultra": {
+		"concurrent": [
+			"format:all",
+			"lint:all"
+		]
+	},
 	"scripts": {
 		"clean": "ultra clean:all",
 		"clean:all": "pnpm clean:cache",
@@ -33,12 +39,6 @@
 		"lint:format": "pretty-quick --branch main --pattern \"packages/markdownlint/**/*\" --verbose --check",
 		"lint:js": "eslint . --ext .json --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\""
-	},
-	"ultra": {
-		"concurrent": [
-			"format:all",
-			"lint:all"
-		]
 	},
 	"peerDependencies": {
 		"markdownlint-cli": "0.31.1"

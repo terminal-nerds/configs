@@ -1,6 +1,7 @@
-// https://github.com/JamieMason/syncpack/#-configuration-file
+import type { SyncpackConfig } from "syncpack/dist/constants";
 
-const config = {
+const config: Partial<SyncpackConfig> = {
+	// https://github.com/JamieMason/syncpack/#-configuration-file
 	dev: true,
 	filter: ".",
 	indent: "\t",
@@ -35,8 +36,8 @@ const config = {
 		"exports",
 		"typesVersions",
 		"turbo",
-		"scripts",
 		"ultra",
+		"scripts",
 		"peerDependencies",
 		"dependencies",
 		"devDependencies",
@@ -45,4 +46,5 @@ const config = {
 	versionGroups: [],
 };
 
+// eslint-disable-next-line unicorn/prefer-module
 module.exports = config;
