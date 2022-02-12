@@ -254,7 +254,7 @@ jobs:
             github.ref_name == 'main' &&
             github.repository_owner == 'terminal-nerds'
             }}
-        needs: [build, eslint, markdownlint, prettier]
+        needs: [build, eslint, markdownlint, prettier, syncpack]
         runs-on: ${{ matrix.os }}
         steps:
             - name: Checkout to ${{ github.repository }} repository
