@@ -1,5 +1,11 @@
 # @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header -->
 
+## 0.3.0
+
+### Minor Changes
+
+-   [#50](https://github.com/terminal-nerds/configs/pull/50) [`0885987`](https://github.com/terminal-nerds/configs/commit/0885987a40f522b66e072b9e2604a87dc142e36d) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `eslint` to `v8.9.0`
+
 ## 0.2.0
 
 ### Minor Changes

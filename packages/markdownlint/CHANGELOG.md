@@ -1,5 +1,11 @@
 # @terminal-nerds/markdownlint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header -->
 
+## 0.2.1
+
+### Patch Changes
+
+-   [#49](https://github.com/terminal-nerds/configs/pull/49) [`a6ad34a`](https://github.com/terminal-nerds/configs/commit/a6ad34a09eb26b131ffdf38e28ef9a587ba213a5) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `markdownlint-cli` to `v0.31.1`
+
 ## 0.2.0
 
 ### Minor Changes

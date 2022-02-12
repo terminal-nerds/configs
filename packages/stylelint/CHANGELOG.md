@@ -1,5 +1,17 @@
 # @terminal-nerds/stylelint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header -->
 
+## 0.2.0
+
+### Minor Changes
+
+-   [#44](https://github.com/terminal-nerds/configs/pull/44) [`59fc983`](https://github.com/terminal-nerds/configs/commit/59fc983aa1ba3002f91f9670025b4d3ec4005366) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `stylelint` to `v14.5.0`
+
+-   [#47](https://github.com/terminal-nerds/configs/pull/47) [`d454a18`](https://github.com/terminal-nerds/configs/commit/d454a18afcd9c08aa232f2abdb77c5a4fdd5deb2) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `stylelint-config-standard` to `v25`
+
+-   [#53](https://github.com/terminal-nerds/configs/pull/53) [`3b5e549`](https://github.com/terminal-nerds/configs/commit/3b5e5497483f10f90c9bd38ed88d6f4b684ce4c8) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Tweak [`custom-property-pattern`] rule, to allow mixing `kebab-case` and `snake_case`
+
+    [`custom-property-pattern`]: https://stylelint.io/user-guide/rules/list/custom-property-pattern/
+
 ## 0.1.2
 
 ### Patch Changes
