@@ -19,6 +19,9 @@
 "📦 package:stylelint-config":
     - packages/stylelint/**/*
 
+"📦 package:syncpack-config":
+    - packages/syncpack/**/*
+
 "📦 package:typescript-config":
     - packages/typescript/**/*
 
