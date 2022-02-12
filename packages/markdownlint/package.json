@@ -41,10 +41,10 @@
 		]
 	},
 	"peerDependencies": {
-		"markdownlint-cli": "0.31.0"
+		"markdownlint-cli": "0.31.1"
 	},
 	"devDependencies": {
 		"markdownlint": "0.25.1",
-		"markdownlint-cli": "0.31.0"
+		"markdownlint-cli": "0.31.1"
 	}
 }
