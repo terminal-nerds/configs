@@ -82,10 +82,11 @@ device(s):
    Example:
 
     ```js
-    {
-    	"$schema": "https://raw.githubusercontent.com/DavidAnson/syncpack/main/schema/syncpack-config-schema.json",
-    	"extends": "@terminal-nerds/syncpack-config"
-    }
+    const config = {
+    	...require("@terminal-nerds/syncpack-config"),
+    };
+
+    module.exports = config;
     ```
 
     For [syncpack CLI] usage, please refer to its documentation.
