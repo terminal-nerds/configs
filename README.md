@@ -51,6 +51,7 @@ registry].
 | [![markdownlint-config badge]][markdownlint-config] | [![markdownlint-config version badge]][markdownlint-config npm page] |
 | [![prettier-config badge]][prettier-config]         | [![prettier-config version badge]][prettier-config npm page]         |
 | [![stylelint-config badge]][stylelint-config]       | [![stylelint-config version badge]][stylelint-config npm page]       |
+| [![syncpack-config badge]][syncpack-config]         | [![syncpack-config version badge]][syncpack-config npm page]         |
 | [![typescript-config badge]][typescript-config]     | [![typescript-config version badge]][typescript-config npm page]     |
 
 [eslint-config]: ./packages/eslint/README.md
@@ -69,6 +70,10 @@ registry].
 [stylelint-config badge]: https://img.shields.io/badge/stylelint-config-informational?style=flat-square&logo=stylelint
 [stylelint-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/stylelint-config/latest?style=flat-square&logo=npm
 [stylelint-config npm page]: https://www.npmjs.com/package/@terminal-nerds/stylelint-config
+[syncpack-config]: ./packages/syncpack/README.md
+[syncpack-config badge]: https://img.shields.io/badge/syncpack-config-informational?style=flat-square&logo=nodedotjs
+[syncpack-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/syncpack-config/latest?style=flat-square&logo=npm
+[syncpack-config npm page]: https://www.npmjs.com/package/@terminal-nerds/syncpack-config
 [typescript-config]: ./packages/typescript/README.md
 [typescript-config badge]: https://img.shields.io/badge/typescript-config-informational?style=flat-square&logo=typescript
 [typescript-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/typescript-config/latest?style=flat-square&logo=npm

@@ -9,6 +9,7 @@ importers:
       '@terminal-nerds/eslint-config': workspace:*
       '@terminal-nerds/markdownlint-config': workspace:*
       '@terminal-nerds/prettier-config': workspace:*
+      '@terminal-nerds/syncpack-config': workspace:^0.0.0
       all-contributors-cli: 6.20.0
       eslint: 8.9.0
       husky: 7.0.4
@@ -26,6 +27,7 @@ importers:
       '@terminal-nerds/eslint-config': link:packages/eslint
       '@terminal-nerds/markdownlint-config': link:packages/markdownlint
       '@terminal-nerds/prettier-config': link:packages/prettier
+      '@terminal-nerds/syncpack-config': link:packages/syncpack
       all-contributors-cli: 6.20.0
       eslint: 8.9.0
       husky: 7.0.4
@@ -171,6 +173,18 @@ importers:
       '@workspace/helpers': link:../../helpers
       deepmerge-ts: 2.0.1
       stylelint: 14.5.0
+      tsup: 5.11.13_typescript@4.5.5
+      typescript: 4.5.5
+
+  packages/syncpack:
+    specifiers:
+      '@terminal-nerds/typescript-config': workspace:^0.1.0
+      syncpack: ^6.2.0
+      tsup: 5.11.13
+      typescript: 4.5.5
+    devDependencies:
+      '@terminal-nerds/typescript-config': link:../typescript
+      syncpack: 6.2.0
       tsup: 5.11.13_typescript@4.5.5
       typescript: 4.5.5
 
@@ -2242,7 +2256,7 @@ packages:
       fs.realpath: 1.0.0
       inflight: 1.0.6
       inherits: 2.0.4
-      minimatch: 3.0.4
+      minimatch: 3.0.5
       once: 1.4.0
       path-is-absolute: 1.0.1
     dev: true

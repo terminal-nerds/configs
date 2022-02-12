@@ -19,6 +19,13 @@
 			]
 		}
 	},
+	"ultra": {
+		"concurrent": [
+			"clean:all",
+			"format:all",
+			"lint:all"
+		]
+	},
 	"scripts": {
 		"build": "ultra build:all",
 		"build:all": "pnpm build:module",
@@ -38,13 +45,6 @@
 		"lint:format": "pretty-quick --branch main --pattern \"./helpers/**/*\" --verbose --check",
 		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:types": "tsc --noEmit"
-	},
-	"ultra": {
-		"concurrent": [
-			"clean:all",
-			"format:all",
-			"lint:all"
-		]
 	},
 	"dependencies": {
 		"pkg-up": "4.0.0",
