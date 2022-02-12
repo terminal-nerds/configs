@@ -149,7 +149,7 @@ importers:
       deepmerge-ts: 2.0.1
       stylelint: 14.5.0
       stylelint-config-prettier: ^9.0.3
-      stylelint-config-standard: ^24.0.0
+      stylelint-config-standard: ^25.0.0
       stylelint-config-standard-scss: ^3.0.0
       stylelint-high-performance-animation: ^1.6.0
       stylelint-no-unsupported-browser-features: ^5.0.2
@@ -159,7 +159,7 @@ importers:
       typescript: 4.5.5
     dependencies:
       stylelint-config-prettier: 9.0.3_stylelint@14.5.0
-      stylelint-config-standard: 24.0.0_stylelint@14.5.0
+      stylelint-config-standard: 25.0.0_stylelint@14.5.0
       stylelint-config-standard-scss: 3.0.0_stylelint@14.5.0
       stylelint-high-performance-animation: 1.6.0_stylelint@14.5.0
       stylelint-no-unsupported-browser-features: 5.0.2_stylelint@14.5.0
@@ -4085,6 +4085,14 @@ packages:
       stylelint: 14.5.0
     dev: false
 
+  /stylelint-config-recommended/7.0.0_stylelint@14.5.0:
+    resolution: {integrity: sha512-yGn84Bf/q41J4luis1AZ95gj0EQwRX8lWmGmBwkwBNSkpGSpl66XcPTulxGa/Z91aPoNGuIGBmFkcM1MejMo9Q==}
+    peerDependencies:
+      stylelint: ^14.4.0
+    dependencies:
+      stylelint: 14.5.0
+    dev: false
+
   /stylelint-config-standard-scss/3.0.0_stylelint@14.5.0:
     resolution: {integrity: sha512-zt3ZbzIbllN1iCmc94e4pDxqpkzeR6CJo5DDXzltshuXr+82B8ylHyMMARNnUYrZH80B7wgY7UkKTYCFM0UUyw==}
     peerDependencies:
@@ -4104,6 +4112,15 @@ packages:
     dependencies:
       stylelint: 14.5.0
       stylelint-config-recommended: 6.0.0_stylelint@14.5.0
+    dev: false
+
+  /stylelint-config-standard/25.0.0_stylelint@14.5.0:
+    resolution: {integrity: sha512-21HnP3VSpaT1wFjFvv9VjvOGDtAviv47uTp3uFmzcN+3Lt+RYRv6oAplLaV51Kf792JSxJ6svCJh/G18E9VnCA==}
+    peerDependencies:
+      stylelint: ^14.4.0
+    dependencies:
+      stylelint: 14.5.0
+      stylelint-config-recommended: 7.0.0_stylelint@14.5.0
     dev: false
 
   /stylelint-high-performance-animation/1.6.0_stylelint@14.5.0:
