@@ -35,7 +35,8 @@
 		"format:prettier": "pretty-quick --branch main --pattern \"packages/typescript/**/*\" --verbose",
 		"format:syncpack": "syncpack format",
 		"lint": "ultra lint:all",
-		"lint:all": "pnpm lint:format ; pnpm lint:js ; pnpm lint:md",
+		"lint:all": "pnpm lint:dependencies ; pnpm lint:format ; pnpm lint:js ; pnpm lint:md",
+		"lint:dependencies": "depcheck",
 		"lint:format": "pretty-quick --branch main --pattern \"packages/typescript/**/*\" --verbose --check",
 		"lint:js": "eslint . --ext .json --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\""

@@ -1,0 +1,11 @@
+{
+	"ignore-bin-package": false,
+	"ignores": [
+		"@changesets/*",
+		"@terminal-nerds/*",
+		"browserslist",
+		"lint-staged",
+		"typescript"
+	],
+	"skip-missing": false
+}
