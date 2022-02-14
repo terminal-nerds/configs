@@ -42,7 +42,7 @@
 		},
 		{
 			"groupName": "Tools",
-			"labels": ["⬆️ dependencies", "⚙️ configurations:tools"],
+			"labels": ["⬆️ dependencies", "⚙️ configuration:tools"],
 			"packagePatterns": [
 				"changesets",
 				"all-contributors-cli",
