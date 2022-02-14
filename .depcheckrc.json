@@ -3,6 +3,7 @@
 	"ignores": [
 		"@changesets/*",
 		"@terminal-nerds/*",
+		"browserslist",
 		"lint-staged",
 		"typescript"
 	],

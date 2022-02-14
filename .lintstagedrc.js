@@ -7,8 +7,12 @@ const config = {
 	// ESLint
 	"*.{js,json,ts,yml,yaml}": ["eslint"],
 
-	// syncpack
-	"**/package.json": ["syncpack list-mismatches", "syncpack format"],
+	// depcheck & syncpack
+	"**/package.json": () => [
+		"depcheck",
+		"syncpack list-mismatches",
+		"syncpack format",
+	],
 
 	// markdownlint
 	"*.md": [`markdownlint --ignore "./.changeset/*.md"`],
