@@ -6,8 +6,7 @@
 		"module": "CommonJS",
 		"outDir": "./dist",
 		"rootDir": "./source",
-		"tsBuildInfoFile": "./node_modules/.cache/tsbuildinfo",
-		"types": ["node"]
+		"tsBuildInfoFile": "./node_modules/.cache/tsbuildinfo"
 	},
 	"exclude": ["dist/", "node_modules/"],
 	"include": ["source/"]

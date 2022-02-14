@@ -41,10 +41,12 @@
 		"format:prettier": "pretty-quick --branch main --pattern \"packages/syncpack/**/*\" --verbose",
 		"format:syncpack": "syncpack format",
 		"lint": "ultra lint:all",
-		"lint:all": "pnpm lint:format ; pnpm lint:js ; pnpm lint:md",
+		"lint:all": "pnpm lint:dependencies ; pnpm lint:format ; pnpm lint:js ; pnpm lint:md ; pnpm lint:types",
+		"lint:dependencies": "depcheck",
 		"lint:format": "pretty-quick --branch main --pattern \"packages/syncpack/**/*\" --verbose --check",
 		"lint:js": "eslint . --ext .json --cache --cache-location \"./node_modules/.cache/eslint\"",
-		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\""
+		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
+		"lint:types": "tsc --noEmit"
 	},
 	"peerDependencies": {
 		"syncpack": "6.2.0"

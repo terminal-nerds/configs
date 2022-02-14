@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 import { deepmerge } from "deepmerge-ts";
 
 // This is a workaround for https://github.com/eslint/eslint/issues/3458

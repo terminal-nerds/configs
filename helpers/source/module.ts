@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-
 import { readPackageUpSync } from "read-pkg-up";
 import type { PackageJson } from "type-fest";
 

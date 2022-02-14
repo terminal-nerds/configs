@@ -45,7 +45,8 @@
 		"format:prettier": "pretty-quick --branch main --pattern \"./packages/eslint/**/*\" --verbose",
 		"format:syncpack": "syncpack format",
 		"lint": "ultra lint:all",
-		"lint:all": "pnpm lint:format ; pnpm lint:js ; pnpm lint:md ; pnpm lint:types",
+		"lint:all": "pnpm lint:dependencies ; pnpm lint:format ; pnpm lint:js ; pnpm lint:md ; pnpm lint:types",
+		"lint:dependencies": "depcheck",
 		"lint:format": "pretty-quick --branch main --pattern \"./packages/eslint/**/*\" --verbose --check",
 		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --config \"../../.eslintrc.cjs\" --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
@@ -78,7 +79,7 @@
 	"devDependencies": {
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"@types/eslint": "8.4.1",
-		"@types/node": "17.0.15",
+		"@types/node": "^17.0.17",
 		"@workspace/helpers": "workspace:*",
 		"deepmerge-ts": "2.0.1",
 		"tsup": "5.11.13",

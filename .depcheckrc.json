@@ -1,0 +1,10 @@
+{
+	"ignore-bin-package": false,
+	"ignores": [
+		"@changesets/*",
+		"@terminal-nerds/*",
+		"lint-staged",
+		"typescript"
+	],
+	"skip-missing": false
+}
