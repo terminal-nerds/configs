@@ -49,6 +49,7 @@ importers:
       '@terminal-nerds/typescript-config': workspace:*
       '@types/node': ^17.0.17
       read-pkg-up: 9.1.0
+      tsup: 5.11.13
       type-fest: 2.11.2
       typescript: 4.5.5
     dependencies:
@@ -56,6 +57,7 @@ importers:
     devDependencies:
       '@terminal-nerds/typescript-config': link:../packages/typescript
       '@types/node': 17.0.17
+      tsup: 5.11.13_typescript@4.5.5
       type-fest: 2.11.2
       typescript: 4.5.5
 

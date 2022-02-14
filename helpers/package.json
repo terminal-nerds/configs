@@ -3,7 +3,7 @@
 	"private": true,
 	"type": "module",
 	"name": "@workspace/helpers",
-	"version": "0.1.0",
+	"version": "0.0.0",
 	"engines": {
 		"node": ">=16"
 	},
@@ -28,13 +28,12 @@
 	"scripts": {
 		"build": "ultra build:all",
 		"build:all": "pnpm build:module",
-		"build:types": "tsc --emitDeclarationOnly",
-		"build:module": "tsc --build --listEmittedFiles",
+		"build:module": "tsup",
 		"clean": "ultra clean:all",
 		"clean:all": "pnpm clean:build ; pnpm clean:cache",
 		"clean:build": "rimraf \"./build\"",
 		"clean:cache": "rimraf \"./node_modules/.cache\" ; rimraf \"./.ultra.cache.json\"",
-		"dev": "tsc --build --watch",
+		"dev": "tsup --watch",
 		"format": "ultra format:all",
 		"format:all": "pnpm format:prettier ; pnpm format:syncpack",
 		"format:prettier": "pretty-quick --branch main --pattern \"./helpers/**/*\" --verbose",
@@ -52,6 +51,7 @@
 	"devDependencies": {
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"@types/node": "^17.0.17",
+		"tsup": "5.11.13",
 		"type-fest": "2.11.2",
 		"typescript": "4.5.5"
 	}
