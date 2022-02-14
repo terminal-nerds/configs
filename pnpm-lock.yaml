@@ -11,7 +11,7 @@ importers:
       '@terminal-nerds/prettier-config': workspace:*
       '@terminal-nerds/syncpack-config': workspace:*
       all-contributors-cli: 6.20.0
-      browserslist: ^4.19.1
+      browserslist: 4.19.1
       depcheck: 1.4.3
       eslint: 8.9.0
       husky: 7.0.4
