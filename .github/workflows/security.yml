@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow
+---
+name: Scheduled
+
+on:
+    schedule:
+        - cron: "0 9 */3 * *"
+
+permissions:
+    actions: read
+    contents: read
+    security-events: write
+
+jobs:
+    security_codeql:
+        name: Security
+        uses: terminal-nerds/.github/.github/workflows/codeql.yml@main
+
+    git-guardian:
+        name: Security
+        uses: terminal-nerds/.github/.github/workflows/git-guardian.yml@main
+
+    Snyk:
+        name: Security
+        uses: terminal-nerds/.github/.github/workflows/snyk.yml@main
