@@ -10,6 +10,11 @@ on:
     push:
         branches: [main]
     workflow_dispatch:
+        inputs:
+            reason:
+                description: Reason of re-running this workflow
+                required: false
+                type: string
 
 concurrency:
     group: ${{ github.workflow }}-${{ github.event.number || github.sha }}
