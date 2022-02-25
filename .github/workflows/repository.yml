@@ -24,6 +24,8 @@ jobs:
         name: Pull Request
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/codesee-map.yml
         uses: terminal-nerds/.github/.github/workflows/codesee-map.yml@main
+        secrets:
+            CODESEE_ARCH_DIAG_API_TOKEN: ${{ secrets.CODESEE_ARCH_DIAG_API_TOKEN }}
 
     pull-request-greetings:
         name: Pull Request
