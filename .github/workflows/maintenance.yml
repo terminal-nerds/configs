@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow
 ---
-name: Scheduled
+name: Maintenance
 
 on:
     schedule:
@@ -14,19 +14,19 @@ permissions:
 
 jobs:
     security_codeql:
-        name: Security
+        name: Maintenance
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/codeql.yml
         uses: terminal-nerds/.github/.github/workflows/codeql.yml@main
 
     git-guardian:
-        name: Security
+        name: Maintenance
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/git-guardian.yml
         uses: terminal-nerds/.github/.github/workflows/git-guardian.yml@main
         secrets:
             GITGUARDIAN_API_KEY: ${{ secrets.GITGUARDIAN_API_KEY }}
 
     Snyk:
-        name: Security
+        name: Maintenance
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/snyk.yml
         uses: terminal-nerds/.github/.github/workflows/snyk.yml@main
         secrets:
