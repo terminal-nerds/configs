@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow
 ---
-name: Maintenance
+name: Repository
 
 on:
     issues:
@@ -25,16 +25,16 @@ jobs:
         uses: terminal-nerds/.github/.github/workflows/codesee-map.yml@main
 
     greetings:
-        name: Maintenance
+        name: Repository
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/greetings.yml
         uses: terminal-nerds/.github/.github/workflows/greetings.yml@main
 
     issue-labels:
-        name: Maintenance
+        name: Repository
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/issue-labels.yml
         uses: terminal-nerds/.github/.github/workflows/issue-labels.yml@main
 
     pull-request-labels:
-        name: Maintenance
+        name: Repository
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/pull-requests-labels.yml
         uses: terminal-nerds/.github/.github/workflows/pull-request-labels.yml@main
