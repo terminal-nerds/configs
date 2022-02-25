@@ -14,7 +14,7 @@
 	],
 	"license": "MIT",
 	"homepage": "https://github.com/terminal-nerds/configs/tree/main/packages/markdownlint",
-	"repository": "terminal-nerds/configs.git",
+	"repository": "https://github.com/terminal-nerds/configs/tree/main/packages/markdownlint",
 	"bugs": "https://github.com/terminal-nerds/configs/issues",
 	"engines": {
 		"node": ">=16"
@@ -29,7 +29,7 @@
 	"scripts": {
 		"clean": "ultra clean:all",
 		"clean:all": "pnpm clean:cache",
-		"clean:cache": "rimraf \"./node_modules/.cache\" ; rimraf \"./.ultra.cache.json\"",
+		"clean:cache": "del \"./node_modules/.cache\" \"./.ultra.cache.json\"",
 		"format": "ultra format:all",
 		"format:all": "pnpm format:prettier ; pnpm format:syncpack",
 		"format:prettier": "pretty-quick --branch main --pattern \"packages/markdownlint/**/*\" --verbose",

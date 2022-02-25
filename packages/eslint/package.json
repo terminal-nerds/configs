@@ -15,7 +15,7 @@
 	],
 	"license": "MIT",
 	"homepage": "https://github.com/terminal-nerds/configs/tree/main/packages/eslint",
-	"repository": "terminal-nerds/configs.git",
+	"repository": "https://github.com/terminal-nerds/configs/tree/main/packages/eslint",
 	"bugs": "https://github.com/terminal-nerds/configs/issues",
 	"engines": {
 		"node": ">=16"
@@ -37,8 +37,8 @@
 		"build:package": "tsup",
 		"clean": "ultra clean:all",
 		"clean:all": "pnpm clean:build; pnpm clean:cache",
-		"clean:build": "rimraf \"./dist\"",
-		"clean:cache": "rimraf \"./node_modules/.cache\" ; rimraf \"./.ultra.cache.json\"",
+		"clean:build": "del \"./dist\"",
+		"clean:cache": "del \"./node_modules/.cache\" \"./.ultra.cache.json\"",
 		"dev": "tsup --watch",
 		"format": "ultra format:all",
 		"format:all": "pnpm format:prettier ; pnpm format:syncpack",
