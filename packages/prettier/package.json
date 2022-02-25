@@ -61,7 +61,7 @@
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"@types/prettier": "2.4.4",
 		"@workspace/helpers": "workspace:*",
-		"deepmerge-ts": "2.0.1",
+		"deepmerge-ts": "3.0.1",
 		"tsup": "5.11.13",
 		"typescript": "4.5.5"
 	}
