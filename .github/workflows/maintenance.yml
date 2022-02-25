@@ -14,19 +14,19 @@ permissions:
 
 jobs:
     security_codeql:
-        name: Maintenance
+        name: Security
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/codeql.yml
         uses: terminal-nerds/.github/.github/workflows/codeql.yml@main
 
-    git-guardian:
-        name: Maintenance
+    security_git-guardian:
+        name: Security
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/git-guardian.yml
         uses: terminal-nerds/.github/.github/workflows/git-guardian.yml@main
         secrets:
             GITGUARDIAN_API_KEY: ${{ secrets.GITGUARDIAN_API_KEY }}
 
-    Snyk:
-        name: Maintenance
+    security_snyk:
+        name: Security
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/snyk.yml
         uses: terminal-nerds/.github/.github/workflows/snyk.yml@main
         secrets:
