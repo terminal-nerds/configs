@@ -26,6 +26,11 @@
 			"dependsOn": [],
 			"outputs": [],
 			"cache": true
+		},
+		"lint:deps": {
+			"dependsOn": [],
+			"outputs": [],
+			"cache": true
 		}
 	}
 }

@@ -18,6 +18,7 @@
 		"clean:cache": "del \"./node_modules/.cache\"",
 		"contributors:add": "all-contributors add",
 		"contributors:generate": "all-contributors generate",
+		"deps:check": "pnpm lint:deps ; turbo run lint:deps -v",
 		"deps:upgrade": "pnpm deps:upgrade:root ; pnpm deps:upgrade:helpers ; pnpm:deps:upgrade:packages",
 		"deps:upgrade:root": "pnpm upgrade --interactive --latest",
 		"deps:upgrade:helpers": "pnpm upgrade --interactive --latest --filter ./helpers",
