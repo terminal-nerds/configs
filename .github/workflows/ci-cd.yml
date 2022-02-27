@@ -36,7 +36,9 @@ jobs:
             artifact-name: "built-packages"
             artifact-path: "./packages/*/dist/"
             artifact-upload: true
-            run: pnpm build
+            pattern: "./packages/*/dist/**/*.{js,json}"
+            script-build: pnpm build
+            script-clean: pnpm clean
 
     lint_depcheck:
         # Analyze dependencies usage in package.json files
