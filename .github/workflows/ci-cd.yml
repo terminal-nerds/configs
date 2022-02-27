@@ -37,8 +37,7 @@ jobs:
             artifact-path: "./packages/*/dist/"
             artifact-upload: true
             include: "./packages/*/dist/**/*.{js,json}"
-            script-build: pnpm build
-            script-clean: pnpm clean
+            script-build: build
 
     lint_depcheck:
         # Analyze dependencies usage in package.json files
