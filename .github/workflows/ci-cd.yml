@@ -36,7 +36,7 @@ jobs:
             artifact-name: "built-packages"
             artifact-path: "./packages/*/dist/"
             artifact-upload: true
-            pattern: "./packages/*/dist/**/*.{js,json}"
+            include: "./packages/*/dist/**/*.{js,json}"
             script-build: pnpm build
             script-clean: pnpm clean
 
