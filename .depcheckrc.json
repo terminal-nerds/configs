@@ -4,6 +4,8 @@
 		"@changesets/*",
 		"@terminal-nerds/*",
 		"browserslist",
+		"concurrently",
+		"depcheck",
 		"lint-staged",
 		"typescript"
 	],
