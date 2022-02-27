@@ -46,8 +46,8 @@ jobs:
         uses: terminal-nerds/.github/.github/workflows/nodejs-job.yml@main
         needs: [build]
         with:
-            step-name: Execute package.json script - "depdendencies:check"
-            run: pnpm dependencies:check
+            step-name: Execute package.json script
+            run: pnpm deps:check
 
     lint_eslint:
         # Analyze the JavaScript codebase
@@ -57,8 +57,8 @@ jobs:
         needs: [build]
         with:
             download-build: true
-            # extract-script: "./.github/scripts/extract-built-packages.sh"
             step-name: Execute ESLint CLI task
+            # https://eslint.org/docs/user-guide/command-line-interface
             run: >
                 DEBUG="eslint:cli-engine"
                 pnpm eslint .
@@ -74,8 +74,8 @@ jobs:
         needs: [build]
         with:
             download-build: true
-            # extract-script: "./.github/scripts/extract-built-packages.sh"
             step-name: Execute markdownlint CLI task
+            # https://github.com/igorshubovych/markdownlint-cli#usage
             run: >
                 pnpm markdownlint .
                 --dot
@@ -90,8 +90,8 @@ jobs:
         needs: [build]
         with:
             download-build: true
-            # extract-script: "./.github/scripts/extract-built-packages.sh"
             step-name: Execute "pretty-quick" CLI task
+            # https://github.com/azz/pretty-quick#usage
             run: >
                 pnpm pretty-quick
                 --branch HEAD~${{ github.event.pull_request.commits }}
@@ -105,8 +105,8 @@ jobs:
         needs: [build]
         with:
             download-build: true
-            # extract-script: "./.github/scripts/extract-built-packages.sh"
             step-name: Execute syncpack CLI task
+            # https://github.com/JamieMason/syncpack
             run: pnpm syncpack list-mismatches
 
     security_codeql:
@@ -148,5 +148,4 @@ jobs:
         secrets:
             NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         with:
-            # extract-script: "./.github/scripts/extract-built-packages.sh"
             changelogs-path: "./packages/*/CHANGELOG.md"
