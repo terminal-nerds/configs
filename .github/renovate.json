@@ -7,10 +7,11 @@
 	"commitMessageExtra": "to v`{{#if isMajor}}{{{newMajor}}}{{else}}{{#if isSingleVersion}}{{{newVersion}}}{{else}}{{{newValue}}}{{/if}}{{/if}}`",
 	"dependencyDashboard": true,
 	"extends": ["config:base"],
+	"labels": ["⬆️ dependencies"],
 	"packageRules": [
 		{
 			"groupName": "monorepo tools",
-			"labels": ["⬆️ dependencies", "🧰 monorepo"],
+			"addLabels": ["🧰 monorepo"],
 			"packagePatterns": [
 				"all-contributors-cli",
 				"changesets",
@@ -23,7 +24,7 @@
 		},
 		{
 			"groupName": "helpers dependencies",
-			"labels": ["⬆️ dependencies", "🧰 monorepo"],
+			"addLabels": ["🧰 monorepo"],
 			"packagePatterns": [
 				"deepmerge",
 				"pkg-up",
@@ -33,32 +34,32 @@
 		},
 		{
 			"groupName": "ESLint dependencies",
-			"labels": ["⬆️ dependencies", "📦 package:eslint-config"],
+			"addLabels": ["📦 package:eslint-config"],
 			"packagePatterns": ["eslint"]
 		},
 		{
 			"groupName": "markdownlint dependencies",
-			"labels": ["⬆️ dependencies", "📦 package:markdownlint-config"],
+			"addLabels": ["📦 package:markdownlint-config"],
 			"packagePatterns": ["markdownlint"]
 		},
 		{
 			"groupName": "Prettier dependencies",
-			"labels": ["⬆️ dependencies", "📦 package:prettier-config"],
+			"addLabels": ["📦 package:prettier-config"],
 			"packagePatterns": ["prettier"]
 		},
 		{
 			"groupName": "Stylelint dependencies",
-			"labels": ["⬆️ dependencies", "📦 package:stylelint-config"],
+			"addLabels": ["📦 package:stylelint-config"],
 			"packagePatterns": ["stylelint"]
 		},
 		{
 			"groupName": "syncpack dependencies",
-			"labels": ["⬆️ dependencies", "📦 package:syncpack-config"],
+			"addLabels": ["📦 package:syncpack-config"],
 			"packagePatterns": ["syncpack"]
 		},
 		{
 			"groupName": "TypeScript dependencies",
-			"labels": ["⬆️ dependencies", "📦 package:typescript-config"],
+			"addLabels": ["📦 package:typescript-config"],
 			"packagePatterns": ["@types/node", "tslib", "typescript"]
 		}
 	],
