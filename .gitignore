@@ -106,3 +106,6 @@ build
 
 # Ultra caching
 .ultra.cache.json
+
+# Turbo cache folder
+.turbo

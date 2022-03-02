@@ -14,7 +14,7 @@
 	],
 	"license": "MIT",
 	"homepage": "https://github.com/terminal-nerds/configs/tree/main/packages/syncpack",
-	"repository": "terminal-nerds/configs.git",
+	"repository": "https://github.com/terminal-nerds/configs/tree/main/packages/syncpack",
 	"bugs": "https://github.com/terminal-nerds/configs/issues",
 	"engines": {
 		"node": ">=16"
@@ -23,26 +23,16 @@
 	"files": [
 		"/dist"
 	],
-	"ultra": {
-		"concurrent": [
-			"format:all",
-			"lint:all"
-		]
-	},
 	"scripts": {
-		"build": "ultra build:all",
-		"build:all": "pnpm build:package",
-		"build:package": "tsup",
-		"clean": "ultra clean:all",
-		"clean:all": "pnpm clean:cache",
-		"clean:cache": "rimraf \"./node_modules/.cache\" ; rimraf \"./.ultra.cache.json\"",
-		"format": "ultra format:all",
-		"format:all": "pnpm format:prettier ; pnpm format:syncpack",
+		"build": "tsup",
+		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
+		"clean:build": "del \"./build\"",
+		"clean:cache": "del \"./node_modules/.cache\"",
+		"format": "concurrently \"pnpm:format:*\" --group --timings",
 		"format:prettier": "pretty-quick --branch main --pattern \"packages/syncpack/**/*\" --verbose",
 		"format:syncpack": "syncpack format",
-		"lint": "ultra lint:all",
-		"lint:all": "pnpm lint:dependencies ; pnpm lint:format ; pnpm lint:js ; pnpm lint:md ; pnpm lint:types",
-		"lint:dependencies": "depcheck",
+		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
+		"lint:deps": "depcheck",
 		"lint:format": "pretty-quick --branch main --pattern \"packages/syncpack/**/*\" --verbose --check",
 		"lint:js": "eslint . --ext .json --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",

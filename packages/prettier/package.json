@@ -14,7 +14,7 @@
 	],
 	"license": "MIT",
 	"homepage": "https://github.com/terminal-nerds/configs/tree/main/packages/prettier",
-	"repository": "terminal-nerds/configs.git",
+	"repository": "https://github.com/terminal-nerds/configs/tree/main/packages/prettier",
 	"bugs": "https://github.com/terminal-nerds/configs/issues",
 	"engines": {
 		"node": ">=16"
@@ -23,29 +23,17 @@
 	"files": [
 		"/dist"
 	],
-	"ultra": {
-		"concurrent": [
-			"clean:all",
-			"format:all",
-			"lint:all"
-		]
-	},
 	"scripts": {
-		"build": "ultra build:all",
-		"build:all": "pnpm build:package",
-		"build:package": "tsup",
-		"clean": "ultra clean:all",
-		"clean:all": "pnpm clean:build; pnpm clean:cache",
-		"clean:build": "rimraf \"./dist\"",
-		"clean:cache": "rimraf \"./node_modules/.cache\" ; rimraf \"./.ultra.cache.json\"",
+		"build": "tsup",
+		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
+		"clean:build": "del \"./build\"",
+		"clean:cache": "del \"./node_modules/.cache\"",
 		"dev": "tsup --watch",
-		"format": "ultra format:all",
-		"format:all": "pnpm format:prettier ; pnpm format:syncpack",
+		"format": "concurrently \"pnpm:format:*\" --group --timings",
 		"format:prettier": "pretty-quick --branch main --pattern \"./packages/prettier/**/*\" --verbose",
 		"format:syncpack": "syncpack format",
-		"lint": "ultra lint:all",
-		"lint:all": "pnpm lint:dependencies ; pnpm lint:format ; pnpm lint:js ; pnpm lint:md ; pnpm lint:types",
-		"lint:dependencies": "depcheck",
+		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
+		"lint:deps": "depcheck",
 		"lint:format": "pretty-quick --branch main --pattern \"./packages/prettier/**/*\" --verbose --check",
 		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
@@ -59,6 +47,7 @@
 	},
 	"devDependencies": {
 		"@terminal-nerds/typescript-config": "workspace:*",
+		"@types/node": "17.0.18",
 		"@types/prettier": "2.4.4",
 		"@workspace/helpers": "workspace:*",
 		"deepmerge-ts": "2.0.1",

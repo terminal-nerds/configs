@@ -5,7 +5,7 @@
 		"access": "public"
 	},
 	"name": "@terminal-nerds/markdownlint-config",
-	"version": "0.3.0",
+	"version": "0.2.1",
 	"description": "Terminal Nerds extendable configuration for markdownlint.",
 	"keywords": [
 		"config",
@@ -14,29 +14,21 @@
 	],
 	"license": "MIT",
 	"homepage": "https://github.com/terminal-nerds/configs/tree/main/packages/markdownlint",
-	"repository": "terminal-nerds/configs.git",
+	"repository": "https://github.com/terminal-nerds/configs/tree/main/packages/markdownlint",
 	"bugs": "https://github.com/terminal-nerds/configs/issues",
 	"engines": {
 		"node": ">=16"
 	},
 	"main": "markdownlint.json",
-	"ultra": {
-		"concurrent": [
-			"format:all",
-			"lint:all"
-		]
-	},
 	"scripts": {
-		"clean": "ultra clean:all",
-		"clean:all": "pnpm clean:cache",
-		"clean:cache": "rimraf \"./node_modules/.cache\" ; rimraf \"./.ultra.cache.json\"",
-		"format": "ultra format:all",
-		"format:all": "pnpm format:prettier ; pnpm format:syncpack",
+		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
+		"clean:build": "del \"./build\"",
+		"clean:cache": "del \"./node_modules/.cache\"",
+		"format": "concurrently \"pnpm:format:*\" --group --timings",
 		"format:prettier": "pretty-quick --branch main --pattern \"packages/markdownlint/**/*\" --verbose",
 		"format:syncpack": "syncpack format",
-		"lint": "ultra lint:all",
-		"lint:all": "pnpm lint:dependencies ; pnpm lint:format ; pnpm lint:js ; pnpm lint:md",
-		"lint:dependencies": "depcheck",
+		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
+		"lint:deps": "depcheck",
 		"lint:format": "pretty-quick --branch main --pattern \"packages/markdownlint/**/*\" --verbose --check",
 		"lint:js": "eslint . --ext .json --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\""

@@ -2,61 +2,70 @@
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"assigneesFromCodeOwners": true,
 	"baseBranches": ["main"],
+	"commitMessagePrefix": "chore: {{#if isPin}}📌{{else if isRollback}}⬇️{{else if isReplacement}}🏗️{{else if (or isMajor isPatch isSingleVersion)}}⬆️{{/if}} ",
+	"commitMessageTopic": "dependency `{{depName}}`",
+	"commitMessageExtra": "to v`{{#if isMajor}}{{{newMajor}}}{{else}}{{#if isSingleVersion}}{{{newVersion}}}{{else}}{{{newValue}}}{{/if}}{{/if}}`",
 	"dependencyDashboard": true,
 	"extends": ["config:base"],
+	"labels": ["🧩 dependencies"],
 	"packageRules": [
 		{
-			"groupName": "helpers",
-			"labels": ["⬆️ dependencies", "🧰 monorepo"],
-			"packagePatterns": ["pkg-up", "read-pkg-up", "type-fest"]
+			"groupName": "monorepo tools",
+			"addLabels": ["🧰 monorepo"],
+			"packagePatterns": [
+				"all-contributors-cli",
+				"browserslist",
+				"changesets",
+				"del-cli",
+				"husky",
+				"lint-staged",
+				"tsup",
+				"turbo"
+			]
 		},
 		{
-			"groupName": "ESLint",
-			"labels": ["⬆️ dependencies", "📦 package:eslint-config"],
+			"groupName": "helpers dependencies",
+			"addLabels": ["🧰 monorepo"],
+			"packagePatterns": [
+				"deepmerge",
+				"pkg-up",
+				"read-pkg-up",
+				"type-fest"
+			]
+		},
+		{
+			"groupName": "ESLint dependencies",
+			"addLabels": ["📦 package:eslint-config"],
 			"packagePatterns": ["eslint"]
 		},
 		{
-			"groupName": "markdownlint",
-			"labels": ["⬆️ dependencies", "📦 package:markdownlint-config"],
+			"groupName": "markdownlint dependencies",
+			"addLabels": ["📦 package:markdownlint-config"],
 			"packagePatterns": ["markdownlint"]
 		},
 		{
-			"groupName": "Prettier",
-			"labels": ["⬆️ dependencies", "📦 package:prettier-config"],
+			"groupName": "Prettier dependencies",
+			"addLabels": ["📦 package:prettier-config"],
 			"packagePatterns": ["prettier"]
 		},
 		{
-			"groupName": "Stylelint",
-			"labels": ["⬆️ dependencies", "📦 package:stylelint-config"],
+			"groupName": "Stylelint dependencies",
+			"addLabels": ["📦 package:stylelint-config"],
 			"packagePatterns": ["stylelint"]
 		},
 		{
-			"groupName": "syncpack",
-			"labels": ["⬆️ dependencies", "📦 package:syncpack-config"],
+			"groupName": "syncpack dependencies",
+			"addLabels": ["📦 package:syncpack-config"],
 			"packagePatterns": ["syncpack"]
 		},
 		{
-			"groupName": "TypeScript",
-			"labels": ["⬆️ dependencies", "📦 package:typescript-config"],
-			"packagePatterns": ["@types/node", "tslib", "tsup", "typescript"]
-		},
-		{
-			"groupName": "Tools",
-			"labels": ["⬆️ dependencies", "⚙️ configuration:tools"],
-			"packagePatterns": [
-				"changesets",
-				"all-contributors-cli",
-				"husky",
-				"lint-staged",
-				"rimraf",
-				"ultra"
-			]
+			"groupName": "TypeScript dependencies",
+			"addLabels": ["📦 package:typescript-config"],
+			"packagePatterns": ["@types/node", "tslib", "typescript"]
 		}
 	],
 	"reviewersFromCodeOwners": true,
 	"schedule": ["after 10pm and before 5am every weekday", "every sunday"],
-	"semanticCommits": "auto",
-	"semanticCommitScope": "dependencies",
 	"stabilityDays": 3,
 	"timezone": "Asia/Taipei"
 }
