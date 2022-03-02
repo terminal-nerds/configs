@@ -11,7 +11,7 @@ importers:
       '@terminal-nerds/prettier-config': workspace:*
       '@terminal-nerds/syncpack-config': workspace:*
       all-contributors-cli: 6.20.0
-      browserslist: 4.19.1
+      browserslist: 4.19.3
       concurrently: ^7.0.0
       del-cli: ^4.0.1
       depcheck: 1.4.3
@@ -32,7 +32,7 @@ importers:
       '@terminal-nerds/prettier-config': link:packages/prettier
       '@terminal-nerds/syncpack-config': link:packages/syncpack
       all-contributors-cli: 6.20.0
-      browserslist: 4.19.1
+      browserslist: 4.19.3
       concurrently: 7.0.0
       del-cli: 4.0.1
       depcheck: 1.4.3
@@ -1051,18 +1051,6 @@ packages:
       wcwidth: 1.0.1
     dev: true
 
-  /browserslist/4.19.1:
-    resolution: {integrity: sha512-u2tbbG5PdKRTUoctO3NBD8FQ5HdPh1ZXPHzp1rwaa5jTc+RV9/+RlWiAIKmjRPQF+xbGM9Kklj5bZQFa2s/38A==}
-    engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
-    hasBin: true
-    dependencies:
-      caniuse-lite: 1.0.30001312
-      electron-to-chromium: 1.4.73
-      escalade: 3.1.1
-      node-releases: 2.0.2
-      picocolors: 1.0.0
-    dev: true
-
   /browserslist/4.19.3:
     resolution: {integrity: sha512-XK3X4xtKJ+Txj8G5c30B4gsm71s69lqXlkYui4s6EkKxuv49qjYlY6oVd+IFJ73d4YymtM3+djvvt/R/iJwwDg==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
@@ -1073,7 +1061,6 @@ packages:
       escalade: 3.1.1
       node-releases: 2.0.2
       picocolors: 1.0.0
-    dev: false
 
   /builtin-modules/3.2.0:
     resolution: {integrity: sha512-lGzLKcioL90C7wMczpkY0n/oART3MbBa8R9OFGE1rJxoVI86u4WAGfEk8Wjv10eKSyTHVGkSo3bvBylCEtk7LA==}
