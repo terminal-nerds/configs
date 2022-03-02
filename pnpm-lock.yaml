@@ -4,16 +4,16 @@ importers:
 
   .:
     specifiers:
-      '@changesets/changelog-github': 0.4.2
-      '@changesets/cli': 2.20.0
+      '@changesets/changelog-github': 0.4.3
+      '@changesets/cli': 2.21.0
       '@terminal-nerds/eslint-config': workspace:*
       '@terminal-nerds/markdownlint-config': workspace:*
       '@terminal-nerds/prettier-config': workspace:*
       '@terminal-nerds/syncpack-config': workspace:*
       all-contributors-cli: 6.20.0
-      browserslist: 4.19.1
+      browserslist: 4.19.3
       concurrently: 7.0.0
-      del-cli: ^4.0.1
+      del-cli: 4.0.1
       depcheck: 1.4.3
       eslint: 8.9.0
       husky: 7.0.4
@@ -22,17 +22,17 @@ importers:
       prettier: 2.5.1
       pretty-quick: 3.1.3
       syncpack: 6.2.0
-      turbo: ^1.1.4
+      turbo: 1.1.4
       typescript: 4.5.5
     devDependencies:
-      '@changesets/changelog-github': 0.4.2
-      '@changesets/cli': 2.20.0
+      '@changesets/changelog-github': 0.4.3
+      '@changesets/cli': 2.21.0
       '@terminal-nerds/eslint-config': link:packages/eslint
       '@terminal-nerds/markdownlint-config': link:packages/markdownlint
       '@terminal-nerds/prettier-config': link:packages/prettier
       '@terminal-nerds/syncpack-config': link:packages/syncpack
       all-contributors-cli: 6.20.0
-      browserslist: 4.19.1
+      browserslist: 4.19.3
       concurrently: 7.0.0
       del-cli: 4.0.1
       depcheck: 1.4.3
@@ -347,8 +347,14 @@ packages:
       semver: 5.7.1
     dev: true
 
-  /@changesets/changelog-github/0.4.2:
-    resolution: {integrity: sha512-qq8lJcq91ki7UT0fIfIcn5Yy7GJj19TmkLmGZ24/wEfxcD/nHHoTNRoi6nPt+Htf7qEudKxXLzQLi41B7Mt2vg==}
+  /@changesets/changelog-git/0.1.10:
+    resolution: {integrity: sha512-4t7zqPOv3aDZp4Y+AyDhiOG2ypaUXDpOz+MT1wOk3uSZNv78AaDByam0hdk5kfYuH1RlMecWU4/U5lO1ZL5eaA==}
+    dependencies:
+      '@changesets/types': 4.1.0
+    dev: true
+
+  /@changesets/changelog-github/0.4.3:
+    resolution: {integrity: sha512-93X4arork7DV4+tVYeNlOTrw7HOXIvvd41yRPY9atJ+nS32W0uS+ewkZdc6WThuqmwGx9xaU+pxHtVLeYJTF0A==}
     dependencies:
       '@changesets/get-github-info': 0.5.0
       '@changesets/types': 4.1.0
@@ -357,13 +363,14 @@ packages:
       - encoding
     dev: true
 
-  /@changesets/cli/2.20.0:
-    resolution: {integrity: sha512-IUYSgZKtS+wXPD5hxfnCfZ1JWCbBI0CRrhxpkgVKcXDwpxiRU8stCwuSuVj14kiYlThuH2zL0/ZuGvhF4r28Gg==}
+  /@changesets/cli/2.21.0:
+    resolution: {integrity: sha512-cJXRg28MmF9VbQrlwSjpY4AJA2xZUbXFCpQ3kFmX0IeppO7wknZ2QfocAhIqwM828t8d3R4Zpi5xnvJ/crIcQw==}
     hasBin: true
     dependencies:
       '@babel/runtime': 7.17.2
       '@changesets/apply-release-plan': 5.0.5
       '@changesets/assemble-release-plan': 5.1.0
+      '@changesets/changelog-git': 0.1.10
       '@changesets/config': 1.7.0
       '@changesets/errors': 0.1.4
       '@changesets/get-dependents-graph': 1.3.1
@@ -1051,18 +1058,6 @@ packages:
       wcwidth: 1.0.1
     dev: true
 
-  /browserslist/4.19.1:
-    resolution: {integrity: sha512-u2tbbG5PdKRTUoctO3NBD8FQ5HdPh1ZXPHzp1rwaa5jTc+RV9/+RlWiAIKmjRPQF+xbGM9Kklj5bZQFa2s/38A==}
-    engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
-    hasBin: true
-    dependencies:
-      caniuse-lite: 1.0.30001312
-      electron-to-chromium: 1.4.73
-      escalade: 3.1.1
-      node-releases: 2.0.2
-      picocolors: 1.0.0
-    dev: true
-
   /browserslist/4.19.3:
     resolution: {integrity: sha512-XK3X4xtKJ+Txj8G5c30B4gsm71s69lqXlkYui4s6EkKxuv49qjYlY6oVd+IFJ73d4YymtM3+djvvt/R/iJwwDg==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
@@ -1073,7 +1068,6 @@ packages:
       escalade: 3.1.1
       node-releases: 2.0.2
       picocolors: 1.0.0
-    dev: false
 
   /builtin-modules/3.2.0:
     resolution: {integrity: sha512-lGzLKcioL90C7wMczpkY0n/oART3MbBa8R9OFGE1rJxoVI86u4WAGfEk8Wjv10eKSyTHVGkSo3bvBylCEtk7LA==}
