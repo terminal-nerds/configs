@@ -3,8 +3,26 @@
 	"assigneesFromCodeOwners": true,
 	"baseBranches": ["main"],
 	"dependencyDashboard": true,
+	"commitMessagePrefix": "{{#if isPin}}📌{{else if isPatch}}⬆️{{/if}} ",
 	"extends": ["config:base"],
 	"packageRules": [
+		{
+			"groupName": "build tools",
+			"labels": ["⬆️ dependencies", "🧰 monorepo"],
+			"packagePatterns": ["deepmerge", "tsup"]
+		},
+		{
+			"groupName": "monorepo tools",
+			"labels": ["⬆️ dependencies", "⚙️ configuration:tools"],
+			"packagePatterns": [
+				"all-contributors-cli",
+				"changesets",
+				"del-cli",
+				"husky",
+				"lint-staged",
+				"turbo"
+			]
+		},
 		{
 			"groupName": "helpers",
 			"labels": ["⬆️ dependencies", "🧰 monorepo"],
@@ -38,24 +56,12 @@
 		{
 			"groupName": "TypeScript",
 			"labels": ["⬆️ dependencies", "📦 package:typescript-config"],
-			"packagePatterns": ["@types/node", "tslib", "tsup", "typescript"]
-		},
-		{
-			"groupName": "Tools",
-			"labels": ["⬆️ dependencies", "⚙️ configuration:tools"],
-			"packagePatterns": [
-				"changesets",
-				"all-contributors-cli",
-				"husky",
-				"lint-staged",
-				"rimraf",
-				"ultra"
-			]
+			"packagePatterns": ["@types/node", "tslib", "typescript"]
 		}
 	],
 	"reviewersFromCodeOwners": true,
 	"schedule": ["after 10pm and before 5am every weekday", "every sunday"],
-	"semanticCommits": "auto",
+	"semanticCommits": "enabled",
 	"semanticCommitScope": "dependencies",
 	"stabilityDays": 3,
 	"timezone": "Asia/Taipei"
