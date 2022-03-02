@@ -29,14 +29,17 @@ plugins dependencies, etc.
 
 ## Packages
 
-![workflow CI badge]\
+![workflow CI-CD badge]
+[![CodeClimate issues badge]][codeclimate report]\
 ![node.js version support badge]
 [![Dependencies badge]][dependencies url]
 
+[codeclimate issues badge]: https://img.shields.io/codeclimate/issues/terminal-nerds/configs?logo=codeclimate&style=for-the-badge
+[codeclimate report]: https://codeclimate.com/github/terminal-nerds/configs
 [node.js version support badge]: https://img.shields.io/node/v-lts/@terminal-nerds/eslint-config?style=for-the-badge&logo=nodedotjs
 [dependencies badge]: https://img.shields.io/librariesio/github/terminal-nerds/configs?style=for-the-badge
 [dependencies url]: https://libraries.io/github/terminal-nerds/configs "Dependencies status"
-[workflow ci badge]: https://img.shields.io/github/workflow/status/terminal-nerds/configs/CI?logo=github&style=for-the-badge
+[workflow ci-cd badge]: https://img.shields.io/github/workflow/status/terminal-nerds/configs/CI%20&%20CD?label=CI%20%26%20CD&logo=github&style=for-the-badge
 
 📦 The following packages are available under the [packages/](./packages)
 directory. Each of them has its own instructions _(in the `README.md` files)_
@@ -104,17 +107,16 @@ registry].
 ✉️ **The best way to get in touch with us or join us is using our [Discord server]**.
 Anyone is welcome to hop in for a chat. 🙂
 
-[discord server]: https://discord.gg/decp3g7BEN
+[discord server]: https://discord.terminal-nerds.dev
 [discord badge]: https://img.shields.io/discord/862890839537877012?label=Discord&logo=discord&style=for-the-badge
 
 ---
 
 ## Security
 
+![workflow maintenance badge]\
 [![lgtm alerts badge]][lgtm report]
-[![lgtm grade badge]][lgtm report]\
-[![SonarCloud badge]][sonarcloud report]\
-[![DeepScan grade badge]][deepscan report]
+[![SonarCloud badge]][sonarcloud report]
 
 🔐 Our team has a shared [Security Policy]. If you have concerns or found an
 issue, please follow the instructions, and
@@ -123,14 +125,12 @@ remember about one thing:
 > We are all ears, but please, **DO NOT create a GitHub issue for reporting a
 > vulnerability**.
 
-[security policy]: https://github.com/terminal-nerds/configs/security/policy
+[workflow maintenance badge]: https://img.shields.io/github/workflow/status/terminal-nerds/configs/Maintenance?label=Maintenance&logo=github&style=for-the-badge
 [lgtm alerts badge]: https://img.shields.io/lgtm/alerts/github/terminal-nerds/configs?style=for-the-badge&logo=lgtm
-[lgtm grade badge]: https://img.shields.io/lgtm/grade/javascript/github/terminal-nerds/configs?style=for-the-badge&logo=lgtm
 [lgtm report]: https://lgtm.com/projects/g/terminal-nerds/configs
 [sonarcloud badge]: https://img.shields.io/sonar/quality_gate/terminal-nerds_configs/main?logo=sonarcloud&server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge
 [sonarcloud report]: https://sonarcloud.io/summary/overall?id=terminal-nerds_configs
-[deepscan grade badge]: https://deepscan.io/api/teams/16781/projects/20096/branches/536130/badge/grade.svg
-[deepscan report]: https://deepscan.io/dashboard#view=project&tid=16781&pid=20096&bid=536130
+[security policy]: https://github.com/terminal-nerds/configs/security/policy
 
 ---
 
@@ -149,7 +149,7 @@ involved.
 [contributors badge]: https://img.shields.io/github/contributors/terminal-nerds/configs?style=for-the-badge
 [contributors url]: #contributors
 
-### Contributors
+### Project contributors
 
 🥰 Thanks goes to these wonderful people and bots _([emoji key])_:
 

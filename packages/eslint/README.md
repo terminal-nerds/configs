@@ -2,17 +2,19 @@
 
 ![package version badge]
 
-➡️ **Extendable [ESLint] configuration**, part of the [terminal-nerds/configs] project.
+➡️ **Extendable ![eslint icon] [ESLint] configuration**, part of the
+[terminal-nerds/configs] project.
 
 [package version badge]: https://img.shields.io/npm/v/@terminal-nerds/eslint-config/latest?style=for-the-badge&logo=npm
 [eslint]: https://eslint.org/
+[eslint icon]: https://api.iconify.design/logos/eslint.svg
 [terminal-nerds/configs]: https://github.com/terminal-nerds/configs
 
 ---
 
 ## Prerequisites
 
-![node.js version support badge]
+[![node.js version support badge]][node.js]
 [![supported eslint version badge]][eslint]
 
 [node.js version support badge]: https://img.shields.io/node/v-lts/@terminal-nerds/eslint-config?style=for-the-badge&logo=nodedotjs
@@ -21,48 +23,21 @@
 ℹ️ This configuration package require these tools to use locally on your
 device(s):
 
-1. <img
-      alt="Node.JS logo icon"
-      width="14"
-      src="https://api.iconify.design/logos/nodejs-icon.svg"
-   />
-   Latest [Node.js] LTS _(Long-Term Support)_ version.
-
+1. ![node.js icon] Latest [Node.js] LTS _(Long-Term Support)_ version
 1. One of Node.js package managers:
-
-    - <img
-             alt="pnpm logo icon"
-             width="14"
-             src="https://api.iconify.design/vscode-icons/file-type-light-pnpm.svg"
-          />
-      [pnpm]
-
-    - <img
-            alt="yarn logo icon"
-            width="14"
-            src="https://api.iconify.design/logos/yarn.svg"
-           />
-      [yarn]
-
-    - <img
-          alt="npm logo icon"
-          width="14"
-          src="https://api.iconify.design/logos/npm-icon.svg"
-         />
-      [npm]
-
-1. <img
-         alt="eslint logo icon"
-         width="14"
-         src="https://api.iconify.design/logos/eslint.svg"
-        />
-   Latest [ESLint] version
+    - ![pnpm icon] [pnpm]
+    - ![yarn icon] [yarn]
+    - ![npm icon] [npm]
+1. Latest ![eslint icon] [ESLint] version
 
 [node.js]: https://nodejs.org/en/
+[node.js icon]: https://api.iconify.design/logos/nodejs-icon.svg
 [pnpm]: https://pnpm.io/
+[pnpm icon]: https://api.iconify.design/vscode-icons/file-type-light-pnpm.svg
 [npm]: https://npmjs.com/
+[npm icon]: https://api.iconify.design/logos/npm-icon.svg
 [yarn]: https://yarnpkg.com/
-[node.js version support badge]: https://img.shields.io/node/v-lts/@terminal-nerds/eslint-config?style=for-the-badge&logo=nodedotjs
+[yarn icon]: https://api.iconify.design/logos/yarn.svg
 
 ---
 
@@ -70,20 +45,16 @@ device(s):
 
 👣 Follow the steps below:
 
-1. Install it with the [Node.js] package manager of your choice. In our case,
-   we use [`pnpm`](pnpm).\
-   Example:
+1. **Install it with the ![node.js icon] [Node.js] package manager of your
+   choice** _(in our case, we use ![pnpm icon] [pnpm])_.
 
     ```sh
-    pnpm add --save-dev eslint @terminal-nerds/eslint-config
+     pnpm install --save-dev eslint @terminal-nerds/eslint-config
     ```
 
-    [node.js]: https://nodejs.org/en/
-    [`pnpm`]: https://pnpm.io/
+1. **Create an ![eslint icon] [ESLint configuration file] - `.eslintrc.(c)js`**.
 
-1. Create an **[ESLint configuration file]** - e.g. `.eslint.(c)js`, and extend
-   this module package configuration.\
-   Example:
+1. **Extend this module package configuration.**
 
     ```js
     const config = {
@@ -100,10 +71,10 @@ device(s):
     module.exports = config;
     ```
 
-    For [ESLint CLI] usage, please refer to its documentation.
+📖 For the ![eslint icon] [ESLint CLI] usage, please refer to its documentation.
 
-    [eslint configuration file]: https://eslint.org/docs/user-guide/configuring/configuration-files#using-configuration-files
-    [eslint cli]: https://eslint.org/docs/user-guide/command-line-interface
+[eslint configuration file]: https://eslint.org/docs/user-guide/configuring/configuration-files#using-configuration-files
+[eslint cli]: https://eslint.org/docs/user-guide/command-line-interface
 
 ---
 
@@ -111,8 +82,8 @@ device(s):
 
 [![Dependencies badge]][dependencies url]
 
-⚙️ This configuration module for [ESLint] loads configurations and plugins
-options _conditionally_.
+⚙️ This configuration module loads configurations and plugins options
+_conditionally_.
 
 [dependencies badge]: https://img.shields.io/librariesio/release/npm/@terminal-nerds/eslint-config?style=for-the-badge
 [dependencies url]: https://libraries.io/npm/@terminal-nerds%2Feslint-config
@@ -175,26 +146,14 @@ options _conditionally_.
 
 ## Security
 
-[![lgtm alerts badge]][lgtm report]
-[![lgtm grade badge]][lgtm report]\
-[![sonarcloud badge]][sonarcloud report]\
-[![DeepScan grade badge]][deepscan report]
+[![workflow security badge]][security policy]
 
-🔐 Our team has a shared [Security Policy]. If you have concerns or found an
-issue, please follow the instructions, and
-remember about one thing:
+🔐 For more information, please refer to the [Security section] at the root of the
+[terminal-nerds/configs] monorepo.
 
-> We are all ears, but please, **DO NOT create a GitHub issue for reporting a
-> vulnerability**.
-
+[workflow security badge]: https://img.shields.io/github/workflow/status/terminal-nerds/configs/Maintenance?label=Security&logo=github&style=for-the-badge
+[security section]: https://github.com/terminal-nerds/configs#security
 [security policy]: https://github.com/terminal-nerds/configs/security/policy
-[lgtm alerts badge]: https://img.shields.io/lgtm/alerts/github/terminal-nerds/configs?style=for-the-badge&logo=lgtm
-[lgtm grade badge]: https://img.shields.io/lgtm/grade/javascript/github/terminal-nerds/configs?style=for-the-badge&logo=lgtm
-[lgtm report]: https://lgtm.com/projects/g/terminal-nerds/configs
-[sonarcloud badge]: https://img.shields.io/sonar/quality_gate/terminal-nerds_configs/main?logo=sonarcloud&server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge
-[sonarcloud report]: https://sonarcloud.io/summary/overall?id=terminal-nerds_configs
-[deepscan grade badge]: https://deepscan.io/api/teams/16781/projects/20096/branches/536130/badge/grade.svg
-[deepscan report]: https://deepscan.io/dashboard#view=project&tid=16781&pid=20096&bid=536130
 
 ---
 
@@ -202,14 +161,11 @@ remember about one thing:
 
 [![contributors badge]][contributors url]
 
-🤝 This project follows the [all-contributors] specification.\
-**Therefore, contributions of any kind are welcome!**
+🤝 **Contributions of any kind are welcome!**
 
-Please refer to our [CONTRIBUTING file]
-_(at the root of this project repository - [terminal-nerds/configs])_
-for more information if you wish to get involved.
+Please refer to the monorepo _([terminal-nerds/configs])_ project's
+[CONTRIBUTING file] for more information if you wish to get involved.
 
-[all-contributors]: https://github.com/all-contributors/all-contributors
 [contributing file]: https://github.com/terminal-nerds/configs/blob/main/.github/CONTRIBUTING.md
 [contributors badge]: https://img.shields.io/github/contributors/terminal-nerds/configs?style=for-the-badge
 [contributors url]: https://github.com/terminal-nerds/configs#contributors
