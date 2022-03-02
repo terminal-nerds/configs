@@ -72,7 +72,7 @@ importers:
       '@typescript-eslint/eslint-plugin': ^5.10.2
       '@typescript-eslint/parser': ^5.10.2
       '@workspace/helpers': workspace:*
-      deepmerge-ts: 2.0.1
+      deepmerge-ts: 4.0.0
       eslint-config-prettier: ^8.3.0
       eslint-define-config: ^1.2.4
       eslint-plugin-compat: ^4.0.2
@@ -116,7 +116,7 @@ importers:
       '@types/eslint': 8.4.1
       '@types/node': 17.0.18
       '@workspace/helpers': link:../../helpers
-      deepmerge-ts: 2.0.1
+      deepmerge-ts: 4.0.0
       tsup: 5.11.13_typescript@4.5.5
       typescript: 4.5.5
 
@@ -134,7 +134,7 @@ importers:
       '@types/node': 17.0.18
       '@types/prettier': 2.4.4
       '@workspace/helpers': workspace:*
-      deepmerge-ts: 2.0.1
+      deepmerge-ts: 4.0.0
       prettier-plugin-svelte: ^2.6.0
       tsup: 5.11.13
       typescript: 4.5.5
@@ -145,7 +145,7 @@ importers:
       '@types/node': 17.0.18
       '@types/prettier': 2.4.4
       '@workspace/helpers': link:../../helpers
-      deepmerge-ts: 2.0.1
+      deepmerge-ts: 4.0.0
       tsup: 5.11.13_typescript@4.5.5
       typescript: 4.5.5
 
@@ -153,7 +153,7 @@ importers:
     specifiers:
       '@terminal-nerds/typescript-config': workspace:*
       '@workspace/helpers': workspace:*
-      deepmerge-ts: 2.0.1
+      deepmerge-ts: 4.0.0
       stylelint: 14.5.0
       stylelint-config-prettier: ^9.0.3
       stylelint-config-standard: ^25.0.0
@@ -175,7 +175,7 @@ importers:
     devDependencies:
       '@terminal-nerds/typescript-config': link:../typescript
       '@workspace/helpers': link:../../helpers
-      deepmerge-ts: 2.0.1
+      deepmerge-ts: 4.0.0
       stylelint: 14.5.0
       tsup: 5.11.13_typescript@4.5.5
       typescript: 4.5.5
@@ -1473,8 +1473,8 @@ packages:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
     dev: true
 
-  /deepmerge-ts/2.0.1:
-    resolution: {integrity: sha512-7xeG0xMleW+gyrtUsdOeR6tCLwkyYDh3koIuvc8TxBcDh3WlaBQiEbFwEzk8clKomJZMhmoyxo7Y9CRrrrLVlg==}
+  /deepmerge-ts/4.0.0:
+    resolution: {integrity: sha512-0jtn7P35dD0FbrYT2woSWfOASiyNqDHvgyljZyuDW1eRSFWzRmqiEB6zhaQF4ic8fBugQV0WJcnPhbJOCuX0VA==}
     engines: {node: '>=12.4.0'}
     dependencies:
       is-plain-object: 5.0.0
