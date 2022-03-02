@@ -2,6 +2,7 @@
 	"$schema": "https://json.schemastore.org/package",
 	"private": true,
 	"type": "module",
+	"name": "@workspace/root",
 	"homepage": "https://github.com/terminal-nerds/configs",
 	"repository": "terminal-nerds/configs.git",
 	"bugs": "https://github.com/terminal-nerds/configs/issues",
@@ -13,7 +14,7 @@
 		"node": "16.14.0"
 	},
 	"scripts": {
-		"build": "turbo run build --since=\"origin/main\" -v",
+		"build": "turbo run build -v",
 		"clean": "pnpm clean:cache ; turbo run clean -v",
 		"clean:cache": "del \"./node_modules/.cache\"",
 		"contributors:add": "all-contributors add",
