@@ -1,5 +1,11 @@
 # @terminal-nerds/markdownlint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header -->
 
+## 0.3.1
+
+### Patch Changes
+
+-   🐛 Version issue - cannot override previously published wrong version - `0.3.0`
+
 ## 0.3.0
 
 ### Minor Changes
