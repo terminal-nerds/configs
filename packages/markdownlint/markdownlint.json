@@ -16,11 +16,11 @@
 	/*
 	 * Make it compatible with Prettier formatting
 	 * @see https://github.com/DavidAnson/markdownlint/blob/main/doc/Prettier.md
+	 * RATIONALE:
+	 * Disabled, because Prettier doesn't do the same indentation
+	 * for every list level. And markdownlint option is for *all* levels.
 	 */
-	"list-marker-space": {
-		"ul_single": 3,
-		"ul_multi": 1
-	},
+	"list-marker-space": false,
 	"no-hard-tabs": {
 		"code_blocks": false
 	},
