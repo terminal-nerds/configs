@@ -1,7 +1,5 @@
 import { defineConfig } from "eslint-define-config";
 
-import { hasModule } from "@workspace/helpers/module";
-
 // https://github.com/storybookjs/eslint-plugin-storybook
 const config = defineConfig({
 	overrides: [
@@ -16,4 +14,4 @@ const config = defineConfig({
 	],
 });
 
-export default hasModule("sb") ? config : {};
+export default config;

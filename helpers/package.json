@@ -8,6 +8,7 @@
 		"node": ">=16"
 	},
 	"exports": {
+		"./configuration": "./build/configuration.js",
 		"./environment": "./build/environment.js",
 		"./module": "./build/module.js"
 	},
@@ -34,6 +35,7 @@
 		"lint:types": "tsc --noEmit"
 	},
 	"dependencies": {
+		"deepmerge-ts": "4.0.0",
 		"read-pkg-up": "9.1.0"
 	},
 	"devDependencies": {

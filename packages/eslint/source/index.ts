@@ -1,7 +1,9 @@
-import { deepmerge } from "deepmerge-ts";
-
 // This is a workaround for https://github.com/eslint/eslint/issues/3458
 import "@rushstack/eslint-patch/modern-module-resolution";
+
+import { createMergedConfig } from "@workspace/helpers/configuration";
+import { isContinuousIntegration } from "@workspace/helpers/environment";
+import { hasModule, isESModule } from "@workspace/helpers/module";
 
 import eslint from "./eslint.js";
 
@@ -20,25 +22,28 @@ import pluginYML from "./plugins/yml.js";
 
 import configPrettier from "./configs/prettier.js";
 
-const configurations = deepmerge(
+const mergedConfig = createMergedConfig([
+	// Base
 	eslint,
 
+	// Plugins
 	pluginCompat,
-	pluginDiff,
+	isContinuousIntegration() && pluginDiff,
 	pluginImport,
 	pluginJSONC,
 	pluginJSONSchemaValidator,
 	pluginNode,
 	pluginSonarJS,
-	pluginStorybook,
-	pluginSvelte3,
-	pluginTypeScript,
-	pluginUnicorn,
+	hasModule("sb") && pluginStorybook,
+	hasModule("svelte") && pluginSvelte3,
+	hasModule("typescript") && pluginTypeScript,
+	isESModule() && pluginUnicorn,
 	pluginYML,
 
+	// Configs
 	// NOTE: Must come as last!
-	configPrettier,
-);
+	hasModule("prettier") && configPrettier,
+]);
 
 // eslint-disable-next-line unicorn/prefer-module
-module.exports = configurations;
+module.exports = mergedConfig;
