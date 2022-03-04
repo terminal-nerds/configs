@@ -1,4 +1,5 @@
-import { deepmerge } from "deepmerge-ts";
+import { createMergedConfig } from "@workspace/helpers/configuration";
+import { hasModule } from "@workspace/helpers/module";
 
 import stylelint from "./stylelint.js";
 
@@ -11,19 +12,22 @@ import pluginNoUnsupportedBrowserFeatures from "./plugins/no-unsupported-browser
 import pluginOrder from "./plugins/order.js";
 import pluginSCSS from "./plugins/scss.js";
 
-const configurations = deepmerge(
+const mergedConfig = createMergedConfig([
+	// Base
 	stylelint,
 
-	configStandard,
-	configStandardSCSS,
-
+	// Plugins
 	pluginHighPerformanceAnimations,
 	pluginNoUnsupportedBrowserFeatures,
 	pluginOrder,
-	pluginSCSS,
+	hasModule("sass") && pluginSCSS,
 
+	// Configurations
+	!hasModule("sass") && configStandard,
+	hasModule("sass") && configStandardSCSS,
 	// NOTE: Must come as last!
-	configPrettier,
-);
+	hasModule("prettier") && configPrettier,
+]);
 
-module.exports = configurations;
+// eslint-disable-next-line unicorn/prefer-module
+module.exports = mergedConfig;

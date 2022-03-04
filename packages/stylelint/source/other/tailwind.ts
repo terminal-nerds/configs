@@ -1,6 +1,6 @@
 import { hasModule } from "@workspace/helpers/module";
 
-const TAILWIND_AT_RULE_SELECTORS = [
+export const TAILWIND_AT_RULE_SELECTORS = [
 	"tailwind",
 	"apply",
 	"variants",
