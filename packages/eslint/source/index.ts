@@ -3,7 +3,7 @@ import "@rushstack/eslint-patch/modern-module-resolution";
 
 import { createMergedConfig } from "@workspace/helpers/configuration";
 import { isContinuousIntegration } from "@workspace/helpers/environment";
-import { hasModule, isESModule } from "@workspace/helpers/module";
+import { hasModule } from "@workspace/helpers/module";
 
 import eslint from "./eslint.js";
 
@@ -37,7 +37,7 @@ const mergedConfig = createMergedConfig([
 	hasModule("sb") && pluginStorybook,
 	hasModule("svelte") && pluginSvelte3,
 	hasModule("typescript") && pluginTypeScript,
-	isESModule() && pluginUnicorn,
+	pluginUnicorn,
 	pluginYML,
 
 	// Configs

@@ -16,6 +16,7 @@ const config = defineConfig({
 	},
 	settings: {
 		node: {
+			// eslint-disable-next-line unicorn/prefer-module
 			resolvePaths: [__dirname],
 			tryExtensions: [".cjs", ".js", ".mjs", ".ts"],
 		},
