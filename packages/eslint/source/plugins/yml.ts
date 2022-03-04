@@ -11,6 +11,18 @@ const config = defineConfig({
 			parser: "yaml-eslint-parser",
 		},
 	],
+
+	rules: {
+		// RATIONALE:
+		// Not helpful, for example in the case of setting the GitHub Actions workflow:
+		// ```yml
+		// on:
+		//      pull_request_target:
+		// ```
+		// which is valid pattern as there is no universal one for "all", such
+		// as "*"
+		"yml/no-empty-mapping-value": ["off"],
+	},
 });
 
 export default config;
