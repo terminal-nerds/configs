@@ -17,4 +17,4 @@ const config = defineConfig({
 	},
 });
 
-export default hasModule("svelte") ? config : {};
+export default config;

@@ -1,7 +1,5 @@
 import { defineConfig } from "eslint-define-config";
 
-import { hasModule } from "@workspace/helpers/module";
-
 const commentRuleOptions = "allow-with-description";
 
 const config = defineConfig({
@@ -9,7 +7,7 @@ const config = defineConfig({
 	extends: ["plugin:@typescript-eslint/recommended"],
 	parserOptions: {
 		parser: "@typescript-eslint/parser",
-		// project: ["./tsconfig.json"],
+		// eslint-disable-next-line unicorn/prefer-module
 		tsconfigRootDir: __dirname,
 	},
 	rules: {
@@ -26,4 +24,4 @@ const config = defineConfig({
 	},
 });
 
-export default hasModule("typescript") ? config : {};
+export default config;
