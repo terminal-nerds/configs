@@ -7,6 +7,7 @@
 		"tables": false
 	},
 	/*
+	 * RATIONALE:
 	 * Make it compatible with Prettier formatting
 	 * @see https://github.com/DavidAnson/markdownlint/blob/main/doc/Prettier.md
 	 */
@@ -14,8 +15,6 @@
 		"indent": 4
 	},
 	/*
-	 * Make it compatible with Prettier formatting
-	 * @see https://github.com/DavidAnson/markdownlint/blob/main/doc/Prettier.md
 	 * RATIONALE:
 	 * Disabled, because Prettier doesn't do the same indentation
 	 * for every list level. And markdownlint option is for *all* levels.
