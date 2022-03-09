@@ -19,10 +19,14 @@
 	"engines": {
 		"node": ">=16"
 	},
-	"main": "markdownlint.json",
+	"main": "dist/index.json",
+	"files": [
+		"/dist"
+	],
 	"scripts": {
+		"build": "make-dir \"./dist\" && strip-json-comments \"./source/index.json\" | jq --compact-output > \"./dist/index.json\"",
 		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
-		"clean:build": "del \"./build\"",
+		"clean:build": "del \"./dist\"",
 		"clean:cache": "del \"./node_modules/.cache\"",
 		"format": "concurrently \"pnpm:format:*\" --group --timings",
 		"format:prettier": "pretty-quick --branch main --pattern \"packages/markdownlint/**/*\" --verbose",
@@ -37,7 +41,9 @@
 		"markdownlint-cli": "0.31.1"
 	},
 	"devDependencies": {
+		"make-dir-cli": "^3.0.0",
 		"markdownlint": "0.25.1",
-		"markdownlint-cli": "0.31.1"
+		"node-jq": "^2.1.0",
+		"strip-json-comments-cli": "^2.0.1"
 	}
 }
