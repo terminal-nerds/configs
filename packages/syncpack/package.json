@@ -26,8 +26,8 @@
 	"scripts": {
 		"build": "tsup",
 		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
-		"clean:build": "del \"./build\"",
-		"clean:cache": "del \"./node_modules/.cache\"",
+		"clean:build": "del \"./dist\"",
+		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"format": "concurrently \"pnpm:format:*\" --group --timings",
 		"format:prettier": "pretty-quick --branch main --pattern \"packages/syncpack/**/*\" --verbose",
 		"format:syncpack": "syncpack format",

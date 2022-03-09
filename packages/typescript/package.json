@@ -27,7 +27,7 @@
 		"build": "make-dir \"./dist\" && strip-json-comments \"./source/index.json\" | jq --compact-output > \"./dist/index.json\"",
 		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
 		"clean:build": "del \"./dist\"",
-		"clean:cache": "del \"./node_modules/.cache\"",
+		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"format": "concurrently \"pnpm:format:*\" --group --timings",
 		"format:prettier": "pretty-quick --branch main --pattern \"packages/typescript/**/*\" --verbose",
 		"format:syncpack": "syncpack format",

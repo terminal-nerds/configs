@@ -23,7 +23,7 @@
 		"build": "tsup",
 		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
 		"clean:build": "del \"./build\"",
-		"clean:cache": "del \"./node_modules/.cache\"",
+		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"dev": "tsup --watch",
 		"format": "concurrently \"pnpm:format:*\" --group --timings",
 		"format:prettier": "pretty-quick --branch main --pattern \"./helpers/**/*\" --verbose",
