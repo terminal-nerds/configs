@@ -32,7 +32,7 @@
 		"lint:deps": "concurrently \"depcheck\" \"syncpack list-mismatches\" --group --timings",
 		"lint:format": "pretty-quick --branch main --pattern \"**/*\" --pattern \"!{helpers,packages}/**/*\" --verbose --check",
 		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .cjs,.json,.yml,.yaml --ignore \"./packages\" --cache --cache-location \"./node_modules/.cache/eslint\"",
-		"lint:md": "markdownlint . --dot --ignore-path \"./.gitignore\" --ignore \"./{helpers,packages}/**/*\" --ignore \"./.changeset/*.md\"",
+		"lint:md": "markdownlint . --dot --ignore-path \"./.gitignore\" --ignore \"./{.changeset,helpers,packages}/**/*\"",
 		"prepare": "husky install",
 		"preinstall": "npx only-allow pnpm"
 	},
