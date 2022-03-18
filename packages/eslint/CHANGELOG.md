@@ -1,5 +1,28 @@
 # @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header -->
 
+## 0.5.0
+
+### Minor Changes
+
+-   [#99](https://github.com/terminal-nerds/configs/pull/99) [`50a4f68`](https://github.com/terminal-nerds/configs/commit/50a4f686b393c16c867dc80358e3752c6f1b8da8) Thanks [@xeho91](https://github.com/xeho91)! - ✨ Add better support for [next.js] with [config-next]
+
+    [next.js]: https://nextjs.org/
+    [config-next]: https://nextjs.org/docs/basic-features/eslint#eslint-config
+
+-   [#92](https://github.com/terminal-nerds/configs/pull/92) [`f5358d8`](https://github.com/terminal-nerds/configs/commit/f5358d8215a35be263971bcb5b2fabaeba082d1b) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `eslint` to `v8.11.0`
+
+-   [#99](https://github.com/terminal-nerds/configs/pull/99) [`50a4f68`](https://github.com/terminal-nerds/configs/commit/50a4f686b393c16c867dc80358e3752c6f1b8da8) Thanks [@xeho91](https://github.com/xeho91)! - ✨ Add better support for [react] or [preact] with:
+
+    -   [plugin jsx-a11y]
+    -   [plugin react]
+    -   [plugin react-hooks]
+
+    [react]: https://reactjs.org/
+    [preact]: https://preactjs.com/
+    [plugin jsx-a11y]: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y
+    [plugin react]: https://github.com/yannickcr/eslint-plugin-react
+    [plugin react-hooks]: https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks
+
 ## 0.4.0
 
 ### Minor Changes
