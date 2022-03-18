@@ -31,7 +31,7 @@
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"dev": "tsup --watch",
 		"format": "concurrently \"pnpm:format:*\" --group --timings",
-		"format:prettier": "pretty-quick --branch main --pattern \"./packages/eslint/**/*\" --verbose",
+		"format:prettier": "pretty-quick --branch main --pattern \"packages/eslint/**/*\" --verbose",
 		"format:syncpack": "syncpack format",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
 		"lint:deps": "depcheck",

@@ -30,11 +30,11 @@
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"dev": "tsup --watch",
 		"format": "concurrently \"pnpm:format:*\" --group --timings",
-		"format:prettier": "pretty-quick --branch main --pattern \"./packages/stylelint/**/*\" --verbose",
+		"format:prettier": "pretty-quick --branch main --pattern \"packages/stylelint/**/*\" --verbose",
 		"format:syncpack": "syncpack format",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
 		"lint:deps": "depcheck",
-		"lint:format": "pretty-quick --branch main --pattern \"./packages/stylelint/**/*\" --verbose --check",
+		"lint:format": "pretty-quick --branch main --pattern \"packages/stylelint/**/*\" --verbose --check",
 		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
 		"lint:types": "tsc --noEmit"
