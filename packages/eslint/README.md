@@ -92,8 +92,11 @@ _conditionally_.
 
 | Configurations           | Version                                 | Loading condition(s)     |
 | ------------------------ | --------------------------------------- | ------------------------ |
+| [eslint-config-next]     | ![eslint-config-next version badge]     | `next` as dependency     |
 | [eslint-config-prettier] | ![eslint-config-prettier version badge] | `prettier` as dependency |
 
+[eslint-config-next]: https://nextjs.org/docs/basic-features/eslint#eslint-config
+[eslint-config-next version badge]: https://img.shields.io/npm/v/eslint-config-next?logo=npm&style=flat-square
 [eslint-config-prettier]: https://github.com/prettier/eslint-config-prettier
 [eslint-config-prettier version badge]: https://img.shields.io/npm/v/eslint-config-prettier?logo=npm&style=flat-square
 
@@ -107,7 +110,10 @@ _conditionally_.
 | [eslint-plugin-import]                | ![eslint-plugin-import version badge]                | -                                                                            |
 | [eslint-plugin-json-schema-validator] | ![eslint-plugin-json-schema-validator version badge] | -                                                                            |
 | [eslint-plugin-jsonc]                 | ![eslint-plugin-jsonc version badge]                 | -                                                                            |
+| [eslint-plugin-jsx-a11y]              | ![eslint-plugin-jsx-a11y version badge]              | `react` or `preact` as dependency                                            |
 | [eslint-plugin-node]                  | ![eslint-plugin-node version badge]                  | -                                                                            |
+| [eslint-plugin-react]                 | ![eslint-plugin-react version badge]                 | `react` or `preact` as dependency                                            |
+| [eslint-plugin-react-hooks]           | ![eslint-plugin-react-hooks version badge]           | `react` or `preact` as dependency                                            |
 | [eslint-plugin-regexp]                | ![eslint-plugin-regexp version badge]                | -                                                                            |
 | [eslint-plugin-sonarjs]               | ![eslint-plugin-sonarjs version badge]               | -                                                                            |
 | [eslint-plugin-storybook]             | ![eslint-plugin-storybook version badge]             | `sb` as dependency                                                           |
@@ -127,8 +133,14 @@ _conditionally_.
 [eslint-plugin-json-schema-validator version badge]: https://img.shields.io/npm/v/eslint-plugin-json-schema-validator?logo=npm&style=flat-square
 [eslint-plugin-jsonc]: https://github.com/ota-meshi/eslint-plugin-jsonc
 [eslint-plugin-jsonc version badge]: https://img.shields.io/npm/v/eslint-plugin-jsonc?logo=npm&style=flat-square
+[eslint-plugin-jsx-a11y]: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y
+[eslint-plugin-jsx-a11y version badge]: https://img.shields.io/npm/v/eslint-plugin-jsx-a11y?logo=npm&style=flat-square
 [eslint-plugin-node]: https://github.com/mysticatea/eslint-plugin-node
 [eslint-plugin-node version badge]: https://img.shields.io/npm/v/eslint-plugin-node?logo=npm&style=flat-square
+[eslint-plugin-react]: https://github.com/yannickcr/eslint-plugin-react
+[eslint-plugin-react version badge]: https://img.shields.io/npm/v/eslint-plugin-react?logo=npm&style=flat-square
+[eslint-plugin-react-hooks]: https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks
+[eslint-plugin-react-hooks version badge]: https://img.shields.io/npm/v/eslint-plugin-react-hooks?logo=npm&style=flat-square
 [eslint-plugin-regexp]: https://github.com/ota-meshi/eslint-plugin-regexp
 [eslint-plugin-regexp version badge]: https://img.shields.io/npm/v/eslint-plugin-regexp?logo=npm&style=flat-square
 [eslint-plugin-sonarjs]: https://github.com/SonarSource/eslint-plugin-sonarjs
