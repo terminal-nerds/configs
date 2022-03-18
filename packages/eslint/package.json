@@ -56,6 +56,7 @@
 		"eslint-plugin-jsonc": "^2.1.0",
 		"eslint-plugin-node": "^11.1.0",
 		"eslint-plugin-react": "^7.29.4",
+		"eslint-plugin-react-hooks": "^4.3.0",
 		"eslint-plugin-regexp": "^1.5.1",
 		"eslint-plugin-sonarjs": "^0.12.0",
 		"eslint-plugin-storybook": "^0.5.6",

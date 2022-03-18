@@ -15,6 +15,7 @@ import pluginJSONSchemaValidator from "./plugins/json-schema-validator.js";
 import pluginNode from "./plugins/node.js";
 import pluginSonarJS from "./plugins/sonarjs.js";
 import pluginReact from "./plugins/react.js";
+import pluginReactHooks from "./plugins/react-hooks.js";
 import pluginRegexp from "./plugins/regexp.js";
 import pluginStorybook from "./plugins/storybook.js";
 import pluginSvelte3 from "./plugins/svelte3.js";
@@ -36,6 +37,7 @@ const mergedConfig = createMergedConfig([
 	pluginJSONSchemaValidator,
 	pluginNode,
 	(hasModule("react") || hasModule("preact")) && pluginReact,
+	(hasModule("react") || hasModule("preact")) && pluginReactHooks,
 	pluginRegexp,
 	pluginSonarJS,
 	hasModule("sb") && pluginStorybook,
