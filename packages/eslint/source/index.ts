@@ -14,6 +14,8 @@ import pluginJSONC from "./plugins/jsonc.js";
 import pluginJSONSchemaValidator from "./plugins/json-schema-validator.js";
 import pluginNode from "./plugins/node.js";
 import pluginSonarJS from "./plugins/sonarjs.js";
+import pluginReact from "./plugins/react.js";
+import pluginRegexp from "./plugins/regexp.js";
 import pluginStorybook from "./plugins/storybook.js";
 import pluginSvelte3 from "./plugins/svelte3.js";
 import pluginTypeScript from "./plugins/typescript.js";
@@ -33,6 +35,8 @@ const mergedConfig = createMergedConfig([
 	pluginJSONC,
 	pluginJSONSchemaValidator,
 	pluginNode,
+	(hasModule("react") || hasModule("preact")) && pluginReact,
+	pluginRegexp,
 	pluginSonarJS,
 	hasModule("sb") && pluginStorybook,
 	hasModule("svelte") && pluginSvelte3,
