@@ -1,5 +1,7 @@
 import { defineConfig } from "eslint-define-config";
 
+import { getIgnorePatterns } from "@workspace/helpers/configuration";
+
 const config = defineConfig({
 	parserOptions: {
 		ecmaVersion: "latest",
@@ -12,15 +14,24 @@ const config = defineConfig({
 		// Ignore...
 		"**/node_modules",
 		"**/.git",
-		"**/.husky",
-		"**/.svelte-kit",
-		"**/.turbo",
-		"**/.ultra.cache.json",
-		"**/.vercel",
 		"**/build",
 		"**/dist",
 		"**/package-lock.json",
 		"**/pnpm-lock.yaml",
+		...getIgnorePatterns([
+			{
+				module: "husky",
+				patterns: "**/.husky",
+			},
+			{
+				module: "turbo",
+				patterns: "**/.turbo",
+			},
+			{
+				module: "vercel",
+				patterns: "**/.vercel",
+			},
+		]),
 	],
 
 	extends: ["eslint:recommended"],
