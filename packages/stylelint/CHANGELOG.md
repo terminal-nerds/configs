@@ -1,5 +1,13 @@
 # @terminal-nerds/stylelint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header -->
 
+## 0.5.0
+
+### Minor Changes
+
+-   [#100](https://github.com/terminal-nerds/configs/pull/100) [`8d8881e`](https://github.com/terminal-nerds/configs/commit/8d8881e1380d2eb438aa2e278473281115035e8b) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Optimize path(s) patterns to be ignored, based on existing dependencies.
+
+-   [#102](https://github.com/terminal-nerds/configs/pull/102) [`8b1ed66`](https://github.com/terminal-nerds/configs/commit/8b1ed66cb564cbc6296624d1509e91ddad680773) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Tweak `declaration-empty-line-before` rule to prevent conflicting with plugin `order`
+
 ## 0.4.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header -->
 
+## 0.6.0
+
+### Minor Changes
+
+-   [#100](https://github.com/terminal-nerds/configs/pull/100) [`8d8881e`](https://github.com/terminal-nerds/configs/commit/8d8881e1380d2eb438aa2e278473281115035e8b) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Optimize path(s) patterns to be ignored, based on existing dependencies.
+
 ## 0.5.0
 
 ### Minor Changes
