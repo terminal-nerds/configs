@@ -12,6 +12,7 @@ import pluginDiff from "./plugins/diff.js";
 import pluginImport from "./plugins/import.js";
 import pluginJSONC from "./plugins/jsonc.js";
 import pluginJSONSchemaValidator from "./plugins/json-schema-validator.js";
+import pluginJSXA11y from "./plugins/jsx-a11y.js";
 import pluginNode from "./plugins/node.js";
 import pluginSonarJS from "./plugins/sonarjs.js";
 import pluginReact from "./plugins/react.js";
@@ -35,6 +36,7 @@ const mergedConfig = createMergedConfig([
 	pluginImport,
 	pluginJSONC,
 	pluginJSONSchemaValidator,
+	(hasModule("react") || hasModule("preact")) && pluginJSXA11y,
 	pluginNode,
 	(hasModule("react") || hasModule("preact")) && pluginReact,
 	(hasModule("react") || hasModule("preact")) && pluginReactHooks,
