@@ -1,21 +1,37 @@
 import type { Config } from "stylelint";
 
+import { getIgnorePatterns } from "@workspace/helpers/configuration";
 import { hasModule } from "@workspace/helpers/module";
 
 import { extendTailwindAtRuleSelectors } from "./other/tailwind";
 
 const config: Partial<Config> = {
 	ignoreFiles: [
-		"**/node_modules",
-		"**/.git",
-		"**/.husky",
-		"**/.svelte-kit",
-		"**/.turbo",
-		"**/.vercel",
-		"**/build",
-		"**/dist",
 		// Unignore files starting with dot (usually configuration files)
 		"!.*",
+		// Ignore...
+		"**/node_modules",
+		"**/.git",
+		"**/build",
+		"**/dist",
+		...getIgnorePatterns([
+			{
+				module: "husky",
+				patterns: "**/.husky",
+			},
+			{
+				module: "@sveltejs/kit",
+				patterns: "**/.svelte-kit",
+			},
+			{
+				module: "turbo",
+				patterns: "**/.turbo",
+			},
+			{
+				module: "vercel",
+				patterns: "**/.vercel",
+			},
+		]),
 	],
 
 	rules: {
