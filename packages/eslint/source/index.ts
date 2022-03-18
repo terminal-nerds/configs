@@ -24,6 +24,7 @@ import pluginTypeScript from "./plugins/typescript.js";
 import pluginUnicorn from "./plugins/unicorn.js";
 import pluginYML from "./plugins/yml.js";
 
+import configNext from "./configs/next.js";
 import configPrettier from "./configs/prettier.js";
 
 const mergedConfig = createMergedConfig([
@@ -50,6 +51,7 @@ const mergedConfig = createMergedConfig([
 
 	// Configs
 	// NOTE: Must come as last!
+	hasModule("next") && configNext,
 	hasModule("prettier") && configPrettier,
 ]);
 
