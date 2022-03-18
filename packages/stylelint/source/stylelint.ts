@@ -24,6 +24,10 @@ const config: Partial<Config> = {
 			? [true, { ignoreAtRules: [...extendTailwindAtRuleSelectors()] }]
 			: undefined,
 
+		// RATIONALE:
+		// It doesn't conflict with `order` plugin
+		"declaration-empty-line-before": ["always", "first-nested"],
+
 		"selector-pseudo-class-no-unknown": [
 			true,
 			{ ignorePseudoClasses: ["local", "global"] },
