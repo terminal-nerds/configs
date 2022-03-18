@@ -5,45 +5,45 @@ importers:
   .:
     specifiers:
       '@changesets/changelog-github': 0.4.3
-      '@changesets/cli': 2.21.0
+      '@changesets/cli': 2.21.1
       '@terminal-nerds/eslint-config': workspace:*
       '@terminal-nerds/markdownlint-config': workspace:*
       '@terminal-nerds/prettier-config': workspace:*
       '@terminal-nerds/syncpack-config': workspace:*
       all-contributors-cli: 6.20.0
-      browserslist: 4.19.3
+      browserslist: 4.20.2
       concurrently: 7.0.0
       del-cli: 4.0.1
       depcheck: 1.4.3
       eslint: 8.10.0
       husky: 7.0.4
-      lint-staged: 12.3.4
+      lint-staged: 12.3.7
       markdownlint-cli: 0.31.1
       prettier: 2.5.1
       pretty-quick: 3.1.3
       syncpack: 6.2.0
-      turbo: 1.1.4
+      turbo: 1.1.6
       typescript: 4.6.2
     devDependencies:
       '@changesets/changelog-github': 0.4.3
-      '@changesets/cli': 2.21.0
+      '@changesets/cli': 2.21.1
       '@terminal-nerds/eslint-config': link:packages/eslint
       '@terminal-nerds/markdownlint-config': link:packages/markdownlint
       '@terminal-nerds/prettier-config': link:packages/prettier
       '@terminal-nerds/syncpack-config': link:packages/syncpack
       all-contributors-cli: 6.20.0
-      browserslist: 4.19.3
+      browserslist: 4.20.2
       concurrently: 7.0.0
       del-cli: 4.0.1
       depcheck: 1.4.3
       eslint: 8.10.0
       husky: 7.0.4
-      lint-staged: 12.3.4
+      lint-staged: 12.3.7
       markdownlint-cli: 0.31.1
       prettier: 2.5.1
       pretty-quick: 3.1.3_prettier@2.5.1
       syncpack: 6.2.0
-      turbo: 1.1.4
+      turbo: 1.1.6
       typescript: 4.6.2
 
   helpers:
@@ -52,7 +52,7 @@ importers:
       '@types/node': 17.0.18
       deepmerge-ts: 4.0.1
       read-pkg-up: 9.1.0
-      tsup: 5.11.13
+      tsup: 5.12.1
       type-fest: 2.12.0
       typescript: 4.6.2
     dependencies:
@@ -61,7 +61,7 @@ importers:
     devDependencies:
       '@terminal-nerds/typescript-config': link:../packages/typescript
       '@types/node': 17.0.18
-      tsup: 5.11.13_typescript@4.6.2
+      tsup: 5.12.1_typescript@4.6.2
       type-fest: 2.12.0
       typescript: 4.6.2
 
@@ -89,7 +89,7 @@ importers:
       eslint-plugin-unicorn: ^41.0.0
       eslint-plugin-yml: ^0.14.0
       jsonc-eslint-parser: ^2.1.0
-      tsup: 5.11.13
+      tsup: 5.12.1
       typescript: 4.6.2
       yaml-eslint-parser: ^0.5.0
     dependencies:
@@ -117,7 +117,7 @@ importers:
       '@types/eslint': 8.4.1
       '@types/node': 17.0.18
       '@workspace/helpers': link:../../helpers
-      tsup: 5.11.13_typescript@4.6.2
+      tsup: 5.12.1_typescript@4.6.2
       typescript: 4.6.2
 
   packages/markdownlint:
@@ -139,7 +139,7 @@ importers:
       '@types/prettier': 2.4.4
       '@workspace/helpers': workspace:*
       prettier-plugin-svelte: ^2.6.0
-      tsup: 5.11.13
+      tsup: 5.12.1
       typescript: 4.6.2
     dependencies:
       prettier-plugin-svelte: 2.6.0_prettier@2.5.1
@@ -148,7 +148,7 @@ importers:
       '@types/node': 17.0.18
       '@types/prettier': 2.4.4
       '@workspace/helpers': link:../../helpers
-      tsup: 5.11.13_typescript@4.6.2
+      tsup: 5.12.1_typescript@4.6.2
       typescript: 4.6.2
 
   packages/stylelint:
@@ -163,7 +163,7 @@ importers:
       stylelint-no-unsupported-browser-features: 5.0.3
       stylelint-order: 5.0.0
       stylelint-scss: 4.1.0
-      tsup: 5.11.13
+      tsup: 5.12.1
       typescript: 4.6.2
     dependencies:
       stylelint-config-prettier: 9.0.3_stylelint@14.5.3
@@ -177,19 +177,19 @@ importers:
       '@terminal-nerds/typescript-config': link:../typescript
       '@workspace/helpers': link:../../helpers
       stylelint: 14.5.3
-      tsup: 5.11.13_typescript@4.6.2
+      tsup: 5.12.1_typescript@4.6.2
       typescript: 4.6.2
 
   packages/syncpack:
     specifiers:
       '@terminal-nerds/typescript-config': workspace:*
       syncpack: 6.2.0
-      tsup: 5.11.13
+      tsup: 5.12.1
       typescript: 4.6.2
     devDependencies:
       '@terminal-nerds/typescript-config': link:../typescript
       syncpack: 6.2.0
-      tsup: 5.11.13_typescript@4.6.2
+      tsup: 5.12.1_typescript@4.6.2
       typescript: 4.6.2
 
   packages/typescript:
@@ -342,8 +342,8 @@ packages:
       semver: 5.7.1
     dev: true
 
-  /@changesets/assemble-release-plan/5.1.0:
-    resolution: {integrity: sha512-iYlqffCMhcwZ+6Cv8cimf10OBGYXQKufBI7J6htpRgCV2nT99RKXEjbYOtrXWKQqzu0XxOsk15apSEwjZN0JRw==}
+  /@changesets/assemble-release-plan/5.1.1:
+    resolution: {integrity: sha512-TQRZnK1sqYuoibJdSwpqE81rfDh0Xrkkr/M6bCQZ1ogGoRJNVbNYDWvNfkNvR4rEdRylri8cfKzffo/ruoy8QA==}
     dependencies:
       '@babel/runtime': 7.17.2
       '@changesets/errors': 0.1.4
@@ -369,18 +369,18 @@ packages:
       - encoding
     dev: true
 
-  /@changesets/cli/2.21.0:
-    resolution: {integrity: sha512-cJXRg28MmF9VbQrlwSjpY4AJA2xZUbXFCpQ3kFmX0IeppO7wknZ2QfocAhIqwM828t8d3R4Zpi5xnvJ/crIcQw==}
+  /@changesets/cli/2.21.1:
+    resolution: {integrity: sha512-4AJKo/UW0P217m2VHjiuhZy+CstLw54eu9I1fsY7tst76GeEN7mX0mVrTNEisR6CvOH7wLav3ITqvDcKVPbKsw==}
     hasBin: true
     dependencies:
       '@babel/runtime': 7.17.2
       '@changesets/apply-release-plan': 5.0.5
-      '@changesets/assemble-release-plan': 5.1.0
+      '@changesets/assemble-release-plan': 5.1.1
       '@changesets/changelog-git': 0.1.10
       '@changesets/config': 1.7.0
       '@changesets/errors': 0.1.4
       '@changesets/get-dependents-graph': 1.3.1
-      '@changesets/get-release-plan': 3.0.6
+      '@changesets/get-release-plan': 3.0.7
       '@changesets/git': 1.3.1
       '@changesets/logger': 0.0.5
       '@changesets/pre': 1.0.10
@@ -443,11 +443,11 @@ packages:
       - encoding
     dev: true
 
-  /@changesets/get-release-plan/3.0.6:
-    resolution: {integrity: sha512-HpPyr8y6xkihy3rONLZ6OtfgYq88NotidPAuS3nwMeZjLHiIVLyejR2+/5q717f6HKcrATxAjTwMAcjl7X/uzA==}
+  /@changesets/get-release-plan/3.0.7:
+    resolution: {integrity: sha512-zDp6RIEKvERIF4Osy8sJ5BzqTiiLMhPWBO02y6w3nzTQJ0VBMaTs4hhwImQ/54O9I34eUHR3D0DwmwGQ27ifaw==}
     dependencies:
       '@babel/runtime': 7.17.2
-      '@changesets/assemble-release-plan': 5.1.0
+      '@changesets/assemble-release-plan': 5.1.1
       '@changesets/config': 1.7.0
       '@changesets/pre': 1.0.10
       '@changesets/read': 0.5.4
@@ -1172,6 +1172,19 @@ packages:
       escalade: 3.1.1
       node-releases: 2.0.2
       picocolors: 1.0.0
+    dev: false
+
+  /browserslist/4.20.2:
+    resolution: {integrity: sha512-CQOBCqp/9pDvDbx3xfMi+86pr4KXIf2FDkTTdeuYw8OxS9t898LA1Khq57gtufFILXpfgsSx5woNgsBgvGjpsA==}
+    engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
+    hasBin: true
+    dependencies:
+      caniuse-lite: 1.0.30001317
+      electron-to-chromium: 1.4.86
+      escalade: 3.1.1
+      node-releases: 2.0.2
+      picocolors: 1.0.0
+    dev: true
 
   /buffer-alloc-unsafe/1.1.0:
     resolution: {integrity: sha512-TEM2iMIEQdJ2yjPJoSIsldnleVaAk1oW3DBVUykyOLsEsFmEc9kn+SFFPz+gl54KQNxlDnAwCXosOS9Okx2xAg==}
@@ -1274,6 +1287,11 @@ packages:
 
   /caniuse-lite/1.0.30001312:
     resolution: {integrity: sha512-Wiz1Psk2MEK0pX3rUzWaunLTZzqS2JYZFzNKqAiJGiuxIjRPLgV6+VDPOg6lQOUxmDwhTlh198JsTTi8Hzw6aQ==}
+    dev: false
+
+  /caniuse-lite/1.0.30001317:
+    resolution: {integrity: sha512-xIZLh8gBm4dqNX0gkzrBeyI86J2eCjWzYAs40q88smG844YIrN4tVQl/RhquHvKEKImWWFIVh1Lxe5n1G/N+GQ==}
+    dev: true
 
   /caw/2.0.1:
     resolution: {integrity: sha512-Cg8/ZSBEa8ZVY9HspcGUYaK63d/bN7rqS3CYCzEGUxuYv6UlmcjzDUz2fCFFHyTvUW5Pk0I+3hkA3iXlIj6guA==}
@@ -1888,6 +1906,11 @@ packages:
 
   /electron-to-chromium/1.4.73:
     resolution: {integrity: sha512-RlCffXkE/LliqfA5m29+dVDPB2r72y2D2egMMfIy3Le8ODrxjuZNVo4NIC2yPL01N4xb4nZQLwzi6Z5tGIGLnA==}
+    dev: false
+
+  /electron-to-chromium/1.4.86:
+    resolution: {integrity: sha512-EVTZ+igi8x63pK4bPuA95PXIs2b2Cowi3WQwI9f9qManLiZJOD1Lash1J3W4TvvcUCcIR4o/rgi9o8UicXSO+w==}
+    dev: true
 
   /emoji-regex/8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -3609,8 +3632,8 @@ packages:
       uc.micro: 1.0.6
     dev: true
 
-  /lint-staged/12.3.4:
-    resolution: {integrity: sha512-yv/iK4WwZ7/v0GtVkNb3R82pdL9M+ScpIbJLJNyCXkJ1FGaXvRCOg/SeL59SZtPpqZhE7BD6kPKFLIDUhDx2/w==}
+  /lint-staged/12.3.7:
+    resolution: {integrity: sha512-/S4D726e2GIsDVWIk1XGvheCaDm1SJRQp8efamZFWJxQMVEbOwSysp7xb49Oo73KYCdy97mIWinhlxcoNqIfIQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -3624,6 +3647,7 @@ packages:
       micromatch: 4.0.4
       normalize-path: 3.0.0
       object-inspect: 1.12.0
+      pidtree: 0.5.0
       string-argv: 0.3.1
       supports-color: 9.2.1
       yaml: 1.10.2
@@ -4400,6 +4424,12 @@ packages:
   /picomatch/2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
+
+  /pidtree/0.5.0:
+    resolution: {integrity: sha512-9nxspIM7OpZuhBxPg73Zvyq7j1QMPMPsGKTqRc2XOaFQauDvoNz9fM1Wdkjmeo7l9GXOZiRs97sPkuayl39wjA==}
+    engines: {node: '>=0.10'}
+    hasBin: true
+    dev: true
 
   /pify/2.3.0:
     resolution: {integrity: sha1-7RQaasBDqEnqWISY59yosVMw6Qw=}
@@ -5697,8 +5727,8 @@ packages:
     resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==}
     dev: true
 
-  /tsup/5.11.13_typescript@4.6.2:
-    resolution: {integrity: sha512-NVMK01gVmojZn7+iZwxRK1CzW2BIabaVMyEjs7Nm9lm4DrSf7IAqs2F3fg0vT7rH72x1cIBsW9U/TlWrCvHVQQ==}
+  /tsup/5.12.1_typescript@4.6.2:
+    resolution: {integrity: sha512-vI7E4T6+6n5guQ9UKUOkQmzd1n4V9abGK71lbnzJMLJspbkNby5zlwWvgvHafLdYCb1WXpjFuqqmNLjBA0Wz3g==}
     hasBin: true
     peerDependencies:
       typescript: ^4.1.0
@@ -5754,119 +5784,119 @@ packages:
     dependencies:
       safe-buffer: 5.2.1
 
-  /turbo-darwin-64/1.1.4:
-    resolution: {integrity: sha512-X10dAxqCMXnDjyN4K5mSvhol42kfAcJhI9NS7neIMD25kLcULYFe96Qk1XWEBxgCEBAmkf7UrysYSP+dQMPlGw==}
+  /turbo-darwin-64/1.1.6:
+    resolution: {integrity: sha512-xzl79T7mPKaIGhMBCAzpTvXkbFNZaMyeOMsNXxVT5dTY+d3FwLFfbqHIoG1dH745TbH6i67bxtt70lKdQa+qdQ==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-darwin-arm64/1.1.4:
-    resolution: {integrity: sha512-sl5TiMLNqWKvKpQsh6lg2sUXRTVt5lfRqnStVw/E/5BTm/KIBZTNWHmx0hO8/LwDmXenVtpiW7h7BbWewfPqTQ==}
+  /turbo-darwin-arm64/1.1.6:
+    resolution: {integrity: sha512-r0D+Kfwcaqec5h9Xa4T/VD6mWZ2LQr+zOEBBL6UA15htgel06B2eXiGdjRiw4i7ieV80tEBEDdz9tSWJBhAL/Q==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-freebsd-64/1.1.4:
-    resolution: {integrity: sha512-EKrAzIyVgmeQf0NpAcxYrhFEiBTrjO163dpiiHxwRiRxTYtcWgY+RJiWVQyIeG0yPx1Z+aLXvmPqf6HvC0T3hg==}
+  /turbo-freebsd-64/1.1.6:
+    resolution: {integrity: sha512-v5MJeRcyeCDF3La40TOub0+/OuGGFuLzlVHb4jYxthESbtLve1H23bDiL+4gCQgPYOsKMOvKQpuoMaKW2gxk7A==}
     cpu: [x64]
     os: [freebsd]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-freebsd-arm64/1.1.4:
-    resolution: {integrity: sha512-Vz3NSbc909eZU1DaS54vL1Z022OCG9wnrK7cB2e2ynMMdeYrIxAWnQeGVrYewQHYhwcCs7/6TgZCfhZKnG2nxQ==}
+  /turbo-freebsd-arm64/1.1.6:
+    resolution: {integrity: sha512-5gm3r+M5f/Idt/pggyCQ+MZSlaUdxUeb/4LtPohhWOoj4PYo1o5kwInaRlckr7uV36E4/npDvz9cDV96Pohejg==}
     cpu: [arm64]
     os: [freebsd]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-32/1.1.4:
-    resolution: {integrity: sha512-sACZPPv0wDpoTu1qRuOP0CYZS6HY8naySg9fTBP4kcRF5dLC4xPQZA46g8AUMkRFoBsyqA08t2whwV8gvYFoUg==}
+  /turbo-linux-32/1.1.6:
+    resolution: {integrity: sha512-dLc1Vd/LQP5n3NGLMf+cdaK99sMWvHdDvTUSrSwoYDy5fWFpUm0E12lAxRH3tikX2m7Kfcy2uY5xSJIuq5xzYQ==}
     cpu: [ia32]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-64/1.1.4:
-    resolution: {integrity: sha512-VTDSlTiF01P50JcyemWhGC1lx736gQMi3q6eLkGrt0t9HTtkl9FpQEypJDyRKZXTL+60ldriIwhivHmWm9cwQA==}
+  /turbo-linux-64/1.1.6:
+    resolution: {integrity: sha512-V4rb41yQUA+vPDgXc06oHmKbgrBUbwm09oRtjvmlIQU8zX8qujMPZIun8tGP4NuzErJXGzD3WDgj7VSsO23IIw==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-arm/1.1.4:
-    resolution: {integrity: sha512-XDVX6rzRr7AgqQvA4VwPVAHWxxWFI8SgEsNtbXD4sKiEFo9fTWqMvtRJqhx86Z/XHtCJF8VuU3yPS5puItdc9A==}
+  /turbo-linux-arm/1.1.6:
+    resolution: {integrity: sha512-zAaIa0+EhRYYkM51ruB1LCUqyeigK66A+KfXZ3Y9+aiKg7EYbDvuv+ReD4srLPKoIuAxR5dYlk5RVhSKejt2Cw==}
     cpu: [arm]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-arm64/1.1.4:
-    resolution: {integrity: sha512-rMSjwzWg9W8J/JwIBtp0+e8O8MP6Z5U4htMgk88zalhSYhAxGIhOCIQT8KsaKoc71Ee/wG1soeprZvqBf/B84Q==}
+  /turbo-linux-arm64/1.1.6:
+    resolution: {integrity: sha512-QsE7gow3WxWXKwNWJX4DIJys6xc6Up4/icjdTZCZbglPLwuG2UiUzjJ2+beXxVU4EmpQF6NwKubHCtrs8m8/kQ==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-mips64le/1.1.4:
-    resolution: {integrity: sha512-2VK+R9eUQU1xPJ+tGOsALQ6hsc8W7h9ohIumBYYs++SDazwaMQB7lsusXDasf6smEzD02KyUJuj0OvwzJjqq7Q==}
+  /turbo-linux-mips64le/1.1.6:
+    resolution: {integrity: sha512-098DB9daXoI6LRCkuOv1Pqim+H4wXZrFza9Xd7zJIel1WmxEgNsHqWpSH5Jn2J92LbkWl+tfN1+myw4+a4ESfw==}
     cpu: [mips64el]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-ppc64le/1.1.4:
-    resolution: {integrity: sha512-Ja9eiRxjioO1PV+TxRmTzsNvGGUQDdJnTLsG1YkKldkplecQdUfJRFdWksEZ7dZ+Hv44g4zvskJgUuCYlGckyA==}
+  /turbo-linux-ppc64le/1.1.6:
+    resolution: {integrity: sha512-U5A1mnsGM994h/1VT4FbsV/bb+I0fgvkY5/TTX7MfA9Iwt0SxsNlh+Jgofe1svPz0CKEe6Hl2WQSGHTlBPJb5Q==}
     cpu: [ppc64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-32/1.1.4:
-    resolution: {integrity: sha512-c8l91hmpsFcmZQJBsDlhLAxfaBl83DXSmDOQoE7YT60vOZZSkfPlNSsHm9tq+4WN54unFfqpNbO7r6z+6R7rfw==}
+  /turbo-windows-32/1.1.6:
+    resolution: {integrity: sha512-0C+/EI11j8ABtI6O2n+NYL2osDI6moo7YL8pqiWbNrdEGI2KbeCTVQpruUH+GONsMov06pR4BouL9UT2jSpG0g==}
     cpu: [ia32]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-64/1.1.4:
-    resolution: {integrity: sha512-DMitFYd5eIhZ2CyPUeds3JXDB/onXBdA2DEj9cxVXY7q2ZBE4rpoV0Ft/mh15LsQZhwap9ipgddbCn16OGFvzw==}
+  /turbo-windows-64/1.1.6:
+    resolution: {integrity: sha512-O2kC+7+zuMjFIi6mpU1qz+Bv27TcHkkCczcDNVU29G52pm5lwj7BZ+/gu+EPJSnF5VrgdA6Oru6KVXPRS1q+Cg==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo/1.1.4:
-    resolution: {integrity: sha512-kz08AV61hJeY9xuL4yQ27G2qks5LMAdvbd36GpcKvrh4Za+m0t+r2ijMjDvATp8uj4i6IlSV0t/G0/OMwkm6HA==}
+  /turbo/1.1.6:
+    resolution: {integrity: sha512-pZTc6Sb5MtK/X/qhiDSssc8AZWoUoYf14ZqYjvDWg/aEtqgwYorVJqfRcj4XOXOqtVZ3gO/91eXwdyh/q2aQHA==}
     hasBin: true
     requiresBuild: true
     optionalDependencies:
-      turbo-darwin-64: 1.1.4
-      turbo-darwin-arm64: 1.1.4
-      turbo-freebsd-64: 1.1.4
-      turbo-freebsd-arm64: 1.1.4
-      turbo-linux-32: 1.1.4
-      turbo-linux-64: 1.1.4
-      turbo-linux-arm: 1.1.4
-      turbo-linux-arm64: 1.1.4
-      turbo-linux-mips64le: 1.1.4
-      turbo-linux-ppc64le: 1.1.4
-      turbo-windows-32: 1.1.4
-      turbo-windows-64: 1.1.4
+      turbo-darwin-64: 1.1.6
+      turbo-darwin-arm64: 1.1.6
+      turbo-freebsd-64: 1.1.6
+      turbo-freebsd-arm64: 1.1.6
+      turbo-linux-32: 1.1.6
+      turbo-linux-64: 1.1.6
+      turbo-linux-arm: 1.1.6
+      turbo-linux-arm64: 1.1.6
+      turbo-linux-mips64le: 1.1.6
+      turbo-linux-ppc64le: 1.1.6
+      turbo-windows-32: 1.1.6
+      turbo-windows-64: 1.1.6
     dev: true
 
   /type-check/0.4.0:
