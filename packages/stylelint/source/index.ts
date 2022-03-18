@@ -9,7 +9,7 @@ import configStandardSCSS from "./configs/standard-scss.js";
 
 import pluginHighPerformanceAnimations from "./plugins/high-performance-animations.js";
 import pluginNoUnsupportedBrowserFeatures from "./plugins/no-unsupported-browser-features.js";
-import pluginOrder from "./plugins/order.js";
+import pluginOrder from "./plugins/order";
 import pluginSCSS from "./plugins/scss.js";
 
 const mergedConfig = createMergedConfig([
