@@ -53,7 +53,7 @@ importers:
       deepmerge-ts: 4.0.1
       read-pkg-up: 9.1.0
       tsup: 5.12.1
-      type-fest: 2.12.0
+      type-fest: 2.12.1
       typescript: 4.6.2
     dependencies:
       deepmerge-ts: 4.0.1
@@ -62,7 +62,7 @@ importers:
       '@terminal-nerds/typescript-config': link:../packages/typescript
       '@types/node': 17.0.18
       tsup: 5.12.1_typescript@4.6.2
-      type-fest: 2.12.0
+      type-fest: 2.12.1
       typescript: 4.6.2
 
   packages/eslint:
@@ -4900,7 +4900,7 @@ packages:
     dependencies:
       find-up: 6.3.0
       read-pkg: 7.1.0
-      type-fest: 2.12.0
+      type-fest: 2.12.1
     dev: false
 
   /read-pkg/5.2.0:
@@ -4929,7 +4929,7 @@ packages:
       '@types/normalize-package-data': 2.4.1
       normalize-package-data: 3.0.3
       parse-json: 5.2.0
-      type-fest: 2.12.0
+      type-fest: 2.12.1
     dev: false
 
   /read-yaml-file/1.1.0:
@@ -6183,8 +6183,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /type-fest/2.12.0:
-    resolution: {integrity: sha512-Qe5GRT+n/4GoqCNGGVp5Snapg1Omq3V7irBJB3EaKsp7HWDo5Gv2d/67gfNyV+d5EXD+x/RF5l1h4yJ7qNkcGA==}
+  /type-fest/2.12.1:
+    resolution: {integrity: sha512-AiknQSEqKVGDDjtZqeKrUoTlcj7FKhupmnVUgz6KoOKtvMwRGE6hUNJ/nVear+h7fnUPO1q/htSkYKb1pyntkQ==}
     engines: {node: '>=12.20'}
 
   /typescript/4.6.2:
