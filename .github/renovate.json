@@ -3,7 +3,7 @@
 	"extends": ["github>terminal-nerds/.github//.github/renovate"],
 	"packageRules": [
 		{
-			"groupName": "monorepo tools",
+			"groupName": "project monorepo tools",
 			"addLabels": ["🧰 monorepo"],
 			"packagePatterns": [
 				"all-contributors-cli",
@@ -29,7 +29,11 @@
 		{
 			"groupName": "ESLint dependencies",
 			"addLabels": ["📦 package:eslint-config"],
-			"packagePatterns": ["eslint"]
+			"packagePatterns": [
+				"eslint",
+				"@typescript-eslint",
+				"eslint-config-prettier"
+			]
 		},
 		{
 			"groupName": "markdownlint dependencies",
@@ -39,12 +43,16 @@
 		{
 			"groupName": "Prettier dependencies",
 			"addLabels": ["📦 package:prettier-config"],
-			"packagePatterns": ["prettier"]
+			"packagePatterns": ["prettier"],
+			"excludePackagePatterns": [
+				"eslint-config-prettier",
+				"stylelint-config-prettier"
+			]
 		},
 		{
 			"groupName": "Stylelint dependencies",
 			"addLabels": ["📦 package:stylelint-config"],
-			"packagePatterns": ["stylelint"]
+			"packagePatterns": ["stylelint", "stylelint-config-prettier"]
 		},
 		{
 			"groupName": "syncpack dependencies",
@@ -54,7 +62,13 @@
 		{
 			"groupName": "TypeScript dependencies",
 			"addLabels": ["📦 package:typescript-config"],
-			"packagePatterns": ["@types/node", "tslib", "typescript"]
+			"packagePatterns": ["@types/node", "tslib", "typescript"],
+			"excludePackagePatterns": ["@typescript-eslint"]
+		},
+		{
+			"groupName": "project prerequisities",
+			"addLabels": ["🧰 monorepo"],
+			"packagePatterns": ["node", "pnpm"]
 		}
 	]
 }
