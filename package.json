@@ -10,7 +10,7 @@
 		"node": ">=16",
 		"pnpm": ">=6"
 	},
-	"packageManager": "pnpm@6.32.1",
+	"packageManager": "pnpm@6.32.3",
 	"volta": {
 		"node": "16.14.0"
 	},
