@@ -9,9 +9,13 @@ const config = defineConfig({
 		"node/no-unpublished-import": ["off"],
 		"node/no-unpublished-require": ["off"],
 		"node/no-missing-import": ["off"],
+
+		// FIXME: TypeScript might have features not supported in a specific Node.js version.
+		// @see https://github.com/mysticatea/eslint-plugin-node/issues/250
 		"node/no-unsupported-features/es-syntax": [
-			"error",
-			{ ignores: ["modules"] },
+			"off",
+			// "error",
+			// { ignores: ["modules"] },
 		],
 	},
 	settings: {

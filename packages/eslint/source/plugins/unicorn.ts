@@ -4,10 +4,11 @@ import { defineConfig } from "eslint-define-config";
 const config = defineConfig({
 	extends: ["plugin:unicorn/recommended"],
 	rules: {
-		/**
-		 * RATIONALE: Use `ls-lint` instead
-		 */
+		// RATIONALE: Use `ls-lint` instead.
 		"unicorn/filename-case": ["off"],
+
+		// RATIONALE: Warn about it, is not an error.
+		"unicorn/prevent-abbreviations": ["warn"],
 	},
 });
 

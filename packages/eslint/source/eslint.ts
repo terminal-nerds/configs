@@ -37,7 +37,9 @@ const config = defineConfig({
 	extends: ["eslint:recommended"],
 
 	rules: {
-		// "indent": ["warn", "tab", { SwitchCase: 1 }],
+		// RATIONALE:
+		// Adjust to adapted code format and stop screaming on lines
+		// that aren't too long yet.
 		"max-len": [
 			"warn",
 			{
@@ -48,7 +50,14 @@ const config = defineConfig({
 				ignoreUrls: true,
 			},
 		],
+
+		// RATIONALE: Remind developers about possible logs that aren't
+		// supposed to be there.
 		"no-console": ["warn", { allow: ["debug"] }],
+
+		// RATIONALE:
+		// Obviously, the functions should have name as to explain
+		// their intention. Code readability.
 		"func-names": ["error", "as-needed"],
 	},
 });
