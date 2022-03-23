@@ -12,7 +12,7 @@
 	},
 	"packageManager": "pnpm@6.32.3",
 	"volta": {
-		"node": "16.14.0"
+		"node": "16.14.2"
 	},
 	"scripts": {
 		"build": "turbo run build -v",
