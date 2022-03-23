@@ -132,12 +132,12 @@ importers:
     specifiers:
       make-dir-cli: 3.0.0
       markdownlint: 0.25.1
-      node-jq: 2.1.0
+      node-jq: 2.2.0
       strip-json-comments-cli: 2.0.1
     devDependencies:
       make-dir-cli: 3.0.0
       markdownlint: 0.25.1
-      node-jq: 2.1.0
+      node-jq: 2.2.0
       strip-json-comments-cli: 2.0.1
 
   packages/prettier:
@@ -203,16 +203,24 @@ importers:
   packages/typescript:
     specifiers:
       make-dir-cli: 3.0.0
-      node-jq: 2.1.0
+      node-jq: 2.2.0
       strip-json-comments-cli: 2.0.1
       typescript: 4.6.2
     devDependencies:
       make-dir-cli: 3.0.0
-      node-jq: 2.1.0
+      node-jq: 2.2.0
       strip-json-comments-cli: 2.0.1
       typescript: 4.6.2
 
 packages:
+
+  /@arkweid/lefthook/0.7.7:
+    resolution: {integrity: sha512-Eq30OXKmjxIAIsTtbX2fcF3SNZIXS8yry1u8yty7PQFYRctx04rVlhOJCEB2UmfTh8T2vrOMC9IHHUvvo5zbaQ==}
+    cpu: [x64, arm64, ia32]
+    os: [darwin, linux, win32]
+    hasBin: true
+    requiresBuild: true
+    dev: true
 
   /@babel/code-frame/7.16.7:
     resolution: {integrity: sha512-iAXqUn8IIeBTNd72xsFlgaXHkMBMt6y4HJp1tIaK465CWLT/fG1aqB7ykr95gHHmlBdGbFeWWfyB4NJJ0nmeIg==}
@@ -632,41 +640,6 @@ packages:
   /@rushstack/eslint-patch/1.1.0:
     resolution: {integrity: sha512-JLo+Y592QzIE+q7Dl2pMUtt4q8SKYI5jDrZxrozEQxnGVOyYE+GWK9eLkwTaeN9DDctlaRAQ3TBmzZ1qdLE30A==}
     dev: false
-
-  /@semantic-release/changelog/6.0.1:
-    resolution: {integrity: sha512-FT+tAGdWHr0RCM3EpWegWnvXJ05LQtBkQUaQRIExONoXjVjLuOILNm4DEKNaV+GAQyJjbLRVs57ti//GypH6PA==}
-    engines: {node: '>=14.17'}
-    peerDependencies:
-      semantic-release: '>=18.0.0'
-    dependencies:
-      '@semantic-release/error': 3.0.0
-      aggregate-error: 3.1.0
-      fs-extra: 9.1.0
-      lodash: 4.17.21
-    dev: true
-
-  /@semantic-release/error/3.0.0:
-    resolution: {integrity: sha512-5hiM4Un+tpl4cKw3lV4UgzJj+SmfNIDCLLw0TepzQxz9ZGV5ixnqkzIVF+3tp0ZHgcMKE+VNGHJjEeyFG2dcSw==}
-    engines: {node: '>=14.17'}
-    dev: true
-
-  /@semantic-release/git/10.0.1:
-    resolution: {integrity: sha512-eWrx5KguUcU2wUPaO6sfvZI0wPafUKAMNC18aXY4EnNcrZL86dEmpNVnC9uMpGZkmZJ9EfCVJBQx4pV4EMGT1w==}
-    engines: {node: '>=14.17'}
-    peerDependencies:
-      semantic-release: '>=18.0.0'
-    dependencies:
-      '@semantic-release/error': 3.0.0
-      aggregate-error: 3.1.0
-      debug: 4.3.3
-      dir-glob: 3.0.1
-      execa: 5.1.1
-      lodash: 4.17.21
-      micromatch: 4.0.4
-      p-reduce: 2.1.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
 
   /@sideway/address/4.1.3:
     resolution: {integrity: sha512-8ncEUtmnTsMmL7z1YPB47kPUq7LpKWJNFPsRzHiIajGC5uXlWGn+AmkYPcHNl8S4tcEGx+cnORnNYaw2wvL+LQ==}
@@ -1212,11 +1185,6 @@ packages:
 
   /async/3.2.3:
     resolution: {integrity: sha512-spZRyzKL5l5BZQrr/6m/SqFdBN0q3OCI0f9rjfBzCMBIP4p75P620rR3gTmaksNOhmzgdxcaxdNfMy6anrbM0g==}
-    dev: true
-
-  /at-least-node/1.0.0:
-    resolution: {integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==}
-    engines: {node: '>= 4.0.0'}
     dev: true
 
   /axe-core/4.4.1:
@@ -3045,16 +3013,6 @@ packages:
       universalify: 0.1.2
     dev: true
 
-  /fs-extra/9.1.0:
-    resolution: {integrity: sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==}
-    engines: {node: '>=10'}
-    dependencies:
-      at-least-node: 1.0.0
-      graceful-fs: 4.2.9
-      jsonfile: 6.1.0
-      universalify: 2.0.0
-    dev: true
-
   /fs.realpath/1.0.0:
     resolution: {integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=}
 
@@ -4305,23 +4263,18 @@ packages:
       whatwg-url: 5.0.0
     dev: true
 
-  /node-jq/2.1.0:
-    resolution: {integrity: sha512-4wv/W8rejWADH1Jqz+O2hCaZEFTIBp7EOcYo7orFcK9t11DtVQBBQHrN89MiGenk5HzrAMrZluOo5PQ0fP/AoQ==}
+  /node-jq/2.2.0:
+    resolution: {integrity: sha512-5VraPhZbj5YV9IYcAyoGGXXmaXMMHMzb0oE6LWem80Fs4cMucQaNmnS3hZ6gsDaVSCXzRS4JBayeA7LLIjnAbg==}
     engines: {npm: '>=6.0.0'}
     requiresBuild: true
     dependencies:
-      '@semantic-release/changelog': 6.0.1
-      '@semantic-release/git': 10.0.1
+      '@arkweid/lefthook': 0.7.7
       bin-build: 3.0.0
       download: 8.0.0
       is-valid-path: 0.1.1
       joi: 17.6.0
-      strip-eof: 2.0.0
       strip-final-newline: 2.0.0
       tempfile: 3.0.0
-    transitivePeerDependencies:
-      - semantic-release
-      - supports-color
     dev: true
 
   /node-releases/2.0.2:
@@ -4588,11 +4541,6 @@ packages:
   /p-reduce/1.0.0:
     resolution: {integrity: sha1-GMKw3ZNqRpClKfgjH1ig/bakffo=}
     engines: {node: '>=4'}
-    dev: true
-
-  /p-reduce/2.1.0:
-    resolution: {integrity: sha512-2USApvnsutq8uoxZBGbbWM0JIYLiEMJ9RlaN7fAzVNb9OZN0SHjjTTfIcb667XynS5Y1VhwDJVDa72TnPzAYWw==}
-    engines: {node: '>=8'}
     dev: true
 
   /p-timeout/1.2.1:
@@ -5576,12 +5524,6 @@ packages:
   /strip-eof/1.0.0:
     resolution: {integrity: sha1-u0P/VZim6wXYm1n80SnJgzE2Br8=}
     engines: {node: '>=0.10.0'}
-    dev: true
-
-  /strip-eof/2.0.0:
-    resolution: {integrity: sha512-zLsJC+5P5hGu4Zmoq6I4uo6bTf1Nx6Z/vnZedxwnrcfkc38Vz6UiuqGOtS9bewFaoTCDErpqkV7v02htp9KEow==}
-    engines: {node: '>=6'}
-    deprecated: Renamed to `strip-final-newline` to better represent its functionality.
     dev: true
 
   /strip-final-newline/2.0.0:

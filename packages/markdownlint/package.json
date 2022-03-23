@@ -43,7 +43,7 @@
 	"devDependencies": {
 		"make-dir-cli": "3.0.0",
 		"markdownlint": "0.25.1",
-		"node-jq": "2.1.0",
+		"node-jq": "2.2.0",
 		"strip-json-comments-cli": "2.0.1"
 	}
 }
