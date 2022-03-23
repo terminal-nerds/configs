@@ -40,16 +40,22 @@ const config: Partial<Config> = {
 			? [true, { ignoreAtRules: [...extendTailwindAtRuleSelectors()] }]
 			: undefined,
 
-		// RATIONALE:
-		// It doesn't conflict with `order` plugin
-		"declaration-empty-line-before": ["always", "first-nested"],
+		// RATIONALE: Prevent conflicting with `order` plugin
+		"declaration-empty-line-before": undefined,
 
+		// RATIONALE: Allow CSS Modules
 		"selector-pseudo-class-no-unknown": [
 			true,
 			{ ignorePseudoClasses: ["local", "global"] },
 		],
 
+		// RATIONALE:
+		// Longhand properties are more readable and descriptive.
+		// Not everyone is a CSS Ninja. It's minifiers job to reduce it.
+		"declaration-block-no-redundant-longhand-properties": undefined,
+
 		"custom-property-pattern": "^([a-z][a-z0-9]*)([_-][a-z0-9]+)*$",
+		// RATIONALE: Enforce `snake_case`, for the easier destructuring with CSS modules
 		"selector-class-pattern": "^([a-z][a-z0-9]*)(_[a-z0-9]+)*$",
 	},
 };
