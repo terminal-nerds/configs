@@ -1,4 +1,4 @@
-# @terminal-nerds/prettier-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header -->
+# @terminal-nerds/prettier-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
 ## 0.2.1
 
