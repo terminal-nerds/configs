@@ -1,4 +1,27 @@
-# @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
+# @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style no-bare-urls -->
+
+## 0.7.0
+
+### Minor Changes
+
+-   [#109](https://github.com/terminal-nerds/configs/pull/109) [`0a7be31`](https://github.com/terminal-nerds/configs/commit/0a7be317f5747c0a1a658b96824597a294324cd6) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update ESLint dependencies:
+
+    -   `@rushstack/eslint-patch` - `1.1.0` -> `1.1.1`
+    -   `@typescript-eslint/eslint-plugin` - `5.10.2` -> `5.16.0`
+    -   `@typescript-eslint/parser` - `5.10.2` -> `5.16.0`
+    -   `eslint-config-prettier` - `8.3.0` -> `8.5.0`
+    -   `eslint-define-config` - `1.2.4` -> `1.3.0`
+    -   `eslint-plugin-json-schema-validator` - `2.1.48` -> `2.3.19`
+    -   `eslint-plugin-jsonc` - `2.1.0` -> `2.2.1`
+    -   `eslint-plugin-regexp` - `1.5.1` -> `1.6.0`
+    -   `eslint-plugin-storybook` - `0.5.6` -> `0.5.7`
+    -   `eslint-plugin-svelte3` - `3.4.0` -> `3.4.1`
+    -   `eslint-plugin-unicorn` - `41.0.0` -> `41.0.1`
+
+*   [#108](https://github.com/terminal-nerds/configs/pull/108) [`5a3ac63`](https://github.com/terminal-nerds/configs/commit/5a3ac635a9de02fe5eeeeb7155d8a5c091d09dc2) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Tweak rules:
+
+    -   `unicorn/prevent-abbreviations` - change to a warning as this is an suggestion, not a bug.
+    -   `node/no-unsupported-features/es-syntax` - temporarily disable, due to a bug - https://github.com/mysticatea/eslint-plugin-node/issues/250
 
 ## 0.6.0
 
