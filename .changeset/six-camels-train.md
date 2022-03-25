@@ -2,8 +2,6 @@
 "@terminal-nerds/eslint-config": minor
 ---
 
-# What is the purpose of this Pull Request?
-
 ✨ Added support for [Testing Library] by adding new plugins and extending their
 recommended configurations:
 

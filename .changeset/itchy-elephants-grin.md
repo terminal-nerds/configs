@@ -3,3 +3,4 @@
 ---
 
 🔧 Add `jsx-runtime` to the extended configs of `eslint-plugin-react` and setup
+automatic detection of react version.
