@@ -29,11 +29,12 @@
 		{
 			"groupName": "ESLint dependencies",
 			"addLabels": ["📦 package:eslint-config"],
-			"packagePatterns": [
-				"eslint",
-				"^@typescript-eslint/*",
+			"matchPackageNames": [
+				"@typescript-eslint/eslint-parser",
+				"@typescript-eslint/eslint-plugin",
 				"eslint-config-prettier"
-			]
+			],
+			"packagePatterns": ["eslint"]
 		},
 		{
 			"groupName": "markdownlint dependencies",
@@ -62,8 +63,11 @@
 		{
 			"groupName": "TypeScript dependencies",
 			"addLabels": ["📦 package:typescript-config"],
-			"packagePatterns": ["@types/node", "tslib", "typescript"],
-			"excludePackagePatterns": ["^@typescript-eslint/*"]
+			"matchPackageNames": ["@types/node", "tslib", "typescript"],
+			"excludePackageNames": [
+				"@typescript-eslint/eslint-parser",
+				"@typescript-eslint/eslint-plugin"
+			]
 		},
 		{
 			"groupName": "project prerequisities",
