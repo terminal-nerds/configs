@@ -109,3 +109,6 @@ build
 
 # Turbo cache folder
 .turbo
+
+# Snyk cache
+.dccache
