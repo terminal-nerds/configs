@@ -6,7 +6,7 @@
 		"access": "public"
 	},
 	"name": "@terminal-nerds/eslint-config",
-	"version": "0.7.0",
+	"version": "0.8.0",
 	"description": "Terminal Nerds extendable configuration for ESLint.",
 	"keywords": [
 		"config",
