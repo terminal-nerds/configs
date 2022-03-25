@@ -108,6 +108,7 @@ _conditionally_.
 | [eslint-plugin-compat]                | ![eslint-plugin-compat version badge]                | -                                                                            |
 | [eslint-plugin-diff]                  | ![eslint-plugin-diff version badge]                  | Set one of environment variables: `CI` or `CONTINUOUS_INTEGRATION` to `true` |
 | [eslint-plugin-import]                | ![eslint-plugin-import version badge]                | -                                                                            |
+| [eslint-plugin-jest-dom]              | ![eslint-plugin-jest-dom version badge]              | -                                                                            |
 | [eslint-plugin-json-schema-validator] | ![eslint-plugin-json-schema-validator version badge] | -                                                                            |
 | [eslint-plugin-jsonc]                 | ![eslint-plugin-jsonc version badge]                 | -                                                                            |
 | [eslint-plugin-jsx-a11y]              | ![eslint-plugin-jsx-a11y version badge]              | `react` or `preact` as dependency                                            |
@@ -118,6 +119,7 @@ _conditionally_.
 | [eslint-plugin-sonarjs]               | ![eslint-plugin-sonarjs version badge]               | -                                                                            |
 | [eslint-plugin-storybook]             | ![eslint-plugin-storybook version badge]             | `sb` as dependency                                                           |
 | [eslint-plugin-svelte3]               | ![eslint-plugin-svelte3 version badge]               | `svelte` as dependency                                                       |
+| [eslint-plugin-testing-library]       | ![eslint-plugin-testing-library version badge]       | `@testing-library/jest-dom` as dependency                                    |
 | [eslint-plugin-unicorn]               | ![eslint-plugin-unicorn version badge]               | -                                                                            |
 | [eslint-plugin-yml]                   | ![eslint-plugin-yml version badge]                   | -                                                                            |
 
@@ -129,6 +131,8 @@ _conditionally_.
 [eslint-plugin-diff version badge]: https://img.shields.io/npm/v/eslint-plugin-diff?logo=npm&style=flat-square
 [eslint-plugin-import]: https://github.com/import-js/eslint-plugin-import
 [eslint-plugin-import version badge]: https://img.shields.io/npm/v/eslint-plugin-import?logo=npm&style=flat-square
+[eslint-plugin-jest-dom]: https://github.com/jest-community/eslint-plugin-jest-dom
+[eslint-plugin-jest-dom version badge]: https://img.shields.io/npm/v/eslint-plugin-jest-dom?logo=npm&style=flat-square
 [eslint-plugin-json-schema-validator]: https://github.com/ota-meshi/eslint-plugin-json-schema-validator
 [eslint-plugin-json-schema-validator version badge]: https://img.shields.io/npm/v/eslint-plugin-json-schema-validator?logo=npm&style=flat-square
 [eslint-plugin-jsonc]: https://github.com/ota-meshi/eslint-plugin-jsonc
@@ -149,6 +153,8 @@ _conditionally_.
 [eslint-plugin-storybook version badge]: https://img.shields.io/npm/v/eslint-plugin-storybook?logo=npm&style=flat-square
 [eslint-plugin-svelte3]: https://github.com/sveltejs/eslint-plugin-svelte3
 [eslint-plugin-svelte3 version badge]: https://img.shields.io/npm/v/eslint-plugin-svelte3?logo=npm&style=flat-square
+[eslint-plugin-testing-library]: https://github.com/testing-library/eslint-plugin-testing-library
+[eslint-plugin-testing-library version badge]: https://img.shields.io/npm/v/eslint-plugin-testing-library?logo=npm&style=flat-square
 [eslint-plugin-unicorn]: https://github.com/sindresorhus/eslint-plugin-unicorn
 [eslint-plugin-unicorn version badge]: https://img.shields.io/npm/v/eslint-plugin-unicorn?logo=npm&style=flat-square
 [eslint-plugin-yml]: https://github.com/ota-meshi/eslint-plugin-yml
