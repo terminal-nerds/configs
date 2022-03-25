@@ -31,7 +31,7 @@
 			"addLabels": ["📦 package:eslint-config"],
 			"packagePatterns": [
 				"eslint",
-				"@typescript-eslint",
+				"^@typescript-eslint/*",
 				"eslint-config-prettier"
 			]
 		},
@@ -63,7 +63,7 @@
 			"groupName": "TypeScript dependencies",
 			"addLabels": ["📦 package:typescript-config"],
 			"packagePatterns": ["@types/node", "tslib", "typescript"],
-			"excludePackagePatterns": ["@typescript-eslint"]
+			"excludePackagePatterns": ["^@typescript-eslint/*"]
 		},
 		{
 			"groupName": "project prerequisities",
