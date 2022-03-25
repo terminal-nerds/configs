@@ -10,6 +10,8 @@ import eslint from "./eslint.js";
 import pluginCompat from "./plugins/compat.js";
 import pluginDiff from "./plugins/diff.js";
 import pluginImport from "./plugins/import.js";
+import pluginJest from "./plugins/jest.js";
+import pluginJestFormatting from "./plugins/jest-formatting.js";
 import pluginJSONC from "./plugins/jsonc.js";
 import pluginJSONSchemaValidator from "./plugins/json-schema-validator.js";
 import pluginJSXA11y from "./plugins/jsx-a11y.js";
@@ -35,6 +37,8 @@ const mergedConfig = createMergedConfig([
 	pluginCompat,
 	isContinuousIntegration() && pluginDiff,
 	pluginImport,
+	(hasModule("jest") || hasModule("vitest")) && pluginJest,
+	(hasModule("jest") || hasModule("vitest")) && pluginJestFormatting,
 	pluginJSONC,
 	pluginJSONSchemaValidator,
 	(hasModule("react") || hasModule("preact")) && pluginJSXA11y,
