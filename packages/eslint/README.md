@@ -108,6 +108,8 @@ _conditionally_.
 | [eslint-plugin-compat]                | ![eslint-plugin-compat version badge]                | -                                                                            |
 | [eslint-plugin-diff]                  | ![eslint-plugin-diff version badge]                  | Set one of environment variables: `CI` or `CONTINUOUS_INTEGRATION` to `true` |
 | [eslint-plugin-import]                | ![eslint-plugin-import version badge]                | -                                                                            |
+| [eslint-plugin-jest]                  | ![eslint-plugin-jest version badge]                  | `jest` or `vitest` as dependency                                             |
+| [eslint-plugin-jest-formatting]       | ![eslint-plugin-jest-formatting version badge]       | `jest` or `vitest` as dependency                                             |
 | [eslint-plugin-json-schema-validator] | ![eslint-plugin-json-schema-validator version badge] | -                                                                            |
 | [eslint-plugin-jsonc]                 | ![eslint-plugin-jsonc version badge]                 | -                                                                            |
 | [eslint-plugin-jsx-a11y]              | ![eslint-plugin-jsx-a11y version badge]              | `react` or `preact` as dependency                                            |
@@ -129,6 +131,10 @@ _conditionally_.
 [eslint-plugin-diff version badge]: https://img.shields.io/npm/v/eslint-plugin-diff?logo=npm&style=flat-square
 [eslint-plugin-import]: https://github.com/import-js/eslint-plugin-import
 [eslint-plugin-import version badge]: https://img.shields.io/npm/v/eslint-plugin-import?logo=npm&style=flat-square
+[eslint-plugin-jest]: https://github.com/jest-community/eslint-plugin-jest
+[eslint-plugin-jest version badge]: https://img.shields.io/npm/v/eslint-plugin-jest?logo=npm&style=flat-square
+[eslint-plugin-jest-formatting]: https://github.com/dangreenisrael/eslint-plugin-jest-formatting
+[eslint-plugin-jest-formatting version badge]: https://img.shields.io/npm/v/eslint-plugin-jest-formatting?logo=npm&style=flat-square
 [eslint-plugin-json-schema-validator]: https://github.com/ota-meshi/eslint-plugin-json-schema-validator
 [eslint-plugin-json-schema-validator version badge]: https://img.shields.io/npm/v/eslint-plugin-json-schema-validator?logo=npm&style=flat-square
 [eslint-plugin-jsonc]: https://github.com/ota-meshi/eslint-plugin-jsonc
