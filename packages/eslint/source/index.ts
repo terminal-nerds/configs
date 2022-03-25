@@ -10,6 +10,7 @@ import eslint from "./eslint.js";
 import pluginCompat from "./plugins/compat.js";
 import pluginDiff from "./plugins/diff.js";
 import pluginImport from "./plugins/import.js";
+import pluginJestDOM from "./plugins/jest-dom.js";
 import pluginJSONC from "./plugins/jsonc.js";
 import pluginJSONSchemaValidator from "./plugins/json-schema-validator.js";
 import pluginJSXA11y from "./plugins/jsx-a11y.js";
@@ -20,6 +21,7 @@ import pluginReactHooks from "./plugins/react-hooks.js";
 import pluginRegexp from "./plugins/regexp.js";
 import pluginStorybook from "./plugins/storybook.js";
 import pluginSvelte3 from "./plugins/svelte3.js";
+import pluginTestingLibrary from "./plugins/testing-library.js";
 import pluginTypeScript from "./plugins/typescript.js";
 import pluginUnicorn from "./plugins/unicorn.js";
 import pluginYML from "./plugins/yml.js";
@@ -35,6 +37,7 @@ const mergedConfig = createMergedConfig([
 	pluginCompat,
 	isContinuousIntegration() && pluginDiff,
 	pluginImport,
+	hasModule("@testing-library/jest-dom") && pluginJestDOM,
 	pluginJSONC,
 	pluginJSONSchemaValidator,
 	(hasModule("react") || hasModule("preact")) && pluginJSXA11y,
@@ -45,6 +48,7 @@ const mergedConfig = createMergedConfig([
 	pluginSonarJS,
 	hasModule("sb") && pluginStorybook,
 	hasModule("svelte") && pluginSvelte3,
+	hasModule("@testing-library/jest-dom") && pluginTestingLibrary,
 	hasModule("typescript") && pluginTypeScript,
 	pluginUnicorn,
 	pluginYML,
