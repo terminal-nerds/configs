@@ -91,6 +91,7 @@ importers:
       eslint-plugin-react-hooks: 4.4.0
       eslint-plugin-regexp: 1.6.0
       eslint-plugin-sonarjs: 0.13.0
+      eslint-plugin-sql: 2.1.0
       eslint-plugin-storybook: 0.5.7
       eslint-plugin-svelte3: 3.4.1
       eslint-plugin-testing-library: 5.2.1
@@ -121,6 +122,7 @@ importers:
       eslint-plugin-react-hooks: 4.4.0_eslint@8.12.0
       eslint-plugin-regexp: 1.6.0_eslint@8.12.0
       eslint-plugin-sonarjs: 0.13.0_eslint@8.12.0
+      eslint-plugin-sql: 2.1.0_eslint@8.12.0
       eslint-plugin-storybook: 0.5.7_eslint@8.12.0+typescript@4.6.3
       eslint-plugin-svelte3: 3.4.1_eslint@8.12.0
       eslint-plugin-testing-library: 5.2.1_eslint@8.12.0+typescript@4.6.3
@@ -1321,6 +1323,11 @@ packages:
     resolution: {integrity: sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==}
     engines: {node: '>=8'}
     dev: true
+
+  /astring/1.8.1:
+    resolution: {integrity: sha512-Aj3mbwVzj7Vve4I/v2JYOPFkCGM2YS7OqQTNSxmUR+LECRpokuPgAYghePgr6SALDo5bD5DlfbSaYjOzGJZOLQ==}
+    hasBin: true
+    dev: false
 
   /async/3.2.3:
     resolution: {integrity: sha512-spZRyzKL5l5BZQrr/6m/SqFdBN0q3OCI0f9rjfBzCMBIP4p75P620rR3gTmaksNOhmzgdxcaxdNfMy6anrbM0g==}
@@ -2812,6 +2819,22 @@ packages:
       eslint: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
       eslint: 8.12.0
+    dev: false
+
+  /eslint-plugin-sql/2.1.0_eslint@8.12.0:
+    resolution: {integrity: sha512-UPapPPhK1ADgQDTogpApiSAh6bYjrt2daYkKCdApHm5KPbq9qR4ca4TPyYod06bAnLgswbri6Z9gEPAy0R+B1A==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      eslint: '>=8.1.0'
+    dependencies:
+      astring: 1.8.1
+      debug: 4.3.4
+      eslint: 8.12.0
+      lodash: 4.17.21
+      pg-formatter: 1.3.0
+      sql-parse: 0.1.5
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /eslint-plugin-storybook/0.5.7_eslint@8.12.0+typescript@4.6.3:
@@ -4927,6 +4950,15 @@ packages:
     resolution: {integrity: sha1-elfrVQpng/kRUzH89GY9XI4AelA=}
     dev: true
 
+  /pg-formatter/1.3.0:
+    resolution: {integrity: sha512-y1kNdgD+QWzhmYCm91z/k7VGyx6BekQg6ww/krFEEhw1IIB4zEk2xaB0pmueTcc59YFetpiHIKECgHEuw6gyvg==}
+    engines: {node: '>=10.0'}
+    hasBin: true
+    dependencies:
+      shell-quote: 1.7.3
+      yargs: 17.4.0
+    dev: false
+
   /picocolors/1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
 
@@ -5589,6 +5621,10 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /shell-quote/1.7.3:
+    resolution: {integrity: sha512-Vpfqwm4EnqGdlsBFNmHhxhElJYrdfcxPThu+ryKS5J8L/fhAwLazFZtq+S+TWZ9ANj2piSQLGj6NQg+lKPmxrw==}
+    dev: false
+
   /side-channel/1.0.4:
     resolution: {integrity: sha512-q5XPytqFEIKHkGdiMIrY10mvLRvnQh42/+GoBlFW3b2LXLE2xxJpZFdm94we0BaoV3RwJyGqg5wS7epxTv0Zvw==}
     dependencies:
@@ -5729,6 +5765,11 @@ packages:
   /sprintf-js/1.0.3:
     resolution: {integrity: sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=}
     dev: true
+
+  /sql-parse/0.1.5:
+    resolution: {integrity: sha1-vyHbeIOXuyZ+WMJuLcg6xdoSXb0=}
+    engines: {node: '>=0.10'}
+    dev: false
 
   /stream-transform/2.1.3:
     resolution: {integrity: sha512-9GHUiM5hMiCi6Y03jD2ARC1ettBXkQBoQAe7nJsPknnI0ow10aXjTnew8QtYQmLjzn974BnmWEAJgCY6ZP1DeQ==}
@@ -6715,6 +6756,11 @@ packages:
     resolution: {integrity: sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==}
     engines: {node: '>=10'}
 
+  /yargs-parser/21.0.1:
+    resolution: {integrity: sha512-9BK1jFpLzJROCI5TzwZL/TU4gqjK5xiHV/RfWLOahrjAko/e4DJkRDZQXfvqAsiZzzYhgAzbgz6lg48jcm4GLg==}
+    engines: {node: '>=12'}
+    dev: false
+
   /yargs/15.4.1:
     resolution: {integrity: sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==}
     engines: {node: '>=8'}
@@ -6743,6 +6789,19 @@ packages:
       string-width: 4.2.3
       y18n: 5.0.8
       yargs-parser: 20.2.9
+
+  /yargs/17.4.0:
+    resolution: {integrity: sha512-WJudfrk81yWFSOkZYpAZx4Nt7V4xp7S/uJkX0CnxovMCt1wCE8LNftPpNuF9X/u9gN5nsD7ycYtRcDf2pL3UiA==}
+    engines: {node: '>=12'}
+    dependencies:
+      cliui: 7.0.4
+      escalade: 3.1.1
+      get-caller-file: 2.0.5
+      require-directory: 2.1.1
+      string-width: 4.2.3
+      y18n: 5.0.8
+      yargs-parser: 21.0.1
+    dev: false
 
   /yauzl/2.10.0:
     resolution: {integrity: sha1-x+sXyT4RLLEIb6bY5R+wZnt5pfk=}
