@@ -12,6 +12,7 @@
 				"del-cli",
 				"husky",
 				"lint-staged",
+				"node-jq",
 				"tsup",
 				"turbo"
 			]
@@ -72,6 +73,7 @@
 		{
 			"groupName": "project prerequisities",
 			"addLabels": ["🧰 monorepo"],
+			"excludePackageNames": ["node-jq"],
 			"packagePatterns": ["node", "pnpm"]
 		}
 	]
