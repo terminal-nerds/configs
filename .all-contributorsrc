@@ -52,6 +52,16 @@
         "security",
         "tool"
       ]
+    },
+    {
+      "login": "Codesee-io",
+      "name": "CodeSee",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59343751?v=4",
+      "profile": "https://github.com/Codesee-io",
+      "contributions": [
+        "review",
+        "tool"
+      ]
     }
   ],
   "contributorsPerLine": 7
