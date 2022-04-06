@@ -46,7 +46,7 @@
 		"@terminal-nerds/syncpack-config": "workspace:*",
 		"all-contributors-cli": "6.20.0",
 		"browserslist": "4.20.2",
-		"concurrently": "7.0.0",
+		"concurrently": "7.1.0",
 		"del-cli": "4.0.1",
 		"depcheck": "1.4.3",
 		"eslint": "8.11.0",

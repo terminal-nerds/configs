@@ -12,7 +12,7 @@ importers:
       '@terminal-nerds/syncpack-config': workspace:*
       all-contributors-cli: 6.20.0
       browserslist: 4.20.2
-      concurrently: 7.0.0
+      concurrently: 7.1.0
       del-cli: 4.0.1
       depcheck: 1.4.3
       eslint: 8.11.0
@@ -33,7 +33,7 @@ importers:
       '@terminal-nerds/syncpack-config': link:packages/syncpack
       all-contributors-cli: 6.20.0
       browserslist: 4.20.2
-      concurrently: 7.0.0
+      concurrently: 7.1.0
       del-cli: 4.0.1
       depcheck: 1.4.3
       eslint: 8.11.0
@@ -1618,8 +1618,8 @@ packages:
   /concat-map/0.0.1:
     resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
 
-  /concurrently/7.0.0:
-    resolution: {integrity: sha512-WKM7PUsI8wyXpF80H+zjHP32fsgsHNQfPLw/e70Z5dYkV7hF+rf8q3D+ScWJIEr57CpkO3OWBko6hwhQLPR8Pw==}
+  /concurrently/7.1.0:
+    resolution: {integrity: sha512-Bz0tMlYKZRUDqJlNiF/OImojMB9ruKUz6GCfmhFnSapXgPe+3xzY4byqoKG9tUZ7L2PGEUjfLPOLfIX3labnmw==}
     engines: {node: ^12.20.0 || ^14.13.0 || >=16.0.0}
     hasBin: true
     dependencies:
