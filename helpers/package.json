@@ -35,7 +35,7 @@
 		"lint:types": "tsc --noEmit"
 	},
 	"dependencies": {
-		"deepmerge-ts": "4.0.1",
+		"deepmerge-ts": "4.0.2",
 		"read-pkg-up": "9.1.0"
 	},
 	"devDependencies": {
