@@ -21,6 +21,7 @@ import pluginSonarJS from "./plugins/sonarjs.js";
 import pluginReact from "./plugins/react.js";
 import pluginReactHooks from "./plugins/react-hooks.js";
 import pluginRegexp from "./plugins/regexp.js";
+import pluginSQL from "./plugins/sql.js";
 import pluginStorybook from "./plugins/storybook.js";
 import pluginSvelte3 from "./plugins/svelte3.js";
 import pluginTestingLibrary from "./plugins/testing-library.js";
@@ -50,6 +51,7 @@ const mergedConfig = createMergedConfig([
 	(hasModule("react") || hasModule("preact")) && pluginReactHooks,
 	pluginRegexp,
 	pluginSonarJS,
+	pluginSQL,
 	hasModule("sb") && pluginStorybook,
 	hasModule("svelte") && pluginSvelte3,
 	hasModule("@testing-library/jest-dom") && pluginTestingLibrary,

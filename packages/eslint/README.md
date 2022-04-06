@@ -119,6 +119,7 @@ _conditionally_.
 | [eslint-plugin-react-hooks]           | ![eslint-plugin-react-hooks version badge]           | `react` or `preact` as dependency                                            |
 | [eslint-plugin-regexp]                | ![eslint-plugin-regexp version badge]                | -                                                                            |
 | [eslint-plugin-sonarjs]               | ![eslint-plugin-sonarjs version badge]               | -                                                                            |
+| [eslint-plugin-sql]                   | ![eslint-plugin-sql version badge]                   | -                                                                            |
 | [eslint-plugin-storybook]             | ![eslint-plugin-storybook version badge]             | `sb` as dependency                                                           |
 | [eslint-plugin-svelte3]               | ![eslint-plugin-svelte3 version badge]               | `svelte` as dependency                                                       |
 | [eslint-plugin-testing-library]       | ![eslint-plugin-testing-library version badge]       | `@testing-library/jest-dom` as dependency                                    |
@@ -155,6 +156,8 @@ _conditionally_.
 [eslint-plugin-regexp version badge]: https://img.shields.io/npm/v/eslint-plugin-regexp?logo=npm&style=flat-square
 [eslint-plugin-sonarjs]: https://github.com/SonarSource/eslint-plugin-sonarjs
 [eslint-plugin-sonarjs version badge]: https://img.shields.io/npm/v/eslint-plugin-sonarjs?logo=npm&style=flat-square
+[eslint-plugin-sql]: https://github.com/gajus/eslint-plugin-sql
+[eslint-plugin-sql version badge]: https://img.shields.io/npm/v/eslint-plugin-sql?logo=npm&style=flat-square
 [eslint-plugin-storybook]: https://github.com/storybookjs/eslint-plugin-storybook
 [eslint-plugin-storybook version badge]: https://img.shields.io/npm/v/eslint-plugin-storybook?logo=npm&style=flat-square
 [eslint-plugin-svelte3]: https://github.com/sveltejs/eslint-plugin-svelte3
