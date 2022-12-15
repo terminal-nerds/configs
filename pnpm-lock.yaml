@@ -50,19 +50,19 @@ importers:
     specifiers:
       '@terminal-nerds/typescript-config': workspace:*
       '@types/node': 18.11.13
-      deepmerge-ts: 4.0.3
+      deepmerge-ts: 4.2.2
       read-pkg-up: 9.1.0
       tsup: 5.12.4
-      type-fest: 2.12.2
+      type-fest: 2.19.0
       typescript: 4.6.3
     dependencies:
-      deepmerge-ts: 4.0.3
+      deepmerge-ts: 4.2.2
       read-pkg-up: 9.1.0
     devDependencies:
       '@terminal-nerds/typescript-config': link:../packages/typescript
       '@types/node': 18.11.13
       tsup: 5.12.4_typescript@4.6.3
-      type-fest: 2.12.2
+      type-fest: 2.19.0
       typescript: 4.6.3
 
   packages/eslint:
@@ -1991,11 +1991,9 @@ packages:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
     dev: true
 
-  /deepmerge-ts/4.0.3:
-    resolution: {integrity: sha512-kRBBqKdfhdZ+LEBkyE0Y7Yu7Lm277HOKpVmpecaEzzD3Krne9uO13Wqi7sNJ9S4FDmCgwjiWj8UhXo5OgjOIwg==}
+  /deepmerge-ts/4.2.2:
+    resolution: {integrity: sha512-Ka3Kb21tiWjvQvS9U+1Dx+aqFAHsdTnMdYptLTmC2VAmDFMugWMY1e15aTODstipmCun8iNuqeSfcx6rsUUk0Q==}
     engines: {node: '>=12.4.0'}
-    dependencies:
-      is-plain-object: 5.0.0
     dev: false
 
   /defaults/1.0.3:
@@ -5277,7 +5275,7 @@ packages:
     dependencies:
       find-up: 6.3.0
       read-pkg: 7.1.0
-      type-fest: 2.12.2
+      type-fest: 2.19.0
     dev: false
 
   /read-pkg/5.2.0:
@@ -5306,7 +5304,7 @@ packages:
       '@types/normalize-package-data': 2.4.1
       normalize-package-data: 3.0.3
       parse-json: 5.2.0
-      type-fest: 2.12.2
+      type-fest: 2.19.0
     dev: false
 
   /read-yaml-file/1.1.0:
@@ -6549,8 +6547,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /type-fest/2.12.2:
-    resolution: {integrity: sha512-qt6ylCGpLjZ7AaODxbpyBZSs9fCI9SkL3Z9q2oxMBQhs/uyY+VD8jHA8ULCGmWQJlBgqvO3EJeAngOHD8zQCrQ==}
+  /type-fest/2.19.0:
+    resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
     engines: {node: '>=12.20'}
 
   /typescript/4.6.3:
