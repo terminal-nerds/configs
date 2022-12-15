@@ -10,9 +10,9 @@
 		"node": ">=16",
 		"pnpm": ">=6"
 	},
-	"packageManager": "pnpm@6.32.4",
+	"packageManager": "pnpm@7.16.1",
 	"volta": {
-		"node": "16.14.2"
+		"node": "18.12.1"
 	},
 	"scripts": {
 		"build": "turbo run build -v",
