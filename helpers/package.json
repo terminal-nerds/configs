@@ -35,14 +35,14 @@
 		"lint:types": "tsc --noEmit"
 	},
 	"dependencies": {
-		"deepmerge-ts": "4.0.3",
+		"deepmerge-ts": "4.2.2",
 		"read-pkg-up": "9.1.0"
 	},
 	"devDependencies": {
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"@types/node": "18.11.13",
 		"tsup": "5.12.4",
-		"type-fest": "2.12.2",
+		"type-fest": "2.19.0",
 		"typescript": "4.6.3"
 	}
 }
