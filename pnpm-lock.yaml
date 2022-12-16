@@ -143,12 +143,12 @@ importers:
       make-dir-cli: 3.0.0
       markdownlint: 0.25.1
       node-jq: 2.3.4
-      strip-json-comments-cli: 2.0.1
+      strip-json-comments-cli: 2.0.2
     devDependencies:
       make-dir-cli: 3.0.0
       markdownlint: 0.25.1
       node-jq: 2.3.4
-      strip-json-comments-cli: 2.0.1
+      strip-json-comments-cli: 2.0.2
 
   packages/prettier:
     specifiers:
@@ -214,12 +214,12 @@ importers:
     specifiers:
       make-dir-cli: 3.0.0
       node-jq: 2.3.4
-      strip-json-comments-cli: 2.0.1
+      strip-json-comments-cli: 2.0.2
       typescript: 4.6.3
     devDependencies:
       make-dir-cli: 3.0.0
       node-jq: 2.3.4
-      strip-json-comments-cli: 2.0.1
+      strip-json-comments-cli: 2.0.2
       typescript: 4.6.3
 
 packages:
@@ -1307,7 +1307,7 @@ packages:
     dev: false
 
   /arrify/1.0.1:
-    resolution: {integrity: sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=}
+    resolution: {integrity: sha512-3CYzex9M9FGQjCGMGyi6/31c8GJbgb0qGyrx5HWxPd0aCwh4cB2YjMb2Xf9UuoogrMrlO9cTqnB5rI5GHZTcUA==}
     engines: {node: '>=0.10.0'}
 
   /arrify/2.0.1:
@@ -1910,7 +1910,7 @@ packages:
     dev: true
 
   /decamelize-keys/1.1.0:
-    resolution: {integrity: sha1-0XGoeTMlKAfrPLYdwcFEXQeN8tk=}
+    resolution: {integrity: sha512-ocLWuYzRPoS9bfiSdDd3cxvrzovVMZnRDVEzAs+hWIVXGDbHxWMECij2OBuyB/An0FFW/nLuq6Kv1i/YC5Qfzg==}
     engines: {node: '>=0.10.0'}
     dependencies:
       decamelize: 1.2.0
@@ -3765,7 +3765,7 @@ packages:
     dev: true
 
   /is-arrayish/0.2.1:
-    resolution: {integrity: sha1-d8mYQFJ6qOyxqLppe4BkWnqSap0=}
+    resolution: {integrity: sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg==}
 
   /is-bigint/1.0.4:
     resolution: {integrity: sha512-zB9CruMamjym81i2JZ3UMn54PKGsQzsJeo6xvN3HJJ4CAsQNB6iRutp2To77OfCNuoxspsIhzaPoO1zyCEhFOg==}
@@ -5922,8 +5922,8 @@ packages:
       min-indent: 1.0.1
     dev: true
 
-  /strip-json-comments-cli/2.0.1:
-    resolution: {integrity: sha512-Q6pXrJk6FpkeloEfzh9iarttK/lWeEPc0y2cwELQiciVdL5u55sf0Bfga2owwmwzV35ZmDlTRb4q2hnfpIXXVw==}
+  /strip-json-comments-cli/2.0.2:
+    resolution: {integrity: sha512-zQQfnFR0AFhAa7OxS/91rbxTN5ePiiVbb9QB8ferWv2WIwLCWxkwTG6cdiXSfLmiXgor07vL/bXPtej+VMH2Iw==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
