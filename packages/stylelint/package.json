@@ -55,7 +55,7 @@
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"@workspace/helpers": "workspace:*",
 		"stylelint": "14.6.1",
-		"tsup": "5.12.4",
+		"tsup": "5.12.9",
 		"typescript": "4.6.3"
 	}
 }
