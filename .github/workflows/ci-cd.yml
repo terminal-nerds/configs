@@ -110,13 +110,13 @@ jobs:
             run: pnpm syncpack list-mismatches
 
     security_codeql:
-        if: github.ref_name == "main"
+        if: github.ref_name == 'main'
         name: Security / CodeQL
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/codeql.yml
         uses: terminal-nerds/.github/.github/workflows/codeql.yml@main
 
     security_git-guardian:
-        if: github.ref_name == "main"
+        if: github.ref_name == 'main'
         name: Security / Git Guardian
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/git-guardian.yml
         uses: terminal-nerds/.github/.github/workflows/git-guardian.yml@main
@@ -124,7 +124,7 @@ jobs:
             GITGUARDIAN_API_KEY: ${{ secrets.GITGUARDIAN_API_KEY }}
 
     security_snyk:
-        if: github.ref_name == "main"
+        if: github.ref_name == 'main'
         name: Security / Snyk
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/snyk.yml
         uses: terminal-nerds/.github/.github/workflows/snyk.yml@main
