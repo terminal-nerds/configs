@@ -44,7 +44,7 @@
 	"devDependencies": {
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"syncpack": "6.2.0",
-		"tsup": "5.12.9",
+		"tsup": "6.5.0",
 		"typescript": "4.9.4"
 	}
 }
