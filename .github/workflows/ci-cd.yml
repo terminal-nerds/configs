@@ -110,19 +110,22 @@ jobs:
             run: pnpm syncpack list-mismatches
 
     security_codeql:
-        name: Security
+        if: github.event.pull_request.merged == true
+        name: Security / CodeQL
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/codeql.yml
         uses: terminal-nerds/.github/.github/workflows/codeql.yml@main
 
     security_git-guardian:
-        name: Security
+        if: github.event.pull_request.merged == true
+        name: Security / Git Guardian
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/git-guardian.yml
         uses: terminal-nerds/.github/.github/workflows/git-guardian.yml@main
         secrets:
             GITGUARDIAN_API_KEY: ${{ secrets.GITGUARDIAN_API_KEY }}
 
     security_snyk:
-        name: Security
+        if: github.event.pull_request.merged == true
+        name: Security / Snyk
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/snyk.yml
         uses: terminal-nerds/.github/.github/workflows/snyk.yml@main
         secrets:
