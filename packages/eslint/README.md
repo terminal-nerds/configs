@@ -104,6 +104,7 @@ _conditionally_.
 
 | Plugin                                | Version                                              | Loading condition(s)                                                         |
 | ------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------------------------------- |
+| [@emotion/eslint-plugin]              | ![@emotion/eslint-plugin version badge]              | `@emotion/css` or `@emotion/react` as dependency                             |
 | [@typescript-eslint/eslint-plugin]    | ![@typescript-eslint/eslint-plugin version badge]    | `typescript` as dependency                                                   |
 | [eslint-plugin-compat]                | ![eslint-plugin-compat version badge]                | -                                                                            |
 | [eslint-plugin-diff]                  | ![eslint-plugin-diff version badge]                  | Set one of environment variables: `CI` or `CONTINUOUS_INTEGRATION` to `true` |
@@ -118,14 +119,18 @@ _conditionally_.
 | [eslint-plugin-react]                 | ![eslint-plugin-react version badge]                 | `react` or `preact` as dependency                                            |
 | [eslint-plugin-react-hooks]           | ![eslint-plugin-react-hooks version badge]           | `react` or `preact` as dependency                                            |
 | [eslint-plugin-regexp]                | ![eslint-plugin-regexp version badge]                | -                                                                            |
+| [eslint-plugin-simple-import-sort]    | ![eslint-plugin-simple-import-sort version badge]    | -                                                                            |
 | [eslint-plugin-sonarjs]               | ![eslint-plugin-sonarjs version badge]               | -                                                                            |
 | [eslint-plugin-sql]                   | ![eslint-plugin-sql version badge]                   | -                                                                            |
 | [eslint-plugin-storybook]             | ![eslint-plugin-storybook version badge]             | `sb` as dependency                                                           |
 | [eslint-plugin-svelte3]               | ![eslint-plugin-svelte3 version badge]               | `svelte` as dependency                                                       |
+| [eslint-plugin-tailwindcss]           | ![eslint-plugin-tailwindcss version badge]           | `tailwindcss` as dependency                                                  |
 | [eslint-plugin-testing-library]       | ![eslint-plugin-testing-library version badge]       | `@testing-library/jest-dom` as dependency                                    |
 | [eslint-plugin-unicorn]               | ![eslint-plugin-unicorn version badge]               | -                                                                            |
 | [eslint-plugin-yml]                   | ![eslint-plugin-yml version badge]                   | -                                                                            |
 
+[@emotion/eslint-plugin]: https://github.com/emotion-js/emotion/tree/main/packages/eslint-plugin
+[@emotion/eslint-plugin version badge]: https://img.shields.io/npm/v/@emotion/eslint-plugin?logo=npm&style=flat-square
 [@typescript-eslint/eslint-plugin]: https://github.com/typescript-eslint/typescript-eslint
 [@typescript-eslint/eslint-plugin version badge]: https://img.shields.io/npm/v/@typescript-eslint/eslint-plugin?logo=npm&style=flat-square
 [eslint-plugin-compat]: https://github.com/amilajack/eslint-plugin-compat
@@ -154,6 +159,8 @@ _conditionally_.
 [eslint-plugin-react-hooks version badge]: https://img.shields.io/npm/v/eslint-plugin-react-hooks?logo=npm&style=flat-square
 [eslint-plugin-regexp]: https://github.com/ota-meshi/eslint-plugin-regexp
 [eslint-plugin-regexp version badge]: https://img.shields.io/npm/v/eslint-plugin-regexp?logo=npm&style=flat-square
+[eslint-plugin-simple-import-sort]: https://github.com/lydell/eslint-plugin-simple-import-sort
+[eslint-plugin-simple-import-sort version badge]: https://img.shields.io/npm/v/eslint-plugin-simple-import-sort?logo=npm&style=flat-square
 [eslint-plugin-sonarjs]: https://github.com/SonarSource/eslint-plugin-sonarjs
 [eslint-plugin-sonarjs version badge]: https://img.shields.io/npm/v/eslint-plugin-sonarjs?logo=npm&style=flat-square
 [eslint-plugin-sql]: https://github.com/gajus/eslint-plugin-sql
@@ -162,6 +169,8 @@ _conditionally_.
 [eslint-plugin-storybook version badge]: https://img.shields.io/npm/v/eslint-plugin-storybook?logo=npm&style=flat-square
 [eslint-plugin-svelte3]: https://github.com/sveltejs/eslint-plugin-svelte3
 [eslint-plugin-svelte3 version badge]: https://img.shields.io/npm/v/eslint-plugin-svelte3?logo=npm&style=flat-square
+[eslint-plugin-tailwindcss]: https://github.com/francoismassart/eslint-plugin-tailwindcss
+[eslint-plugin-tailwindcss version badge]: https://img.shields.io/npm/v/eslint-plugin-tailwindcss?logo=npm&style=flat-square
 [eslint-plugin-testing-library]: https://github.com/testing-library/eslint-plugin-testing-library
 [eslint-plugin-testing-library version badge]: https://img.shields.io/npm/v/eslint-plugin-testing-library?logo=npm&style=flat-square
 [eslint-plugin-unicorn]: https://github.com/sindresorhus/eslint-plugin-unicorn
@@ -178,7 +187,7 @@ _conditionally_.
 🔐 For more information, please refer to the [Security section] at the root of the
 [terminal-nerds/configs] monorepo.
 
-[workflow security badge]: https://img.shields.io/github/workflow/status/terminal-nerds/configs/Maintenance?label=Security&logo=github&style=for-the-badge
+[workflow security badge]: https://img.shields.io/github/actions/workflow/status/terminal-nerds/configs/maintenance.yml?label=Security&logo=github&style=for-the-badge&branch=main
 [security section]: https://github.com/terminal-nerds/configs#security
 [security policy]: https://github.com/terminal-nerds/configs/security/policy
 

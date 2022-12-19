@@ -19,6 +19,13 @@ const config = defineConfig({
 	rules: {
 		// @see: https://github.com/import-js/eslint-plugin-import/issues/1868
 		"import/no-unresolved": ["off"], // Doesn't support ESM yet
+		/**
+		 * RATIONALE:
+		 * Combine with: https://github.com/lydell/eslint-plugin-simple-import-sort
+		 */
+		"import/first": ["error"],
+		"import/newline-after-import": ["error"],
+		"import/no-duplicates": ["error"],
 	},
 });
 
