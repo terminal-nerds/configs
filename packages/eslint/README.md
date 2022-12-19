@@ -104,6 +104,7 @@ _conditionally_.
 
 | Plugin                                | Version                                              | Loading condition(s)                                                         |
 | ------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------------------------------- |
+| [@emotion/eslint-plugin]              | ![@emotion/eslint-plugin version badge]              | `@emotion/css` or `@emotion/react` as dependency                             |
 | [@typescript-eslint/eslint-plugin]    | ![@typescript-eslint/eslint-plugin version badge]    | `typescript` as dependency                                                   |
 | [eslint-plugin-compat]                | ![eslint-plugin-compat version badge]                | -                                                                            |
 | [eslint-plugin-diff]                  | ![eslint-plugin-diff version badge]                  | Set one of environment variables: `CI` or `CONTINUOUS_INTEGRATION` to `true` |
@@ -127,6 +128,8 @@ _conditionally_.
 | [eslint-plugin-unicorn]               | ![eslint-plugin-unicorn version badge]               | -                                                                            |
 | [eslint-plugin-yml]                   | ![eslint-plugin-yml version badge]                   | -                                                                            |
 
+[@emotion/eslint-plugin]: https://github.com/emotion-js/emotion/tree/main/packages/eslint-plugin
+[@emotion/eslint-plugin version badge]: https://img.shields.io/npm/v/@emotion/eslint-plugin?logo=npm&style=flat-square
 [@typescript-eslint/eslint-plugin]: https://github.com/typescript-eslint/typescript-eslint
 [@typescript-eslint/eslint-plugin version badge]: https://img.shields.io/npm/v/@typescript-eslint/eslint-plugin?logo=npm&style=flat-square
 [eslint-plugin-compat]: https://github.com/amilajack/eslint-plugin-compat
