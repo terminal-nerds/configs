@@ -118,6 +118,7 @@ _conditionally_.
 | [eslint-plugin-react]                 | ![eslint-plugin-react version badge]                 | `react` or `preact` as dependency                                            |
 | [eslint-plugin-react-hooks]           | ![eslint-plugin-react-hooks version badge]           | `react` or `preact` as dependency                                            |
 | [eslint-plugin-regexp]                | ![eslint-plugin-regexp version badge]                | -                                                                            |
+| [eslint-plugin-simple-import-sort]    | ![eslint-plugin-simple-import-sort version badge]    | -                                                                            |
 | [eslint-plugin-sonarjs]               | ![eslint-plugin-sonarjs version badge]               | -                                                                            |
 | [eslint-plugin-sql]                   | ![eslint-plugin-sql version badge]                   | -                                                                            |
 | [eslint-plugin-storybook]             | ![eslint-plugin-storybook version badge]             | `sb` as dependency                                                           |
@@ -154,6 +155,8 @@ _conditionally_.
 [eslint-plugin-react-hooks version badge]: https://img.shields.io/npm/v/eslint-plugin-react-hooks?logo=npm&style=flat-square
 [eslint-plugin-regexp]: https://github.com/ota-meshi/eslint-plugin-regexp
 [eslint-plugin-regexp version badge]: https://img.shields.io/npm/v/eslint-plugin-regexp?logo=npm&style=flat-square
+[eslint-plugin-simple-import-sort]: https://github.com/lydell/eslint-plugin-simple-import-sort
+[eslint-plugin-simple-import-sort version badge]: https://img.shields.io/npm/v/eslint-plugin-simple-import-sort?logo=npm&style=flat-square
 [eslint-plugin-sonarjs]: https://github.com/SonarSource/eslint-plugin-sonarjs
 [eslint-plugin-sonarjs version badge]: https://img.shields.io/npm/v/eslint-plugin-sonarjs?logo=npm&style=flat-square
 [eslint-plugin-sql]: https://github.com/gajus/eslint-plugin-sql
