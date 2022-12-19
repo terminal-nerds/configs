@@ -49,7 +49,7 @@ importers:
   helpers:
     specifiers:
       '@terminal-nerds/typescript-config': workspace:*
-      '@types/node': 18.11.14
+      '@types/node': 18.11.16
       deepmerge-ts: 4.2.2
       read-pkg-up: 9.1.0
       tsup: 6.5.0
@@ -60,7 +60,7 @@ importers:
       read-pkg-up: 9.1.0
     devDependencies:
       '@terminal-nerds/typescript-config': link:../packages/typescript
-      '@types/node': 18.11.14
+      '@types/node': 18.11.16
       tsup: 6.5.0_typescript@4.9.4
       type-fest: 2.19.0
       typescript: 4.9.4
@@ -70,7 +70,7 @@ importers:
       '@emotion/eslint-plugin': ^11.10.0
       '@terminal-nerds/typescript-config': workspace:*
       '@types/eslint': 8.4.10
-      '@types/node': 18.11.14
+      '@types/node': 18.11.16
       '@typescript-eslint/eslint-plugin': 5.46.1
       '@typescript-eslint/parser': 5.46.1
       '@workspace/helpers': workspace:*
@@ -137,7 +137,7 @@ importers:
     devDependencies:
       '@terminal-nerds/typescript-config': link:../typescript
       '@types/eslint': 8.4.10
-      '@types/node': 18.11.14
+      '@types/node': 18.11.16
       '@workspace/helpers': link:../../helpers
       tsup: 6.5.0_typescript@4.9.4
       typescript: 4.9.4
@@ -157,7 +157,7 @@ importers:
   packages/prettier:
     specifiers:
       '@terminal-nerds/typescript-config': workspace:*
-      '@types/node': 18.11.14
+      '@types/node': 18.11.16
       '@types/prettier': 2.7.1
       '@workspace/helpers': workspace:*
       prettier-plugin-svelte: ^2.6.0
@@ -167,7 +167,7 @@ importers:
       prettier-plugin-svelte: 2.6.0
     devDependencies:
       '@terminal-nerds/typescript-config': link:../typescript
-      '@types/node': 18.11.14
+      '@types/node': 18.11.16
       '@types/prettier': 2.7.1
       '@workspace/helpers': link:../../helpers
       tsup: 6.5.0_typescript@4.9.4
@@ -788,7 +788,7 @@ packages:
   /@types/keyv/3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 18.11.14
+      '@types/node': 18.11.16
     dev: true
 
   /@types/minimatch/3.0.5:
@@ -801,8 +801,8 @@ packages:
     resolution: {integrity: sha512-cPjLXj8d6anFPzFvOPxS3fvly3Shm5nTfl6g8X5smexixbuGUf7hfr21J5tX9JW+UPStp/5P5R8qrKL5IyVJ+A==}
     dev: true
 
-  /@types/node/18.11.14:
-    resolution: {integrity: sha512-0KXV57tENYmmJMl+FekeW9V3O/rlcqGQQJ/hNh9r8pKIj304pskWuEd8fCyNT86g/TpO0gcOTiLzsHLEURFMIQ==}
+  /@types/node/18.11.16:
+    resolution: {integrity: sha512-6T7P5bDkRhqRxrQtwj7vru+bWTpelgtcETAZEUSdq0YISKz8WKdoBukQLYQQ6DFHvU9JRsbFq0JH5C51X2ZdnA==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -818,7 +818,7 @@ packages:
   /@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 18.11.14
+      '@types/node': 18.11.16
     dev: true
 
   /@types/semver/6.2.3:

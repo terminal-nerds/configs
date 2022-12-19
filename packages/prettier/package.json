@@ -47,7 +47,7 @@
 	},
 	"devDependencies": {
 		"@terminal-nerds/typescript-config": "workspace:*",
-		"@types/node": "18.11.14",
+		"@types/node": "18.11.16",
 		"@types/prettier": "2.7.1",
 		"@workspace/helpers": "workspace:*",
 		"tsup": "6.5.0",
