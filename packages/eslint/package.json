@@ -68,6 +68,7 @@
 		"eslint-plugin-sql": "2.3.2",
 		"eslint-plugin-storybook": "0.6.8",
 		"eslint-plugin-svelte3": "4.0.0",
+		"eslint-plugin-tailwindcss": "^3.7.1",
 		"eslint-plugin-testing-library": "5.9.1",
 		"eslint-plugin-unicorn": "45.0.2",
 		"eslint-plugin-yml": "1.3.0",
