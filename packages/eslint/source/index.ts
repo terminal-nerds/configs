@@ -1,6 +1,3 @@
-// This is a workaround for https://github.com/eslint/eslint/issues/3458
-import "@rushstack/eslint-patch/modern-module-resolution";
-
 import { createMergedConfig } from "@workspace/helpers/configuration";
 import { isContinuousIntegration } from "@workspace/helpers/environment";
 import { hasModule } from "@workspace/helpers/module";

@@ -68,7 +68,6 @@ importers:
   packages/eslint:
     specifiers:
       '@emotion/eslint-plugin': ^11.10.0
-      '@rushstack/eslint-patch': 1.2.0
       '@terminal-nerds/typescript-config': workspace:*
       '@types/eslint': 8.4.10
       '@types/node': 18.11.14
@@ -105,7 +104,6 @@ importers:
       yaml-eslint-parser: 1.1.0
     dependencies:
       '@emotion/eslint-plugin': 11.10.0
-      '@rushstack/eslint-patch': 1.2.0
       '@typescript-eslint/eslint-plugin': 5.46.1_vsejax3imjndpzuqzew26kbdzm
       '@typescript-eslint/parser': 5.46.1_typescript@4.9.4
       eslint-config-next: 13.0.7_typescript@4.9.4
