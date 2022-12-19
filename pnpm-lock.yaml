@@ -67,6 +67,7 @@ importers:
 
   packages/eslint:
     specifiers:
+      '@emotion/eslint-plugin': ^11.10.0
       '@rushstack/eslint-patch': 1.2.0
       '@terminal-nerds/typescript-config': workspace:*
       '@types/eslint': 8.4.10
@@ -103,6 +104,7 @@ importers:
       typescript: 4.9.4
       yaml-eslint-parser: 1.1.0
     dependencies:
+      '@emotion/eslint-plugin': 11.10.0
       '@rushstack/eslint-patch': 1.2.0
       '@typescript-eslint/eslint-plugin': 5.46.1_vsejax3imjndpzuqzew26kbdzm
       '@typescript-eslint/parser': 5.46.1_typescript@4.9.4
@@ -566,6 +568,13 @@ packages:
       human-id: 1.0.2
       prettier: 2.8.1
     dev: true
+
+  /@emotion/eslint-plugin/11.10.0:
+    resolution: {integrity: sha512-nWpuoQQrzI9aM9fgn+Pbb0pOau4BhheXyVqHcOYKFq46uSuSR2ivZaDwwCJKI6ScA8Pm7OcoOpwdRH2iisf9cg==}
+    engines: {node: '>=6'}
+    peerDependencies:
+      eslint: 6 || 7 || 8
+    dev: false
 
   /@esbuild/android-arm/0.15.18:
     resolution: {integrity: sha512-5GT+kcs2WVGjVs7+boataCkO5Fg0y4kCjzkB5bAip7H4jfnOS3dA6KPiww9W1OEKTKeAcUVhdZGvgI65OXmUnw==}
