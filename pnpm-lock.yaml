@@ -80,7 +80,7 @@ importers:
       eslint-plugin-compat: 4.0.2
       eslint-plugin-diff: 2.0.1
       eslint-plugin-import: 2.26.0
-      eslint-plugin-jest: 27.1.6
+      eslint-plugin-jest: 27.1.7
       eslint-plugin-jest-dom: 4.0.3
       eslint-plugin-jest-formatting: 3.1.0
       eslint-plugin-json-schema-validator: 4.0.3
@@ -111,7 +111,7 @@ importers:
       eslint-plugin-compat: 4.0.2
       eslint-plugin-diff: 2.0.1
       eslint-plugin-import: 2.26.0_vsegbuzippuchjs2ejjecpnsvu
-      eslint-plugin-jest: 27.1.6_oetdkbx6ztgkmxwmfvctdpdnwa
+      eslint-plugin-jest: 27.1.7_oetdkbx6ztgkmxwmfvctdpdnwa
       eslint-plugin-jest-dom: 4.0.3
       eslint-plugin-jest-formatting: 3.1.0
       eslint-plugin-json-schema-validator: 4.0.3
@@ -2631,8 +2631,8 @@ packages:
       eslint: '>=0.8.0'
     dev: false
 
-  /eslint-plugin-jest/27.1.6_oetdkbx6ztgkmxwmfvctdpdnwa:
-    resolution: {integrity: sha512-XA7RFLSrlQF9IGtAmhddkUkBuICCTuryfOTfCSWcZHiHb69OilIH05oozH2XA6CEOtztnOd0vgXyvxZodkxGjg==}
+  /eslint-plugin-jest/27.1.7_oetdkbx6ztgkmxwmfvctdpdnwa:
+    resolution: {integrity: sha512-0QVzf+og4YI1Qr3UoprkqqhezAZjFffdi62b0IurkCXMqPtRW84/UT4CKsYT80h/D82LA9avjO/80Ou1LdgbaQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': ^5.0.0
