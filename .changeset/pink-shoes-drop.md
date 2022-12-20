@@ -2,4 +2,8 @@
 "@terminal-nerds/eslint-config": minor
 ---
 
-✨ Add plugin & config `eslint-plugin-simple-import`
+✨ Add plugins & configs:
+
+-   `@emotion/eslint-plugin`
+-   `eslint-plugin-simple-import`
+-   `eslint-plugin-tailwindcss`
