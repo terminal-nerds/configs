@@ -39,11 +39,11 @@
 		"lint:types": "tsc --noEmit"
 	},
 	"peerDependencies": {
-		"syncpack": "6.2.0"
+		"syncpack": "8.4.11"
 	},
 	"devDependencies": {
 		"@terminal-nerds/typescript-config": "workspace:*",
-		"syncpack": "6.2.0",
+		"syncpack": "8.4.11",
 		"tsup": "6.5.0",
 		"typescript": "4.9.4"
 	}
