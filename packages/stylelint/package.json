@@ -52,7 +52,7 @@
 		"stylelint-scss": "4.3.0"
 	},
 	"devDependencies": {
-		"@terminal-nerds/typescript-config": "workspace:*",
+		"@terminal-nerds/typescript-config": "0.3.1",
 		"@workspace/helpers": "workspace:*",
 		"stylelint": "14.16.0",
 		"tsup": "6.5.0",
