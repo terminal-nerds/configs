@@ -39,7 +39,7 @@ plugins dependencies, etc.
 [node.js version support badge]: https://img.shields.io/node/v-lts/@terminal-nerds/eslint-config?style=for-the-badge&logo=nodedotjs
 [dependencies badge]: https://img.shields.io/librariesio/github/terminal-nerds/configs?style=for-the-badge
 [dependencies url]: https://libraries.io/github/terminal-nerds/configs "Dependencies status"
-[workflow ci-cd badge]: https://img.shields.io/github/workflow/status/terminal-nerds/configs/CI%20&%20CD?label=CI%20%26%20CD&logo=github&style=for-the-badge
+[workflow ci-cd badge]: https://img.shields.io/github/actions/workflow/status/terminal-nerds/configs/ci-cd.yml?label=CI%20%26%20CD&logo=github&style=for-the-badge&branch=main
 
 📦 The following packages are available under the [packages/](./packages)
 directory. Each of them has its own instructions _(in the `README.md` files)_
@@ -126,7 +126,7 @@ remember about one thing:
 > We are all ears, but please, **DO NOT create a GitHub issue for reporting a
 > vulnerability**.
 
-[workflow maintenance badge]: https://img.shields.io/github/workflow/status/terminal-nerds/configs/Maintenance?label=Maintenance&logo=github&style=for-the-badge
+[workflow mainetnance badge]: https://img.shields.io/github/actions/workflow/status/terminal-nerds/configs/maintenance.yml?label=Security&logo=github&style=for-the-badge&branch=main
 [lgtm alerts badge]: https://img.shields.io/lgtm/alerts/github/terminal-nerds/configs?style=for-the-badge&logo=lgtm
 [lgtm report]: https://lgtm.com/projects/g/terminal-nerds/configs
 [snyk vulnerabilities badge]: https://img.shields.io/snyk/vulnerabilities/github/terminal-nerds/configs?logo=snyk&style=for-the-badge
@@ -149,7 +149,7 @@ involved.
 [all-contributors]: https://github.com/all-contributors/all-contributors
 [contributing]: ./.github/CONTRIBUTING.md
 [contributors badge]: https://img.shields.io/github/contributors/terminal-nerds/configs?style=for-the-badge
-[contributors url]: #contributors
+[contributors url]: /#contributors
 
 ### Project contributors
 
@@ -169,8 +169,6 @@ involved.
     <td align="center"><a href="https://github.com/Codesee-io"><img src="https://avatars.githubusercontent.com/u/59343751?v=4?s=60" width="60px;" alt=""/><br /><sub><b>CodeSee</b></sub></a><br /><a href="https://github.com/terminal-nerds/@terminal-nerds/configs/pulls?q=is%3Apr+reviewed-by%3ACodesee-io" title="Reviewed Pull Requests">👀</a> <a href="#tool-Codesee-io" title="Tools">🔧</a></td>
   </tr>
 </table>
-
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->

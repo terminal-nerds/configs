@@ -90,7 +90,7 @@ None, so far.
 🔐 For more information, please refer to the [Security section] at the root of
 the [terminal-nerds/configs] monorepo.
 
-[workflow security badge]: https://img.shields.io/github/workflow/status/terminal-nerds/configs/Maintenance?label=Security&logo=github&style=for-the-badge
+[workflow security badge]: https://img.shields.io/github/actions/workflow/status/terminal-nerds/configs/maintenance.yml?label=Security&logo=github&style=for-the-badge&branch=main
 [security section]: https://github.com/terminal-nerds/configs#security
 [security policy]: https://github.com/terminal-nerds/configs/security/policy
 
