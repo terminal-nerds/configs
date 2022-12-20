@@ -44,6 +44,7 @@
 		"@terminal-nerds/markdownlint-config": "workspace:*",
 		"@terminal-nerds/prettier-config": "workspace:*",
 		"@terminal-nerds/syncpack-config": "workspace:*",
+		"@types/node": "18.11.16",
 		"all-contributors-cli": "6.24.0",
 		"browserslist": "4.21.4",
 		"concurrently": "7.6.0",
