@@ -6,10 +6,10 @@ importers:
     specifiers:
       '@changesets/changelog-github': 0.4.7
       '@changesets/cli': 2.25.2
-      '@terminal-nerds/eslint-config': workspace:*
-      '@terminal-nerds/markdownlint-config': workspace:*
-      '@terminal-nerds/prettier-config': workspace:*
-      '@terminal-nerds/syncpack-config': workspace:*
+      '@terminal-nerds/eslint-config': 0.9.0
+      '@terminal-nerds/markdownlint-config': 0.4.0
+      '@terminal-nerds/prettier-config': 0.2.2
+      '@terminal-nerds/syncpack-config': 0.2.0
       '@types/node': 18.11.16
       all-contributors-cli: 6.24.0
       browserslist: 4.21.4
@@ -70,7 +70,7 @@ importers:
   packages/eslint:
     specifiers:
       '@emotion/eslint-plugin': ^11.10.0
-      '@terminal-nerds/typescript-config': workspace:*
+      '@terminal-nerds/typescript-config': 0.3.1
       '@types/eslint': 8.4.10
       '@types/node': 18.11.16
       '@typescript-eslint/eslint-plugin': 5.46.1
@@ -158,7 +158,7 @@ importers:
 
   packages/prettier:
     specifiers:
-      '@terminal-nerds/typescript-config': workspace:*
+      '@terminal-nerds/typescript-config': 0.3.1
       '@types/node': 18.11.16
       '@types/prettier': 2.7.1
       '@workspace/helpers': workspace:*
@@ -177,7 +177,7 @@ importers:
 
   packages/stylelint:
     specifiers:
-      '@terminal-nerds/typescript-config': workspace:*
+      '@terminal-nerds/typescript-config': 0.3.1
       '@workspace/helpers': workspace:*
       stylelint: 14.16.0
       stylelint-config-prettier: 9.0.4
@@ -206,7 +206,7 @@ importers:
 
   packages/syncpack:
     specifiers:
-      '@terminal-nerds/typescript-config': workspace:*
+      '@terminal-nerds/typescript-config': 0.3.1
       syncpack: 8.4.11
       tsup: 6.5.0
       typescript: 4.9.4

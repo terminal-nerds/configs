@@ -76,7 +76,7 @@
 		"yaml-eslint-parser": "1.1.0"
 	},
 	"devDependencies": {
-		"@terminal-nerds/typescript-config": "workspace:*",
+		"@terminal-nerds/typescript-config": "0.3.1",
 		"@types/eslint": "8.4.10",
 		"@types/node": "18.11.16",
 		"@workspace/helpers": "workspace:*",
