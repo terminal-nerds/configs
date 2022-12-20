@@ -126,7 +126,7 @@ remember about one thing:
 > We are all ears, but please, **DO NOT create a GitHub issue for reporting a
 > vulnerability**.
 
-[workflow mainetnance badge]: https://img.shields.io/github/actions/workflow/status/terminal-nerds/configs/maintenance.yml?label=Security&logo=github&style=for-the-badge&branch=main
+[workflow maintenance badge]: https://img.shields.io/github/actions/workflow/status/terminal-nerds/configs/maintenance.yml?label=Security&logo=github&style=for-the-badge&branch=main
 [lgtm alerts badge]: https://img.shields.io/lgtm/alerts/github/terminal-nerds/configs?style=for-the-badge&logo=lgtm
 [lgtm report]: https://lgtm.com/projects/g/terminal-nerds/configs
 [snyk vulnerabilities badge]: https://img.shields.io/snyk/vulnerabilities/github/terminal-nerds/configs?logo=snyk&style=for-the-badge
