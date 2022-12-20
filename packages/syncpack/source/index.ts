@@ -1,4 +1,4 @@
-import type { SyncpackConfig } from "syncpack/dist/constants";
+import type { SyncpackConfig } from "syncpack/dist/types";
 
 const config: Partial<SyncpackConfig> = {
 	// https://github.com/JamieMason/syncpack/#-configuration-file
@@ -7,7 +7,7 @@ const config: Partial<SyncpackConfig> = {
 	indent: "\t",
 	peer: true,
 	prod: true,
-	semverRange: "^",
+	semverRange: "",
 	sortAz: [
 		"engines",
 		"files",
@@ -32,17 +32,17 @@ const config: Partial<SyncpackConfig> = {
 		"engines",
 		"packageManager",
 		"volta",
+		"exports",
 		"main",
 		"files",
-		"exports",
 		"typesVersions",
 		"scripts",
 		"peerDependencies",
 		"dependencies",
 		"devDependencies",
 	],
-	source: ["package.json", "packages/*/package.json"],
 	versionGroups: [],
+	workspace: true,
 };
 
 // eslint-disable-next-line unicorn/prefer-module
