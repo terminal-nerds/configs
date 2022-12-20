@@ -3,6 +3,7 @@
 	"ignores": [
 		"@changesets/*",
 		"@terminal-nerds/*",
+		"@types/node",
 		"browserslist",
 		"concurrently",
 		"depcheck",
