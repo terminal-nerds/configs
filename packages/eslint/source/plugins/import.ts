@@ -1,6 +1,5 @@
-import { defineConfig } from "eslint-define-config";
-
 import { hasModule } from "@workspace/shared/module";
+import { defineConfig } from "eslint-define-config";
 
 const getExtendedConfigs = () => {
 	const configs = ["plugin:import/recommended"];
