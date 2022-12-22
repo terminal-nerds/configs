@@ -11,9 +11,6 @@
 		"pnpm": ">=7"
 	},
 	"packageManager": "pnpm@7.18.2",
-	"volta": {
-		"node": "18.12.1"
-	},
 	"scripts": {
 		"build": "turbo run build -v",
 		"clean": "pnpm clean:cache ; turbo run clean -v",
