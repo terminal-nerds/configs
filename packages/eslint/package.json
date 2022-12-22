@@ -18,7 +18,7 @@
 	"repository": "https://github.com/terminal-nerds/configs/tree/main/packages/eslint",
 	"bugs": "https://github.com/terminal-nerds/configs/issues",
 	"engines": {
-		"node": ">=16"
+		"node": ">=18"
 	},
 	"main": "dist/index.js",
 	"files": [
