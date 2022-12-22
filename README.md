@@ -115,7 +115,6 @@ Anyone is welcome to hop in for a chat. 🙂
 ## Security
 
 ![workflow maintenance badge]\
-[![lgtm alerts badge]][lgtm report]
 ![Snyk vulnerabilities badge]
 [![SonarCloud badge]][sonarcloud report]
 
@@ -127,8 +126,6 @@ remember about one thing:
 > vulnerability**.
 
 [workflow maintenance badge]: https://img.shields.io/github/actions/workflow/status/terminal-nerds/configs/maintenance.yml?label=Security&logo=github&style=for-the-badge&branch=main
-[lgtm alerts badge]: https://img.shields.io/lgtm/alerts/github/terminal-nerds/configs?style=for-the-badge&logo=lgtm
-[lgtm report]: https://lgtm.com/projects/g/terminal-nerds/configs
 [snyk vulnerabilities badge]: https://img.shields.io/snyk/vulnerabilities/github/terminal-nerds/configs?logo=snyk&style=for-the-badge
 [sonarcloud badge]: https://img.shields.io/sonar/quality_gate/terminal-nerds_configs/main?logo=sonarcloud&server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge
 [sonarcloud report]: https://sonarcloud.io/summary/overall?id=terminal-nerds_configs
