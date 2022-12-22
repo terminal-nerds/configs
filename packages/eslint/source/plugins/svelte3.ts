@@ -1,7 +1,7 @@
 import { defineConfig } from "eslint-define-config";
 
-import { getIgnorePatterns } from "@workspace/helpers/configuration";
-import { hasModule } from "@workspace/helpers/module";
+import { getIgnorePatterns } from "@workspace/shared/configuration";
+import { hasModule } from "@workspace/shared/module";
 
 // https://github.com/sveltejs/eslint-plugin-svelte3
 const config = defineConfig({

@@ -1,4 +1,4 @@
-import { hasModule } from "@workspace/helpers/module";
+import { hasModule } from "@workspace/shared/module";
 
 // https://github.com/sveltejs/prettier-plugin-svelte
 const config = {

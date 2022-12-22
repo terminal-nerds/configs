@@ -1,7 +1,7 @@
 import type { Config } from "stylelint";
 
-import { getIgnorePatterns } from "@workspace/helpers/configuration";
-import { hasModule } from "@workspace/helpers/module";
+import { getIgnorePatterns } from "@workspace/shared/configuration";
+import { hasModule } from "@workspace/shared/module";
 
 import { extendTailwindAtRuleSelectors } from "./other/tailwind";
 

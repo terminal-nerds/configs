@@ -1,6 +1,6 @@
-import { createMergedConfig } from "@workspace/helpers/configuration";
-import { isContinuousIntegration } from "@workspace/helpers/environment";
-import { hasModule } from "@workspace/helpers/module";
+import { createMergedConfig } from "@workspace/shared/configuration";
+import { isContinuousIntegration } from "@workspace/shared/environment";
+import { hasModule } from "@workspace/shared/module";
 
 import eslint from "./eslint.js";
 

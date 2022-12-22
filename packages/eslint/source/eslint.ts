@@ -1,6 +1,6 @@
 import { defineConfig } from "eslint-define-config";
 
-import { getIgnorePatterns } from "@workspace/helpers/configuration";
+import { getIgnorePatterns } from "@workspace/shared/configuration";
 
 const config = defineConfig({
 	parserOptions: {

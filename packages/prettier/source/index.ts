@@ -1,5 +1,5 @@
-import { createMergedConfig } from "@workspace/helpers/configuration";
-import { hasModule } from "@workspace/helpers/module";
+import { createMergedConfig } from "@workspace/shared/configuration";
+import { hasModule } from "@workspace/shared/module";
 
 import prettier from "./prettier.js";
 
