@@ -2,35 +2,37 @@
 	"$schema": "https://json.schemastore.org/package",
 	"private": true,
 	"type": "module",
-	"name": "@workspace/helpers",
+	"name": "@workspace/shared",
 	"version": "0.0.0",
 	"engines": {
 		"node": ">=18"
 	},
 	"exports": {
-		"./configuration": "./build/configuration.js",
-		"./environment": "./build/environment.js",
-		"./module": "./build/module.js"
-	},
-	"typesVersions": {
-		"*": {
-			"*": [
-				"./build/*"
-			]
+		"./configuration": {
+			"import": "./dist/configuration.js",
+			"types": "./dist/configuration.d.ts"
+		},
+		"./environment": {
+			"import": "./dist/environment.js",
+			"types": "./dist/environment.d.ts"
+		},
+		"./module": {
+			"import": "./dist/module.js",
+			"types": "./dist/module.d.ts"
 		}
 	},
 	"scripts": {
 		"build": "tsup",
 		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
-		"clean:build": "del \"./build\"",
+		"clean:build": "del \"./dist\"",
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"dev": "tsup --watch",
 		"format": "concurrently \"pnpm:format:*\" --group --timings",
-		"format:prettier": "pretty-quick --branch main --pattern \"./helpers/**/*\" --verbose",
+		"format:prettier": "pretty-quick --branch main --pattern \"./shared/**/*\" --verbose",
 		"format:syncpack": "syncpack format",
 		"lint:all": "pnpm lint:dependencies ; pnpm lint:format ; pnpm lint:js ; pnpm lint:types",
 		"lint:deps": "depcheck",
-		"lint:format": "pretty-quick --branch main --pattern \"./helpers/**/*\" --verbose --check",
+		"lint:format": "pretty-quick --branch main --pattern \"./shared/**/*\" --verbose --check",
 		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:types": "tsc --noEmit"
 	},
@@ -39,8 +41,7 @@
 		"read-pkg-up": "9.1.0"
 	},
 	"devDependencies": {
-		"@terminal-nerds/typescript-config": "workspace:*",
-		"type-fest": "3.4.0",
+		"@terminal-nerds/typescript-config": "0.3.1",
 		"typescript": "4.9.4"
 	}
 }

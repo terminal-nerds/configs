@@ -5,7 +5,7 @@ export default defineConfig({
 	entry: ["source/index.ts"],
 	format: ["cjs"],
 	minify: true,
-	noExternal: ["@workspace/helpers"],
+	noExternal: ["@workspace/shared"],
 	sourcemap: true,
 	splitting: false,
 	target: ["node16"],

@@ -1,9 +1,8 @@
-import { createMergedConfig } from "@workspace/helpers/configuration";
-import { hasModule } from "@workspace/helpers/module";
-
-import prettier from "./prettier.js";
+import { createMergedConfig } from "@workspace/shared/configuration";
+import { hasModule } from "@workspace/shared/module";
 
 import pluginSvelte from "./plugins/svelte";
+import prettier from "./prettier.js";
 
 const mergedConfig = createMergedConfig([
 	// Base

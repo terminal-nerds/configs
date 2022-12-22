@@ -1,6 +1,5 @@
+import { hasModule } from "@workspace/shared/module";
 import { defineConfig } from "eslint-define-config";
-
-import { hasModule } from "@workspace/helpers/module";
 
 function getExtendedConfig() {
 	if (hasModule("react")) {

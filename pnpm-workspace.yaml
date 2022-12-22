@@ -2,8 +2,8 @@
 ---
 link-workspace-packages: true
 packages:
-    - "helpers/**"
     - "packages/**"
+    - "shared/**"
 prefer-workspace-packages: true
 shared-workspace-lockfile: true
 save-workspace-protocol: true

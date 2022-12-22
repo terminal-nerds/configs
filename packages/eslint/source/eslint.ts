@@ -1,7 +1,5 @@
 import { defineConfig } from "eslint-define-config";
 
-import { getIgnorePatterns } from "@workspace/helpers/configuration";
-
 const config = defineConfig({
 	parserOptions: {
 		ecmaVersion: "latest",
@@ -12,26 +10,15 @@ const config = defineConfig({
 		// Unignore files starting with dot (usually configuration files)
 		"!.*",
 		// Ignore...
-		"**/node_modules",
 		"**/.git",
+		"**/.husky",
+		"**/.turbo",
+		"**/.vercel",
 		"**/build",
 		"**/dist",
+		"**/node_modules",
 		"**/package-lock.json",
 		"**/pnpm-lock.yaml",
-		...getIgnorePatterns([
-			{
-				module: "husky",
-				patterns: "**/.husky",
-			},
-			{
-				module: "turbo",
-				patterns: "**/.turbo",
-			},
-			{
-				module: "vercel",
-				patterns: "**/.vercel",
-			},
-		]),
 	],
 
 	extends: ["eslint:recommended"],

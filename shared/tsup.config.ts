@@ -6,7 +6,7 @@ export default defineConfig({
 	entry: ["source/*.ts"],
 	format: ["esm"],
 	minify: true,
-	outDir: "build/",
+	outDir: "dist/",
 	sourcemap: true,
 	splitting: true,
 	target: ["node16"],
