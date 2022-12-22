@@ -4,9 +4,9 @@
 		"@terminal-nerds/typescript-config",
 		"@typescript-eslint/*",
 		"@types/eslint",
-		"@types/node",
 		"eslint-config-*",
 		"eslint-plugin-*",
-		"*-eslint-parser"
+		"*-eslint-parser",
+		"tsup"
 	]
 }

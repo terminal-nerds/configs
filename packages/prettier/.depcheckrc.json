@@ -1,7 +1,7 @@
 {
 	"ignores": [
 		"@terminal-nerds/typescript-config",
-		"@types/node",
-		"prettier-plugin-*"
+		"prettier-plugin-*",
+		"tsup"
 	]
 }

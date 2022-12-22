@@ -18,7 +18,7 @@
 	"repository": "https://github.com/terminal-nerds/configs/tree/main/packages/eslint",
 	"bugs": "https://github.com/terminal-nerds/configs/issues",
 	"engines": {
-		"node": ">=16"
+		"node": ">=18"
 	},
 	"main": "dist/index.js",
 	"files": [
@@ -78,9 +78,7 @@
 	"devDependencies": {
 		"@terminal-nerds/typescript-config": "0.3.1",
 		"@types/eslint": "8.4.10",
-		"@types/node": "18.11.16",
 		"@workspace/helpers": "workspace:*",
-		"tsup": "6.5.0",
 		"typescript": "4.9.4"
 	}
 }
