@@ -6,7 +6,7 @@
 
 -   `@typescript-eslint/eslint-plugin` to `5.46.1`
 -   `@typescript-eslint/parser` to `5.46.1`
--   `eslint-define-config` to `1.12.0`
+-   `eslint-config-next` to `13.0.7`
 -   `eslint-plugin-diff` to `2.0.1`
 -   `eslint-plugin-jest` to `27.1.6`
 -   `eslint-plugin-jest-dom` to `4.0.3`
