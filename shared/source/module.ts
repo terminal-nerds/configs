@@ -1,7 +1,6 @@
-import { readPackageUpSync } from "read-pkg-up";
-import type { PackageJson } from "type-fest";
+import { type NormalizedPackageJson, readPackageUpSync } from "read-pkg-up";
 
-export function readPackageJSON(): PackageJson {
+export function readPackageJSON(): NormalizedPackageJson {
 	const file = readPackageUpSync();
 
 	if (file) {
@@ -22,13 +21,13 @@ export function hasModule(name: string): boolean {
 	).has(name);
 }
 
-export function isESModule() {
+export function isESModule(): boolean {
 	const { type } = readPackageJSON();
 
 	return type === "module";
 }
 
-export function isCommonJS() {
+export function isCommonJS(): boolean {
 	const { type } = readPackageJSON();
 
 	return type === "commonjs";
