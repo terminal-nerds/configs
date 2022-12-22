@@ -2,8 +2,8 @@ import type { Config } from "stylelint";
 
 import accessibilityInteractionGroup from "./groups/accessibility-interaction.js";
 import backgroundBorderGroup from "./groups/background-border.js";
-import displayLayoutGroup from "./groups/display-layout.js";
 import boxModelGroup from "./groups/box-model.js";
+import displayLayoutGroup from "./groups/display-layout.js";
 import flexGridChildrenGroup from "./groups/flex-grid-children.js";
 import positionGroup from "./groups/position.js";
 import svgGroup from "./groups/svg.js";

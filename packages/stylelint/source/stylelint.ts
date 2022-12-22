@@ -1,6 +1,5 @@
-import type { Config } from "stylelint";
-
 import { hasModule } from "@workspace/shared/module";
+import type { Config } from "stylelint";
 
 import { extendTailwindAtRuleSelectors } from "./other/tailwind";
 
@@ -21,9 +20,9 @@ const config: Partial<Config> = {
 
 	rules: {
 		// https://stylelint.io/user-guide/rules/list
-		"at-rule-no-unknown": !hasModule("sass")
-			? [true, { ignoreAtRules: [...extendTailwindAtRuleSelectors()] }]
-			: undefined,
+		"at-rule-no-unknown": hasModule("sass")
+			? undefined
+			: [true, { ignoreAtRules: [...extendTailwindAtRuleSelectors()] }],
 
 		// RATIONALE: Prevent conflicting with `order` plugin
 		"declaration-empty-line-before": undefined,
