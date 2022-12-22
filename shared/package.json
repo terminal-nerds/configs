@@ -28,11 +28,11 @@
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"dev": "tsup --watch",
 		"format": "concurrently \"pnpm:format:*\" --group --timings",
-		"format:prettier": "pretty-quick --branch main --pattern \"./helpers/**/*\" --verbose",
+		"format:prettier": "pretty-quick --branch main --pattern \"./shared/**/*\" --verbose",
 		"format:syncpack": "syncpack format",
 		"lint:all": "pnpm lint:dependencies ; pnpm lint:format ; pnpm lint:js ; pnpm lint:types",
 		"lint:deps": "depcheck",
-		"lint:format": "pretty-quick --branch main --pattern \"./helpers/**/*\" --verbose --check",
+		"lint:format": "pretty-quick --branch main --pattern \"./shared/**/*\" --verbose --check",
 		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:types": "tsc --noEmit"
 	},

@@ -19,7 +19,7 @@
 			]
 		},
 		{
-			"groupName": "helpers dependencies",
+			"groupName": "shared dependencies",
 			"addLabels": ["🧰 monorepo"],
 			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
 			"packagePatterns": [
