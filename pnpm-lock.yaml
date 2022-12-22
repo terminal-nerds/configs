@@ -57,7 +57,7 @@ importers:
       '@types/eslint': 8.4.10
       '@typescript-eslint/eslint-plugin': 5.46.1
       '@typescript-eslint/parser': 5.46.1
-      '@workspace/shared': workspace:*
+      '@workspace/shared': 0.0.0
       eslint-config-next: 13.0.7
       eslint-config-prettier: 8.5.0
       eslint-define-config: 1.12.0
@@ -139,7 +139,7 @@ importers:
     specifiers:
       '@terminal-nerds/typescript-config': 0.3.1
       '@types/prettier': 2.7.1
-      '@workspace/shared': workspace:*
+      '@workspace/shared': 0.0.0
       prettier-plugin-svelte: ^2.6.0
       typescript: 4.9.4
     dependencies:
@@ -153,7 +153,7 @@ importers:
   packages/stylelint:
     specifiers:
       '@terminal-nerds/typescript-config': 0.3.1
-      '@workspace/shared': workspace:*
+      '@workspace/shared': 0.0.0
       stylelint: 14.16.0
       stylelint-config-prettier: 9.0.4
       stylelint-config-standard: 29.0.0
@@ -201,7 +201,7 @@ importers:
 
   shared:
     specifiers:
-      '@terminal-nerds/typescript-config': workspace:*
+      '@terminal-nerds/typescript-config': 0.3.1
       deepmerge-ts: 4.2.2
       read-pkg-up: 9.1.0
       typescript: 4.9.4
