@@ -7,7 +7,6 @@ export default defineConfig((options) => ({
 	entry: ["source/*.ts"],
 	format: ["cjs", "esm"],
 	minify: true,
-	noExternal: ["find-up", "locate-path", "read-pkg", "read-pkg-up"],
 	outDir: "dist/",
 	shims: true,
 	skipNodeModulesBundle: true,
