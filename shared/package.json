@@ -22,6 +22,11 @@
 			"import": "./dist/module.js",
 			"require": "./dist/module.cjs",
 			"types": "./dist/module.d.ts"
+		},
+		"./package": {
+			"import": "./dist/package.js",
+			"require": "./dist/package.cjs",
+			"types": "./dist/package.d.ts"
 		}
 	},
 	"scripts": {
