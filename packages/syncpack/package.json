@@ -1,9 +1,5 @@
 {
 	"$schema": "https://json.schemastore.org/package",
-	"publishConfig": {
-		"registry": "https://registry.npmjs.org/",
-		"access": "public"
-	},
 	"name": "@terminal-nerds/syncpack-config",
 	"version": "0.2.0",
 	"description": "Terminal Nerds extendable configuration for syncpack.",
