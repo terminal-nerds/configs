@@ -1,5 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/package",
+	"type": "module",
 	"name": "@terminal-nerds/prettier-config",
 	"version": "0.2.2",
 	"description": "Terminal Nerds extendable configuration for Prettier.",
@@ -19,7 +20,10 @@
 	"engines": {
 		"node": ">=18"
 	},
-	"main": "dist/index.js",
+	"exports": {
+		"require": "./dist/index.cjs",
+		"types": "./dist/index.d.ts"
+	},
 	"files": [
 		"/dist"
 	],
