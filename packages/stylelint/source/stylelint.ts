@@ -1,7 +1,7 @@
-import { hasModule } from "@workspace/shared/module";
+import { hasPackage } from "@workspace/shared/package";
 import type { Config } from "stylelint";
 
-import { extendTailwindAtRuleSelectors } from "./other/tailwind";
+import { extendTailwindAtRuleSelectors } from "./other/tailwind.js";
 
 const config: Partial<Config> = {
 	ignoreFiles: [
@@ -20,7 +20,7 @@ const config: Partial<Config> = {
 
 	rules: {
 		// https://stylelint.io/user-guide/rules/list
-		"at-rule-no-unknown": hasModule("sass")
+		"at-rule-no-unknown": hasPackage("sass")
 			? undefined
 			: [true, { ignoreAtRules: [...extendTailwindAtRuleSelectors()] }],
 
@@ -28,10 +28,7 @@ const config: Partial<Config> = {
 		"declaration-empty-line-before": undefined,
 
 		// RATIONALE: Allow CSS Modules
-		"selector-pseudo-class-no-unknown": [
-			true,
-			{ ignorePseudoClasses: ["local", "global"] },
-		],
+		"selector-pseudo-class-no-unknown": [true, { ignorePseudoClasses: ["local", "global"] }],
 
 		// RATIONALE:
 		// Longhand properties are more readable and descriptive.

@@ -1,5 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/package",
+	"type": "module",
 	"name": "@terminal-nerds/stylelint-config",
 	"version": "0.6.1",
 	"description": "Terminal Nerds extendable configuration for Stylelint.",
