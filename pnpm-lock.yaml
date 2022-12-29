@@ -10,7 +10,7 @@ importers:
       '@terminal-nerds/markdownlint-config': 0.4.0
       '@terminal-nerds/prettier-config': 0.2.2
       '@terminal-nerds/syncpack-config': 0.2.0
-      '@types/node': 18.11.17
+      '@types/node': 18.11.18
       all-contributors-cli: 6.24.0
       browserslist: 4.21.4
       concurrently: 7.6.0
@@ -33,7 +33,7 @@ importers:
       '@terminal-nerds/markdownlint-config': link:packages/markdownlint
       '@terminal-nerds/prettier-config': link:packages/prettier
       '@terminal-nerds/syncpack-config': link:packages/syncpack
-      '@types/node': 18.11.17
+      '@types/node': 18.11.18
       all-contributors-cli: 6.24.0
       browserslist: 4.21.4
       concurrently: 7.6.0
@@ -781,7 +781,7 @@ packages:
   /@types/keyv/3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 18.11.17
+      '@types/node': 18.11.18
     dev: true
 
   /@types/minimatch/3.0.5:
@@ -794,8 +794,8 @@ packages:
     resolution: {integrity: sha512-cPjLXj8d6anFPzFvOPxS3fvly3Shm5nTfl6g8X5smexixbuGUf7hfr21J5tX9JW+UPStp/5P5R8qrKL5IyVJ+A==}
     dev: true
 
-  /@types/node/18.11.17:
-    resolution: {integrity: sha512-HJSUJmni4BeDHhfzn6nF0sVmd1SMezP7/4F0Lq+aXzmp2xm9O7WXrUtHW/CHlYVtZUbByEvWidHqRtcJXGF2Ng==}
+  /@types/node/18.11.18:
+    resolution: {integrity: sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -811,7 +811,7 @@ packages:
   /@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 18.11.17
+      '@types/node': 18.11.18
     dev: true
 
   /@types/semver/6.2.3:
