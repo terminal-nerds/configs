@@ -204,12 +204,14 @@ importers:
       '@terminal-nerds/typescript-config': 0.3.1
       deepmerge-ts: 4.2.2
       read-pkg-up: 9.1.0
+      type-fest: ^3.5.0
       typescript: 4.9.4
     dependencies:
       deepmerge-ts: 4.2.2
       read-pkg-up: 9.1.0
     devDependencies:
       '@terminal-nerds/typescript-config': link:../packages/typescript
+      type-fest: 3.5.0
       typescript: 4.9.4
 
 packages:
@@ -3744,7 +3746,7 @@ packages:
     engines: {node: '>=8'}
 
   /imurmurhash/0.1.4:
-    resolution: {integrity: sha1-khi5srkoojixPcT7a21XbyMUU+o=}
+    resolution: {integrity: sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==}
     engines: {node: '>=0.8.19'}
 
   /indent-string/4.0.0:
@@ -6807,6 +6809,11 @@ packages:
     resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
     engines: {node: '>=12.20'}
     dev: false
+
+  /type-fest/3.5.0:
+    resolution: {integrity: sha512-bI3zRmZC8K0tUz1HjbIOAGQwR2CoPQG68N5IF7gm0LBl8QSNXzkmaWnkWccCUL5uG9mCsp4sBwC8SBrNSISWew==}
+    engines: {node: '>=14.16'}
+    dev: true
 
   /typescript/4.9.4:
     resolution: {integrity: sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==}
