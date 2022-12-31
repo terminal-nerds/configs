@@ -36,7 +36,7 @@ jobs:
             artifact-name: "built-packages"
             artifact-path: "./packages/*/dist/"
             artifact-upload: true
-            include: "./packages/*/dist/**/*.{js,json}"
+            include: "./packages/*/dist/**/*.{js,cjs,json}"
             script-build: build
 
     lint_depcheck:
