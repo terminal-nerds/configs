@@ -126,12 +126,12 @@ importers:
   packages/markdownlint:
     specifiers:
       make-dir-cli: 3.0.0
-      markdownlint: 0.26.2
+      markdownlint: 0.27.0
       node-jq: 2.3.4
       strip-json-comments-cli: 2.0.2
     devDependencies:
       make-dir-cli: 3.0.0
-      markdownlint: 0.26.2
+      markdownlint: 0.27.0
       node-jq: 2.3.4
       strip-json-comments-cli: 2.0.2
 
@@ -4546,6 +4546,13 @@ packages:
   /markdownlint/0.26.2:
     resolution: {integrity: sha512-2Am42YX2Ex5SQhRq35HxYWDfz1NLEOZWWN25nqd2h3AHRKsGRE+Qg1gt1++exW792eXTrR4jCNHfShfWk9Nz8w==}
     engines: {node: '>=14'}
+    dependencies:
+      markdown-it: 13.0.1
+    dev: true
+
+  /markdownlint/0.27.0:
+    resolution: {integrity: sha512-HtfVr/hzJJmE0C198F99JLaeada+646B5SaG2pVoEakLFI6iRGsvMqrnnrflq8hm1zQgwskEgqSnhDW11JBp0w==}
+    engines: {node: '>=14.18.0'}
     dependencies:
       markdown-it: 13.0.1
     dev: true
