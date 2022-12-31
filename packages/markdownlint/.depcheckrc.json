@@ -1,3 +1,3 @@
 {
-	"ignores": ["markdownlint", "node-jq"]
+	"ignores": ["markdownlint"]
 }
