@@ -138,7 +138,7 @@ importers:
   packages/prettier:
     specifiers:
       '@terminal-nerds/typescript-config': 0.3.1
-      '@types/prettier': 2.7.1
+      '@types/prettier': 2.7.2
       '@workspace/shared': 0.0.0
       prettier-plugin-svelte: ^2.6.0
       typescript: 4.9.4
@@ -146,7 +146,7 @@ importers:
       prettier-plugin-svelte: 2.6.0
     devDependencies:
       '@terminal-nerds/typescript-config': link:../typescript
-      '@types/prettier': 2.7.1
+      '@types/prettier': 2.7.2
       '@workspace/shared': link:../../shared
       typescript: 4.9.4
 
@@ -806,8 +806,8 @@ packages:
   /@types/parse-json/4.0.0:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
 
-  /@types/prettier/2.7.1:
-    resolution: {integrity: sha512-ri0UmynRRvZiiUJdiz38MmIblKK+oH30MztdBVR95dv/Ubw6neWSb8u1XpRb72L4qsZOhz+L+z9JD40SJmfWow==}
+  /@types/prettier/2.7.2:
+    resolution: {integrity: sha512-KufADq8uQqo1pYKVIYzfKbJfBAc0sOeXqGbFaSpv8MRmC/zXgowNZmFcbngndGk922QDmOASEXUZCaY48gs4cg==}
     dev: true
 
   /@types/responselike/1.0.0:
