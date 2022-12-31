@@ -1,6 +1,7 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": ["github>terminal-nerds/.github//.github/renovate"],
+	"ignoreDeps": ["@workspace/shared"],
 	"packageRules": [
 		{
 			"groupName": "project monorepo tools",
@@ -22,12 +23,7 @@
 			"groupName": "shared dependencies",
 			"addLabels": ["🧰 monorepo"],
 			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
-			"packagePatterns": [
-				"deepmerge",
-				"pkg-up",
-				"read-pkg-up",
-				"type-fest"
-			]
+			"packagePatterns": ["deepmerge", "pkg-up", "read-pkg-up", "type-fest"]
 		},
 		{
 			"groupName": "ESLint dependencies",
@@ -50,10 +46,7 @@
 			"groupName": "Prettier dependencies",
 			"addLabels": ["📦 package:prettier-config"],
 			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
-			"excludePackagePatterns": [
-				"eslint-config-prettier",
-				"stylelint-config-prettier"
-			],
+			"excludePackagePatterns": ["eslint-config-prettier", "stylelint-config-prettier"],
 			"packagePatterns": ["prettier"]
 		},
 		{
@@ -73,10 +66,7 @@
 			"addLabels": ["📦 package:typescript-config"],
 			"matchPackageNames": ["@types/node", "tslib", "typescript"],
 			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
-			"excludePackageNames": [
-				"@typescript-eslint/eslint-parser",
-				"@typescript-eslint/eslint-plugin"
-			]
+			"excludePackageNames": ["@typescript-eslint/eslint-parser", "@typescript-eslint/eslint-plugin"]
 		},
 		{
 			"groupName": "project prerequisities",
