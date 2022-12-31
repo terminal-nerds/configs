@@ -24,7 +24,7 @@
 		"/dist"
 	],
 	"scripts": {
-		"build": "make-dir \"./dist\" && strip-json-comments \"./source/index.json\" | jq --compact-output > \"./dist/index.json\"",
+		"build": "make-dir \"./dist\" && strip-json-comments --no-whitespace \"./source/index.json\" > \"./dist/index.json\"",
 		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
 		"clean:build": "del \"./dist\"",
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
@@ -43,7 +43,6 @@
 	"devDependencies": {
 		"make-dir-cli": "3.0.0",
 		"markdownlint": "0.27.0",
-		"node-jq": "2.3.4",
 		"strip-json-comments-cli": "2.0.2"
 	}
 }
