@@ -44,7 +44,7 @@
 		"lint:types": "tsc --noEmit"
 	},
 	"peerDependencies": {
-		"eslint": "8.30.0"
+		"eslint": "8.31.0"
 	},
 	"dependencies": {
 		"@emotion/eslint-plugin": "^11.10.0",
