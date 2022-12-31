@@ -8,13 +8,7 @@ const config: Partial<SyncpackConfig> = {
 	peer: true,
 	prod: true,
 	semverRange: "",
-	sortAz: [
-		"engines",
-		"files",
-		"peerDependencies",
-		"dependencies",
-		"devDependencies",
-	],
+	sortAz: ["engines", "files", "peerDependencies", "dependencies", "devDependencies"],
 	sortFirst: [
 		"$schema",
 		"private",
@@ -45,5 +39,4 @@ const config: Partial<SyncpackConfig> = {
 	workspace: true,
 };
 
-// eslint-disable-next-line unicorn/prefer-module
-module.exports = config;
+export default config;

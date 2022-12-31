@@ -1,6 +1,6 @@
 import { createMergedConfig } from "@workspace/shared/configuration";
 import { isContinuousIntegration } from "@workspace/shared/environment";
-import { hasModule } from "@workspace/shared/module";
+import { hasPackage } from "@workspace/shared/package";
 import type { ESLintConfig } from "eslint-define-config";
 
 import configNext from "./configs/next.js";
@@ -31,41 +31,42 @@ import pluginTypeScript from "./plugins/typescript.js";
 import pluginUnicorn from "./plugins/unicorn.js";
 import pluginYML from "./plugins/yml.js";
 
-const mergedConfig = createMergedConfig<ESLintConfig>([
+type SimplifiedESLintConfig = Pick<ESLintConfig, keyof ESLintConfig>;
+
+const config = createMergedConfig<SimplifiedESLintConfig>([
 	// Base
 	eslint,
 
 	// Plugins
 	pluginCompat,
 	isContinuousIntegration() && pluginDiff,
-	(hasModule("@emotion/css") || hasModule("@emotion/react")) && pluginEmotion,
+	(hasPackage("@emotion/css") || hasPackage("@emotion/react")) && pluginEmotion,
 	pluginImport,
-	(hasModule("jest") || hasModule("vitest")) && pluginJest,
-	hasModule("@testing-library/jest-dom") && pluginJestDOM,
-	(hasModule("jest") || hasModule("vitest")) && pluginJestFormatting,
+	(hasPackage("jest") || hasPackage("vitest")) && pluginJest,
+	hasPackage("@testing-library/jest-dom") && pluginJestDOM,
+	(hasPackage("jest") || hasPackage("vitest")) && pluginJestFormatting,
 	pluginJSONC,
 	pluginJSONSchemaValidator,
-	(hasModule("react") || hasModule("preact")) && pluginJSXA11y,
+	(hasPackage("react") || hasPackage("preact")) && pluginJSXA11y,
 	pluginNode,
-	(hasModule("react") || hasModule("preact")) && pluginReact,
-	(hasModule("react") || hasModule("preact")) && pluginReactHooks,
+	(hasPackage("react") || hasPackage("preact")) && pluginReact,
+	(hasPackage("react") || hasPackage("preact")) && pluginReactHooks,
 	pluginRegexp,
 	pluginSimpleImportSort,
 	pluginSonarJS,
 	pluginSQL,
-	hasModule("sb") && pluginStorybook,
-	hasModule("svelte") && pluginSvelte3,
-	hasModule("@testing-library/jest-dom") && pluginTestingLibrary,
-	hasModule("tailwindcss") && pluginTailwindCSS,
-	hasModule("typescript") && pluginTypeScript,
+	hasPackage("sb") && pluginStorybook,
+	hasPackage("svelte") && pluginSvelte3,
+	hasPackage("@testing-library/jest-dom") && pluginTestingLibrary,
+	hasPackage("tailwindcss") && pluginTailwindCSS,
+	hasPackage("typescript") && pluginTypeScript,
 	pluginUnicorn,
 	pluginYML,
 
 	// Configs
-	hasModule("next") && configNext,
+	hasPackage("next") && configNext,
 	// NOTE: Must come as last!
-	hasModule("prettier") && configPrettier,
+	hasPackage("prettier") && configPrettier,
 ]);
 
-// eslint-disable-next-line unicorn/prefer-module
-module.exports = mergedConfig;
+export default config;

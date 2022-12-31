@@ -1,10 +1,10 @@
-import { hasModule } from "@workspace/shared/module";
+import { hasPackage } from "@workspace/shared/package";
 import { defineConfig } from "eslint-define-config";
 
 const getExtendedConfigs = () => {
 	const configs = ["plugin:import/recommended"];
 
-	if (hasModule("typescript")) {
+	if (hasPackage("typescript")) {
 		configs.push("plugin:import/typescript");
 	}
 

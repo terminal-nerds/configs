@@ -1,4 +1,4 @@
-import { hasModule } from "@workspace/shared/module";
+import { hasPackage } from "@workspace/shared/package";
 import { defineConfig } from "eslint-define-config";
 
 // https://github.com/sveltejs/eslint-plugin-svelte3
@@ -13,7 +13,7 @@ const config = defineConfig({
 		},
 	],
 	settings: {
-		"svelte3/typescript": hasModule("typescript"),
+		"svelte3/typescript": hasPackage("typescript"),
 	},
 });
 

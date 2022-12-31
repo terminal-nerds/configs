@@ -1,10 +1,10 @@
-import { hasModule } from "@workspace/shared/module";
+import { hasPackage } from "@workspace/shared/package";
 import { defineConfig } from "eslint-define-config";
 
 function getExtendedConfig() {
-	if (hasModule("react")) {
+	if (hasPackage("react")) {
 		return "plugin:testing-library/react";
-	} else if (hasModule("svelte")) {
+	} else if (hasPackage("svelte")) {
 		return "plugin:testing-library/svelte";
 	} else {
 		return "plugin:testing-library/dom";

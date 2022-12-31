@@ -1,16 +1,16 @@
 import { createMergedConfig } from "@workspace/shared/configuration";
-import { hasModule } from "@workspace/shared/module";
+import { hasPackage } from "@workspace/shared/package";
 
-import pluginSvelte from "./plugins/svelte";
+import pluginSvelte from "./plugins/svelte.js";
 import prettier from "./prettier.js";
 
-const mergedConfig = createMergedConfig([
+const config = createMergedConfig([
 	// Base
 	prettier,
 
 	// Plugins
-	hasModule("svelte") && pluginSvelte,
+	hasPackage("svelte") && pluginSvelte,
 ]);
 
 // eslint-disable-next-line unicorn/prefer-module
-module.exports = mergedConfig;
+export default config;

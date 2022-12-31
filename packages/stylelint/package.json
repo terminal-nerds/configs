@@ -1,9 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/package",
-	"publishConfig": {
-		"registry": "https://registry.npmjs.org/",
-		"access": "public"
-	},
+	"type": "module",
 	"name": "@terminal-nerds/stylelint-config",
 	"version": "0.6.1",
 	"description": "Terminal Nerds extendable configuration for Stylelint.",
@@ -14,7 +11,11 @@
 	],
 	"license": "MIT",
 	"homepage": "https://github.com/terminal-nerds/configs/tree/main/packages/stylelint",
-	"repository": "https://github.com/terminal-nerds/configs/tree/main/packages/stylelint",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/terminal-nerds/configs.git",
+		"directory": "packages/stylelint"
+	},
 	"bugs": "https://github.com/terminal-nerds/configs/issues",
 	"engines": {
 		"node": ">=18"

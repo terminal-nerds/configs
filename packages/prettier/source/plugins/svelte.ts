@@ -1,4 +1,4 @@
-import { hasModule } from "@workspace/shared/module";
+import { hasPackage } from "@workspace/shared/package";
 
 // https://github.com/sveltejs/prettier-plugin-svelte
 const config = {
@@ -20,4 +20,4 @@ const config = {
 	svelteIndentScriptAndStyle: true,
 };
 
-export default hasModule("svelte") ? config : {};
+export default hasPackage("svelte") ? config : {};

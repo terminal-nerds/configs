@@ -10,15 +10,23 @@
 	"exports": {
 		"./configuration": {
 			"import": "./dist/configuration.js",
+			"require": "./dist/configuration.cjs",
 			"types": "./dist/configuration.d.ts"
 		},
 		"./environment": {
 			"import": "./dist/environment.js",
+			"require": "./dist/environment.cjs",
 			"types": "./dist/environment.d.ts"
 		},
 		"./module": {
 			"import": "./dist/module.js",
+			"require": "./dist/module.cjs",
 			"types": "./dist/module.d.ts"
+		},
+		"./package": {
+			"import": "./dist/package.js",
+			"require": "./dist/package.cjs",
+			"types": "./dist/package.d.ts"
 		}
 	},
 	"scripts": {
@@ -42,6 +50,7 @@
 	},
 	"devDependencies": {
 		"@terminal-nerds/typescript-config": "0.3.1",
+		"type-fest": "3.5.0",
 		"typescript": "4.9.4"
 	}
 }
