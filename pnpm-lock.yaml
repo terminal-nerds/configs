@@ -80,7 +80,7 @@ importers:
       eslint-plugin-sql: 2.3.2
       eslint-plugin-storybook: 0.6.8
       eslint-plugin-svelte3: 4.0.0
-      eslint-plugin-tailwindcss: 3.7.1
+      eslint-plugin-tailwindcss: 3.8.0
       eslint-plugin-testing-library: 5.9.1
       eslint-plugin-unicorn: 45.0.2
       eslint-plugin-yml: 1.4.0
@@ -113,7 +113,7 @@ importers:
       eslint-plugin-sql: 2.3.2
       eslint-plugin-storybook: 0.6.8_typescript@4.9.4
       eslint-plugin-svelte3: 4.0.0
-      eslint-plugin-tailwindcss: 3.7.1
+      eslint-plugin-tailwindcss: 3.8.0
       eslint-plugin-testing-library: 5.9.1_typescript@4.9.4
       eslint-plugin-unicorn: 45.0.2
       eslint-plugin-yml: 1.4.0
@@ -2315,7 +2315,7 @@ packages:
     resolution: {integrity: sha512-0En0w03NRVMn9Uiyn8YRPDKvWjxCWkslUEhGNTdGx15RvPJYQ+lbOlqrlNI2vEAs4pDYK4f/HN2TbDmk5TP0iw==}
     dependencies:
       debug: 3.2.7
-      resolve: 1.22.0
+      resolve: 1.22.1
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -2685,8 +2685,8 @@ packages:
       svelte: ^3.2.0
     dev: false
 
-  /eslint-plugin-tailwindcss/3.7.1:
-    resolution: {integrity: sha512-MCPpVp5VvNYuRz1JYN9sN0r/cgAt3SfIlKbvYjVij+T/8r0z4U8nPY/c07vm+dLYb7mBv9N9LLIR4l9pLHSJaQ==}
+  /eslint-plugin-tailwindcss/3.8.0:
+    resolution: {integrity: sha512-Lsyncgp/eXZriAEUK9zfGHOH+9iQplygHiOuGY8SFFHKIeT0BYjyST/ownHF8UPa1TEh+jJPkdE2vlV3778C3w==}
     engines: {node: '>=12.13.0'}
     dependencies:
       fast-glob: 3.2.12
