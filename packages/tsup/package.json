@@ -1,0 +1,62 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"type": "module",
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/",
+		"access": "public"
+	},
+	"name": "@terminal-nerds/tsup-config",
+	"version": "0.0.0",
+	"description": "Terminal Nerds extendable configuration for tsup.",
+	"keywords": [
+		"config",
+		"tool",
+		"tsup"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/terminal-nerds/configs/tree/main/packages/tsup",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/terminal-nerds/configs.git",
+		"directory": "packages/tsup"
+	},
+	"bugs": "https://github.com/terminal-nerds/configs/issues",
+	"engines": {
+		"node": ">=18"
+	},
+	"exports": {
+		".": {
+			"import": "./dist/main.js",
+			"require": "./dist/main.cjs",
+			"types": "./dist/main.d.ts"
+		}
+	},
+	"files": [
+		"/dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
+		"clean:build": "del \"./dist\"",
+		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
+		"dev": "tsup --watch",
+		"format": "concurrently \"pnpm:format:*\" --group --timings",
+		"format:prettier": "pretty-quick --branch main --pattern \"packages/eslint/**/*\" --verbose",
+		"format:syncpack": "syncpack format",
+		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
+		"lint:deps": "depcheck",
+		"lint:format": "pretty-quick --branch main --pattern \"./packages/eslint/**/*\" --verbose --check",
+		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --config \"../../.eslintrc.cjs\" --cache --cache-location \"./node_modules/.cache/eslint\"",
+		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
+		"lint:types": "tsc --noEmit"
+	},
+	"peerDependencies": {
+		"tsup": "6.5.0"
+	},
+	"devDependencies": {
+		"@terminal-nerds/typescript-config": "0.3.1",
+		"@workspace/shared": "0.0.0",
+		"tsup": "6.5.0",
+		"typescript": "4.9.4"
+	}
+}
