@@ -11,7 +11,6 @@ export function getBaseOptions(options: Options): Options {
 		dts: true,
 		minify: !watch,
 		outDir: "./dist",
-		skipNodeModulesBundle: true,
 		sourcemap: !watch,
 		splitting: false,
 		target: "esnext",
