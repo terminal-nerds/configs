@@ -14,8 +14,6 @@
 				"del-cli",
 				"husky",
 				"lint-staged",
-				"node-jq",
-				"tsup",
 				"turbo"
 			]
 		},
@@ -62,6 +60,13 @@
 			"packagePatterns": ["syncpack"]
 		},
 		{
+			"groupName": "tsup depedencies",
+			"addLabels": ["📦 package:tsup-config"],
+			"matchPackageNames": ["tsup"],
+			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
+			"excludePackageNames": ["@typescript-eslint/eslint-parser", "@typescript-eslint/eslint-plugin"]
+		},
+		{
 			"groupName": "TypeScript dependencies",
 			"addLabels": ["📦 package:typescript-config"],
 			"matchPackageNames": ["@types/node", "tslib", "typescript"],
@@ -71,7 +76,6 @@
 		{
 			"groupName": "project prerequisities",
 			"addLabels": ["🧰 monorepo"],
-			"excludePackageNames": ["node-jq"],
 			"packagePatterns": ["node", "pnpm"]
 		}
 	]

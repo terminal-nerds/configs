@@ -10,7 +10,6 @@ importers:
       '@terminal-nerds/markdownlint-config': 0.4.0
       '@terminal-nerds/prettier-config': 0.2.2
       '@terminal-nerds/syncpack-config': 0.2.0
-      '@terminal-nerds/tsup-config': 0.0.0
       '@types/node': 18.11.18
       all-contributors-cli: 6.24.0
       browserslist: 4.21.4
@@ -34,7 +33,6 @@ importers:
       '@terminal-nerds/markdownlint-config': link:packages/markdownlint
       '@terminal-nerds/prettier-config': link:packages/prettier
       '@terminal-nerds/syncpack-config': link:packages/syncpack
-      '@terminal-nerds/tsup-config': link:packages/tsup
       '@types/node': 18.11.18
       all-contributors-cli: 6.24.0
       browserslist: 4.21.4
@@ -55,6 +53,7 @@ importers:
   packages/eslint:
     specifiers:
       '@emotion/eslint-plugin': 11.10.0
+      '@terminal-nerds/tsup-config': 0.0.0
       '@terminal-nerds/typescript-config': 0.3.1
       '@types/eslint': 8.4.10
       '@typescript-eslint/eslint-plugin': 5.47.1
@@ -121,6 +120,7 @@ importers:
       jsonc-eslint-parser: 2.1.0
       yaml-eslint-parser: 1.1.0
     devDependencies:
+      '@terminal-nerds/tsup-config': link:../tsup
       '@terminal-nerds/typescript-config': link:../typescript
       '@types/eslint': 8.4.10
       typescript: 4.9.4
@@ -137,6 +137,7 @@ importers:
 
   packages/prettier:
     specifiers:
+      '@terminal-nerds/tsup-config': 0.0.0
       '@terminal-nerds/typescript-config': 0.3.1
       '@types/prettier': 2.7.2
       '@workspace/shared': 0.0.0
@@ -146,12 +147,14 @@ importers:
       '@workspace/shared': link:../../shared
       prettier-plugin-svelte: 2.9.0
     devDependencies:
+      '@terminal-nerds/tsup-config': link:../tsup
       '@terminal-nerds/typescript-config': link:../typescript
       '@types/prettier': 2.7.2
       typescript: 4.9.4
 
   packages/stylelint:
     specifiers:
+      '@terminal-nerds/tsup-config': 0.0.0
       '@terminal-nerds/typescript-config': 0.3.1
       '@workspace/shared': 0.0.0
       stylelint: 14.16.1
@@ -173,16 +176,19 @@ importers:
       stylelint-order: 5.0.0_stylelint@14.16.1
       stylelint-scss: 4.3.0_stylelint@14.16.1
     devDependencies:
+      '@terminal-nerds/tsup-config': link:../tsup
       '@terminal-nerds/typescript-config': link:../typescript
       stylelint: 14.16.1
       typescript: 4.9.4
 
   packages/syncpack:
     specifiers:
+      '@terminal-nerds/tsup-config': 0.0.0
       '@terminal-nerds/typescript-config': 0.3.1
       syncpack: 8.4.11
       typescript: 4.9.4
     devDependencies:
+      '@terminal-nerds/tsup-config': link:../tsup
       '@terminal-nerds/typescript-config': link:../typescript
       syncpack: 8.4.11
       typescript: 4.9.4
