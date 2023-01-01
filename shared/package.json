@@ -13,6 +13,11 @@
 			"require": "./dist/configuration.cjs",
 			"types": "./dist/configuration.d.ts"
 		},
+		"./constants": {
+			"import": "./dist/constants.js",
+			"require": "./dist/constants.cjs",
+			"types": "./dist/constants.d.ts"
+		},
 		"./environment": {
 			"import": "./dist/environment.js",
 			"require": "./dist/environment.cjs",
