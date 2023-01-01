@@ -41,6 +41,7 @@
 		"@terminal-nerds/markdownlint-config": "0.4.0",
 		"@terminal-nerds/prettier-config": "0.2.2",
 		"@terminal-nerds/syncpack-config": "0.2.0",
+		"@terminal-nerds/tsup-config": "0.0.0",
 		"@types/node": "18.11.18",
 		"all-contributors-cli": "6.24.0",
 		"browserslist": "4.21.4",

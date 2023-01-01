@@ -1,28 +1,35 @@
 {
 	"$schema": "https://json.schemastore.org/package",
 	"type": "module",
-	"name": "@terminal-nerds/prettier-config",
-	"version": "0.2.2",
-	"description": "Terminal Nerds extendable configuration for Prettier.",
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/",
+		"access": "public"
+	},
+	"name": "@terminal-nerds/tsup-config",
+	"version": "0.0.0",
+	"description": "Terminal Nerds extendable configuration for tsup.",
 	"keywords": [
 		"config",
-		"formatter",
-		"prettier"
+		"tool",
+		"tsup"
 	],
 	"license": "MIT",
-	"homepage": "https://github.com/terminal-nerds/configs/tree/main/packages/prettier",
+	"homepage": "https://github.com/terminal-nerds/configs/tree/main/packages/tsup",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/terminal-nerds/configs.git",
-		"directory": "packages/prettier"
+		"directory": "packages/tsup"
 	},
 	"bugs": "https://github.com/terminal-nerds/configs/issues",
 	"engines": {
 		"node": ">=18"
 	},
 	"exports": {
-		"require": "./dist/index.cjs",
-		"types": "./dist/index.d.ts"
+		".": {
+			"import": "./dist/main.js",
+			"require": "./dist/main.cjs",
+			"types": "./dist/main.d.ts"
+		}
 	},
 	"files": [
 		"/dist"
@@ -34,25 +41,21 @@
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"dev": "tsup --watch",
 		"format": "concurrently \"pnpm:format:*\" --group --timings",
-		"format:prettier": "pretty-quick --branch main --pattern \"./packages/prettier/**/*\" --verbose",
+		"format:prettier": "pretty-quick --branch main --pattern \"packages/eslint/**/*\" --verbose",
 		"format:syncpack": "syncpack format",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
 		"lint:deps": "depcheck",
-		"lint:format": "pretty-quick --branch main --pattern \"./packages/prettier/**/*\" --verbose --check",
-		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --cache --cache-location \"./node_modules/.cache/eslint\"",
+		"lint:format": "pretty-quick --branch main --pattern \"./packages/eslint/**/*\" --verbose --check",
+		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --config \"../../.eslintrc.cjs\" --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
 		"lint:types": "tsc --noEmit"
 	},
 	"peerDependencies": {
-		"prettier": "2.8.1"
-	},
-	"dependencies": {
-		"@workspace/shared": "0.0.0",
-		"prettier-plugin-svelte": "2.9.0"
+		"tsup": "6.5.0"
 	},
 	"devDependencies": {
 		"@terminal-nerds/typescript-config": "0.3.1",
-		"@types/prettier": "2.7.2",
+		"tsup": "6.5.0",
 		"typescript": "4.9.4"
 	}
 }

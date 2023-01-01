@@ -1,15 +1,8 @@
+import { getNodeCJSOptions } from "@terminal-nerds/tsup-config";
 import { defineConfig } from "tsup";
 
-export default defineConfig({
-	bundle: false,
-	dts: true,
-	clean: true,
+export default defineConfig((options) => ({
+	...getNodeCJSOptions(options),
 	entry: ["source/index.ts"],
 	noExternal: ["@workspace/shared"],
-	format: ["cjs"],
-	minify: true,
-	sourcemap: true,
-	splitting: false,
-	target: ["node16"],
-	treeshake: true,
-});
+}));
