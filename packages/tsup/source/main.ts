@@ -48,6 +48,7 @@ export function getNodeCJSOptions(options: Options): Options {
 		format: ["cjs"],
 		platform: "node",
 		target: "node18",
+		shims: true,
 	};
 }
 
@@ -59,17 +60,19 @@ export function getNodeESMOptions(options: Options): Options {
 		...getBaseOptions(options),
 		format: ["esm"],
 		platform: "node",
+		shims: true,
 	};
 }
 
 /**
- * Optimal configuration for building in both CommonJS and ES Modules types (universal)
+ * Optimal configuration for building in both CommonJS and ES Modules types ()
  */
 export function getNodeUniveralOptions(options: Options): Options {
 	return {
 		...getBaseOptions(options),
 		format: ["cjs", "esm"],
 		platform: "node",
+		shims: true,
 		target: "node18",
 	};
 }
