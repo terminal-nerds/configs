@@ -50,6 +50,7 @@
 		"prettier-plugin-svelte": "^2.6.0"
 	},
 	"devDependencies": {
+		"@terminal-nerds/tsup-config": "workspace:^0.0.0",
 		"@terminal-nerds/typescript-config": "0.3.1",
 		"@types/prettier": "2.7.2",
 		"@workspace/shared": "0.0.0",
