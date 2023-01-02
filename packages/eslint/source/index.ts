@@ -55,7 +55,7 @@ const config = createMergedConfig<SimplifiedESLintConfig>([
 	pluginSimpleImportSort,
 	pluginSonarJS,
 	pluginSQL,
-	hasPackage("sb") && pluginStorybook,
+	hasPackage("storybook") && pluginStorybook,
 	hasPackage("svelte") && pluginSvelte3,
 	hasPackage("@testing-library/jest-dom") && pluginTestingLibrary,
 	hasPackage("tailwindcss") && pluginTailwindCSS,

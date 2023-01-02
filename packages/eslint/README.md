@@ -122,7 +122,7 @@ _conditionally_.
 | [eslint-plugin-simple-import-sort]    | ![eslint-plugin-simple-import-sort version badge]    | -                                                                            |
 | [eslint-plugin-sonarjs]               | ![eslint-plugin-sonarjs version badge]               | -                                                                            |
 | [eslint-plugin-sql]                   | ![eslint-plugin-sql version badge]                   | -                                                                            |
-| [eslint-plugin-storybook]             | ![eslint-plugin-storybook version badge]             | `sb` as dependency                                                           |
+| [eslint-plugin-storybook]             | ![eslint-plugin-storybook version badge]             | `storybook` as dependency                                                    |
 | [eslint-plugin-svelte3]               | ![eslint-plugin-svelte3 version badge]               | `svelte` as dependency                                                       |
 | [eslint-plugin-tailwindcss]           | ![eslint-plugin-tailwindcss version badge]           | `tailwindcss` as dependency                                                  |
 | [eslint-plugin-testing-library]       | ![eslint-plugin-testing-library version badge]       | `@testing-library/jest-dom` as dependency                                    |
