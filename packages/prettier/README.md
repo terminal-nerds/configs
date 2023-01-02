@@ -90,12 +90,15 @@ human-friendly output and performance)_.
 
 ### Plugins
 
-| Plugin                   | Version                                 | Loading condition(s)   |
-| ------------------------ | --------------------------------------- | ---------------------- |
-| [prettier-plugin-svelte] | ![prettier-plugin-svelte version badge] | `svelte` as dependency |
+| Plugin                        | Version                                      | Loading condition(s)        |
+| ----------------------------- | -------------------------------------------- | --------------------------- |
+| [prettier-plugin-svelte]      | ![prettier-plugin-svelte version badge]      | `svelte` as dependency      |
+| [prettier-plugin-tailwindcss] | ![prettier-plugin-tailwindcss version badge] | `tailwindcss` as dependency |
 
 [prettier-plugin-svelte]: https://github.com/sveltejs/prettier-plugin-svelte
 [prettier-plugin-svelte version badge]: https://img.shields.io/npm/v/prettier-plugin-svelte?logo=npm&style=flat-square
+[prettier-plugin-tailwindcss]: https://github.com/tailwindlabs/prettier-plugin-tailwindcss
+[prettier-plugin-tailwindcss version badge]: https://img.shields.io/npm/v/prettier-plugin-tailwindcss?logo=npm&style=flat-square
 
 ---
 

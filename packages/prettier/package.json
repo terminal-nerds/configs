@@ -48,7 +48,8 @@
 	},
 	"dependencies": {
 		"@workspace/shared": "0.0.0",
-		"prettier-plugin-svelte": "2.9.0"
+		"prettier-plugin-svelte": "2.9.0",
+		"prettier-plugin-tailwindcss": "0.2.1"
 	},
 	"devDependencies": {
 		"@terminal-nerds/tsup-config": "0.0.0",
