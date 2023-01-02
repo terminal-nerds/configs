@@ -142,10 +142,12 @@ importers:
       '@types/prettier': 2.7.2
       '@workspace/shared': 0.0.0
       prettier-plugin-svelte: 2.9.0
+      prettier-plugin-tailwindcss: 0.2.1
       typescript: 4.9.4
     dependencies:
       '@workspace/shared': link:../../shared
       prettier-plugin-svelte: 2.9.0
+      prettier-plugin-tailwindcss: 0.2.1
     devDependencies:
       '@terminal-nerds/tsup-config': link:../tsup
       '@terminal-nerds/typescript-config': link:../typescript
@@ -4743,6 +4745,13 @@ packages:
     peerDependencies:
       prettier: ^1.16.4 || ^2.0.0
       svelte: ^3.2.0
+    dev: false
+
+  /prettier-plugin-tailwindcss/0.2.1:
+    resolution: {integrity: sha512-aIO8IguumORyRsmT+E7JfJ3A9FEoyhqZR7Au7TBOege3VZkgMvHJMkufeYp4zjnDK2iq4ktkvGMNOQR9T8lisQ==}
+    engines: {node: '>=12.17.0'}
+    peerDependencies:
+      prettier: '>=2.2.0'
     dev: false
 
   /prettier/2.8.1:
