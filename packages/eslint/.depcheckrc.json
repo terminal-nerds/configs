@@ -6,7 +6,6 @@
 		"@types/eslint",
 		"eslint-config-*",
 		"eslint-plugin-*",
-		"*-eslint-parser",
-		"tsup"
+		"*-eslint-parser"
 	]
 }

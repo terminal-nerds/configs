@@ -1,4 +1,4 @@
 {
-	"ignores": ["@terminal-nerds/typescript-config", "tsup"],
+	"ignores": ["@terminal-nerds/typescript-config"],
 	"ignorePatterns": ["dist/", "node_modules/"]
 }
