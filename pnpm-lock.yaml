@@ -52,8 +52,8 @@ importers:
 
   packages/browserslist:
     specifiers:
-      '@terminal-nerds/tsup-config': 0.1.0
-      '@terminal-nerds/typescript-config': 0.4.0
+      '@terminal-nerds/tsup-config': workspace:*
+      '@terminal-nerds/typescript-config': workspace:*
       tsup: 6.5.0
       typescript: 4.9.4
     devDependencies:
@@ -65,8 +65,8 @@ importers:
   packages/eslint:
     specifiers:
       '@emotion/eslint-plugin': 11.10.0
-      '@terminal-nerds/tsup-config': 0.1.0
-      '@terminal-nerds/typescript-config': 0.4.0
+      '@terminal-nerds/tsup-config': workspace:*
+      '@terminal-nerds/typescript-config': workspace:*
       '@types/eslint': 8.4.10
       '@typescript-eslint/eslint-plugin': 5.47.1
       '@typescript-eslint/parser': 5.47.1
@@ -151,8 +151,8 @@ importers:
 
   packages/prettier:
     specifiers:
-      '@terminal-nerds/tsup-config': 0.1.0
-      '@terminal-nerds/typescript-config': 0.4.0
+      '@terminal-nerds/tsup-config': workspace:*
+      '@terminal-nerds/typescript-config': workspace:*
       '@types/prettier': 2.7.2
       '@workspace/shared': 0.0.0
       prettier-plugin-svelte: 2.9.0
@@ -172,8 +172,8 @@ importers:
 
   packages/stylelint:
     specifiers:
-      '@terminal-nerds/tsup-config': 0.1.0
-      '@terminal-nerds/typescript-config': 0.4.0
+      '@terminal-nerds/tsup-config': workspace:*
+      '@terminal-nerds/typescript-config': workspace:*
       '@workspace/shared': 0.0.0
       stylelint: 14.16.1
       stylelint-config-prettier: 9.0.4
@@ -203,8 +203,8 @@ importers:
 
   packages/syncpack:
     specifiers:
-      '@terminal-nerds/tsup-config': 0.1.0
-      '@terminal-nerds/typescript-config': 0.4.0
+      '@terminal-nerds/tsup-config': workspace:*
+      '@terminal-nerds/typescript-config': workspace:*
       syncpack: 8.4.11
       tsup: 6.5.0
       typescript: 4.9.4
@@ -217,7 +217,7 @@ importers:
 
   packages/tsup:
     specifiers:
-      '@terminal-nerds/typescript-config': 0.4.0
+      '@terminal-nerds/typescript-config': workspace:*
       tsup: 6.5.0
       typescript: 4.9.4
     devDependencies:
@@ -237,8 +237,8 @@ importers:
 
   shared:
     specifiers:
-      '@terminal-nerds/tsup-config': 0.1.0
-      '@terminal-nerds/typescript-config': 0.4.0
+      '@terminal-nerds/tsup-config': workspace:*
+      '@terminal-nerds/typescript-config': workspace:*
       deepmerge-ts: 4.2.2
       read-pkg-up: 9.1.0
       tsup: 6.5.0
