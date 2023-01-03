@@ -24,7 +24,7 @@ import pluginSimpleImportSort from "./plugins/simple-import-sort.js";
 import pluginSonarJS from "./plugins/sonarjs.js";
 import pluginSQL from "./plugins/sql.js";
 import pluginStorybook from "./plugins/storybook.js";
-import pluginSvelte3 from "./plugins/svelte3.js";
+import pluginSvelte from "./plugins/svelte.js";
 import pluginTailwindCSS from "./plugins/tailwindcss.js";
 import pluginTestingLibrary from "./plugins/testing-library.js";
 import pluginTypeScript from "./plugins/typescript.js";
@@ -56,7 +56,7 @@ const config = createMergedConfig<SimplifiedESLintConfig>([
 	pluginSonarJS,
 	pluginSQL,
 	hasPackage("storybook") && pluginStorybook,
-	hasPackage("svelte") && pluginSvelte3,
+	hasPackage("svelte") && pluginSvelte,
 	hasPackage("@testing-library/jest-dom") && pluginTestingLibrary,
 	hasPackage("tailwindcss") && pluginTailwindCSS,
 	hasPackage("typescript") && pluginTypeScript,

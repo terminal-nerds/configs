@@ -1,25 +1,31 @@
 import { defineConfig } from "eslint-define-config";
 
-// https://github.com/mysticatea/eslint-plugin-node
+/**
+ * NOTE:
+ * https://github.com/mysticatea/eslint-plugin-node
+ * is no longer actively maintained.
+ * It has been replaced by:
+ * https://github.com/eslint-community/eslint-plugin-n
+ */
 const config = defineConfig({
-	extends: ["plugin:node/recommended"],
+	extends: ["plugin:n/recommended"],
 	rules: {
 		// RATIONALE: Allow `plugin-import` to handle them
-		"node/no-extraneous-import": ["off"],
-		"node/no-unpublished-import": ["off"],
-		"node/no-unpublished-require": ["off"],
-		"node/no-missing-import": ["off"],
+		"n/no-extraneous-import": ["off"],
+		"n/no-unpublished-import": ["off"],
+		"n/no-unpublished-require": ["off"],
+		"n/no-missing-import": ["off"],
 
-		// FIXME: TypeScript might have features not supported in a specific Node.js version.
+		// FIXME: TypeScript might have features not supported in a specific n.js version.
 		// @see https://github.com/mysticatea/eslint-plugin-node/issues/250
-		"node/no-unsupported-features/es-syntax": [
+		"n/no-unsupported-features/es-syntax": [
 			"off",
 			// "error",
 			// { ignores: ["modules"] },
 		],
 	},
 	settings: {
-		node: {
+		n: {
 			// eslint-disable-next-line unicorn/prefer-module
 			resolvePaths: [__dirname],
 			tryExtensions: [".cjs", ".js", ".mjs", ".ts"],
