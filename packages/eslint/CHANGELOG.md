@@ -1,5 +1,11 @@
 # @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.10.2
+
+### Patch Changes
+
+-   [#182](https://github.com/terminal-nerds/configs/pull/182) [`e7cfbd1`](https://github.com/terminal-nerds/configs/commit/e7cfbd17cb157fb6e108cbba4026620e5e002fa4) Thanks [@xeho91](https://github.com/xeho91)! - 🐛 Move bundled `@workspace/shared` to `devDependencies`
+
 ## 0.10.1
 
 ### Patch Changes
