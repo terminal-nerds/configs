@@ -1,4 +1,3 @@
-import { hasPackage } from "@workspace/shared/package";
 import { defineConfig } from "eslint-define-config";
 
 // https://github.com/ota-meshi/eslint-plugin-svelte
