@@ -5,7 +5,7 @@ const config = [
 	 * Meaning LTS version.
 	 * Any version above LTS is not considered as "major release", AFAIK.
 	 */
-	"last 1 node major versions",
+	"last 2 node major versions",
 ];
 
 export default config;
