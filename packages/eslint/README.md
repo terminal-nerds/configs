@@ -123,7 +123,7 @@ _conditionally_.
 | [eslint-plugin-sonarjs]               | ![eslint-plugin-sonarjs version badge]               | -                                                                            |
 | [eslint-plugin-sql]                   | ![eslint-plugin-sql version badge]                   | -                                                                            |
 | [eslint-plugin-storybook]             | ![eslint-plugin-storybook version badge]             | `storybook` as dependency                                                    |
-| [eslint-plugin-svelte3]               | ![eslint-plugin-svelte3 version badge]               | `svelte` as dependency                                                       |
+| [eslint-plugin-svelte]                | ![eslint-plugin-svelte version badge]                | `svelte` as dependency                                                       |
 | [eslint-plugin-tailwindcss]           | ![eslint-plugin-tailwindcss version badge]           | `tailwindcss` as dependency                                                  |
 | [eslint-plugin-testing-library]       | ![eslint-plugin-testing-library version badge]       | `@testing-library/jest-dom` as dependency                                    |
 | [eslint-plugin-unicorn]               | ![eslint-plugin-unicorn version badge]               | -                                                                            |
@@ -167,8 +167,8 @@ _conditionally_.
 [eslint-plugin-sql version badge]: https://img.shields.io/npm/v/eslint-plugin-sql?logo=npm&style=flat-square
 [eslint-plugin-storybook]: https://github.com/storybookjs/eslint-plugin-storybook
 [eslint-plugin-storybook version badge]: https://img.shields.io/npm/v/eslint-plugin-storybook?logo=npm&style=flat-square
-[eslint-plugin-svelte3]: https://github.com/sveltejs/eslint-plugin-svelte3
-[eslint-plugin-svelte3 version badge]: https://img.shields.io/npm/v/eslint-plugin-svelte3?logo=npm&style=flat-square
+[eslint-plugin-svelte]: https://github.com/ota-meshi/eslint-plugin-svelte
+[eslint-plugin-svelte version badge]: https://img.shields.io/npm/v/eslint-plugin-svelte?logo=npm&style=flat-square
 [eslint-plugin-tailwindcss]: https://github.com/francoismassart/eslint-plugin-tailwindcss
 [eslint-plugin-tailwindcss version badge]: https://img.shields.io/npm/v/eslint-plugin-tailwindcss?logo=npm&style=flat-square
 [eslint-plugin-testing-library]: https://github.com/testing-library/eslint-plugin-testing-library
