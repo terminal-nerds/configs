@@ -115,7 +115,7 @@ _conditionally_.
 | [eslint-plugin-json-schema-validator] | ![eslint-plugin-json-schema-validator version badge] | -                                                                            |
 | [eslint-plugin-jsonc]                 | ![eslint-plugin-jsonc version badge]                 | -                                                                            |
 | [eslint-plugin-jsx-a11y]              | ![eslint-plugin-jsx-a11y version badge]              | `react` or `preact` as dependency                                            |
-| [eslint-plugin-node]                  | ![eslint-plugin-node version badge]                  | -                                                                            |
+| [eslint-plugin-n]                     | ![eslint-plugin-n version badge]                     | -                                                                            |
 | [eslint-plugin-react]                 | ![eslint-plugin-react version badge]                 | `react` or `preact` as dependency                                            |
 | [eslint-plugin-react-hooks]           | ![eslint-plugin-react-hooks version badge]           | `react` or `preact` as dependency                                            |
 | [eslint-plugin-regexp]                | ![eslint-plugin-regexp version badge]                | -                                                                            |
@@ -151,7 +151,7 @@ _conditionally_.
 [eslint-plugin-jsonc version badge]: https://img.shields.io/npm/v/eslint-plugin-jsonc?logo=npm&style=flat-square
 [eslint-plugin-jsx-a11y]: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y
 [eslint-plugin-jsx-a11y version badge]: https://img.shields.io/npm/v/eslint-plugin-jsx-a11y?logo=npm&style=flat-square
-[eslint-plugin-node]: https://github.com/mysticatea/eslint-plugin-node
+[eslint-plugin-n]: https://github.com/eslint-community/eslint-plugin-n
 [eslint-plugin-node version badge]: https://img.shields.io/npm/v/eslint-plugin-node?logo=npm&style=flat-square
 [eslint-plugin-react]: https://github.com/yannickcr/eslint-plugin-react
 [eslint-plugin-react version badge]: https://img.shields.io/npm/v/eslint-plugin-react?logo=npm&style=flat-square
