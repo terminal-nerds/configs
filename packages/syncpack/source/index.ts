@@ -36,7 +36,7 @@ const config: Partial<SyncpackConfig> = {
 		"devDependencies",
 	],
 	versionGroups: [],
-	workspace: true,
+	workspace: false,
 };
 
 export default config;
