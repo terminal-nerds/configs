@@ -1,5 +1,11 @@
 # @terminal-nerds/stylelint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.7.2
+
+### Patch Changes
+
+-   [#182](https://github.com/terminal-nerds/configs/pull/182) [`e7cfbd1`](https://github.com/terminal-nerds/configs/commit/e7cfbd17cb157fb6e108cbba4026620e5e002fa4) Thanks [@xeho91](https://github.com/xeho91)! - 🐛 Move bundled `@workspace/shared` to `devDependencies`
+
 ## 0.7.1
 
 ### Patch Changes
