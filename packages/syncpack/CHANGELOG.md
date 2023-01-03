@@ -1,5 +1,13 @@
 # @terminal-nerds/syncpack-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.3.0
+
+### Minor Changes
+
+-   [#134](https://github.com/terminal-nerds/configs/pull/134) [`30cc064`](https://github.com/terminal-nerds/configs/commit/30cc0642bcb3976b28ca4009ec3e48b296a37ce5) Thanks [@renovate](https://github.com/apps/renovate)! - 🔧 Update configuration to align with the new `syncpack` version `^8.0.0`
+
+-   [#134](https://github.com/terminal-nerds/configs/pull/134) [`30cc064`](https://github.com/terminal-nerds/configs/commit/30cc0642bcb3976b28ca4009ec3e48b296a37ce5) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update `syncpack` to `v8.4.11`
+
 ## 0.2.0
 
 ### Minor Changes

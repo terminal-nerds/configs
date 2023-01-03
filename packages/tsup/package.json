@@ -6,7 +6,7 @@
 		"access": "public"
 	},
 	"name": "@terminal-nerds/tsup-config",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Terminal Nerds extendable configuration for tsup.",
 	"keywords": [
 		"config",
@@ -54,7 +54,7 @@
 		"tsup": "6.5.0"
 	},
 	"devDependencies": {
-		"@terminal-nerds/typescript-config": "0.3.1",
+		"@terminal-nerds/typescript-config": "0.4.0",
 		"tsup": "6.5.0",
 		"typescript": "4.9.4"
 	}
