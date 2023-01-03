@@ -25,7 +25,6 @@ const config: Partial<SyncpackConfig> = {
 		"bugs",
 		"engines",
 		"packageManager",
-		"volta",
 		"exports",
 		"main",
 		"files",
