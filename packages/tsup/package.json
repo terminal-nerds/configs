@@ -41,11 +41,11 @@
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"dev": "tsup --watch",
 		"format": "concurrently \"pnpm:format:*\" --group --timings",
-		"format:prettier": "pretty-quick --branch main --pattern \"packages/eslint/**/*\" --verbose",
+		"format:prettier": "pretty-quick --branch main --pattern \"packages/tsup/**/*\" --verbose",
 		"format:syncpack": "syncpack format",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
 		"lint:deps": "depcheck",
-		"lint:format": "pretty-quick --branch main --pattern \"./packages/eslint/**/*\" --verbose --check",
+		"lint:format": "pretty-quick --branch main --pattern \"./packages/tsup/**/*\" --verbose --check",
 		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --config \"../../.eslintrc.cjs\" --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
 		"lint:types": "tsc --noEmit"
