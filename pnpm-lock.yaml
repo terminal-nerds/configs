@@ -70,7 +70,7 @@ importers:
       '@types/eslint': 8.4.10
       '@typescript-eslint/eslint-plugin': 5.47.1
       '@typescript-eslint/parser': 5.47.1
-      '@workspace/shared': 0.0.0
+      '@workspace/shared': workspace:*
       eslint-config-next: 13.1.1
       eslint-config-prettier: 8.5.0
       eslint-define-config: 1.12.0
@@ -104,7 +104,6 @@ importers:
       '@emotion/eslint-plugin': 11.10.0
       '@typescript-eslint/eslint-plugin': 5.47.1_lz2mbwyw4zjrdfsro6cckkmnvm
       '@typescript-eslint/parser': 5.47.1_typescript@4.9.4
-      '@workspace/shared': link:../../shared
       eslint-config-next: 13.1.1_typescript@4.9.4
       eslint-config-prettier: 8.5.0
       eslint-define-config: 1.12.0
@@ -136,6 +135,7 @@ importers:
       '@terminal-nerds/tsup-config': link:../tsup
       '@terminal-nerds/typescript-config': link:../typescript
       '@types/eslint': 8.4.10
+      '@workspace/shared': link:../../shared
       tsup: 6.5.0_typescript@4.9.4
       typescript: 4.9.4
 
@@ -154,19 +154,19 @@ importers:
       '@terminal-nerds/tsup-config': workspace:*
       '@terminal-nerds/typescript-config': workspace:*
       '@types/prettier': 2.7.2
-      '@workspace/shared': 0.0.0
+      '@workspace/shared': workspace:*
       prettier-plugin-svelte: 2.9.0
       prettier-plugin-tailwindcss: 0.2.1
       tsup: 6.5.0
       typescript: 4.9.4
     dependencies:
-      '@workspace/shared': link:../../shared
       prettier-plugin-svelte: 2.9.0
       prettier-plugin-tailwindcss: 0.2.1
     devDependencies:
       '@terminal-nerds/tsup-config': link:../tsup
       '@terminal-nerds/typescript-config': link:../typescript
       '@types/prettier': 2.7.2
+      '@workspace/shared': link:../../shared
       tsup: 6.5.0_typescript@4.9.4
       typescript: 4.9.4
 
@@ -174,7 +174,7 @@ importers:
     specifiers:
       '@terminal-nerds/tsup-config': workspace:*
       '@terminal-nerds/typescript-config': workspace:*
-      '@workspace/shared': 0.0.0
+      '@workspace/shared': workspace:*
       stylelint: 14.16.1
       stylelint-config-prettier: 9.0.4
       stylelint-config-standard: 29.0.0
@@ -186,7 +186,6 @@ importers:
       tsup: 6.5.0
       typescript: 4.9.4
     dependencies:
-      '@workspace/shared': link:../../shared
       stylelint-config-prettier: 9.0.4_stylelint@14.16.1
       stylelint-config-standard: 29.0.0_stylelint@14.16.1
       stylelint-config-standard-scss: 6.1.0_stylelint@14.16.1
@@ -197,6 +196,7 @@ importers:
     devDependencies:
       '@terminal-nerds/tsup-config': link:../tsup
       '@terminal-nerds/typescript-config': link:../typescript
+      '@workspace/shared': link:../../shared
       stylelint: 14.16.1
       tsup: 6.5.0_typescript@4.9.4
       typescript: 4.9.4
