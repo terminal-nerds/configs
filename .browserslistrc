@@ -1,1 +1,2 @@
-current node
+# https://browsersl.ist/
+extends @terminal-nerds/browserslist-config/node
