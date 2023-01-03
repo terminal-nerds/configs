@@ -25,7 +25,6 @@ const config: Partial<SyncpackConfig> = {
 		"bugs",
 		"engines",
 		"packageManager",
-		"volta",
 		"exports",
 		"main",
 		"files",
@@ -36,7 +35,7 @@ const config: Partial<SyncpackConfig> = {
 		"devDependencies",
 	],
 	versionGroups: [],
-	workspace: true,
+	workspace: false,
 };
 
 export default config;
