@@ -1,34 +1,33 @@
 {
 	"$schema": "https://json.schemastore.org/package",
 	"type": "module",
-	"publishConfig": {
-		"registry": "https://registry.npmjs.org/",
-		"access": "public"
-	},
-	"name": "@terminal-nerds/tsup-config",
+	"name": "@terminal-nerds/browserslist-config",
 	"version": "0.0.0",
-	"description": "Terminal Nerds extendable configuration for tsup.",
+	"description": "Terminal Nerds extendable configuration for browserslist.",
 	"keywords": [
 		"config",
 		"tool",
-		"tsup"
+		"browserslist"
 	],
 	"license": "MIT",
-	"homepage": "https://github.com/terminal-nerds/configs/tree/main/packages/tsup",
+	"homepage": "https://github.com/terminal-nerds/configs/tree/main/packages/browserslist",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/terminal-nerds/configs.git",
-		"directory": "packages/tsup"
+		"directory": "packages/browserslist"
 	},
 	"bugs": "https://github.com/terminal-nerds/configs/issues",
 	"engines": {
 		"node": ">=18"
 	},
 	"exports": {
-		".": {
-			"import": "./dist/main.js",
-			"require": "./dist/main.cjs",
-			"types": "./dist/main.d.ts"
+		"./browsers": {
+			"require": "./dist/browsers.cjs",
+			"types": "./dist/browsers.d.ts"
+		},
+		"./node": {
+			"require": "./dist/node.cjs",
+			"types": "./dist/node.d.ts"
 		}
 	},
 	"files": [
@@ -41,19 +40,20 @@
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"dev": "tsup --watch",
 		"format": "concurrently \"pnpm:format:*\" --group --timings",
-		"format:prettier": "pretty-quick --branch main --pattern \"packages/tsup/**/*\" --verbose",
+		"format:prettier": "pretty-quick --branch main --pattern \"packages/browserslist/**/*\" --verbose",
 		"format:syncpack": "syncpack format",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
 		"lint:deps": "depcheck",
-		"lint:format": "pretty-quick --branch main --pattern \"./packages/tsup/**/*\" --verbose --check",
+		"lint:format": "pretty-quick --branch main --pattern \"./packages/browserslist/**/*\" --verbose --check",
 		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --config \"../../.eslintrc.cjs\" --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
 		"lint:types": "tsc --noEmit"
 	},
 	"peerDependencies": {
-		"tsup": "6.5.0"
+		"browserslist": "4.21.4"
 	},
 	"devDependencies": {
+		"@terminal-nerds/tsup-config": "0.0.0",
 		"@terminal-nerds/typescript-config": "0.3.1",
 		"tsup": "6.5.0",
 		"typescript": "4.9.4"

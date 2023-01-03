@@ -54,6 +54,7 @@ registry].
 
 | Name                                                | Version                                                              |
 | --------------------------------------------------- | -------------------------------------------------------------------- |
+| [![browserslist-config badge]][browserslist-config] | [![browserslist-config version badge]][browserslist-config npm page] |
 | [![eslint-config badge]][eslint-config]             | [![eslint-config version badge]][eslint-config npm page]             |
 | [![markdownlint-config badge]][markdownlint-config] | [![markdownlint-config version badge]][markdownlint-config npm page] |
 | [![prettier-config badge]][prettier-config]         | [![prettier-config version badge]][prettier-config npm page]         |
@@ -62,6 +63,10 @@ registry].
 | [![tsup-config badge]][tsup-config]                 | [![tsup-config version badge]][tsup-config npm page]                 |
 | [![typescript-config badge]][typescript-config]     | [![typescript-config version badge]][typescript-config npm page]     |
 
+[browserslist-config]: ./packages/browserslist/README.md
+[browserslist-config badge]: https://img.shields.io/badge/browserslist-config-informational?style=flat-square&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAMAAABhq6zVAAAAulBMVEUAAAD/1Sv/20n/2Tn/1Tn/1Tj/1Tr/1Tn/1Tj/1Tn/1Tn+1Dn/1Tn/1Tj/1Tn80zj/1Tn90zn/1TkAAAABAQAGBQEQDQQRDgQTEAQgGwc6MA1IPBBcTRVdThVoVxdyXxl3YxuCbR+HcR6LdB+PdyCWgzqZgCKZhTylo5upjSa0lijCoivDoyzDsGjGpSzKxrfPrS7QtlXSry/TsC/UsS/a2NLhvDLivjnsxTX4zzf60Tj+1Dn/1Tn///9oYvmkAAAAE3RSTlMABgcbbG1uxsfIyc/P0PHz8/T0YfWn+QAAAAFiS0dEPdBtUVkAAAB8SURBVAgdHcEHAoIwEATATQEDBo0eYsPee+/3/3cZmAEgw6jRjAIJTyXXWz7cnKsKkMmz3yZKJ2wlQu61yDswa8TLLhXWl62B21Pp9Fg5uJxKixfXEN8zKhyZDYL3OCWizodZQ9rdICOaM1sBKPudzkY/tgqe0KbuKloAf+riDRvRGNmHAAAAAElFTkSuQmCC
+[browserslist-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/browserslist-config/latest?style=flat-square&logo=npm
+[browserslist-config npm page]: https://www.npmjs.com/package/@terminal-nerds/browserslist-config
 [eslint-config]: ./packages/eslint/README.md
 [eslint-config badge]: https://img.shields.io/badge/eslint-config-informational?style=flat-square&logo=eslint
 [eslint-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/eslint-config/latest?style=flat-square&logo=npm
