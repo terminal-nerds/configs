@@ -20,6 +20,16 @@
 	"engines": {
 		"node": ">=18"
 	},
+	"exports": {
+		"./browsers": {
+			"require": "./dist/browsers.cjs",
+			"types": "./dist/browsers.d.ts"
+		},
+		"./node": {
+			"require": "./dist/node.cjs",
+			"types": "./dist/node.d.ts"
+		}
+	},
 	"files": [
 		"/dist"
 	],
