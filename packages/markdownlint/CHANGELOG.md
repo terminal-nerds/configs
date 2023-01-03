@@ -1,5 +1,19 @@
 # @terminal-nerds/markdownlint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.5.0
+
+### Minor Changes
+
+-   [#165](https://github.com/terminal-nerds/configs/pull/165) [`f29f2d8`](https://github.com/terminal-nerds/configs/commit/f29f2d8b43056e0b05a3f1a5bf1d2e9d42020955) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update `markdownlint` to `v0.27.0`
+
+-   [#143](https://github.com/terminal-nerds/configs/pull/143) [`6b75890`](https://github.com/terminal-nerds/configs/commit/6b758907b66252aa830127a48839d4eea96d0df6) Thanks [@renovate](https://github.com/apps/renovate)! - 🔧 Tweak markdownlint rules:
+
+    -   Improve `front_matter_title` regexp in `first-line-heading` rule in order to integrate better with [Changesets](https://github.com/changesets/changesets)
+    -   increase allowed `line-length` to `120`
+    -   Temporarily disable `link-image-reference-definitions`
+
+-   [#171](https://github.com/terminal-nerds/configs/pull/171) [`ac628bd`](https://github.com/terminal-nerds/configs/commit/ac628bdfa99c1775f5d7667a5bd01c44fd40a6ce) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Increase **max line length** to `120`
+
 ## 0.4.0
 
 ### Minor Changes
