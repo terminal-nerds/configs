@@ -2,7 +2,7 @@
 	"$schema": "https://json.schemastore.org/package",
 	"type": "module",
 	"name": "@terminal-nerds/eslint-config",
-	"version": "0.10.2",
+	"version": "0.10.3",
 	"description": "Terminal Nerds extendable configuration for ESLint.",
 	"keywords": [
 		"config",
