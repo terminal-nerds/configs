@@ -8,13 +8,9 @@ const config = defineConfig({
 	},
 	ignorePatterns: ["**/coverage"],
 	settings: {
-		// jest: {
-		// 	/* eslint-disable-next-line
-		// 	   unicorn/prefer-module,
-		// 	   @typescript-eslint/no-var-requires
-		// 	*/
-		// 	version: 27,
-		// },
+		jest: {
+			version: 29,
+		},
 	},
 });
 
