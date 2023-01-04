@@ -1,5 +1,11 @@
 # @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.10.3
+
+### Patch Changes
+
+-   [#184](https://github.com/terminal-nerds/configs/pull/184) [`340797b`](https://github.com/terminal-nerds/configs/commit/340797bef9d35352db2ad4070b8ae29178f5ee7a) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Setup Jest version to `29`
+
 ## 0.10.2
 
 ### Patch Changes
