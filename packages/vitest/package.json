@@ -63,7 +63,6 @@
 		"@terminal-nerds/tsup-config": "workspace:*",
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"@vitest/coverage-c8": "0.26.3",
-		"@workspace/shared": "workspace:*",
 		"tsup": "6.5.0",
 		"typescript": "4.9.4",
 		"vitest": "0.26.3"
