@@ -56,6 +56,9 @@
 	"peerDependencies": {
 		"vitest": "0.26.3"
 	},
+	"dependencies": {
+		"@vitest/ui": "0.26.3"
+	},
 	"devDependencies": {
 		"@terminal-nerds/tsup-config": "workspace:*",
 		"@terminal-nerds/typescript-config": "workspace:*",
