@@ -3,5 +3,6 @@ import { defineConfig } from "tsup";
 
 export default defineConfig((options) => ({
 	...getNodeESMOptions(options),
+	bundle: false,
 	entry: ["./source/**/*.ts"],
 }));
