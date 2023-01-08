@@ -13,6 +13,9 @@
 "📦 package:eslint-config":
     - packages/eslint/**/*
 
+"📦 package:lint-staged-config":
+    - packages/lint-staged/**/*
+
 "📦 package:markdownlint-config":
     - packages/markdownlint/**/*
 
