@@ -130,9 +130,3 @@ the [terminal-nerds/configs] monorepo.
 [license badge]: https://img.shields.io/github/license/terminal-nerds/configs?style=for-the-badge
 [license]: https://github.com/terminal-nerds/configs/blob/main/LICENSE.md
 [license section]: https://github.com/terminal-nerds/configs#License
-
----
-
-## Resources
-
-None so far.

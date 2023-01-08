@@ -57,12 +57,13 @@
 		"vitest": "0.26.3"
 	},
 	"dependencies": {
-		"@vitest/ui": "0.26.3"
+		"@vitest/coverage-c8": "0.26.3",
+		"@vitest/ui": "0.26.3",
+		"vite": "4.0.4"
 	},
 	"devDependencies": {
 		"@terminal-nerds/tsup-config": "workspace:*",
 		"@terminal-nerds/typescript-config": "workspace:*",
-		"@vitest/coverage-c8": "0.26.3",
 		"tsup": "6.5.0",
 		"typescript": "4.9.4",
 		"vitest": "0.26.3"

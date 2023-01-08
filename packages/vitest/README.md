@@ -63,7 +63,10 @@ device(s):
 
     // https://vitest.dev/config/
     export default defineConfig({
-    	test: { ...WITH_COVERAGE_OPTIONS, reporters: ["html"] },
+    	test: {
+    		...WITH_COVERAGE_OPTIONS,
+    		// Override the config from there, if neccessary
+    	},
     });
     ```
 
