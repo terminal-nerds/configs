@@ -8,6 +8,7 @@ importers:
       '@changesets/cli': 2.26.0
       '@terminal-nerds/browserslist-config': workspace:*
       '@terminal-nerds/eslint-config': workspace:*
+      '@terminal-nerds/lint-staged-config': workspace:*
       '@terminal-nerds/markdownlint-config': workspace:*
       '@terminal-nerds/prettier-config': workspace:*
       '@terminal-nerds/syncpack-config': workspace:*
@@ -31,6 +32,7 @@ importers:
       '@changesets/cli': 2.26.0
       '@terminal-nerds/browserslist-config': link:packages/browserslist
       '@terminal-nerds/eslint-config': link:packages/eslint
+      '@terminal-nerds/lint-staged-config': link:packages/lint-staged
       '@terminal-nerds/markdownlint-config': link:packages/markdownlint
       '@terminal-nerds/prettier-config': link:packages/prettier
       '@terminal-nerds/syncpack-config': link:packages/syncpack
@@ -136,6 +138,22 @@ importers:
       '@terminal-nerds/typescript-config': link:../typescript
       '@types/eslint': 8.4.10
       '@workspace/shared': link:../../shared
+      tsup: 6.5.0_typescript@4.9.4
+      typescript: 4.9.4
+
+  packages/lint-staged:
+    specifiers:
+      '@terminal-nerds/tsup-config': workspace:*
+      '@terminal-nerds/typescript-config': workspace:*
+      '@workspace/shared': workspace:*
+      lint-staged: 13.1.0
+      tsup: 6.5.0
+      typescript: 4.9.4
+    devDependencies:
+      '@terminal-nerds/tsup-config': link:../tsup
+      '@terminal-nerds/typescript-config': link:../typescript
+      '@workspace/shared': link:../../shared
+      lint-staged: 13.1.0
       tsup: 6.5.0_typescript@4.9.4
       typescript: 4.9.4
 
@@ -261,12 +279,14 @@ importers:
       '@terminal-nerds/tsup-config': workspace:*
       '@terminal-nerds/typescript-config': workspace:*
       deepmerge-ts: 4.2.2
+      pkg-dir: 7.0.0
       read-pkg-up: 9.1.0
       tsup: 6.5.0
       type-fest: 3.5.0
       typescript: 4.9.4
     dependencies:
       deepmerge-ts: 4.2.2
+      pkg-dir: 7.0.0
       read-pkg-up: 9.1.0
     devDependencies:
       '@terminal-nerds/tsup-config': link:../packages/tsup
@@ -5045,6 +5065,13 @@ packages:
     dependencies:
       find-up: 4.1.0
     dev: true
+
+  /pkg-dir/7.0.0:
+    resolution: {integrity: sha512-Ie9z/WINcxxLp27BKOCHGde4ITq9UklYKDzVo1nhk5sqGEXU3FpkwP5GM2voTGJkGd9B3Otl+Q4uwSOeSUtOBA==}
+    engines: {node: '>=14.16'}
+    dependencies:
+      find-up: 6.3.0
+    dev: false
 
   /pkg-types/1.0.1:
     resolution: {integrity: sha512-jHv9HB+Ho7dj6ItwppRDDl0iZRYBD0jsakHXtFgoLr+cHSF6xC+QL54sJmWxyGxOLYSHm0afhXhXcQDQqH9z8g==}
