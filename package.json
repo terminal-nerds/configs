@@ -31,6 +31,7 @@
 		"lint:format": "pretty-quick --branch main --pattern \"**/*\" --pattern \"!{shared,packages}/**/*\" --verbose --check",
 		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .cjs,.json,.yml,.yaml --ignore \"./packages\" --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"./.gitignore\" --ignore \"./{shared,packages}/**/*\"",
+		"lint:staged": "lint-staged --verbose",
 		"prepare": "husky install",
 		"preinstall": "npx only-allow pnpm"
 	},
