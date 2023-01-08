@@ -62,6 +62,7 @@ registry].
 | [![syncpack-config badge]][syncpack-config]         | [![syncpack-config version badge]][syncpack-config npm page]         |
 | [![tsup-config badge]][tsup-config]                 | [![tsup-config version badge]][tsup-config npm page]                 |
 | [![typescript-config badge]][typescript-config]     | [![typescript-config version badge]][typescript-config npm page]     |
+| [![vitest-config badge]][vitest-config]             | [![vitest-config version badge]][vitest-config npm page]             |
 
 [browserslist-config]: ./packages/browserslist/README.md
 [browserslist-config badge]: https://img.shields.io/badge/browserslist-config-informational?style=flat-square&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAMAAABhq6zVAAAAulBMVEUAAAD/1Sv/20n/2Tn/1Tn/1Tj/1Tr/1Tn/1Tj/1Tn/1Tn+1Dn/1Tn/1Tj/1Tn80zj/1Tn90zn/1TkAAAABAQAGBQEQDQQRDgQTEAQgGwc6MA1IPBBcTRVdThVoVxdyXxl3YxuCbR+HcR6LdB+PdyCWgzqZgCKZhTylo5upjSa0lijCoivDoyzDsGjGpSzKxrfPrS7QtlXSry/TsC/UsS/a2NLhvDLivjnsxTX4zzf60Tj+1Dn/1Tn///9oYvmkAAAAE3RSTlMABgcbbG1uxsfIyc/P0PHz8/T0YfWn+QAAAAFiS0dEPdBtUVkAAAB8SURBVAgdHcEHAoIwEATATQEDBo0eYsPee+/3/3cZmAEgw6jRjAIJTyXXWz7cnKsKkMmz3yZKJ2wlQu61yDswa8TLLhXWl62B21Pp9Fg5uJxKixfXEN8zKhyZDYL3OCWizodZQ9rdICOaM1sBKPudzkY/tgqe0KbuKloAf+riDRvRGNmHAAAAAElFTkSuQmCC
@@ -95,6 +96,10 @@ registry].
 [typescript-config badge]: https://img.shields.io/badge/typescript-config-informational?style=flat-square&logo=typescript
 [typescript-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/typescript-config/latest?style=flat-square&logo=npm
 [typescript-config npm page]: https://www.npmjs.com/package/@terminal-nerds/typescript-config
+[vitest-config]: ./packages/vitest/README.md
+[vitest-config badge]: https://img.shields.io/badge/vitest-config-informational?style=flat-square&logo=vitest
+[vitest-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/vitest-config/latest?style=flat-square&logo=npm
+[vitest-config npm page]: https://www.npmjs.com/package/@terminal-nerds/vitest-config
 
 ## License
 

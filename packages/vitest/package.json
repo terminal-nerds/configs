@@ -1,0 +1,70 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"type": "module",
+	"name": "@terminal-nerds/vitest-config",
+	"version": "0.0.0",
+	"description": "Terminal Nerds extendable configuration for Vitest.",
+	"keywords": [
+		"config",
+		"tool",
+		"vitest"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/terminal-nerds/configs/tree/main/packages/vitest",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/terminal-nerds/configs.git",
+		"directory": "packages/vitest"
+	},
+	"bugs": "https://github.com/terminal-nerds/configs/issues",
+	"engines": {
+		"node": ">=18"
+	},
+	"exports": {
+		".": {
+			"types": "./dist/main.d.ts",
+			"import": "./dist/main.js"
+		},
+		"./base": {
+			"types": "./dist/base.d.ts",
+			"import": "./dist/base.js"
+		},
+		"./with-coverage": {
+			"types": "./dist/with-coverage.d.ts",
+			"import": "./dist/with-coverage.js"
+		}
+	},
+	"files": [
+		"/dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
+		"clean:build": "del \"./dist\"",
+		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
+		"dev": "tsup --watch",
+		"format": "concurrently \"pnpm:format:*\" --group --timings",
+		"format:prettier": "pretty-quick --branch main --pattern \"packages/vitest/**/*\" --verbose",
+		"format:syncpack": "syncpack format",
+		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
+		"lint:deps": "depcheck",
+		"lint:format": "pretty-quick --branch main --pattern \"./packages/vitest/**/*\" --verbose --check",
+		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --config \"../../.eslintrc.cjs\" --cache --cache-location \"./node_modules/.cache/eslint\"",
+		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
+		"lint:types": "tsc --noEmit"
+	},
+	"peerDependencies": {
+		"vitest": "0.26.3"
+	},
+	"dependencies": {
+		"@vitest/ui": "0.26.3"
+	},
+	"devDependencies": {
+		"@terminal-nerds/tsup-config": "workspace:*",
+		"@terminal-nerds/typescript-config": "workspace:*",
+		"@vitest/coverage-c8": "0.26.3",
+		"tsup": "6.5.0",
+		"typescript": "4.9.4",
+		"vitest": "0.26.3"
+	}
+}

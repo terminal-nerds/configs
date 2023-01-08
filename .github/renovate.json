@@ -79,6 +79,12 @@
 			"excludePackageNames": ["@typescript-eslint/eslint-parser", "@typescript-eslint/eslint-plugin"]
 		},
 		{
+			"groupName": "Vitest dependencies",
+			"addLabels": ["📦 package:vitest-config"],
+			"matchPackageNames": ["vitest", "@vitest"],
+			"matchUpdateTypes": ["major", "minor", "patch", "rollback"]
+		},
+		{
 			"groupName": "project prerequisities",
 			"addLabels": ["🧰 monorepo"],
 			"packagePatterns": ["node", "pnpm"]
