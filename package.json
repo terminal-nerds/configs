@@ -39,6 +39,7 @@
 		"@changesets/cli": "2.26.0",
 		"@terminal-nerds/browserslist-config": "workspace:*",
 		"@terminal-nerds/eslint-config": "workspace:*",
+		"@terminal-nerds/lint-staged-config": "workspace:*",
 		"@terminal-nerds/markdownlint-config": "workspace:*",
 		"@terminal-nerds/prettier-config": "workspace:*",
 		"@terminal-nerds/syncpack-config": "workspace:*",
