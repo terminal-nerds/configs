@@ -56,6 +56,7 @@ registry].
 | --------------------------------------------------- | -------------------------------------------------------------------- |
 | [![browserslist-config badge]][browserslist-config] | [![browserslist-config version badge]][browserslist-config npm page] |
 | [![eslint-config badge]][eslint-config]             | [![eslint-config version badge]][eslint-config npm page]             |
+| [![lint-staged-config badge]][lint-staged-config]   | [![lint-staged-config version badge]][lint-staged-config npm page]   |
 | [![markdownlint-config badge]][markdownlint-config] | [![markdownlint-config version badge]][markdownlint-config npm page] |
 | [![prettier-config badge]][prettier-config]         | [![prettier-config version badge]][prettier-config npm page]         |
 | [![stylelint-config badge]][stylelint-config]       | [![stylelint-config version badge]][stylelint-config npm page]       |
@@ -72,6 +73,10 @@ registry].
 [eslint-config badge]: https://img.shields.io/badge/eslint-config-informational?style=flat-square&logo=eslint
 [eslint-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/eslint-config/latest?style=flat-square&logo=npm
 [eslint-config npm page]: https://www.npmjs.com/package/@terminal-nerds/eslint-config
+[lint-staged-config]: ./packages/lint-staged/README.md
+[lint-staged-config badge]: https://img.shields.io/badge/lint%E2%80%94staged-config-informational?style=flat-square&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAAmJLR0QA/4ePzL8AAACXSURBVBgZBcExi4EBGADgR0azkpQucVks6EqZ9P0Fv0TJYlXqllssFjaLzS1nUt9ssBhkU4rErt57HgAAAADUpDIAAPAnLPVkAYCClxDCBACKLs5CuFrLAZDoaFk5qqobAjSclA2MbSS6Un1gLmyNPLxNLYQ98C2Eti8dFXdhCxRdhF+fPsyEpyZA3tjOzcvBjxIAAAD4B9wULRM9ftETAAAAAElFTkSuQmCC
+[lint-staged-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/lint-staged-config/latest?style=flat-square&logo=npm
+[lint-staged-config npm page]: https://www.npmjs.com/package/@terminal-nerds/lint-staged-config
 [markdownlint-config]: ./packages/markdownlint/README.md
 [markdownlint-config badge]: https://img.shields.io/badge/markdownlint-config-informational?style=flat-square&logo=markdown
 [markdownlint-config version badge]: https://img.shields.io/npm/v/@terminal-nerds/markdownlint-config/latest?style=flat-square&logo=npm
@@ -129,9 +134,8 @@ Anyone is welcome to hop in for a chat. 🙂
 
 ## Security
 
-![workflow maintenance badge]\
+![workflow maintenance badge]
 ![Snyk vulnerabilities badge]
-[![SonarCloud badge]][sonarcloud report]
 
 🔐 Our team has a shared [Security Policy]. If you have concerns or found an
 issue, please follow the instructions, and
@@ -142,8 +146,6 @@ remember about one thing:
 
 [workflow maintenance badge]: https://img.shields.io/github/actions/workflow/status/terminal-nerds/configs/maintenance.yml?label=Security&logo=github&style=for-the-badge&branch=main
 [snyk vulnerabilities badge]: https://img.shields.io/snyk/vulnerabilities/github/terminal-nerds/configs?logo=snyk&style=for-the-badge
-[sonarcloud badge]: https://img.shields.io/sonar/quality_gate/terminal-nerds_configs/main?logo=sonarcloud&server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge
-[sonarcloud report]: https://sonarcloud.io/summary/overall?id=terminal-nerds_configs
 [security policy]: https://github.com/terminal-nerds/configs/security/policy
 
 ---
@@ -151,6 +153,7 @@ remember about one thing:
 ## Contributing
 
 [![contributors badge]][contributors url]
+[![SonarCloud badge]][sonarcloud report]
 
 🤝 This project follows the [all-contributors] specification.\
 **Therefore, contributions of any kind are welcome!**
@@ -162,6 +165,8 @@ involved.
 [contributing]: ./.github/CONTRIBUTING.md
 [contributors badge]: https://img.shields.io/github/contributors/terminal-nerds/configs?style=for-the-badge
 [contributors url]: /#contributors
+[sonarcloud badge]: https://img.shields.io/sonar/quality_gate/terminal-nerds_configs/main?logo=sonarcloud&server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge
+[sonarcloud report]: https://sonarcloud.io/summary/overall?id=terminal-nerds_configs
 
 ### Project contributors
 
