@@ -2,7 +2,7 @@
 	"$schema": "https://json.schemastore.org/package",
 	"type": "module",
 	"name": "@terminal-nerds/vitest-config",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Terminal Nerds extendable configuration for Vitest.",
 	"keywords": [
 		"config",
