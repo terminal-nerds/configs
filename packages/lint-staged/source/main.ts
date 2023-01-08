@@ -13,7 +13,7 @@ import { TYPESCRIPT } from "./groups/typescript.js";
 export const CONFIG = {
 	...(hasPackage("prettier") && CODE_FORMAT),
 	...(hasPackage("eslint") && ESLINT),
-	...(hasPackage("markdownlint") && MARKDOWN),
+	...(hasPackage("markdownlint-cli") && MARKDOWN),
 	...((hasPackage("depcheck") || "syncpack") && PACKAGE_JSON),
 	...(hasPackage("stylelint") && STYLESHEETS),
 	...(hasPackage("typescript") && TYPESCRIPT),
