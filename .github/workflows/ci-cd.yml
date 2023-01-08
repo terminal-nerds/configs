@@ -33,7 +33,6 @@ jobs:
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/build.yml
         uses: terminal-nerds/.github/.github/workflows/build.yml@main
         with:
-            artifact-name: "built-packages"
             artifact-path: "./packages/*/dist/"
             artifact-upload: true
             include: "./packages/*/dist/**/*.{js,cjs,json}"
