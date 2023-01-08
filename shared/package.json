@@ -23,6 +23,11 @@
 			"require": "./dist/environment.cjs",
 			"types": "./dist/environment.d.ts"
 		},
+		"./extension": {
+			"import": "./dist/extension.js",
+			"require": "./dist/extension.cjs",
+			"types": "./dist/extension.d.ts"
+		},
 		"./module": {
 			"import": "./dist/module.js",
 			"require": "./dist/module.cjs",
