@@ -6,15 +6,7 @@
 		{
 			"groupName": "project monorepo tools",
 			"addLabels": ["🧰 monorepo"],
-			"packagePatterns": [
-				"all-contributors-cli",
-				"changesets",
-				"concurrently",
-				"del-cli",
-				"husky",
-				"lint-staged",
-				"turbo"
-			]
+			"packagePatterns": ["all-contributors-cli", "changesets", "concurrently", "del-cli", "husky", "turbo"]
 		},
 		{
 			"groupName": "shared dependencies",
@@ -38,6 +30,12 @@
 			],
 			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
 			"packagePatterns": ["eslint"]
+		},
+		{
+			"groupName": "lint-staged dependencies",
+			"addLabels": ["📦 package:lint-staged-config"],
+			"matchPackageNames": ["lint-staged"],
+			"matchUpdateTypes": ["major", "minor", "patch", "rollback"]
 		},
 		{
 			"groupName": "markdownlint dependencies",
@@ -81,8 +79,9 @@
 		{
 			"groupName": "Vitest dependencies",
 			"addLabels": ["📦 package:vitest-config"],
-			"matchPackageNames": ["vitest", "@vitest"],
-			"matchUpdateTypes": ["major", "minor", "patch", "rollback"]
+			"matchPackageNames": ["vite", "vitest"],
+			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
+			"packagePatterns": ["@vitest"]
 		},
 		{
 			"groupName": "project prerequisities",
