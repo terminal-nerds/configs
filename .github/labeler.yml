@@ -31,5 +31,8 @@
 "📦 package:typescript-config":
     - packages/typescript/**/*
 
+"📦 package:vitest-config":
+    - packages/vitest/**/*
+
 "🎉 release":
     - packages/*/CHANGELOG.md
