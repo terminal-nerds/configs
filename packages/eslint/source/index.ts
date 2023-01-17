@@ -38,7 +38,7 @@ const config = createMergedConfig<SimplifiedESLintConfig>([
 
 	// Plugins
 	pluginCompat,
-	pluginDiff,
+	process.env["ESLINT_PLUGIN_DIFF_ENABLE"] === "true" && pluginDiff,
 	(hasPackage("@emotion/css") || hasPackage("@emotion/react")) && pluginEmotion,
 	pluginImport,
 	(hasPackage("jest") || hasPackage("vitest")) && pluginJest,

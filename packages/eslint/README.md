@@ -102,32 +102,32 @@ _conditionally_.
 
 ### Plugins
 
-| Plugin                                | Version                                              | Loading condition(s)                                                         |
-| ------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------------------------------- |
-| [@emotion/eslint-plugin]              | ![@emotion/eslint-plugin version badge]              | `@emotion/css` or `@emotion/react` as dependency                             |
-| [@typescript-eslint/eslint-plugin]    | ![@typescript-eslint/eslint-plugin version badge]    | `typescript` as dependency                                                   |
-| [eslint-plugin-compat]                | ![eslint-plugin-compat version badge]                | -                                                                            |
-| [eslint-plugin-diff]                  | ![eslint-plugin-diff version badge]                  | Set one of environment variables: `CI` or `CONTINUOUS_INTEGRATION` to `true` |
-| [eslint-plugin-import]                | ![eslint-plugin-import version badge]                | -                                                                            |
-| [eslint-plugin-jest]                  | ![eslint-plugin-jest version badge]                  | `jest` or `vitest` as dependency                                             |
-| [eslint-plugin-jest-dom]              | ![eslint-plugin-jest-dom version badge]              | `@testing-library/jest-dom` as dependency                                    |
-| [eslint-plugin-jest-formatting]       | ![eslint-plugin-jest-formatting version badge]       | `jest` or `vitest` as dependency                                             |
-| [eslint-plugin-json-schema-validator] | ![eslint-plugin-json-schema-validator version badge] | -                                                                            |
-| [eslint-plugin-jsonc]                 | ![eslint-plugin-jsonc version badge]                 | -                                                                            |
-| [eslint-plugin-jsx-a11y]              | ![eslint-plugin-jsx-a11y version badge]              | `react` or `preact` as dependency                                            |
-| [eslint-plugin-n]                     | ![eslint-plugin-n version badge]                     | -                                                                            |
-| [eslint-plugin-react]                 | ![eslint-plugin-react version badge]                 | `react` or `preact` as dependency                                            |
-| [eslint-plugin-react-hooks]           | ![eslint-plugin-react-hooks version badge]           | `react` or `preact` as dependency                                            |
-| [eslint-plugin-regexp]                | ![eslint-plugin-regexp version badge]                | -                                                                            |
-| [eslint-plugin-simple-import-sort]    | ![eslint-plugin-simple-import-sort version badge]    | -                                                                            |
-| [eslint-plugin-sonarjs]               | ![eslint-plugin-sonarjs version badge]               | -                                                                            |
-| [eslint-plugin-sql]                   | ![eslint-plugin-sql version badge]                   | -                                                                            |
-| [eslint-plugin-storybook]             | ![eslint-plugin-storybook version badge]             | `storybook` as dependency                                                    |
-| [eslint-plugin-svelte]                | ![eslint-plugin-svelte version badge]                | `svelte` as dependency                                                       |
-| [eslint-plugin-tailwindcss]           | ![eslint-plugin-tailwindcss version badge]           | `tailwindcss` as dependency                                                  |
-| [eslint-plugin-testing-library]       | ![eslint-plugin-testing-library version badge]       | `@testing-library/jest-dom` as dependency                                    |
-| [eslint-plugin-unicorn]               | ![eslint-plugin-unicorn version badge]               | -                                                                            |
-| [eslint-plugin-yml]                   | ![eslint-plugin-yml version badge]                   | -                                                                            |
+| Plugin                                | Version                                              | Loading condition(s)                                               |
+| ------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------ |
+| [@emotion/eslint-plugin]              | ![@emotion/eslint-plugin version badge]              | `@emotion/css` or `@emotion/react` as dependency                   |
+| [@typescript-eslint/eslint-plugin]    | ![@typescript-eslint/eslint-plugin version badge]    | `typescript` as dependency                                         |
+| [eslint-plugin-compat]                | ![eslint-plugin-compat version badge]                | -                                                                  |
+| [eslint-plugin-diff]                  | ![eslint-plugin-diff version badge]                  | `ESLINT_PLUGIN_DIFF_ENABLE` set to `true` in environment variables |
+| [eslint-plugin-import]                | ![eslint-plugin-import version badge]                | -                                                                  |
+| [eslint-plugin-jest]                  | ![eslint-plugin-jest version badge]                  | `jest` or `vitest` as dependency                                   |
+| [eslint-plugin-jest-dom]              | ![eslint-plugin-jest-dom version badge]              | `@testing-library/jest-dom` as dependency                          |
+| [eslint-plugin-jest-formatting]       | ![eslint-plugin-jest-formatting version badge]       | `jest` or `vitest` as dependency                                   |
+| [eslint-plugin-json-schema-validator] | ![eslint-plugin-json-schema-validator version badge] | -                                                                  |
+| [eslint-plugin-jsonc]                 | ![eslint-plugin-jsonc version badge]                 | -                                                                  |
+| [eslint-plugin-jsx-a11y]              | ![eslint-plugin-jsx-a11y version badge]              | `react` or `preact` as dependency                                  |
+| [eslint-plugin-n]                     | ![eslint-plugin-n version badge]                     | -                                                                  |
+| [eslint-plugin-react]                 | ![eslint-plugin-react version badge]                 | `react` or `preact` as dependency                                  |
+| [eslint-plugin-react-hooks]           | ![eslint-plugin-react-hooks version badge]           | `react` or `preact` as dependency                                  |
+| [eslint-plugin-regexp]                | ![eslint-plugin-regexp version badge]                | -                                                                  |
+| [eslint-plugin-simple-import-sort]    | ![eslint-plugin-simple-import-sort version badge]    | -                                                                  |
+| [eslint-plugin-sonarjs]               | ![eslint-plugin-sonarjs version badge]               | -                                                                  |
+| [eslint-plugin-sql]                   | ![eslint-plugin-sql version badge]                   | -                                                                  |
+| [eslint-plugin-storybook]             | ![eslint-plugin-storybook version badge]             | `storybook` as dependency                                          |
+| [eslint-plugin-svelte]                | ![eslint-plugin-svelte version badge]                | `svelte` as dependency                                             |
+| [eslint-plugin-tailwindcss]           | ![eslint-plugin-tailwindcss version badge]           | `tailwindcss` as dependency                                        |
+| [eslint-plugin-testing-library]       | ![eslint-plugin-testing-library version badge]       | `@testing-library/jest-dom` as dependency                          |
+| [eslint-plugin-unicorn]               | ![eslint-plugin-unicorn version badge]               | -                                                                  |
+| [eslint-plugin-yml]                   | ![eslint-plugin-yml version badge]                   | -                                                                  |
 
 [@emotion/eslint-plugin]: https://github.com/emotion-js/emotion/tree/main/packages/eslint-plugin
 [@emotion/eslint-plugin version badge]: https://img.shields.io/npm/v/@emotion/eslint-plugin?logo=npm&style=flat-square
