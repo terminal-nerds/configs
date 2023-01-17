@@ -10,7 +10,7 @@
 		"node": ">=18",
 		"pnpm": ">=7"
 	},
-	"packageManager": "pnpm@7.21.0",
+	"packageManager": "pnpm@7.25.0",
 	"scripts": {
 		"build:pkgs": "turbo run build",
 		"changelog": "pnpm changeset add",
