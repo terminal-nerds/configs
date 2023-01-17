@@ -36,95 +36,97 @@ jobs:
             artifact-path: "./packages/*/dist/"
             artifact-upload: true
             include: "./packages/*/dist/**/*.{js,cjs,json}"
-            script-build: build
+            script-build: turbo run build
 
-    lint_depcheck:
+    lint-depcheck:
         # Analyze dependencies usage in package.json files
-        name: Lint / depcheck
-        # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/nodejs-job.yml
-        uses: terminal-nerds/.github/.github/workflows/nodejs-job.yml@main
+        name: Lint
+        # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/nodejs-script.yml
+        uses: terminal-nerds/.github/.github/workflows/nodejs-script.yml@main
         needs: [build]
         with:
-            step-name: Execute package.json script
-            run: pnpm deps:check
+            download-build: true
+            job-name: depcheck
+            step-name: Lint dependencies with depcheck
+            run: turbo run lint:deps
 
-    lint_eslint:
+    lint-eslint:
         # Analyze the JavaScript codebase
-        name: Lint / ESLint
-        # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/nodejs-job.yml
-        uses: terminal-nerds/.github/.github/workflows/nodejs-job.yml@main
+        name: Lint
+        # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/nodejs-script.yml
+        uses: terminal-nerds/.github/.github/workflows/nodejs-script.yml@main
         needs: [build]
         with:
             download-build: true
+            job-name: ESLint
             step-name: Execute ESLint CLI task
-            # https://eslint.org/docs/user-guide/command-line-interface
-            run: >
-                DEBUG="eslint:cli-engine"
-                pnpm eslint .
-                --cache
-                --cache-location "./node_modules/.cache/eslint"
-                --ext .cjs,.js,.json,.ts,.yaml,.yml
+            run: turbo run lint:js
 
-    lint_markdownlint:
+    lint-markdownlint:
         # Analyze the markdownlint files
-        name: Lint / markdownlint
-        # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/nodejs-job.yml
-        uses: terminal-nerds/.github/.github/workflows/nodejs-job.yml@main
+        name: Lint
+        # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/nodejs-script.yml
+        uses: terminal-nerds/.github/.github/workflows/nodejs-script.yml@main
         needs: [build]
         with:
             download-build: true
+            job-name: markdownlint
             step-name: Execute markdownlint CLI task
-            # https://github.com/igorshubovych/markdownlint-cli#usage
-            run: >
-                pnpm markdownlint .
-                --dot
-                --ignore "./.changeset/*.md"
-                --ignore-path ".gitignore"
+            run: turbo run lint:md
 
-    lint_prettier:
+    lint-prettier:
         # Analyze the code format style
-        name: Lint / Prettier
-        # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/nodejs-job.yml
-        uses: terminal-nerds/.github/.github/workflows/nodejs-job.yml@main
+        name: Lint
+        # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/nodejs-script.yml
+        uses: terminal-nerds/.github/.github/workflows/nodejs-script.yml@main
         needs: [build]
         with:
             download-build: true
+            job-name: Prettier
             step-name: Execute "pretty-quick" CLI task
-            # https://github.com/azz/pretty-quick#usage
-            run: >
-                pnpm pretty-quick
-                --branch HEAD~${{ github.event.pull_request.commits }}
-                --verbose
+            run: turbo run lint:format
 
-    lint_syncpack:
+    lint-syncpack:
         # Analyze the package.json files to find dependencies mismatches
-        name: Lint / syncpack
-        # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/nodejs-job.yml
-        uses: terminal-nerds/.github/.github/workflows/nodejs-job.yml@main
+        name: Lint
+        # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/nodejs-script.yml
+        uses: terminal-nerds/.github/.github/workflows/nodejs-script.yml@main
         needs: [build]
         with:
             download-build: true
+            job-name: syncpack
             step-name: Execute syncpack CLI task
-            # https://github.com/JamieMason/syncpack
-            run: pnpm syncpack list-mismatches
+            run: pnpm lint:pkg
 
-    security_codeql:
+    lint-typescript:
+        # Analyze the package.json files to find dependencies mismatches
+        name: Lint
+        # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/nodejs-script.yml
+        uses: terminal-nerds/.github/.github/workflows/nodejs-script.yml@main
+        needs: [build]
+        with:
+            download-build: true
+            job-name: TypeScript
+            step-name: Execute TypeScript CLI task
+            run: turbo run lint:types
+
+    security-codeql:
         if: github.ref_name == 'main'
-        name: Security / CodeQL
+        name: Security
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/codeql.yml
         uses: terminal-nerds/.github/.github/workflows/codeql.yml@main
 
-    security_git-guardian:
+    security-git-guardian:
         if: github.ref_name == 'main'
-        name: Security / Git Guardian
+        name: Security
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/git-guardian.yml
         uses: terminal-nerds/.github/.github/workflows/git-guardian.yml@main
         secrets:
             GITGUARDIAN_API_KEY: ${{ secrets.GITGUARDIAN_API_KEY }}
 
-    security_snyk:
+    security-snyk:
         if: github.ref_name == 'main'
-        name: Security / Snyk
+        name: Security
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/snyk.yml
         uses: terminal-nerds/.github/.github/workflows/snyk.yml@main
         secrets:
@@ -132,19 +134,21 @@ jobs:
 
     release:
         # Automatic release workflow with Changesets
+        name: Release
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/release.yml
         uses: terminal-nerds/.github/.github/workflows/release.yml@main
         needs:
             [
                 build,
-                lint_depcheck,
-                lint_eslint,
-                lint_markdownlint,
-                lint_prettier,
-                lint_syncpack,
-                security_codeql,
-                security_git-guardian,
-                security_snyk,
+                lint-depcheck,
+                lint-eslint,
+                lint-markdownlint,
+                lint-prettier,
+                lint-syncpack,
+                lint-typescript,
+                security-codeql,
+                security-git-guardian,
+                security-snyk,
             ]
         secrets:
             NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
