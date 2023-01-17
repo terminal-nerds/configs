@@ -6,11 +6,7 @@ const config = defineConfig({
 	overrides: [
 		{
 			files: ["*.stories.@(js|jsx|mdx|ts|tsx|svelte|vue)"],
-			extends: [
-				"plugin:storybook/recommended",
-				"plugin:storybook/csf",
-				"plugin:storybook/csf-strict",
-			],
+			extends: ["plugin:storybook/recommended", "plugin:storybook/csf", "plugin:storybook/csf-strict"],
 		},
 	],
 });
