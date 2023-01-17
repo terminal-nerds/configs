@@ -4,10 +4,7 @@
 	"type": "module",
 	"name": "@workspace/root",
 	"homepage": "https://github.com/terminal-nerds/configs",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/terminal-nerds/configs"
-	},
+	"repository": "terminal-nerds/configs",
 	"bugs": "https://github.com/terminal-nerds/configs/issues",
 	"engines": {
 		"node": ">=18",
@@ -15,6 +12,7 @@
 	},
 	"packageManager": "pnpm@7.21.0",
 	"scripts": {
+		"build:pkgs": "turbo run build",
 		"changelog": "pnpm changeset add",
 		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
 		"clean:cache": "del \"./node_modules/.cache\" \"./.turbo\"",
@@ -23,7 +21,8 @@
 		"deps:upgrade": "pnpm deps:upgrade:root ; pnpm deps:upgrade:shared ; pnpm:deps:upgrade:packages",
 		"deps:upgrade:root": "pnpm upgrade --interactive --latest",
 		"deps:upgrade:shared": "pnpm upgrade --interactive --latest --filter ./shared",
-		"deps:upgrade:packages": "pnpm upgrade --interactive --latest --filter ./packages",
+		"deps:upgrade:pkgs": "pnpm upgrade --interactive --latest --filter ./packages",
+		"dev:pkgs": "turbo run dev",
 		"fix": "concurrently \"pnpm:fix:*\" --group --timings",
 		"fix:format": "pretty-quick --branch main --pattern \"**/*\" --pattern \"!{shared,packages}/**/*\" --verbose",
 		"fix:js": "pnpm lint:js --fix",
