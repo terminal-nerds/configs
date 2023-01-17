@@ -31,6 +31,11 @@
 			"outputs": [],
 			"cache": true
 		},
+		"lint:format": {
+			"dependsOn": [],
+			"outputs": [],
+			"cache": true
+		},
 		"lint:js": {
 			"dependsOn": [],
 			"outputs": [],
