@@ -9,6 +9,7 @@
 		"depcheck",
 		"lint-staged",
 		"tsup",
+		"turbo",
 		"typescript"
 	],
 	"skip-missing": false
