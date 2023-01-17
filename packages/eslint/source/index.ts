@@ -1,5 +1,4 @@
 import { createMergedConfig } from "@workspace/shared/configuration";
-import { isContinuousIntegration } from "@workspace/shared/environment";
 import { hasPackage } from "@workspace/shared/package";
 import type { ESLintConfig } from "eslint-define-config";
 
@@ -39,7 +38,7 @@ const config = createMergedConfig<SimplifiedESLintConfig>([
 
 	// Plugins
 	pluginCompat,
-	isContinuousIntegration() && pluginDiff,
+	pluginDiff,
 	(hasPackage("@emotion/css") || hasPackage("@emotion/react")) && pluginEmotion,
 	pluginImport,
 	(hasPackage("jest") || hasPackage("vitest")) && pluginJest,
