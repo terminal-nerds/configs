@@ -30,6 +30,21 @@
 			"dependsOn": [],
 			"outputs": [],
 			"cache": true
+		},
+		"lint:js": {
+			"dependsOn": [],
+			"outputs": [],
+			"cache": true
+		},
+		"lint:md": {
+			"dependsOn": [],
+			"outputs": [],
+			"cache": true
+		},
+		"lint:types": {
+			"dependsOn": [],
+			"outputs": [],
+			"cache": true
 		}
 	}
 }
