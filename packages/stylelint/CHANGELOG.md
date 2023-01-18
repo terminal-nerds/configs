@@ -84,7 +84,7 @@
 
 -   [#53](https://github.com/terminal-nerds/configs/pull/53) [`3b5e549`](https://github.com/terminal-nerds/configs/commit/3b5e5497483f10f90c9bd38ed88d6f4b684ce4c8) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Tweak [`custom-property-pattern`] rule, to allow mixing `kebab-case` and `snake_case`
 
-    [`custom-property-pattern`]: https://stylelint.io/user-guide/rules/list/custom-property-pattern/
+[`custom-property-pattern`]: https://stylelint.io/user-guide/rules/list/custom-property-pattern/
 
 ## 0.1.2
 

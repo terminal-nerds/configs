@@ -53,8 +53,8 @@ device(s):
      pnpm install --save-dev prettier @terminal-nerds/prettier-config
     ```
 
-    [node.js]: https://nodejs.org/en/
-    [`pnpm`]: https://pnpm.io/
+[node.js]: https://nodejs.org/en/
+[`pnpm`]: https://pnpm.io/
 
 1. **Create an ![prettier icon] [Prettier configuration file] - `.prettierrc.(c)js`**.
 
