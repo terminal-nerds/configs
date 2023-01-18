@@ -76,17 +76,3 @@ export function getNodeUniveralOptions(options: Options): Options {
 		target: "node18",
 	};
 }
-
-/**
- * NOTE: Internal usage only - for building & bundling configs for tools _(with CJS)_
- */
-export function getConfigCJSOptions(options: Options): Options {
-	return {
-		...getNodeCJSOptions(options),
-		bundle: true,
-		entry: ["source/index.ts"],
-		external: ["deepmerge-ts", "normalize-package-data", "parse-json"],
-		minify: false,
-		noExternal: ["@workspace/shared"],
-	};
-}

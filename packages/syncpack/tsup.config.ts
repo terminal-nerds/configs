@@ -4,5 +4,5 @@ import { defineConfig } from "tsup";
 export default defineConfig((options) => ({
 	...getNodeCJSOptions(options),
 	entry: ["source/index.ts"],
-	minify: false,
+	noExternal: ["@workspace/shared"],
 }));
