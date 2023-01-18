@@ -44,7 +44,7 @@
 		"lint:types": "tsc --noEmit"
 	},
 	"peerDependencies": {
-		"prettier": "2.8.1"
+		"prettier": "2.8.3"
 	},
 	"dependencies": {
 		"prettier-plugin-svelte": "2.9.0",
