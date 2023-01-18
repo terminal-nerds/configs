@@ -11,6 +11,16 @@
 			"outputs": [],
 			"cache": false
 		},
+		"clean:build": {
+			"dependsOn": [],
+			"outputs": [],
+			"cache": false
+		},
+		"clean:cache": {
+			"dependsOn": [],
+			"outputs": [],
+			"cache": false
+		},
 		"dev": {
 			"dependsOn": [],
 			"outputs": [],
