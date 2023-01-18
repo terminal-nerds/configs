@@ -26,16 +26,13 @@ defaults:
 
 env:
     CI: true
-    TURBO_API: ${{ secrets.TURBO_API }}
-    TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
-    TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
-    TURBO_REMOTE_CACHE_SIGNATURE_KEY: ${{ secrets.TURBO_REMOTE_CACHE_SIGNATURE_KEY }}
 
 jobs:
     build:
         name: Build packages
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/build.yml
         uses: terminal-nerds/.github/.github/workflows/build.yml@main
+        secrets: inherit
         with:
             artifact-path: |
                 ./packages/*/dist/
@@ -51,6 +48,7 @@ jobs:
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/nodejs-script.yml
         uses: terminal-nerds/.github/.github/workflows/nodejs-script.yml@main
         needs: [build]
+        secrets: inherit
         with:
             download-build: true
             job-name: depcheck
@@ -63,6 +61,7 @@ jobs:
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/nodejs-script.yml
         uses: terminal-nerds/.github/.github/workflows/nodejs-script.yml@main
         needs: [build]
+        secrets: inherit
         with:
             download-build: true
             job-name: ESLint
@@ -75,6 +74,7 @@ jobs:
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/nodejs-script.yml
         uses: terminal-nerds/.github/.github/workflows/nodejs-script.yml@main
         needs: [build]
+        secrets: inherit
         with:
             download-build: true
             job-name: markdownlint
@@ -87,6 +87,7 @@ jobs:
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/nodejs-script.yml
         uses: terminal-nerds/.github/.github/workflows/nodejs-script.yml@main
         needs: [build]
+        secrets: inherit
         with:
             download-build: true
             job-name: Prettier
@@ -99,6 +100,7 @@ jobs:
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/nodejs-script.yml
         uses: terminal-nerds/.github/.github/workflows/nodejs-script.yml@main
         needs: [build]
+        secrets: inherit
         with:
             download-build: true
             job-name: syncpack
@@ -111,6 +113,7 @@ jobs:
         # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/nodejs-script.yml
         uses: terminal-nerds/.github/.github/workflows/nodejs-script.yml@main
         needs: [build]
+        secrets: inherit
         with:
             download-build: true
             job-name: TypeScript
