@@ -1,5 +1,11 @@
 # @terminal-nerds/markdownlint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.6.0
+
+### Minor Changes
+
+-   [#200](https://github.com/terminal-nerds/configs/pull/200) [`02b0c8b`](https://github.com/terminal-nerds/configs/commit/02b0c8b11a784cc6a4a156e539a369973fb526ca) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update `markdownlint-cli` to `v0.33.0`
+
 ## 0.5.0
 
 ### Minor Changes

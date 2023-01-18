@@ -1,5 +1,34 @@
 # @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.11.0
+
+### Minor Changes
+
+-   [#186](https://github.com/terminal-nerds/configs/pull/186) [`769f13d`](https://github.com/terminal-nerds/configs/commit/769f13d6713293a12c59e259f62fb0801a9fd4ff) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependencies:
+
+    -   `eslint` to `v8.32.0`
+    -   `@typescript-eslint/eslint-plugin` to `v5.48.1`
+    -   `@typescript-eslint/parser` to `v5.48.1`
+    -   `eslint-config-next` to `v13.1.2`
+    -   `eslint-config-prettier` to `v8.6.0`
+    -   `eslint-define-config` to `v1.14.0`
+    -   `eslint-plugin-import` to `v2.27.4`
+    -   `eslint-plugin-jest` to `v27.2.1`
+    -   `eslint-plugin-jsonc` to `v2.6.0`
+    -   `eslint-plugin-jsx-a11y` to `v6.7.1`
+    -   `eslint-plugin-n` to `v15.6.1`
+    -   `eslint-plugin-react` to `v7.32.0`
+    -   `eslint-plugin-regexp` to `v1.12.0`
+    -   `eslint-plugin-sonarjs` to `v0.18.0`
+    -   `eslint-plugin-storybook` to `v0.6.10`
+
+-   [#206](https://github.com/terminal-nerds/configs/pull/206) [`6070e3a`](https://github.com/terminal-nerds/configs/commit/6070e3ac7e8fec444cc7ee93c77739b439734b00) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update `eslint-plugin-simple-import-sort` to `v9`
+
+### Patch Changes
+
+-   [#202](https://github.com/terminal-nerds/configs/pull/202) [`26a7af1`](https://github.com/terminal-nerds/configs/commit/26a7af131e4bd8f9fdac6130f8bf7e8335d8283b) Thanks [@xeho91](https://github.com/xeho91)! - 🐛 Resolve issue with `eslint-plugin-diff` in the CI environment.
+    This plugin can be enabled only when `ESLINT_PLUGIN_DIFF_ENABLE` is set in the environment variables.
+
 ## 0.10.3
 
 ### Patch Changes
