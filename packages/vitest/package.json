@@ -54,11 +54,11 @@
 		"lint:types": "tsc --noEmit"
 	},
 	"peerDependencies": {
-		"vitest": "0.27.1"
+		"vitest": "0.27.2"
 	},
 	"dependencies": {
-		"@vitest/coverage-c8": "0.27.1",
-		"@vitest/ui": "0.27.1",
+		"@vitest/coverage-c8": "0.27.2",
+		"@vitest/ui": "0.27.2",
 		"vite": "4.0.4"
 	},
 	"devDependencies": {
@@ -66,6 +66,6 @@
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"tsup": "6.5.0",
 		"typescript": "4.9.4",
-		"vitest": "0.27.1"
+		"vitest": "0.27.2"
 	}
 }
