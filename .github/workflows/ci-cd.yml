@@ -40,6 +40,7 @@ jobs:
             artifact-path: |
                 ./packages/*/dist/
                 ./shared/dist/
+
             artifact-upload: true
             include: "./packages/*/dist/**/*.{js,cjs,json}"
             script-build: build:pkgs
