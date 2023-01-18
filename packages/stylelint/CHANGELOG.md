@@ -1,5 +1,11 @@
 # @terminal-nerds/stylelint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.8.0
+
+### Minor Changes
+
+-   [#195](https://github.com/terminal-nerds/configs/pull/195) [`8e8ac26`](https://github.com/terminal-nerds/configs/commit/8e8ac267fbcfafd590e816bd05b7b0e2e6eea08a) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update plugin `stylelint-order` to `v6`
+
 ## 0.7.2
 
 ### Patch Changes
