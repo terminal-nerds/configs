@@ -12,7 +12,7 @@
 	},
 	"packageManager": "pnpm@7.25.0",
 	"scripts": {
-		"build:pkgs": "turbo run build",
+		"build:pkgs": "turbo run build --api=$TURBO_API",
 		"changelog": "pnpm changeset add",
 		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
 		"clean:cache": "del \"./node_modules/.cache\" \"./.turbo\"",

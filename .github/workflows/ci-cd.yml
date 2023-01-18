@@ -26,6 +26,10 @@ defaults:
 
 env:
     CI: true
+    TURBO_API: ${{ secrets.TURBO_API }}
+    TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+    TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+    TURBO_REMOTE_CACHE_SIGNATURE_KEY: ${{ secrets.TURBO_REMOTE_CACHE_SIGNATURE_KEY }}
 
 jobs:
     build:
@@ -50,7 +54,7 @@ jobs:
             download-build: true
             job-name: depcheck
             step-name: Lint dependencies with depcheck
-            run: pnpm turbo run lint:deps
+            run: pnpm turbo run lint:deps --api=$TURBO_API
 
     lint-eslint:
         # Analyze the JavaScript codebase
@@ -62,7 +66,7 @@ jobs:
             download-build: true
             job-name: ESLint
             step-name: Execute ESLint CLI task
-            run: pnpm turbo run lint:js
+            run: pnpm turbo run lint:js --api=$TURBO_API
 
     lint-markdownlint:
         # Analyze the markdownlint files
@@ -74,7 +78,7 @@ jobs:
             download-build: true
             job-name: markdownlint
             step-name: Execute markdownlint CLI task
-            run: pnpm turbo run lint:md
+            run: pnpm turbo run lint:md --api=$TURBO_API
 
     lint-prettier:
         # Analyze the code format style
@@ -86,7 +90,7 @@ jobs:
             download-build: true
             job-name: Prettier
             step-name: Execute "pretty-quick" CLI task
-            run: pnpm turbo run lint:format
+            run: pnpm turbo run lint:format --api=$TURBO_API
 
     lint-syncpack:
         # Analyze the package.json files to find dependencies mismatches
@@ -110,7 +114,7 @@ jobs:
             download-build: true
             job-name: TypeScript
             step-name: Execute TypeScript CLI task
-            run: pnpm turbo run lint:types
+            run: pnpm turbo run lint:types --api=$TURBO_API
 
     security-codeql:
         if: github.ref_name == 'main'
