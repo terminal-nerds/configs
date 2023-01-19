@@ -104,6 +104,7 @@ _conditionally_.
 
 | Plugin                                | Version                                              | Loading condition(s)                                               |
 | ------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------ |
+| [@docusaurus/eslint-plugin]           | ![@docusaurus/eslint-plugin version badge]           | `@docusaurus/core` as dependency                                   |
 | [@emotion/eslint-plugin]              | ![@emotion/eslint-plugin version badge]              | `@emotion/css` or `@emotion/react` as dependency                   |
 | [@typescript-eslint/eslint-plugin]    | ![@typescript-eslint/eslint-plugin version badge]    | `typescript` as dependency                                         |
 | [eslint-plugin-compat]                | ![eslint-plugin-compat version badge]                | -                                                                  |
@@ -126,9 +127,12 @@ _conditionally_.
 | [eslint-plugin-svelte]                | ![eslint-plugin-svelte version badge]                | `svelte` as dependency                                             |
 | [eslint-plugin-tailwindcss]           | ![eslint-plugin-tailwindcss version badge]           | `tailwindcss` as dependency                                        |
 | [eslint-plugin-testing-library]       | ![eslint-plugin-testing-library version badge]       | `@testing-library/jest-dom` as dependency                          |
-| [eslint-plugin-unicorn]               | ![eslint-plugin-unicorn version badge]               | -                                                                  |
+| [eslint-plugin-tsdoc]                 | ![eslint-plugin-tsdoc version badge]                 | -                                                                  |
+| [eslint-plugin-unicorn]               | ![eslint-plugin-unicorn version badge]               | `typescript` as dependency                                         |
 | [eslint-plugin-yml]                   | ![eslint-plugin-yml version badge]                   | -                                                                  |
 
+[@docusaurus/eslint-plugin]: https://github.com/facebook/docusaurus/tree/main/packages/eslint-plugin
+[@docusaurus/eslint-plugin version badge]: https://img.shields.io/npm/v/@docusaurus/eslint-plugin?logo=npm&style=flat-square
 [@emotion/eslint-plugin]: https://github.com/emotion-js/emotion/tree/main/packages/eslint-plugin
 [@emotion/eslint-plugin version badge]: https://img.shields.io/npm/v/@emotion/eslint-plugin?logo=npm&style=flat-square
 [@typescript-eslint/eslint-plugin]: https://github.com/typescript-eslint/typescript-eslint
@@ -152,7 +156,7 @@ _conditionally_.
 [eslint-plugin-jsx-a11y]: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y
 [eslint-plugin-jsx-a11y version badge]: https://img.shields.io/npm/v/eslint-plugin-jsx-a11y?logo=npm&style=flat-square
 [eslint-plugin-n]: https://github.com/eslint-community/eslint-plugin-n
-[eslint-plugin-node version badge]: https://img.shields.io/npm/v/eslint-plugin-node?logo=npm&style=flat-square
+[eslint-plugin-n version badge]: https://img.shields.io/npm/v/eslint-plugin-n?logo=npm&style=flat-square
 [eslint-plugin-react]: https://github.com/yannickcr/eslint-plugin-react
 [eslint-plugin-react version badge]: https://img.shields.io/npm/v/eslint-plugin-react?logo=npm&style=flat-square
 [eslint-plugin-react-hooks]: https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks
@@ -173,6 +177,8 @@ _conditionally_.
 [eslint-plugin-tailwindcss version badge]: https://img.shields.io/npm/v/eslint-plugin-tailwindcss?logo=npm&style=flat-square
 [eslint-plugin-testing-library]: https://github.com/testing-library/eslint-plugin-testing-library
 [eslint-plugin-testing-library version badge]: https://img.shields.io/npm/v/eslint-plugin-testing-library?logo=npm&style=flat-square
+[eslint-plugin-tsdoc]: https://github.com/microsoft/tsdoc/tree/main/eslint-plugin
+[eslint-plugin-tsdoc version badge]: https://img.shields.io/npm/v/eslint-plugin-tsdoc?logo=npm&style=flat-square
 [eslint-plugin-unicorn]: https://github.com/sindresorhus/eslint-plugin-unicorn
 [eslint-plugin-unicorn version badge]: https://img.shields.io/npm/v/eslint-plugin-unicorn?logo=npm&style=flat-square
 [eslint-plugin-yml]: https://github.com/ota-meshi/eslint-plugin-yml

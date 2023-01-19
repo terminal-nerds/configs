@@ -1,10 +1,12 @@
 {
 	"ignores": [
-		"@emotion/eslint-plugin",
 		"@terminal-nerds/typescript-config",
-		"@typescript-eslint/*",
 		"@types/eslint",
+		"@typescript-eslint/parser",
+		"@typescript-eslint/plugin",
+		"@*/eslint-config",
 		"eslint-config-*",
+		"@*/eslint-plugin",
 		"eslint-plugin-*",
 		"*-eslint-parser"
 	]

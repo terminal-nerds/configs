@@ -66,6 +66,7 @@ importers:
 
   packages/eslint:
     specifiers:
+      '@docusaurus/eslint-plugin': 2.2.0
       '@emotion/eslint-plugin': 11.10.0
       '@terminal-nerds/tsup-config': workspace:*
       '@terminal-nerds/typescript-config': workspace:*
@@ -96,6 +97,7 @@ importers:
       eslint-plugin-svelte: 2.14.1
       eslint-plugin-tailwindcss: 3.8.0
       eslint-plugin-testing-library: 5.9.1
+      eslint-plugin-tsdoc: 0.2.17
       eslint-plugin-unicorn: 45.0.2
       eslint-plugin-yml: 1.4.0
       jsonc-eslint-parser: 2.1.0
@@ -103,6 +105,7 @@ importers:
       typescript: 4.9.4
       yaml-eslint-parser: 1.1.0
     dependencies:
+      '@docusaurus/eslint-plugin': 2.2.0_typescript@4.9.4
       '@emotion/eslint-plugin': 11.10.0
       '@typescript-eslint/eslint-plugin': 5.48.1_hi4e55e4euausoudprkilxt6ya
       '@typescript-eslint/parser': 5.48.1_typescript@4.9.4
@@ -129,6 +132,7 @@ importers:
       eslint-plugin-svelte: 2.14.1
       eslint-plugin-tailwindcss: 3.8.0
       eslint-plugin-testing-library: 5.9.1_typescript@4.9.4
+      eslint-plugin-tsdoc: 0.2.17
       eslint-plugin-unicorn: 45.0.2
       eslint-plugin-yml: 1.4.0
       jsonc-eslint-parser: 2.1.0
@@ -636,6 +640,19 @@ packages:
       postcss: 8.4.21
       postcss-selector-parser: 6.0.11
 
+  /@docusaurus/eslint-plugin/2.2.0_typescript@4.9.4:
+    resolution: {integrity: sha512-bz50+EZr8IMIKaupBGXxHrfYCPcNtnzh9FLbxQrlCzesSyUnlKwMOdhH0i+uTrjpZC3OPo0NSf9cz6bBabN/wg==}
+    engines: {node: '>=16.14'}
+    peerDependencies:
+      eslint: '>=6'
+    dependencies:
+      '@typescript-eslint/utils': 5.48.1_typescript@4.9.4
+      tslib: 2.4.1
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+    dev: false
+
   /@emotion/eslint-plugin/11.10.0:
     resolution: {integrity: sha512-nWpuoQQrzI9aM9fgn+Pbb0pOau4BhheXyVqHcOYKFq46uSuSR2ivZaDwwCJKI6ScA8Pm7OcoOpwdRH2iisf9cg==}
     engines: {node: '>=6'}
@@ -941,6 +958,19 @@ packages:
 
   /@mdn/browser-compat-data/4.2.1:
     resolution: {integrity: sha512-EWUguj2kd7ldmrF9F+vI5hUOralPd+sdsUnYbRy33vZTuZkduC1shE9TtEMEjAQwyfyMb4ole5KtjF8MsnQOlA==}
+    dev: false
+
+  /@microsoft/tsdoc-config/0.16.2:
+    resolution: {integrity: sha512-OGiIzzoBLgWWR0UdRJX98oYO+XKGf7tiK4Zk6tQ/E4IJqGCe7dvkTvgDZV5cFJUzLGDOjeAXrnZoA6QkVySuxw==}
+    dependencies:
+      '@microsoft/tsdoc': 0.14.2
+      ajv: 6.12.6
+      jju: 1.4.0
+      resolve: 1.19.0
+    dev: false
+
+  /@microsoft/tsdoc/0.14.2:
+    resolution: {integrity: sha512-9b8mPpKrfeGRuhFH5iO1iwCLeIIsV6+H1sRfxbkoGXIyQE2BTsPd9zqSqQJ+pv5sJ/hT5M1zvOFL02MnEezFug==}
     dev: false
 
   /@next/eslint-plugin-next/13.1.2:
@@ -1399,7 +1429,6 @@ packages:
       fast-json-stable-stringify: 2.1.0
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
-    dev: true
 
   /ajv/8.12.0:
     resolution: {integrity: sha512-sRu1kpcO9yLtYxBKvqfTeh9KzZEwO3STyX1HT+4CaDzC6HpTGYhIhPIzj9XuKU7KYDwnaeh5hcOwjy1QuJzBPA==}
@@ -3130,6 +3159,13 @@ packages:
       - typescript
     dev: false
 
+  /eslint-plugin-tsdoc/0.2.17:
+    resolution: {integrity: sha512-xRmVi7Zx44lOBuYqG8vzTXuL6IdGOeF9nHX17bjJ8+VE6fsxpdGem0/SBTmAwgYMKYB1WBkqRJVQ+n8GK041pA==}
+    dependencies:
+      '@microsoft/tsdoc': 0.14.2
+      '@microsoft/tsdoc-config': 0.16.2
+    dev: false
+
   /eslint-plugin-unicorn/45.0.2:
     resolution: {integrity: sha512-Y0WUDXRyGDMcKLiwgL3zSMpHrXI00xmdyixEGIg90gHnj0PcHY4moNv3Ppje/kDivdAy5vUeUr7z211ImPv2gw==}
     engines: {node: '>=14.18'}
@@ -3390,7 +3426,6 @@ packages:
 
   /fast-json-stable-stringify/2.1.0:
     resolution: {integrity: sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==}
-    dev: true
 
   /fast-levenshtein/2.0.6:
     resolution: {integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==}
@@ -4122,6 +4157,10 @@ packages:
       istanbul-lib-report: 3.0.0
     dev: false
 
+  /jju/1.4.0:
+    resolution: {integrity: sha512-8wb9Yw966OSxApiCt0K3yNJL8pnNeIv+OEq2YMidz4FKP6nonSRoOXc80iXY4JaN2FC11B9qsNmDsm+ZOfMROA==}
+    dev: false
+
   /joycon/3.1.1:
     resolution: {integrity: sha512-34wB/Y7MW7bzjKRjUKTa46I2Z7eV62Rkhva+KkopW7Qvv/OSWBqvkSY7vusOPrNuZcUG3tApvdVgNB8POj3SPw==}
     engines: {node: '>=10'}
@@ -4192,7 +4231,6 @@ packages:
 
   /json-schema-traverse/0.4.1:
     resolution: {integrity: sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==}
-    dev: true
 
   /json-schema-traverse/1.0.0:
     resolution: {integrity: sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==}
@@ -5484,6 +5522,13 @@ packages:
   /resolve-from/5.0.0:
     resolution: {integrity: sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==}
     engines: {node: '>=8'}
+
+  /resolve/1.19.0:
+    resolution: {integrity: sha512-rArEXAgsBG4UgRGcynxWIWKFvh/XZCcS8UJdHhwy91zwAvCZIbcs+vAbflgBnNjYMs/i/i+/Ux6IZhML1yPvxg==}
+    dependencies:
+      is-core-module: 2.11.0
+      path-parse: 1.0.7
+    dev: false
 
   /resolve/1.22.1:
     resolution: {integrity: sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==}
