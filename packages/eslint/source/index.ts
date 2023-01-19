@@ -26,6 +26,8 @@ import pluginStorybook from "./plugins/storybook.js";
 import pluginSvelte from "./plugins/svelte.js";
 import pluginTailwindCSS from "./plugins/tailwindcss.js";
 import pluginTestingLibrary from "./plugins/testing-library.js";
+// eslint-disable-next-line unicorn/prevent-abbreviations
+import pluginTSDoc from "./plugins/tsdoc.js";
 import pluginTypeScript from "./plugins/typescript.js";
 import pluginUnicorn from "./plugins/unicorn.js";
 import pluginYML from "./plugins/yml.js";
@@ -58,6 +60,7 @@ const config = createMergedConfig<SimplifiedESLintConfig>([
 	hasPackage("svelte") && pluginSvelte,
 	hasPackage("@testing-library/jest-dom") && pluginTestingLibrary,
 	hasPackage("tailwindcss") && pluginTailwindCSS,
+	hasPackage("typescript") && pluginTSDoc,
 	hasPackage("typescript") && pluginTypeScript,
 	pluginUnicorn,
 	pluginYML,
