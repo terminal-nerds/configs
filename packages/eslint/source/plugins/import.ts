@@ -1,10 +1,11 @@
-import { hasPackage } from "@workspace/shared/package";
 import { defineConfig } from "eslint-define-config";
+
+import { HAS_TYPESCRIPT } from "../checks.js";
 
 const getExtendedConfigs = () => {
 	const configs = ["plugin:import/recommended"];
 
-	if (hasPackage("typescript")) {
+	if (HAS_TYPESCRIPT) {
 		configs.push("plugin:import/typescript");
 	}
 

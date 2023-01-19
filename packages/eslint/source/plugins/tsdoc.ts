@@ -1,7 +1,7 @@
 import { defineConfig } from "eslint-define-config";
 
+/** {@link https://github.com/microsoft/tsdoc/tree/main/eslint-plugin} */
 const config = defineConfig({
-	// https://github.com/microsoft/tsdoc/tree/main/eslint-plugin
 	plugins: ["tsdoc"],
 	rules: {
 		"tsdoc/syntax": ["warn"],
