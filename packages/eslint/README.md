@@ -126,7 +126,8 @@ _conditionally_.
 | [eslint-plugin-svelte]                | ![eslint-plugin-svelte version badge]                | `svelte` as dependency                                             |
 | [eslint-plugin-tailwindcss]           | ![eslint-plugin-tailwindcss version badge]           | `tailwindcss` as dependency                                        |
 | [eslint-plugin-testing-library]       | ![eslint-plugin-testing-library version badge]       | `@testing-library/jest-dom` as dependency                          |
-| [eslint-plugin-unicorn]               | ![eslint-plugin-unicorn version badge]               | -                                                                  |
+| [eslint-plugin-tsdoc]                 | ![eslint-plugin-tsdoc version badge]                 | -                                                                  |
+| [eslint-plugin-unicorn]               | ![eslint-plugin-unicorn version badge]               | `typescript` as dependency                                         |
 | [eslint-plugin-yml]                   | ![eslint-plugin-yml version badge]                   | -                                                                  |
 
 [@emotion/eslint-plugin]: https://github.com/emotion-js/emotion/tree/main/packages/eslint-plugin
@@ -173,6 +174,8 @@ _conditionally_.
 [eslint-plugin-tailwindcss version badge]: https://img.shields.io/npm/v/eslint-plugin-tailwindcss?logo=npm&style=flat-square
 [eslint-plugin-testing-library]: https://github.com/testing-library/eslint-plugin-testing-library
 [eslint-plugin-testing-library version badge]: https://img.shields.io/npm/v/eslint-plugin-testing-library?logo=npm&style=flat-square
+[eslint-plugin-tsdoc]: https://github.com/microsoft/tsdoc/tree/main/eslint-plugin
+[eslint-plugin-tsdoc version badge]: https://img.shields.io/npm/v/eslint-plugin-tsdoc?logo=npm&style=flat-square
 [eslint-plugin-unicorn]: https://github.com/sindresorhus/eslint-plugin-unicorn
 [eslint-plugin-unicorn version badge]: https://img.shields.io/npm/v/eslint-plugin-unicorn?logo=npm&style=flat-square
 [eslint-plugin-yml]: https://github.com/ota-meshi/eslint-plugin-yml
