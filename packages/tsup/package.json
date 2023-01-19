@@ -54,8 +54,6 @@
 		"tsup": "6.5.0"
 	},
 	"devDependencies": {
-		"@terminal-nerds/typescript-config": "workspace:*",
-		"tsup": "6.5.0",
-		"typescript": "4.9.4"
+		"tsup": "6.5.0"
 	}
 }
