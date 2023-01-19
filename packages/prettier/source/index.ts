@@ -1,6 +1,6 @@
 import { createMergedConfig } from "@workspace/shared/configuration";
-import { hasPackage } from "@workspace/shared/package";
 
+import { HAS_SVELTE, HAS_TAILWINDCSS } from "./checks.js";
 import pluginSvelte from "./plugins/svelte.js";
 import pluginTailwindCSS from "./plugins/tailwindcss.js";
 import prettier from "./prettier.js";
@@ -10,8 +10,8 @@ const config = createMergedConfig([
 	prettier,
 
 	// Plugins
-	hasPackage("svelte") && pluginSvelte,
-	hasPackage("tailwindcss") && pluginTailwindCSS,
+	HAS_SVELTE && pluginSvelte,
+	HAS_TAILWINDCSS && pluginTailwindCSS,
 ]);
 
 export default config;

@@ -1,5 +1,3 @@
-import { hasPackage } from "@workspace/shared/package";
-
 // https://github.com/sveltejs/prettier-plugin-svelte
 const config = {
 	overrides: [
@@ -20,4 +18,4 @@ const config = {
 	svelteIndentScriptAndStyle: true,
 };
 
-export default hasPackage("svelte") ? config : {};
+export default config;
