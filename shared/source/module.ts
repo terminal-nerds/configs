@@ -1,4 +1,3 @@
-// @ts-ignore TODO: Remove ignore once this PR is merged: https://github.com/antfu/local-pkg/pull/6
 import { resolveModule } from "local-pkg";
 
 import { IN_NODE_JS } from "./environment.js";
