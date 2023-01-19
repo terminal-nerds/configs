@@ -104,6 +104,7 @@ _conditionally_.
 
 | Plugin                                | Version                                              | Loading condition(s)                                               |
 | ------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------ |
+| [@docusaurus/eslint-plugin]           | ![@docusaurus/eslint-plugin version badge]           | `@docusaurus/core` as dependency                                   |
 | [@emotion/eslint-plugin]              | ![@emotion/eslint-plugin version badge]              | `@emotion/css` or `@emotion/react` as dependency                   |
 | [@typescript-eslint/eslint-plugin]    | ![@typescript-eslint/eslint-plugin version badge]    | `typescript` as dependency                                         |
 | [eslint-plugin-compat]                | ![eslint-plugin-compat version badge]                | -                                                                  |
@@ -130,6 +131,8 @@ _conditionally_.
 | [eslint-plugin-unicorn]               | ![eslint-plugin-unicorn version badge]               | `typescript` as dependency                                         |
 | [eslint-plugin-yml]                   | ![eslint-plugin-yml version badge]                   | -                                                                  |
 
+[@docusaurus/eslint-plugin]: https://github.com/facebook/docusaurus/tree/main/packages/eslint-plugin
+[@docusaurus/eslint-plugin version badge]: https://img.shields.io/npm/v/@docusaurus/eslint-plugin?logo=npm&style=flat-square
 [@emotion/eslint-plugin]: https://github.com/emotion-js/emotion/tree/main/packages/eslint-plugin
 [@emotion/eslint-plugin version badge]: https://img.shields.io/npm/v/@emotion/eslint-plugin?logo=npm&style=flat-square
 [@typescript-eslint/eslint-plugin]: https://github.com/typescript-eslint/typescript-eslint
@@ -153,7 +156,7 @@ _conditionally_.
 [eslint-plugin-jsx-a11y]: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y
 [eslint-plugin-jsx-a11y version badge]: https://img.shields.io/npm/v/eslint-plugin-jsx-a11y?logo=npm&style=flat-square
 [eslint-plugin-n]: https://github.com/eslint-community/eslint-plugin-n
-[eslint-plugin-node version badge]: https://img.shields.io/npm/v/eslint-plugin-node?logo=npm&style=flat-square
+[eslint-plugin-n version badge]: https://img.shields.io/npm/v/eslint-plugin-n?logo=npm&style=flat-square
 [eslint-plugin-react]: https://github.com/yannickcr/eslint-plugin-react
 [eslint-plugin-react version badge]: https://img.shields.io/npm/v/eslint-plugin-react?logo=npm&style=flat-square
 [eslint-plugin-react-hooks]: https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks
