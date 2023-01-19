@@ -66,6 +66,7 @@ importers:
 
   packages/eslint:
     specifiers:
+      '@docusaurus/eslint-plugin': 2.2.0
       '@emotion/eslint-plugin': 11.10.0
       '@terminal-nerds/tsup-config': workspace:*
       '@terminal-nerds/typescript-config': workspace:*
@@ -104,6 +105,7 @@ importers:
       typescript: 4.9.4
       yaml-eslint-parser: 1.1.0
     dependencies:
+      '@docusaurus/eslint-plugin': 2.2.0_typescript@4.9.4
       '@emotion/eslint-plugin': 11.10.0
       '@typescript-eslint/eslint-plugin': 5.48.1_hi4e55e4euausoudprkilxt6ya
       '@typescript-eslint/parser': 5.48.1_typescript@4.9.4
@@ -637,6 +639,19 @@ packages:
     dependencies:
       postcss: 8.4.21
       postcss-selector-parser: 6.0.11
+
+  /@docusaurus/eslint-plugin/2.2.0_typescript@4.9.4:
+    resolution: {integrity: sha512-bz50+EZr8IMIKaupBGXxHrfYCPcNtnzh9FLbxQrlCzesSyUnlKwMOdhH0i+uTrjpZC3OPo0NSf9cz6bBabN/wg==}
+    engines: {node: '>=16.14'}
+    peerDependencies:
+      eslint: '>=6'
+    dependencies:
+      '@typescript-eslint/utils': 5.48.1_typescript@4.9.4
+      tslib: 2.4.1
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+    dev: false
 
   /@emotion/eslint-plugin/11.10.0:
     resolution: {integrity: sha512-nWpuoQQrzI9aM9fgn+Pbb0pOau4BhheXyVqHcOYKFq46uSuSR2ivZaDwwCJKI6ScA8Pm7OcoOpwdRH2iisf9cg==}
