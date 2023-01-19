@@ -288,6 +288,7 @@ importers:
       '@terminal-nerds/tsup-config': workspace:*
       '@terminal-nerds/typescript-config': workspace:*
       deepmerge-ts: 4.2.2
+      local-pkg: 0.4.2
       pkg-dir: 7.0.0
       read-pkg-up: 9.1.0
       tsup: 6.5.0
@@ -295,6 +296,7 @@ importers:
       typescript: 4.9.4
     dependencies:
       deepmerge-ts: 4.2.2
+      local-pkg: 0.4.2
       pkg-dir: 7.0.0
       read-pkg-up: 9.1.0
     devDependencies:
