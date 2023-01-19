@@ -1,6 +1,6 @@
-import { hasPackage } from "@workspace/shared/package";
 import type { Config } from "stylelint";
 
+import { HAS_SASS } from "./checks.js";
 import { extendTailwindAtRuleSelectors } from "./other/tailwind.js";
 
 const config: Partial<Config> = {
@@ -20,9 +20,7 @@ const config: Partial<Config> = {
 
 	rules: {
 		// https://stylelint.io/user-guide/rules/list
-		"at-rule-no-unknown": hasPackage("sass")
-			? undefined
-			: [true, { ignoreAtRules: [...extendTailwindAtRuleSelectors()] }],
+		"at-rule-no-unknown": HAS_SASS ? undefined : [true, { ignoreAtRules: [...extendTailwindAtRuleSelectors()] }],
 
 		// RATIONALE: Prevent conflicting with `order` plugin
 		"declaration-empty-line-before": undefined,

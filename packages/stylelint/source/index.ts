@@ -1,7 +1,7 @@
 import { createMergedConfig } from "@workspace/shared/configuration";
-import { hasPackage } from "@workspace/shared/package";
 import type { Config } from "stylelint";
 
+import { HAS_PRETTIER, HAS_SASS } from "./checks.js";
 import configPrettier from "./configs/prettier.js";
 import configStandard from "./configs/standard.js";
 import configStandardSCSS from "./configs/standard-scss.js";
@@ -19,13 +19,13 @@ const config = createMergedConfig<Config>([
 	pluginHighPerformanceAnimations,
 	pluginNoUnsupportedBrowserFeatures,
 	pluginOrder,
-	hasPackage("sass") && pluginSCSS,
+	HAS_SASS && pluginSCSS,
 
 	// Configurations
-	!hasPackage("sass") && configStandard,
-	hasPackage("sass") && configStandardSCSS,
+	!HAS_SASS && configStandard,
+	HAS_SASS && configStandardSCSS,
 	// NOTE: Must come as last!
-	hasPackage("prettier") && configPrettier,
+	HAS_PRETTIER && configPrettier,
 ]);
 
 export default config;
