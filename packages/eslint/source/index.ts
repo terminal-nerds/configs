@@ -7,6 +7,7 @@ import configPrettier from "./configs/prettier.js";
 import eslint from "./eslint.js";
 import pluginCompat from "./plugins/compat.js";
 import pluginDiff from "./plugins/diff.js";
+import plugindocusaurus from "./plugins/docusaurus.js";
 import pluginEmotion from "./plugins/emotion.js";
 import pluginImport from "./plugins/import.js";
 import pluginJest from "./plugins/jest.js";
@@ -41,6 +42,7 @@ const config = createMergedConfig<SimplifiedESLintConfig>([
 	// Plugins
 	pluginCompat,
 	process.env["ESLINT_PLUGIN_DIFF_ENABLE"] === "true" && pluginDiff,
+	hasPackage("@docusaurus/core") && plugindocusaurus,
 	(hasPackage("@emotion/css") || hasPackage("@emotion/react")) && pluginEmotion,
 	pluginImport,
 	(hasPackage("jest") || hasPackage("vitest")) && pluginJest,
