@@ -31,7 +31,7 @@
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
 		"lint:deps": "depcheck",
 		"lint:format": "pnpm fix:format --check",
-		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .cjs,.js,.ts,.json,.yml,.yaml --ignore \"./packages\" --cache --cache-location \"./node_modules/.cache/eslint\"",
+		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --cache --cache-location \"./node_modules/.cache/eslint\" --ext .cjs,.js,.ts,.json,.yml,.yaml --ignore-pattern \"/packages/\" --ignore-pattern \"/shared/\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"./.gitignore\" --ignore \"./{shared,packages}/**/*\"",
 		"lint:pkg": "syncpack list-mismatches",
 		"lint:staged": "lint-staged --verbose",
