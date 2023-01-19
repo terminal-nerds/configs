@@ -52,6 +52,7 @@
 		"@types/node": "18.11.18",
 		"all-contributors-cli": "6.24.0",
 		"browserslist": "4.21.4",
+		"clean-package": "2.2.0",
 		"concurrently": "7.6.0",
 		"del-cli": "5.0.0",
 		"depcheck": "1.4.3",
