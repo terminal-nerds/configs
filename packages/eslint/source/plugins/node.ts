@@ -1,3 +1,4 @@
+import { JAVASCRIPT_EXTENSIONS, TYPESCRIPT_EXTENSIONS } from "@workspace/shared/extension";
 import { defineConfig } from "eslint-define-config";
 
 /**
@@ -22,7 +23,7 @@ const config = defineConfig({
 		n: {
 			// eslint-disable-next-line unicorn/prefer-module
 			resolvePaths: [__dirname],
-			tryExtensions: [".cjs", ".js", ".mjs", ".cts", ".ts", ".mts"],
+			tryExtensions: [...JAVASCRIPT_EXTENSIONS, ...TYPESCRIPT_EXTENSIONS],
 		},
 	},
 });
