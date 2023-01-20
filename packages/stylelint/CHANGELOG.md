@@ -1,5 +1,11 @@
 # @terminal-nerds/stylelint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.9.0
+
+### Minor Changes
+
+-   [#211](https://github.com/terminal-nerds/configs/pull/211) [`51ff30d`](https://github.com/terminal-nerds/configs/commit/51ff30d3f7609239cc6f6915a7c3a09c9083d89f) Thanks [@xeho91](https://github.com/xeho91)! - ⚡ Slight performance improvements - checks for the module existence runs only once
+
 ## 0.8.0
 
 ### Minor Changes

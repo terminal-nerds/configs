@@ -1,5 +1,19 @@
 # @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.12.0
+
+### Minor Changes
+
+-   [#211](https://github.com/terminal-nerds/configs/pull/211) [`51ff30d`](https://github.com/terminal-nerds/configs/commit/51ff30d3f7609239cc6f6915a7c3a09c9083d89f) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Re-enable recommended `n/no-unsupported-features/es-syntax` rule
+
+-   [#211](https://github.com/terminal-nerds/configs/pull/211) [`51ff30d`](https://github.com/terminal-nerds/configs/commit/51ff30d3f7609239cc6f6915a7c3a09c9083d89f) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Improve extensions list to resolve for `eslint-plugin-node`
+
+-   [#208](https://github.com/terminal-nerds/configs/pull/208) [`1b9191a`](https://github.com/terminal-nerds/configs/commit/1b9191aadf2d0539134c8ced41b89d036dfec35c) Thanks [@xeho91](https://github.com/xeho91)! - ✨ Add support for [TSDoc](https://tsdoc.org/)
+
+-   [#211](https://github.com/terminal-nerds/configs/pull/211) [`51ff30d`](https://github.com/terminal-nerds/configs/commit/51ff30d3f7609239cc6f6915a7c3a09c9083d89f) Thanks [@xeho91](https://github.com/xeho91)! - ⚡ Slight performance improvements - checks for the module existence runs only once
+
+-   [#208](https://github.com/terminal-nerds/configs/pull/208) [`1b9191a`](https://github.com/terminal-nerds/configs/commit/1b9191aadf2d0539134c8ced41b89d036dfec35c) Thanks [@xeho91](https://github.com/xeho91)! - ✨ Add support for [Docusaurus](https://docusaurus.io/)
+
 ## 0.11.0
 
 ### Minor Changes
