@@ -53,7 +53,8 @@
 		"lint:format": "pnpm fix:format --check",
 		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --cache --cache-location \"./node_modules/.cache/eslint\" --ext .json,.ts ",
 		"lint:md": "markdownlint . --config \"../../.markdownlint.json\" --dot --ignore-path \"../../.gitignore\"",
-		"lint:types": "tsc --noEmit"
+		"lint:types": "tsc --noEmit",
+		"prepack": "clean-package --config \"../../.clean-packagerc.cjs\""
 	},
 	"peerDependencies": {
 		"vitest": "0.27.2"

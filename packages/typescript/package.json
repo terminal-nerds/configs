@@ -37,7 +37,8 @@
 		"lint:deps": "depcheck",
 		"lint:format": "pnpm fix:format --check",
 		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --cache --cache-location \"./node_modules/.cache/eslint\" --ext .json,.ts ",
-		"lint:md": "markdownlint . --config \"../../.markdownlint.json\" --dot --ignore-path \"../../.gitignore\""
+		"lint:md": "markdownlint . --config \"../../.markdownlint.json\" --dot --ignore-path \"../../.gitignore\"",
+		"prepack": "clean-package --config \"../../.clean-packagerc.cjs\""
 	},
 	"peerDependencies": {
 		"typescript": "4.9.4"
