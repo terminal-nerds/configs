@@ -32,15 +32,18 @@
 		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
 		"clean:build": "del \"./dist\"",
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
-		"format": "concurrently \"pnpm:format:*\" --group --timings",
-		"format:prettier": "pretty-quick --branch main --pattern \"packages/syncpack/**/*\" --verbose",
-		"format:syncpack": "syncpack format",
+		"fix": "concurrently \"pnpm:fix:*\" --group --timings",
+		"fix:format": "pretty-quick --branch main --pattern \"packages/syncpack/**\" --verbose",
+		"fix:js": "pnpm lint:js --fix",
+		"fix:md": "pnpm lint:md --fix",
+		"fix:pkg": "syncpack format ; syncpack fix-mismatches",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
 		"lint:deps": "depcheck",
-		"lint:format": "pretty-quick --branch main --pattern \"packages/syncpack/**/*\" --verbose --check",
-		"lint:js": "eslint . --ext .json --cache --cache-location \"./node_modules/.cache/eslint\"",
-		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
-		"lint:types": "tsc --noEmit"
+		"lint:format": "pnpm fix:format --check",
+		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --cache --cache-location \"./node_modules/.cache/eslint\" --ext .json,.ts ",
+		"lint:md": "markdownlint . --config \"../../.markdownlint.json\" --dot --ignore-path \"../../.gitignore\"",
+		"lint:types": "tsc --noEmit",
+		"prepack": "clean-package --config \"../../.clean-packagerc.cjs\""
 	},
 	"peerDependencies": {
 		"syncpack": "8.4.11"

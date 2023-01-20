@@ -1,10 +1,11 @@
-import { hasPackage } from "@workspace/shared/package";
 import { defineConfig } from "eslint-define-config";
 
+import { HAS_REACT, HAS_SVELTE } from "../checks.js";
+
 function getExtendedConfig() {
-	if (hasPackage("react")) {
+	if (HAS_REACT) {
 		return "plugin:testing-library/react";
-	} else if (hasPackage("svelte")) {
+	} else if (HAS_SVELTE) {
 		return "plugin:testing-library/svelte";
 	} else {
 		return "plugin:testing-library/dom";

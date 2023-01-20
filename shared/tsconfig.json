@@ -2,6 +2,7 @@
 	"$schema": "https://json.schemastore.org/tsconfig",
 	"extends": "@terminal-nerds/typescript-config",
 	"compilerOptions": {
+		"lib": ["DOM", "ESNext"],
 		"module": "ESNext",
 		"moduleResolution": "NodeNext",
 		"tsBuildInfoFile": "./node_modules/.cache/tsbuildinfo"

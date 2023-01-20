@@ -1,7 +1,18 @@
 import { createMergedConfig } from "@workspace/shared/configuration";
-import { hasPackage } from "@workspace/shared/package";
 import type { ESLintConfig } from "eslint-define-config";
 
+import {
+	HAS_DOCUSAURUS,
+	HAS_JEST,
+	HAS_JEST_DOM,
+	HAS_NEXT,
+	HAS_PRETTIER,
+	HAS_REACT,
+	HAS_STORYBOOK,
+	HAS_SVELTE,
+	HAS_TAILWINDCSS,
+	HAS_TYPESCRIPT,
+} from "./checks.js";
 import configNext from "./configs/next.js";
 import configPrettier from "./configs/prettier.js";
 import eslint from "./eslint.js";
@@ -42,35 +53,35 @@ const config = createMergedConfig<SimplifiedESLintConfig>([
 	// Plugins
 	pluginCompat,
 	process.env["ESLINT_PLUGIN_DIFF_ENABLE"] === "true" && pluginDiff,
-	hasPackage("@docusaurus/core") && plugindocusaurus,
-	(hasPackage("@emotion/css") || hasPackage("@emotion/react")) && pluginEmotion,
+	HAS_DOCUSAURUS && plugindocusaurus,
+	HAS_REACT && pluginEmotion,
 	pluginImport,
-	(hasPackage("jest") || hasPackage("vitest")) && pluginJest,
-	hasPackage("@testing-library/jest-dom") && pluginJestDOM,
-	(hasPackage("jest") || hasPackage("vitest")) && pluginJestFormatting,
+	HAS_JEST && pluginJest,
+	HAS_JEST_DOM && pluginJestDOM,
+	HAS_JEST && pluginJestFormatting,
 	pluginJSONC,
 	pluginJSONSchemaValidator,
-	(hasPackage("react") || hasPackage("preact")) && pluginJSXA11y,
+	HAS_REACT && pluginJSXA11y,
 	pluginNode,
-	(hasPackage("react") || hasPackage("preact")) && pluginReact,
-	(hasPackage("react") || hasPackage("preact")) && pluginReactHooks,
+	HAS_REACT && pluginReact,
+	HAS_REACT && pluginReactHooks,
 	pluginRegexp,
 	pluginSimpleImportSort,
 	pluginSonarJS,
 	pluginSQL,
-	hasPackage("storybook") && pluginStorybook,
-	hasPackage("svelte") && pluginSvelte,
-	hasPackage("@testing-library/jest-dom") && pluginTestingLibrary,
-	hasPackage("tailwindcss") && pluginTailwindCSS,
-	hasPackage("typescript") && pluginTSDoc,
-	hasPackage("typescript") && pluginTypeScript,
+	HAS_STORYBOOK && pluginStorybook,
+	HAS_SVELTE && pluginSvelte,
+	HAS_JEST_DOM && pluginTestingLibrary,
+	HAS_TAILWINDCSS && pluginTailwindCSS,
+	HAS_TYPESCRIPT && pluginTSDoc,
+	HAS_TYPESCRIPT && pluginTypeScript,
 	pluginUnicorn,
 	pluginYML,
 
 	// Configs
-	hasPackage("next") && configNext,
+	HAS_NEXT && configNext,
 	// NOTE: Must come as last!
-	hasPackage("prettier") && configPrettier,
+	HAS_PRETTIER && configPrettier,
 ]);
 
 export default config;

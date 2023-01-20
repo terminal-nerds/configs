@@ -1,8 +1,8 @@
-import { hasPackage } from "@workspace/shared/package";
+import { HAS_DEPCHECK, HAS_SYNCPACK } from "../checks.js";
 
 export const PACKAGE_JSON = {
 	"**/package.json": () => [
-		...(hasPackage("depcheck") ? ["depcheck"] : []),
-		...(hasPackage("syncpack") ? ["syncpack list-mismatches", "syncpack format"] : []),
+		...(HAS_DEPCHECK ? ["depcheck"] : []),
+		...(HAS_SYNCPACK ? ["syncpack list-mismatches", "syncpack format"] : []),
 	],
 } as const;

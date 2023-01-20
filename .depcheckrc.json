@@ -5,6 +5,7 @@
 		"@terminal-nerds/*",
 		"@types/node",
 		"browserslist",
+		"clean-package",
 		"concurrently",
 		"depcheck",
 		"lint-staged",

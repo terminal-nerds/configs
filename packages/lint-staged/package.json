@@ -35,22 +35,21 @@
 		"clean:build": "del \"./dist\"",
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"dev": "tsup --watch",
-		"format": "concurrently \"pnpm:format:*\" --group --timings",
-		"format:prettier": "pretty-quick --branch main --pattern \"packages/lint-staged/**/*\" --verbose",
-		"format:syncpack": "syncpack format",
+		"fix": "concurrently \"pnpm:fix:*\" --group --timings",
+		"fix:format": "pretty-quick --branch main --pattern \"packages/lint-staged/**\" --verbose",
+		"fix:js": "pnpm lint:js --fix",
+		"fix:md": "pnpm lint:md --fix",
+		"fix:pkg": "syncpack format ; syncpack fix-mismatches",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
 		"lint:deps": "depcheck",
-		"lint:format": "pretty-quick --branch main --pattern \"./packages/lint-staged/**/*\" --verbose --check",
-		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --config \"../../.eslintrc.cjs\" --cache --cache-location \"./node_modules/.cache/eslint\"",
-		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
-		"lint:types": "tsc --noEmit"
+		"lint:format": "pnpm fix:format --check",
+		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --cache --cache-location \"./node_modules/.cache/eslint\" --ext .json,.ts ",
+		"lint:md": "markdownlint . --config \"../../.markdownlint.json\" --dot --ignore-path \"../../.gitignore\"",
+		"lint:types": "tsc --noEmit",
+		"prepack": "clean-package --config \"../../.clean-packagerc.cjs\""
 	},
 	"peerDependencies": {
 		"lint-staged": "13.1.0"
-	},
-	"dependencies": {
-		"pkg-dir": "7.0.0",
-		"read-pkg-up": "9.1.0"
 	},
 	"devDependencies": {
 		"@terminal-nerds/tsup-config": "workspace:*",
