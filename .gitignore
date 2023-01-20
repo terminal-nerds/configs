@@ -112,3 +112,6 @@ build
 
 # Snyk cache
 .dccache
+
+# Backup files
+*.backup
