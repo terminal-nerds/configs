@@ -49,6 +49,14 @@
 	"peerDependencies": {
 		"eslint": "8.32.0"
 	},
+	"peerDependenciesMeta": {
+		"svelte": {
+			"optional": true
+		},
+		"tailwindcss": {
+			"optional": true
+		}
+	},
 	"dependencies": {
 		"@docusaurus/eslint-plugin": "2.2.0",
 		"@emotion/eslint-plugin": "11.10.0",
