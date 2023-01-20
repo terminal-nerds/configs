@@ -1,5 +1,20 @@
 # @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.13.0
+
+### Minor Changes
+
+-   [#210](https://github.com/terminal-nerds/configs/pull/210) [`1c1b4a2`](https://github.com/terminal-nerds/configs/commit/1c1b4a2b2a04edf5fdd8cfc963de43f946f0f4d8) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependencies:
+
+    -   `@typescript-eslint/eslint-plugin` to `v5.48.2`
+    -   `@typescript-eslint/parser` to `v5.48.2`
+    -   `eslint-plugin-import` to `v2.27.5`
+    -   `eslint-plugin-react` to `v7.32.1`
+
+### Patch Changes
+
+-   [#212](https://github.com/terminal-nerds/configs/pull/212) [`6aec841`](https://github.com/terminal-nerds/configs/commit/6aec841d0a1b116537c7b96990724e9569efc8f9) Thanks [@xeho91](https://github.com/xeho91)! - 🐛 Resolve warnings about `peerDependencies` from the plugins that should be installed
+
 ## 0.12.0
 
 ### Minor Changes
