@@ -1,5 +1,15 @@
 # @terminal-nerds/prettier-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.6.0
+
+### Minor Changes
+
+-   [#214](https://github.com/terminal-nerds/configs/pull/214) [`5f849df`](https://github.com/terminal-nerds/configs/commit/5f849df1ecda766c34ac98b3c79f6d42e3024e7f) Thanks [@xeho91](https://github.com/xeho91)! - ✨ Add support for [JSDoc](https://github.com/jsdoc/jsdoc) with [`prettier-plugin-jsdoc`](https://github.com/hosseinmd/prettier-plugin-jsdoc)
+
+### Patch Changes
+
+-   [#212](https://github.com/terminal-nerds/configs/pull/212) [`6aec841`](https://github.com/terminal-nerds/configs/commit/6aec841d0a1b116537c7b96990724e9569efc8f9) Thanks [@xeho91](https://github.com/xeho91)! - 🐛 Resolve warnings about `peerDependencies` from the plugins that should be installed
+
 ## 0.5.0
 
 ### Minor Changes
