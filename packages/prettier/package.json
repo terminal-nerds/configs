@@ -57,7 +57,7 @@
 	"dependencies": {
 		"prettier-plugin-jsdoc": "0.4.2",
 		"prettier-plugin-svelte": "2.9.0",
-		"prettier-plugin-tailwindcss": "0.2.1"
+		"prettier-plugin-tailwindcss": "0.2.2"
 	},
 	"devDependencies": {
 		"@terminal-nerds/tsup-config": "workspace:*",
