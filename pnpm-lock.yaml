@@ -297,7 +297,7 @@ importers:
       pkg-dir: 7.0.0
       read-pkg-up: 9.1.0
       tsup: 6.5.0
-      type-fest: 3.5.2
+      type-fest: 3.5.3
       typescript: 4.9.4
     dependencies:
       deepmerge-ts: 4.2.2
@@ -308,7 +308,7 @@ importers:
       '@terminal-nerds/tsup-config': link:../packages/tsup
       '@terminal-nerds/typescript-config': link:../packages/typescript
       tsup: 6.5.0_typescript@4.9.4
-      type-fest: 3.5.2
+      type-fest: 3.5.3
       typescript: 4.9.4
 
 packages:
@@ -6953,8 +6953,8 @@ packages:
     engines: {node: '>=12.20'}
     dev: false
 
-  /type-fest/3.5.2:
-    resolution: {integrity: sha512-Ph7S4EhXzWy0sbljEuZo0tTNoLl+K2tPauGrQpcwUWrOVneLePTuhVzcuzVJJ6RU5DsNwQZka+8YtkXXU4z9cA==}
+  /type-fest/3.5.3:
+    resolution: {integrity: sha512-V2+og4j/rWReWvaFrse3s9g2xvUv/K9Azm/xo6CjIuq7oeGqsoimC7+9/A3tfvNcbQf8RPSVj/HV81fB4DJrjA==}
     engines: {node: '>=14.16'}
     dev: true
 
