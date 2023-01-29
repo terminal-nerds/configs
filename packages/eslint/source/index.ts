@@ -24,6 +24,7 @@ import pluginImport from "./plugins/import.js";
 import pluginJest from "./plugins/jest.js";
 import pluginJestDOM from "./plugins/jest-dom.js";
 import pluginJestFormatting from "./plugins/jest-formatting.js";
+import pluginJSDoc from "./plugins/jsdoc.js";
 import pluginJSONSchemaValidator from "./plugins/json-schema-validator.js";
 import pluginJSONC from "./plugins/jsonc.js";
 import pluginJSXA11y from "./plugins/jsx-a11y.js";
@@ -38,7 +39,6 @@ import pluginStorybook from "./plugins/storybook.js";
 import pluginSvelte from "./plugins/svelte.js";
 import pluginTailwindCSS from "./plugins/tailwindcss.js";
 import pluginTestingLibrary from "./plugins/testing-library.js";
-// eslint-disable-next-line unicorn/prevent-abbreviations
 import pluginTSDoc from "./plugins/tsdoc.js";
 import pluginTypeScript from "./plugins/typescript.js";
 import pluginUnicorn from "./plugins/unicorn.js";
@@ -59,6 +59,7 @@ const config = createMergedConfig<SimplifiedESLintConfig>([
 	HAS_JEST && pluginJest,
 	HAS_JEST_DOM && pluginJestDOM,
 	HAS_JEST && pluginJestFormatting,
+	pluginJSDoc,
 	pluginJSONC,
 	pluginJSONSchemaValidator,
 	HAS_REACT && pluginJSXA11y,
