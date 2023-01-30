@@ -2,7 +2,47 @@ import { defineConfig } from "eslint-define-config";
 
 import { HAS_TYPESCRIPT } from "../checks.js";
 
-const getExtendedConfigs = () => {
+/** {@link https://github.com/import-js/eslint-plugin-import} */
+const config = defineConfig({
+	extends: getExtendedConfigs(),
+
+	rules: {
+		/**
+		 * RATIONALE: Doesn't fully support ESM yet, see below:
+		 * https://github.com/import-js/eslint-plugin-import/issues/1868
+		 */
+		"import/no-unresolved": ["off"],
+		"import/first": ["error"],
+		"import/newline-after-import": ["error"],
+		"import/no-duplicates": ["error"],
+		"import/order": [
+			"warn",
+			{
+				/* prettier-ignore */
+				groups: [
+					"builtin",
+					"external",
+					"internal",
+					"parent",
+					"sibling",
+					"index",
+					"object",
+				],
+				pathGroups: [
+					{
+						pattern: "$**/**",
+						group: "internal",
+						position: "after",
+					},
+				],
+			},
+		],
+	},
+});
+
+export default config;
+
+function getExtendedConfigs() {
 	const configs = ["plugin:import/recommended"];
 
 	if (HAS_TYPESCRIPT) {
@@ -10,23 +50,4 @@ const getExtendedConfigs = () => {
 	}
 
 	return configs;
-};
-
-// https://github.com/import-js/eslint-plugin-import
-const config = defineConfig({
-	extends: getExtendedConfigs(),
-
-	rules: {
-		// @see: https://github.com/import-js/eslint-plugin-import/issues/1868
-		"import/no-unresolved": ["off"], // Doesn't support ESM yet
-		/**
-		 * RATIONALE:
-		 * Combine with: https://github.com/lydell/eslint-plugin-simple-import-sort
-		 */
-		"import/first": ["error"],
-		"import/newline-after-import": ["error"],
-		"import/no-duplicates": ["error"],
-	},
-});
-
-export default config;
+}

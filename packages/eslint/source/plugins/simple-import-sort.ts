@@ -1,6 +1,6 @@
 import { defineConfig } from "eslint-define-config";
 
-// https://github.com/lydell/eslint-plugin-simple-import-sort
+/** {@link https://github.com/lydell/eslint-plugin-simple-import-sort} */
 const config = defineConfig({
 	plugins: ["simple-import-sort"],
 	rules: {
