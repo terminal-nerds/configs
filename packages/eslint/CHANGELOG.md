@@ -1,5 +1,29 @@
 # @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.14.0
+
+### Minor Changes
+
+-   [#222](https://github.com/terminal-nerds/configs/pull/222) [`feae517`](https://github.com/terminal-nerds/configs/commit/feae51729cf4364793b14de970c09adf8047d165) Thanks [@xeho91](https://github.com/xeho91)! - ✨Add support for [JSDoc](https://jsdoc.app) with [`eslint-plugin-jsdoc`](https://github.com/gajus/eslint-plugin-jsdoc)
+
+-   [#216](https://github.com/terminal-nerds/configs/pull/216) [`f08c989`](https://github.com/terminal-nerds/configs/commit/f08c9892afa15dc9517a43329934ce736e483c89) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update ESLint dependencies:
+
+    -   `@docusaurus/eslint-plugin` to `v2.3.0`
+    -   `@typescript-eslint/eslint-plugin` to `v5.48.2`
+    -   `@typescript-eslint/parser` to `v5.48.2`
+    -   `eslint-config-next` to `v13.1.6`
+    -   `eslint-plugin-svelte` to `v2.14.1`
+    -   `eslint-plugin-tailwindcss` to `v3.8.0`
+    -   `eslint-plugin-testing-library` to `v5.9.1`
+
+-   [#220](https://github.com/terminal-nerds/configs/pull/220) [`7a0bd8c`](https://github.com/terminal-nerds/configs/commit/7a0bd8c73ba8c52d0f198c74e2a0b1a03c82a181) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `eslint-plugin-simple-import-sort` to `v10`
+
+-   [#222](https://github.com/terminal-nerds/configs/pull/222) [`feae517`](https://github.com/terminal-nerds/configs/commit/feae51729cf4364793b14de970c09adf8047d165) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Use TSDoc validation on only TypeScript files
+
+-   [#222](https://github.com/terminal-nerds/configs/pull/222) [`feae517`](https://github.com/terminal-nerds/configs/commit/feae51729cf4364793b14de970c09adf8047d165) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Improve allowed abbreviations list
+
+-   [#222](https://github.com/terminal-nerds/configs/pull/222) [`feae517`](https://github.com/terminal-nerds/configs/commit/feae51729cf4364793b14de970c09adf8047d165) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Tweak rule - `import/order` - added groups
+
 ## 0.13.0
 
 ### Minor Changes
