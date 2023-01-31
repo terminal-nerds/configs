@@ -113,6 +113,7 @@ _conditionally_.
 | [eslint-plugin-jest]                  | ![eslint-plugin-jest version badge]                  | `jest` or `vitest` as dependency                                   |
 | [eslint-plugin-jest-dom]              | ![eslint-plugin-jest-dom version badge]              | `@testing-library/jest-dom` as dependency                          |
 | [eslint-plugin-jest-formatting]       | ![eslint-plugin-jest-formatting version badge]       | `jest` or `vitest` as dependency                                   |
+| [eslint-plugin-jsdoc]                 | ![eslint-plugin-jsonc version badge]                 | -                                                                  |
 | [eslint-plugin-json-schema-validator] | ![eslint-plugin-json-schema-validator version badge] | -                                                                  |
 | [eslint-plugin-jsonc]                 | ![eslint-plugin-jsonc version badge]                 | -                                                                  |
 | [eslint-plugin-jsx-a11y]              | ![eslint-plugin-jsx-a11y version badge]              | `react` or `preact` as dependency                                  |
@@ -149,6 +150,8 @@ _conditionally_.
 [eslint-plugin-jest-dom version badge]: https://img.shields.io/npm/v/eslint-plugin-jest-dom?logo=npm&style=flat-square
 [eslint-plugin-jest-formatting]: https://github.com/dangreenisrael/eslint-plugin-jest-formatting
 [eslint-plugin-jest-formatting version badge]: https://img.shields.io/npm/v/eslint-plugin-jest-formatting?logo=npm&style=flat-square
+[eslint-plugin-jsdoc]: https://github.com/gajus/eslint-plugin-jsdoc
+[eslint-plugin-jsdoc version badge]: https://img.shields.io/npm/v/eslint-plugin-jsdoc?logo=npm&style=flat-square
 [eslint-plugin-json-schema-validator]: https://github.com/ota-meshi/eslint-plugin-json-schema-validator
 [eslint-plugin-json-schema-validator version badge]: https://img.shields.io/npm/v/eslint-plugin-json-schema-validator?logo=npm&style=flat-square
 [eslint-plugin-jsonc]: https://github.com/ota-meshi/eslint-plugin-jsonc
