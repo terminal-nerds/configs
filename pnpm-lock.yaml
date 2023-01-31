@@ -74,7 +74,7 @@ importers:
 
   packages/eslint:
     specifiers:
-      '@docusaurus/eslint-plugin': 2.2.0
+      '@docusaurus/eslint-plugin': 2.3.0
       '@emotion/eslint-plugin': 11.10.0
       '@terminal-nerds/tsup-config': workspace:*
       '@terminal-nerds/typescript-config': workspace:*
@@ -82,7 +82,7 @@ importers:
       '@typescript-eslint/eslint-plugin': 5.49.0
       '@typescript-eslint/parser': 5.49.0
       '@workspace/shared': workspace:*
-      eslint-config-next: 13.1.5
+      eslint-config-next: 13.1.6
       eslint-config-prettier: 8.6.0
       eslint-define-config: 1.14.0
       eslint-plugin-compat: 4.0.2
@@ -114,11 +114,11 @@ importers:
       typescript: 4.9.4
       yaml-eslint-parser: 1.1.0
     dependencies:
-      '@docusaurus/eslint-plugin': 2.2.0_typescript@4.9.4
+      '@docusaurus/eslint-plugin': 2.3.0_typescript@4.9.4
       '@emotion/eslint-plugin': 11.10.0
       '@typescript-eslint/eslint-plugin': 5.49.0_7su6aobg3ktp3nysmomiaijjcu
       '@typescript-eslint/parser': 5.49.0_typescript@4.9.4
-      eslint-config-next: 13.1.5_typescript@4.9.4
+      eslint-config-next: 13.1.6_typescript@4.9.4
       eslint-config-prettier: 8.6.0
       eslint-define-config: 1.14.0
       eslint-plugin-compat: 4.0.2
@@ -672,13 +672,13 @@ packages:
       postcss: 8.4.21
       postcss-selector-parser: 6.0.11
 
-  /@docusaurus/eslint-plugin/2.2.0_typescript@4.9.4:
-    resolution: {integrity: sha512-bz50+EZr8IMIKaupBGXxHrfYCPcNtnzh9FLbxQrlCzesSyUnlKwMOdhH0i+uTrjpZC3OPo0NSf9cz6bBabN/wg==}
+  /@docusaurus/eslint-plugin/2.3.0_typescript@4.9.4:
+    resolution: {integrity: sha512-UCqYkpwrea3SOVhHONGTYwQf0PxdtisBt9WHxSjpmGoV2+X6wGMy+nJuTIquvIVDqH8lmVIf9SoSckpLB7Rokw==}
     engines: {node: '>=16.14'}
     peerDependencies:
       eslint: '>=6'
     dependencies:
-      '@typescript-eslint/utils': 5.48.1_typescript@4.9.4
+      '@typescript-eslint/utils': 5.49.0_typescript@4.9.4
       tslib: 2.4.1
     transitivePeerDependencies:
       - supports-color
@@ -1014,8 +1014,8 @@ packages:
     resolution: {integrity: sha512-9b8mPpKrfeGRuhFH5iO1iwCLeIIsV6+H1sRfxbkoGXIyQE2BTsPd9zqSqQJ+pv5sJ/hT5M1zvOFL02MnEezFug==}
     dev: false
 
-  /@next/eslint-plugin-next/13.1.5:
-    resolution: {integrity: sha512-3kvLTX35bOWOCKU8KY74Ygczc55Qk/kB2TQy0tH7Rti6hzZ6Aij7WQ8zHdIVjmnlD0n/zXWXrIf5y56RKcLQkQ==}
+  /@next/eslint-plugin-next/13.1.6:
+    resolution: {integrity: sha512-o7cauUYsXjzSJkay8wKjpKJf2uLzlggCsGUkPu3lP09Pv97jYlekTC20KJrjQKmSv5DXV0R/uks2ZXhqjNkqAw==}
     dependencies:
       glob: 7.1.7
     dev: false
@@ -2773,8 +2773,8 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /eslint-config-next/13.1.5_typescript@4.9.4:
-    resolution: {integrity: sha512-7FqkjkvGCQfvYUiPTFRiRYPR1uI6Ew+4f4mVp16lLSWcaChtWoZxQCZHM5n0yxzKKVmuEg1aM4uvDQfSXSjTww==}
+  /eslint-config-next/13.1.6_typescript@4.9.4:
+    resolution: {integrity: sha512-0cg7h5wztg/SoLAlxljZ0ZPUQ7i6QKqRiP4M2+MgTZtxWwNKb2JSwNc18nJ6/kXBI6xYvPraTbQSIhAuVw6czw==}
     peerDependencies:
       eslint: ^7.23.0 || ^8.0.0
       typescript: '>=3.3.1'
@@ -2782,7 +2782,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@next/eslint-plugin-next': 13.1.5
+      '@next/eslint-plugin-next': 13.1.6
       '@rushstack/eslint-patch': 1.2.0
       '@typescript-eslint/parser': 5.49.0_typescript@4.9.4
       eslint-import-resolver-node: 0.3.7
