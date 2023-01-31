@@ -1,5 +1,11 @@
 # @terminal-nerds/prettier-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.7.0
+
+### Minor Changes
+
+-   [#219](https://github.com/terminal-nerds/configs/pull/219) [`866c671`](https://github.com/terminal-nerds/configs/commit/866c671838b96a4614dc745148b476e3d563098d) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `prettier-plugin-tailwindcss` to `v0.2.2`
+
 ## 0.6.0
 
 ### Minor Changes
