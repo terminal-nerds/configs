@@ -10,7 +10,7 @@
 		"node": ">=18",
 		"pnpm": ">=7"
 	},
-	"packageManager": "pnpm@7.25.0",
+	"packageManager": "pnpm@7.26.1",
 	"scripts": {
 		"build:pkgs": "turbo run build --api=$TURBO_API",
 		"changelog": "pnpm changeset add",
