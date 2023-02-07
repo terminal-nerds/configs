@@ -16,7 +16,7 @@ importers:
       '@terminal-nerds/typescript-config': workspace:*
       '@types/node': 18.11.18
       all-contributors-cli: 6.24.0
-      browserslist: 4.21.4
+      browserslist: 4.21.5
       clean-package: 2.2.0
       concurrently: 7.6.0
       del-cli: 5.0.0
@@ -44,7 +44,7 @@ importers:
       '@terminal-nerds/typescript-config': link:packages/typescript
       '@types/node': 18.11.18
       all-contributors-cli: 6.24.0
-      browserslist: 4.21.4
+      browserslist: 4.21.5
       clean-package: 2.2.0
       concurrently: 7.6.0
       del-cli: 5.0.0
@@ -1793,10 +1793,21 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001446
+      caniuse-lite: 1.0.30001450
       electron-to-chromium: 1.4.284
       node-releases: 2.0.8
       update-browserslist-db: 1.0.10_browserslist@4.21.4
+    dev: false
+
+  /browserslist/4.21.5:
+    resolution: {integrity: sha512-tUkiguQGW7S3IhB7N+c2MV/HZPSCPAAiYBZXLsBhFB/PCy6ZKKsZrmBayHV9fdGV/ARIfJ14NkxKzRDjvp7L6w==}
+    engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
+    hasBin: true
+    dependencies:
+      caniuse-lite: 1.0.30001450
+      electron-to-chromium: 1.4.284
+      node-releases: 2.0.8
+      update-browserslist-db: 1.0.10_browserslist@4.21.5
 
   /buffer-from/1.1.2:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
@@ -1886,8 +1897,8 @@ packages:
     resolution: {integrity: sha512-239m03Pqy0hwxYPYR5JwOIxRJfLTWtle9FV8zosfV5pHg+/51uD4nxcUlM8+mWWGfwKtt8lJNHnD3cWw9VZ6ow==}
     dev: false
 
-  /caniuse-lite/1.0.30001446:
-    resolution: {integrity: sha512-fEoga4PrImGcwUUGEol/PoFCSBnSkA9drgdkxXkJLsUBOnJ8rs3zDv6ApqYXGQFOyMPsjh79naWhF4DAxbF8rw==}
+  /caniuse-lite/1.0.30001450:
+    resolution: {integrity: sha512-qMBmvmQmFXaSxexkjjfMvD5rnDL0+m+dUMZKoDYsGG8iZN29RuYh9eRoMvKsT6uMAWlyUUGDEQGJJYjzCIO9ew==}
 
   /chai/4.3.7:
     resolution: {integrity: sha512-HLnAzZ2iupm25PlN0xFreAlBA5zaBSv3og0DdeGA4Ar6h6rJ3A0rolRUKJhSF2V10GZKDgWF/VmAEsNWjCRB+A==}
@@ -2415,8 +2426,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      browserslist: 4.21.4
-      caniuse-lite: 1.0.30001442
+      browserslist: 4.21.5
+      caniuse-lite: 1.0.30001450
       css-rule-stream: 1.1.0
       duplexer2: 0.0.2
       ldjson-stream: 1.2.1
@@ -6990,6 +7001,17 @@ packages:
       browserslist: '>= 4.21.0'
     dependencies:
       browserslist: 4.21.4
+      escalade: 3.1.1
+      picocolors: 1.0.0
+    dev: false
+
+  /update-browserslist-db/1.0.10_browserslist@4.21.5:
+    resolution: {integrity: sha512-OztqDenkfFkbSG+tRxBeAnCVPckDBcvibKd35yDONx6OU8N7sqgwc7rCbkJ/WcYtVRZ4ba68d6byhC21GFh7sQ==}
+    hasBin: true
+    peerDependencies:
+      browserslist: '>= 4.21.0'
+    dependencies:
+      browserslist: 4.21.5
       escalade: 3.1.1
       picocolors: 1.0.0
 
