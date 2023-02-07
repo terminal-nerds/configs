@@ -1,5 +1,11 @@
 # @terminal-nerds/browserslist-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.1.2
+
+### Patch Changes
+
+-   [#226](https://github.com/terminal-nerds/configs/pull/226) [`3120559`](https://github.com/terminal-nerds/configs/commit/31205596ce985886cdac71d5f5aff86ce52920f8) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `browserslist` to `v4.21.5`
+
 ## 0.1.1
 
 ### Patch Changes
