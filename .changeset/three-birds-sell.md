@@ -1,5 +1,10 @@
 ---
-"@terminal-nerds/vitest-config": patch
+"@terminal-nerds/vitest-config": minor
 ---
 
-⬆️ Update dependency `vite` to `v4.1.1`
+⬆️ Update Vitest dependencies:
+
+-   `vite` to `v4.1.1`
+-   `vitest` to `v0.28.4`
+-   `@vitest/coverage` to `v0.28.4`
+-   `@vitest/ui` to `v0.28.4`
