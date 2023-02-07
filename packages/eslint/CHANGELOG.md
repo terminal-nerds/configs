@@ -1,5 +1,21 @@
 # @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.15.0
+
+### Minor Changes
+
+-   [#225](https://github.com/terminal-nerds/configs/pull/225) [`c2c2dbc`](https://github.com/terminal-nerds/configs/commit/c2c2dbcb3d3a9b51dfe9fef9e79b0944aa84b03e) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update ESLint dependencies:
+
+    -   `eslint` to `v8.33.0`
+    -   `@docusaurus/eslint-plugin` to `v2.3.1`
+    -   `@types/eslint` to `v8.21.0`
+    -   `@typescript-eslint/eslint-plugin` to `v5.50.0`
+    -   `@typescript-eslint/parser` to `v5.50.0`
+    -   `eslint-define-config` to `v1.15.0`
+    -   `eslint-plugin-jsdoc` to `v9.8.0`
+    -   `eslint-plugin-react` to `v7.32.2`
+    -   `eslint-plugin-tailwindcss` to `v3.8.3`
+
 ## 0.14.0
 
 ### Minor Changes
