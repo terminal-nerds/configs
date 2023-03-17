@@ -19,7 +19,12 @@
 	"engines": {
 		"node": ">=18"
 	},
-	"main": "dist/index.json",
+	"exports": {
+		".": {
+			"import": "./dist/index.json",
+			"require": "./dist/index.json"
+		}
+	},
 	"files": [
 		"/dist"
 	],

@@ -20,7 +20,10 @@
 	"engines": {
 		"node": ">=18"
 	},
-	"main": "dist/index.js",
+	"exports": {
+		"types": "./dist/index.d.ts",
+		"require": "./dist/index.cjs"
+	},
 	"files": [
 		"dist/"
 	],

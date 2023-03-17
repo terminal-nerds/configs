@@ -22,12 +22,12 @@
 	},
 	"exports": {
 		"./browsers": {
-			"require": "./dist/browsers.cjs",
-			"types": "./dist/browsers.d.ts"
+			"types": "./dist/browsers.d.ts",
+			"require": "./dist/browsers.cjs"
 		},
 		"./node": {
-			"require": "./dist/node.cjs",
-			"types": "./dist/node.d.ts"
+			"types": "./dist/node.d.ts",
+			"require": "./dist/node.cjs"
 		}
 	},
 	"files": [

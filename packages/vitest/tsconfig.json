@@ -3,7 +3,7 @@
 	"extends": "@terminal-nerds/typescript-config",
 	"compilerOptions": {
 		"module": "ESNext",
-		"moduleResolution": "NodeNext",
+		"moduleResolution": "bundler",
 		"tsBuildInfoFile": "./node_modules/.cache/tsbuildinfo"
 	},
 	"exclude": ["dist/", "node_modules/"],
