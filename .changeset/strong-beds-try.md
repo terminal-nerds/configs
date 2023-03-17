@@ -1,5 +1,5 @@
 ---
-"@terminal-nerds/eslint-config": patch
+"@terminal-nerds/eslint-config": minor
 ---
 
 ⬆️ Update dependencies:
