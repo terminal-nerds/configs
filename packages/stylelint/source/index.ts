@@ -1,4 +1,4 @@
-import { createMergedConfig } from "@workspace/shared/configuration";
+import { createMergedConfig } from "@terminal-nerds/snippets-config";
 import type { Config } from "stylelint";
 
 import { HAS_PRETTIER, HAS_SASS } from "./checks.js";
