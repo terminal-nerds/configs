@@ -4,5 +4,5 @@
 
 ⬆️ Update dependencies:
 
-- `prettier` to `v2.8.4`
-- `prettier-plugin-tailwindcss`	to `v0.2.4`
+-   `prettier` to `v2.8.4`
+-   `prettier-plugin-tailwindcss` to `v0.2.4`
