@@ -8,3 +8,4 @@ export const HAS_PRETTY_QUICK = hasModule("pretty-quick");
 export const HAS_STYLELINT = hasModule("stylelint");
 export const HAS_SYNCPACK = hasModule("syncpack");
 export const HAS_TYPESCRIPT = hasModule("typescript");
+export const HAS_VITEST = hasModule("vitest");
