@@ -1,4 +1,4 @@
-/** {@link https://github.com/hosseinmd/prettier-plugin-jsdoc} */
+/** {@link https://github.com/hosseinmd/prettier-plugin-jsdoc} Plugin JSDoc options */
 const config = {
 	plugins: ["prettier-plugin-jsdoc"],
 
@@ -17,6 +17,6 @@ const config = {
 	jsdocPreferCodeFences: true,
 	tsdoc: true,
 	jsdocLineWrappingStyle: "greedy",
-};
+} as const;
 
 export default config;

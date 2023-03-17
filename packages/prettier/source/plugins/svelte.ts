@@ -1,4 +1,4 @@
-/** @see {@link https://github.com/sveltejs/prettier-plugin-svelte} */
+/** @see {@link https://github.com/sveltejs/prettier-plugin-svelte} Plugin Svelte options */
 const config = {
 	overrides: [
 		{
@@ -16,6 +16,6 @@ const config = {
 	svelteBracketNewLine: true,
 	svelteAllowShorthand: true,
 	svelteIndentScriptAndStyle: true,
-};
+} as const;
 
 export default config;

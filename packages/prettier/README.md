@@ -90,6 +90,8 @@ human-friendly output and performance)_.
 
 ### Plugins
 
+<!-- prettier-sort-markdown-table -->
+
 | Plugin                        | Version                                      | Loading condition(s)        |
 | ----------------------------- | -------------------------------------------- | --------------------------- |
 | [prettier-plugin-jsdoc]       | ![prettier-plugin-jsdoc version badge]       | -                           |
