@@ -5,5 +5,4 @@ export default defineConfig((options) => ({
 	...getNodeCJSOptions(options),
 	bundle: true,
 	entry: ["source/index.ts"],
-	noExternal: ["@workspace/shared"],
 }));
