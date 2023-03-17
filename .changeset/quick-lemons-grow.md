@@ -2,4 +2,7 @@
 "@terminal-nerds/vitest-config": minor
 ---
 
-🔧 Enable `logHeapUsage`
+🔧 Tweak config:
+
+-   enable `logHeapUsage`,
+-   add `verbose` to `reporters`
