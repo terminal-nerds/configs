@@ -90,6 +90,8 @@ _conditionally_.
 
 ### Configurations
 
+<!-- prettier-sort-markdown-table -->
+
 | Configurations           | Version                                 | Loading condition(s)     |
 | ------------------------ | --------------------------------------- | ------------------------ |
 | [eslint-config-next]     | ![eslint-config-next version badge]     | `next` as dependency     |
@@ -102,6 +104,8 @@ _conditionally_.
 
 ### Plugins
 
+<!-- prettier-sort-markdown-table -->
+
 | Plugin                                | Version                                              | Loading condition(s)                                               |
 | ------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------ |
 | [@docusaurus/eslint-plugin]           | ![@docusaurus/eslint-plugin version badge]           | `@docusaurus/core` as dependency                                   |
@@ -110,16 +114,16 @@ _conditionally_.
 | [eslint-plugin-compat]                | ![eslint-plugin-compat version badge]                | -                                                                  |
 | [eslint-plugin-diff]                  | ![eslint-plugin-diff version badge]                  | `ESLINT_PLUGIN_DIFF_ENABLE` set to `true` in environment variables |
 | [eslint-plugin-import]                | ![eslint-plugin-import version badge]                | -                                                                  |
-| [eslint-plugin-jest]                  | ![eslint-plugin-jest version badge]                  | `jest` or `vitest` as dependency                                   |
 | [eslint-plugin-jest-dom]              | ![eslint-plugin-jest-dom version badge]              | `@testing-library/jest-dom` as dependency                          |
 | [eslint-plugin-jest-formatting]       | ![eslint-plugin-jest-formatting version badge]       | `jest` or `vitest` as dependency                                   |
-| [eslint-plugin-jsdoc]                 | ![eslint-plugin-jsonc version badge]                 | -                                                                  |
+| [eslint-plugin-jest]                  | ![eslint-plugin-jest version badge]                  | `jest` or `vitest` as dependency                                   |
+| [eslint-plugin-jsdoc]                 | ![eslint-plugin-jsonc version badge]                 | No `typescript` as dependency _(uses TSDoc instead)_               |
 | [eslint-plugin-json-schema-validator] | ![eslint-plugin-json-schema-validator version badge] | -                                                                  |
 | [eslint-plugin-jsonc]                 | ![eslint-plugin-jsonc version badge]                 | -                                                                  |
 | [eslint-plugin-jsx-a11y]              | ![eslint-plugin-jsx-a11y version badge]              | `react` or `preact` as dependency                                  |
 | [eslint-plugin-n]                     | ![eslint-plugin-n version badge]                     | -                                                                  |
-| [eslint-plugin-react]                 | ![eslint-plugin-react version badge]                 | `react` or `preact` as dependency                                  |
 | [eslint-plugin-react-hooks]           | ![eslint-plugin-react-hooks version badge]           | `react` or `preact` as dependency                                  |
+| [eslint-plugin-react]                 | ![eslint-plugin-react version badge]                 | `react` or `preact` as dependency                                  |
 | [eslint-plugin-regexp]                | ![eslint-plugin-regexp version badge]                | -                                                                  |
 | [eslint-plugin-simple-import-sort]    | ![eslint-plugin-simple-import-sort version badge]    | -                                                                  |
 | [eslint-plugin-sonarjs]               | ![eslint-plugin-sonarjs version badge]               | -                                                                  |
@@ -128,7 +132,7 @@ _conditionally_.
 | [eslint-plugin-svelte]                | ![eslint-plugin-svelte version badge]                | `svelte` as dependency                                             |
 | [eslint-plugin-tailwindcss]           | ![eslint-plugin-tailwindcss version badge]           | `tailwindcss` as dependency                                        |
 | [eslint-plugin-testing-library]       | ![eslint-plugin-testing-library version badge]       | `@testing-library/jest-dom` as dependency                          |
-| [eslint-plugin-tsdoc]                 | ![eslint-plugin-tsdoc version badge]                 | -                                                                  |
+| [eslint-plugin-tsdoc]                 | ![eslint-plugin-tsdoc version badge]                 | `typescript` as dependency                                         |
 | [eslint-plugin-unicorn]               | ![eslint-plugin-unicorn version badge]               | `typescript` as dependency                                         |
 | [eslint-plugin-yml]                   | ![eslint-plugin-yml version badge]                   | -                                                                  |
 
