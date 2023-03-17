@@ -1,4 +1,4 @@
-import { TYPESCRIPT_EXTENSIONS } from "@workspace/shared/extension";
+import { TYPESCRIPT_EXTENSIONS } from "@terminal-nerds/snippets-extension/schema";
 import { defineConfig } from "eslint-define-config";
 
 /** {@link https://github.com/microsoft/tsdoc/tree/main/eslint-plugin} */

@@ -1,4 +1,4 @@
-import { createMergedConfig } from "@workspace/shared/configuration";
+import { createMergedConfig } from "@terminal-nerds/snippets-config";
 
 import { HAS_SVELTE, HAS_TAILWINDCSS } from "./checks.js";
 // eslint-disable-next-line unicorn/prevent-abbreviations

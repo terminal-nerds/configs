@@ -5,5 +5,9 @@ export default defineConfig((options) => ({
 	...getNodeCJSOptions(options),
 	bundle: true,
 	entry: ["source/index.ts"],
-	noExternal: ["@workspace/shared"],
+	noExternal: [
+		"@terminal-nerds/snippets-config",
+		"@terminal-nerds/snippets-extension",
+		"@terminal-nerds/snippets-runtime",
+	],
 }));

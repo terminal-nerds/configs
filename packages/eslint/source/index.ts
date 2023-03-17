@@ -1,4 +1,4 @@
-import { createMergedConfig } from "@workspace/shared/configuration";
+import { createMergedConfig } from "@terminal-nerds/snippets-config";
 import type { ESLintConfig } from "eslint-define-config";
 
 import {

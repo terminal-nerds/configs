@@ -1,4 +1,4 @@
-import { JAVASCRIPT_EXTENSIONS, TYPESCRIPT_EXTENSIONS } from "@workspace/shared/extension";
+import { JAVASCRIPT_EXTENSIONS, TYPESCRIPT_EXTENSIONS } from "@terminal-nerds/snippets-extension/schema";
 import { defineConfig } from "eslint-define-config";
 
 /**

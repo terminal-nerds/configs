@@ -1,4 +1,4 @@
-import { hasModule } from "@workspace/shared/module";
+import { hasModule } from "@terminal-nerds/snippets-runtime/module";
 
 export const HAS_DEPCHECK = hasModule("depcheck");
 export const HAS_ESLINT = hasModule("eslint");

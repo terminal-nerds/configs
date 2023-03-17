@@ -1,12 +1,12 @@
 import {
 	JAVASCRIPT_EXTENSIONS,
-	JSON_EXTENTSIONS,
+	JSON_EXTENSIONS,
 	TYPESCRIPT_EXTENSIONS,
 	YAML_EXTENSIONS,
-} from "@workspace/shared/extension";
+} from "@terminal-nerds/snippets-extension/schema";
 
 const extensions = [
-	...JSON_EXTENTSIONS,
+	...JSON_EXTENSIONS,
 	...JAVASCRIPT_EXTENSIONS,
 	...TYPESCRIPT_EXTENSIONS,
 	...YAML_EXTENSIONS,
