@@ -1,5 +1,32 @@
 # @terminal-nerds/stylelint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.10.0
+
+### Minor Changes
+
+-   [#239](https://github.com/terminal-nerds/configs/pull/239) [`4783ea3`](https://github.com/terminal-nerds/configs/commit/4783ea3f6d60f6afb5caa3d1a6e91d0e8accc54b) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update major dependencies:
+
+    -   `stylelint-config-standard` to `30.0.1`
+    -   `stylelint-config-standard-scss` to `7.0.1`
+
+-   [#249](https://github.com/terminal-nerds/configs/pull/249) [`fd983a6`](https://github.com/terminal-nerds/configs/commit/fd983a6bf5a0c228a78a605bbec095931745b21d) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update `stylelint-config-standard` to `v31`
+
+-   [#244](https://github.com/terminal-nerds/configs/pull/244) [`9ab5938`](https://github.com/terminal-nerds/configs/commit/9ab5938c1bf446689cd7051f7b094b9b0342edd4) Thanks [@xeho91](https://github.com/xeho91)! - 🏗 Remove `@workspace/shared` in favour of using `@terminal-nerds/snippets-*` packages
+
+-   [#240](https://github.com/terminal-nerds/configs/pull/240) [`f410880`](https://github.com/terminal-nerds/configs/commit/f41088073480070214560c873b6993c4af7b56fd) Thanks [@renovate](https://github.com/apps/renovate)! - - `stylelint-config-prettier` to `v9.0.5`
+
+    -   `stylelint-high-performance-animation` to `v1.8.0`
+    -   `stylelint-no-unsupported-browser-features` to `6.1.0`
+    -   `stylelint-order` to `v6.0.3`
+    -   `stylelint-scss` to `v4.4.0`
+
+-   [#258](https://github.com/terminal-nerds/configs/pull/258) [`dc4d0c3`](https://github.com/terminal-nerds/configs/commit/dc4d0c33897508fe665e099c1ab939484bb5dd85) Thanks [@xeho91](https://github.com/xeho91)! - 🏗 Migrate TypeScript to `v5`
+
+-   [#250](https://github.com/terminal-nerds/configs/pull/250) [`5859559`](https://github.com/terminal-nerds/configs/commit/58595591fa6ec8ac500466f9e054f466c9dee278) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependencies:
+
+    -   **`stylelint` to `v15.3.0`**
+    -   `stylelint-scss` to `v4.5.0`
+
 ## 0.9.0
 
 ### Minor Changes

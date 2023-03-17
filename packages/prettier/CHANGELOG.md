@@ -1,5 +1,29 @@
 # @terminal-nerds/prettier-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.8.0
+
+### Minor Changes
+
+-   [#235](https://github.com/terminal-nerds/configs/pull/235) [`469becd`](https://github.com/terminal-nerds/configs/commit/469becdadacef24433c8779a0cd53e3d9d89ef9b) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependencies:
+
+    -   `prettier` to `v2.8.4`
+    -   `prettier-plugin-tailwindcss` to `v0.2.4`
+
+-   [#252](https://github.com/terminal-nerds/configs/pull/252) [`0b36008`](https://github.com/terminal-nerds/configs/commit/0b36008ceebd7116f86a3e2a3036291cfb927045) Thanks [@xeho91](https://github.com/xeho91)! - ✨ Add support for markdown table with `prettier-plugin-sort-markdown-table`
+
+-   [#243](https://github.com/terminal-nerds/configs/pull/243) [`de66062`](https://github.com/terminal-nerds/configs/commit/de660626f8f8463120f51be3ceea25e520cd1d5e) Thanks [@xeho91](https://github.com/xeho91)! - 🏗 Apply the constants from the shared package `@terminal-nerds/constants-config`
+
+-   [#244](https://github.com/terminal-nerds/configs/pull/244) [`9ab5938`](https://github.com/terminal-nerds/configs/commit/9ab5938c1bf446689cd7051f7b094b9b0342edd4) Thanks [@xeho91](https://github.com/xeho91)! - 🏗 Remove `@workspace/shared` in favour of using `@terminal-nerds/snippets-*` packages
+
+-   [#258](https://github.com/terminal-nerds/configs/pull/258) [`dc4d0c3`](https://github.com/terminal-nerds/configs/commit/dc4d0c33897508fe665e099c1ab939484bb5dd85) Thanks [@xeho91](https://github.com/xeho91)! - 🏗 Migrate TypeScript to `v5`
+
+-   [#251](https://github.com/terminal-nerds/configs/pull/251) [`05d0995`](https://github.com/terminal-nerds/configs/commit/05d09957e9d259ad6fe3d5f8d2580bdd43e958ce) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️a Update dependency prettier-plugin-tailwindcss to `v0.2.5`
+
+### Patch Changes
+
+-   Updated dependencies [[`de66062`](https://github.com/terminal-nerds/configs/commit/de660626f8f8463120f51be3ceea25e520cd1d5e), [`dc4d0c3`](https://github.com/terminal-nerds/configs/commit/dc4d0c33897508fe665e099c1ab939484bb5dd85)]:
+    -   @terminal-nerds/constants-config@0.1.0
+
 ## 0.7.0
 
 ### Minor Changes

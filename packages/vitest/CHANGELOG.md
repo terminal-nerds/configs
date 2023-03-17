@@ -1,5 +1,23 @@
 # @terminal-nerds/vitest-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.5.0
+
+### Minor Changes
+
+-   [#253](https://github.com/terminal-nerds/configs/pull/253) [`e977990`](https://github.com/terminal-nerds/configs/commit/e977990242624256912a220c9835b5fefe3268ba) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Tweak config:
+
+    -   enable `logHeapUsage`,
+    -   add `verbose` to `reporters`
+
+-   [#258](https://github.com/terminal-nerds/configs/pull/258) [`dc4d0c3`](https://github.com/terminal-nerds/configs/commit/dc4d0c33897508fe665e099c1ab939484bb5dd85) Thanks [@xeho91](https://github.com/xeho91)! - 🏗 Migrate TypeScript to `v5`
+
+-   [#256](https://github.com/terminal-nerds/configs/pull/256) [`3397aca`](https://github.com/terminal-nerds/configs/commit/3397aca7413d9f080150a7c7537eac1a0c4a2c34) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependencies:
+
+    -   `@vitest/coverage-c8` to `v0.29.3`
+    -   `@vitest/ui` to `v0.29.3`
+    -   `vite` to `v4.2.0`
+    -   `vitest` to `v0.29.3`
+
 ## 0.4.0
 
 ### Minor Changes
