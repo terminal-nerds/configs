@@ -47,7 +47,7 @@
 		"prepack": "clean-package --config \"../../.clean-packagerc.cjs\""
 	},
 	"peerDependencies": {
-		"prettier": "2.8.3"
+		"prettier": "2.8.4"
 	},
 	"peerDependenciesMeta": {
 		"svelte": {
@@ -57,7 +57,7 @@
 	"dependencies": {
 		"prettier-plugin-jsdoc": "0.4.2",
 		"prettier-plugin-svelte": "2.9.0",
-		"prettier-plugin-tailwindcss": "0.2.2"
+		"prettier-plugin-tailwindcss": "0.2.4"
 	},
 	"devDependencies": {
 		"@terminal-nerds/tsup-config": "workspace:*",
