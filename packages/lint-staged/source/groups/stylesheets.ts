@@ -1,4 +1,4 @@
-import { STYLESHEETS_EXTENSIONS } from "@workspace/shared/extension";
+import { STYLESHEETS_EXTENSIONS } from "@terminal-nerds/snippets-extension/schema";
 
 export const STYLESHEETS = {
 	[`*.{${STYLESHEETS_EXTENSIONS.join(",")}}`]: ["stylelint"],
