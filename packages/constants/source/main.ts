@@ -18,3 +18,6 @@ export const END_OF_LINE = "lf";
 
 /** Append a new, empty line at the end of file. */
 export const FINAL_NEW_LINE = true;
+
+/** Use double quotes, whenever possible. Single _(`'`)_ can be easily confused with a backtick _(```)_. */
+export const QUOTES = "double";

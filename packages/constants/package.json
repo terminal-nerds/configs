@@ -20,9 +20,10 @@
 		"node": ">=18"
 	},
 	"exports": {
-		"./*": {
-			"import": "./dist/*.js",
-			"types": "./dist/*.d.ts"
+		".": {
+			"types": "./dist/main.d.ts",
+			"import": "./dist/main.js",
+			"require": "./dist/main.cjs"
 		}
 	},
 	"files": [
