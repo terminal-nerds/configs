@@ -1,4 +1,4 @@
-import { MAX_LINE_LENGTH } from "@workspace/shared/constants";
+import { MAX_LINE_LENGTH, TABS_WIDTH } from "@terminal-nerds/constants-config";
 import { defineConfig } from "eslint-define-config";
 
 const config = defineConfig({
@@ -32,7 +32,7 @@ const config = defineConfig({
 			"warn",
 			{
 				code: MAX_LINE_LENGTH + 20,
-				tabWidth: 4,
+				tabWidth: TABS_WIDTH,
 				ignoreStrings: true,
 				ignoreTemplateLiterals: true,
 				ignoreUrls: true,
