@@ -32,6 +32,7 @@
 		"@emotion/eslint-plugin": "11.10.0",
 		"@terminal-nerds/constants-config": "workspace:*",
 		"@terminal-nerds/snippets-config": "0.1.0",
+		"@terminal-nerds/snippets-extension": "0.1.0",
 		"@typescript-eslint/eslint-plugin": "5.55.0",
 		"@typescript-eslint/parser": "5.55.0",
 		"eslint-config-next": "13.2.4",
