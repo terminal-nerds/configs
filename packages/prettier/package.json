@@ -28,6 +28,7 @@
 		"/dist"
 	],
 	"dependencies": {
+		"@terminal-nerds/constants-config": "workspace:*",
 		"prettier-plugin-jsdoc": "0.4.2",
 		"prettier-plugin-svelte": "2.9.0",
 		"prettier-plugin-tailwindcss": "0.2.4"
