@@ -12,37 +12,37 @@ import {
 	HAS_SVELTE,
 	HAS_TAILWINDCSS,
 	HAS_TYPESCRIPT,
-} from "./checks.js";
-import configNext from "./configs/next.js";
-import configPrettier from "./configs/prettier.js";
-import eslint from "./eslint.js";
-import pluginCompat from "./plugins/compat.js";
-import pluginDiff from "./plugins/diff.js";
-import plugindocusaurus from "./plugins/docusaurus.js";
-import pluginEmotion from "./plugins/emotion.js";
-import pluginImport from "./plugins/import.js";
-import pluginJest from "./plugins/jest.js";
-import pluginJestDOM from "./plugins/jest-dom.js";
-import pluginJestFormatting from "./plugins/jest-formatting.js";
-import pluginJSDoc from "./plugins/jsdoc.js";
-import pluginJSONSchemaValidator from "./plugins/json-schema-validator.js";
-import pluginJSONC from "./plugins/jsonc.js";
-import pluginJSXA11y from "./plugins/jsx-a11y.js";
-import pluginNode from "./plugins/node.js";
-import pluginReact from "./plugins/react.js";
-import pluginReactHooks from "./plugins/react-hooks.js";
-import pluginRegexp from "./plugins/regexp.js";
-import pluginSimpleImportSort from "./plugins/simple-import-sort.js";
-import pluginSonarJS from "./plugins/sonarjs.js";
-import pluginSQL from "./plugins/sql.js";
-import pluginStorybook from "./plugins/storybook.js";
-import pluginSvelte from "./plugins/svelte.js";
-import pluginTailwindCSS from "./plugins/tailwindcss.js";
-import pluginTestingLibrary from "./plugins/testing-library.js";
-import pluginTSDoc from "./plugins/tsdoc.js";
-import pluginTypeScript from "./plugins/typescript.js";
-import pluginUnicorn from "./plugins/unicorn.js";
-import pluginYML from "./plugins/yml.js";
+} from "./checks.ts";
+import configNext from "./configs/next.ts";
+import configPrettier from "./configs/prettier.ts";
+import eslint from "./eslint.ts";
+import pluginCompat from "./plugins/compat.ts";
+import pluginDiff from "./plugins/diff.ts";
+import plugindocusaurus from "./plugins/docusaurus.ts";
+import pluginEmotion from "./plugins/emotion.ts";
+import pluginImport from "./plugins/import.ts";
+import pluginJest from "./plugins/jest.ts";
+import pluginJestDOM from "./plugins/jest-dom.ts";
+import pluginJestFormatting from "./plugins/jest-formatting.ts";
+import pluginJSDoc from "./plugins/jsdoc.ts";
+import pluginJSONSchemaValidator from "./plugins/json-schema-validator.ts";
+import pluginJSONC from "./plugins/jsonc.ts";
+import pluginJSXA11y from "./plugins/jsx-a11y.ts";
+import pluginNode from "./plugins/node.ts";
+import pluginReact from "./plugins/react.ts";
+import pluginReactHooks from "./plugins/react-hooks.ts";
+import pluginRegexp from "./plugins/regexp.ts";
+import pluginSimpleImportSort from "./plugins/simple-import-sort.ts";
+import pluginSonarJS from "./plugins/sonarjs.ts";
+import pluginSQL from "./plugins/sql.ts";
+import pluginStorybook from "./plugins/storybook.ts";
+import pluginSvelte from "./plugins/svelte.ts";
+import pluginTailwindCSS from "./plugins/tailwindcss.ts";
+import pluginTestingLibrary from "./plugins/testing-library.ts";
+import pluginTSDoc from "./plugins/tsdoc.ts";
+import pluginTypeScript from "./plugins/typescript.ts";
+import pluginUnicorn from "./plugins/unicorn.ts";
+import pluginYML from "./plugins/yml.ts";
 
 type SimplifiedESLintConfig = Pick<ESLintConfig, keyof ESLintConfig>;
 

@@ -1,7 +1,7 @@
 import type { CoverageOptions } from "vitest";
 import type { UserConfig } from "vitest/config";
 
-import { BASE_OPTIONS, IS_WATCH_COMMAND } from "./base.js";
+import { BASE_OPTIONS, IS_WATCH_COMMAND } from "./base.ts";
 
 // https://vitest.dev/guide/coverage.html
 export const COVERAGE_OPTIONS: CoverageOptions = {

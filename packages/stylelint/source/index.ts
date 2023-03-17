@@ -1,15 +1,15 @@
 import { createMergedConfig } from "@terminal-nerds/snippets-config";
 import type { Config } from "stylelint";
 
-import { HAS_PRETTIER, HAS_SASS } from "./checks.js";
-import configPrettier from "./configs/prettier.js";
-import configStandard from "./configs/standard.js";
-import configStandardSCSS from "./configs/standard-scss.js";
-import pluginHighPerformanceAnimations from "./plugins/high-performance-animations.js";
-import pluginNoUnsupportedBrowserFeatures from "./plugins/no-unsupported-browser-features.js";
-import pluginOrder from "./plugins/order/index.js";
-import pluginSCSS from "./plugins/scss.js";
-import stylelint from "./stylelint.js";
+import { HAS_PRETTIER, HAS_SASS } from "./checks.ts";
+import configPrettier from "./configs/prettier.ts";
+import configStandard from "./configs/standard.ts";
+import configStandardSCSS from "./configs/standard-scss.ts";
+import pluginHighPerformanceAnimations from "./plugins/high-performance-animations.ts";
+import pluginNoUnsupportedBrowserFeatures from "./plugins/no-unsupported-browser-features.ts";
+import pluginOrder from "./plugins/order/index.ts";
+import pluginSCSS from "./plugins/scss.ts";
+import stylelint from "./stylelint.ts";
 
 const config = createMergedConfig<Config>([
 	// Base

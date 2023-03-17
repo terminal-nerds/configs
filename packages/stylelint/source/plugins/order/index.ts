@@ -1,14 +1,14 @@
 import type { Config } from "stylelint";
 
-import accessibilityInteractionGroup from "./groups/accessibility-interaction.js";
-import backgroundBorderGroup from "./groups/background-border.js";
-import boxModelGroup from "./groups/box-model.js";
-import displayLayoutGroup from "./groups/display-layout.js";
-import flexGridChildrenGroup from "./groups/flex-grid-children.js";
-import positionGroup from "./groups/position.js";
-import svgGroup from "./groups/svg.js";
-import transitionAnimationGroup from "./groups/transition-animation.js";
-import typographyGroup from "./groups/typography.js";
+import accessibilityInteractionGroup from "./groups/accessibility-interaction.ts";
+import backgroundBorderGroup from "./groups/background-border.ts";
+import boxModelGroup from "./groups/box-model.ts";
+import displayLayoutGroup from "./groups/display-layout.ts";
+import flexGridChildrenGroup from "./groups/flex-grid-children.ts";
+import positionGroup from "./groups/position.ts";
+import svgGroup from "./groups/svg.ts";
+import transitionAnimationGroup from "./groups/transition-animation.ts";
+import typographyGroup from "./groups/typography.ts";
 
 export type BeforeOption = "always" | "never" | "threshold";
 export type Properties = Array<string>;

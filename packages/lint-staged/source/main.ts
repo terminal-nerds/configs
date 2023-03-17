@@ -7,14 +7,14 @@ import {
 	HAS_SYNCPACK,
 	HAS_TYPESCRIPT,
 	HAS_VITEST,
-} from "./checks.js";
-import { CODE_FORMAT } from "./groups/code-format.js";
-import { ESLINT } from "./groups/eslint.js";
-import { MARKDOWN } from "./groups/markdown.js";
-import { PACKAGE_JSON } from "./groups/package-json.js";
-import { STYLESHEETS } from "./groups/stylesheets.js";
-import { TESTS } from "./groups/tests.js";
-import { TYPESCRIPT } from "./groups/typescript.js";
+} from "./checks.ts";
+import { CODE_FORMAT } from "./groups/code-format.ts";
+import { ESLINT } from "./groups/eslint.ts";
+import { MARKDOWN } from "./groups/markdown.ts";
+import { PACKAGE_JSON } from "./groups/package-json.ts";
+import { STYLESHEETS } from "./groups/stylesheets.ts";
+import { TESTS } from "./groups/tests.ts";
+import { TYPESCRIPT } from "./groups/typescript.ts";
 
 /** {@link https://github.com/okonet/lint-staged#configuration} */
 export const CONFIG = {

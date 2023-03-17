@@ -1,2 +1,2 @@
-export * from "./base.js";
-export * from "./with-coverage.js";
+export * from "./base.ts";
+export * from "./with-coverage.ts";

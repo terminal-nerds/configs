@@ -1,6 +1,6 @@
 import type { Config } from "stylelint";
 
-import { extendTailwindAtRuleSelectors } from "../other/tailwind.js";
+import { extendTailwindAtRuleSelectors } from "../other/tailwind.ts";
 
 // https://github.com/stylelint-scss/stylelint-scss
 const config: Partial<Config> = {

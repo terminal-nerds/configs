@@ -1,6 +1,6 @@
 import { defineConfig } from "eslint-define-config";
 
-import { HAS_REACT, HAS_SVELTE } from "../checks.js";
+import { HAS_REACT, HAS_SVELTE } from "../checks.ts";
 
 function getExtendedConfig() {
 	if (HAS_REACT) {

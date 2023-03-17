@@ -1,4 +1,4 @@
-import { createPropertiesGroup } from "../index.js";
+import { createPropertiesGroup } from "../index.ts";
 
 const group = createPropertiesGroup([
 	// Flex

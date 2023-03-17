@@ -6,4 +6,5 @@
 
 -   remove `isolatedModules`,
 -   remove `importNotUsedAsValues`,
+-   enable by default `allowImportingTsExtensions`
 -   enable by default `verbatimModuleSyntax`
