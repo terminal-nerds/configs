@@ -310,15 +310,15 @@ importers:
     specifiers:
       '@terminal-nerds/tsup-config': workspace:*
       '@terminal-nerds/typescript-config': workspace:*
-      deepmerge-ts: 4.2.2
+      deepmerge-ts: 4.3.0
       local-pkg: 0.4.3
       pkg-dir: 7.0.0
       read-pkg-up: 9.1.0
       tsup: 6.6.3
-      type-fest: 3.5.4
+      type-fest: 3.6.1
       typescript: 4.9.5
     dependencies:
-      deepmerge-ts: 4.2.2
+      deepmerge-ts: 4.3.0
       local-pkg: 0.4.3
       pkg-dir: 7.0.0
       read-pkg-up: 9.1.0
@@ -326,7 +326,7 @@ importers:
       '@terminal-nerds/tsup-config': link:../packages/tsup
       '@terminal-nerds/typescript-config': link:../packages/typescript
       tsup: 6.6.3_typescript@4.9.5
-      type-fest: 3.5.4
+      type-fest: 3.6.1
       typescript: 4.9.5
 
 packages:
@@ -2561,8 +2561,8 @@ packages:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
     dev: true
 
-  /deepmerge-ts/4.2.2:
-    resolution: {integrity: sha512-Ka3Kb21tiWjvQvS9U+1Dx+aqFAHsdTnMdYptLTmC2VAmDFMugWMY1e15aTODstipmCun8iNuqeSfcx6rsUUk0Q==}
+  /deepmerge-ts/4.3.0:
+    resolution: {integrity: sha512-if3ZYdkD2dClhnXR5reKtG98cwyaRT1NeugQoAPTTfsOpV9kqyeiBF9Qa5RHjemb3KzD5ulqygv6ED3t5j9eJw==}
     engines: {node: '>=12.4.0'}
     dev: false
 
@@ -7042,8 +7042,8 @@ packages:
     engines: {node: '>=12.20'}
     dev: false
 
-  /type-fest/3.5.4:
-    resolution: {integrity: sha512-/Je22Er4LPoln256pcLzj73MUmPrTWg8u4WB1RlxaDl0idJOfD1r259VtKOinp4xLJqJ9zYVMuWOun6Ssp7boA==}
+  /type-fest/3.6.1:
+    resolution: {integrity: sha512-htXWckxlT6U4+ilVgweNliPqlsVSSucbxVexRYllyMVJDtf5rTjv6kF/s+qAd4QSL1BZcnJPEJavYBPQiWuZDA==}
     engines: {node: '>=14.16'}
     dev: true
 
