@@ -1,4 +1,4 @@
-// https://github.com/sveltejs/prettier-plugin-svelte
+/** @see {@link https://github.com/sveltejs/prettier-plugin-svelte} */
 const config = {
 	overrides: [
 		{

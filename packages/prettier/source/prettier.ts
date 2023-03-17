@@ -1,14 +1,14 @@
-import { MAX_LINE_LENGTH } from "@workspace/shared/constants";
+import { END_OF_LINE, INDENT, MAX_LINE_LENGTH, QUOTES, TABS_WIDTH } from "@terminal-nerds/constants-config";
 import type { Options } from "prettier";
 
-// @see https://prettier.io/docs/en/options.html
+/** @see {@link https://prettier.io/docs/en/options.html} Options */
 const config: Options = {
 	printWidth: MAX_LINE_LENGTH,
 
-	tabWidth: 4,
-	useTabs: true,
+	tabWidth: TABS_WIDTH,
+	useTabs: INDENT === "tabs",
 
-	singleQuote: false,
+	singleQuote: QUOTES !== "double",
 	quoteProps: "consistent",
 
 	semi: true,
@@ -20,7 +20,7 @@ const config: Options = {
 	rangeStart: 0,
 	rangeEnd: Number.POSITIVE_INFINITY,
 
-	endOfLine: "lf",
+	endOfLine: END_OF_LINE,
 };
 
 export default config;
