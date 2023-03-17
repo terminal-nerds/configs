@@ -1,4 +1,4 @@
-import { SyncpackRc } from "syncpack/dist/get-context/get-config/schema/index.js";
+import { SyncpackRc } from "syncpack/dist/get-context/get-config/schema";
 
 /** @see {@link https://github.com/JamieMason/syncpack/#-configuration-file} */
 const config = SyncpackRc.parse({

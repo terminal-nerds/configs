@@ -1,7 +1,7 @@
 import type { Config } from "stylelint";
 
-import { HAS_SASS } from "./checks.js";
-import { extendTailwindAtRuleSelectors } from "./other/tailwind.js";
+import { HAS_SASS } from "./checks.ts";
+import { extendTailwindAtRuleSelectors } from "./other/tailwind.ts";
 
 const config: Partial<Config> = {
 	ignoreFiles: [

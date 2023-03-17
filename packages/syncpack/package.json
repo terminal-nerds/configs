@@ -21,8 +21,8 @@
 		"node": ">=18"
 	},
 	"exports": {
-		"require": "./dist/index.cjs",
-		"types": "./dist/index.d.ts"
+		"types": "./dist/index.d.ts",
+		"require": "./dist/index.cjs"
 	},
 	"files": [
 		"/dist"
@@ -35,7 +35,7 @@
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"syncpack": "9.8.4",
 		"tsup": "6.6.3",
-		"typescript": "4.9.5"
+		"typescript": "5.0.2"
 	},
 	"scripts": {
 		"build": "tsup",

@@ -1,12 +1,12 @@
 import { createMergedConfig } from "@terminal-nerds/snippets-config";
 
-import { HAS_SVELTE, HAS_TAILWINDCSS } from "./checks.js";
+import { HAS_SVELTE, HAS_TAILWINDCSS } from "./checks.ts";
 // eslint-disable-next-line unicorn/prevent-abbreviations
-import pluginJSDoc from "./plugins/jsdoc.js";
-import pluginSortMarkdownTable from "./plugins/sort-markdown-table.js";
-import pluginSvelte from "./plugins/svelte.js";
-import pluginTailwindCSS from "./plugins/tailwindcss.js";
-import prettier from "./prettier.js";
+import pluginJSDoc from "./plugins/jsdoc.ts";
+import pluginSortMarkdownTable from "./plugins/sort-markdown-table.ts";
+import pluginSvelte from "./plugins/svelte.ts";
+import pluginTailwindCSS from "./plugins/tailwindcss.ts";
+import prettier from "./prettier.ts";
 
 const config = createMergedConfig([
 	// Base

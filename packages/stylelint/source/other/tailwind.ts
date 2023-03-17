@@ -1,4 +1,4 @@
-import { HAS_TAILWINDCSS } from "../checks.js";
+import { HAS_TAILWINDCSS } from "../checks.ts";
 
 export const TAILWIND_AT_RULE_SELECTORS = ["tailwind", "apply", "variants", "responsive", "screen"];
 

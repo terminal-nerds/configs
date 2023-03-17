@@ -1,6 +1,6 @@
 import { defineConfig } from "eslint-define-config";
 
-import { HAS_TYPESCRIPT } from "../checks.js";
+import { HAS_TYPESCRIPT } from "../checks.ts";
 
 /** {@link https://github.com/import-js/eslint-plugin-import} */
 const config = defineConfig({

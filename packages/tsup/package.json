@@ -26,9 +26,9 @@
 	},
 	"exports": {
 		".": {
+			"types": "./dist/main.d.ts",
 			"import": "./dist/main.js",
-			"require": "./dist/main.cjs",
-			"types": "./dist/main.d.ts"
+			"require": "./dist/main.cjs"
 		}
 	},
 	"files": [
@@ -40,7 +40,7 @@
 	"devDependencies": {
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"tsup": "6.6.3",
-		"typescript": "4.9.5"
+		"typescript": "5.0.2"
 	},
 	"scripts": {
 		"build": "tsup",

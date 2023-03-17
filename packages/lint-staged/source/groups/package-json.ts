@@ -1,4 +1,4 @@
-import { HAS_DEPCHECK, HAS_SYNCPACK } from "../checks.js";
+import { HAS_DEPCHECK, HAS_SYNCPACK } from "../checks.ts";
 
 export const PACKAGE_JSON = {
 	"**/package.json": () => [
