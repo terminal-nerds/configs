@@ -32,6 +32,7 @@
 		"@terminal-nerds/snippets-config": "0.1.0",
 		"@terminal-nerds/snippets-runtime": "0.1.0",
 		"prettier-plugin-jsdoc": "0.4.2",
+		"prettier-plugin-sort-markdown-table": "1.0.2",
 		"prettier-plugin-svelte": "2.9.0",
 		"prettier-plugin-tailwindcss": "0.2.5"
 	},

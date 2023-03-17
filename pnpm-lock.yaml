@@ -213,6 +213,7 @@ importers:
       '@terminal-nerds/typescript-config': workspace:*
       '@types/prettier': 2.7.2
       prettier-plugin-jsdoc: 0.4.2
+      prettier-plugin-sort-markdown-table: 1.0.2
       prettier-plugin-svelte: 2.9.0
       prettier-plugin-tailwindcss: 0.2.5
       tsup: 6.6.3
@@ -222,6 +223,7 @@ importers:
       '@terminal-nerds/snippets-config': 0.1.0_typescript@4.9.5
       '@terminal-nerds/snippets-runtime': 0.1.0_typescript@4.9.5
       prettier-plugin-jsdoc: 0.4.2
+      prettier-plugin-sort-markdown-table: 1.0.2
       prettier-plugin-svelte: 2.9.0
       prettier-plugin-tailwindcss: 0.2.5_yay7g6ixlnyt6fdmnixo6d5ciu
     devDependencies:
@@ -5732,6 +5734,12 @@ packages:
       mdast-util-from-markdown: 1.2.0
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /prettier-plugin-sort-markdown-table/1.0.2:
+    resolution: {integrity: sha512-MAcnejamJM8oM7zZBW3CXurVEOWKSWLzXkyEq16kzx9bbk83PXTWif5/yB8npr0kPyRiSTa0F49cuxYDC73t8Q==}
+    peerDependencies:
+      prettier: 2.5.1
     dev: false
 
   /prettier-plugin-svelte/2.9.0:
