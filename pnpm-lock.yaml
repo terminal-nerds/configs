@@ -200,6 +200,8 @@ importers:
   packages/prettier:
     specifiers:
       '@terminal-nerds/constants-config': workspace:*
+      '@terminal-nerds/snippets-config': 0.1.0
+      '@terminal-nerds/snippets-runtime': 0.1.0
       '@terminal-nerds/tsup-config': workspace:*
       '@terminal-nerds/typescript-config': workspace:*
       '@types/prettier': 2.7.2
@@ -210,6 +212,8 @@ importers:
       typescript: 4.9.5
     dependencies:
       '@terminal-nerds/constants-config': link:../constants
+      '@terminal-nerds/snippets-config': 0.1.0_typescript@4.9.5
+      '@terminal-nerds/snippets-runtime': 0.1.0_typescript@4.9.5
       prettier-plugin-jsdoc: 0.4.2
       prettier-plugin-svelte: 2.9.0
       prettier-plugin-tailwindcss: 0.2.4_yay7g6ixlnyt6fdmnixo6d5ciu
