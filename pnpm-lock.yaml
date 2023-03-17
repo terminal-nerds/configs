@@ -72,6 +72,18 @@ importers:
       tsup: 6.6.3_typescript@4.9.5
       typescript: 4.9.5
 
+  packages/constants:
+    specifiers:
+      '@terminal-nerds/tsup-config': workspace:*
+      '@terminal-nerds/typescript-config': workspace:*
+      tsup: 6.6.3
+      typescript: 4.9.5
+    devDependencies:
+      '@terminal-nerds/tsup-config': link:../tsup
+      '@terminal-nerds/typescript-config': link:../typescript
+      tsup: 6.6.3_typescript@4.9.5
+      typescript: 4.9.5
+
   packages/eslint:
     specifiers:
       '@docusaurus/eslint-plugin': 2.3.1
