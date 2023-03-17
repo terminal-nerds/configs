@@ -47,13 +47,13 @@
 		"stylelint": "15.2.0"
 	},
 	"dependencies": {
-		"stylelint-config-prettier": "9.0.4",
+		"stylelint-config-prettier": "9.0.5",
 		"stylelint-config-standard": "30.0.1",
 		"stylelint-config-standard-scss": "7.0.1",
-		"stylelint-high-performance-animation": "1.7.0",
-		"stylelint-no-unsupported-browser-features": "6.0.1",
-		"stylelint-order": "6.0.1",
-		"stylelint-scss": "4.3.0"
+		"stylelint-high-performance-animation": "1.8.0",
+		"stylelint-no-unsupported-browser-features": "6.1.0",
+		"stylelint-order": "6.0.3",
+		"stylelint-scss": "4.4.0"
 	},
 	"devDependencies": {
 		"@terminal-nerds/tsup-config": "workspace:*",
