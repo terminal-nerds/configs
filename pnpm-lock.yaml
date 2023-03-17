@@ -14,7 +14,7 @@ importers:
       '@terminal-nerds/syncpack-config': workspace:*
       '@terminal-nerds/tsup-config': workspace:*
       '@terminal-nerds/typescript-config': workspace:*
-      '@types/node': 18.11.18
+      '@types/node': 18.15.3
       all-contributors-cli: 6.24.0
       browserslist: 4.21.5
       clean-package: 2.2.0
@@ -42,7 +42,7 @@ importers:
       '@terminal-nerds/syncpack-config': link:packages/syncpack
       '@terminal-nerds/tsup-config': link:packages/tsup
       '@terminal-nerds/typescript-config': link:packages/typescript
-      '@types/node': 18.11.18
+      '@types/node': 18.15.3
       all-contributors-cli: 6.24.0
       browserslist: 4.21.5
       clean-package: 2.2.0
@@ -1130,6 +1130,10 @@ packages:
 
   /@types/node/18.11.18:
     resolution: {integrity: sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==}
+
+  /@types/node/18.15.3:
+    resolution: {integrity: sha512-p6ua9zBxz5otCmbpb5D3U4B5Nanw6Pk3PPyX05xnxbB/fRv71N7CPmORg7uAD5P70T0xmx1pzAx/FUfa5X+3cw==}
+    dev: true
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
