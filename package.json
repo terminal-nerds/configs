@@ -53,7 +53,7 @@
 		"deps:upgrade:shared": "pnpm upgrade --interactive --latest --filter ./shared",
 		"dev:pkgs": "turbo run dev",
 		"fix": "concurrently \"pnpm:fix:*\" --group --timings",
-		"fix:format": "pretty-quick --branch main --pattern \"**/*\" --pattern \"!{shared,packages}/**/*\" --verbose",
+		"fix:format": "pretty-quick --branch main --pattern \"**/*\" --verbose",
 		"fix:js": "pnpm lint:js --fix",
 		"fix:md": "pnpm lint:md --fix",
 		"fix:pkg": "syncpack format ; syncpack fix-mismatches",
