@@ -12,7 +12,6 @@
 -   `eslint-define-config` to `v1.16.0`
 -   `eslint-plugin-compat` to `v4.1.2`
 -   `eslint-plugin-jsdoc` to `v39.9.1`
--   `eslint-plugin-json-schema-validator` to `v4.1.0`
 -   `eslint-plugin-storybook` to `v0.6.11`
 -   `eslint-plugin-svelte` to `v2.21.0`
 -   `eslint-plugin-tailwindcss` to `v3.10.1`
