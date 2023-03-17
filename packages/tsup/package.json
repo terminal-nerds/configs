@@ -34,6 +34,14 @@
 	"files": [
 		"/dist"
 	],
+	"peerDependencies": {
+		"tsup": "6.6.3"
+	},
+	"devDependencies": {
+		"@terminal-nerds/typescript-config": "workspace:*",
+		"tsup": "6.6.3",
+		"typescript": "4.9.5"
+	},
 	"scripts": {
 		"build": "tsup",
 		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
@@ -52,13 +60,5 @@
 		"lint:md": "markdownlint . --config \"../../.markdownlint.json\" --dot --ignore-path \"../../.gitignore\"",
 		"lint:types": "tsc --noEmit",
 		"prepack": "clean-package --config \"../../.clean-packagerc.cjs\""
-	},
-	"peerDependencies": {
-		"tsup": "6.6.3"
-	},
-	"devDependencies": {
-		"@terminal-nerds/typescript-config": "workspace:*",
-		"tsup": "6.6.3",
-		"typescript": "4.9.5"
 	}
 }
