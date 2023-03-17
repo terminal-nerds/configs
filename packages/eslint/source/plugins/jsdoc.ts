@@ -1,6 +1,6 @@
 import { defineConfig } from "eslint-define-config";
 
-/** {@link https://github.com/gajus/eslint-plugin-jsdoc} */
+/** @see {@link https://github.com/gajus/eslint-plugin-jsdoc} JSDoc plugin options */
 const config = defineConfig({
 	extends: ["plugin:jsdoc/recommended"],
 	rules: {
