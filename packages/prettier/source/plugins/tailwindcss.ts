@@ -1,4 +1,4 @@
-// https://github.com/tailwindlabs/prettier-plugin-tailwindcss
+/** @see {@link https://github.com/tailwindlabs/prettier-plugin-tailwindcss} */
 const config = {
 	plugins: ["prettier-plugin-tailwindcss"],
 };

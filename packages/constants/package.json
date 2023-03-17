@@ -1,51 +1,37 @@
 {
 	"$schema": "https://json.schemastore.org/package",
 	"type": "module",
-	"name": "@terminal-nerds/prettier-config",
-	"version": "0.7.0",
-	"description": "Terminal Nerds extendable configuration for Prettier.",
+	"name": "@terminal-nerds/constants-config",
+	"version": "0.0.0",
+	"description": "Terminal Nerds configuration constants.",
 	"keywords": [
 		"config",
-		"formatter",
-		"prettier"
+		"constants"
 	],
 	"license": "MIT",
-	"homepage": "https://github.com/terminal-nerds/configs/tree/main/packages/prettier",
+	"homepage": "https://github.com/terminal-nerds/configs",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/terminal-nerds/configs.git",
-		"directory": "packages/prettier"
+		"directory": "packages/constants"
 	},
 	"bugs": "https://github.com/terminal-nerds/configs/issues",
 	"engines": {
 		"node": ">=18"
 	},
 	"exports": {
-		"require": "./dist/index.cjs",
-		"types": "./dist/index.d.ts"
+		".": {
+			"types": "./dist/main.d.ts",
+			"import": "./dist/main.js",
+			"require": "./dist/main.cjs"
+		}
 	},
 	"files": [
 		"/dist"
 	],
-	"dependencies": {
-		"@terminal-nerds/constants-config": "workspace:*",
-		"prettier-plugin-jsdoc": "0.4.2",
-		"prettier-plugin-svelte": "2.9.0",
-		"prettier-plugin-tailwindcss": "0.2.4"
-	},
-	"peerDependencies": {
-		"prettier": "2.8.4"
-	},
-	"peerDependenciesMeta": {
-		"svelte": {
-			"optional": true
-		}
-	},
 	"devDependencies": {
 		"@terminal-nerds/tsup-config": "workspace:*",
 		"@terminal-nerds/typescript-config": "workspace:*",
-		"@types/prettier": "2.7.2",
-		"@workspace/shared": "workspace:*",
 		"tsup": "6.6.3",
 		"typescript": "4.9.5"
 	},
@@ -56,7 +42,7 @@
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"dev": "tsup --watch",
 		"fix": "concurrently \"pnpm:fix:*\" --group --timings",
-		"fix:format": "pretty-quick --branch main --pattern \"packages/prettier/**\" --verbose",
+		"fix:format": "pretty-quick --branch main --pattern \"packages/constants/**\" --verbose",
 		"fix:js": "pnpm lint:js --fix",
 		"fix:md": "pnpm lint:md --fix",
 		"fix:pkg": "syncpack format ; syncpack fix-mismatches",
