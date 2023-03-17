@@ -1,5 +1,21 @@
 # @terminal-nerds/syncpack-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.5.0
+
+### Minor Changes
+
+-   [#244](https://github.com/terminal-nerds/configs/pull/244) [`9ab5938`](https://github.com/terminal-nerds/configs/commit/9ab5938c1bf446689cd7051f7b094b9b0342edd4) Thanks [@xeho91](https://github.com/xeho91)! - 🏗 Remove `@workspace/shared` in favour of using `@terminal-nerds/snippets-*` packages
+
+-   [#242](https://github.com/terminal-nerds/configs/pull/242) [`5b7e0b6`](https://github.com/terminal-nerds/configs/commit/5b7e0b625cb6be97ebe1b42b072c524ce2518a1c) Thanks [@xeho91](https://github.com/xeho91)! - ⬆️ Update `syncpack` to `v9.8.4`
+
+-   [#258](https://github.com/terminal-nerds/configs/pull/258) [`dc4d0c3`](https://github.com/terminal-nerds/configs/commit/dc4d0c33897508fe665e099c1ab939484bb5dd85) Thanks [@xeho91](https://github.com/xeho91)! - 🏗 Migrate TypeScript to `v5`
+
+-   [#242](https://github.com/terminal-nerds/configs/pull/242) [`5b7e0b6`](https://github.com/terminal-nerds/configs/commit/5b7e0b625cb6be97ebe1b42b072c524ce2518a1c) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Change orders:
+
+    -   `scripts` at the bottom,
+    -   `dependencies` before `peerDependencies`,
+    -   `peerDependenciesMeta` before `devDependencies`
+
 ## 0.4.0
 
 ### Minor Changes

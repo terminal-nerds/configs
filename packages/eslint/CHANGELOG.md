@@ -1,5 +1,50 @@
 # @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.16.0
+
+### Minor Changes
+
+-   [#255](https://github.com/terminal-nerds/configs/pull/255) [`046688a`](https://github.com/terminal-nerds/configs/commit/046688afd7b06cd7d0676fc8af864cdac1a75362) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Load plugin for `jsdoc` only when `typescript` is not present. It will use plugin for `tsdoc` instaed.
+
+-   [#246](https://github.com/terminal-nerds/configs/pull/246) [`29d397f`](https://github.com/terminal-nerds/configs/commit/29d397f6018d437d3ae64cdf617578c44f2d5412) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update major dependencies:
+
+    -   `eslint-plugin-jsdoc` to `v40.0.2`
+    -   `eslint-plugin-unicorn` to `v46.0.0`
+
+-   [#248](https://github.com/terminal-nerds/configs/pull/248) [`a55cafc`](https://github.com/terminal-nerds/configs/commit/a55cafcb260d63ac491e63ee71acb550a472cbc6) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependencies:
+
+    -   `eslint-plugin-json-schema-validator` to `v4.2.0`
+    -   `eslint-plugin-jsonc` to `v2.7.0`
+    -   `eslint-plugin-regexp` to `v1.13.0`
+
+-   [#243](https://github.com/terminal-nerds/configs/pull/243) [`de66062`](https://github.com/terminal-nerds/configs/commit/de660626f8f8463120f51be3ceea25e520cd1d5e) Thanks [@xeho91](https://github.com/xeho91)! - 🏗 Apply the constants from the shared package `@terminal-nerds/constants-config`
+
+-   [#244](https://github.com/terminal-nerds/configs/pull/244) [`9ab5938`](https://github.com/terminal-nerds/configs/commit/9ab5938c1bf446689cd7051f7b094b9b0342edd4) Thanks [@xeho91](https://github.com/xeho91)! - 🏗 Remove `@workspace/shared` in favour of using `@terminal-nerds/snippets-*` packages
+
+-   [#258](https://github.com/terminal-nerds/configs/pull/258) [`dc4d0c3`](https://github.com/terminal-nerds/configs/commit/dc4d0c33897508fe665e099c1ab939484bb5dd85) Thanks [@xeho91](https://github.com/xeho91)! - 🏗 Migrate TypeScript to `v5`
+
+-   [#233](https://github.com/terminal-nerds/configs/pull/233) [`a54d3e3`](https://github.com/terminal-nerds/configs/commit/a54d3e3a47527d1804dbda0fad7cf5828dd31b51) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependencies:
+
+    -   **`eslint` to `v8.36.0`**
+    -   `@typescript-eslint/eslint-plugin` to `v5.55.0`
+    -   `@typescript-eslint/parser` to `v5.55.0`
+    -   `eslint-config-next` to `v13.2.4`
+    -   `eslint-config-prettier` to `v8.7.0`
+    -   `eslint-define-config` to `v1.16.0`
+    -   `eslint-plugin-compat` to `v4.1.2`
+    -   `eslint-plugin-storybook` to `v0.6.11`
+    -   `eslint-plugin-svelte` to `v2.21.0`
+    -   `eslint-plugin-tailwindcss` to `v3.10.1`
+    -   `eslint-plugin-testing-library` to `v5.10.2`
+    -   `eslint-plugin-yml` to `v1.5.0`
+    -   `jsonc-eslint-parser` to `v2.2.0`
+    -   `yaml-eslint-parser` to `v1.2.0`
+
+### Patch Changes
+
+-   Updated dependencies [[`de66062`](https://github.com/terminal-nerds/configs/commit/de660626f8f8463120f51be3ceea25e520cd1d5e), [`dc4d0c3`](https://github.com/terminal-nerds/configs/commit/dc4d0c33897508fe665e099c1ab939484bb5dd85)]:
+    -   @terminal-nerds/constants-config@0.1.0
+
 ## 0.15.0
 
 ### Minor Changes
