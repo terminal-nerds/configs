@@ -1,14 +1,20 @@
-import type { SyncpackConfig } from "syncpack/dist/types";
+import { SyncpackRc } from "syncpack/dist/get-context/get-config/schema/index.js";
 
-const config: Partial<SyncpackConfig> = {
-	// https://github.com/JamieMason/syncpack/#-configuration-file
-	dev: true,
-	filter: ".",
+/** @see {@link https://github.com/JamieMason/syncpack/#-configuration-file} */
+const config = SyncpackRc.parse({
+	dependencyTypes: ["dev", "prod", "peer"],
 	indent: "\t",
-	peer: true,
-	prod: true,
 	semverRange: "",
-	sortAz: ["engines", "files", "peerDependencies", "dependencies", "devDependencies"],
+	sortAz: [
+		"engines",
+		"files",
+		"dependencies",
+		"peerDependencies",
+		"peerDependenciesMeta",
+		"optionalDependencies",
+		"devDependencies",
+		"scripts",
+	],
 	sortFirst: [
 		"$schema",
 		"private",
@@ -28,14 +34,13 @@ const config: Partial<SyncpackConfig> = {
 		"exports",
 		"main",
 		"files",
-		"typesVersions",
-		"scripts",
-		"peerDependencies",
 		"dependencies",
+		"peerDependencies",
+		"peerDependenciesMeta",
+		"optionalDependencies",
 		"devDependencies",
+		"scripts",
 	],
-	versionGroups: [],
-	workspace: false,
-};
+});
 
 export default config;
