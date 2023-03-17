@@ -88,6 +88,7 @@ importers:
     specifiers:
       '@docusaurus/eslint-plugin': 2.3.1
       '@emotion/eslint-plugin': 11.10.0
+      '@terminal-nerds/constants-config': workspace:*
       '@terminal-nerds/tsup-config': workspace:*
       '@terminal-nerds/typescript-config': workspace:*
       '@types/eslint': 8.21.2
@@ -128,6 +129,7 @@ importers:
     dependencies:
       '@docusaurus/eslint-plugin': 2.3.1_typescript@4.9.5
       '@emotion/eslint-plugin': 11.10.0
+      '@terminal-nerds/constants-config': link:../constants
       '@typescript-eslint/eslint-plugin': 5.55.0_7bjx3gh2zq3cjx7jjgzrhxdh6q
       '@typescript-eslint/parser': 5.55.0_typescript@4.9.5
       eslint-config-next: 13.2.4_typescript@4.9.5
