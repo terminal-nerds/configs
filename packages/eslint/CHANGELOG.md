@@ -1,5 +1,14 @@
 # @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.17.0
+
+### Minor Changes
+
+-   [#259](https://github.com/terminal-nerds/configs/pull/259) [`eed4615`](https://github.com/terminal-nerds/configs/commit/eed4615f47ddb1449719df19a0f4aa5e9efc2900) Thanks [@xeho91](https://github.com/xeho91)! - ✨ Add plugins:
+
+    -   `eslint-plugin-es-x`
+    -   `eslint-plugin-typescript-compat` - loads when `typescript` package is present
+
 ## 0.16.0
 
 ### Minor Changes
