@@ -1,7 +1,7 @@
 {
 	"$schema": "https://json.schemastore.org/package",
 	"name": "@terminal-nerds/typescript-config",
-	"version": "0.5.0",
+	"version": "0.5.1",
 	"description": "Terminal Nerds extendable configuration for TypeScript.",
 	"keywords": [
 		"config",
@@ -20,8 +20,10 @@
 		"node": ">=18"
 	},
 	"exports": {
-		"import": "./tsconfig.json",
-		"require": "./tsconfig.json"
+		".": {
+			"import": "./dist/index.json",
+			"require": "./dist/index.json"
+		}
 	},
 	"files": [
 		"/dist"
