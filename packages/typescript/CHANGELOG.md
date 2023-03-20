@@ -1,5 +1,11 @@
 # @terminal-nerds/typescript-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.5.1
+
+### Patch Changes
+
+-   [#261](https://github.com/terminal-nerds/configs/pull/261) [`937c1c4`](https://github.com/terminal-nerds/configs/commit/937c1c4810c3970e55c04dcfc0a8c161479f5855) Thanks [@xeho91](https://github.com/xeho91)! - 🐛 Fix misconfigured field `exports`
+
 ## 0.5.0
 
 ### Minor Changes
