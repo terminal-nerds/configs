@@ -113,6 +113,7 @@ _conditionally_.
 | [@typescript-eslint/eslint-plugin]    | ![@typescript-eslint/eslint-plugin version badge]    | `typescript` as dependency                                         |
 | [eslint-plugin-compat]                | ![eslint-plugin-compat version badge]                | -                                                                  |
 | [eslint-plugin-diff]                  | ![eslint-plugin-diff version badge]                  | `ESLINT_PLUGIN_DIFF_ENABLE` set to `true` in environment variables |
+| [eslint-plugin-es-x]                  | ![eslint-plugin-es-x version badge]                  | -                                                                  |
 | [eslint-plugin-import]                | ![eslint-plugin-import version badge]                | -                                                                  |
 | [eslint-plugin-jest-dom]              | ![eslint-plugin-jest-dom version badge]              | `@testing-library/jest-dom` as dependency                          |
 | [eslint-plugin-jest-formatting]       | ![eslint-plugin-jest-formatting version badge]       | `jest` or `vitest` as dependency                                   |
@@ -133,6 +134,7 @@ _conditionally_.
 | [eslint-plugin-tailwindcss]           | ![eslint-plugin-tailwindcss version badge]           | `tailwindcss` as dependency                                        |
 | [eslint-plugin-testing-library]       | ![eslint-plugin-testing-library version badge]       | `@testing-library/jest-dom` as dependency                          |
 | [eslint-plugin-tsdoc]                 | ![eslint-plugin-tsdoc version badge]                 | `typescript` as dependency                                         |
+| [eslint-plugin-typescript]            | ![eslint-plugin-typescript version badge]            | `typescript` as dependency                                         |
 | [eslint-plugin-unicorn]               | ![eslint-plugin-unicorn version badge]               | `typescript` as dependency                                         |
 | [eslint-plugin-yml]                   | ![eslint-plugin-yml version badge]                   | -                                                                  |
 
@@ -146,6 +148,8 @@ _conditionally_.
 [eslint-plugin-compat version badge]: https://img.shields.io/npm/v/eslint-plugin-compat?logo=npm&style=flat-square
 [eslint-plugin-diff]: https://github.com/paleite/eslint-plugin-diff
 [eslint-plugin-diff version badge]: https://img.shields.io/npm/v/eslint-plugin-diff?logo=npm&style=flat-square
+[eslint-plugin-es-x]: https://github.com/eslint-community/eslint-plugin-es-x
+[eslint-plugin-es-x version badge]: https://img.shields.io/npm/v/eslint-plugin-es-x?logo=npm&style=flat-square
 [eslint-plugin-import]: https://github.com/import-js/eslint-plugin-import
 [eslint-plugin-import version badge]: https://img.shields.io/npm/v/eslint-plugin-import?logo=npm&style=flat-square
 [eslint-plugin-jest]: https://github.com/jest-community/eslint-plugin-jest
@@ -186,6 +190,8 @@ _conditionally_.
 [eslint-plugin-testing-library version badge]: https://img.shields.io/npm/v/eslint-plugin-testing-library?logo=npm&style=flat-square
 [eslint-plugin-tsdoc]: https://github.com/microsoft/tsdoc/tree/main/eslint-plugin
 [eslint-plugin-tsdoc version badge]: https://img.shields.io/npm/v/eslint-plugin-tsdoc?logo=npm&style=flat-square
+[eslint-plugin-typescript]: https://github.com/https://github.com/azu/eslint-plugin-typescript-compat
+[eslint-plugin-typescript version badge]: https://img.shields.io/npm/v/eslint-plugin-typescript?logo=npm&style=flat-square
 [eslint-plugin-unicorn]: https://github.com/sindresorhus/eslint-plugin-unicorn
 [eslint-plugin-unicorn version badge]: https://img.shields.io/npm/v/eslint-plugin-unicorn?logo=npm&style=flat-square
 [eslint-plugin-yml]: https://github.com/ota-meshi/eslint-plugin-yml
