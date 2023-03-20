@@ -102,6 +102,7 @@ importers:
       eslint-define-config: 1.16.0
       eslint-plugin-compat: 4.1.2
       eslint-plugin-diff: 2.0.1
+      eslint-plugin-es-x: 6.0.0
       eslint-plugin-import: 2.27.5
       eslint-plugin-jest: 27.2.1
       eslint-plugin-jest-dom: 4.0.3
@@ -122,6 +123,7 @@ importers:
       eslint-plugin-tailwindcss: 3.10.1
       eslint-plugin-testing-library: 5.10.2
       eslint-plugin-tsdoc: 0.2.17
+      eslint-plugin-typescript-compat: 1.0.1
       eslint-plugin-unicorn: 46.0.0
       eslint-plugin-yml: 1.5.0
       jsonc-eslint-parser: 2.2.0
@@ -142,6 +144,7 @@ importers:
       eslint-define-config: 1.16.0
       eslint-plugin-compat: 4.1.2
       eslint-plugin-diff: 2.0.1
+      eslint-plugin-es-x: 6.0.0
       eslint-plugin-import: 2.27.5_xfvdqyopd6lx2ukydhbamzgsxm
       eslint-plugin-jest: 27.2.1_o2d464bu7byk7bvkawqmdmdo4i
       eslint-plugin-jest-dom: 4.0.3
@@ -162,6 +165,7 @@ importers:
       eslint-plugin-tailwindcss: 3.10.1
       eslint-plugin-testing-library: 5.10.2_typescript@5.0.2
       eslint-plugin-tsdoc: 0.2.17
+      eslint-plugin-typescript-compat: 1.0.1_typescript@5.0.2
       eslint-plugin-unicorn: 46.0.0
       eslint-plugin-yml: 1.5.0
       jsonc-eslint-parser: 2.2.0
@@ -1017,6 +1021,10 @@ packages:
     resolution: {integrity: sha512-CD/2ai1W45cDN/zN2AcYduDavU+nq9aStyQizi4MHxnwkRvS/H24WIjgc1qD8CISoqXa8AAIe+A+zpWxwV7a2Q==}
     dev: false
 
+  /@mdn/browser-compat-data/5.2.43:
+    resolution: {integrity: sha512-J/hkYAUdvmnN1uk7W2UkwyIFEDbM2HK+rqqZpOKxUn9paJ8yzbUrtCv0dAA+mmCoy6U2bBewRq5bENx+M2YVlA==}
+    dev: false
+
   /@microsoft/tsdoc-config/0.16.2:
     resolution: {integrity: sha512-OGiIzzoBLgWWR0UdRJX98oYO+XKGf7tiK4Zk6tQ/E4IJqGCe7dvkTvgDZV5cFJUzLGDOjeAXrnZoA6QkVySuxw==}
     dependencies:
@@ -1275,6 +1283,18 @@ packages:
       typescript: 5.0.2
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /@typescript-eslint/experimental-utils/5.55.0_typescript@5.0.2:
+    resolution: {integrity: sha512-3ZqXIZhdGyGQAIIGATeMtg7prA6VlyxGtcy5hYIR/3qUqp3t18pWWUYhL9mpsDm7y8F9mr3ISMt83TiqCt7OPQ==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+    dependencies:
+      '@typescript-eslint/utils': 5.55.0_typescript@5.0.2
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
     dev: false
 
   /@typescript-eslint/parser/5.55.0_typescript@5.0.2:
@@ -2864,6 +2884,16 @@ packages:
       eslint: '>=6.7.0'
     dev: false
 
+  /eslint-plugin-es-x/6.0.0:
+    resolution: {integrity: sha512-7IeyFVwt5oSgVb90YgMwRSyeBAj0QiOFHPmGN+6C87A+toacKc/ydI6A2hrnt8AF3l1JeWCNdLUjD3hvnTvGoA==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    peerDependencies:
+      eslint: '>=8'
+    dependencies:
+      '@eslint-community/eslint-utils': 4.3.0
+      '@eslint-community/regexpp': 4.4.0
+    dev: false
+
   /eslint-plugin-es/4.1.0:
     resolution: {integrity: sha512-GILhQTnjYE2WorX5Jyi5i4dz5ALWxBIdQECVQavL6s7cI76IZTDWleTHkxz/QT3kvcs2QlGHvKLYsSlPOlPXnQ==}
     engines: {node: '>=8.10.0'}
@@ -3204,6 +3234,21 @@ packages:
     dependencies:
       '@microsoft/tsdoc': 0.14.2
       '@microsoft/tsdoc-config': 0.16.2
+    dev: false
+
+  /eslint-plugin-typescript-compat/1.0.1_typescript@5.0.2:
+    resolution: {integrity: sha512-trhNmJN43QxgERYKtvgn5FUaMQ+P6yAbQYK6Zd02l1Evt9hWjGaU2lwrqURno6n6HJ/Z6T6gTJsCecNCNNRoyQ==}
+    peerDependencies:
+      typescript: ^3.9.7 || ^4.0.0 || ^5.0.0
+    dependencies:
+      '@mdn/browser-compat-data': 5.2.43
+      '@typescript-eslint/experimental-utils': 5.55.0_typescript@5.0.2
+      browserslist: 4.21.5
+      semver: 7.3.8
+      typescript: 5.0.2
+    transitivePeerDependencies:
+      - eslint
+      - supports-color
     dev: false
 
   /eslint-plugin-unicorn/46.0.0:
