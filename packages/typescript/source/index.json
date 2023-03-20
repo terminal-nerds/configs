@@ -14,7 +14,7 @@
 
 		/* Modules */
 		"allowImportingTsExtensions": true,
-		"moduleResolution": "node",
+		"moduleResolution": "NodeNext",
 		"resolveJsonModule": true,
 
 		/* Emit */
