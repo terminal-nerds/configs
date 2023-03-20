@@ -20,8 +20,10 @@
 		"node": ">=18"
 	},
 	"exports": {
-		"import": "./tsconfig.json",
-		"require": "./tsconfig.json"
+		".": {
+			"import": "./dist/index.json",
+			"require": "./dist/index.json"
+		}
 	},
 	"files": [
 		"/dist"
