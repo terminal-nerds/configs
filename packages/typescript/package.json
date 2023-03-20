@@ -32,12 +32,9 @@
 		"typescript": "5.0.2"
 	},
 	"devDependencies": {
-		"make-dir-cli": "3.0.0",
-		"strip-json-comments-cli": "2.0.2",
 		"typescript": "5.0.2"
 	},
 	"scripts": {
-		"build": "make-dir \"./dist\" && strip-json-comments -no-whitespace \"./source/index.json\" > \"./dist/index.json\"",
 		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
 		"clean:build": "del \"./dist\"",
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
