@@ -20,6 +20,7 @@ import pluginCompat from "./plugins/compat.ts";
 import pluginDiff from "./plugins/diff.ts";
 import plugindocusaurus from "./plugins/docusaurus.ts";
 import pluginEmotion from "./plugins/emotion.ts";
+import pluginESX from "./plugins/es-x.ts";
 import pluginImport from "./plugins/import.ts";
 import pluginJest from "./plugins/jest.ts";
 import pluginJestDOM from "./plugins/jest-dom.ts";
@@ -41,6 +42,7 @@ import pluginTailwindCSS from "./plugins/tailwindcss.ts";
 import pluginTestingLibrary from "./plugins/testing-library.ts";
 import pluginTSDoc from "./plugins/tsdoc.ts";
 import pluginTypeScript from "./plugins/typescript.ts";
+import pluginTypeScriptCompat from "./plugins/typescript-compat.ts";
 import pluginUnicorn from "./plugins/unicorn.ts";
 import pluginYML from "./plugins/yml.ts";
 
@@ -55,6 +57,7 @@ const config = createMergedConfig<SimplifiedESLintConfig>([
 	process.env["ESLINT_PLUGIN_DIFF_ENABLE"] === "true" && pluginDiff,
 	HAS_DOCUSAURUS && plugindocusaurus,
 	HAS_REACT && pluginEmotion,
+	pluginESX,
 	pluginImport,
 	HAS_JEST && pluginJest,
 	HAS_JEST_DOM && pluginJestDOM,
@@ -76,6 +79,7 @@ const config = createMergedConfig<SimplifiedESLintConfig>([
 	HAS_TAILWINDCSS && pluginTailwindCSS,
 	HAS_TYPESCRIPT && pluginTSDoc,
 	HAS_TYPESCRIPT && pluginTypeScript,
+	HAS_TYPESCRIPT && pluginTypeScriptCompat,
 	pluginUnicorn,
 	pluginYML,
 
