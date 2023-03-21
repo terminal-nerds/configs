@@ -1,16 +1,8 @@
 import { defineConfig } from "eslint-define-config";
 
-// https://github.com/mysticatea/eslint-plugin-node
+/** @see {@link https://github.com/jsx-eslint/eslint-plugin-react} Plugin repo */
 const config = defineConfig({
 	extends: ["plugin:react/recommended", "plugin:react/jsx-runtime"],
-
-	rules: {
-		// RATIONALE:
-		// `<></>` can be confusing, is better to use `<Fragment></Fragment>`
-		// for readability
-		"react/jsx-fragments": ["warn", "element"],
-	},
-
 	settings: {
 		react: {
 			version: "detect",
