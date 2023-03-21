@@ -1,11 +1,9 @@
 {
 	"$schema": "https://json.schemastore.org/tsconfig",
-	"extends": "@terminal-nerds/typescript-config",
+	"extends": "@terminal-nerds/typescript-config/common-js",
 	"compilerOptions": {
-		"module": "CommonJS",
-		"moduleResolution": "NodeNext",
-		"tsBuildInfoFile": "./node_modules/.cache/tsbuildinfo",
-		"verbatimModuleSyntax": false
+		"incremental": true,
+		"tsBuildInfoFile": "./node_modules/.cache/tsbuildinfo"
 	},
 	"exclude": ["dist/", "node_modules/"],
 	"include": ["source/", "./tsup.config.ts"]
