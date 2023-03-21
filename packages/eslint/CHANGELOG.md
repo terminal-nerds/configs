@@ -1,5 +1,21 @@
 # @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.18.0
+
+### Minor Changes
+
+-   [#257](https://github.com/terminal-nerds/configs/pull/257) [`227117c`](https://github.com/terminal-nerds/configs/commit/227117c1a4b34e34ab609e0d751c202145160a67) Thanks [@renovate](https://github.com/apps/renovate)! - chore(Renovate): ⬆️ Update ESLint dependencies:
+
+    -   `eslint-plugin-jsdoc` to `v40.0.3`
+    -   `eslint-plugin-svelte` to `v2.22.0`
+
+-   [#269](https://github.com/terminal-nerds/configs/pull/269) [`b91896b`](https://github.com/terminal-nerds/configs/commit/b91896b2727a2a0fb84ff3e02ff8a40bdc07cd9c) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Remove ovewritting rule `react/jsx-fragments` - enabled by default
+
+### Patch Changes
+
+-   Updated dependencies []:
+    -   @terminal-nerds/constants-config@0.1.0
+
 ## 0.17.0
 
 ### Minor Changes

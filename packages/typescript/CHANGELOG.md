@@ -1,5 +1,18 @@
 # @terminal-nerds/typescript-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.6.0
+
+### Minor Changes
+
+-   [#264](https://github.com/terminal-nerds/configs/pull/264) [`21155d2`](https://github.com/terminal-nerds/configs/commit/21155d295b8cd77edca73facefc21dd273ac7338) Thanks [@xeho91](https://github.com/xeho91)! - 🏗️ Split package into 4 configs:
+
+    -   `base`
+    -   `browser`
+    -   `common-js`
+    -   `es-module`
+
+-   [#264](https://github.com/terminal-nerds/configs/pull/264) [`21155d2`](https://github.com/terminal-nerds/configs/commit/21155d295b8cd77edca73facefc21dd273ac7338) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Change `moduleResolution` to `NodeNext` by default
+
 ## 0.5.1
 
 ### Patch Changes

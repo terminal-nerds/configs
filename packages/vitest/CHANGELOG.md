@@ -1,5 +1,16 @@
 # @terminal-nerds/vitest-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.6.0
+
+### Minor Changes
+
+-   [#265](https://github.com/terminal-nerds/configs/pull/265) [`8a6f4aa`](https://github.com/terminal-nerds/configs/commit/8a6f4aa75ac84316fadc70994e8813e7c187d349) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependencies:
+
+    -   **`vitest` to `v0.29.7`**
+    -   `@vitest/coverage-c8` to `v0.29.7`
+    -   `@vitest/ui` to `v0.29.7`
+    -   `vite` to `v4.2.1`
+
 ## 0.5.0
 
 ### Minor Changes
