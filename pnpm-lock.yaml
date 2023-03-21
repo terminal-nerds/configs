@@ -107,7 +107,7 @@ importers:
       eslint-plugin-jest: 27.2.1
       eslint-plugin-jest-dom: 4.0.3
       eslint-plugin-jest-formatting: 3.1.0
-      eslint-plugin-jsdoc: 40.0.2
+      eslint-plugin-jsdoc: 40.0.3
       eslint-plugin-json-schema-validator: 4.2.0
       eslint-plugin-jsonc: 2.7.0
       eslint-plugin-jsx-a11y: 6.7.1
@@ -119,7 +119,7 @@ importers:
       eslint-plugin-sonarjs: 0.18.0
       eslint-plugin-sql: 2.3.2
       eslint-plugin-storybook: 0.6.11
-      eslint-plugin-svelte: 2.21.0
+      eslint-plugin-svelte: 2.22.0
       eslint-plugin-tailwindcss: 3.10.1
       eslint-plugin-testing-library: 5.10.2
       eslint-plugin-tsdoc: 0.2.17
@@ -149,7 +149,7 @@ importers:
       eslint-plugin-jest: 27.2.1_o2d464bu7byk7bvkawqmdmdo4i
       eslint-plugin-jest-dom: 4.0.3
       eslint-plugin-jest-formatting: 3.1.0
-      eslint-plugin-jsdoc: 40.0.2
+      eslint-plugin-jsdoc: 40.0.3
       eslint-plugin-json-schema-validator: 4.2.0
       eslint-plugin-jsonc: 2.7.0
       eslint-plugin-jsx-a11y: 6.7.1
@@ -161,7 +161,7 @@ importers:
       eslint-plugin-sonarjs: 0.18.0
       eslint-plugin-sql: 2.3.2
       eslint-plugin-storybook: 0.6.11_typescript@5.0.2
-      eslint-plugin-svelte: 2.21.0
+      eslint-plugin-svelte: 2.22.0
       eslint-plugin-tailwindcss: 3.10.1
       eslint-plugin-testing-library: 5.10.2_typescript@5.0.2
       eslint-plugin-tsdoc: 0.2.17
@@ -707,13 +707,13 @@ packages:
       eslint: 6 || 7 || 8
     dev: false
 
-  /@es-joy/jsdoccomment/0.36.1:
-    resolution: {integrity: sha512-922xqFsTpHs6D0BUiG4toiyPOMc8/jafnWKxz1KWgS4XzKPy2qXf1Pe6UFuNSCQqt6tOuhAWXBNuuyUhJmw9Vg==}
+  /@es-joy/jsdoccomment/0.37.0:
+    resolution: {integrity: sha512-hjK0wnsPCYLlF+HHB4R/RbUjOWeLW2SlarB67+Do5WsKILOkmIZvvPJFbtWSmbypxcjpoECLAMzoao0D4Bg5ZQ==}
     engines: {node: ^14 || ^16 || ^17 || ^18 || ^19}
     dependencies:
       comment-parser: 1.3.1
       esquery: 1.5.0
-      jsdoc-type-pratt-parser: 3.1.0
+      jsdoc-type-pratt-parser: 4.0.0
     dev: false
 
   /@esbuild/android-arm/0.17.8:
@@ -3002,13 +3002,13 @@ packages:
       - typescript
     dev: false
 
-  /eslint-plugin-jsdoc/40.0.2:
-    resolution: {integrity: sha512-EjcpQX64+d02kKMlBZbTc7xIkCOa0A9TF2AlB/3NlM7Xl8bywwvJ5Wo7ickEn/EzfauMbZcCCKSZItAH+6Xakg==}
+  /eslint-plugin-jsdoc/40.0.3:
+    resolution: {integrity: sha512-4QXkuo4yVFJWsZIvdgFMBs6ZWVGDBZGO06kcgM060/96G8+6Fr7JZWy+Wg0I1C0+qxxfpB+aIepdE29vYxX2kA==}
     engines: {node: ^14 || ^16 || ^17 || ^18 || ^19}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0
     dependencies:
-      '@es-joy/jsdoccomment': 0.36.1
+      '@es-joy/jsdoccomment': 0.37.0
       comment-parser: 1.3.1
       debug: 4.3.4
       escape-string-regexp: 4.0.0
@@ -3179,8 +3179,8 @@ packages:
       - typescript
     dev: false
 
-  /eslint-plugin-svelte/2.21.0:
-    resolution: {integrity: sha512-Yhe+ORvOGHb/dfb2BAu1y/nyGXigqiGTWkLvaWqc+4Mvn7w2Tn8ghtHm9LHkJubguagubeKBR+lv8YH2XOos+g==}
+  /eslint-plugin-svelte/2.22.0:
+    resolution: {integrity: sha512-zqLpvXjBtOz7XbX9JBi7ti+8t6IVKjv8AxLlZDv29VJFvO0d+MrCEa4b3eiMMFTZOL+EQ+UWXoiJBkw/vSsmqA==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0-0
@@ -4297,8 +4297,8 @@ packages:
     dependencies:
       argparse: 2.0.1
 
-  /jsdoc-type-pratt-parser/3.1.0:
-    resolution: {integrity: sha512-MgtD0ZiCDk9B+eI73BextfRrVQl0oyzRG8B2BjORts6jbunj4ScKPcyXGTbB6eXL4y9TzxCm6hyeLq/2ASzNdw==}
+  /jsdoc-type-pratt-parser/4.0.0:
+    resolution: {integrity: sha512-YtOli5Cmzy3q4dP26GraSOeAhqecewG04hoO8DY56CH4KJ9Fvv5qKWUCCo3HZob7esJQHCv6/+bnTy72xZZaVQ==}
     engines: {node: '>=12.0.0'}
     dev: false
 
