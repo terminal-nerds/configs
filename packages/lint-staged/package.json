@@ -29,6 +29,11 @@
 	"files": [
 		"/dist"
 	],
+	"dependencies": {
+		"@terminal-nerds/snippets-config": "0.1.0",
+		"@terminal-nerds/snippets-extension": "0.1.0",
+		"@terminal-nerds/snippets-runtime": "0.1.0"
+	},
 	"peerDependencies": {
 		"lint-staged": "13.2.0"
 	},
@@ -57,10 +62,5 @@
 		"lint:md": "markdownlint . --config \"../../.markdownlint.json\" --dot --ignore-path \"../../.gitignore\"",
 		"lint:types": "tsc --noEmit",
 		"prepack": "clean-package --config \"../../.clean-packagerc.cjs\""
-	},
-	"dependencies": {
-		"@terminal-nerds/snippets-config": "0.1.0",
-		"@terminal-nerds/snippets-extension": "0.1.0",
-		"@terminal-nerds/snippets-runtime": "0.1.0"
 	}
 }

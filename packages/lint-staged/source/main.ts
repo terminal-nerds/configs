@@ -25,4 +25,4 @@ export const CONFIG = {
 	...(HAS_STYLELINT && STYLESHEETS),
 	...(HAS_TYPESCRIPT && TYPESCRIPT),
 	...(HAS_VITEST && TESTS),
-};
+} as const;
