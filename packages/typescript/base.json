@@ -13,8 +13,6 @@
 		"strict": true,
 
 		/* Modules */
-		"allowImportingTsExtensions": true,
-		"moduleResolution": "node",
 		"resolveJsonModule": true,
 
 		/* Emit */
@@ -48,9 +46,6 @@
 		"pretty": true,
 
 		/* Completeness */
-		"skipLibCheck": true,
-
-		/* Project */
-		"incremental": true
+		"skipLibCheck": true
 	}
 }

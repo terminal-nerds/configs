@@ -72,6 +72,19 @@ documentation.
 
 ---
 
+## Available options
+
+[![Dependencies badge]][dependencies url]
+
+| Name        | Purpose                                                 |
+| ----------- | ------------------------------------------------------- |
+| `base`      | For the **general** usage                               |
+| `browser`   | For a project which is related to building a web app    |
+| `common-js` | For building a Node.js package in **CommonJS** format   |
+| `es-module` | For building a Node.js package in **ES Modules** format |
+
+---
+
 ## Used configurations & plugins
 
 [![Dependencies badge]][dependencies url]

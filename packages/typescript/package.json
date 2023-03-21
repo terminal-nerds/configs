@@ -20,26 +20,37 @@
 		"node": ">=18"
 	},
 	"exports": {
-		".": {
-			"import": "./dist/index.json",
-			"require": "./dist/index.json"
+		"./base": {
+			"import": "./base.json",
+			"require": "./base.json"
+		},
+		"./browser": {
+			"import": "./browser.json",
+			"require": "./browser.json"
+		},
+		"./common-js": {
+			"import": "./common-js.json",
+			"require": "./common-js.json"
+		},
+		"./es-module": {
+			"import": "./es-module.json",
+			"require": "./es-module.json"
 		}
 	},
 	"files": [
-		"/dist"
+		"base.json",
+		"browser.json",
+		"common-js.json",
+		"es-module.json"
 	],
 	"peerDependencies": {
 		"typescript": "5.0.2"
 	},
 	"devDependencies": {
-		"make-dir-cli": "3.0.0",
-		"strip-json-comments-cli": "2.0.2",
 		"typescript": "5.0.2"
 	},
 	"scripts": {
-		"build": "make-dir \"./dist\" && strip-json-comments -no-whitespace \"./source/index.json\" > \"./dist/index.json\"",
 		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
-		"clean:build": "del \"./dist\"",
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"fix": "concurrently \"pnpm:fix:*\" --group --timings",
 		"fix:format": "pretty-quick --branch main --pattern \"packages/typescript/**\" --verbose",

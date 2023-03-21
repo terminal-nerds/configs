@@ -296,12 +296,8 @@ importers:
 
   packages/typescript:
     specifiers:
-      make-dir-cli: 3.0.0
-      strip-json-comments-cli: 2.0.2
       typescript: 5.0.2
     devDependencies:
-      make-dir-cli: 3.0.0
-      strip-json-comments-cli: 2.0.2
       typescript: 5.0.2
 
   packages/vitest:
