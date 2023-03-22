@@ -1,8 +1,6 @@
 import type { Options } from "tsup";
 
-/**
- * Base configuration to be used across the projects
- */
+/** Base configuration to be used across the projects */
 export function getBaseOptions(options: Options): Options {
 	const { watch } = options;
 
@@ -18,9 +16,7 @@ export function getBaseOptions(options: Options): Options {
 	};
 }
 
-/**
- * Optimal configuration for building component(s)
- */
+/** Optimal configuration for building component(s) */
 export function getComponentOptions(options: Options): Options {
 	const { watch } = options;
 
@@ -39,9 +35,7 @@ export function getComponentOptions(options: Options): Options {
 	};
 }
 
-/**
- * Optimal configuration for building in CommonJS type
- */
+/** Optimal configuration for building in CommonJS type */
 export function getNodeCJSOptions(options: Options): Options {
 	return {
 		...getBaseOptions(options),
@@ -52,9 +46,7 @@ export function getNodeCJSOptions(options: Options): Options {
 	};
 }
 
-/**
- * Optimal configuration for building in ES Module type
- */
+/** Optimal configuration for building in ES Module type */
 export function getNodeESMOptions(options: Options): Options {
 	return {
 		...getBaseOptions(options),
@@ -64,10 +56,8 @@ export function getNodeESMOptions(options: Options): Options {
 	};
 }
 
-/**
- * Optimal configuration for building in both CommonJS and ES Modules types ()
- */
-export function getNodeUniveralOptions(options: Options): Options {
+/** Optimal configuration for building in both CommonJS and ES Modules types () */
+export function getNodeUniversalOptions(options: Options): Options {
 	return {
 		...getBaseOptions(options),
 		format: ["cjs", "esm"],

@@ -1,8 +1,8 @@
 import { defineConfig } from "tsup";
 
-import { getNodeUniveralOptions } from "./source/main.ts";
+import { getNodeUniversalOptions } from "./source/main.ts";
 
 export default defineConfig((options) => ({
-	...getNodeUniveralOptions(options),
+	...getNodeUniversalOptions(options),
 	entry: ["./source/**/*.ts"],
 }));

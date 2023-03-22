@@ -35,11 +35,11 @@
 		"/dist"
 	],
 	"peerDependencies": {
-		"tsup": "6.6.3"
+		"tsup": "6.7.0"
 	},
 	"devDependencies": {
 		"@terminal-nerds/typescript-config": "workspace:*",
-		"tsup": "6.6.3",
+		"tsup": "6.7.0",
 		"typescript": "5.0.2"
 	},
 	"scripts": {

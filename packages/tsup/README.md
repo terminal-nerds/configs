@@ -82,13 +82,13 @@ device(s):
 
 [![Dependencies badge]][dependencies url]
 
-| Name                       | Purpose                                                                   |
-| -------------------------- | ------------------------------------------------------------------------- |
-| `getBaseOptions()`         | For the **general** usage                                                 |
-| `getComponentOptions()`    | For building a **component** package                                      |
-| `getNodeCJSOptions()`      | For building a Node.js package in **CommonJS** format                     |
-| `getNodeESMOptions()`      | For building a Node.js package in **ES Modules** format                   |
-| `getNodeUniveralOptions()` | For building a Node.js package in both **CommonJS and ES Modules** format |
+| Name                        | Purpose                                                                   |
+| --------------------------- | ------------------------------------------------------------------------- |
+| `getBaseOptions()`          | For the **general** usage                                                 |
+| `getComponentOptions()`     | For building a **component** package                                      |
+| `getNodeCJSOptions()`       | For building a Node.js package in **CommonJS** format                     |
+| `getNodeESMOptions()`       | For building a Node.js package in **ES Modules** format                   |
+| `getNodeUniversalOptions()` | For building a Node.js package in both **CommonJS and ES Modules** format |
 
 ---
 
