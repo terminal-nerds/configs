@@ -1,5 +1,11 @@
 # @terminal-nerds/lint-staged-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.4.0
+
+### Minor Changes
+
+-   [#273](https://github.com/terminal-nerds/configs/pull/273) [`a3ffbad`](https://github.com/terminal-nerds/configs/commit/a3ffbad0026b6689f476f7518f04aead7ce961bd) Thanks [@xeho91](https://github.com/xeho91)! - ✨ Allow skipping testing on staged files via environment variable `SKIP_TESTING_ON_STAGED`.
+
 ## 0.3.0
 
 ### Minor Changes
