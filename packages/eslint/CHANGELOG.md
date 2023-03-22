@@ -1,5 +1,21 @@
 # @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.19.0
+
+### Minor Changes
+
+-   [#270](https://github.com/terminal-nerds/configs/pull/270) [`50fb630`](https://github.com/terminal-nerds/configs/commit/50fb630c147ad4dda7dbe905413a18951771db7b) Thanks [@renovate](https://github.com/apps/renovate)! - 🔧 Revert loading `JSDoc` plugin based on `typescript` module existence
+
+### Patch Changes
+
+-   [#270](https://github.com/terminal-nerds/configs/pull/270) [`50fb630`](https://github.com/terminal-nerds/configs/commit/50fb630c147ad4dda7dbe905413a18951771db7b) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update ESLint dependencies:
+
+    -   `eslint-define-config` to `v1.17.0`
+    -   `eslint-plugin-jsdoc` to `v40.1.0`
+
+-   Updated dependencies []:
+    -   @terminal-nerds/constants-config@0.1.0
+
 ## 0.18.0
 
 ### Minor Changes

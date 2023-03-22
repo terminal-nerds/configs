@@ -1,5 +1,13 @@
 # @terminal-nerds/tsup-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.3.0
+
+### Minor Changes
+
+-   [#271](https://github.com/terminal-nerds/configs/pull/271) [`8b2d246`](https://github.com/terminal-nerds/configs/commit/8b2d2461c42686e08d0b8d31616c3d142bb07d26) Thanks [@xeho91](https://github.com/xeho91)! - **⬆️ Upgrade `tsup` to `v6.7.0`**
+
+-   [#271](https://github.com/terminal-nerds/configs/pull/271) [`8b2d246`](https://github.com/terminal-nerds/configs/commit/8b2d2461c42686e08d0b8d31616c3d142bb07d26) Thanks [@xeho91](https://github.com/xeho91)! - 🐛 Fix typo `getNodeUniveralOptions` -> `getNodeUniversalOptions`
+
 ## 0.2.0
 
 ### Minor Changes
