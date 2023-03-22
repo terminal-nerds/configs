@@ -16,6 +16,8 @@ import { STYLESHEETS } from "./groups/stylesheets.ts";
 import { TESTS } from "./groups/tests.ts";
 import { TYPESCRIPT } from "./groups/typescript.ts";
 
+const SKIP_TESTING_ON_STAGED = process.env["SKIP_TESTING_ON_STAGED"] === "true";
+
 /** {@link https://github.com/okonet/lint-staged#configuration} */
 export const CONFIG = {
 	...(HAS_PRETTIER && CODE_FORMAT),
@@ -24,5 +26,5 @@ export const CONFIG = {
 	...((HAS_DEPCHECK || HAS_SYNCPACK) && PACKAGE_JSON),
 	...(HAS_STYLELINT && STYLESHEETS),
 	...(HAS_TYPESCRIPT && TYPESCRIPT),
-	...(HAS_VITEST && TESTS),
+	...(HAS_VITEST && !SKIP_TESTING_ON_STAGED && TESTS),
 } as const;
