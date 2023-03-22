@@ -1,7 +1,7 @@
-import { getNodeUniveralOptions } from "@terminal-nerds/tsup-config";
+import { getNodeUniversalOptions } from "@terminal-nerds/tsup-config";
 import { defineConfig } from "tsup";
 
 export default defineConfig((options) => ({
-	...getNodeUniveralOptions(options),
+	...getNodeUniversalOptions(options),
 	entry: ["source/*.ts"],
 }));
