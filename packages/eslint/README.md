@@ -118,7 +118,7 @@ _conditionally_.
 | [eslint-plugin-jest-dom]              | ![eslint-plugin-jest-dom version badge]              | `@testing-library/jest-dom` as dependency                          |
 | [eslint-plugin-jest-formatting]       | ![eslint-plugin-jest-formatting version badge]       | `jest` or `vitest` as dependency                                   |
 | [eslint-plugin-jest]                  | ![eslint-plugin-jest version badge]                  | `jest` or `vitest` as dependency                                   |
-| [eslint-plugin-jsdoc]                 | ![eslint-plugin-jsonc version badge]                 | No `typescript` as dependency _(uses TSDoc instead)_               |
+| [eslint-plugin-jsdoc]                 | ![eslint-plugin-jsonc version badge]                 |                                                                    |
 | [eslint-plugin-json-schema-validator] | ![eslint-plugin-json-schema-validator version badge] | -                                                                  |
 | [eslint-plugin-jsonc]                 | ![eslint-plugin-jsonc version badge]                 | -                                                                  |
 | [eslint-plugin-jsx-a11y]              | ![eslint-plugin-jsx-a11y version badge]              | `react` or `preact` as dependency                                  |

@@ -62,7 +62,7 @@ const config = createMergedConfig<SimplifiedESLintConfig>([
 	HAS_JEST && pluginJest,
 	HAS_JEST_DOM && pluginJestDOM,
 	HAS_JEST && pluginJestFormatting,
-	!HAS_TYPESCRIPT && pluginJSDoc,
+	pluginJSDoc,
 	pluginJSONC,
 	pluginJSONSchemaValidator,
 	HAS_REACT && pluginJSXA11y,
