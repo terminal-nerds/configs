@@ -4,6 +4,9 @@
 
 ➡️ **This package contains constants for the configurations**, part of the [terminal-nerds/configs] project.
 
+> **Warning**\
+> **This package is supposed to be used for an internal usage only.**
+
 [terminal-nerds/configs]: https://github.com/terminal-nerds/configs
 [package version badge]: https://img.shields.io/npm/v/@terminal-nerds/constants-config/latest?style=for-the-badge&logo=npm
 [terminal-nerds/configs]: https://github.com/terminal-nerds/configs
