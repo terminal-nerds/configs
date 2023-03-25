@@ -1,5 +1,31 @@
 # @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.20.0
+
+### Minor Changes
+
+-   [#278](https://github.com/terminal-nerds/configs/pull/278) [`f43a62c`](https://github.com/terminal-nerds/configs/commit/f43a62c3d11b4a812613c50a5f8468ab73aed571) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Change rule `imports/exports` to warning.
+
+-   [#278](https://github.com/terminal-nerds/configs/pull/278) [`f43a62c`](https://github.com/terminal-nerds/configs/commit/f43a62c3d11b4a812613c50a5f8468ab73aed571) Thanks [@xeho91](https://github.com/xeho91)! - Set rule `sonarjs/cognitive-complexity` to a warning, with maximum of `5`
+
+-   [#274](https://github.com/terminal-nerds/configs/pull/274) [`d8b42c8`](https://github.com/terminal-nerds/configs/commit/d8b42c828df091f77f0b5555a00629a054b72ad2) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependencies:
+
+    -   `@typescript-eslint/eslint-plugin` to `v5.56.0`
+    -   `eslint-config-prettier` to `v8.8.0`
+    -   `eslint-plugin-json-schema-validator` to `v4.3.0`
+    -   `eslint-plugin-sonarjs` to `v0.19.0`
+
+-   [#278](https://github.com/terminal-nerds/configs/pull/278) [`f43a62c`](https://github.com/terminal-nerds/configs/commit/f43a62c3d11b4a812613c50a5f8468ab73aed571) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Change JSDoc rules:
+
+    -   `jsdoc/check-tag-names` - add a defined tag `@defaultValue`
+    -   `jsdoc/require-params` - turn off
+    -   `jsdoc/valid-types` - turn off if project has a `typescript` module
+
+### Patch Changes
+
+-   Updated dependencies [[`525e5ac`](https://github.com/terminal-nerds/configs/commit/525e5acb8b2e73f05b94b4f6d93a612cf6b43eb7)]:
+    -   @terminal-nerds/constants-config@0.2.0
+
 ## 0.19.0
 
 ### Minor Changes
