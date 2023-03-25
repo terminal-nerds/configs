@@ -1,5 +1,21 @@
 # @terminal-nerds/prettier-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.9.0
+
+### Minor Changes
+
+-   [#279](https://github.com/terminal-nerds/configs/pull/279) [`c3f64d4`](https://github.com/terminal-nerds/configs/commit/c3f64d428e7b17e42d5bf57c60625d9376fbd487) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependencies:
+
+    -   **`prettier`** to `v 2.8.7`
+    -   `prettier-plugin-svelte` to `v2.10.0``
+
+-   [#280](https://github.com/terminal-nerds/configs/pull/280) [`8c29c28`](https://github.com/terminal-nerds/configs/commit/8c29c2845db02e0d07b0b2d9e19ea5e5c71c8e23) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Disable JSDoc formatting when `typescript` is present
+
+### Patch Changes
+
+-   Updated dependencies [[`525e5ac`](https://github.com/terminal-nerds/configs/commit/525e5acb8b2e73f05b94b4f6d93a612cf6b43eb7)]:
+    -   @terminal-nerds/constants-config@0.2.0
+
 ## 0.8.0
 
 ### Minor Changes
