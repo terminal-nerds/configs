@@ -33,11 +33,11 @@
 		"@terminal-nerds/snippets-runtime": "0.3.0",
 		"prettier-plugin-jsdoc": "0.4.2",
 		"prettier-plugin-sort-markdown-table": "1.0.2",
-		"prettier-plugin-svelte": "2.9.0",
+		"prettier-plugin-svelte": "2.10.0",
 		"prettier-plugin-tailwindcss": "0.2.5"
 	},
 	"peerDependencies": {
-		"prettier": "2.8.6"
+		"prettier": "2.8.7"
 	},
 	"peerDependenciesMeta": {
 		"svelte": {
