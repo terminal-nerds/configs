@@ -1,12 +1,10 @@
 /** @see {@link https://www.charset.org/utf-8} UTF-8 */
 export const CHARSET = "utf8";
 
-/**
- * @see {@link https://en.wikipedia.org/wiki/Cognitive_complexity} Congitive complexity /
- * export const CONGITIVE_COMPLEXITY = 5;
- *
- * /** @see {@link https://www.aleksandrhovhannisyan.com/blog/crlf-vs-lf-normalizing-line-endings-in-git}
- */
+/** @see {@link https://en.wikipedia.org/wiki/Cognitive_complexity} Congitive complexity */
+export const CONGITIVE_COMPLEXITY = 5;
+
+/** @see {@link https://www.aleksandrhovhannisyan.com/blog/crlf-vs-lf-normalizing-line-endings-in-git} */
 export const END_OF_LINE = "lf";
 
 /** Append a new, empty line at the end of file. */

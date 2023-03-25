@@ -1,4 +1,4 @@
-import { hasModule } from "@terminal-nerds/snippets-runtime";
+import { hasModule } from "@terminal-nerds/snippets-runtime/module";
 
 export const HAS_DOCUSAURUS = hasModule("@docusaurus/core");
 export const HAS_EMOTION = hasModule("@emotion/css") || hasModule("@emotion/react");

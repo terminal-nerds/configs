@@ -89,9 +89,9 @@ importers:
       '@docusaurus/eslint-plugin': 2.3.1
       '@emotion/eslint-plugin': 11.10.0
       '@terminal-nerds/constants-config': workspace:*
-      '@terminal-nerds/snippets-config': 0.1.0
-      '@terminal-nerds/snippets-extension': 0.1.0
-      '@terminal-nerds/snippets-runtime': 0.1.0
+      '@terminal-nerds/snippets-config': 0.2.1
+      '@terminal-nerds/snippets-extension': 0.3.0
+      '@terminal-nerds/snippets-runtime': 0.3.0
       '@terminal-nerds/tsup-config': workspace:*
       '@terminal-nerds/typescript-config': workspace:*
       '@types/eslint': 8.21.3
@@ -134,9 +134,9 @@ importers:
       '@docusaurus/eslint-plugin': 2.3.1_typescript@5.0.2
       '@emotion/eslint-plugin': 11.10.0
       '@terminal-nerds/constants-config': link:../constants
-      '@terminal-nerds/snippets-config': 0.1.0_typescript@5.0.2
-      '@terminal-nerds/snippets-extension': 0.1.0_typescript@5.0.2
-      '@terminal-nerds/snippets-runtime': 0.1.0_typescript@5.0.2
+      '@terminal-nerds/snippets-config': 0.2.1_typescript@5.0.2
+      '@terminal-nerds/snippets-extension': 0.3.0_typescript@5.0.2
+      '@terminal-nerds/snippets-runtime': 0.3.0_typescript@5.0.2
       '@typescript-eslint/eslint-plugin': 5.56.0_v6sdge7jt2pgshnqqxcf4d6l3e
       '@typescript-eslint/parser': 5.56.0_typescript@5.0.2
       eslint-config-next: 13.2.4_typescript@5.0.2
@@ -179,18 +179,18 @@ importers:
 
   packages/lint-staged:
     specifiers:
-      '@terminal-nerds/snippets-config': 0.1.0
-      '@terminal-nerds/snippets-extension': 0.1.0
-      '@terminal-nerds/snippets-runtime': 0.1.0
+      '@terminal-nerds/snippets-config': 0.2.1
+      '@terminal-nerds/snippets-extension': 0.3.0
+      '@terminal-nerds/snippets-runtime': 0.3.0
       '@terminal-nerds/tsup-config': workspace:*
       '@terminal-nerds/typescript-config': workspace:*
       lint-staged: 13.2.0
       tsup: 6.7.0
       typescript: 5.0.2
     dependencies:
-      '@terminal-nerds/snippets-config': 0.1.0_typescript@5.0.2
-      '@terminal-nerds/snippets-extension': 0.1.0_typescript@5.0.2
-      '@terminal-nerds/snippets-runtime': 0.1.0_typescript@5.0.2
+      '@terminal-nerds/snippets-config': 0.2.1_typescript@5.0.2
+      '@terminal-nerds/snippets-extension': 0.3.0_typescript@5.0.2
+      '@terminal-nerds/snippets-runtime': 0.3.0_typescript@5.0.2
     devDependencies:
       '@terminal-nerds/tsup-config': link:../tsup
       '@terminal-nerds/typescript-config': link:../typescript
@@ -211,8 +211,8 @@ importers:
   packages/prettier:
     specifiers:
       '@terminal-nerds/constants-config': workspace:*
-      '@terminal-nerds/snippets-config': 0.1.0
-      '@terminal-nerds/snippets-runtime': 0.1.0
+      '@terminal-nerds/snippets-config': 0.2.1
+      '@terminal-nerds/snippets-runtime': 0.3.0
       '@terminal-nerds/tsup-config': workspace:*
       '@terminal-nerds/typescript-config': workspace:*
       '@types/prettier': 2.7.2
@@ -224,8 +224,8 @@ importers:
       typescript: 5.0.2
     dependencies:
       '@terminal-nerds/constants-config': link:../constants
-      '@terminal-nerds/snippets-config': 0.1.0_typescript@5.0.2
-      '@terminal-nerds/snippets-runtime': 0.1.0_typescript@5.0.2
+      '@terminal-nerds/snippets-config': 0.2.1_typescript@5.0.2
+      '@terminal-nerds/snippets-runtime': 0.3.0_typescript@5.0.2
       prettier-plugin-jsdoc: 0.4.2
       prettier-plugin-sort-markdown-table: 1.0.2
       prettier-plugin-svelte: 2.9.0
@@ -239,8 +239,8 @@ importers:
 
   packages/stylelint:
     specifiers:
-      '@terminal-nerds/snippets-config': 0.1.0
-      '@terminal-nerds/snippets-runtime': 0.1.0
+      '@terminal-nerds/snippets-config': 0.2.1
+      '@terminal-nerds/snippets-runtime': 0.3.0
       '@terminal-nerds/tsup-config': workspace:*
       '@terminal-nerds/typescript-config': workspace:*
       stylelint: 15.3.0
@@ -254,8 +254,8 @@ importers:
       tsup: 6.7.0
       typescript: 5.0.2
     dependencies:
-      '@terminal-nerds/snippets-config': 0.1.0_typescript@5.0.2
-      '@terminal-nerds/snippets-runtime': 0.1.0_typescript@5.0.2
+      '@terminal-nerds/snippets-config': 0.2.1_typescript@5.0.2
+      '@terminal-nerds/snippets-runtime': 0.3.0_typescript@5.0.2
       stylelint-config-prettier: 9.0.5_stylelint@15.3.0
       stylelint-config-standard: 31.0.0_stylelint@15.3.0
       stylelint-config-standard-scss: 7.0.1_stylelint@15.3.0
@@ -1088,27 +1088,27 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@terminal-nerds/snippets-config/0.1.0_typescript@5.0.2:
-    resolution: {integrity: sha512-5zG1xIhX7H7H+SIdvYlVkJAl/uoHaPUr5J4snKl8dFDVAulCK5gxqS7H9CWXqr4vZCrtFyE3XcrCFp3xMxAG0Q==}
+  /@terminal-nerds/snippets-config/0.2.1_typescript@5.0.2:
+    resolution: {integrity: sha512-uZSWqJX5RVZqimYAKvidszXA0BY5yRACecPwN4B0/n11V5Y19UKCBdNGiBXLqmgyGz5QXVHovH6UR+KM9Gex+g==}
     engines: {node: '>=18'}
     peerDependencies:
-      typescript: 4.9.5
+      typescript: 5.0.2
     peerDependenciesMeta:
       typescript:
         optional: true
     dependencies:
-      '@terminal-nerds/snippets-runtime': 0.1.0_typescript@5.0.2
+      '@terminal-nerds/snippets-runtime': 0.3.0_typescript@5.0.2
       deepmerge-ts: 4.3.0
       pkg-dir: 7.0.0
       type-fest: 3.6.1
       typescript: 5.0.2
     dev: false
 
-  /@terminal-nerds/snippets-error/0.1.0_typescript@5.0.2:
-    resolution: {integrity: sha512-fsd9RFpENZdmaagsORPb8bwE21Tzan2vEKId9GD1pX/wKJ9jyqPaRjDqlkCtzc4a8fO97PuorsXllc3sLYqlwg==}
+  /@terminal-nerds/snippets-error/0.2.0_typescript@5.0.2:
+    resolution: {integrity: sha512-bigsoRxo9SyvOQ9PIwridVhftnq2Rm10luOG9ZLfrGw72e9eeFBKAB0bz9gAzhnY3Xzp6kegbb0vKC79xrg2SA==}
     engines: {node: '>=18'}
     peerDependencies:
-      typescript: 4.9.5
+      typescript: 5.0.2
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -1118,11 +1118,11 @@ packages:
       zod: 3.21.4
     dev: false
 
-  /@terminal-nerds/snippets-extension/0.1.0_typescript@5.0.2:
-    resolution: {integrity: sha512-HQ/qBgwBke7ZUD3/ipbJGnk8HsnNd8xMY/8zUl4Iw8mA6gm/S/0YnN0u006Ig4g/9KD9lFDo2bAHkt8dy/gxAg==}
+  /@terminal-nerds/snippets-extension/0.3.0_typescript@5.0.2:
+    resolution: {integrity: sha512-hHBXGweijcoTIFhPeXzbE+raPa2KDOFXTXkVusMlyj7abBJ8OEK5cGEMBsWbcNyozLm/STVsLFlBuZ/olyOuYw==}
     engines: {node: '>=18'}
     peerDependencies:
-      typescript: 4.9.5
+      typescript: 5.0.2
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -1131,16 +1131,16 @@ packages:
       zod: 3.21.4
     dev: false
 
-  /@terminal-nerds/snippets-runtime/0.1.0_typescript@5.0.2:
-    resolution: {integrity: sha512-6KbJuT67pPrCf5C9/jSA63JTU5oBtIS9GiXFPvYZnnp96jeL0qGPZc7z/muo9likeWY7/JAotgzA6PHWOjawTA==}
+  /@terminal-nerds/snippets-runtime/0.3.0_typescript@5.0.2:
+    resolution: {integrity: sha512-SA9lT8FWoh2OlNp51Up0ATLxRtRTVENTVRBj+kWsMgag/mkgvJpah77nT0Xk1yXngWKPSkxxDHZQF4MnNX+PbA==}
     engines: {node: '>=18'}
     peerDependencies:
-      typescript: 4.9.5
+      typescript: 5.0.2
     peerDependenciesMeta:
       typescript:
         optional: true
     dependencies:
-      '@terminal-nerds/snippets-error': 0.1.0_typescript@5.0.2
+      '@terminal-nerds/snippets-error': 0.2.0_typescript@5.0.2
       local-pkg: 0.4.3
       read-pkg-up: 9.1.0
       type-fest: 3.6.1
@@ -3629,7 +3629,7 @@ packages:
     resolution: {integrity: sha512-v2ZsoEuVHYy8ZIlYqwPe/39Cy+cFDzp4dXPaxNvkEuouymu+2Jbz0PxpKarJHYJTmv2HWT3O382qY8l4jMWthw==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
-      locate-path: 7.1.1
+      locate-path: 7.2.0
       path-exists: 5.0.0
     dev: false
 
@@ -4588,8 +4588,8 @@ packages:
     dependencies:
       p-locate: 5.0.0
 
-  /locate-path/7.1.1:
-    resolution: {integrity: sha512-vJXaRMJgRVD3+cUZs3Mncj2mxpt5mP0EmNOsxRSZRMlbqjvxzDEOIUWXGmavo0ZC9+tNZCBLQ66reA11nbpHZg==}
+  /locate-path/7.2.0:
+    resolution: {integrity: sha512-gvVijfZvn7R+2qyPX8mAuKcFGDf6Nc61GdvGafQsHL0sBIxfKzA+usWn4GFC/bk+QdwPUD4kWFJLhElipq+0VA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       p-locate: 6.0.0

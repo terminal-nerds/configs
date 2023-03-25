@@ -2,11 +2,12 @@ import { defineConfig } from "eslint-define-config";
 
 import { HAS_TYPESCRIPT } from "../checks.ts";
 
-/** {@link https://github.com/import-js/eslint-plugin-import} */
+/** @see {@link https://github.com/import-js/eslint-plugin-import} Repository */
 const config = defineConfig({
 	extends: getExtendedConfigs(),
 
 	rules: {
+		"import/export": ["warn"],
 		/**
 		 * RATIONALE: Doesn't fully support ESM yet, see below:
 		 * https://github.com/import-js/eslint-plugin-import/issues/1868

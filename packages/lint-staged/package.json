@@ -30,9 +30,9 @@
 		"/dist"
 	],
 	"dependencies": {
-		"@terminal-nerds/snippets-config": "0.1.0",
-		"@terminal-nerds/snippets-extension": "0.1.0",
-		"@terminal-nerds/snippets-runtime": "0.1.0"
+		"@terminal-nerds/snippets-config": "0.2.1",
+		"@terminal-nerds/snippets-extension": "0.3.0",
+		"@terminal-nerds/snippets-runtime": "0.3.0"
 	},
 	"peerDependencies": {
 		"lint-staged": "13.2.0"

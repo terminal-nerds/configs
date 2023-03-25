@@ -1,4 +1,5 @@
-import { JAVASCRIPT_EXTENSIONS, TYPESCRIPT_EXTENSIONS } from "@terminal-nerds/snippets-extension/schema";
+import { JAVASCRIPT_EXTENSIONS } from "@terminal-nerds/snippets-extension/schema/javascript";
+import { TYPESCRIPT_EXTENSIONS } from "@terminal-nerds/snippets-extension/schema/typescript";
 import { defineConfig } from "eslint-define-config";
 
 /**
