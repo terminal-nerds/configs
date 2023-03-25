@@ -6,8 +6,16 @@ import { HAS_TYPESCRIPT } from "../checks.ts";
 const config = defineConfig({
 	extends: [HAS_TYPESCRIPT ? "plugin:jsdoc/recommended-typescript" : "plugin:jsdoc/recommended"],
 	rules: {
+		"jsdoc/check-tag-names": [
+			"warn",
+			{
+				definedTags: ["defaultValue"],
+			},
+		],
 		"jsdoc/require-jsdoc": ["off"],
+		"jsdoc/require-params": ["off"],
 		"jsdoc/require-returns": ["off"],
+		"jsdoc/valid-types": [HAS_TYPESCRIPT ? "off" : "warn"],
 	},
 });
 

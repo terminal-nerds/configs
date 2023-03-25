@@ -28,8 +28,8 @@
 		"dist/"
 	],
 	"dependencies": {
-		"@terminal-nerds/snippets-config": "0.1.0",
-		"@terminal-nerds/snippets-runtime": "0.1.0",
+		"@terminal-nerds/snippets-config": "0.2.1",
+		"@terminal-nerds/snippets-runtime": "0.3.0",
 		"stylelint-config-prettier": "9.0.5",
 		"stylelint-config-standard": "31.0.0",
 		"stylelint-config-standard-scss": "7.0.1",
