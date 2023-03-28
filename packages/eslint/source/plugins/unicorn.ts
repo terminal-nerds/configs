@@ -18,6 +18,10 @@ const ALLOWED_ABBREVATIONS = [
 	"JSDoc",
 	"tsdoc",
 	"TSDoc",
+	/** RATIONALE: This is descriptive & obvious enough */
+	"env",
+	"Env",
+	"ENV",
 ];
 
 // https://github.com/sindresorhus/eslint-plugin-unicorn
