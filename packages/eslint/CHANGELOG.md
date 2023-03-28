@@ -1,5 +1,18 @@
 # @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.21.0
+
+### Minor Changes
+
+-   [#285](https://github.com/terminal-nerds/configs/pull/285) [`96e63a3`](https://github.com/terminal-nerds/configs/commit/96e63a3fa66e2f573bb1478aa1bb369808d2928c) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Add `env`, `Env`, and `ENV` to allowed abbreviations list
+
+-   [#282](https://github.com/terminal-nerds/configs/pull/282) [`dc0e192`](https://github.com/terminal-nerds/configs/commit/dc0e19290211ed98de233655c0dd1ce9013ae9a5) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependencies:
+
+    -   `@docusaurus/eslint-plugin` to `v2.4.0`
+    -   `eslint-plugin-svelte` to `v2.23.1`
+
+-   [#285](https://github.com/terminal-nerds/configs/pull/285) [`96e63a3`](https://github.com/terminal-nerds/configs/commit/96e63a3fa66e2f573bb1478aa1bb369808d2928c) Thanks [@xeho91](https://github.com/xeho91)! - ✨ Add support for [`unocss`](https://github.com/unocss/unocss) by loading config for it
+
 ## 0.20.0
 
 ### Minor Changes
