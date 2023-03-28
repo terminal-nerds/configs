@@ -1,5 +1,11 @@
 # @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.21.1
+
+### Patch Changes
+
+-   [#287](https://github.com/terminal-nerds/configs/pull/287) [`d54e2b4`](https://github.com/terminal-nerds/configs/commit/d54e2b43e99669400b21d57c54fdc01b93059e00) Thanks [@xeho91](https://github.com/xeho91)! - 🐛 Fix missing `@` scope tag in extending `@unocss` config
+
 ## 0.21.0
 
 ### Minor Changes
