@@ -12,9 +12,11 @@ import {
 	HAS_SVELTE,
 	HAS_TAILWINDCSS,
 	HAS_TYPESCRIPT,
+	HAS_UNOCSS,
 } from "./checks.ts";
 import configNext from "./configs/next.ts";
 import configPrettier from "./configs/prettier.ts";
+import configUnoCSS from "./configs/unocss.ts";
 import eslint from "./eslint.ts";
 import pluginCompat from "./plugins/compat.ts";
 import pluginDiff from "./plugins/diff.ts";
@@ -84,6 +86,7 @@ const config = createMergedConfig<SimplifiedESLintConfig>([
 	pluginYML,
 
 	// Configs
+	HAS_UNOCSS && configUnoCSS,
 	HAS_NEXT && configNext,
 	// NOTE: Must come as last!
 	HAS_PRETTIER && configPrettier,

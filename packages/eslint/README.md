@@ -94,9 +94,12 @@ _conditionally_.
 
 | Configurations           | Version                                 | Loading condition(s)     |
 | ------------------------ | --------------------------------------- | ------------------------ |
+| [@unocss/eslint-config]  | ![@unocss/eslint-config version badge]  | `unocss` as dependency   |
 | [eslint-config-next]     | ![eslint-config-next version badge]     | `next` as dependency     |
 | [eslint-config-prettier] | ![eslint-config-prettier version badge] | `prettier` as dependency |
 
+[@unocss/eslint-config]: https://github.com/unocss/unocss/tree/main/packages/eslint-config
+[@unocss/eslint-plugin version badge]: https://img.shields.io/npm/v/@unocss/eslint-plugin?logo=npm&style=flat-square
 [eslint-config-next]: https://nextjs.org/docs/basic-features/eslint#eslint-config
 [eslint-config-next version badge]: https://img.shields.io/npm/v/eslint-config-next?logo=npm&style=flat-square
 [eslint-config-prettier]: https://github.com/prettier/eslint-config-prettier

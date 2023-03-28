@@ -11,3 +11,4 @@ export const HAS_STORYBOOK = hasModule("storybook");
 export const HAS_SVELTE = hasModule("svelte");
 export const HAS_TAILWINDCSS = hasModule("tailwindcss");
 export const HAS_TYPESCRIPT = hasModule("typescript");
+export const HAS_UNOCSS = hasModule("unocss");
