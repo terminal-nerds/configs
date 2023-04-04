@@ -33,7 +33,7 @@
 		"@terminal-nerds/constants-config": "workspace:*",
 		"@terminal-nerds/snippets-config": "0.2.1",
 		"@terminal-nerds/snippets-extension": "0.3.0",
-		"@terminal-nerds/snippets-runtime": "0.3.0",
+		"@terminal-nerds/snippets-runtime": "0.4.0",
 		"@typescript-eslint/eslint-plugin": "5.57.0",
 		"@typescript-eslint/parser": "5.57.0",
 		"@unocss/eslint-config": "0.50.6",
