@@ -33,7 +33,7 @@
 	},
 	"devDependencies": {
 		"make-dir-cli": "3.0.0",
-		"markdownlint": "0.27.0",
+		"markdownlint": "0.28.0",
 		"strip-json-comments-cli": "2.0.2"
 	},
 	"scripts": {
