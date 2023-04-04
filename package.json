@@ -13,7 +13,7 @@
 	"packageManager": "pnpm@8.1.0",
 	"devDependencies": {
 		"@changesets/changelog-github": "0.4.8",
-		"@changesets/cli": "2.26.0",
+		"@changesets/cli": "2.26.1",
 		"@terminal-nerds/browserslist-config": "workspace:*",
 		"@terminal-nerds/eslint-config": "workspace:*",
 		"@terminal-nerds/lint-staged-config": "workspace:*",
@@ -37,7 +37,7 @@
 		"pretty-quick": "3.1.3",
 		"syncpack": "9.8.4",
 		"tsup": "6.7.0",
-		"turbo": "1.8.5",
+		"turbo": "1.8.8",
 		"typescript": "5.0.3"
 	},
 	"scripts": {
