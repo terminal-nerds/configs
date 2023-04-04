@@ -38,7 +38,7 @@
 		"syncpack": "9.8.4",
 		"tsup": "6.7.0",
 		"turbo": "1.8.5",
-		"typescript": "5.0.2"
+		"typescript": "5.0.3"
 	},
 	"scripts": {
 		"build:pkgs": "turbo run build --api=$TURBO_API",
