@@ -38,19 +38,19 @@
 		"/dist"
 	],
 	"dependencies": {
-		"@vitest/coverage-c8": "0.29.7",
-		"@vitest/ui": "0.29.7",
+		"@vitest/coverage-c8": "0.29.8",
+		"@vitest/ui": "0.29.8",
 		"vite": "4.2.1"
 	},
 	"peerDependencies": {
-		"vitest": "0.29.7"
+		"vitest": "0.29.8"
 	},
 	"devDependencies": {
 		"@terminal-nerds/tsup-config": "workspace:*",
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"tsup": "6.7.0",
 		"typescript": "5.0.3",
-		"vitest": "0.29.7"
+		"vitest": "0.29.8"
 	},
 	"scripts": {
 		"build": "tsup",
