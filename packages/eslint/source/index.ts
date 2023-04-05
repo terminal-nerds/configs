@@ -13,6 +13,7 @@ import {
 	HAS_TAILWINDCSS,
 	HAS_TYPESCRIPT,
 	HAS_UNOCSS,
+	IS_IN_CI,
 } from "./checks.ts";
 import configNext from "./configs/next.ts";
 import configPrettier from "./configs/prettier.ts";
@@ -66,7 +67,7 @@ const config = createMergedConfig<SimplifiedESLintConfig>([
 	HAS_JEST && pluginJestFormatting,
 	pluginJSDoc,
 	pluginJSONC,
-	pluginJSONSchemaValidator,
+	!IS_IN_CI && pluginJSONSchemaValidator,
 	HAS_REACT && pluginJSXA11y,
 	pluginNode,
 	HAS_REACT && pluginReact,
