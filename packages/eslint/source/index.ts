@@ -2,6 +2,7 @@ import { createMergedConfig } from "@terminal-nerds/snippets-config/merge";
 import type { ESLintConfig } from "eslint-define-config";
 
 import {
+	DOCUMENTATION_TYPE,
 	HAS_DOCUSAURUS,
 	HAS_JEST,
 	HAS_JEST_DOM,
@@ -13,6 +14,7 @@ import {
 	HAS_TAILWINDCSS,
 	HAS_TYPESCRIPT,
 	HAS_UNOCSS,
+	IS_IN_CI,
 } from "./checks.ts";
 import configNext from "./configs/next.ts";
 import configPrettier from "./configs/prettier.ts";
@@ -64,9 +66,9 @@ const config = createMergedConfig<SimplifiedESLintConfig>([
 	HAS_JEST && pluginJest,
 	HAS_JEST_DOM && pluginJestDOM,
 	HAS_JEST && pluginJestFormatting,
-	pluginJSDoc,
+	DOCUMENTATION_TYPE !== "tsdoc" && pluginJSDoc,
 	pluginJSONC,
-	pluginJSONSchemaValidator,
+	!IS_IN_CI && pluginJSONSchemaValidator,
 	HAS_REACT && pluginJSXA11y,
 	pluginNode,
 	HAS_REACT && pluginReact,
@@ -79,7 +81,7 @@ const config = createMergedConfig<SimplifiedESLintConfig>([
 	HAS_SVELTE && pluginSvelte,
 	HAS_JEST_DOM && pluginTestingLibrary,
 	HAS_TAILWINDCSS && pluginTailwindCSS,
-	HAS_TYPESCRIPT && pluginTSDoc,
+	HAS_TYPESCRIPT && DOCUMENTATION_TYPE !== "jsdoc" && pluginTSDoc,
 	HAS_TYPESCRIPT && pluginTypeScript,
 	HAS_TYPESCRIPT && pluginTypeScriptCompat,
 	pluginUnicorn,

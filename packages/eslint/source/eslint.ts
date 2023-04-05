@@ -25,9 +25,28 @@ const config = defineConfig({
 	extends: ["eslint:recommended"],
 
 	rules: {
-		// RATIONALE:
-		// Adjust to adapted code format and stop screaming on lines
-		// that aren't too long yet.
+		/**
+		 * RATIONALE:
+		 * Obviously, the functions should have name as to explain
+		 * their intention. Code readability.
+		 */
+		"func-names": ["error", "as-needed"],
+		/**
+		 * RATIONALE:
+		 * Ignore the underscore prefix for unused arguments.
+		 * Sometimes we have omit some function arguments, until we get the one we can actually use.
+		 */
+		"no-unused-vars": [
+			"warn",
+			{
+				argsIgnorePattern: "^_",
+			},
+		],
+		/**
+		 * RATIONALE:
+		 * Adjust to adapted code format and stop screaming on lines
+		 * that aren't too long yet.
+		 */
 		"max-len": [
 			"warn",
 			{
@@ -38,15 +57,11 @@ const config = defineConfig({
 				ignoreUrls: true,
 			},
 		],
-
-		// RATIONALE: Remind developers about possible logs that aren't
-		// supposed to be there.
+		/**
+		 * RATIONALE: Remind developers about possible logs that aren't
+		 * supposed to be there.
+		 */
 		"no-console": ["warn", { allow: ["debug"] }],
-
-		// RATIONALE:
-		// Obviously, the functions should have name as to explain
-		// their intention. Code readability.
-		"func-names": ["error", "as-needed"],
 	},
 });
 

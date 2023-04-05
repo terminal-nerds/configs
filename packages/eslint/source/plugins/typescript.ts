@@ -11,6 +11,10 @@ const config = defineConfig({
 		tsconfigRootDir: __dirname,
 	},
 	rules: {
+		/**
+		 * RATIONALE:
+		 * Enforce the practice, where we explain shortly the decision of using them.
+		 */
 		"@typescript-eslint/ban-ts-comment": [
 			"warn",
 			{
@@ -19,6 +23,17 @@ const config = defineConfig({
 				"ts-nocheck": commentRuleOptions,
 				"ts-check": commentRuleOptions,
 				"minimumDescriptionLength": 3,
+			},
+		],
+		/**
+		 * RATIONALE:
+		 * Ignore the underscore prefix for unused arguments.
+		 * Sometimes we have omit some function arguments, until we get the one we can actually use.
+		 */
+		"@typescript-eslint/no-unused-vars": [
+			"warn",
+			{
+				argsIgnorePattern: "^_",
 			},
 		],
 	},
