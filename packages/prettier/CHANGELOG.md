@@ -1,5 +1,15 @@
 # @terminal-nerds/prettier-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.10.0
+
+### Minor Changes
+
+-   [#301](https://github.com/terminal-nerds/configs/pull/301) [`c395b12`](https://github.com/terminal-nerds/configs/commit/c395b126325ccfae8b426bafed76cebb60a41e77) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Configure `jsdoc` plugin to be dependant on `DOCUMENTATION_TYPE` variable, `jsdoc` or `tsdoc`
+
+### Patch Changes
+
+-   [#295](https://github.com/terminal-nerds/configs/pull/295) [`535a052`](https://github.com/terminal-nerds/configs/commit/535a052c884cbe34f80582cde9e3e6da53e2f6fc) Thanks [@renovate](https://github.com/apps/renovate)! - chore(Renovate): ⬆️ Update dependency `prettier-plugin-tailwindcss` to `v0.2.6`
+
 ## 0.9.0
 
 ### Minor Changes

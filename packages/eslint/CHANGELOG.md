@@ -1,5 +1,31 @@
 # @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.22.0
+
+### Minor Changes
+
+-   [#300](https://github.com/terminal-nerds/configs/pull/300) [`43db3c6`](https://github.com/terminal-nerds/configs/commit/43db3c602ff4b2a22994c095be421aa6181b3e93) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Tweak loading conditions of plugins:
+
+        - `jsdoc` -> by default, disabled if `typescript` module exists,
+        - `tsdoc` -> by default, enabled if `typescript` module exists.
+
+    In both cases,
+    the environment variable `DOCUMENTATION_TYPE` can be set to `jsdoc` or `tsdoc`,
+    to decide which one should be loaded.
+
+-   [#300](https://github.com/terminal-nerds/configs/pull/300) [`43db3c6`](https://github.com/terminal-nerds/configs/commit/43db3c602ff4b2a22994c095be421aa6181b3e93) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Set plugin `json-schema-validator` to not run in the CI & CD
+
+-   [#292](https://github.com/terminal-nerds/configs/pull/292) [`38a2bad`](https://github.com/terminal-nerds/configs/commit/38a2bad1cba618042f1a699c425a0a00a700f614) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependencies:
+
+    -   `@typescript-eslint/eslint-plugin` to `v5.57.0`
+    -   `eslint` to `v8.37.0`
+    -   `eslint-plugin-jsdoc` to `v40.1.1`
+    -   `eslint-plugin-n` to `v15.7.0`
+    -   `eslint-plugin-regexp` to `v1.14.0`
+    -   `eslint-plugin-svelte` to `v2.24.0`
+
+-   [#300](https://github.com/terminal-nerds/configs/pull/300) [`43db3c6`](https://github.com/terminal-nerds/configs/commit/43db3c602ff4b2a22994c095be421aa6181b3e93) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Add an ignore pattern on `no-unused-vars` rule - anything that prefixes with an underscore _(`_`)\_
+
 ## 0.21.1
 
 ### Patch Changes
