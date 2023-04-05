@@ -5,5 +5,5 @@ export default defineConfig((options) => ({
 	...getNodeCJSOptions(options),
 	bundle: true,
 	entry: ["source/index.ts"],
-	noExternal: ["@terminal-nerds/snippets-runtime/module"],
+	noExternal: ["@terminal-nerds/snippets-runtime/module", "@terminal-nerds/snippets-runtime/variable"],
 }));
