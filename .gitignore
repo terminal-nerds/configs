@@ -115,3 +115,6 @@ build
 
 # Backup files
 *.backup
+
+# Prevent override of default config in .npmrc for security purposes
+.npmrc
