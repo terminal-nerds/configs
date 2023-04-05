@@ -109,37 +109,37 @@ _conditionally_.
 
 <!-- prettier-sort-markdown-table -->
 
-| Plugin                                | Version                                              | Loading condition(s)                                               |
-| ------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------ |
-| [@docusaurus/eslint-plugin]           | ![@docusaurus/eslint-plugin version badge]           | `@docusaurus/core` as dependency                                   |
-| [@emotion/eslint-plugin]              | ![@emotion/eslint-plugin version badge]              | `@emotion/css` or `@emotion/react` as dependency                   |
-| [@typescript-eslint/eslint-plugin]    | ![@typescript-eslint/eslint-plugin version badge]    | `typescript` as dependency                                         |
-| [eslint-plugin-compat]                | ![eslint-plugin-compat version badge]                | -                                                                  |
-| [eslint-plugin-diff]                  | ![eslint-plugin-diff version badge]                  | `ESLINT_PLUGIN_DIFF_ENABLE` set to `true` in environment variables |
-| [eslint-plugin-es-x]                  | ![eslint-plugin-es-x version badge]                  | -                                                                  |
-| [eslint-plugin-import]                | ![eslint-plugin-import version badge]                | -                                                                  |
-| [eslint-plugin-jest-dom]              | ![eslint-plugin-jest-dom version badge]              | `@testing-library/jest-dom` as dependency                          |
-| [eslint-plugin-jest-formatting]       | ![eslint-plugin-jest-formatting version badge]       | `jest` or `vitest` as dependency                                   |
-| [eslint-plugin-jest]                  | ![eslint-plugin-jest version badge]                  | `jest` or `vitest` as dependency                                   |
-| [eslint-plugin-jsdoc]                 | ![eslint-plugin-jsonc version badge]                 |                                                                    |
-| [eslint-plugin-json-schema-validator] | ![eslint-plugin-json-schema-validator version badge] | The current runtime is not CI & CD _(environment variable: `CI`)_  |
-| [eslint-plugin-jsonc]                 | ![eslint-plugin-jsonc version badge]                 | -                                                                  |
-| [eslint-plugin-jsx-a11y]              | ![eslint-plugin-jsx-a11y version badge]              | `react` or `preact` as dependency                                  |
-| [eslint-plugin-n]                     | ![eslint-plugin-n version badge]                     | -                                                                  |
-| [eslint-plugin-react-hooks]           | ![eslint-plugin-react-hooks version badge]           | `react` or `preact` as dependency                                  |
-| [eslint-plugin-react]                 | ![eslint-plugin-react version badge]                 | `react` or `preact` as dependency                                  |
-| [eslint-plugin-regexp]                | ![eslint-plugin-regexp version badge]                | -                                                                  |
-| [eslint-plugin-simple-import-sort]    | ![eslint-plugin-simple-import-sort version badge]    | -                                                                  |
-| [eslint-plugin-sonarjs]               | ![eslint-plugin-sonarjs version badge]               | -                                                                  |
-| [eslint-plugin-sql]                   | ![eslint-plugin-sql version badge]                   | -                                                                  |
-| [eslint-plugin-storybook]             | ![eslint-plugin-storybook version badge]             | `storybook` as dependency                                          |
-| [eslint-plugin-svelte]                | ![eslint-plugin-svelte version badge]                | `svelte` as dependency                                             |
-| [eslint-plugin-tailwindcss]           | ![eslint-plugin-tailwindcss version badge]           | `tailwindcss` as dependency                                        |
-| [eslint-plugin-testing-library]       | ![eslint-plugin-testing-library version badge]       | `@testing-library/jest-dom` as dependency                          |
-| [eslint-plugin-tsdoc]                 | ![eslint-plugin-tsdoc version badge]                 | `typescript` as dependency                                         |
-| [eslint-plugin-typescript]            | ![eslint-plugin-typescript version badge]            | `typescript` as dependency                                         |
-| [eslint-plugin-unicorn]               | ![eslint-plugin-unicorn version badge]               | `typescript` as dependency                                         |
-| [eslint-plugin-yml]                   | ![eslint-plugin-yml version badge]                   | -                                                                  |
+| Plugin                                | Version                                              | Loading condition(s)                                                                                                                               |
+| ------------------------------------- | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [@docusaurus/eslint-plugin]           | ![@docusaurus/eslint-plugin version badge]           | `@docusaurus/core` as dependency                                                                                                                   |
+| [@emotion/eslint-plugin]              | ![@emotion/eslint-plugin version badge]              | `@emotion/css` or `@emotion/react` as dependency                                                                                                   |
+| [@typescript-eslint/eslint-plugin]    | ![@typescript-eslint/eslint-plugin version badge]    | `typescript` as dependency                                                                                                                         |
+| [eslint-plugin-compat]                | ![eslint-plugin-compat version badge]                | -                                                                                                                                                  |
+| [eslint-plugin-diff]                  | ![eslint-plugin-diff version badge]                  | `ESLINT_PLUGIN_DIFF_ENABLE` set to `true` in environment variables                                                                                 |
+| [eslint-plugin-es-x]                  | ![eslint-plugin-es-x version badge]                  | -                                                                                                                                                  |
+| [eslint-plugin-import]                | ![eslint-plugin-import version badge]                | -                                                                                                                                                  |
+| [eslint-plugin-jest-dom]              | ![eslint-plugin-jest-dom version badge]              | `@testing-library/jest-dom` as dependency                                                                                                          |
+| [eslint-plugin-jest-formatting]       | ![eslint-plugin-jest-formatting version badge]       | `jest` or `vitest` as dependency                                                                                                                   |
+| [eslint-plugin-jest]                  | ![eslint-plugin-jest version badge]                  | `jest` or `vitest` as dependency                                                                                                                   |
+| [eslint-plugin-jsdoc]                 | ![eslint-plugin-jsdoc version badge]                 | By default: if module `typescript` exists - disabled in favor for TSDoc. To reenable, set environment variable: `DOCUMENTATION_TYPE` to `"jsdoc"`. |
+| [eslint-plugin-json-schema-validator] | ![eslint-plugin-json-schema-validator version badge] | The current runtime is not CI & CD _(environment variable: `CI`)_                                                                                  |
+| [eslint-plugin-jsonc]                 | ![eslint-plugin-jsonc version badge]                 | -                                                                                                                                                  |
+| [eslint-plugin-jsx-a11y]              | ![eslint-plugin-jsx-a11y version badge]              | `react` or `preact` as dependency                                                                                                                  |
+| [eslint-plugin-n]                     | ![eslint-plugin-n version badge]                     | -                                                                                                                                                  |
+| [eslint-plugin-react-hooks]           | ![eslint-plugin-react-hooks version badge]           | `react` or `preact` as dependency                                                                                                                  |
+| [eslint-plugin-react]                 | ![eslint-plugin-react version badge]                 | `react` or `preact` as dependency                                                                                                                  |
+| [eslint-plugin-regexp]                | ![eslint-plugin-regexp version badge]                | -                                                                                                                                                  |
+| [eslint-plugin-simple-import-sort]    | ![eslint-plugin-simple-import-sort version badge]    | -                                                                                                                                                  |
+| [eslint-plugin-sonarjs]               | ![eslint-plugin-sonarjs version badge]               | -                                                                                                                                                  |
+| [eslint-plugin-sql]                   | ![eslint-plugin-sql version badge]                   | -                                                                                                                                                  |
+| [eslint-plugin-storybook]             | ![eslint-plugin-storybook version badge]             | `storybook` as dependency                                                                                                                          |
+| [eslint-plugin-svelte]                | ![eslint-plugin-svelte version badge]                | `svelte` as dependency                                                                                                                             |
+| [eslint-plugin-tailwindcss]           | ![eslint-plugin-tailwindcss version badge]           | `tailwindcss` as dependency                                                                                                                        |
+| [eslint-plugin-testing-library]       | ![eslint-plugin-testing-library version badge]       | `@testing-library/jest-dom` as dependency                                                                                                          |
+| [eslint-plugin-tsdoc]                 | ![eslint-plugin-tsdoc version badge]                 | By default: if `typescript` module exists, enabled. Disabled if environment variable `DOCUMENTATION_TYPE` is set to `"jsdoc"`.                     |
+| [eslint-plugin-typescript]            | ![eslint-plugin-typescript version badge]            | `typescript` as dependency                                                                                                                         |
+| [eslint-plugin-unicorn]               | ![eslint-plugin-unicorn version badge]               | `typescript` as dependency                                                                                                                         |
+| [eslint-plugin-yml]                   | ![eslint-plugin-yml version badge]                   | -                                                                                                                                                  |
 
 [@docusaurus/eslint-plugin]: https://github.com/facebook/docusaurus/tree/main/packages/eslint-plugin
 [@docusaurus/eslint-plugin version badge]: https://img.shields.io/npm/v/@docusaurus/eslint-plugin?logo=npm&style=flat-square
