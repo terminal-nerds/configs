@@ -1,5 +1,11 @@
 # @terminal-nerds/stylelint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.11.1
+
+### Patch Changes
+
+-   [#310](https://github.com/terminal-nerds/configs/pull/310) [`df9cd24`](https://github.com/terminal-nerds/configs/commit/df9cd24928520ffaab434dd4ff5ca9b8c45b34b4) Thanks [@xeho91](https://github.com/xeho91)! - 🐛 Resolve issue with wrong import (ESM & CJS conflict)
+
 ## 0.11.0
 
 ### Minor Changes
