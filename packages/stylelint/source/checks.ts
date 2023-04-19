@@ -1,4 +1,4 @@
-import { hasModule } from "@terminal-nerds/snippets-runtime";
+import { hasModule } from "@terminal-nerds/snippets-runtime/module";
 
 export const HAS_PRETTIER = hasModule("prettier");
 export const HAS_SASS = hasModule("sass");
