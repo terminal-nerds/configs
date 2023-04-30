@@ -1,5 +1,19 @@
 # @terminal-nerds/stylelint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.12.0
+
+### Minor Changes
+
+-   [#316](https://github.com/terminal-nerds/configs/pull/316) [`ec5acf5`](https://github.com/terminal-nerds/configs/commit/ec5acf51e73ceaafd3a03fe9062903c12e12208d) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `stylelint` to `v15.6.0`
+
+-   [#308](https://github.com/terminal-nerds/configs/pull/308) [`86323ae`](https://github.com/terminal-nerds/configs/commit/86323ae54a2506ae27002a43eca70bb3c4a801db) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update Stylelint dependencies
+
+### Patch Changes
+
+-   [#323](https://github.com/terminal-nerds/configs/pull/323) [`b916b1b`](https://github.com/terminal-nerds/configs/commit/b916b1b5c5aec4243d0680d3597f675700dde4df) Thanks [@renovate](https://github.com/apps/renovate)! - chore(Renovate): ⬆️ Update dependency `stylelint-scss` to `v5`
+
+-   [#306](https://github.com/terminal-nerds/configs/pull/306) [`b794e9f`](https://github.com/terminal-nerds/configs/commit/b794e9f973d4b5654d4250891a8c353fbbc78934) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `typescript` to `v5.0.4`
+
 ## 0.11.2
 
 ### Patch Changes

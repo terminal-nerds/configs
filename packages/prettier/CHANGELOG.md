@@ -1,5 +1,25 @@
 # @terminal-nerds/prettier-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.11.0
+
+### Minor Changes
+
+-   [#326](https://github.com/terminal-nerds/configs/pull/326) [`0e1f6d3`](https://github.com/terminal-nerds/configs/commit/0e1f6d3a55979f69affaab851eeae1d37286b788) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Tweak JSDoc plugin options:
+
+    -   `jsdocDescriptionTag` - disabled
+    -   `jsdocSingleLineComment` - disabled
+
+### Patch Changes
+
+-   [#303](https://github.com/terminal-nerds/configs/pull/303) [`7a7165a`](https://github.com/terminal-nerds/configs/commit/7a7165abe96e274f8b1652697424f42395d16727) Thanks [@renovate](https://github.com/apps/renovate)! - chore(Renovate): ⬆️ Update Prettier dependencies
+
+-   [#319](https://github.com/terminal-nerds/configs/pull/319) [`106310a`](https://github.com/terminal-nerds/configs/commit/106310acdb6d3d20c69242f53427cbbbb966c269) Thanks [@renovate](https://github.com/apps/renovate)! - chore(Renovate): ⬆️ Update dependency `prettier-plugin-tailwindcss` to `v0.2.8`
+
+-   [#306](https://github.com/terminal-nerds/configs/pull/306) [`b794e9f`](https://github.com/terminal-nerds/configs/commit/b794e9f973d4b5654d4250891a8c353fbbc78934) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `typescript` to `v5.0.4`
+
+-   Updated dependencies [[`b794e9f`](https://github.com/terminal-nerds/configs/commit/b794e9f973d4b5654d4250891a8c353fbbc78934)]:
+    -   @terminal-nerds/constants-config@0.2.1
+
 ## 0.10.0
 
 ### Minor Changes
