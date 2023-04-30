@@ -1,5 +1,11 @@
 # @terminal-nerds/typescript-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.6.1
+
+### Patch Changes
+
+-   [#306](https://github.com/terminal-nerds/configs/pull/306) [`b794e9f`](https://github.com/terminal-nerds/configs/commit/b794e9f973d4b5654d4250891a8c353fbbc78934) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `typescript` to `v5.0.4`
+
 ## 0.6.0
 
 ### Minor Changes

@@ -6,7 +6,7 @@
 		"access": "public"
 	},
 	"name": "@terminal-nerds/tsup-config",
-	"version": "0.3.0",
+	"version": "0.3.1",
 	"description": "Terminal Nerds extendable configuration for tsup.",
 	"keywords": [
 		"config",

@@ -1,5 +1,13 @@
 # @terminal-nerds/syncpack-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.5.1
+
+### Patch Changes
+
+-   [#315](https://github.com/terminal-nerds/configs/pull/315) [`9a1da3e`](https://github.com/terminal-nerds/configs/commit/9a1da3e19ec7e8fae7794e7868952525beca65f3) Thanks [@renovate](https://github.com/apps/renovate)! - chore(Renovate): ⬆️ Update dependency `syncpack` to `v9.8.6`
+
+-   [#306](https://github.com/terminal-nerds/configs/pull/306) [`b794e9f`](https://github.com/terminal-nerds/configs/commit/b794e9f973d4b5654d4250891a8c353fbbc78934) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `typescript` to `v5.0.4`
+
 ## 0.5.0
 
 ### Minor Changes

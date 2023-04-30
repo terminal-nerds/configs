@@ -1,5 +1,13 @@
 # @terminal-nerds/lint-staged-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.4.1
+
+### Patch Changes
+
+-   [#305](https://github.com/terminal-nerds/configs/pull/305) [`c348b26`](https://github.com/terminal-nerds/configs/commit/c348b2632fafa5788bd1058cf7fee0087d9f771a) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `lint-staged` to `v13.2.2`
+
+-   [#306](https://github.com/terminal-nerds/configs/pull/306) [`b794e9f`](https://github.com/terminal-nerds/configs/commit/b794e9f973d4b5654d4250891a8c353fbbc78934) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `typescript` to `v5.0.4`
+
 ## 0.4.0
 
 ### Minor Changes

@@ -1,5 +1,29 @@
 # @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.23.0
+
+### Minor Changes
+
+-   [#325](https://github.com/terminal-nerds/configs/pull/325) [`f264f1c`](https://github.com/terminal-nerds/configs/commit/f264f1c60c4803b06e25f747863ba8ca9b9d3ffe) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Tweak rules:
+
+    -   `no-undef` - disable when `typescript` module exists _(to avoid reported warnings)_
+    -   `no-unused-vars` - same as above
+    -   `no-unused-vars` & `@typescript-eslint/no-unused-vars` - apply the same pattern on vars _(from args)_
+    -   `jsdoc/tag-lines` - use `any` option
+
+-   [#317](https://github.com/terminal-nerds/configs/pull/317) [`d2cbd77`](https://github.com/terminal-nerds/configs/commit/d2cbd775311e1c82c859e2801250c3eb6f41ed43) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `eslint-plugin-jsdoc` to `v43`
+
+### Patch Changes
+
+-   [#302](https://github.com/terminal-nerds/configs/pull/302) [`6681416`](https://github.com/terminal-nerds/configs/commit/6681416d757e8a5d22304db5eec87e4ad23c44ea) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update ESLint dependencies
+
+-   [#306](https://github.com/terminal-nerds/configs/pull/306) [`b794e9f`](https://github.com/terminal-nerds/configs/commit/b794e9f973d4b5654d4250891a8c353fbbc78934) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `typescript` to `v5.0.4`
+
+-   [#318](https://github.com/terminal-nerds/configs/pull/318) [`12954ae`](https://github.com/terminal-nerds/configs/commit/12954ae77a086c670115dab581752baa1a9cc9d8) Thanks [@renovate](https://github.com/apps/renovate)! - chore(Renovate): ⬆️ Update ESLint dependencies
+
+-   Updated dependencies [[`b794e9f`](https://github.com/terminal-nerds/configs/commit/b794e9f973d4b5654d4250891a8c353fbbc78934)]:
+    -   @terminal-nerds/constants-config@0.2.1
+
 ## 0.22.0
 
 ### Minor Changes
