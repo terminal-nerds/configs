@@ -39,12 +39,12 @@
 		"stylelint-scss": "4.6.0"
 	},
 	"peerDependencies": {
-		"stylelint": "15.4.0"
+		"stylelint": "15.6.0"
 	},
 	"devDependencies": {
 		"@terminal-nerds/tsup-config": "workspace:*",
 		"@terminal-nerds/typescript-config": "workspace:*",
-		"stylelint": "15.4.0",
+		"stylelint": "15.6.0",
 		"tsup": "6.7.0",
 		"typescript": "5.0.3"
 	},
