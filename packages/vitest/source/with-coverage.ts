@@ -3,7 +3,7 @@ import type { UserConfig } from "vitest/config";
 
 import { BASE_OPTIONS, IS_WATCH_COMMAND } from "./base.ts";
 
-// https://vitest.dev/guide/coverage.html
+/** @see {@link https://vitest.dev/guide/coverage.html} */
 export const COVERAGE_OPTIONS: CoverageOptions = {
 	enabled: !IS_WATCH_COMMAND,
 	reporter: ["lcov", "json", "text"],
