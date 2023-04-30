@@ -128,8 +128,8 @@ importers:
         specifier: workspace:*
         version: link:../constants
       '@terminal-nerds/snippets-config':
-        specifier: 0.4.0
-        version: 0.4.0(typescript@5.0.3)
+        specifier: 0.4.1
+        version: 0.4.1(typescript@5.0.3)
       '@terminal-nerds/snippets-extension':
         specifier: 0.4.0
         version: 0.4.0(typescript@5.0.3)
@@ -258,8 +258,8 @@ importers:
   packages/lint-staged:
     dependencies:
       '@terminal-nerds/snippets-config':
-        specifier: 0.4.0
-        version: 0.4.0(typescript@5.0.3)
+        specifier: 0.4.1
+        version: 0.4.1(typescript@5.0.3)
       '@terminal-nerds/snippets-extension':
         specifier: 0.4.0
         version: 0.4.0(typescript@5.0.3)
@@ -301,8 +301,8 @@ importers:
         specifier: workspace:*
         version: link:../constants
       '@terminal-nerds/snippets-config':
-        specifier: 0.4.0
-        version: 0.4.0(typescript@5.0.3)
+        specifier: 0.4.1
+        version: 0.4.1(typescript@5.0.3)
       '@terminal-nerds/snippets-runtime':
         specifier: 0.5.0
         version: 0.5.0(typescript@5.0.3)
@@ -338,8 +338,8 @@ importers:
   packages/stylelint:
     dependencies:
       '@terminal-nerds/snippets-config':
-        specifier: 0.4.0
-        version: 0.4.0(typescript@5.0.3)
+        specifier: 0.4.1
+        version: 0.4.1(typescript@5.0.3)
       '@terminal-nerds/snippets-runtime':
         specifier: 0.5.0
         version: 0.5.0(typescript@5.0.3)
@@ -1186,8 +1186,8 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@terminal-nerds/snippets-config@0.4.0(typescript@5.0.3):
-    resolution: {integrity: sha512-mF+ADl7VFtfY5ajzcKvEbisFrc+QkvIf2mYE2JPHh6IE+n3fdVzvaTMug7DcDcq3MFOoMukAEnzU+Fsy4ZXONQ==}
+  /@terminal-nerds/snippets-config@0.4.1(typescript@5.0.3):
+    resolution: {integrity: sha512-Hxme1OCvy/wxAjOrpDq6tEz7qYBjUcyr/FW86YIYWYA3tH0K7Lfkg29OX++ZYjo3ofrrjHJnOF0MiAWbFD+ocw==}
     engines: {node: '>=18'}
     peerDependencies:
       typescript: 5.0.3
@@ -1196,7 +1196,7 @@ packages:
         optional: true
     dependencies:
       '@terminal-nerds/snippets-error': 0.4.0(typescript@5.0.3)
-      '@terminal-nerds/snippets-object': 0.3.0(typescript@5.0.3)
+      '@terminal-nerds/snippets-object': 0.4.0(typescript@5.0.3)
       '@terminal-nerds/snippets-runtime': 0.5.0(typescript@5.0.3)
       pkg-dir: 7.0.0
       type-fest: 3.7.2
@@ -1230,8 +1230,8 @@ packages:
       zod: 3.21.4
     dev: false
 
-  /@terminal-nerds/snippets-object@0.3.0(typescript@5.0.3):
-    resolution: {integrity: sha512-ivdlfRJwTIfEDrbDlR8dJqXZG48mxmfEt5DtfRDyTRc1X3aoMwi6uOzOVgR7N33xk/qBNYoko8bqmAZ9pSqEwQ==}
+  /@terminal-nerds/snippets-object@0.4.0(typescript@5.0.3):
+    resolution: {integrity: sha512-XYJHNbCPtESChLcT3r7bGEsJyhP7BBo4MVAq2JpqNy+AR9WIUVVxXO/4RX9SiGzaxSZzCUs/LxFVmZf/y73dYA==}
     engines: {node: '>=18'}
     peerDependencies:
       typescript: 5.0.3
