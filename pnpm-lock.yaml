@@ -316,8 +316,8 @@ importers:
         specifier: 2.10.0
         version: 2.10.0(prettier@2.8.8)
       prettier-plugin-tailwindcss:
-        specifier: 0.2.7
-        version: 0.2.7(prettier-plugin-jsdoc@0.4.2)(prettier-plugin-svelte@2.10.0)(prettier@2.8.8)
+        specifier: 0.2.8
+        version: 0.2.8(prettier-plugin-jsdoc@0.4.2)(prettier-plugin-svelte@2.10.0)(prettier@2.8.8)
     devDependencies:
       '@terminal-nerds/tsup-config':
         specifier: workspace:*
@@ -5663,12 +5663,11 @@ packages:
       prettier: 2.8.8
     dev: false
 
-  /prettier-plugin-tailwindcss@0.2.7(prettier-plugin-jsdoc@0.4.2)(prettier-plugin-svelte@2.10.0)(prettier@2.8.8):
-    resolution: {integrity: sha512-jQopIOgjLpX+y8HeD56XZw7onupRTC0cw7eKKUimI7vhjkPF5/1ltW5LyqaPtSyc8HvEpvNZsvvsGFa2qpa59w==}
+  /prettier-plugin-tailwindcss@0.2.8(prettier-plugin-jsdoc@0.4.2)(prettier-plugin-svelte@2.10.0)(prettier@2.8.8):
+    resolution: {integrity: sha512-KgPcEnJeIijlMjsA6WwYgRs5rh3/q76oInqtMXBA/EMcamrcYJpyhtRhyX1ayT9hnHlHTuO8sIifHF10WuSDKg==}
     engines: {node: '>=12.17.0'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
-      '@prettier/plugin-php': '*'
       '@prettier/plugin-pug': '*'
       '@shopify/prettier-plugin-liquid': '*'
       '@shufo/prettier-plugin-blade': '*'
@@ -5685,8 +5684,6 @@ packages:
       prettier-plugin-twig-melody: '*'
     peerDependenciesMeta:
       '@ianvs/prettier-plugin-sort-imports':
-        optional: true
-      '@prettier/plugin-php':
         optional: true
       '@prettier/plugin-pug':
         optional: true
