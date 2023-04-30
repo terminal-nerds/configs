@@ -35,7 +35,7 @@
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"syncpack": "9.8.6",
 		"tsup": "6.7.0",
-		"typescript": "5.0.3"
+		"typescript": "5.0.4"
 	},
 	"scripts": {
 		"build": "tsup",
