@@ -1,6 +1,8 @@
 import { MAX_LINE_LENGTH, TABS_WIDTH } from "@terminal-nerds/constants-config";
 import { defineConfig } from "eslint-define-config";
 
+import { HAS_TYPESCRIPT } from "./checks.ts";
+
 const config = defineConfig({
 	parserOptions: {
 		ecmaVersion: "latest",
@@ -26,26 +28,26 @@ const config = defineConfig({
 
 	rules: {
 		/**
-		 * RATIONALE:
-		 * Obviously, the functions should have name as to explain
-		 * their intention. Code readability.
+		 * RATIONALE: Obviously, the functions should have name as to explain their intention. Code readability.
 		 */
 		"func-names": ["error", "as-needed"],
 		/**
-		 * RATIONALE:
-		 * Ignore the underscore prefix for unused arguments.
-		 * Sometimes we have omit some function arguments, until we get the one we can actually use.
+		 * RATIONALE: Conflicts with simialr rule in typescript plugin.
+		 */
+		"no-undef": [HAS_TYPESCRIPT ? "off" : "warn"],
+		/**
+		 * RATIONALE: Ignore the underscore prefix for unused arguments. Sometimes we have omit some function arguments,
+		 * until we get the one we can actually use.
 		 */
 		"no-unused-vars": [
-			"warn",
+			HAS_TYPESCRIPT ? "off" : "warn",
 			{
 				argsIgnorePattern: "^_",
+				varsIgnorePattern: "^_",
 			},
 		],
 		/**
-		 * RATIONALE:
-		 * Adjust to adapted code format and stop screaming on lines
-		 * that aren't too long yet.
+		 * RATIONALE: Adjust to adapted code format and stop screaming on lines that aren't too long yet.
 		 */
 		"max-len": [
 			"warn",
@@ -58,8 +60,7 @@ const config = defineConfig({
 			},
 		],
 		/**
-		 * RATIONALE: Remind developers about possible logs that aren't
-		 * supposed to be there.
+		 * RATIONALE: Remind developers about possible logs that aren't supposed to be there.
 		 */
 		"no-console": ["warn", { allow: ["debug"] }],
 	},
