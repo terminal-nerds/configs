@@ -29,11 +29,11 @@
 		"/dist"
 	],
 	"peerDependencies": {
-		"markdownlint-cli": "0.33.0"
+		"markdownlint-cli": "0.34.0"
 	},
 	"devDependencies": {
 		"make-dir-cli": "3.0.0",
-		"markdownlint": "0.28.1",
+		"markdownlint": "0.28.2",
 		"strip-json-comments-cli": "2.0.2"
 	},
 	"scripts": {
