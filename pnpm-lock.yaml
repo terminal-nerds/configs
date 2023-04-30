@@ -146,8 +146,8 @@ importers:
         specifier: 0.51.8
         version: 0.51.8(eslint@8.39.0)(typescript@5.0.4)
       eslint-config-next:
-        specifier: 13.3.1
-        version: 13.3.1(eslint@8.39.0)(typescript@5.0.4)
+        specifier: 13.3.2
+        version: 13.3.2(eslint@8.39.0)(typescript@5.0.4)
       eslint-config-prettier:
         specifier: 8.8.0
         version: 8.8.0(eslint@8.39.0)
@@ -212,8 +212,8 @@ importers:
         specifier: 0.6.11
         version: 0.6.11(eslint@8.39.0)(typescript@5.0.4)
       eslint-plugin-svelte:
-        specifier: 2.27.0
-        version: 2.27.0(eslint@8.39.0)
+        specifier: 2.27.2
+        version: 2.27.2(eslint@8.39.0)
       eslint-plugin-tailwindcss:
         specifier: 3.11.0
         version: 3.11.0
@@ -1133,8 +1133,8 @@ packages:
     resolution: {integrity: sha512-9b8mPpKrfeGRuhFH5iO1iwCLeIIsV6+H1sRfxbkoGXIyQE2BTsPd9zqSqQJ+pv5sJ/hT5M1zvOFL02MnEezFug==}
     dev: false
 
-  /@next/eslint-plugin-next@13.3.1:
-    resolution: {integrity: sha512-Hpd74UrYGF+bq9bBSRDXRsRfaWkPpcwjhvachy3sr/R/5fY6feC0T0s047pUthyqcaeNsqKOY1nUGQQJNm4WyA==}
+  /@next/eslint-plugin-next@13.3.2:
+    resolution: {integrity: sha512-YHugXBtXWVUjSMRirZPxDlDn3LvYpuCqaRlIHgKA52Q6PVtYtmFjhzYQ8LuN9mKCKF5NOZcrf3jya2uL8WQwuw==}
     dependencies:
       glob: 7.1.7
     dev: false
@@ -1700,7 +1700,7 @@ packages:
       '@vue/shared': 3.2.47
       estree-walker: 2.0.2
       magic-string: 0.25.9
-      postcss: 8.4.21
+      postcss: 8.4.23
       source-map: 0.6.1
     dev: true
 
@@ -2853,8 +2853,8 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /eslint-config-next@13.3.1(eslint@8.39.0)(typescript@5.0.4):
-    resolution: {integrity: sha512-DieA5djybeE3Q0IqnDXihmhgRSp44x1ywWBBpVRA9pSx+m5Icj8hFclx7ffXlAvb9MMLN6cgj/hqJ4lka/QmvA==}
+  /eslint-config-next@13.3.2(eslint@8.39.0)(typescript@5.0.4):
+    resolution: {integrity: sha512-SHhE2Jo06wL3Y/hkb0in2FPXZJY3Q+6sTMUtlQkAYZFldRxoK4C5siXmuOcwSKBnaddVM1Az6GpTIDwFmKRwbg==}
     peerDependencies:
       eslint: ^7.23.0 || ^8.0.0
       typescript: '>=3.3.1'
@@ -2862,7 +2862,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@next/eslint-plugin-next': 13.3.1
+      '@next/eslint-plugin-next': 13.3.2
       '@rushstack/eslint-patch': 1.2.0
       '@typescript-eslint/parser': 5.59.1(eslint@8.39.0)(typescript@5.0.4)
       eslint: 8.39.0
@@ -3268,8 +3268,8 @@ packages:
       - typescript
     dev: false
 
-  /eslint-plugin-svelte@2.27.0(eslint@8.39.0):
-    resolution: {integrity: sha512-TA2VBBOIRUyOqsTZlhlaAWmaaMK6VxM1fGi1171uVpFvGsjwMfMPOfW5s3KtXmRGccUXc0hEw4sSQvjVYB35vQ==}
+  /eslint-plugin-svelte@2.27.2(eslint@8.39.0):
+    resolution: {integrity: sha512-1tIl65TMF0MtY26+O/1Y5S5HEFc0vRzzoX3m9FHI6VuiruqFU9PBr8WzoqdaSPlcL/q7xPUzQYl4Fzg/3GBpcg==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0-0
@@ -3284,9 +3284,9 @@ packages:
       eslint: 8.39.0
       esutils: 2.0.3
       known-css-properties: 0.27.0
-      postcss: 8.4.21
-      postcss-load-config: 3.1.4(postcss@8.4.21)
-      postcss-safe-parser: 6.0.0(postcss@8.4.21)
+      postcss: 8.4.23
+      postcss-load-config: 3.1.4(postcss@8.4.23)
+      postcss-safe-parser: 6.0.0(postcss@8.4.23)
       svelte-eslint-parser: 0.27.0
     transitivePeerDependencies:
       - supports-color
@@ -5538,7 +5538,7 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
-  /postcss-load-config@3.1.4(postcss@8.4.21):
+  /postcss-load-config@3.1.4(postcss@8.4.23):
     resolution: {integrity: sha512-6DiM4E7v4coTE4uzA8U//WhtPwyhiim3eyjEMFCnUpzbrkK9wJHgKDT2mR+HbtSrd/NubVaYTOpSpjUl8NQeRg==}
     engines: {node: '>= 10'}
     peerDependencies:
@@ -5551,7 +5551,7 @@ packages:
         optional: true
     dependencies:
       lilconfig: 2.1.0
-      postcss: 8.4.21
+      postcss: 8.4.23
       yaml: 1.10.2
 
   /postcss-media-query-parser@0.2.3:
@@ -5559,15 +5559,6 @@ packages:
 
   /postcss-resolve-nested-selector@0.1.1:
     resolution: {integrity: sha512-HvExULSwLqHLgUy1rl3ANIqCsvMS0WHss2UOsXhXnQaZ9VCc2oBvIpXrl00IUFT5ZDITME0o6oiXeiHr2SAIfw==}
-
-  /postcss-safe-parser@6.0.0(postcss@8.4.21):
-    resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==}
-    engines: {node: '>=12.0'}
-    peerDependencies:
-      postcss: ^8.3.3
-    dependencies:
-      postcss: 8.4.21
-    dev: false
 
   /postcss-safe-parser@6.0.0(postcss@8.4.23):
     resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==}
@@ -6917,7 +6908,7 @@ packages:
       execa: 5.1.1
       globby: 11.1.0
       joycon: 3.1.1
-      postcss-load-config: 3.1.4(postcss@8.4.21)
+      postcss-load-config: 3.1.4(postcss@8.4.23)
       resolve-from: 5.0.0
       rollup: 3.20.2
       source-map: 0.8.0-beta.0
