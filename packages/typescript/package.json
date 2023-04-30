@@ -44,10 +44,10 @@
 		"es-module.json"
 	],
 	"peerDependencies": {
-		"typescript": "5.0.3"
+		"typescript": "5.0.4"
 	},
 	"devDependencies": {
-		"typescript": "5.0.3"
+		"typescript": "5.0.4"
 	},
 	"scripts": {
 		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
