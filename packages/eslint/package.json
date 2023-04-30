@@ -31,7 +31,7 @@
 		"@docusaurus/eslint-plugin": "2.4.0",
 		"@emotion/eslint-plugin": "11.10.0",
 		"@terminal-nerds/constants-config": "workspace:*",
-		"@terminal-nerds/snippets-config": "0.4.0",
+		"@terminal-nerds/snippets-config": "0.4.1",
 		"@terminal-nerds/snippets-extension": "0.4.0",
 		"@terminal-nerds/snippets-runtime": "0.5.0",
 		"@typescript-eslint/eslint-plugin": "5.57.0",
