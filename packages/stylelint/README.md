@@ -105,11 +105,14 @@ options _conditionally_.
 
 | Plugin                                      | Version                                                    | Loading condition(s) |
 | ------------------------------------------- | ---------------------------------------------------------- | -------------------- |
+| [stylelint-css-modules]                     | ![stylelint-css-modules version badge]                     | -                    |
 | [stylelint-high-performance-animation]      | ![stylelint-high-performance-animation version badge]      | -                    |
 | [stylelint-no-unsupported-browser-features] | ![stylelint-no-unsupported-browser-features version badge] | -                    |
 | [stylelint-order]                           | ![stylelint-order version badge]                           | -                    |
 | [stylelint-scss]                            | ![stylelint-scss version badge]                            | `sass` as dependency |
 
+[stylelint-css-modules]: https://github.com/juanca/stylelint-css-modules
+[stylelint-css-modules version badge]: https://img.shields.io/npm/v/stylelint-css-modules?logo=npm&style=flat-square
 [stylelint-high-performance-animation]: https://github.com/kristerkari/stylelint-high-performance-animation
 [stylelint-high-performance-animation version badge]: https://img.shields.io/npm/v/stylelint-high-performance-animation?logo=npm&style=flat-square
 [stylelint-no-unsupported-browser-features]: https://github.com/ismay/stylelint-no-unsupported-browser-features
