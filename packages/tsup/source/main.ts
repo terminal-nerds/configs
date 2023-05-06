@@ -1,6 +1,12 @@
 import type { Options } from "tsup";
 
-/** Base configuration to be used across the projects */
+/**
+ * Base configuration to be used across the projects.
+ *
+ * @deprecated Use `getConfig`
+ *
+ * @param options
+ */
 export function getBaseOptions(options: Options): Options {
 	const { watch } = options;
 
@@ -16,7 +22,13 @@ export function getBaseOptions(options: Options): Options {
 	};
 }
 
-/** Optimal configuration for building component(s) */
+/**
+ * Optimal configuration for building component(s)
+ *
+ * @deprecated Use `getConfig("browser")` instead.
+ *
+ * @param options
+ */
 export function getComponentOptions(options: Options): Options {
 	const { watch } = options;
 
@@ -35,18 +47,28 @@ export function getComponentOptions(options: Options): Options {
 	};
 }
 
-/** Optimal configuration for building in CommonJS type */
+/**
+ * Optimal configuration for building in CommonJS type.
+ *
+ * @deprecated Use `getConfig("cjs")` instead.
+ *
+ * @param options
+ */
 export function getNodeCJSOptions(options: Options): Options {
 	return {
 		...getBaseOptions(options),
 		format: ["cjs"],
 		platform: "node",
-		target: "node18",
+		target: "esnext",
 		shims: true,
 	};
 }
 
-/** Optimal configuration for building in ES Module type */
+/**
+ * Optimal configuration for building in ES Module type.
+ *
+ * @param options
+ */
 export function getNodeESMOptions(options: Options): Options {
 	return {
 		...getBaseOptions(options),
@@ -56,7 +78,13 @@ export function getNodeESMOptions(options: Options): Options {
 	};
 }
 
-/** Optimal configuration for building in both CommonJS and ES Modules types () */
+/**
+ * Optimal configuration for building in both CommonJS and ES Modules types ()
+ *
+ * @deprecated Use `getConfig()` or `getConfig("universal")` instead.
+ *
+ * @param options
+ */
 export function getNodeUniversalOptions(options: Options): Options {
 	return {
 		...getBaseOptions(options),
@@ -65,4 +93,43 @@ export function getNodeUniversalOptions(options: Options): Options {
 		shims: true,
 		target: "node18",
 	};
+}
+
+export type TsupBuildTarget = "cjs" | "esm" | "browser" | "universal";
+
+/**
+ * @param target
+ * @param options
+ *
+ * @see {@link https://github.com/egoist/tsup} tsup Repository
+ */
+export function getOptions(target: TsupBuildTarget = "universal", options: Options = {}): Options {
+	const { watch } = options;
+
+	return {
+		clean: true,
+		dts: true,
+		format: getFormat(target),
+		minify: false,
+		outDir: "./dist",
+		platform: target === "browser" ? "browser" : "node",
+		shims: true,
+		sourcemap: !watch,
+		splitting: true,
+		target: "esnext",
+	};
+}
+
+function getFormat(target: TsupBuildTarget): NonNullable<Options["format"]> {
+	const format: Options["format"] = [];
+
+	if (target === "cjs" || target === "universal") {
+		format.push("cjs");
+	}
+
+	if (target === "esm" || target === "universal") {
+		format.push("esm");
+	}
+
+	return format;
 }
