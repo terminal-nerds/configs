@@ -53,42 +53,40 @@ device(s):
 
 1. **Create a [tsup configuration file] - `tsup.config.ts`**.
 
-1. **Import a specific [configuration getter] from this module package configuration and use it.**\
-   NOTE: This one below is an example!
+1. **Use a specific [configuration target], and use it.**\
 
     ```ts
     import { defineConfig } from "tsup";
 
-    import { setNodeUniveralOptions } from "@terminal-nerds/tsup-config";
+    import { getOptions } from "@terminal-nerds/tsup-config";
 
     export default defineConfig((options) => ({
-    	...setNodeUniveralOptions(options),
+    	...getOptions("universal", options),
     	entry: ["./source/**/*.ts"],
     }));
     ```
 
 📖 For the [tsup CLI] usage, please refer to its documentation.
 
-[configuration getter]: #available-options-getters
+[configuration targets]: #available-targets
 [tsup configuration file]: https://tsup.egoist.dev/#using-custom-configuration
 [tsup cli]: https://tsup.egoist.dev/#usage
 
 ---
 
-## Available options getters
+## Available targets
 
 [dependencies badge]: https://img.shields.io/librariesio/release/npm/@terminal-nerds/tsup-config?style=for-the-badge
 [dependencies url]: https://libraries.io/npm/@terminal-nerds%2Ftsup-config
 
 [![Dependencies badge]][dependencies url]
 
-| Name                        | Purpose                                                                   |
-| --------------------------- | ------------------------------------------------------------------------- |
-| `getBaseOptions()`          | For the **general** usage                                                 |
-| `getComponentOptions()`     | For building a **component** package                                      |
-| `getNodeCJSOptions()`       | For building a Node.js package in **CommonJS** format                     |
-| `getNodeESMOptions()`       | For building a Node.js package in **ES Modules** format                   |
-| `getNodeUniversalOptions()` | For building a Node.js package in both **CommonJS and ES Modules** format |
+| Name        | Purpose                                                                   |
+| ----------- | ------------------------------------------------------------------------- |
+| `browser`   | For building a package, which will be used only in browser                |
+| `cjs`       | For building a Node.js package in **CommonJS** format                     |
+| `esm`       | For building a Node.js package in **ES Modules** format                   |
+| `universal` | For building a Node.js package in both **CommonJS and ES Modules** format |
 
 ---
 

@@ -1,9 +1,9 @@
-import { getNodeCJSOptions } from "@terminal-nerds/tsup-config";
+import { getOptions } from "@terminal-nerds/tsup-config";
 import { defineConfig } from "tsup";
 
 export default defineConfig((options) => ({
-	...getNodeCJSOptions(options),
+	...getOptions("cjs", options),
 	bundle: true,
 	entry: ["source/index.ts"],
-	noExternal: ["@terminal-nerds/snippets-runtime/scope", "@terminal-nerds/snippets-runtime/variable"],
+	noExternal: [],
 }));
