@@ -85,11 +85,12 @@ options _conditionally_.
 
 ### Configurations
 
-| Configurations                   | Version                                    | Loading condition(s)        |
-| -------------------------------- | ------------------------------------------ | --------------------------- |
-| [stylelint-config-prettier]      | ![stylelint-config-prettier version badge] | `prettier` as dependency    |
-| [stylelint-config-standard]      | ![stylelint-config-prettier version badge] | **NO** `sass` as dependency |
-| [stylelint-config-standard-scss] | ![stylelint-config-prettier version badge] | `sass` as dependency        |
+| Configurations                   | Version                                         | Loading condition(s)        |
+| -------------------------------- | ----------------------------------------------- | --------------------------- |
+| [stylelint-config-prettier]      | ![stylelint-config-prettier version badge]      | `prettier` as dependency    |
+| [stylelint-config-standard]      | ![stylelint-config-standard version badge]      | **NO** `sass` as dependency |
+| [stylelint-config-standard-scss] | ![stylelint-config-standard-scss version badge] | `sass` as dependency        |
+| [stylelint-config-tailwindcss]   | ![stylelint-config-prettier version badge]      | `tailwindcss` as dependency |
 
 [stylelint-config-prettier]: https://github.com/prettier/stylelint-config-prettier
 [stylelint-config-prettier version badge]: https://img.shields.io/npm/v/stylelint-config-prettier?logo=npm&style=flat-square
@@ -97,16 +98,21 @@ options _conditionally_.
 [stylelint-config-standard version badge]: https://img.shields.io/npm/v/stylelint-config-standard?logo=npm&style=flat-square
 [stylelint-config-standard-scss]: https://github.com/stylelint-scss/stylelint-config-standard-scss
 [stylelint-config-standard-scss version badge]: https://img.shields.io/npm/v/stylelint-config-standard-scss?logo=npm&style=flat-square
+[stylelint-config-tailwindcss]: https://github.com/zhilidali/stylelint-config-tailwindcss
+[stylelint-config-tailwindcss version badge]: https://img.shields.io/npm/v/stylelint-config-tailwindcss?logo=npm&style=flat-square
 
 ### Plugins
 
 | Plugin                                      | Version                                                    | Loading condition(s) |
 | ------------------------------------------- | ---------------------------------------------------------- | -------------------- |
+| [stylelint-css-modules]                     | ![stylelint-css-modules version badge]                     | -                    |
 | [stylelint-high-performance-animation]      | ![stylelint-high-performance-animation version badge]      | -                    |
 | [stylelint-no-unsupported-browser-features] | ![stylelint-no-unsupported-browser-features version badge] | -                    |
 | [stylelint-order]                           | ![stylelint-order version badge]                           | -                    |
 | [stylelint-scss]                            | ![stylelint-scss version badge]                            | `sass` as dependency |
 
+[stylelint-css-modules]: https://github.com/juanca/stylelint-css-modules
+[stylelint-css-modules version badge]: https://img.shields.io/npm/v/stylelint-css-modules?logo=npm&style=flat-square
 [stylelint-high-performance-animation]: https://github.com/kristerkari/stylelint-high-performance-animation
 [stylelint-high-performance-animation version badge]: https://img.shields.io/npm/v/stylelint-high-performance-animation?logo=npm&style=flat-square
 [stylelint-no-unsupported-browser-features]: https://github.com/ismay/stylelint-no-unsupported-browser-features
