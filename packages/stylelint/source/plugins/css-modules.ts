@@ -8,6 +8,7 @@ import { HAS_SASS } from "../checks.ts";
 const config: Partial<Config> = {
 	plugins: ["stylelint-css-modules"],
 	rules: {
+		"selector-pseudo-class-no-unknown": [true, { ignorePseudoClasses: ["local", "global"] }],
 		"css-modules/composed-class-names": true,
 		"css-modules/css-variables": [
 			true,
@@ -16,7 +17,7 @@ const config: Partial<Config> = {
 					extensions: exclude(STYLESHEETS_EXTENSIONS, [HAS_SASS && "sass", HAS_SASS && "scss"]).map(
 						(extension) => `.${extension}`,
 					),
-					modules: ["node_modules"],
+					modules: ["node_modules", "source", "src", "styles"],
 				},
 			},
 		],

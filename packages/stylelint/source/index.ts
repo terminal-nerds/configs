@@ -6,6 +6,7 @@ import configPrettier from "./configs/prettier.ts";
 import configStandard from "./configs/standard.ts";
 import configStandardSCSS from "./configs/standard-scss.ts";
 import configTailwindCSS from "./configs/tailwindcss.ts";
+import pluginCSSModules from "./plugins/css-modules.ts";
 import pluginHighPerformanceAnimations from "./plugins/high-performance-animations.ts";
 import pluginNoUnsupportedBrowserFeatures from "./plugins/no-unsupported-browser-features.ts";
 import pluginOrder from "./plugins/order/index.ts";
@@ -17,6 +18,7 @@ const config = createMergedConfig<Config>([
 	stylelint,
 
 	// Plugins
+	pluginCSSModules,
 	pluginHighPerformanceAnimations,
 	pluginNoUnsupportedBrowserFeatures,
 	pluginOrder,

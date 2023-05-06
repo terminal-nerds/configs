@@ -20,9 +20,6 @@ const config: Partial<Config> = {
 		// RATIONALE: Prevent conflicting with `order` plugin
 		"declaration-empty-line-before": undefined,
 
-		// RATIONALE: Allow CSS Modules
-		"selector-pseudo-class-no-unknown": [true, { ignorePseudoClasses: ["local", "global"] }],
-
 		// RATIONALE:
 		// Longhand properties are more readable and descriptive.
 		// Not everyone is a CSS Ninja. It's minifiers job to reduce it.
