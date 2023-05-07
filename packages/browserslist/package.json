@@ -23,10 +23,12 @@
 	"exports": {
 		"./browsers": {
 			"types": "./dist/browsers.d.ts",
+			"import": "./dist/browsers.js",
 			"require": "./dist/browsers.cjs"
 		},
 		"./node": {
 			"types": "./dist/node.d.ts",
+			"import": "./dist/browsers.js",
 			"require": "./dist/node.cjs"
 		}
 	},
@@ -60,5 +62,8 @@
 		"lint:md": "markdownlint . --config \"../../.markdownlint.json\" --dot --ignore-path \"../../.gitignore\"",
 		"lint:types": "tsc --noEmit",
 		"prepack": "clean-package --config \"../../.clean-packagerc.cjs\""
+	},
+	"dependencies": {
+		"browserslist": "link:../../../terminal-nerds/configs/packages/browserslist"
 	}
 }

@@ -1,8 +1,8 @@
-import { getNodeCJSOptions } from "@terminal-nerds/tsup-config";
+import { getOptions } from "@terminal-nerds/tsup-config";
 import { defineConfig } from "tsup";
 
 export default defineConfig((options) => ({
-	...getNodeCJSOptions(options),
+	...getOptions("universal", options),
 	bundle: true,
 	entry: ["source/*.ts"],
 }));

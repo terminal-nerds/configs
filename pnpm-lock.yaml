@@ -87,6 +87,10 @@ importers:
         version: 5.0.4
 
   packages/browserslist:
+    dependencies:
+      browserslist:
+        specifier: link:../../../terminal-nerds/configs/packages/browserslist
+        version: link:../../../terminal-nerds/configs/packages/browserslist
     devDependencies:
       '@terminal-nerds/tsup-config':
         specifier: workspace:*
