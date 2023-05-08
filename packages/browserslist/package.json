@@ -36,7 +36,7 @@
 		"/dist"
 	],
 	"dependencies": {
-		"browserslist": "link:../../../terminal-nerds/configs/packages/browserslist"
+		"browserslist": "4.21.5"
 	},
 	"peerDependencies": {
 		"browserslist": "4.21.5"
