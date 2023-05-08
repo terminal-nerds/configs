@@ -5,5 +5,4 @@ export default defineConfig((options) => ({
 	...getOptions("cjs", options),
 	bundle: true,
 	entry: ["source/index.ts"],
-	noExternal: [],
 }));

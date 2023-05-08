@@ -29,8 +29,8 @@
 	],
 	"dependencies": {
 		"@terminal-nerds/constants-config": "workspace:*",
-		"@terminal-nerds/snippets-config": "0.4.3",
-		"@terminal-nerds/snippets-runtime": "0.6.1",
+		"@terminal-nerds/snippets-config": "0.4.4",
+		"@terminal-nerds/snippets-runtime": "0.6.2",
 		"prettier-plugin-jsdoc": "0.4.2",
 		"prettier-plugin-sort-markdown-table": "1.0.2",
 		"prettier-plugin-svelte": "2.10.0",

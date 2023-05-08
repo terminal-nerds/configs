@@ -35,6 +35,9 @@
 	"files": [
 		"/dist"
 	],
+	"dependencies": {
+		"browserslist": "4.21.5"
+	},
 	"peerDependencies": {
 		"browserslist": "4.21.5"
 	},
@@ -62,8 +65,5 @@
 		"lint:md": "markdownlint . --config \"../../.markdownlint.json\" --dot --ignore-path \"../../.gitignore\"",
 		"lint:types": "tsc --noEmit",
 		"prepack": "clean-package --config \"../../.clean-packagerc.cjs\""
-	},
-	"dependencies": {
-		"browserslist": "link:../../../terminal-nerds/configs/packages/browserslist"
 	}
 }
