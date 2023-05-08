@@ -4,8 +4,6 @@ import type { Options } from "tsup";
  * Base configuration to be used across the projects.
  *
  * @deprecated Use `getConfig`
- *
- * @param options
  */
 export function getBaseOptions(options: Options): Options {
 	const { watch } = options;
@@ -26,8 +24,6 @@ export function getBaseOptions(options: Options): Options {
  * Optimal configuration for building component(s)
  *
  * @deprecated Use `getConfig("browser")` instead.
- *
- * @param options
  */
 export function getComponentOptions(options: Options): Options {
 	const { watch } = options;
@@ -66,8 +62,6 @@ export function getNodeCJSOptions(options: Options): Options {
 
 /**
  * Optimal configuration for building in ES Module type.
- *
- * @param options
  */
 export function getNodeESMOptions(options: Options): Options {
 	return {
@@ -82,8 +76,6 @@ export function getNodeESMOptions(options: Options): Options {
  * Optimal configuration for building in both CommonJS and ES Modules types ()
  *
  * @deprecated Use `getConfig()` or `getConfig("universal")` instead.
- *
- * @param options
  */
 export function getNodeUniversalOptions(options: Options): Options {
 	return {
@@ -98,12 +90,12 @@ export function getNodeUniversalOptions(options: Options): Options {
 export type TsupBuildTarget = "cjs" | "esm" | "browser" | "universal";
 
 /**
- * @param target
- * @param options
- *
  * @see {@link https://github.com/egoist/tsup} tsup Repository
  */
-export function getOptions(target: TsupBuildTarget = "universal", options: Options = {}): Options {
+export function getOptions(
+	target: TsupBuildTarget = "universal",
+	options: Options = {}
+): Options {
 	const { watch } = options;
 
 	return {
@@ -117,6 +109,7 @@ export function getOptions(target: TsupBuildTarget = "universal", options: Optio
 		sourcemap: !watch,
 		splitting: true,
 		target: "esnext",
+		treeshake: true,
 	};
 }
 
