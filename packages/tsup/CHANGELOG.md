@@ -1,5 +1,13 @@
 # @terminal-nerds/tsup-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.4.0
+
+### Minor Changes
+
+-   [#335](https://github.com/terminal-nerds/configs/pull/335) [`82c6e19`](https://github.com/terminal-nerds/configs/commit/82c6e19f5cd0db2b00f75ce4fccac8fa43d4777e) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Improved build output
+
+-   [#331](https://github.com/terminal-nerds/configs/pull/331) [`355482c`](https://github.com/terminal-nerds/configs/commit/355482c831513c5ccbf24caf12fbb46afe7ef2fe) Thanks [@xeho91](https://github.com/xeho91)! - ♻️ Refactor - simplify to one function `getOptions(target, options)`
+
 ## 0.3.1
 
 ### Patch Changes

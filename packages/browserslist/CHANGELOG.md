@@ -1,5 +1,13 @@
 # @terminal-nerds/browserslist-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.3.0
+
+### Minor Changes
+
+-   [#334](https://github.com/terminal-nerds/configs/pull/334) [`b8ee16f`](https://github.com/terminal-nerds/configs/commit/b8ee16f323da304431bd505b581d440094464b0b) Thanks [@xeho91](https://github.com/xeho91)! - Add Opera Mini to exclusion list & ESM support
+
+-   [#335](https://github.com/terminal-nerds/configs/pull/335) [`82c6e19`](https://github.com/terminal-nerds/configs/commit/82c6e19f5cd0db2b00f75ce4fccac8fa43d4777e) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Improved build output
+
 ## 0.2.1
 
 ### Patch Changes

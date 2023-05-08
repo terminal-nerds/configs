@@ -1,5 +1,13 @@
 # @terminal-nerds/vitest-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.9.0
+
+### Minor Changes
+
+-   [#335](https://github.com/terminal-nerds/configs/pull/335) [`82c6e19`](https://github.com/terminal-nerds/configs/commit/82c6e19f5cd0db2b00f75ce4fccac8fa43d4777e) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Improved build output
+
+-   [#330](https://github.com/terminal-nerds/configs/pull/330) [`dfab574`](https://github.com/terminal-nerds/configs/commit/dfab5747083a2de4756c144c5cae42ff31e02c2d) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update Vitest dependencies
+
 ## 0.8.0
 
 ### Minor Changes

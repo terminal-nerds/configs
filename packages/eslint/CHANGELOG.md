@@ -1,5 +1,27 @@
 # @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.24.0
+
+### Minor Changes
+
+-   [#336](https://github.com/terminal-nerds/configs/pull/336) [`109feb7`](https://github.com/terminal-nerds/configs/commit/109feb7777aa5e362a7565658d8229023d2b71b8) Thanks [@xeho91](https://github.com/xeho91)! - ⬆️ Upgrade dependencies
+
+-   [#332](https://github.com/terminal-nerds/configs/pull/332) [`b250eeb`](https://github.com/terminal-nerds/configs/commit/b250eebb04530ee8f98a0d3ed246296e5d36835b) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update ESLint to `v8.4.0`
+
+-   [#336](https://github.com/terminal-nerds/configs/pull/336) [`109feb7`](https://github.com/terminal-nerds/configs/commit/109feb7777aa5e362a7565658d8229023d2b71b8) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Tweak Tailwind CSS plugin rules:
+
+    -   `classname-order` - off by default, allow official Tailwind CSS' Prettier plugin to handle ordering
+    -   `no-custom-classname` - off by default, to remove unneccessary warnings from using CSS modules
+
+-   [#335](https://github.com/terminal-nerds/configs/pull/335) [`82c6e19`](https://github.com/terminal-nerds/configs/commit/82c6e19f5cd0db2b00f75ce4fccac8fa43d4777e) Thanks [@xeho91](https://github.com/xeho91)! - 🔧 Improved build output
+
+### Patch Changes
+
+-   [#328](https://github.com/terminal-nerds/configs/pull/328) [`2be4379`](https://github.com/terminal-nerds/configs/commit/2be437942ce5c0641063e8fa6f404f683a6dabbe) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update ESLint dependencies
+
+-   Updated dependencies [[`82c6e19`](https://github.com/terminal-nerds/configs/commit/82c6e19f5cd0db2b00f75ce4fccac8fa43d4777e)]:
+    -   @terminal-nerds/constants-config@0.3.0
+
 ## 0.23.0
 
 ### Minor Changes
