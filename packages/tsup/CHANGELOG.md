@@ -1,5 +1,11 @@
 # @terminal-nerds/tsup-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.5.0
+
+### Minor Changes
+
+-   [#350](https://github.com/terminal-nerds/configs/pull/350) [`72f6863`](https://github.com/terminal-nerds/configs/commit/72f6863b189887b7950331fca675dab3520ee16e) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `tsup` to `v7`
+
 ## 0.4.0
 
 ### Minor Changes
