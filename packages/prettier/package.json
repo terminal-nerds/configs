@@ -48,7 +48,7 @@
 		"@terminal-nerds/tsup-config": "workspace:*",
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"@types/prettier": "2.7.2",
-		"tsup": "6.7.0",
+		"tsup": "7.0.0",
 		"typescript": "5.0.4"
 	},
 	"scripts": {
