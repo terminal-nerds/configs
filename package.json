@@ -24,7 +24,7 @@
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"@types/node": "18.16.3",
 		"all-contributors-cli": "6.25.0",
-		"browserslist": "4.21.5",
+		"browserslist": "4.21.9",
 		"clean-package": "2.2.0",
 		"concurrently": "8.0.1",
 		"del-cli": "5.0.0",
