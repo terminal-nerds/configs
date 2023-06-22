@@ -1,5 +1,18 @@
 # @terminal-nerds/eslint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.25.0
+
+### Minor Changes
+
+-   [#340](https://github.com/terminal-nerds/configs/pull/340) [`94e7e17`](https://github.com/terminal-nerds/configs/commit/94e7e17233a367eb08dd4e7617ed14bd72dea34d) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update ESLint dependencies
+
+-   [#343](https://github.com/terminal-nerds/configs/pull/343) [`f8f1794`](https://github.com/terminal-nerds/configs/commit/f8f1794068512567f43258f8b7c5fd4657453c60) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update ESLint dependencies (major)
+
+### Patch Changes
+
+-   Updated dependencies []:
+    -   @terminal-nerds/constants-config@0.3.0
+
 ## 0.24.0
 
 ### Minor Changes

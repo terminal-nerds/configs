@@ -1,5 +1,16 @@
 # @terminal-nerds/prettier-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.13.0
+
+### Minor Changes
+
+-   [#341](https://github.com/terminal-nerds/configs/pull/341) [`83b3713`](https://github.com/terminal-nerds/configs/commit/83b371365a173ab65a5a7bce0c67d9adf5555e48) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update Prettier dependencies
+
+### Patch Changes
+
+-   Updated dependencies []:
+    -   @terminal-nerds/constants-config@0.3.0
+
 ## 0.12.0
 
 ### Minor Changes
