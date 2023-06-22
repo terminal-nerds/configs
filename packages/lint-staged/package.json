@@ -42,7 +42,7 @@
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"lint-staged": "13.2.2",
 		"tsup": "7.0.0",
-		"typescript": "5.0.4"
+		"typescript": "5.1.3"
 	},
 	"scripts": {
 		"build": "tsup",
