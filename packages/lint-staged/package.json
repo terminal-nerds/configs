@@ -35,12 +35,12 @@
 		"@terminal-nerds/snippets-runtime": "0.6.2"
 	},
 	"peerDependencies": {
-		"lint-staged": "13.2.2"
+		"lint-staged": "13.2.3"
 	},
 	"devDependencies": {
 		"@terminal-nerds/tsup-config": "workspace:*",
 		"@terminal-nerds/typescript-config": "workspace:*",
-		"lint-staged": "13.2.2",
+		"lint-staged": "13.2.3",
 		"tsup": "7.1.0",
 		"typescript": "5.1.6"
 	},
