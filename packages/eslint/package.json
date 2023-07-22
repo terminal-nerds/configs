@@ -84,7 +84,7 @@
 		"@terminal-nerds/tsup-config": "workspace:*",
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"@types/eslint": "8.40.2",
-		"tsup": "7.0.0",
+		"tsup": "7.1.0",
 		"typescript": "5.1.3"
 	},
 	"scripts": {
