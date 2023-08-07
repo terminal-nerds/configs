@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: false
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -35,8 +39,8 @@ importers:
         specifier: workspace:*
         version: link:packages/typescript
       '@types/node':
-        specifier: 18.16.3
-        version: 18.16.3
+        specifier: 18.17.2
+        version: 18.17.2
       all-contributors-cli:
         specifier: 6.26.1
         version: 6.26.1
@@ -443,7 +447,7 @@ importers:
         version: 0.33.0(vitest@0.33.0)
       vite:
         specifier: 4.4.4
-        version: 4.4.4(@types/node@18.16.3)
+        version: 4.4.4(@types/node@18.17.2)
     devDependencies:
       '@terminal-nerds/tsup-config':
         specifier: workspace:*
@@ -1676,6 +1680,9 @@ packages:
 
   /@types/node@18.16.3:
     resolution: {integrity: sha512-OPs5WnnT1xkCBiuQrZA4+YAV4HEJejmHneyraIaxsbev5yCEr6KMwINNFP9wQeFIw8FWcoTqF3vQsa5CDaI+8Q==}
+
+  /@types/node@18.17.2:
+    resolution: {integrity: sha512-wBo3KqP/PBqje5TI9UTiuL3yWfP6sdPtjtygSOqcYZWT232dfDeDOnkDps5wqZBP9NgGgYrNejinl0faAuE+HQ==}
 
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -7754,6 +7761,42 @@ packages:
       rollup: 3.26.3
     optionalDependencies:
       fsevents: 2.3.2
+
+  /vite@4.4.4(@types/node@18.17.2):
+    resolution: {integrity: sha512-4mvsTxjkveWrKDJI70QmelfVqTm+ihFAb6+xf4sjEU2TmUCTlVX87tmg/QooPEMQb/lM9qGHT99ebqPziEd3wg==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': '>= 14'
+      less: '*'
+      lightningcss: ^1.21.0
+      sass: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      less:
+        optional: true
+      lightningcss:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+    dependencies:
+      '@types/node': 18.17.2
+      esbuild: 0.18.15
+      postcss: 8.4.27
+      rollup: 3.26.3
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: false
 
   /vitest@0.33.0(@vitest/ui@0.33.0):
     resolution: {integrity: sha512-1CxaugJ50xskkQ0e969R/hW47za4YXDUfWJDxip1hwbnhUjYolpfUn2AMOulqG/Dtd9WYAtkHmM/m3yKVrEejQ==}
