@@ -49,7 +49,7 @@
 		"@terminal-nerds/tsup-config": "workspace:*",
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"stylelint": "15.10.2",
-		"tsup": "7.1.0",
+		"tsup": "7.2.0",
 		"typescript": "5.1.6"
 	},
 	"scripts": {
