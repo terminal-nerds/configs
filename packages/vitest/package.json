@@ -39,18 +39,18 @@
 	],
 	"dependencies": {
 		"@vitest/coverage-c8": "0.33.0",
-		"@vitest/ui": "0.34.1",
-		"vite": "4.4.8"
+		"@vitest/ui": "0.34.3",
+		"vite": "4.4.9"
 	},
 	"peerDependencies": {
-		"vitest": "0.34.1"
+		"vitest": "0.34.3"
 	},
 	"devDependencies": {
 		"@terminal-nerds/tsup-config": "workspace:*",
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"tsup": "7.2.0",
 		"typescript": "5.2.2",
-		"vitest": "0.34.1"
+		"vitest": "0.34.3"
 	},
 	"scripts": {
 		"build": "tsup",
