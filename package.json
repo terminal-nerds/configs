@@ -28,7 +28,7 @@
 		"clean-package": "2.2.0",
 		"concurrently": "8.2.0",
 		"del-cli": "5.0.0",
-		"depcheck": "1.4.3",
+		"depcheck": "1.4.5",
 		"eslint": "8.46.0",
 		"husky": "8.0.3",
 		"lint-staged": "13.2.3",
