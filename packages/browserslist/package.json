@@ -45,7 +45,7 @@
 		"@terminal-nerds/tsup-config": "workspace:*",
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"tsup": "7.2.0",
-		"typescript": "5.1.6"
+		"typescript": "5.2.2"
 	},
 	"scripts": {
 		"build": "tsup",
