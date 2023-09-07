@@ -34,7 +34,7 @@
 	"devDependencies": {
 		"make-dir-cli": "3.0.0",
 		"markdownlint": "0.30.0",
-		"strip-json-comments-cli": "2.0.2"
+		"strip-json-comments-cli": "3.0.0"
 	},
 	"scripts": {
 		"build": "make-dir \"./dist\" && strip-json-comments --no-whitespace \"./source/index.json\" > \"./dist/index.json\"",
