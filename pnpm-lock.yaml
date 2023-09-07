@@ -300,8 +300,8 @@ importers:
         specifier: 0.30.0
         version: 0.30.0
       strip-json-comments-cli:
-        specifier: 2.0.2
-        version: 2.0.2
+        specifier: 3.0.0
+        version: 3.0.0
 
   packages/prettier:
     dependencies:
@@ -5261,6 +5261,11 @@ packages:
       type-fest: 1.4.0
       yargs-parser: 20.2.9
 
+  /meow@12.1.1:
+    resolution: {integrity: sha512-BhXM0Au22RwUneMPwSCnyhTOizdWoIEPU9sp0Aqa1PnDMR5Wv2FGXYDjuzJEIX+Eo2Rb8xuYe5jrnm5QowQFkw==}
+    engines: {node: '>=16.10'}
+    dev: true
+
   /meow@6.1.1:
     resolution: {integrity: sha512-3YffViIt2QWgTy6Pale5QpopX/IvU3LPL03jOTqp6pGj3VjesdO/U8CuHMKpnQr4shCNCM5fd5XFFvIIl6JBHg==}
     engines: {node: '>=8'}
@@ -7018,23 +7023,23 @@ packages:
     dependencies:
       min-indent: 1.0.1
 
-  /strip-json-comments-cli@2.0.2:
-    resolution: {integrity: sha512-zQQfnFR0AFhAa7OxS/91rbxTN5ePiiVbb9QB8ferWv2WIwLCWxkwTG6cdiXSfLmiXgor07vL/bXPtej+VMH2Iw==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+  /strip-json-comments-cli@3.0.0:
+    resolution: {integrity: sha512-7JWd7tagV9af5vEP9oTqHrMK2iDiCUe2lHhACBjwPtbsoPyTdG3bLWjKUvG5B+xLaAP7VS+zbb1ugsf0kTUe3A==}
+    engines: {node: '>=16'}
     hasBin: true
     dependencies:
       get-stdin: 9.0.0
-      meow: 10.1.5
-      strip-json-comments: 4.0.0
+      meow: 12.1.1
+      strip-json-comments: 5.0.1
     dev: true
 
   /strip-json-comments@3.1.1:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
     engines: {node: '>=8'}
 
-  /strip-json-comments@4.0.0:
-    resolution: {integrity: sha512-LzWcbfMbAsEDTRmhjWIioe8GcDRl0fa35YMXFoJKDdiD/quGFmjJjdgPjFJJNwCMaLyQqFIDqCdHD2V4HfLgYA==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+  /strip-json-comments@5.0.1:
+    resolution: {integrity: sha512-0fk9zBqO67Nq5M/m45qHCJxylV/DhBlIOVExqgOMiCCrzrhU6tCibRXNqE3jwJLftzE9SNuZtYbpzcO+i9FiKw==}
+    engines: {node: '>=14.16'}
     dev: true
 
   /strip-literal@1.0.1:
