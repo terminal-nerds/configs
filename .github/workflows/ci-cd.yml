@@ -91,7 +91,7 @@ jobs:
         with:
             download-build: true
             job-name: Prettier
-            step-name: Execute "pretty-quick" CLI task
+            step-name: Execute "prettier" CLI task
             run: pnpm turbo run lint:format --api=$TURBO_API
 
     lint-syncpack:

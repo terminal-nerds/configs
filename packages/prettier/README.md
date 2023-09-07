@@ -70,12 +70,9 @@ device(s):
     ```
 
 📖 For [prettier icon] [Prettier CLI] usage, please refer to its documentation
-_(we recommend to use [`pretty-quick`](pretty-quick) instead, for more
-human-friendly output and performance)_.
 
 [prettier configuration file]: https://prettier.io/docs/en/configuration.html
 [prettier cli]: https://prettier.io/docs/en/cli.html
-[pretty-quick]: https://github.com/azz/pretty-quick
 
 ---
 
