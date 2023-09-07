@@ -1,8 +1,6 @@
 import { DISABLE_JSDOC_PARSER, DOCUMENTATION_TYPE, HAS_TYPESCRIPT } from "../checks.ts";
 
-/**
- * {@link https://github.com/hosseinmd/prettier-plugin-jsdoc} Plugin JSDoc options.
- */
+/** {@link https://github.com/hosseinmd/prettier-plugin-jsdoc} Plugin JSDoc options. */
 const config = {
 	plugins: ["prettier-plugin-jsdoc"],
 

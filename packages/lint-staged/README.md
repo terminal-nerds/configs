@@ -84,7 +84,7 @@ device(s):
 
 | Matching group name                             | Loading condition                                                                                              |
 | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| `CODE_FORMAT` _(all)_                           | [`prettier`] or [pretty-quick] in dependencies                                                                 |
+| `CODE_FORMAT` _(all)_                           | [`prettier`] in dependencies                                                                                   |
 | `ESLINT` _(JavaScript, TypeScript, JSON, YAML)_ | [`eslint`] in dependencies                                                                                     |
 | `MARKDOWN`                                      | [`markdownlint-cli`] in dependencies                                                                           |
 | `PACKAGE_JSON` _(all `package.json` files)_     | [`depcheck`] or [`syncpack`] in dependencies                                                                   |
@@ -92,7 +92,6 @@ device(s):
 | `TYPESCRIPT`                                    | [`typescript`] in dependencies _(it will attempt find the correct `tsconfig.json` file for the type checking)_ |
 
 [`prettier`]: https://github.com/prettier/prettier
-[`pretty-quick`]: https://github.com/azz/pretty-quick
 [`eslint`]: https://github.com/eslint/eslint
 [`markdownlint-cli`]: https://github.com/igorshubovych/markdownlint-cli
 [`depcheck`]: https://github.com/depcheck/depcheck
