@@ -39,8 +39,8 @@ importers:
         specifier: workspace:*
         version: link:packages/typescript
       '@types/node':
-        specifier: 18.17.2
-        version: 18.17.2
+        specifier: 18.17.14
+        version: 18.17.14
       all-contributors-cli:
         specifier: 6.26.1
         version: 6.26.1
@@ -447,7 +447,7 @@ importers:
         version: 0.34.3(vitest@0.34.3)
       vite:
         specifier: 4.4.9
-        version: 4.4.9(@types/node@18.17.2)
+        version: 4.4.9(@types/node@18.17.14)
     devDependencies:
       '@terminal-nerds/tsup-config':
         specifier: workspace:*
@@ -1672,6 +1672,9 @@ packages:
   /@types/node@12.20.55:
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
     dev: true
+
+  /@types/node@18.17.14:
+    resolution: {integrity: sha512-ZE/5aB73CyGqgQULkLG87N9GnyGe5TcQjv34pwS8tfBs1IkCh0ASM69mydb2znqd6v0eX+9Ytvk6oQRqu8T1Vw==}
 
   /@types/node@18.17.2:
     resolution: {integrity: sha512-wBo3KqP/PBqje5TI9UTiuL3yWfP6sdPtjtygSOqcYZWT232dfDeDOnkDps5wqZBP9NgGgYrNejinl0faAuE+HQ==}
@@ -8039,6 +8042,42 @@ packages:
       - sugarss
       - supports-color
       - terser
+
+  /vite@4.4.9(@types/node@18.17.14):
+    resolution: {integrity: sha512-2mbUn2LlUmNASWwSCNSJ/EG2HuSRTnVNaydp6vMCm5VIqJsjMfbIWtbH2kDuwUVW5mMUKKZvGPX/rqeqVvv1XA==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': '>= 14'
+      less: '*'
+      lightningcss: ^1.21.0
+      sass: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      less:
+        optional: true
+      lightningcss:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+    dependencies:
+      '@types/node': 18.17.14
+      esbuild: 0.18.20
+      postcss: 8.4.29
+      rollup: 3.29.0
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: false
 
   /vite@4.4.9(@types/node@18.17.2):
     resolution: {integrity: sha512-2mbUn2LlUmNASWwSCNSJ/EG2HuSRTnVNaydp6vMCm5VIqJsjMfbIWtbH2kDuwUVW5mMUKKZvGPX/rqeqVvv1XA==}

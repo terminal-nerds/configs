@@ -10,7 +10,7 @@
 		"node": ">=18",
 		"pnpm": ">=7"
 	},
-	"packageManager": "pnpm@8.6.11",
+	"packageManager": "pnpm@8.7.1",
 	"devDependencies": {
 		"@changesets/changelog-github": "0.4.8",
 		"@changesets/cli": "2.26.2",
@@ -22,7 +22,7 @@
 		"@terminal-nerds/syncpack-config": "workspace:*",
 		"@terminal-nerds/tsup-config": "workspace:*",
 		"@terminal-nerds/typescript-config": "workspace:*",
-		"@types/node": "18.17.2",
+		"@types/node": "18.17.14",
 		"all-contributors-cli": "6.26.1",
 		"browserslist": "4.21.10",
 		"clean-package": "2.2.0",
