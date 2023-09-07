@@ -32,7 +32,7 @@
 		"markdownlint-cli": "0.36.0"
 	},
 	"devDependencies": {
-		"make-dir-cli": "3.0.0",
+		"make-dir-cli": "3.1.0",
 		"markdownlint": "0.30.0",
 		"strip-json-comments-cli": "3.0.0"
 	},
