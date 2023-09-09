@@ -3,7 +3,7 @@
 	"extends": "./base",
 	"compilerOptions": {
 		"allowImportingTsExtensions": true,
-		"module": "CommonJS",
+		"module": "NodeNext",
 		"moduleResolution": "NodeNext",
 		"verbatimModuleSyntax": false
 	}

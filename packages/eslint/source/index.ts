@@ -1,5 +1,5 @@
 import { createMergedConfig } from "@terminal-nerds/snippets-config/merge";
-import type { ESLintConfig } from "eslint-define-config";
+import type { defineConfig } from "eslint-define-config";
 
 import {
 	DOCUMENTATION_TYPE,
@@ -50,9 +50,7 @@ import pluginTypeScriptCompat from "./plugins/typescript-compat.ts";
 import pluginUnicorn from "./plugins/unicorn.ts";
 import pluginYML from "./plugins/yml.ts";
 
-type SimplifiedESLintConfig = Pick<ESLintConfig, keyof ESLintConfig>;
-
-const config = createMergedConfig<SimplifiedESLintConfig>([
+const config = createMergedConfig<ReturnType<typeof defineConfig>>([
 	// Base
 	eslint,
 
