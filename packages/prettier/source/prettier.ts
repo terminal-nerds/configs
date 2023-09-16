@@ -1,4 +1,10 @@
-import { END_OF_LINE, INDENT, MAX_LINE_LENGTH, QUOTES, TABS_WIDTH } from "@terminal-nerds/constants-config";
+import {
+	END_OF_LINE,
+	INDENT,
+	MAX_LINE_LENGTH,
+	QUOTES,
+	TABS_WIDTH,
+} from "@terminal-nerds/constants-config";
 import type { Options } from "prettier";
 
 /** @see {@link https://prettier.io/docs/en/options.html} Prettier Options */

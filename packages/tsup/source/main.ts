@@ -7,7 +7,10 @@ export type TsupBuildTarget = "cjs" | "esm" | "browser" | "universal";
  * @param options - Tsup options.
  * @see {@link https://github.com/egoist/tsup} tsup Repository
  */
-export function getOptions(target: TsupBuildTarget = "universal", options: Options = {}): Options {
+export function getOptions(
+	target: TsupBuildTarget = "universal",
+	options: Options = {},
+): Options {
 	const { watch } = options;
 
 	return {

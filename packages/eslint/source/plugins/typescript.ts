@@ -19,7 +19,7 @@ const config = defineConfig({
 				"ts-ignore": commentRuleOptions,
 				"ts-nocheck": commentRuleOptions,
 				"ts-check": commentRuleOptions,
-				"minimumDescriptionLength": 3,
+				minimumDescriptionLength: 3,
 			},
 		],
 		/**

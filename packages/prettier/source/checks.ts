@@ -6,4 +6,5 @@ export const HAS_TAILWINDCSS = hasModule("tailwindcss");
 export const HAS_TYPESCRIPT = hasModule("typescript");
 
 export type DocumentationType = "jsdoc" | "tsdoc";
-export const DOCUMENTATION_TYPE = getEnvironmentVariable<DocumentationType>("DOCUMENTATION_TYPE");
+export const DOCUMENTATION_TYPE =
+	getEnvironmentVariable<DocumentationType>("DOCUMENTATION_TYPE");

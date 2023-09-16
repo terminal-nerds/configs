@@ -6,13 +6,25 @@
 		{
 			"groupName": "project monorepo tools",
 			"addLabels": ["🧰 monorepo"],
-			"packagePatterns": ["all-contributors-cli", "changesets", "concurrently", "del-cli", "husky", "turbo"]
+			"packagePatterns": [
+				"all-contributors-cli",
+				"changesets",
+				"concurrently",
+				"del-cli",
+				"husky",
+				"turbo"
+			]
 		},
 		{
 			"groupName": "shared dependencies",
 			"addLabels": ["🧰 monorepo"],
 			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
-			"packagePatterns": ["deepmerge", "pkg-up", "read-pkg-up", "type-fest"]
+			"packagePatterns": [
+				"deepmerge",
+				"pkg-up",
+				"read-pkg-up",
+				"type-fest"
+			]
 		},
 		{
 			"groupName": "browserslist dependencies",
@@ -47,7 +59,10 @@
 			"groupName": "Prettier dependencies",
 			"addLabels": ["📦 package:prettier-config"],
 			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
-			"excludePackagePatterns": ["eslint-config-prettier", "stylelint-config-prettier"],
+			"excludePackagePatterns": [
+				"eslint-config-prettier",
+				"stylelint-config-prettier"
+			],
 			"packagePatterns": ["prettier"]
 		},
 		{
@@ -67,14 +82,20 @@
 			"addLabels": ["📦 package:tsup-config"],
 			"matchPackageNames": ["tsup"],
 			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
-			"excludePackageNames": ["@typescript-eslint/eslint-parser", "@typescript-eslint/eslint-plugin"]
+			"excludePackageNames": [
+				"@typescript-eslint/eslint-parser",
+				"@typescript-eslint/eslint-plugin"
+			]
 		},
 		{
 			"groupName": "TypeScript dependencies",
 			"addLabels": ["📦 package:typescript-config"],
 			"matchPackageNames": ["@types/node", "tslib", "typescript"],
 			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
-			"excludePackageNames": ["@typescript-eslint/eslint-parser", "@typescript-eslint/eslint-plugin"]
+			"excludePackageNames": [
+				"@typescript-eslint/eslint-parser",
+				"@typescript-eslint/eslint-plugin"
+			]
 		},
 		{
 			"groupName": "Vitest dependencies",

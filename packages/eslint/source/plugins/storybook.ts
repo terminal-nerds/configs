@@ -17,7 +17,11 @@ const config = defineConfig({
 	overrides: [
 		{
 			files: [`*.stories.@(${EXTENSIONS})`],
-			extends: ["plugin:storybook/recommended", "plugin:storybook/csf", "plugin:storybook/csf-strict"],
+			extends: [
+				"plugin:storybook/recommended",
+				"plugin:storybook/csf",
+				"plugin:storybook/csf-strict",
+			],
 		},
 	],
 });
