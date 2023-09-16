@@ -1,5 +1,13 @@
 # @terminal-nerds/constants-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.4.0
+
+### Minor Changes
+
+-   [#387](https://github.com/terminal-nerds/configs/pull/387) [`c053947`](https://github.com/terminal-nerds/configs/commit/c053947dd01f6f9afec5a8e39a7094b3e9ffda62) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `typescript` to `v5.2.2`
+
+-   [#373](https://github.com/terminal-nerds/configs/pull/373) [`6e19fc9`](https://github.com/terminal-nerds/configs/commit/6e19fc93706f2ca587cf4a6fbe4108321bc92953) Thanks [@renovate](https://github.com/apps/renovate)! - chore(Renovate): ⬆️ Update dependency `tsup` to `v7.2.0`
+
 ## 0.3.0
 
 ### Minor Changes

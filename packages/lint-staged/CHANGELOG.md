@@ -1,5 +1,23 @@
 # @terminal-nerds/lint-staged-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.6.0
+
+### Minor Changes
+
+-   [#389](https://github.com/terminal-nerds/configs/pull/389) [`e0f615e`](https://github.com/terminal-nerds/configs/commit/e0f615e2eda3971e886b0dadceccbd30a5d78923) Thanks [@xeho91](https://github.com/xeho91)! - Remove `pretty-quick` and replace with `prettier`
+
+-   [#383](https://github.com/terminal-nerds/configs/pull/383) [`0fac02b`](https://github.com/terminal-nerds/configs/commit/0fac02bec62b956a81aee41dc648aa67fdc18d2b) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `lint-staged` to `v14`
+
+### Patch Changes
+
+-   [#358](https://github.com/terminal-nerds/configs/pull/358) [`fd08bd7`](https://github.com/terminal-nerds/configs/commit/fd08bd7193f64a5f60db9f3fbe45ffea0a2791fd) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update `typescript` to `v5.1.6`
+
+-   [#387](https://github.com/terminal-nerds/configs/pull/387) [`c053947`](https://github.com/terminal-nerds/configs/commit/c053947dd01f6f9afec5a8e39a7094b3e9ffda62) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `typescript` to `v5.2.2`
+
+-   [#355](https://github.com/terminal-nerds/configs/pull/355) [`c63620c`](https://github.com/terminal-nerds/configs/commit/c63620c0b5c60a27a2927e4a461c7d82b3bab403) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update `tsup` to `v7.1.0`
+
+-   [#373](https://github.com/terminal-nerds/configs/pull/373) [`6e19fc9`](https://github.com/terminal-nerds/configs/commit/6e19fc93706f2ca587cf4a6fbe4108321bc92953) Thanks [@renovate](https://github.com/apps/renovate)! - chore(Renovate): ⬆️ Update dependency `tsup` to `v7.2.0`
+
 ## 0.5.0
 
 ### Minor Changes

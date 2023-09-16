@@ -1,5 +1,15 @@
 # @terminal-nerds/stylelint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
 
+## 0.15.0
+
+### Minor Changes
+
+-   [#378](https://github.com/terminal-nerds/configs/pull/378) [`5a31cf4`](https://github.com/terminal-nerds/configs/commit/5a31cf49193fef4302691a2d2a55dd9f92034d24) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update Stylelint dependencies
+
+-   [#354](https://github.com/terminal-nerds/configs/pull/354) [`47ca4ca`](https://github.com/terminal-nerds/configs/commit/47ca4cad95bca8ffa83d006eb2354c23a53d12d0) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update `stylelint` to `v15.10.2`
+
+-   [#400](https://github.com/terminal-nerds/configs/pull/400) [`e7067fb`](https://github.com/terminal-nerds/configs/commit/e7067fba9ed63f8aab81628ecd27173cee3d41d1) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update dependency `stylelint-scss` to `v5.2.1`
+
 ## 0.14.0
 
 ### Minor Changes

@@ -1,5 +1,13 @@
 # @terminal-nerds/tsup-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.6.0
+
+### Minor Changes
+
+-   [#390](https://github.com/terminal-nerds/configs/pull/390) [`760d4c8`](https://github.com/terminal-nerds/configs/commit/760d4c8dbaa74b2d7fe3292329cc8dde57915c69) Thanks [@xeho91](https://github.com/xeho91)! - 🔥 Remove deprecated functions
+
+-   [#373](https://github.com/terminal-nerds/configs/pull/373) [`6e19fc9`](https://github.com/terminal-nerds/configs/commit/6e19fc93706f2ca587cf4a6fbe4108321bc92953) Thanks [@renovate](https://github.com/apps/renovate)! - ⬆️ Update `tsup` to `v7.2.0`
+
 ## 0.5.0
 
 ### Minor Changes
