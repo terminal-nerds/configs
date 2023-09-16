@@ -51,18 +51,19 @@
 		"deps:upgrade:root": "pnpm upgrade --interactive --latest",
 		"dev:pkgs": "turbo run dev",
 		"fix": "concurrently \"pnpm:fix:*\" --group --timings",
-		"fix:format": "prettier --cache --cache-location=\"./node_modules/.cache/prettier\" --log-level=log \"./\" --write",
+		"fix:format": "pnpm prettier --write",
 		"fix:js": "pnpm lint:js --fix",
 		"fix:md": "pnpm lint:md --fix",
 		"fix:pkg": "syncpack format ; syncpack fix-mismatches",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
 		"lint:deps": "depcheck",
-		"lint:format": "prettier --cache --cache-location=\"./node_modules/.cache/prettier\" --check --log-level=log \"./\" ",
+		"lint:format": "pnpm prettier --check",
 		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --cache --cache-location \"./node_modules/.cache/eslint\" --ext .cjs,.js,.ts,.json,.yml,.yaml --ignore-pattern \"/packages/\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"./.gitignore\" --ignore \"./{packages}/**/*\"",
 		"lint:pkg": "syncpack list-mismatches",
 		"lint:staged": "lint-staged --verbose",
 		"preinstall": "npx only-allow pnpm",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"prettier": "prettier --cache --cache-location=\"./node_modules/.cache/prettier\" --log-level=log \"./\" "
 	}
 }

@@ -5,6 +5,7 @@ export type TsupBuildTarget = "cjs" | "esm" | "browser" | "universal";
 /**
  * @param target - predefinied name for the build target
  * @param options - tsup options
+ *
  * @see {@link https://github.com/egoist/tsup} tsup Repository
  */
 export function getOptions(target: TsupBuildTarget = "universal", options: Options = {}): Options {
