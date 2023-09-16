@@ -11,9 +11,7 @@ const config = defineConfig({
 		tsconfigRootDir: __dirname,
 	},
 	rules: {
-		/**
-		 * RATIONALE: Enforce the practice, where we explain shortly the decision of using them.
-		 */
+		/** RATIONALE: Enforce the practice, where we explain shortly the decision of using them. */
 		"@typescript-eslint/ban-ts-comment": [
 			"warn",
 			{

@@ -1,6 +1,4 @@
-/**
- * {@link https://github.com/roydukkey/clean-package#options}
- */
+/** {@link https://github.com/roydukkey/clean-package#options} */
 const config = {
 	extends: ["clean-package/common"],
 	indent: 4,

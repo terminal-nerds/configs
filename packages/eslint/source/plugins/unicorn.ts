@@ -13,12 +13,12 @@ const ALLOWED_ABBREVATIONS = [
 	/** RATIONALE: Every React developer knows what is it, no need to make it more obvious. */
 	"ref",
 	"Ref",
-	/** RATIONALE: Those are official names */
+	/** RATIONALE: Those are official names. */
 	"jsdoc",
 	"JSDoc",
 	"tsdoc",
 	"TSDoc",
-	/** RATIONALE: This is descriptive & obvious enough */
+	/** RATIONALE: This is descriptive & obvious enough. */
 	"env",
 	"Env",
 	"ENV",

@@ -4,12 +4,12 @@ import { defineConfig } from "eslint-define-config";
 
 /**
  * NOTE: https://github.com/mysticatea/eslint-plugin-node is no longer actively maintained. It has been replaced by:
- * https://github.com/eslint-community/eslint-plugin-n
+ * https://github.com/eslint-community/eslint-plugin-n.
  */
 const config = defineConfig({
 	extends: ["plugin:n/recommended"],
 	rules: {
-		/** RATIONALE: Allow `eslint-plugin-import` to handle imports */
+		/** RATIONALE: Allow `eslint-plugin-import` to handle imports. */
 		"n/no-extraneous-import": ["off"],
 		"n/no-unpublished-import": ["off"],
 		"n/no-unpublished-require": ["off"],

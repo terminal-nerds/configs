@@ -10,7 +10,7 @@ const config = defineConfig({
 		"import/export": ["warn"],
 		/**
 		 * RATIONALE: Doesn't fully support ESM yet, see below:
-		 * https://github.com/import-js/eslint-plugin-import/issues/1868
+		 * https://github.com/import-js/eslint-plugin-import/issues/1868.
 		 */
 		"import/no-unresolved": ["off"],
 		"import/first": ["error"],
