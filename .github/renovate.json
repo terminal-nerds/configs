@@ -9,7 +9,6 @@
 			"packagePatterns": [
 				"all-contributors-cli",
 				"changesets",
-				"concurrently",
 				"del-cli",
 				"husky",
 				"turbo"
