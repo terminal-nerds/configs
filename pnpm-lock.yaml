@@ -312,14 +312,14 @@ importers:
         specifier: 0.6.2
         version: 0.6.2(typescript@5.2.2)
       prettier-plugin-jsdoc:
-        specifier: 1.0.1
-        version: 1.0.1(prettier@3.0.3)
+        specifier: 1.0.2
+        version: 1.0.2(prettier@3.0.3)
       prettier-plugin-svelte:
         specifier: 3.0.3
         version: 3.0.3(prettier@3.0.3)
       prettier-plugin-tailwindcss:
         specifier: 0.5.4
-        version: 0.5.4(prettier-plugin-jsdoc@1.0.1)(prettier-plugin-svelte@3.0.3)(prettier@3.0.3)
+        version: 0.5.4(prettier-plugin-jsdoc@1.0.2)(prettier-plugin-svelte@3.0.3)(prettier@3.0.3)
     devDependencies:
       '@terminal-nerds/tsup-config':
         specifier: workspace:*
@@ -5883,8 +5883,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  /prettier-plugin-jsdoc@1.0.1(prettier@3.0.3):
-    resolution: {integrity: sha512-07q74MfX9m+xHK2+Lr4c+igiEzAKVDWhqkvlm65WoYJUlRiaV6STXcEtcZMhrPPYgNeQRgb9FJmgE/n+OI4MpQ==}
+  /prettier-plugin-jsdoc@1.0.2(prettier@3.0.3):
+    resolution: {integrity: sha512-mhLT3qiSmfzjOEDvgLntX3XmSJaiDrgoN7WmOp4IH2mZ6LhbvZAnPDJH3Rs0k1O6WR7HcmM92fU1ArB0ALLG+A==}
     engines: {node: '>=14.13.1 || >=16.0.0'}
     peerDependencies:
       prettier: ^3.0.0
@@ -5906,7 +5906,7 @@ packages:
       prettier: 3.0.3
     dev: false
 
-  /prettier-plugin-tailwindcss@0.5.4(prettier-plugin-jsdoc@1.0.1)(prettier-plugin-svelte@3.0.3)(prettier@3.0.3):
+  /prettier-plugin-tailwindcss@0.5.4(prettier-plugin-jsdoc@1.0.2)(prettier-plugin-svelte@3.0.3)(prettier@3.0.3):
     resolution: {integrity: sha512-QZzzB1bID6qPsKHTeA9qPo1APmmxfFrA5DD3LQ+vbTmAnY40eJI7t9Q1ocqel2EKMWNPLJqdTDWZj1hKYgqSgg==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
@@ -5959,7 +5959,7 @@ packages:
         optional: true
     dependencies:
       prettier: 3.0.3
-      prettier-plugin-jsdoc: 1.0.1(prettier@3.0.3)
+      prettier-plugin-jsdoc: 1.0.2(prettier@3.0.3)
       prettier-plugin-svelte: 3.0.3(prettier@3.0.3)
     dev: false
 
