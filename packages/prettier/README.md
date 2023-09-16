@@ -56,17 +56,17 @@ device(s):
 [node.js]: https://nodejs.org/en/
 [`pnpm`]: https://pnpm.io/
 
-1. **Create an ![prettier icon] [Prettier configuration file] - `.prettierrc.(c)js`**.
+1. **Create an ![prettier icon] [Prettier configuration file] - `.prettierrc.js`**.
 
 1. **Extend this module package configuration.**
 
     ```js
     /** @type import("prettier").Options */
     const config = {
-    	...require("@terminal-nerds/prettier-config"),
+    	...import("@terminal-nerds/prettier-config"),
     };
 
-    module.exports = config;
+    export default config;
     ```
 
 📖 For [prettier icon] [Prettier CLI] usage, please refer to its documentation
