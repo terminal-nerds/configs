@@ -21,8 +21,10 @@
 		"node": ">=18"
 	},
 	"exports": {
-		"types": "./dist/index.d.ts",
-		"require": "./dist/index.cjs"
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
 	},
 	"files": [
 		"/dist"

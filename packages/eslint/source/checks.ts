@@ -3,7 +3,8 @@ import { isIn } from "@terminal-nerds/snippets-runtime/scope";
 import { getEnvironmentVariable } from "@terminal-nerds/snippets-runtime/variable";
 
 export const HAS_DOCUSAURUS = hasModule("@docusaurus/core");
-export const HAS_EMOTION = hasModule("@emotion/css") || hasModule("@emotion/react");
+export const HAS_EMOTION =
+	hasModule("@emotion/css") || hasModule("@emotion/react");
 export const HAS_JEST = hasModule("jest") || hasModule("vitest");
 export const HAS_JEST_DOM = hasModule("@testing-library/jest-dom");
 export const HAS_NEXT = hasModule("next");
@@ -18,4 +19,5 @@ export const HAS_UNOCSS = hasModule("unocss");
 export const IS_IN_CI = isIn("continuousIntegration", { strict: true });
 
 export type DocumentationType = "jsdoc" | "tsdoc";
-export const DOCUMENTATION_TYPE = getEnvironmentVariable<DocumentationType>("DOCUMENTATION_TYPE");
+export const DOCUMENTATION_TYPE =
+	getEnvironmentVariable<DocumentationType>("DOCUMENTATION_TYPE");

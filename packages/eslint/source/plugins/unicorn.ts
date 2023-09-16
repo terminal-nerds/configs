@@ -32,7 +32,10 @@ const config = defineConfig({
 		"unicorn/filename-case": ["off"],
 
 		/** RATIONALE: Warn about it, is not an bug, just a code readability issue. */
-		"unicorn/prevent-abbreviations": ["warn", { ignore: ALLOWED_ABBREVATIONS }],
+		"unicorn/prevent-abbreviations": [
+			"warn",
+			{ ignore: ALLOWED_ABBREVATIONS },
+		],
 	},
 });
 

@@ -2,7 +2,7 @@
 
 /** @type {import("prettier").Options} */
 const config = {
-	...require("@terminal-nerds/prettier-config"),
+	...import("@terminal-nerds/prettier-config"),
 };
 
-module.exports = config;
+export default config;
