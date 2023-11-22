@@ -27,7 +27,7 @@
 		"browserslist": "4.21.10",
 		"clean-package": "2.2.0",
 		"del-cli": "5.1.0",
-		"depcheck": "1.4.6",
+		"depcheck": "1.4.7",
 		"eslint": "8.49.0",
 		"husky": "8.0.3",
 		"lint-staged": "14.0.1",
