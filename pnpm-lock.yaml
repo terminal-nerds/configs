@@ -39,8 +39,8 @@ importers:
         specifier: workspace:*
         version: link:packages/typescript
       '@types/node':
-        specifier: 18.17.15
-        version: 18.17.15
+        specifier: 18.18.10
+        version: 18.18.10
       all-contributors-cli:
         specifier: 6.26.1
         version: 6.26.1
@@ -438,7 +438,7 @@ importers:
         version: 0.34.4(vitest@0.34.4)
       vite:
         specifier: 4.4.9
-        version: 4.4.9(@types/node@18.17.15)
+        version: 4.4.9(@types/node@18.18.10)
     devDependencies:
       '@terminal-nerds/tsup-config':
         specifier: workspace:*
@@ -1460,8 +1460,10 @@ packages:
   /@types/node@18.17.14:
     resolution: {integrity: sha512-ZE/5aB73CyGqgQULkLG87N9GnyGe5TcQjv34pwS8tfBs1IkCh0ASM69mydb2znqd6v0eX+9Ytvk6oQRqu8T1Vw==}
 
-  /@types/node@18.17.15:
-    resolution: {integrity: sha512-2yrWpBk32tvV/JAd3HNHWuZn/VDN1P+72hWirHnvsvTGSqbANi+kSeuQR9yAHnbvaBvHDsoTdXV0Fe+iRtHLKA==}
+  /@types/node@18.18.10:
+    resolution: {integrity: sha512-luANqZxPmjTll8bduz4ACs/lNTCLuWssCyjqTY9yLdsv1xnViQp3ISKwsEWOIecO13JWUqjVdig/Vjjc09o8uA==}
+    dependencies:
+      undici-types: 5.26.5
 
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -7394,6 +7396,9 @@ packages:
       mlly: 1.4.0
     dev: false
 
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+
   /unist-util-stringify-position@3.0.3:
     resolution: {integrity: sha512-k5GzIBZ/QatR8N5X2y+drfpWG8IDBzdnVj6OInRNWm1oXrzydiaAT2OQiA8DPRRZyAKb9b6I2a6PxYklZD0gKg==}
     dependencies:
@@ -7517,7 +7522,7 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
 
-  /vite@4.4.9(@types/node@18.17.15):
+  /vite@4.4.9(@types/node@18.18.10):
     resolution: {integrity: sha512-2mbUn2LlUmNASWwSCNSJ/EG2HuSRTnVNaydp6vMCm5VIqJsjMfbIWtbH2kDuwUVW5mMUKKZvGPX/rqeqVvv1XA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -7545,7 +7550,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.17.15
+      '@types/node': 18.18.10
       esbuild: 0.18.20
       postcss: 8.4.29
       rollup: 3.29.0
