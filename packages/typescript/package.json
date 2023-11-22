@@ -44,10 +44,10 @@
 		"es-module.json"
 	],
 	"peerDependencies": {
-		"typescript": "5.2.2"
+		"typescript": "5.3.2"
 	},
 	"devDependencies": {
-		"typescript": "5.2.2"
+		"typescript": "5.3.2"
 	},
 	"scripts": {
 		"clean": "pnpm run \"/^clean:*/\" ",
