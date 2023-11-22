@@ -32,7 +32,7 @@
 	"devDependencies": {
 		"@terminal-nerds/tsup-config": "workspace:*",
 		"@terminal-nerds/typescript-config": "workspace:*",
-		"tsup": "7.2.0",
+		"tsup": "8.0.0",
 		"typescript": "5.2.2"
 	},
 	"scripts": {
