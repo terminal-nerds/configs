@@ -45,8 +45,8 @@ importers:
         specifier: 6.26.1
         version: 6.26.1
       browserslist:
-        specifier: 4.21.10
-        version: 4.21.10
+        specifier: 4.22.1
+        version: 4.22.1
       clean-package:
         specifier: 2.2.0
         version: 2.2.0
@@ -87,8 +87,8 @@ importers:
   packages/browserslist:
     dependencies:
       browserslist:
-        specifier: 4.21.10
-        version: 4.21.10
+        specifier: 4.22.1
+        version: 4.22.1
     devDependencies:
       '@terminal-nerds/tsup-config':
         specifier: workspace:*
@@ -2262,15 +2262,15 @@ packages:
       wcwidth: 1.0.1
     dev: true
 
-  /browserslist@4.21.10:
-    resolution: {integrity: sha512-bipEBdZfVH5/pwrvqc+Ub0kUPVfGUhlKxbvfD+z1BDnPEO/X98ruXGA1WP5ASpAFKan7Qr6j736IacbZQuAlKQ==}
+  /browserslist@4.22.1:
+    resolution: {integrity: sha512-FEVc202+2iuClEhZhrWy6ZiAcRLvNMyYcxZ8raemul1DYVOVdFsbqckWLdsixQZCpJlwe77Z3UTalE7jsjnKfQ==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001564
       electron-to-chromium: 1.4.590
       node-releases: 2.0.13
-      update-browserslist-db: 1.0.13(browserslist@4.21.10)
+      update-browserslist-db: 1.0.13(browserslist@4.22.1)
 
   /buffer@5.7.1:
     resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
@@ -2902,7 +2902,7 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
-      browserslist: 4.21.10
+      browserslist: 4.22.1
       caniuse-lite: 1.0.30001564
       css-tokenize: 1.0.1
       duplexify: 4.1.2
@@ -3246,7 +3246,7 @@ packages:
     dependencies:
       '@mdn/browser-compat-data': 5.4.0
       ast-metadata-inferer: 0.8.0
-      browserslist: 4.21.10
+      browserslist: 4.22.1
       caniuse-lite: 1.0.30001564
       eslint: 8.49.0
       find-up: 5.0.0
@@ -3614,7 +3614,7 @@ packages:
     dependencies:
       '@mdn/browser-compat-data': 5.4.0
       '@typescript-eslint/experimental-utils': 5.62.0(eslint@8.49.0)(typescript@5.2.2)
-      browserslist: 4.21.10
+      browserslist: 4.22.1
       semver: 7.5.4
       typescript: 5.2.2
     transitivePeerDependencies:
@@ -7590,13 +7590,13 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /update-browserslist-db@1.0.13(browserslist@4.21.10):
+  /update-browserslist-db@1.0.13(browserslist@4.22.1):
     resolution: {integrity: sha512-xebP81SNcPuNpPP3uzeW1NYXxI3rxyJzF3pD6sH4jE7o/IX+WtSpwnVU+qIsDPyk0d3hmFQ7mjqc6AtV604hbg==}
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
     dependencies:
-      browserslist: 4.21.10
+      browserslist: 4.22.1
       escalade: 3.1.1
       picocolors: 1.0.0
 
