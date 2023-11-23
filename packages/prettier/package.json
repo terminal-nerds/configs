@@ -34,7 +34,7 @@
 		"@terminal-nerds/snippets-config": "0.4.4",
 		"@terminal-nerds/snippets-runtime": "0.6.2",
 		"prettier-plugin-jsdoc": "1.1.1",
-		"prettier-plugin-svelte": "3.1.0",
+		"prettier-plugin-svelte": "3.1.2",
 		"prettier-plugin-tailwindcss": "0.5.7"
 	},
 	"peerDependencies": {
