@@ -41,7 +41,7 @@
 		"@terminal-nerds/tsup-config": "workspace:*",
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"lint-staged": "15.1.0",
-		"tsup": "8.0.0",
+		"tsup": "8.0.1",
 		"typescript": "5.3.2"
 	},
 	"scripts": {
