@@ -337,8 +337,8 @@ importers:
   packages/stylelint:
     dependencies:
       '@terminal-nerds/snippets-array':
-        specifier: 0.2.2
-        version: 0.2.2(typescript@5.3.2)
+        specifier: 0.2.3
+        version: 0.2.3(typescript@5.3.2)
       '@terminal-nerds/snippets-config':
         specifier: 0.4.4
         version: 0.4.4(typescript@5.3.2)
@@ -1339,8 +1339,8 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@terminal-nerds/snippets-array@0.2.2(typescript@5.3.2):
-    resolution: {integrity: sha512-DBdKrFdnwZp9n3j+raZPBeETHweD0nYS+aFHXyWY0mYupFzKkAk/iWM4/k2r1xRHsLc+m5A5hAbcNmhla5G3JA==}
+  /@terminal-nerds/snippets-array@0.2.3(typescript@5.3.2):
+    resolution: {integrity: sha512-5xf3E5cC3TwSGi8tA68+WmzaAGVPhu7++cE4HeaZtKknK2CHS2EC1EXBIKnfCUsQUUJs85TK2F7RoqC70CKeQA==}
     engines: {node: '>=18'}
     peerDependencies:
       typescript: 5.0.4
@@ -1348,7 +1348,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@terminal-nerds/snippets-number': 0.3.2(typescript@5.3.2)
+      '@terminal-nerds/snippets-number': 0.3.3(typescript@5.3.2)
       '@terminal-nerds/snippets-type': 0.3.1(typescript@5.3.2)
       array-differ: 4.0.0
       array-union: 3.0.1
@@ -1401,8 +1401,8 @@ packages:
       zod: 3.21.4
     dev: false
 
-  /@terminal-nerds/snippets-number@0.3.2(typescript@5.3.2):
-    resolution: {integrity: sha512-xl7mjU6Tl8lPQSGdn3gN21AQIkc3XIj6u7MxErbz66zJU9In99VunRrzHgc58thFNajHB/yOxRpujJ4hBAmF9Q==}
+  /@terminal-nerds/snippets-number@0.3.3(typescript@5.3.2):
+    resolution: {integrity: sha512-uiVs2kJT6956LYxxmCBlZ2MZ25A2CsC6JiM/184HwrII795QwgUnRf3/5x1zP6L457KLtVlkq+rwpm22QQySnQ==}
     engines: {node: '>=18'}
     peerDependencies:
       typescript: 5.0.4
@@ -1410,7 +1410,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@terminal-nerds/snippets-runtime': 0.6.1(typescript@5.3.2)
+      '@terminal-nerds/snippets-runtime': 0.6.2(typescript@5.3.2)
       '@terminal-nerds/snippets-type': 0.3.1(typescript@5.3.2)
       type-fest: 3.9.0
       typescript: 5.3.2
@@ -1429,21 +1429,6 @@ packages:
       '@terminal-nerds/snippets-type': 0.3.1(typescript@5.3.2)
       deepmerge-ts: 5.1.0
       type-fest: 3.9.0
-      typescript: 5.3.2
-      zod: 3.21.4
-    dev: false
-
-  /@terminal-nerds/snippets-runtime@0.6.1(typescript@5.3.2):
-    resolution: {integrity: sha512-PHzziza1b9BenehFvUfp1/AENt44HvKU8LJIYblpSCwPC+r+7YTtQCssHPwEKJxNWxgiZQg4Qaj+uY5PkI6SMQ==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      typescript: 5.0.4
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@terminal-nerds/snippets-error': 0.4.1(typescript@5.3.2)
-      local-pkg: 0.4.3
       typescript: 5.3.2
       zod: 3.21.4
     dev: false

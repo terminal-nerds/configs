@@ -28,7 +28,7 @@
 		"dist/"
 	],
 	"dependencies": {
-		"@terminal-nerds/snippets-array": "0.2.2",
+		"@terminal-nerds/snippets-array": "0.2.3",
 		"@terminal-nerds/snippets-config": "0.4.4",
 		"@terminal-nerds/snippets-extension": "0.4.1",
 		"@terminal-nerds/snippets-runtime": "0.6.2",
