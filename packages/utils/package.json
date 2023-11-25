@@ -2,7 +2,7 @@
 	"$schema": "https://json.schemastore.org/package",
 	"type": "module",
 	"name": "@terminal-nerds/utils-config",
-	"version": "0.3.2",
+	"version": "0.4.0",
 	"description": "Terminal Nerds configuration utilities.",
 	"keywords": [
 		"config",
