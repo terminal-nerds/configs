@@ -1,7 +1,7 @@
 import {
 	JAVASCRIPT_EXTENSIONS,
 	TYPESCRIPT_EXTENSIONS,
-} from "@terminal-nerds/snippets-extension/schema";
+} from "@terminal-nerds/utils-config/extensions";
 
 const extensions = [
 	...JAVASCRIPT_EXTENSIONS,

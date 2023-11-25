@@ -1,4 +1,4 @@
-import { createMergedConfig } from "@terminal-nerds/snippets-config/merge";
+import { createMergedConfig } from "@terminal-nerds/utils-config/merge-configs";
 
 import { HAS_SVELTE, HAS_TAILWINDCSS } from "./checks.ts";
 import pluginJSDoc from "./plugins/jsdoc.ts";

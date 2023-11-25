@@ -7,6 +7,7 @@ const config: RcFile = {
 	semverRange: "",
 	sortAz: [
 		"engines",
+		"exports",
 		"files",
 		"dependencies",
 		"peerDependencies",
@@ -31,15 +32,15 @@ const config: RcFile = {
 		"bugs",
 		"engines",
 		"packageManager",
-		"exports",
 		"main",
 		"files",
+		"exports",
+		"scripts",
 		"dependencies",
 		"peerDependencies",
 		"peerDependenciesMeta",
 		"optionalDependencies",
 		"devDependencies",
-		"scripts",
 	],
 };
 

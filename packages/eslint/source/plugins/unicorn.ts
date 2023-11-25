@@ -22,6 +22,18 @@ const ALLOWED_ABBREVATIONS = [
 	"env",
 	"Env",
 	"ENV",
+	/** RATIONALE: This is descriptive & obvious enough. */
+	"bin",
+	"Bin",
+	"BIN",
+	/** RATIONALE: This is descriptive & obvious enough. */
+	"lib",
+	"Lib",
+	"LIB",
+	/** RATIONALE: This is descriptive & obvious enough. */
+	"src",
+	"Src",
+	"SRC",
 ];
 
 // https://github.com/sindresorhus/eslint-plugin-unicorn

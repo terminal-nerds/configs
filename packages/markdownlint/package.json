@@ -17,28 +17,20 @@
 	},
 	"bugs": "https://github.com/terminal-nerds/configs/issues",
 	"engines": {
-		"node": ">=18"
+		"node": ">=20"
 	},
+	"files": [
+		"/dist"
+	],
 	"exports": {
 		".": {
 			"import": "./dist/index.json",
 			"require": "./dist/index.json"
 		}
 	},
-	"files": [
-		"/dist"
-	],
-	"peerDependencies": {
-		"markdownlint-cli": "0.37.0"
-	},
-	"devDependencies": {
-		"make-dir-cli": "3.1.0",
-		"markdownlint": "0.32.1",
-		"strip-json-comments-cli": "3.0.0"
-	},
 	"scripts": {
 		"build": "make-dir \"./dist\" && strip-json-comments --no-whitespace \"./source/index.json\" > \"./dist/index.json\"",
-		"clean": "pnpm run \"/^clean:*/\" ",
+		"clean": "pnpm run \"/^clean:.*/\" ",
 		"clean:build": "del \"./dist\"",
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"eslint": "DEBUG=\"eslint:cli-engine\" eslint . --cache --cache-location \"./node_modules/.cache/eslint\" --ext .json,.ts ",
@@ -55,5 +47,12 @@
 		"markdownlint": "markdownlint . --config \"../../.markdownlint.json\" --dot --ignore-path \"../../.gitignore\"",
 		"prepack": "clean-package --config \"../../.clean-packagerc.cjs\"",
 		"prettier": "prettier --cache --cache-location=\"./node_modules/.cache/prettier\" --ignore-path=\"../../.gitignore\" --log-level=log \"./\""
+	},
+	"peerDependencies": {
+		"markdownlint-cli": "0.37.0"
+	},
+	"devDependencies": {
+		"make-dir-cli": "3.1.0",
+		"strip-json-comments-cli": "3.0.0"
 	}
 }

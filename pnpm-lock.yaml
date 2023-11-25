@@ -89,34 +89,8 @@ importers:
       browserslist:
         specifier: 4.22.1
         version: 4.22.1
-    devDependencies:
-      '@terminal-nerds/tsup-config':
-        specifier: workspace:*
-        version: link:../tsup
-      '@terminal-nerds/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript
-      tsup:
-        specifier: 8.0.1
-        version: 8.0.1(typescript@5.3.2)
-      typescript:
-        specifier: 5.3.2
-        version: 5.3.2
 
-  packages/constants:
-    devDependencies:
-      '@terminal-nerds/tsup-config':
-        specifier: workspace:*
-        version: link:../tsup
-      '@terminal-nerds/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript
-      tsup:
-        specifier: 8.0.1
-        version: 8.0.1(typescript@5.3.2)
-      typescript:
-        specifier: 5.3.2
-        version: 5.3.2
+  packages/constants: {}
 
   packages/eslint:
     dependencies:
@@ -129,15 +103,9 @@ importers:
       '@terminal-nerds/constants-config':
         specifier: workspace:*
         version: link:../constants
-      '@terminal-nerds/snippets-config':
-        specifier: 0.4.4
-        version: 0.4.4(typescript@5.3.2)
-      '@terminal-nerds/snippets-extension':
-        specifier: 0.4.1
-        version: 0.4.1(typescript@5.3.2)
-      '@terminal-nerds/snippets-runtime':
-        specifier: 0.6.2
-        version: 0.6.2(typescript@5.3.2)
+      '@terminal-nerds/utils-config':
+        specifier: workspace:*
+        version: link:../utils
       '@typescript-eslint/eslint-plugin':
         specifier: 6.12.0
         version: 6.12.0(@typescript-eslint/parser@6.12.0)(eslint@8.54.0)(typescript@5.3.2)
@@ -241,73 +209,27 @@ importers:
         specifier: 1.2.2
         version: 1.2.2
     devDependencies:
-      '@terminal-nerds/tsup-config':
-        specifier: workspace:*
-        version: link:../tsup
-      '@terminal-nerds/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript
       '@types/eslint':
         specifier: 8.44.7
         version: 8.44.7
-      tsup:
-        specifier: 8.0.1
-        version: 8.0.1(typescript@5.3.2)
-      typescript:
-        specifier: 5.3.2
-        version: 5.3.2
 
   packages/lint-staged:
     dependencies:
-      '@terminal-nerds/snippets-config':
-        specifier: 0.4.4
-        version: 0.4.4(typescript@5.3.2)
-      '@terminal-nerds/snippets-extension':
-        specifier: 0.4.1
-        version: 0.4.1(typescript@5.3.2)
-      '@terminal-nerds/snippets-runtime':
-        specifier: 0.6.2
-        version: 0.6.2(typescript@5.3.2)
-    devDependencies:
-      '@terminal-nerds/tsup-config':
+      '@terminal-nerds/utils-config':
         specifier: workspace:*
-        version: link:../tsup
-      '@terminal-nerds/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript
-      lint-staged:
-        specifier: 15.1.0
-        version: 15.1.0
-      tsup:
-        specifier: 8.0.1
-        version: 8.0.1(typescript@5.3.2)
-      typescript:
-        specifier: 5.3.2
-        version: 5.3.2
+        version: link:../utils
 
   packages/markdownlint:
     devDependencies:
       make-dir-cli:
         specifier: 3.1.0
         version: 3.1.0
-      markdownlint:
-        specifier: 0.32.1
-        version: 0.32.1
       strip-json-comments-cli:
         specifier: 3.0.0
         version: 3.0.0
 
   packages/prettier:
     dependencies:
-      '@terminal-nerds/constants-config':
-        specifier: workspace:*
-        version: link:../constants
-      '@terminal-nerds/snippets-config':
-        specifier: 0.4.4
-        version: 0.4.4(typescript@5.3.2)
-      '@terminal-nerds/snippets-runtime':
-        specifier: 0.6.2
-        version: 0.6.2(typescript@5.3.2)
       prettier-plugin-jsdoc:
         specifier: 1.1.1
         version: 1.1.1(prettier@3.1.0)
@@ -318,36 +240,15 @@ importers:
         specifier: 0.5.7
         version: 0.5.7(prettier-plugin-jsdoc@1.1.1)(prettier-plugin-svelte@3.1.2)(prettier@3.1.0)
     devDependencies:
-      '@terminal-nerds/tsup-config':
+      '@terminal-nerds/constants-config':
         specifier: workspace:*
-        version: link:../tsup
-      '@terminal-nerds/typescript-config':
+        version: link:../constants
+      '@terminal-nerds/utils-config':
         specifier: workspace:*
-        version: link:../typescript
-      '@types/prettier':
-        specifier: 2.7.3
-        version: 2.7.3
-      tsup:
-        specifier: 8.0.1
-        version: 8.0.1(typescript@5.3.2)
-      typescript:
-        specifier: 5.3.2
-        version: 5.3.2
+        version: link:../utils
 
   packages/stylelint:
     dependencies:
-      '@terminal-nerds/snippets-array':
-        specifier: 0.2.2
-        version: 0.2.2(typescript@5.3.2)
-      '@terminal-nerds/snippets-config':
-        specifier: 0.4.4
-        version: 0.4.4(typescript@5.3.2)
-      '@terminal-nerds/snippets-extension':
-        specifier: 0.4.1
-        version: 0.4.1(typescript@5.3.2)
-      '@terminal-nerds/snippets-runtime':
-        specifier: 0.6.2
-        version: 0.6.2(typescript@5.3.2)
       stylelint-config-prettier:
         specifier: 9.0.5
         version: 9.0.5(stylelint@15.11.0)
@@ -376,57 +277,37 @@ importers:
         specifier: 5.3.1
         version: 5.3.1(stylelint@15.11.0)
     devDependencies:
-      '@terminal-nerds/tsup-config':
+      '@terminal-nerds/utils-config':
         specifier: workspace:*
-        version: link:../tsup
-      '@terminal-nerds/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript
+        version: link:../utils
       stylelint:
         specifier: 15.11.0
         version: 15.11.0(typescript@5.3.2)
-      tsup:
-        specifier: 8.0.1
-        version: 8.0.1(typescript@5.3.2)
-      typescript:
-        specifier: 5.3.2
-        version: 5.3.2
 
-  packages/syncpack:
-    devDependencies:
-      '@terminal-nerds/tsup-config':
-        specifier: workspace:*
-        version: link:../tsup
-      '@terminal-nerds/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript
-      syncpack:
-        specifier: 11.2.1
-        version: 11.2.1
-      tsup:
-        specifier: 8.0.1
-        version: 8.0.1(typescript@5.3.2)
-      typescript:
-        specifier: 5.3.2
-        version: 5.3.2
+  packages/syncpack: {}
 
-  packages/tsup:
-    devDependencies:
-      '@terminal-nerds/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript
-      tsup:
-        specifier: 8.0.1
-        version: 8.0.1(typescript@5.3.2)
-      typescript:
-        specifier: 5.3.2
-        version: 5.3.2
+  packages/tsup: {}
 
-  packages/typescript:
+  packages/typescript: {}
+
+  packages/utils:
+    dependencies:
+      deepmerge-ts:
+        specifier: 5.1.0
+        version: 5.1.0
+      local-pkg:
+        specifier: ^0.5.0
+        version: 0.5.0
+      pkg-dir:
+        specifier: ^8.0.0
+        version: 8.0.0
+      zod:
+        specifier: 3.22.4
+        version: 3.22.4
     devDependencies:
-      typescript:
-        specifier: 5.3.2
-        version: 5.3.2
+      type-fest:
+        specifier: 4.8.2
+        version: 4.8.2
 
   packages/vitest:
     dependencies:
@@ -440,18 +321,12 @@ importers:
         specifier: 5.0.2
         version: 5.0.2(@types/node@20.9.2)
     devDependencies:
-      '@terminal-nerds/tsup-config':
+      '@terminal-nerds/constants-config':
         specifier: workspace:*
-        version: link:../tsup
-      '@terminal-nerds/typescript-config':
+        version: link:../constants
+      '@terminal-nerds/utils-config':
         specifier: workspace:*
-        version: link:../typescript
-      tsup:
-        specifier: 8.0.1
-        version: 8.0.1(typescript@5.3.2)
-      typescript:
-        specifier: 5.3.2
-        version: 5.3.2
+        version: link:../utils
       vitest:
         specifier: 0.34.6
         version: 0.34.6(@vitest/ui@0.34.6)
@@ -1339,142 +1214,6 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@terminal-nerds/snippets-array@0.2.2(typescript@5.3.2):
-    resolution: {integrity: sha512-DBdKrFdnwZp9n3j+raZPBeETHweD0nYS+aFHXyWY0mYupFzKkAk/iWM4/k2r1xRHsLc+m5A5hAbcNmhla5G3JA==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      typescript: 5.0.4
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@terminal-nerds/snippets-number': 0.3.2(typescript@5.3.2)
-      '@terminal-nerds/snippets-type': 0.3.1(typescript@5.3.2)
-      array-differ: 4.0.0
-      array-union: 3.0.1
-      fast-deep-equal: 3.1.3
-      typescript: 5.3.2
-      zod: 3.21.4
-    dev: false
-
-  /@terminal-nerds/snippets-config@0.4.4(typescript@5.3.2):
-    resolution: {integrity: sha512-5nYS17sJNNYQ4V4duCWsnoA+jUXAGph/l0lH+ghCL4Pttw8IlafH0liJKD1A0jKYb5exKO+UHyboJdG4k0AIIA==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      typescript: 5.0.4
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@terminal-nerds/snippets-error': 0.4.1(typescript@5.3.2)
-      '@terminal-nerds/snippets-object': 0.4.1(typescript@5.3.2)
-      '@terminal-nerds/snippets-runtime': 0.6.2(typescript@5.3.2)
-      pkg-dir: 7.0.0
-      type-fest: 3.9.0
-      typescript: 5.3.2
-    dev: false
-
-  /@terminal-nerds/snippets-error@0.4.1(typescript@5.3.2):
-    resolution: {integrity: sha512-flA4YMPFWd3OjyNaCs58GhJiXhi6l/BQ8UvJBiuN1/No+8ffXY/Q5vj2WiGpBCvl0/Z8TJHcUNGYA573UY+ExA==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      typescript: 5.0.4
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      modern-errors: 5.5.4
-      typescript: 5.3.2
-      zod: 3.21.4
-    dev: false
-
-  /@terminal-nerds/snippets-extension@0.4.1(typescript@5.3.2):
-    resolution: {integrity: sha512-fFg62aTHwJ/n6l4RQNpvxDz5fveiu05ZJmISMp398SpBBv7rvLtgLk7euOXEn4S38j1akvunoAtxX9E08wvV7Q==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      typescript: 5.0.4
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      typescript: 5.3.2
-      zod: 3.21.4
-    dev: false
-
-  /@terminal-nerds/snippets-number@0.3.2(typescript@5.3.2):
-    resolution: {integrity: sha512-xl7mjU6Tl8lPQSGdn3gN21AQIkc3XIj6u7MxErbz66zJU9In99VunRrzHgc58thFNajHB/yOxRpujJ4hBAmF9Q==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      typescript: 5.0.4
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@terminal-nerds/snippets-runtime': 0.6.1(typescript@5.3.2)
-      '@terminal-nerds/snippets-type': 0.3.1(typescript@5.3.2)
-      type-fest: 3.9.0
-      typescript: 5.3.2
-      zod: 3.21.4
-    dev: false
-
-  /@terminal-nerds/snippets-object@0.4.1(typescript@5.3.2):
-    resolution: {integrity: sha512-ImdWk7uw9hZyQgMSl/deVFC++R7cNiXFuQqSwsDw/6pOMhhYQxPEj0rXOkqH8gVQ0Nvxz2pmr2+UUAFID7aH2Q==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      typescript: 5.0.4
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@terminal-nerds/snippets-type': 0.3.1(typescript@5.3.2)
-      deepmerge-ts: 5.1.0
-      type-fest: 3.9.0
-      typescript: 5.3.2
-      zod: 3.21.4
-    dev: false
-
-  /@terminal-nerds/snippets-runtime@0.6.1(typescript@5.3.2):
-    resolution: {integrity: sha512-PHzziza1b9BenehFvUfp1/AENt44HvKU8LJIYblpSCwPC+r+7YTtQCssHPwEKJxNWxgiZQg4Qaj+uY5PkI6SMQ==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      typescript: 5.0.4
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@terminal-nerds/snippets-error': 0.4.1(typescript@5.3.2)
-      local-pkg: 0.4.3
-      typescript: 5.3.2
-      zod: 3.21.4
-    dev: false
-
-  /@terminal-nerds/snippets-runtime@0.6.2(typescript@5.3.2):
-    resolution: {integrity: sha512-pjYIEr1fIlFnd42dI3nW8VqwfHvTtng4soCU0qJ38a22lz3jvRSoFHpxdepvADP1e2FH8mJZj0J7N58RS2dhrg==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      typescript: 5.0.4
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      local-pkg: 0.4.3
-      typescript: 5.3.2
-      zod: 3.21.4
-    dev: false
-
-  /@terminal-nerds/snippets-type@0.3.1(typescript@5.3.2):
-    resolution: {integrity: sha512-qQ0lpzsxWySbIgPvqsu1PXFbL01xUVxM58fjd7e6yBoXSKnQsddTz/qCswlBr+YfjHqNTB6w2s2K0FvkhkizaQ==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      typescript: 5.0.4
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      typescript: 5.3.2
-      zod: 3.21.4
-    dev: false
-
   /@types/chai-subset@1.3.5:
     resolution: {integrity: sha512-c2mPnw+xHtXDoHmdtcCXGwyLMiauiAyxWMzhGpqHC4nqI/Y5G2XhTampslK2rb59kpcuHon03UH8W6iYUzw88A==}
     dependencies:
@@ -1547,10 +1286,6 @@ packages:
 
   /@types/parse-json@4.0.2:
     resolution: {integrity: sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==}
-    dev: true
-
-  /@types/prettier@2.7.3:
-    resolution: {integrity: sha512-+68kP9yzs4LMp7VNh8gdzMSPZFL44MLGqiHWvttYJe+6qnuVr4Ek9wSBQoveqY/r+LwjCcU29kNVkidwim+kYA==}
     dev: true
 
   /@types/semver@7.5.6:
@@ -2070,11 +1805,6 @@ packages:
     resolution: {integrity: sha512-THtfYS6KtME/yIAhKjZ2ul7XI96lQGHRputJQHO80LAWQnuGP4iCIN8vdMRboGbIEYBwU33q8Tch1os2+X0kMg==}
     engines: {node: '>=8'}
 
-  /array-differ@4.0.0:
-    resolution: {integrity: sha512-Q6VPTLMsmXZ47ENG3V+wQyZS1ZxXMxFyYzA+Z/GMrJ6yIutAIEf9wTyroTzmGjNfox9/h3GdGBCVh43GVFx4Uw==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-    dev: false
-
   /array-includes@3.1.7:
     resolution: {integrity: sha512-dlcsNBIiWhPkHdOEEKnehA+RNUWDc4UqFtnIXU4uuYDPtA4LDkr7qip2p0VvFAEXNDr0yWZ9PJyIRiGjRLQzwQ==}
     engines: {node: '>= 0.4'}
@@ -2089,11 +1819,6 @@ packages:
   /array-union@2.1.0:
     resolution: {integrity: sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw==}
     engines: {node: '>=8'}
-
-  /array-union@3.0.1:
-    resolution: {integrity: sha512-1OvF9IbWwaeiM9VhzYXVQacMibxpXOMYVNIvMtKRyX9SImBXpKcFr8XvFDeEslCyuH/t6KRt7HEO94AlP8Iatw==}
-    engines: {node: '>=12'}
-    dev: false
 
   /array.prototype.findlastindex@1.2.3:
     resolution: {integrity: sha512-LzLoiOMAxvy+Gd3BAq3B7VeIgPdo+Q8hthvKtXybMvRV0jrXfJM/t8mw7nNlpEcVlVUnCnM2KSX4XU5HmpodOA==}
@@ -3000,18 +2725,6 @@ packages:
     hasBin: true
     dependencies:
       prr: 1.0.1
-    dev: false
-
-  /error-class-utils@2.5.0:
-    resolution: {integrity: sha512-Q6EU8/wpjQzYAMWpvb8gIKPcRgP6odDpx5i3svG+uxLcO4tvA2Tn0SRL1I5f0j3WA6PnWmcQKpY+gGg2huV7ZQ==}
-    engines: {node: '>=14.18.0'}
-    dev: false
-
-  /error-custom-class@8.4.0:
-    resolution: {integrity: sha512-WS8v14AVXtyNHgORTInJkKEc7xA4NDXLyUnNGR2QpkuiF1WQuok/GqGpmNqWwNvSKxxHvCOZ8Kj+wiSUPpT3ag==}
-    engines: {node: '>=14.18.0'}
-    dependencies:
-      error-class-utils: 2.5.0
     dev: false
 
   /error-ex@1.3.2:
@@ -3930,9 +3643,9 @@ packages:
     dependencies:
       to-regex-range: 5.0.1
 
-  /filter-obj@5.1.0:
-    resolution: {integrity: sha512-qWeTREPoT7I0bifpPUXtxkZJ1XJzxWtfoWWkdVGqa+eCr3SHW/Ocp89o8vLvbUuQnadybJpjOKu4V+RwO6sGng==}
-    engines: {node: '>=14.16'}
+  /find-up-simple@1.0.0:
+    resolution: {integrity: sha512-q7Us7kcjj2VMePAa02hDAF6d+MzsdsAWEwYyOpwUtlerRBkOEPBCRZrAV4XfcSN8fHAgaD0hP7miwoay6DCprw==}
+    engines: {node: '>=18'}
     dev: false
 
   /find-up@4.1.0:
@@ -3948,14 +3661,6 @@ packages:
     dependencies:
       locate-path: 6.0.0
       path-exists: 4.0.0
-
-  /find-up@6.3.0:
-    resolution: {integrity: sha512-v2ZsoEuVHYy8ZIlYqwPe/39Cy+cFDzp4dXPaxNvkEuouymu+2Jbz0PxpKarJHYJTmv2HWT3O382qY8l4jMWthw==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-    dependencies:
-      locate-path: 7.2.0
-      path-exists: 5.0.0
-    dev: false
 
   /find-yarn-workspace-root2@1.2.16:
     resolution: {integrity: sha512-hr6hb1w8ePMpPVUK39S4RlwJzi+xPLuVuG8XlwXU3KD5Yn3qgBWVfy3AzNlDhWvE1EORCE65/Qm26rFQt3VLVA==}
@@ -4495,11 +4200,6 @@ packages:
     hasBin: true
     dev: false
 
-  /is-error-instance@1.6.0:
-    resolution: {integrity: sha512-/hwL1b641Mqr86zH9RMueUCdmDq+iH2hK2uG5xkjHknBHK78Ft54m88R7JOC5eJnyDY8sYdyPBUT0uQ3You6Zw==}
-    engines: {node: '>=14.18.0'}
-    dev: false
-
   /is-extglob@2.1.1:
     resolution: {integrity: sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==}
     engines: {node: '>=0.10.0'}
@@ -4585,11 +4285,6 @@ packages:
   /is-plain-obj@1.1.0:
     resolution: {integrity: sha512-yvkRyxmFKEOQ4pNXCmJG5AEQNlXJS5LaONXo5/cLdTZdWvsZ1ioJEonLGAosKlMWE8lwUy/bJzMjcw8az73+Fg==}
     engines: {node: '>=0.10.0'}
-
-  /is-plain-obj@4.1.0:
-    resolution: {integrity: sha512-+Pgi+vMuUNkJyExiMBt5IlFoMyKnr5zhJ4Uspz58WOhBF5QoIZkFyNHIbBAtHwzVAgk5RtndVNsDRN61/mmDqg==}
-    engines: {node: '>=12'}
-    dev: false
 
   /is-plain-object@5.0.0:
     resolution: {integrity: sha512-VRSzKkbMm5jMDoKLbltAkFQ5Qr7VDiTFGXxYFXXowVj387GeGNOCsOH6Msy00SGZ3Fp84b1Naa1psqgcCIEP5Q==}
@@ -4971,6 +4666,14 @@ packages:
     resolution: {integrity: sha512-SFppqq5p42fe2qcZQqqEOiVRXl+WCP1MdT6k7BDEW1j++sp5fIY+/fdRQitvKgB5BrBcmrs5m/L0v2FrU5MY1g==}
     engines: {node: '>=14'}
 
+  /local-pkg@0.5.0:
+    resolution: {integrity: sha512-ok6z3qlYyCDS4ZEU27HaU6x/xZa9Whf8jD4ptH5UZTQYZVYeb9bnZ3ojVhiJNLiXK1Hfc0GNbLXcmZ5plLDDBg==}
+    engines: {node: '>=14'}
+    dependencies:
+      mlly: 1.4.2
+      pkg-types: 1.0.3
+    dev: false
+
   /locate-path@5.0.0:
     resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
     engines: {node: '>=8'}
@@ -4982,13 +4685,6 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       p-locate: 5.0.0
-
-  /locate-path@7.2.0:
-    resolution: {integrity: sha512-gvVijfZvn7R+2qyPX8mAuKcFGDf6Nc61GdvGafQsHL0sBIxfKzA+usWn4GFC/bk+QdwPUD4kWFJLhElipq+0VA==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-    dependencies:
-      p-locate: 6.0.0
-    dev: false
 
   /lodash.memoize@4.1.2:
     resolution: {integrity: sha512-t7j+NzmgnQzTAYXcsHYLgimltOV1MXHtlOWf6GjL9Kj8GK5FInw5JotxvbOs+IvV1/Dzo04/fCGfLVs7aXb4Ag==}
@@ -5104,17 +4800,6 @@ packages:
       uc.micro: 1.0.6
     dev: true
 
-  /markdown-it@13.0.2:
-    resolution: {integrity: sha512-FtwnEuuK+2yVU7goGn/MJ0WBZMM9ZPgU9spqlFs7/A/pDIUNSOQZhUgOqYCficIuR2QaFnrt8LHqBWsbTAoI5w==}
-    hasBin: true
-    dependencies:
-      argparse: 2.0.1
-      entities: 3.0.1
-      linkify-it: 4.0.1
-      mdurl: 1.0.1
-      uc.micro: 1.0.6
-    dev: true
-
   /markdownlint-cli@0.37.0:
     resolution: {integrity: sha512-hNKAc0bWBBuVhJbSWbUhRzavstiB4o1jh3JeSpwC4/dt6eJ54lRfYHRxVdzVp4qGWBKbeE6Pg490PFEfrKjqSg==}
     engines: {node: '>=16'}
@@ -5141,14 +4826,6 @@ packages:
     engines: {node: '>=16'}
     dependencies:
       markdown-it: 13.0.1
-      markdownlint-micromark: 0.1.7
-    dev: true
-
-  /markdownlint@0.32.1:
-    resolution: {integrity: sha512-3sx9xpi4xlHlokGyHO9k0g3gJbNY4DI6oNEeEYq5gQ4W7UkiJ90VDAnuDl2U+yyXOUa6BX+0gf69ZlTUGIBp6A==}
-    engines: {node: '>=18'}
-    dependencies:
-      markdown-it: 13.0.2
       markdownlint-micromark: 0.1.7
     dev: true
 
@@ -5233,16 +4910,6 @@ packages:
       type-fest: 0.13.1
       yargs-parser: 18.1.3
     dev: true
-
-  /merge-error-cause@3.5.0:
-    resolution: {integrity: sha512-VHh0HFeXvNMqZNLVYkSRqVzpNpit9yMHS2xjdL2KK3SigDbVWV0InW73WlfYUGvG7FopU7X6x2Jb1XazBfmIQQ==}
-    engines: {node: '>=14.18.0'}
-    dependencies:
-      normalize-exception: 2.11.0
-      set-error-class: 1.6.0
-      set-error-props: 4.0.0
-      wrap-error-message: 1.0.0
-    dev: false
 
   /merge-stream@2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
@@ -5502,21 +5169,6 @@ packages:
       pkg-types: 1.0.3
       ufo: 1.3.2
 
-  /modern-errors@5.5.4:
-    resolution: {integrity: sha512-yBPPJAkAQVxA/536xKGpbFIIdA9vxiWLcDXviU+AREYZ5IviZvUZdY3RvL3JSzBiiSfi8pwmn1tPeC8UVEVvOg==}
-    engines: {node: '>=14.18.0'}
-    dependencies:
-      error-class-utils: 2.5.0
-      error-custom-class: 8.4.0
-      filter-obj: 5.1.0
-      is-plain-obj: 4.1.0
-      merge-error-cause: 3.5.0
-      normalize-exception: 2.11.0
-      set-error-message: 1.6.0
-      set-error-props: 4.0.0
-      set-error-stack: 1.0.0
-    dev: false
-
   /mrmime@1.0.1:
     resolution: {integrity: sha512-hzzEagAgDyoU1Q6yg5uI+AorQgdvMCur3FcKf7NhMKWsaYg+RnbTyHRa/9IlLF9rf455MOCtcqqrQQ83pPP7Uw==}
     engines: {node: '>=10'}
@@ -5572,14 +5224,6 @@ packages:
 
   /node-releases@2.0.13:
     resolution: {integrity: sha512-uYr7J37ae/ORWdZeQ1xxMJe3NtdmqMC/JZK+geofDrkLUApKRHPd18/TxtBOJ4A0/+uUIliorNrfYV6s1b02eQ==}
-
-  /normalize-exception@2.11.0:
-    resolution: {integrity: sha512-pm61RNZN6qLO4TqRrFCM0OQdUYxEYVfFM1pWnYGfu5bAjKc9xsebC/bHIS2GV9a2vl9CtPP6FVDjY3zslWk6Bg==}
-    engines: {node: '>=14.18.0'}
-    dependencies:
-      is-error-instance: 1.6.0
-      is-plain-obj: 4.1.0
-    dev: false
 
   /normalize-package-data@2.5.0:
     resolution: {integrity: sha512-/5CMN3T0R4XTj4DcGaexo+roZSdSFW/0AOOTROrjxzCG1wrWXEsGbRKevjlIL+ZDE4sZlJr5ED4YW0yqmkK+eA==}
@@ -5786,13 +5430,6 @@ packages:
     dependencies:
       p-limit: 3.1.0
 
-  /p-locate@6.0.0:
-    resolution: {integrity: sha512-wPrq66Llhl7/4AGC6I+cqxT07LhXvWL08LNXz1fENOw0Ap4sRZZ/gZpTTJ5jpurzzzfS2W/Ge9BY3LgLjCShcw==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-    dependencies:
-      p-limit: 4.0.0
-    dev: false
-
   /p-map@2.1.0:
     resolution: {integrity: sha512-y3b8Kpd8OAN444hxfBbFfj1FY/RjtTd8tzYwhUqNYXx0fXx2iX4maP4Qr6qhIKbQXI02wTLAda4fYUbDagTUFw==}
     engines: {node: '>=6'}
@@ -5832,11 +5469,6 @@ packages:
   /path-exists@4.0.0:
     resolution: {integrity: sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==}
     engines: {node: '>=8'}
-
-  /path-exists@5.0.0:
-    resolution: {integrity: sha512-RjhtfwJOxzcFmNOi6ltcbcu4Iu+FL3zEj83dk4kAS+fVpTxXLO1b38RvJgT/0QwvV/L3aY9TAnyv0EOqW4GoMQ==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-    dev: false
 
   /path-is-absolute@1.0.1:
     resolution: {integrity: sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==}
@@ -5922,11 +5554,11 @@ packages:
       find-up: 4.1.0
     dev: true
 
-  /pkg-dir@7.0.0:
-    resolution: {integrity: sha512-Ie9z/WINcxxLp27BKOCHGde4ITq9UklYKDzVo1nhk5sqGEXU3FpkwP5GM2voTGJkGd9B3Otl+Q4uwSOeSUtOBA==}
-    engines: {node: '>=14.16'}
+  /pkg-dir@8.0.0:
+    resolution: {integrity: sha512-4peoBq4Wks0riS0z8741NVv+/8IiTvqnZAr8QGgtdifrtpdXbNw/FxRS1l6NFqm4EMzuS0EDqNNx4XGaz8cuyQ==}
+    engines: {node: '>=18'}
     dependencies:
-      find-up: 6.3.0
+      find-up-simple: 1.0.0
     dev: false
 
   /pkg-types@1.0.3:
@@ -6311,13 +5943,6 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /redefine-property@1.0.2:
-    resolution: {integrity: sha512-M/bLXdbI3mEZKkFFLc7IxYk0LK33ZpVo4tHLc/5ln+F6+3UeUf/WFs07P8zeP556iFpMJ3A1MZxc5eauL9XGHQ==}
-    engines: {node: '>=14.18.0'}
-    dependencies:
-      is-plain-obj: 4.1.0
-    dev: false
-
   /redent@3.0.0:
     resolution: {integrity: sha512-6tDA8g98We0zd0GvVeMT9arEOnTw9qM03L9cJXaCjrip1OO764RDBLBfrB4cwzNGDj5OA5ioymC9GkizgWJDUg==}
     engines: {node: '>=8'}
@@ -6598,36 +6223,6 @@ packages:
   /set-blocking@2.0.0:
     resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
     dev: true
-
-  /set-error-class@1.6.0:
-    resolution: {integrity: sha512-k9191t6hKqAVJru8QAaOeqX+LpXksZprKUPWiItEh5A2cX8dC6pQsUpBEFU+7fXJ9+Yo9ExvMaUPEyTqqeSRKA==}
-    engines: {node: '>=14.18.0'}
-    dependencies:
-      normalize-exception: 2.11.0
-    dev: false
-
-  /set-error-message@1.6.0:
-    resolution: {integrity: sha512-shoEDvQlZ4SudotBoKCfHBghsSfig8qCRyeQ3GmbCV/VG5oxn+269uTMJDM/RmAmKlFryPJxY0UNr4fwxIiieA==}
-    engines: {node: '>=14.18.0'}
-    dependencies:
-      normalize-exception: 2.11.0
-    dev: false
-
-  /set-error-props@4.0.0:
-    resolution: {integrity: sha512-cJdKFPIsXA/wvlCD89fTqZ4nmXR7X+P9/KEHgnFFNDuVqw0ym9oPgaLjaAQ3YLfb2XXbxqpdzWsR6djLUECn5Q==}
-    engines: {node: '>=14.18.0'}
-    dependencies:
-      is-error-instance: 1.6.0
-      is-plain-obj: 4.1.0
-      redefine-property: 1.0.2
-    dev: false
-
-  /set-error-stack@1.0.0:
-    resolution: {integrity: sha512-putUG6P5+JoZY9nazLnbBkcNAFOuOHBEEhpi639sHlPrDBz7i6F7CqMuWR/gnuzc2UIa2CuQTqYKnrNjbuax4Q==}
-    engines: {node: '>=14.18.0'}
-    dependencies:
-      normalize-exception: 2.11.0
-    dev: false
 
   /set-function-length@1.1.1:
     resolution: {integrity: sha512-VoaqjbBJKiWtg4yRcKBQ7g7wnGnLV3M8oLvVWwOk2PdYY6PEFegR1vezXR0tw6fZGF9csVakIRjrJiy2veSBFQ==}
@@ -7565,10 +7160,10 @@ packages:
     resolution: {integrity: sha512-yGSza74xk0UG8k+pLh5oeoYirvIiWo5t0/o3zHHAO2tRDiZcxWP7fywNlXhqb6/r6sWvwi+RsyQMWhVLe4BVuA==}
     engines: {node: '>=10'}
 
-  /type-fest@3.9.0:
-    resolution: {integrity: sha512-hR8JP2e8UiH7SME5JZjsobBlEiatFoxpzCP+R3ZeCo7kAaG1jXQE5X/buLzogM6GJu8le9Y4OcfNuIQX0rZskA==}
-    engines: {node: '>=14.16'}
-    dev: false
+  /type-fest@4.8.2:
+    resolution: {integrity: sha512-mcvrCjixA5166hSrUoJgGb9gBQN4loMYyj9zxuMs/66ibHNEFd5JXMw37YVDx58L4/QID9jIzdTBB4mDwDJ6KQ==}
+    engines: {node: '>=16'}
+    dev: true
 
   /typed-array-buffer@1.0.0:
     resolution: {integrity: sha512-Y8KTSIglk9OZEr8zywiIHG/kmQ7KWyjseXs1CbSo8vC42w7hg2HgYTxSWwP0+is7bWDc1H+Fo026CpHFwm8tkw==}
@@ -7946,14 +7541,6 @@ packages:
       string-width: 5.1.2
       strip-ansi: 7.1.0
 
-  /wrap-error-message@1.0.0:
-    resolution: {integrity: sha512-axCHQQYrkUaKPCj+BP0emCB++Lzq8Fa1Vba3qPeDbdKyfvypjX6i10KaAoLcRt6Mq0M9peONc6GEzM/XqXNniw==}
-    engines: {node: '>=14.18.0'}
-    dependencies:
-      normalize-exception: 2.11.0
-      set-error-message: 1.6.0
-    dev: false
-
   /wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
@@ -8066,6 +7653,6 @@ packages:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
 
-  /zod@3.21.4:
-    resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
+  /zod@3.22.4:
+    resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
     dev: false

@@ -18,8 +18,11 @@
 	},
 	"bugs": "https://github.com/terminal-nerds/configs/issues",
 	"engines": {
-		"node": ">=18"
+		"node": ">=20"
 	},
+	"files": [
+		"/dist"
+	],
 	"exports": {
 		".": {
 			"types": "./dist/main.d.ts",
@@ -34,27 +37,9 @@
 			"import": "./dist/with-coverage.js"
 		}
 	},
-	"files": [
-		"/dist"
-	],
-	"dependencies": {
-		"@vitest/coverage-c8": "0.33.0",
-		"@vitest/ui": "0.34.6",
-		"vite": "5.0.2"
-	},
-	"peerDependencies": {
-		"vitest": "0.34.6"
-	},
-	"devDependencies": {
-		"@terminal-nerds/tsup-config": "workspace:*",
-		"@terminal-nerds/typescript-config": "workspace:*",
-		"tsup": "8.0.1",
-		"typescript": "5.3.2",
-		"vitest": "0.34.6"
-	},
 	"scripts": {
 		"build": "tsup",
-		"clean": "pnpm run \"/^clean:*/\" ",
+		"clean": "pnpm run \"/^clean:.*/\" ",
 		"clean:build": "del \"./dist\"",
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"dev": "tsup --watch",
@@ -73,5 +58,18 @@
 		"markdownlint": "markdownlint . --config \"../../.markdownlint.json\" --dot --ignore-path \"../../.gitignore\"",
 		"prepack": "clean-package --config \"../../.clean-packagerc.cjs\"",
 		"prettier": "prettier --cache --cache-location=\"./node_modules/.cache/prettier\" --ignore-path=\"../../.gitignore\" --log-level=log \"./\""
+	},
+	"dependencies": {
+		"@vitest/coverage-c8": "0.33.0",
+		"@vitest/ui": "0.34.6",
+		"vite": "5.0.2"
+	},
+	"peerDependencies": {
+		"vitest": "0.34.6"
+	},
+	"devDependencies": {
+		"@terminal-nerds/constants-config": "workspace:*",
+		"@terminal-nerds/utils-config": "workspace:*",
+		"vitest": "0.34.6"
 	}
 }

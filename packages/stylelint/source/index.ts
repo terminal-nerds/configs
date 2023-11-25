@@ -1,4 +1,4 @@
-import { createMergedConfig } from "@terminal-nerds/snippets-config/merge";
+import { createMergedConfig } from "@terminal-nerds/utils-config/merge-configs";
 import type { Config } from "stylelint";
 
 import { HAS_PRETTIER, HAS_SASS, HAS_TAILWINDCSS } from "./checks.ts";

@@ -1,4 +1,4 @@
-import { hasModule } from "@terminal-nerds/snippets-runtime/module";
+import { hasModule } from "@terminal-nerds/utils-config/has-module";
 
 export const HAS_DEPCHECK = hasModule("depcheck");
 export const HAS_ESLINT = hasModule("eslint");
