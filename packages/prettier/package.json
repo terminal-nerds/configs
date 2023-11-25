@@ -18,43 +18,20 @@
 	},
 	"bugs": "https://github.com/terminal-nerds/configs/issues",
 	"engines": {
-		"node": ">=18"
+		"node": ">=20"
 	},
+	"files": [
+		"/dist"
+	],
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
 			"import": "./dist/index.js"
 		}
 	},
-	"files": [
-		"/dist"
-	],
-	"dependencies": {
-		"@terminal-nerds/constants-config": "workspace:*",
-		"@terminal-nerds/snippets-config": "0.4.4",
-		"@terminal-nerds/snippets-runtime": "0.6.2",
-		"prettier-plugin-jsdoc": "1.1.1",
-		"prettier-plugin-svelte": "3.1.2",
-		"prettier-plugin-tailwindcss": "0.5.7"
-	},
-	"peerDependencies": {
-		"prettier": "3.1.0"
-	},
-	"peerDependenciesMeta": {
-		"svelte": {
-			"optional": true
-		}
-	},
-	"devDependencies": {
-		"@terminal-nerds/tsup-config": "workspace:*",
-		"@terminal-nerds/typescript-config": "workspace:*",
-		"@types/prettier": "2.7.3",
-		"tsup": "8.0.1",
-		"typescript": "5.3.2"
-	},
 	"scripts": {
 		"build": "tsup",
-		"clean": "pnpm run \"/^clean:*/\" ",
+		"clean": "pnpm run \"/^clean:.*/\" ",
 		"clean:build": "del \"./dist\"",
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"dev": "tsup --watch",
@@ -73,5 +50,22 @@
 		"markdownlint": "markdownlint . --config \"../../.markdownlint.json\" --dot --ignore-path \"../../.gitignore\"",
 		"prepack": "clean-package --config \"../../.clean-packagerc.cjs\"",
 		"prettier": "prettier --cache --cache-location=\"./node_modules/.cache/prettier\" --ignore-path=\"../../.gitignore\" --log-level=log \"./\""
+	},
+	"dependencies": {
+		"prettier-plugin-jsdoc": "1.1.1",
+		"prettier-plugin-svelte": "3.1.2",
+		"prettier-plugin-tailwindcss": "0.5.7"
+	},
+	"peerDependencies": {
+		"prettier": "3.1.0"
+	},
+	"peerDependenciesMeta": {
+		"svelte": {
+			"optional": true
+		}
+	},
+	"devDependencies": {
+		"@terminal-nerds/constants-config": "workspace:*",
+		"@terminal-nerds/utils-config": "workspace:*"
 	}
 }

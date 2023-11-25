@@ -1,4 +1,4 @@
-import { createMergedConfig } from "@terminal-nerds/snippets-config/merge";
+import { createMergedConfig } from "@terminal-nerds/utils-config/merge-configs";
 import type { ESLintConfig } from "eslint-define-config";
 
 import {
@@ -50,7 +50,6 @@ import pluginTypeScriptCompat from "./plugins/typescript-compat.ts";
 import pluginUnicorn from "./plugins/unicorn.ts";
 import pluginYML from "./plugins/yml.ts";
 
-//@ts-ignore FIXME: Needs a fix upstream
 const config = createMergedConfig<ESLintConfig>([
 	// Base
 	eslint,

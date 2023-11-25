@@ -1,6 +1,4 @@
-import { hasModule } from "@terminal-nerds/snippets-runtime/module";
-import { isIn } from "@terminal-nerds/snippets-runtime/scope";
-import { getEnvironmentVariable } from "@terminal-nerds/snippets-runtime/variable";
+import { hasModule } from "@terminal-nerds/utils-config/has-module";
 
 export const HAS_DOCUSAURUS = hasModule("@docusaurus/core");
 export const HAS_EMOTION =
@@ -16,8 +14,11 @@ export const HAS_TAILWINDCSS = hasModule("tailwindcss");
 export const HAS_TYPESCRIPT = hasModule("typescript");
 export const HAS_UNOCSS = hasModule("unocss");
 
-export const IS_IN_CI = isIn("continuousIntegration", { strict: true });
+export const IS_IN_CI =
+	process.env["CI"] === "true" ||
+	process.env["CONTINUOUS_INTEGRATION"] === "true";
 
 export type DocumentationType = "jsdoc" | "tsdoc";
-export const DOCUMENTATION_TYPE =
-	getEnvironmentVariable<DocumentationType>("DOCUMENTATION_TYPE");
+export const DOCUMENTATION_TYPE = process.env["DOCUMENTATION_TYPE"] as
+	| DocumentationType
+	| undefined;

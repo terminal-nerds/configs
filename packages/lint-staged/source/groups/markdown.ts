@@ -1,4 +1,4 @@
-import { MARKDOWN_EXTENSIONS } from "@terminal-nerds/snippets-extension/schema";
+import { MARKDOWN_EXTENSIONS } from "@terminal-nerds/utils-config/extensions";
 
 export const MARKDOWN = {
 	[`*.{${MARKDOWN_EXTENSIONS.join(",")}}`]: ["markdownlint"],

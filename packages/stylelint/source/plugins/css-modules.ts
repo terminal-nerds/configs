@@ -1,5 +1,5 @@
-import { exclude } from "@terminal-nerds/snippets-array/filter";
-import { STYLESHEETS_EXTENSIONS } from "@terminal-nerds/snippets-extension/schema/stylesheet";
+import { exclude } from "@terminal-nerds/utils-config/array";
+import { STYLESHEETS_EXTENSIONS } from "@terminal-nerds/utils-config/extensions";
 import type { Config } from "stylelint";
 
 import { HAS_SASS } from "../checks.ts";

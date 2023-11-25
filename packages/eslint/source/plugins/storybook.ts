@@ -1,7 +1,9 @@
-import { JAVASCRIPT_EXTENSIONS } from "@terminal-nerds/snippets-extension/schema/javascript";
-import { MARKDOWN_EXTENSIONS } from "@terminal-nerds/snippets-extension/schema/markdown";
-import { TYPESCRIPT_EXTENSIONS } from "@terminal-nerds/snippets-extension/schema/typescript";
-import { UI_LIBRARY_EXTENSIONS } from "@terminal-nerds/snippets-extension/schema/ui-library";
+import {
+	JAVASCRIPT_EXTENSIONS,
+	MARKDOWN_EXTENSIONS,
+	TYPESCRIPT_EXTENSIONS,
+	UI_LIBRARY_EXTENSIONS,
+} from "@terminal-nerds/utils-config/extensions";
 import { defineConfig } from "eslint-define-config";
 
 const EXTENSIONS = [

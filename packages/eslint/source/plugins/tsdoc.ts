@@ -1,4 +1,4 @@
-import { TYPESCRIPT_EXTENSIONS } from "@terminal-nerds/snippets-extension/schema/typescript";
+import { TYPESCRIPT_EXTENSIONS } from "@terminal-nerds/utils-config/extensions";
 import { defineConfig } from "eslint-define-config";
 
 /** @see {@link https://github.com/microsoft/tsdoc/tree/main/eslint-plugin} TSDoc plugin options */
