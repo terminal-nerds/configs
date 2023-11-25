@@ -15,8 +15,6 @@ export const IN_DENO =
 export const IN_DOM =
 	// @ts-ignore TODO: Explain
 	globalThis.window !== undefined &&
-	// @ts-ignore TODO: Explain
-	!globalThis.navigator !== undefined &&
 	// @ts-ignore FIXME: Find a way to make it typed?
 	window.document !== undefined;
 
