@@ -58,11 +58,15 @@
 	},
 	"dependencies": {
 		"deepmerge-ts": "5.1.0",
-		"local-pkg": "^0.5.0",
-		"pkg-dir": "^8.0.0",
+		"local-pkg": "0.5.0",
+		"pkg-dir": "8.0.0",
 		"zod": "3.22.4"
 	},
 	"devDependencies": {
-		"type-fest": "4.8.2"
+		"@terminal-nerds/tsup-config": "workspace:*",
+		"@terminal-nerds/typescript-config": "workspace:*",
+		"tsup": "8.0.1",
+		"type-fest": "4.8.2",
+		"typescript": "5.3.2"
 	}
 }

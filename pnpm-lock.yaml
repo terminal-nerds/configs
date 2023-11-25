@@ -89,8 +89,34 @@ importers:
       browserslist:
         specifier: 4.22.1
         version: 4.22.1
+    devDependencies:
+      '@terminal-nerds/tsup-config':
+        specifier: workspace:*
+        version: link:../tsup
+      '@terminal-nerds/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript
+      tsup:
+        specifier: 8.0.1
+        version: 8.0.1(typescript@5.3.2)
+      typescript:
+        specifier: 5.3.2
+        version: 5.3.2
 
-  packages/constants: {}
+  packages/constants:
+    devDependencies:
+      '@terminal-nerds/tsup-config':
+        specifier: workspace:*
+        version: link:../tsup
+      '@terminal-nerds/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript
+      tsup:
+        specifier: 8.0.1
+        version: 8.0.1(typescript@5.3.2)
+      typescript:
+        specifier: 5.3.2
+        version: 5.3.2
 
   packages/eslint:
     dependencies:
@@ -209,15 +235,40 @@ importers:
         specifier: 1.2.2
         version: 1.2.2
     devDependencies:
+      '@terminal-nerds/tsup-config':
+        specifier: workspace:*
+        version: link:../tsup
+      '@terminal-nerds/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript
       '@types/eslint':
         specifier: 8.44.7
         version: 8.44.7
+      tsup:
+        specifier: 8.0.1
+        version: 8.0.1(typescript@5.3.2)
+      typescript:
+        specifier: 5.3.2
+        version: 5.3.2
 
   packages/lint-staged:
     dependencies:
       '@terminal-nerds/utils-config':
         specifier: workspace:*
         version: link:../utils
+    devDependencies:
+      '@terminal-nerds/tsup-config':
+        specifier: workspace:*
+        version: link:../tsup
+      '@terminal-nerds/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript
+      tsup:
+        specifier: 8.0.1
+        version: 8.0.1(typescript@5.3.2)
+      typescript:
+        specifier: 5.3.2
+        version: 5.3.2
 
   packages/markdownlint:
     devDependencies:
@@ -243,9 +294,21 @@ importers:
       '@terminal-nerds/constants-config':
         specifier: workspace:*
         version: link:../constants
+      '@terminal-nerds/tsup-config':
+        specifier: workspace:*
+        version: link:../tsup
+      '@terminal-nerds/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript
       '@terminal-nerds/utils-config':
         specifier: workspace:*
         version: link:../utils
+      tsup:
+        specifier: 8.0.1
+        version: 8.0.1(typescript@5.3.2)
+      typescript:
+        specifier: 5.3.2
+        version: 5.3.2
 
   packages/stylelint:
     dependencies:
@@ -277,16 +340,54 @@ importers:
         specifier: 5.3.1
         version: 5.3.1(stylelint@15.11.0)
     devDependencies:
+      '@terminal-nerds/tsup-config':
+        specifier: workspace:*
+        version: link:../tsup
+      '@terminal-nerds/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript
       '@terminal-nerds/utils-config':
         specifier: workspace:*
         version: link:../utils
       stylelint:
         specifier: 15.11.0
         version: 15.11.0(typescript@5.3.2)
+      tsup:
+        specifier: 8.0.1
+        version: 8.0.1(typescript@5.3.2)
+      typescript:
+        specifier: 5.3.2
+        version: 5.3.2
 
-  packages/syncpack: {}
+  packages/syncpack:
+    devDependencies:
+      '@terminal-nerds/tsup-config':
+        specifier: workspace:*
+        version: link:../tsup
+      '@terminal-nerds/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript
+      syncpack:
+        specifier: 11.2.1
+        version: 11.2.1
+      tsup:
+        specifier: 8.0.1
+        version: 8.0.1(typescript@5.3.2)
+      typescript:
+        specifier: 5.3.2
+        version: 5.3.2
 
-  packages/tsup: {}
+  packages/tsup:
+    devDependencies:
+      '@terminal-nerds/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript
+      tsup:
+        specifier: 8.0.1
+        version: 8.0.1(typescript@5.3.2)
+      typescript:
+        specifier: 5.3.2
+        version: 5.3.2
 
   packages/typescript: {}
 
@@ -296,18 +397,30 @@ importers:
         specifier: 5.1.0
         version: 5.1.0
       local-pkg:
-        specifier: ^0.5.0
+        specifier: 0.5.0
         version: 0.5.0
       pkg-dir:
-        specifier: ^8.0.0
+        specifier: 8.0.0
         version: 8.0.0
       zod:
         specifier: 3.22.4
         version: 3.22.4
     devDependencies:
+      '@terminal-nerds/tsup-config':
+        specifier: workspace:*
+        version: link:../tsup
+      '@terminal-nerds/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript
+      tsup:
+        specifier: 8.0.1
+        version: 8.0.1(typescript@5.3.2)
       type-fest:
         specifier: 4.8.2
         version: 4.8.2
+      typescript:
+        specifier: 5.3.2
+        version: 5.3.2
 
   packages/vitest:
     dependencies:
@@ -324,9 +437,21 @@ importers:
       '@terminal-nerds/constants-config':
         specifier: workspace:*
         version: link:../constants
+      '@terminal-nerds/tsup-config':
+        specifier: workspace:*
+        version: link:../tsup
+      '@terminal-nerds/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript
       '@terminal-nerds/utils-config':
         specifier: workspace:*
         version: link:../utils
+      tsup:
+        specifier: 8.0.1
+        version: 8.0.1(typescript@5.3.2)
+      typescript:
+        specifier: 5.3.2
+        version: 5.3.2
       vitest:
         specifier: 0.34.6
         version: 0.34.6(@vitest/ui@0.34.6)
