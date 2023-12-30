@@ -328,14 +328,14 @@ importers:
         specifier: 1.2.2
         version: 1.2.2(stylelint@16.1.0)
       stylelint-high-performance-animation:
-        specifier: 1.9.0
-        version: 1.9.0(stylelint@16.1.0)
+        specifier: 1.10.0
+        version: 1.10.0(stylelint@16.1.0)
       stylelint-no-unsupported-browser-features:
         specifier: 7.0.0
         version: 7.0.0(stylelint@16.1.0)
       stylelint-order:
-        specifier: 6.0.3
-        version: 6.0.3(stylelint@16.1.0)
+        specifier: 6.0.4
+        version: 6.0.4(stylelint@16.1.0)
       stylelint-scss:
         specifier: 6.0.0
         version: 6.0.0(stylelint@16.1.0)
@@ -6741,10 +6741,10 @@ packages:
       stylelint: 16.1.0(typescript@5.3.2)
     dev: false
 
-  /stylelint-high-performance-animation@1.9.0(stylelint@16.1.0):
-    resolution: {integrity: sha512-tUN8YqIRFRCsMLLI1wnyODP6+H5Lc63NEaUcOt1lqNaEEgd0tGgA4miY2JuL8eSHvgmGkmZPZTn1Dgek05O3uQ==}
+  /stylelint-high-performance-animation@1.10.0(stylelint@16.1.0):
+    resolution: {integrity: sha512-YzNI+E6taN8pwgaM0INazRg4tw23VA17KNMKUVdOeohpnpSyJLBnLVT9NkRcaCFLodK/67smS5VZK+Qe4Ohrvw==}
     peerDependencies:
-      stylelint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0
+      stylelint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
       postcss-value-parser: 4.2.0
       stylelint: 16.1.0(typescript@5.3.2)
@@ -6762,10 +6762,10 @@ packages:
       stylelint: 16.1.0(typescript@5.3.2)
     dev: false
 
-  /stylelint-order@6.0.3(stylelint@16.1.0):
-    resolution: {integrity: sha512-1j1lOb4EU/6w49qZeT2SQVJXm0Ht+Qnq9GMfUa3pMwoyojIWfuA+JUDmoR97Bht1RLn4ei0xtLGy87M7d29B1w==}
+  /stylelint-order@6.0.4(stylelint@16.1.0):
+    resolution: {integrity: sha512-0UuKo4+s1hgQ/uAxlYU4h0o0HS4NiQDud0NAUNI0aa8FJdmYHA5ZZTFHiV5FpmE3071e9pZx5j0QpVJW5zOCUA==}
     peerDependencies:
-      stylelint: ^14.0.0 || ^15.0.0
+      stylelint: ^14.0.0 || ^15.0.0 || ^16.0.1
     dependencies:
       postcss: 8.4.32
       postcss-sorting: 8.0.2(postcss@8.4.32)
