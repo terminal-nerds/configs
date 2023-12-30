@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/tsconfig",
-	"extends": "@terminal-nerds/typescript-config/common-js",
+	"extends": "@terminal-nerds/typescript-config/es-module",
 	"compilerOptions": {
 		"incremental": true,
 		"tsBuildInfoFile": "./node_modules/.cache/tsbuildinfo"

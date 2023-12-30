@@ -1,14 +1,13 @@
 import type { RcFile } from "syncpack";
 
 /** @see {@link https://github.com/JamieMason/syncpack/#-configuration-file} */
-const config: RcFile = {
-	dependencyTypes: ["dev", "prod", "peer"],
+export const CONFIG: RcFile = {
 	indent: "\t",
-	semverRange: "",
 	sortAz: [
 		"engines",
 		"exports",
 		"files",
+		"imports",
 		"dependencies",
 		"peerDependencies",
 		"peerDependenciesMeta",
@@ -42,6 +41,29 @@ const config: RcFile = {
 		"optionalDependencies",
 		"devDependencies",
 	],
+	versionGroups: [
+		{
+			label: "Use workspace protocol for local packages",
+			dependencies: ["$LOCAL"],
+			dependencyTypes: ["dev", "peer", "prod"],
+			pinVersion: "workspace:*",
+		},
+		{
+			label: "Everything else",
+			// range: "",
+			dependencies: ["**"],
+			dependencyTypes: [
+				"dev",
+				"local",
+				"peer",
+				"overrides",
+				"prod",
+				"resolutions",
+				"pnpmOverrides",
+			],
+			packages: ["**"],
+		},
+	],
 };
 
-export default config;
+export default CONFIG;

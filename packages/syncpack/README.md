@@ -52,16 +52,18 @@ device(s):
      pnpm install --save-dev syncpack @terminal-nerds/syncpack-config
     ```
 
-1. **Create an [syncpack configuration file] - `.syncpackrc.(c)js`**.
+1. **Create an [syncpack configuration file] - `syncpackrc.config.js`**.
 
 1. **Extend this module package configuration.**
 
     ```js
+    import { CONFIG } from "@terminal-nerds/syncpack-config";
+
     const config = {
-    	...require("@terminal-nerds/syncpack-config"),
+    	...CONFIG,
     };
 
-    module.exports = config;
+    export default config;
     ```
 
 📖 For the [syncpack CLI] usage, please refer to its documentation.

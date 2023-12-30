@@ -72,8 +72,8 @@ importers:
         specifier: 3.1.1
         version: 3.1.1
       syncpack:
-        specifier: 12.0.1
-        version: 12.0.1(typescript@5.3.3)
+        specifier: 12.2.0
+        version: 12.2.0(typescript@5.3.3)
       tsup:
         specifier: 8.0.1
         version: 8.0.1(typescript@5.3.3)
@@ -368,8 +368,8 @@ importers:
         specifier: workspace:*
         version: link:../typescript
       syncpack:
-        specifier: 12.0.1
-        version: 12.0.1(typescript@5.3.3)
+        specifier: 12.2.0
+        version: 12.2.0(typescript@5.3.3)
       tsup:
         specifier: 8.0.1
         version: 8.0.1(typescript@5.3.3)
@@ -832,8 +832,8 @@ packages:
       - typescript
     dev: false
 
-  /@effect/schema@0.56.0(effect@2.0.0-next.62)(fast-check@3.15.0):
-    resolution: {integrity: sha512-qVR6T9+Lbv2cAhtIAysYvHpRm8iJuMjhp++q0ZMl3ACyQM4v9mvzEg1hQxF0GpAAHS7MTagVDDXN6WCNPEK4oA==}
+  /@effect/schema@0.56.1(effect@2.0.0-next.62)(fast-check@3.15.0):
+    resolution: {integrity: sha512-cfEyHLXPdzSKzJU/yYrPjFd0iVHPydh+NT0sgTe4bzXbcvOsKZuvQ86cAAwXN7lxY0N5cPes9ACxUxTdkEaNlw==}
     peerDependencies:
       effect: 2.0.0-next.62
       fast-check: ^3.13.2
@@ -6840,12 +6840,12 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /syncpack@12.0.1(typescript@5.3.3):
-    resolution: {integrity: sha512-APhPKAy4RihL7p0Lr1Yt5MumVzGBL1+acpwfillnkE7gNIvRCRT3AzukSwUsIqVqbI7SxHy321d2QvN/Qa6UQw==}
+  /syncpack@12.2.0(typescript@5.3.3):
+    resolution: {integrity: sha512-Wl2+JMJkzfYhaFA09GlqvV7XDP/S4EA1TlH1YkS6SBHv6xHAzkgaQQOlcezXuBThHjXGZwofhrItMuS2bPi4rQ==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
-      '@effect/schema': 0.56.0(effect@2.0.0-next.62)(fast-check@3.15.0)
+      '@effect/schema': 0.56.1(effect@2.0.0-next.62)(fast-check@3.15.0)
       chalk: 4.1.2
       commander: 11.1.0
       cosmiconfig: 9.0.0(typescript@5.3.3)
