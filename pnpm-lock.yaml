@@ -39,8 +39,8 @@ importers:
         specifier: workspace:*
         version: link:packages/typescript
       '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
+        specifier: 20.10.5
+        version: 20.10.5
       all-contributors-cli:
         specifier: 6.26.1
         version: 6.26.1
@@ -432,7 +432,7 @@ importers:
         version: 1.1.0(vitest@1.1.0)
       vite:
         specifier: 5.0.2
-        version: 5.0.2(@types/node@20.9.2)
+        version: 5.0.2(@types/node@20.10.5)
     devDependencies:
       '@terminal-nerds/constants-config':
         specifier: workspace:*
@@ -454,7 +454,7 @@ importers:
         version: 5.3.2
       vitest:
         specifier: 1.1.0
-        version: 1.1.0(@types/node@20.9.2)(@vitest/ui@1.1.0)
+        version: 1.1.0(@types/node@20.10.5)(@vitest/ui@1.1.0)
 
 packages:
 
@@ -1391,8 +1391,8 @@ packages:
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
     dev: true
 
-  /@types/node@20.9.2:
-    resolution: {integrity: sha512-WHZXKFCEyIUJzAwh3NyyTHYSR35SevJ6mZ1nWwJafKtiQbqRTIKSRcw3Ma3acqgsent3RRDqeVwpHntMk+9irg==}
+  /@types/node@20.10.5:
+    resolution: {integrity: sha512-nNPsNE65wjMxEKI93yOP+NPGGBJz/PoN3kZsVLee0XMiJolxSekEVD8wRwBUBqkwc7UWop0edW50yrCQW4CyRw==}
     dependencies:
       undici-types: 5.26.5
 
@@ -1675,7 +1675,7 @@ packages:
       std-env: 3.5.0
       test-exclude: 6.0.0
       v8-to-istanbul: 9.2.0
-      vitest: 1.1.0(@types/node@20.9.2)(@vitest/ui@1.1.0)
+      vitest: 1.1.0(@types/node@20.10.5)(@vitest/ui@1.1.0)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -1718,7 +1718,7 @@ packages:
       pathe: 1.1.1
       picocolors: 1.0.0
       sirv: 2.0.3
-      vitest: 1.1.0(@types/node@20.9.2)(@vitest/ui@1.1.0)
+      vitest: 1.1.0(@types/node@20.10.5)(@vitest/ui@1.1.0)
 
   /@vitest/utils@1.1.0:
     resolution: {integrity: sha512-z+s510fKmYz4Y41XhNs3vcuFTFhcij2YF7F8VQfMEYAAUfqQh0Zfg7+w9xdgFGhPf3tX3TicAe+8BDITk6ampQ==}
@@ -7455,7 +7455,7 @@ packages:
       builtins: 5.0.1
     dev: true
 
-  /vite-node@1.1.0(@types/node@20.9.2):
+  /vite-node@1.1.0(@types/node@20.10.5):
     resolution: {integrity: sha512-jV48DDUxGLEBdHCQvxL1mEh7+naVy+nhUUUaPAZLd3FJgXuxQiewHcfeZebbJ6onDqNGkP4r3MhQ342PRlG81Q==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -7464,7 +7464,7 @@ packages:
       debug: 4.3.4
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 5.0.2(@types/node@20.9.2)
+      vite: 5.0.2(@types/node@20.10.5)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -7475,7 +7475,7 @@ packages:
       - supports-color
       - terser
 
-  /vite@5.0.2(@types/node@20.9.2):
+  /vite@5.0.2(@types/node@20.10.5):
     resolution: {integrity: sha512-6CCq1CAJCNM1ya2ZZA7+jS2KgnhbzvxakmlIjN24cF/PXhRMzpM/z8QgsVJA/Dm5fWUWnVEsmtBoMhmerPxT0g==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -7503,14 +7503,14 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.9.2
+      '@types/node': 20.10.5
       esbuild: 0.19.7
       postcss: 8.4.31
       rollup: 4.5.2
     optionalDependencies:
       fsevents: 2.3.3
 
-  /vitest@1.1.0(@types/node@20.9.2)(@vitest/ui@1.1.0):
+  /vitest@1.1.0(@types/node@20.10.5)(@vitest/ui@1.1.0):
     resolution: {integrity: sha512-oDFiCrw7dd3Jf06HoMtSRARivvyjHJaTxikFxuqJjO76U436PqlVw1uLn7a8OSPrhSfMGVaRakKpA2lePdw79A==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -7535,7 +7535,7 @@ packages:
       jsdom:
         optional: true
     dependencies:
-      '@types/node': 20.9.2
+      '@types/node': 20.10.5
       '@vitest/expect': 1.1.0
       '@vitest/runner': 1.1.0
       '@vitest/snapshot': 1.1.0
@@ -7555,8 +7555,8 @@ packages:
       strip-literal: 1.3.0
       tinybench: 2.5.1
       tinypool: 0.8.1
-      vite: 5.0.2(@types/node@20.9.2)
-      vite-node: 1.1.0(@types/node@20.9.2)
+      vite: 5.0.2(@types/node@20.10.5)
+      vite-node: 1.1.0(@types/node@20.10.5)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
