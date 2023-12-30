@@ -1,4 +1,4 @@
-# @terminal-nerds/stylelint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style -->
+# @terminal-nerds/stylelint-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-heading ul-style -->
 
 ## 0.17.0
 

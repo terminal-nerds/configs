@@ -1,4 +1,4 @@
-# @terminal-nerds/vitest-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
+# @terminal-nerds/vitest-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-heading ul-style ul-indent no-bare-urls -->
 
 ## 0.13.0
 
