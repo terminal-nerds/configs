@@ -51,7 +51,7 @@
 		"@terminal-nerds/syncpack-config": "workspace:*",
 		"@terminal-nerds/tsup-config": "workspace:*",
 		"@terminal-nerds/typescript-config": "workspace:*",
-		"@types/node": "20.10.5",
+		"@types/node": "20.10.6",
 		"all-contributors-cli": "6.26.1",
 		"browserslist": "4.22.2",
 		"clean-package": "2.2.0",
