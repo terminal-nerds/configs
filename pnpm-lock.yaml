@@ -72,8 +72,8 @@ importers:
         specifier: 3.1.1
         version: 3.1.1
       syncpack:
-        specifier: 11.2.1
-        version: 11.2.1
+        specifier: 12.0.1
+        version: 12.0.1(typescript@5.3.3)
       tsup:
         specifier: 8.0.1
         version: 8.0.1(typescript@5.3.3)
@@ -368,8 +368,8 @@ importers:
         specifier: workspace:*
         version: link:../typescript
       syncpack:
-        specifier: 11.2.1
-        version: 11.2.1
+        specifier: 12.0.1
+        version: 12.0.1(typescript@5.3.3)
       tsup:
         specifier: 8.0.1
         version: 8.0.1(typescript@5.3.3)
@@ -832,36 +832,13 @@ packages:
       - typescript
     dev: false
 
-  /@effect/data@0.17.1:
-    resolution: {integrity: sha512-QCYkLE5Y5Dm5Yax5R3GmW4ZIgTx7W+kSZ7yq5eqQ/mFWa8i4yxbLuu8cudqzdeZtRtTGZKlhDxfFfgVtMywXJg==}
-    dev: true
-
-  /@effect/io@0.38.0(@effect/data@0.17.1):
-    resolution: {integrity: sha512-qlVC9ASxNC+L2NKX5qOV9672CE5wWizfwBSFaX2XLI7CC118WRvohCTIPQ52n50Bj5TmR20+na+U9C7e4VkqzA==}
+  /@effect/schema@0.56.0(effect@2.0.0-next.62)(fast-check@3.15.0):
+    resolution: {integrity: sha512-qVR6T9+Lbv2cAhtIAysYvHpRm8iJuMjhp++q0ZMl3ACyQM4v9mvzEg1hQxF0GpAAHS7MTagVDDXN6WCNPEK4oA==}
     peerDependencies:
-      '@effect/data': ^0.17.1
+      effect: 2.0.0-next.62
+      fast-check: ^3.13.2
     dependencies:
-      '@effect/data': 0.17.1
-    dev: true
-
-  /@effect/match@0.32.0(@effect/data@0.17.1)(@effect/schema@0.33.1):
-    resolution: {integrity: sha512-04QfnIgCcMnnNbGxTv2xa9/7q1c5kgpsBodqTUZ8eX86A/EdE8Czz+JkVarG00/xE+nYhQLXOXCN9Zj+dtqVkQ==}
-    peerDependencies:
-      '@effect/data': ^0.17.1
-      '@effect/schema': ^0.33.0
-    dependencies:
-      '@effect/data': 0.17.1
-      '@effect/schema': 0.33.1(@effect/data@0.17.1)(@effect/io@0.38.0)
-    dev: true
-
-  /@effect/schema@0.33.1(@effect/data@0.17.1)(@effect/io@0.38.0):
-    resolution: {integrity: sha512-h+fQInui4q3we8fegAygL0Cs5B2DD/+oC3JWthOh8eLcbKkbYM9smCD/PsHuyQ+BaeWiSP5JdvREGlP4Sg+Ysw==}
-    peerDependencies:
-      '@effect/data': ^0.17.1
-      '@effect/io': ^0.38.0
-    dependencies:
-      '@effect/data': 0.17.1
-      '@effect/io': 0.38.0(@effect/data@0.17.1)
+      effect: 2.0.0-next.62
       fast-check: 3.15.0
     dev: true
 
@@ -2369,11 +2346,6 @@ packages:
     resolution: {integrity: sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w==}
     dev: true
 
-  /commander@11.0.0:
-    resolution: {integrity: sha512-9HMlXtt/BNoYr8ooyjjNRdIilOTkVJXB+GhxMTtOKwk0R4j4lS4NpjuqmRxroBfnfTSHQIHQB7wryHhXarNjmQ==}
-    engines: {node: '>=16'}
-    dev: true
-
   /commander@11.1.0:
     resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
     engines: {node: '>=16'}
@@ -2415,16 +2387,6 @@ packages:
       parse-json: 5.2.0
       path-type: 4.0.0
       yaml: 1.10.2
-    dev: true
-
-  /cosmiconfig@8.2.0:
-    resolution: {integrity: sha512-3rTMnFJA1tCOPwRxtgF4wd7Ab2qvDbL8jX+3smjIbS4HlZBagTlpERbdN7iAbWlrfxE3M8c27kTwTawQ7st+OQ==}
-    engines: {node: '>=14'}
-    dependencies:
-      import-fresh: 3.3.0
-      js-yaml: 4.1.0
-      parse-json: 5.2.0
-      path-type: 4.0.0
     dev: true
 
   /cosmiconfig@9.0.0(typescript@5.3.3):
@@ -2748,6 +2710,10 @@ packages:
 
   /eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
+
+  /effect@2.0.0-next.62:
+    resolution: {integrity: sha512-fJhLzf5oouL4WZP314ZJgZz5Bel7OHTY+YFxO06sW1mSvqJz0s28y7jDHr5zhtTNM1YRvzbeLYUYfNaJYKqx1A==}
+    dev: true
 
   /electron-to-chromium@1.4.616:
     resolution: {integrity: sha512-1n7zWYh8eS0L9Uy+GskE0lkBUNK83cXTVJI0pU3mGprFsbfSdAc15VTFbo+A+Bq4pwstmL30AVcEU3Fo463lNg==}
@@ -4072,11 +4038,11 @@ packages:
       lru-cache: 6.0.0
     dev: true
 
-  /hosted-git-info@6.1.1:
-    resolution: {integrity: sha512-r0EI+HBMcXadMrugk0GCQ+6BQV39PiWAZVfq7oIckeGiN7sjRGyQxPdft3nQekFTCQbYxLBH+/axZMeH8UX6+w==}
-    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+  /hosted-git-info@7.0.1:
+    resolution: {integrity: sha512-+K84LB1DYwMHoHSgaOY/Jfhw3ucPmSET5v98Ke/HdNSw4a0UktWzyW1mjhjpuxxTqOOsfWT/7iVshHmVZ4IpOA==}
+    engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
-      lru-cache: 7.18.3
+      lru-cache: 10.1.0
     dev: true
 
   /html-escaper@2.0.2:
@@ -4799,11 +4765,6 @@ packages:
     dependencies:
       yallist: 4.0.0
 
-  /lru-cache@7.18.3:
-    resolution: {integrity: sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==}
-    engines: {node: '>=12'}
-    dev: true
-
   /magic-string@0.30.5:
     resolution: {integrity: sha512-7xlpfBaQaP/T6Vh8MO/EqXSW5En6INHEvEXQiuff7Gku0PWjU3uf6w/j9o7O+SpB5fOAkrI5HeoNgwjEO0pFsA==}
     engines: {node: '>=12'}
@@ -5308,11 +5269,11 @@ packages:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
 
-  /npm-package-arg@10.1.0:
-    resolution: {integrity: sha512-uFyyCEmgBfZTtrKk/5xDfHp6+MdrqGotX/VoOyEEl3mBwiEE5FlBaePanazJSVMPT7vKepcjYBY2ztg9A3yPIA==}
-    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+  /npm-package-arg@11.0.1:
+    resolution: {integrity: sha512-M7s1BD4NxdAvBKUPqqRW957Xwcl/4Zvo8Aj+ANrzvIPzGJZElrH7Z//rSaec2ORcND6FHHLnZeY8qgTpXDMFQQ==}
+    engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
-      hosted-git-info: 6.1.1
+      hosted-git-info: 7.0.1
       proc-log: 3.0.0
       semver: 7.5.4
       validate-npm-package-name: 5.0.0
@@ -6879,28 +6840,29 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /syncpack@11.2.1:
-    resolution: {integrity: sha512-WoUtm+ZLmWUvy0cLJy8ds/smVRH3ivI6iANcGTPrsvareCc4SmRVMvr+TwjZyFm0FDGmEfMVsAX7z16+yxL6bQ==}
+  /syncpack@12.0.1(typescript@5.3.3):
+    resolution: {integrity: sha512-APhPKAy4RihL7p0Lr1Yt5MumVzGBL1+acpwfillnkE7gNIvRCRT3AzukSwUsIqVqbI7SxHy321d2QvN/Qa6UQw==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
-      '@effect/data': 0.17.1
-      '@effect/io': 0.38.0(@effect/data@0.17.1)
-      '@effect/match': 0.32.0(@effect/data@0.17.1)(@effect/schema@0.33.1)
-      '@effect/schema': 0.33.1(@effect/data@0.17.1)(@effect/io@0.38.0)
+      '@effect/schema': 0.56.0(effect@2.0.0-next.62)(fast-check@3.15.0)
       chalk: 4.1.2
-      commander: 11.0.0
-      cosmiconfig: 8.2.0
+      commander: 11.1.0
+      cosmiconfig: 9.0.0(typescript@5.3.3)
+      effect: 2.0.0-next.62
       enquirer: 2.4.1
+      fast-check: 3.15.0
       globby: 11.1.0
       minimatch: 9.0.3
-      npm-package-arg: 10.1.0
+      npm-package-arg: 11.0.1
       ora: 5.4.1
       prompts: 2.4.2
       read-yaml-file: 2.1.0
       semver: 7.5.4
       tightrope: 0.1.0
       ts-toolbelt: 9.6.0
+    transitivePeerDependencies:
+      - typescript
     dev: true
 
   /table@6.8.1:
