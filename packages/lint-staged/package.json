@@ -60,6 +60,6 @@
 		"@terminal-nerds/tsup-config": "workspace:*",
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"tsup": "8.0.1",
-		"typescript": "5.3.2"
+		"typescript": "5.3.3"
 	}
 }

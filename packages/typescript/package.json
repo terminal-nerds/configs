@@ -62,6 +62,6 @@
 		"prettier": "prettier --cache --cache-location=\"./node_modules/.cache/prettier\" --ignore-path=\"../../.gitignore\" --log-level=log \"./\""
 	},
 	"peerDependencies": {
-		"typescript": "5.3.2"
+		"typescript": "5.3.3"
 	}
 }
