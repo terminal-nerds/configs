@@ -58,10 +58,10 @@
 		"prettier": "prettier --cache --cache-location=\"./node_modules/.cache/prettier\" --ignore-path=\"../../.gitignore\" --log-level=log \"./\""
 	},
 	"dependencies": {
-		"browserslist": "4.22.1"
+		"browserslist": "4.22.2"
 	},
 	"peerDependencies": {
-		"browserslist": "4.22.1"
+		"browserslist": "4.22.2"
 	},
 	"devDependencies": {
 		"@terminal-nerds/tsup-config": "workspace:*",
