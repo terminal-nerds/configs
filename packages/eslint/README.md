@@ -116,6 +116,7 @@ _conditionally_.
 | [@typescript-eslint/eslint-plugin]    | ![@typescript-eslint/eslint-plugin version badge]    | `typescript` as dependency                                                                                                                         |
 | [eslint-plugin-compat]                | ![eslint-plugin-compat version badge]                | -                                                                                                                                                  |
 | [eslint-plugin-diff]                  | ![eslint-plugin-diff version badge]                  | `ESLINT_PLUGIN_DIFF_ENABLE` set to `true` in environment variables                                                                                 |
+| [eslint-plugin-drizzle]               | ![eslint-plugin-drizzle version badge]               | `drizzle-orm` as dependency                                                                                                                        |
 | [eslint-plugin-es-x]                  | ![eslint-plugin-es-x version badge]                  | -                                                                                                                                                  |
 | [eslint-plugin-import]                | ![eslint-plugin-import version badge]                | -                                                                                                                                                  |
 | [eslint-plugin-jest-dom]              | ![eslint-plugin-jest-dom version badge]              | `@testing-library/jest-dom` as dependency                                                                                                          |
@@ -151,6 +152,8 @@ _conditionally_.
 [eslint-plugin-compat version badge]: https://img.shields.io/npm/v/eslint-plugin-compat?logo=npm&style=flat-square
 [eslint-plugin-diff]: https://github.com/paleite/eslint-plugin-diff
 [eslint-plugin-diff version badge]: https://img.shields.io/npm/v/eslint-plugin-diff?logo=npm&style=flat-square
+[eslint-plugin-drizzle]: https://github.com/drizzle-team/drizzle-orm/tree/main/eslint-plugin-drizzle
+[eslint-plugin-drizzle version badge]: https://img.shields.io/npm/v/eslint-plugin-drizzle?logo=npm&style=flat-square
 [eslint-plugin-es-x]: https://github.com/eslint-community/eslint-plugin-es-x
 [eslint-plugin-es-x version badge]: https://img.shields.io/npm/v/eslint-plugin-es-x?logo=npm&style=flat-square
 [eslint-plugin-import]: https://github.com/import-js/eslint-plugin-import

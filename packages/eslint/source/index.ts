@@ -4,6 +4,7 @@ import type { ESLintConfig } from "eslint-define-config";
 import {
 	DOCUMENTATION_TYPE,
 	HAS_DOCUSAURUS,
+	HAS_DRIZZLE,
 	HAS_JEST,
 	HAS_JEST_DOM,
 	HAS_NEXT,
@@ -23,6 +24,7 @@ import eslint from "./eslint.ts";
 import pluginCompat from "./plugins/compat.ts";
 import pluginDiff from "./plugins/diff.ts";
 import plugindocusaurus from "./plugins/docusaurus.ts";
+import pluginDrizzle from "./plugins/drizzle.ts";
 import pluginEmotion from "./plugins/emotion.ts";
 import pluginESX from "./plugins/es-x.ts";
 import pluginImport from "./plugins/import.ts";
@@ -58,6 +60,7 @@ const config = createMergedConfig<ESLintConfig>([
 	pluginCompat,
 	process.env["ESLINT_PLUGIN_DIFF_ENABLE"] === "true" && pluginDiff,
 	HAS_DOCUSAURUS && plugindocusaurus,
+	HAS_DRIZZLE && pluginDrizzle,
 	HAS_REACT && pluginEmotion,
 	pluginESX,
 	pluginImport,

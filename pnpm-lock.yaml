@@ -156,6 +156,9 @@ importers:
       eslint-plugin-diff:
         specifier: 2.0.3
         version: 2.0.3(eslint@8.56.0)
+      eslint-plugin-drizzle:
+        specifier: 0.2.3
+        version: 0.2.3(eslint@8.56.0)
       eslint-plugin-es-x:
         specifier: 7.5.0
         version: 7.5.0(eslint@8.56.0)
@@ -3048,6 +3051,14 @@ packages:
     engines: {node: '>=14.0.0'}
     peerDependencies:
       eslint: '>=6.7.0'
+    dependencies:
+      eslint: 8.56.0
+    dev: false
+
+  /eslint-plugin-drizzle@0.2.3(eslint@8.56.0):
+    resolution: {integrity: sha512-BO+ymHo33IUNoJlC0rbd7HP9EwwpW4VIp49R/tWQF/d2E1K2kgTf0tCXT0v9MSiBr6gGR1LtPwMLapTKEWSg9A==}
+    peerDependencies:
+      eslint: '>=8.0.0'
     dependencies:
       eslint: 8.56.0
     dev: false
