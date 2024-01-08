@@ -1,6 +1,7 @@
 import { hasModule } from "@terminal-nerds/utils-config/has-module";
 
 export const HAS_DOCUSAURUS = hasModule("@docusaurus/core");
+export const HAS_DRIZZLE = hasModule("drizzle-orm");
 export const HAS_EMOTION =
 	hasModule("@emotion/css") || hasModule("@emotion/react");
 export const HAS_JEST = hasModule("jest") || hasModule("vitest");
