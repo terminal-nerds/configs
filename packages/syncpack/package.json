@@ -49,12 +49,12 @@
 		"prettier": "prettier --cache --cache-location=\"./node_modules/.cache/prettier\" --ignore-path=\"../../.gitignore\" --log-level=log \"./\""
 	},
 	"peerDependencies": {
-		"syncpack": "12.2.0"
+		"syncpack": "12.3.0"
 	},
 	"devDependencies": {
 		"@terminal-nerds/tsup-config": "workspace:*",
 		"@terminal-nerds/typescript-config": "workspace:*",
-		"syncpack": "12.2.0",
+		"syncpack": "12.3.0",
 		"tsup": "8.0.1",
 		"typescript": "5.3.3"
 	}
