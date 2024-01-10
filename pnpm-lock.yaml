@@ -72,8 +72,8 @@ importers:
         specifier: 3.1.1
         version: 3.1.1
       syncpack:
-        specifier: 12.2.0
-        version: 12.2.0(typescript@5.3.3)
+        specifier: 12.3.0
+        version: 12.3.0(typescript@5.3.3)
       tsup:
         specifier: 8.0.1
         version: 8.0.1(typescript@5.3.3)
@@ -371,8 +371,8 @@ importers:
         specifier: workspace:*
         version: link:../typescript
       syncpack:
-        specifier: 12.2.0
-        version: 12.2.0(typescript@5.3.3)
+        specifier: 12.3.0
+        version: 12.3.0(typescript@5.3.3)
       tsup:
         specifier: 8.0.1
         version: 8.0.1(typescript@5.3.3)
@@ -6856,8 +6856,8 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /syncpack@12.2.0(typescript@5.3.3):
-    resolution: {integrity: sha512-Wl2+JMJkzfYhaFA09GlqvV7XDP/S4EA1TlH1YkS6SBHv6xHAzkgaQQOlcezXuBThHjXGZwofhrItMuS2bPi4rQ==}
+  /syncpack@12.3.0(typescript@5.3.3):
+    resolution: {integrity: sha512-Gz2uGn96OmGfVVlKztvFac1EJYjP+WptQ2ohA6Uf48C6qLkhSayhkdujKQ6q7bGOTy8HSGI0iDfwfCJu6wvRig==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
