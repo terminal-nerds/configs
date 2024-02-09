@@ -52,7 +52,7 @@
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"@types/node": "20.10.6",
 		"all-contributors-cli": "6.26.1",
-		"browserslist": "4.22.2",
+		"browserslist": "4.22.3",
 		"clean-package": "2.2.0",
 		"del-cli": "5.1.0",
 		"depcheck": "1.4.7",
