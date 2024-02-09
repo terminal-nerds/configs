@@ -39,7 +39,7 @@
 		"clean:build": "del \"./dist\"",
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"dev": "tsup --watch",
-		"eslint": "DEBUG=\"eslint:cli-engine\" eslint . --cache --cache-location \"./node_modules/.cache/eslint\" --ext .json,.ts ",
+		"eslint": "DEBUG=\"eslint:cli-engine\" eslint . --cache --cache-location \"./node_modules/.cache/eslint\" --ext .ts ",
 		"fix": "pnpm run \"/^fix:.*/\" ",
 		"fix:format": "pnpm prettier --write",
 		"fix:js": "pnpm eslint --fix",

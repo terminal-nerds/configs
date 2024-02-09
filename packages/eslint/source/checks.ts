@@ -14,7 +14,3 @@ export const HAS_SVELTE = hasModule("svelte");
 export const HAS_TAILWINDCSS = hasModule("tailwindcss");
 export const HAS_TYPESCRIPT = hasModule("typescript");
 export const HAS_UNOCSS = hasModule("unocss");
-
-export const IS_IN_CI =
-	process.env["CI"] === "true" ||
-	process.env["CONTINUOUS_INTEGRATION"] === "true";

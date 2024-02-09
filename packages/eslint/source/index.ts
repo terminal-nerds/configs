@@ -14,7 +14,6 @@ import {
 	HAS_TAILWINDCSS,
 	HAS_TYPESCRIPT,
 	HAS_UNOCSS,
-	IS_IN_CI,
 } from "./checks.ts";
 import configNext from "./configs/next.ts";
 import configPrettier from "./configs/prettier.ts";
@@ -31,8 +30,6 @@ import pluginJest from "./plugins/jest.ts";
 import pluginJestDOM from "./plugins/jest-dom.ts";
 import pluginJestFormatting from "./plugins/jest-formatting.ts";
 import pluginJSDoc from "./plugins/jsdoc.ts";
-import pluginJSONSchemaValidator from "./plugins/json-schema-validator.ts";
-import pluginJSONC from "./plugins/jsonc.ts";
 import pluginJSXA11y from "./plugins/jsx-a11y.ts";
 import pluginNode from "./plugins/node.ts";
 import pluginReact from "./plugins/react.ts";
@@ -65,8 +62,6 @@ const config = createMergedConfig<ESLintConfig>([
 	HAS_JEST_DOM && pluginJestDOM,
 	HAS_JEST && pluginJestFormatting,
 	pluginJSDoc,
-	pluginJSONC,
-	!IS_IN_CI && pluginJSONSchemaValidator,
 	HAS_REACT && pluginJSXA11y,
 	pluginNode,
 	HAS_REACT && pluginReact,
