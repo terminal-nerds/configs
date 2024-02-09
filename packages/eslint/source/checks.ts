@@ -18,8 +18,3 @@ export const HAS_UNOCSS = hasModule("unocss");
 export const IS_IN_CI =
 	process.env["CI"] === "true" ||
 	process.env["CONTINUOUS_INTEGRATION"] === "true";
-
-export type DocumentationType = "jsdoc" | "tsdoc";
-export const DOCUMENTATION_TYPE = process.env["DOCUMENTATION_TYPE"] as
-	| DocumentationType
-	| undefined;
