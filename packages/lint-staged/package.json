@@ -54,7 +54,7 @@
 		"@terminal-nerds/utils-config": "workspace:*"
 	},
 	"peerDependencies": {
-		"lint-staged": "15.2.0"
+		"lint-staged": "15.2.2"
 	},
 	"devDependencies": {
 		"@terminal-nerds/tsup-config": "workspace:*",
