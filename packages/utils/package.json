@@ -66,7 +66,7 @@
 		"@terminal-nerds/tsup-config": "workspace:*",
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"tsup": "8.0.1",
-		"type-fest": "4.9.0",
+		"type-fest": "4.10.2",
 		"typescript": "5.3.3"
 	}
 }
