@@ -21,7 +21,7 @@
 		"deps:upgrade:pkgs": "pnpm upgrade --interactive --latest --filter ./packages",
 		"deps:upgrade:root": "pnpm upgrade --interactive --latest",
 		"dev:pkgs": "turbo run dev",
-		"eslint": "DEBUG=\"eslint:cli-engine\" eslint . --cache --cache-location \"./node_modules/.cache/eslint\" --ext .cjs,.js,.ts,.json,.yml,.yaml --ignore-pattern \"/packages/\"",
+		"eslint": "DEBUG=\"eslint:cli-engine\" eslint . --cache --cache-location \"./node_modules/.cache/eslint\" --ext .cjs,.js,.ts --ignore-pattern \"/packages/\"",
 		"fix": "pnpm run \"/^fix:.*/\" ",
 		"fix:format": "pnpm prettier --write",
 		"fix:js": "pnpm eslint --fix",

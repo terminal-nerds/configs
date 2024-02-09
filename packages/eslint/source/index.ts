@@ -2,7 +2,6 @@ import { createMergedConfig } from "@terminal-nerds/utils-config/merge-configs";
 import type { ESLintConfig } from "eslint-define-config";
 
 import {
-	DOCUMENTATION_TYPE,
 	HAS_DOCUSAURUS,
 	HAS_DRIZZLE,
 	HAS_JEST,
@@ -15,7 +14,6 @@ import {
 	HAS_TAILWINDCSS,
 	HAS_TYPESCRIPT,
 	HAS_UNOCSS,
-	IS_IN_CI,
 } from "./checks.ts";
 import configNext from "./configs/next.ts";
 import configPrettier from "./configs/prettier.ts";
@@ -32,8 +30,6 @@ import pluginJest from "./plugins/jest.ts";
 import pluginJestDOM from "./plugins/jest-dom.ts";
 import pluginJestFormatting from "./plugins/jest-formatting.ts";
 import pluginJSDoc from "./plugins/jsdoc.ts";
-import pluginJSONSchemaValidator from "./plugins/json-schema-validator.ts";
-import pluginJSONC from "./plugins/jsonc.ts";
 import pluginJSXA11y from "./plugins/jsx-a11y.ts";
 import pluginNode from "./plugins/node.ts";
 import pluginReact from "./plugins/react.ts";
@@ -46,11 +42,9 @@ import pluginStorybook from "./plugins/storybook.ts";
 import pluginSvelte from "./plugins/svelte.ts";
 import pluginTailwindCSS from "./plugins/tailwindcss.ts";
 import pluginTestingLibrary from "./plugins/testing-library.ts";
-import pluginTSDoc from "./plugins/tsdoc.ts";
 import pluginTypeScript from "./plugins/typescript.ts";
 import pluginTypeScriptCompat from "./plugins/typescript-compat.ts";
 import pluginUnicorn from "./plugins/unicorn.ts";
-import pluginYML from "./plugins/yml.ts";
 
 const config = createMergedConfig<ESLintConfig>([
 	// Base
@@ -67,9 +61,7 @@ const config = createMergedConfig<ESLintConfig>([
 	HAS_JEST && pluginJest,
 	HAS_JEST_DOM && pluginJestDOM,
 	HAS_JEST && pluginJestFormatting,
-	DOCUMENTATION_TYPE !== "tsdoc" && pluginJSDoc,
-	pluginJSONC,
-	!IS_IN_CI && pluginJSONSchemaValidator,
+	pluginJSDoc,
 	HAS_REACT && pluginJSXA11y,
 	pluginNode,
 	HAS_REACT && pluginReact,
@@ -82,11 +74,9 @@ const config = createMergedConfig<ESLintConfig>([
 	HAS_SVELTE && pluginSvelte,
 	HAS_JEST_DOM && pluginTestingLibrary,
 	HAS_TAILWINDCSS && pluginTailwindCSS,
-	HAS_TYPESCRIPT && DOCUMENTATION_TYPE !== "jsdoc" && pluginTSDoc,
 	HAS_TYPESCRIPT && pluginTypeScript,
 	HAS_TYPESCRIPT && pluginTypeScriptCompat,
 	pluginUnicorn,
-	pluginYML,
 
 	// Configs
 	HAS_UNOCSS && configUnoCSS,

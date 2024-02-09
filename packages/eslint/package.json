@@ -6,8 +6,8 @@
 	"description": "Terminal Nerds extendable configuration for ESLint.",
 	"keywords": [
 		"config",
-		"linter",
-		"eslint"
+		"eslint",
+		"linter"
 	],
 	"license": "MIT",
 	"homepage": "https://github.com/terminal-nerds/configs/tree/main/packages/eslint",
@@ -33,7 +33,7 @@
 		"clean:build": "del \"./dist\"",
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"dev": "tsup --watch",
-		"eslint": "DEBUG=\"eslint:cli-engine\" eslint . --cache --cache-location \"./node_modules/.cache/eslint\" --ext .json,.ts ",
+		"eslint": "DEBUG=\"eslint:cli-engine\" eslint . --cache --cache-location \"./node_modules/.cache/eslint\" --ext .ts ",
 		"fix": "pnpm run \"/^fix:.*/\" ",
 		"fix:format": "pnpm prettier --write",
 		"fix:js": "pnpm eslint --fix",
@@ -69,8 +69,6 @@
 		"eslint-plugin-jest-dom": "5.1.0",
 		"eslint-plugin-jest-formatting": "3.1.0",
 		"eslint-plugin-jsdoc": "48.0.5",
-		"eslint-plugin-json-schema-validator": "4.8.3",
-		"eslint-plugin-jsonc": "2.13.0",
 		"eslint-plugin-jsx-a11y": "6.8.0",
 		"eslint-plugin-n": "16.6.2",
 		"eslint-plugin-react": "7.33.2",
@@ -83,10 +81,8 @@
 		"eslint-plugin-svelte": "2.35.1",
 		"eslint-plugin-tailwindcss": "3.14.2",
 		"eslint-plugin-testing-library": "6.2.0",
-		"eslint-plugin-tsdoc": "0.2.17",
 		"eslint-plugin-typescript-compat": "1.0.2",
 		"eslint-plugin-unicorn": "51.0.0",
-		"eslint-plugin-yml": "1.12.2",
 		"jsonc-eslint-parser": "2.4.0",
 		"yaml-eslint-parser": "1.2.2"
 	},
