@@ -85,7 +85,7 @@
 		"eslint-plugin-testing-library": "6.2.0",
 		"eslint-plugin-tsdoc": "0.2.17",
 		"eslint-plugin-typescript-compat": "1.0.2",
-		"eslint-plugin-unicorn": "50.0.1",
+		"eslint-plugin-unicorn": "51.0.0",
 		"eslint-plugin-yml": "1.11.0",
 		"jsonc-eslint-parser": "2.4.0",
 		"yaml-eslint-parser": "1.2.2"
