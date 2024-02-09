@@ -9,7 +9,7 @@
 		"node": ">=20",
 		"pnpm": ">=8"
 	},
-	"packageManager": "pnpm@8.14.0",
+	"packageManager": "pnpm@8.15.1",
 	"scripts": {
 		"build:pkgs": "turbo run build --api=$TURBO_API",
 		"changelog": "pnpm changeset add",
@@ -50,7 +50,7 @@
 		"@terminal-nerds/syncpack-config": "workspace:*",
 		"@terminal-nerds/tsup-config": "workspace:*",
 		"@terminal-nerds/typescript-config": "workspace:*",
-		"@types/node": "20.10.6",
+		"@types/node": "20.11.16",
 		"all-contributors-cli": "6.26.1",
 		"browserslist": "4.22.3",
 		"clean-package": "2.2.0",
