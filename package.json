@@ -59,7 +59,7 @@
 		"eslint": "8.56.0",
 		"husky": "8.0.3",
 		"lint-staged": "15.2.2",
-		"markdownlint-cli": "0.38.0",
+		"markdownlint-cli": "0.39.0",
 		"prettier": "3.2.5",
 		"syncpack": "12.3.0",
 		"tsup": "8.0.1",
