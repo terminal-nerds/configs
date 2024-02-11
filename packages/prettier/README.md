@@ -91,13 +91,14 @@ device(s):
 
 | Plugin                                | Version                                              | Loading condition(s)        |
 | ------------------------------------- | ---------------------------------------------------- | --------------------------- |
+| [prettier-plugin-astro]               | ![prettier-plugin-astro version badge]               | `astro` as dependency       |
 | [prettier-plugin-jsdoc]               | ![prettier-plugin-jsdoc version badge]               | -                           |
 | [prettier-plugin-sort-markdown-table] | ![prettier-plugin-sort-markdown-table version badge] | -                           |
 | [prettier-plugin-svelte]              | ![prettier-plugin-svelte version badge]              | `svelte` as dependency      |
 | [prettier-plugin-tailwindcss]         | ![prettier-plugin-tailwindcss version badge]         | `tailwindcss` as dependency |
 
-[prettier-plugin-jsdoc]: https://github.com/hosseinmd/prettier-plugin-jsdoc
-[prettier-plugin-jsdoc version badge]: https://img.shields.io/npm/v/prettier-plugin-svelte?logo=npm&style=flat-square
+[prettier-plugin-astro]: https://github.com/withastro/prettier-plugin-astro
+[prettier-plugin-astro version badge]: https://img.shields.io/npm/v/prettier-plugin-astro?logo=npm&style=flat-square
 [prettier-plugin-sort-markdown-table]: https://github.com/SevenOutman/prettier-plugin-sort-markdown-table
 [prettier-plugin-sort-markdown-table version badge]: https://img.shields.io/npm/v/prettier-plugin-sort-markdown-table?logo=npm&style=flat-square
 [prettier-plugin-svelte]: https://github.com/sveltejs/prettier-plugin-svelte
