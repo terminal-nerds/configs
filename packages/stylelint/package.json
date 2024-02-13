@@ -68,7 +68,7 @@
 		"@terminal-nerds/typescript-config": "workspace:*",
 		"@terminal-nerds/utils-config": "workspace:*",
 		"stylelint": "16.1.0",
-		"tsup": "8.0.1",
+		"tsup": "8.0.2",
 		"typescript": "5.3.3"
 	}
 }
