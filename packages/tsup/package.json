@@ -56,11 +56,11 @@
 		"prettier": "prettier --cache --cache-location=\"./node_modules/.cache/prettier\" --ignore-path=\"../../.gitignore\" --log-level=log \"./\""
 	},
 	"peerDependencies": {
-		"tsup": "8.0.1"
+		"tsup": "8.0.2"
 	},
 	"devDependencies": {
 		"@terminal-nerds/typescript-config": "workspace:*",
-		"tsup": "8.0.1",
+		"tsup": "8.0.2",
 		"typescript": "5.3.3"
 	}
 }
